@@ -1,0 +1,7 @@
+E:\Kevin Doan\Project\Capstone 2\ClinienceSystemManagement\BussinessLogicLayer\bin\Debug\BussinessLogicLayer.dll
+E:\Kevin Doan\Project\Capstone 2\ClinienceSystemManagement\BussinessLogicLayer\bin\Debug\BussinessLogicLayer.pdb
+E:\Kevin Doan\Project\Capstone 2\ClinienceSystemManagement\BussinessLogicLayer\bin\Debug\DataAccessLayer.dll
+E:\Kevin Doan\Project\Capstone 2\ClinienceSystemManagement\BussinessLogicLayer\bin\Debug\DataAccessLayer.pdb
+E:\Kevin Doan\Project\Capstone 2\ClinienceSystemManagement\BussinessLogicLayer\obj\Debug\BussinessLogicLayer.csprojResolveAssemblyReference.cache
+E:\Kevin Doan\Project\Capstone 2\ClinienceSystemManagement\BussinessLogicLayer\obj\Debug\BussinessLogicLayer.dll
+E:\Kevin Doan\Project\Capstone 2\ClinienceSystemManagement\BussinessLogicLayer\obj\Debug\BussinessLogicLayer.pdb
