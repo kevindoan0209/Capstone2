@@ -5,3 +5,10 @@ E:\Kevin Doan\Project\Capstone 2\ClinienceSystemManagement\BussinessLogicLayer\b
 E:\Kevin Doan\Project\Capstone 2\ClinienceSystemManagement\BussinessLogicLayer\obj\Debug\BussinessLogicLayer.csprojResolveAssemblyReference.cache
 E:\Kevin Doan\Project\Capstone 2\ClinienceSystemManagement\BussinessLogicLayer\obj\Debug\BussinessLogicLayer.dll
 E:\Kevin Doan\Project\Capstone 2\ClinienceSystemManagement\BussinessLogicLayer\obj\Debug\BussinessLogicLayer.pdb
+F:\GitHub\Capstone2\ClinienceSystemManagement\BussinessLogicLayer\bin\Debug\BussinessLogicLayer.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\BussinessLogicLayer\bin\Debug\BussinessLogicLayer.pdb
+F:\GitHub\Capstone2\ClinienceSystemManagement\BussinessLogicLayer\bin\Debug\DataAccessLayer.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\BussinessLogicLayer\bin\Debug\DataAccessLayer.pdb
+F:\GitHub\Capstone2\ClinienceSystemManagement\BussinessLogicLayer\obj\Debug\BussinessLogicLayer.csprojResolveAssemblyReference.cache
+F:\GitHub\Capstone2\ClinienceSystemManagement\BussinessLogicLayer\obj\Debug\BussinessLogicLayer.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\BussinessLogicLayer\obj\Debug\BussinessLogicLayer.pdb

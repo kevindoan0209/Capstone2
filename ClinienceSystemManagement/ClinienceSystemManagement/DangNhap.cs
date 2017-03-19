@@ -16,6 +16,8 @@ namespace ClinienceSystemManagement
         public DangNhap()
         {
             InitializeComponent();
+            Console.WriteLine("This");
+            Console.WriteLine("This2");
         }
     }
 }

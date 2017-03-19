@@ -3,3 +3,8 @@ E:\Kevin Doan\Project\Capstone 2\ClinienceSystemManagement\DataAccessLayer\bin\D
 E:\Kevin Doan\Project\Capstone 2\ClinienceSystemManagement\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
 E:\Kevin Doan\Project\Capstone 2\ClinienceSystemManagement\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 E:\Kevin Doan\Project\Capstone 2\ClinienceSystemManagement\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+F:\GitHub\Capstone2\ClinienceSystemManagement\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+F:\GitHub\Capstone2\ClinienceSystemManagement\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+F:\GitHub\Capstone2\ClinienceSystemManagement\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
