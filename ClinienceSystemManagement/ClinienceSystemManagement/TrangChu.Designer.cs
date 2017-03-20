@@ -30,9 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrangChu));
-            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation5 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
-            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation6 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
+            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation1 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
+            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation2 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.applicationMenu1 = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonGroup1 = new DevExpress.XtraBars.BarButtonGroup();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
@@ -47,6 +48,8 @@
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonMiniToolbar1 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(this.components);
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -60,12 +63,9 @@
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
-            this.applicationMenu1 = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
-            this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl1
@@ -101,6 +101,11 @@
             this.ribbonPage4});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
             this.ribbonControl1.Size = new System.Drawing.Size(850, 146);
+            // 
+            // applicationMenu1
+            // 
+            this.applicationMenu1.Name = "applicationMenu1";
+            this.applicationMenu1.Ribbon = this.ribbonControl1;
             // 
             // barButtonItem1
             // 
@@ -211,24 +216,38 @@
             this.barButtonItem13.LargeWidth = 70;
             this.barButtonItem13.Name = "barButtonItem13";
             // 
+            // barButtonItem14
+            // 
+            this.barButtonItem14.Caption = "Kê toa";
+            this.barButtonItem14.Id = 3;
+            this.barButtonItem14.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem14.LargeGlyph")));
+            this.barButtonItem14.LargeWidth = 70;
+            this.barButtonItem14.Name = "barButtonItem14";
+            // 
+            // barButtonItem15
+            // 
+            this.barButtonItem15.Caption = "barButtonItem15";
+            this.barButtonItem15.Id = 4;
+            this.barButtonItem15.Name = "barButtonItem15";
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1});
             this.ribbonPage1.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage1.Image")));
             this.ribbonPage1.Name = "ribbonPage1";
-            reduceOperation5.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
-            reduceOperation5.Group = null;
-            reduceOperation5.ItemLinkIndex = 0;
-            reduceOperation5.ItemLinksCount = 0;
-            reduceOperation5.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.LargeButtons;
-            reduceOperation6.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
-            reduceOperation6.Group = null;
-            reduceOperation6.ItemLinkIndex = 0;
-            reduceOperation6.ItemLinksCount = 0;
-            reduceOperation6.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.LargeButtons;
-            this.ribbonPage1.ReduceOperations.Add(reduceOperation5);
-            this.ribbonPage1.ReduceOperations.Add(reduceOperation6);
+            reduceOperation1.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
+            reduceOperation1.Group = null;
+            reduceOperation1.ItemLinkIndex = 0;
+            reduceOperation1.ItemLinksCount = 0;
+            reduceOperation1.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.LargeButtons;
+            reduceOperation2.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
+            reduceOperation2.Group = null;
+            reduceOperation2.ItemLinkIndex = 0;
+            reduceOperation2.ItemLinksCount = 0;
+            reduceOperation2.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.LargeButtons;
+            this.ribbonPage1.ReduceOperations.Add(reduceOperation1);
+            this.ribbonPage1.ReduceOperations.Add(reduceOperation2);
             this.ribbonPage1.Text = "Khám Bệnh";
             // 
             // ribbonPageGroup1
@@ -311,25 +330,6 @@
             this.popupMenu1.Name = "popupMenu1";
             this.popupMenu1.Ribbon = this.ribbonControl1;
             // 
-            // barButtonItem14
-            // 
-            this.barButtonItem14.Caption = "Kê toa";
-            this.barButtonItem14.Id = 3;
-            this.barButtonItem14.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem14.LargeGlyph")));
-            this.barButtonItem14.LargeWidth = 70;
-            this.barButtonItem14.Name = "barButtonItem14";
-            // 
-            // applicationMenu1
-            // 
-            this.applicationMenu1.Name = "applicationMenu1";
-            this.applicationMenu1.Ribbon = this.ribbonControl1;
-            // 
-            // barButtonItem15
-            // 
-            this.barButtonItem15.Caption = "barButtonItem15";
-            this.barButtonItem15.Id = 4;
-            this.barButtonItem15.Name = "barButtonItem15";
-            // 
             // TrangChu
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
@@ -341,9 +341,10 @@
             this.Name = "TrangChu";
             this.Ribbon = this.ribbonControl1;
             this.Text = "Clinience";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

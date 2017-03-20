@@ -10,47 +10,51 @@ namespace DataAccessLayer
 {
     public class DbConection
     {
-        private static SqlConnection _conection = new SqlConnection(@"SERVER=KEVIN-PC\SQLEXPRESS;DATABASE=iHealth;UID=kevindoan;PWD=123456;");
-
-        //To check whenver the database connection is open
-        public static SqlConnection GetConection()
+        public SqlConnection connect()
         {
-            if (_conection.State == ConnectionState.Closed)
-            {
-                _conection.Open();
-            }
-            return _conection;
+            SqlConnection connect = new SqlConnection(@"Data Source=DESKTOP-M75UEQH\SQLEXPRESS;Initial Catalog=ClinienceSystemManagement;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            connect.Open();
+            return connect;
         }
+ 
+        //public static sqlconnection getconection()
+        //{
+        //    if (_conection.state == connectionstate.closed)
+        //    {
+        //        _conection.open();
+        //    }
+        //    return _conection;
+        //}
 
-        //To perform Insert, Update, Delete , etc..
-        public static int ExecuteNonQuery(SqlCommand cmd)
-        {
-            cmd.Connection = GetConection();
-            int rowaffected = -1;
-            rowaffected = cmd.ExecuteNonQuery();
-            _conection.Close();
-            return rowaffected;
-        }
+        //to perform insert, update, delete , etc..
+        //public static int executenonquery(sqlcommand cmd)
+        //{
+        //    cmd.connection = getconection();
+        //    int rowaffected = -1;
+        //    rowaffected = cmd.executenonquery();
+        //    _conection.close();
+        //    return rowaffected;
+        //}
 
-        //To retrieve a single value from database
-        public static object ExecuteScalar(SqlCommand cmd)
-        {
-            cmd.Connection = GetConection();
-            object obj = -1;
-            obj = cmd.ExecuteScalar();
-            cmd.Connection.Close();
-            return obj;
-        }
+        //to retrieve a single value from database
+        //public static object executescalar(sqlcommand cmd)
+        //{
+        //    cmd.connection = getconection();
+        //    object obj = -1;
+        //    obj = cmd.executescalar();
+        //    cmd.connection.close();
+        //    return obj;
+        //}
 
-        //To perform select query
-        public static DataTable ExecutecuteReader(SqlCommand cmd)
-        {
-            cmd.Connection = GetConection();
-            SqlDataReader sdr = cmd.ExecuteReader();
-            DataTable dt = new DataTable();
-            dt.Load(sdr);
-            _conection.Close();
-            return dt;
-        }
+        //to perform select query
+        //public static datatable executecutereader(sqlcommand cmd)
+        //{
+        //    cmd.connection = getconection();
+        //    sqldatareader sdr = cmd.executereader();
+        //    datatable dt = new datatable();
+        //    dt.load(sdr);
+        //    _conection.close();
+        //    return dt;
+        //}
     }
 }

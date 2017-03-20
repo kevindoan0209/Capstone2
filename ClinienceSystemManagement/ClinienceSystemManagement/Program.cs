@@ -4,6 +4,7 @@ using System.Linq;
 using System.Windows.Forms;
 using DevExpress.UserSkins;
 using DevExpress.Skins;
+using ClinienceSystemManagement;
 
 namespace PresentationLayer
 {
@@ -20,7 +21,7 @@ namespace PresentationLayer
 
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
-            Application.Run(new TrangChu());
+            Application.Run(new DangNhap());
         }
     }
 }
