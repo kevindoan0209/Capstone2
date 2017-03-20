@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.BonusSkins.v15.1" />
     <Reference Include="DevExpress.Data.v15.1" />
     <Reference Include="DevExpress.Printing.v15.1.Core" />

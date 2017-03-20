@@ -29,166 +29,165 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DangNhap));
-            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.label2 = new System.Windows.Forms.Label();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.txtTenDangNhap = new DevExpress.XtraEditors.TextEdit();
-            this.txtMatKhau = new DevExpress.XtraEditors.TextEdit();
-            this.btnDangNhap = new DevExpress.XtraEditors.SimpleButton();
+            this.Clinience = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.btnThoat = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
-            this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).BeginInit();
+            this.btnDangNhap = new DevExpress.XtraEditors.SimpleButton();
+            this.txtMatKhau = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.txtTenDangNhap = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.label2 = new System.Windows.Forms.Label();
+            this.line1 = new DevComponents.DotNetBar.Controls.Line();
+            this.Clinience.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).BeginInit();
             this.SuspendLayout();
             // 
-            // panelControl1
+            // Clinience
             // 
-            this.panelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.panelControl1.Controls.Add(this.btnThoat);
-            this.panelControl1.Controls.Add(this.btnDangNhap);
-            this.panelControl1.Controls.Add(this.txtMatKhau);
-            this.panelControl1.Controls.Add(this.txtTenDangNhap);
-            this.panelControl1.Controls.Add(this.labelControl3);
-            this.panelControl1.Controls.Add(this.labelControl2);
-            this.panelControl1.Controls.Add(this.labelControl1);
-            this.panelControl1.Controls.Add(this.label2);
-            this.panelControl1.Location = new System.Drawing.Point(26, 23);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(403, 246);
-            this.panelControl1.TabIndex = 0;
+            this.Clinience.CanvasColor = System.Drawing.SystemColors.Control;
+            this.Clinience.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Windows7;
+            this.Clinience.Controls.Add(this.line1);
+            this.Clinience.Controls.Add(this.label2);
+            this.Clinience.Controls.Add(this.labelControl2);
+            this.Clinience.Controls.Add(this.txtTenDangNhap);
+            this.Clinience.Controls.Add(this.labelControl1);
+            this.Clinience.Controls.Add(this.txtMatKhau);
+            this.Clinience.Controls.Add(this.btnDangNhap);
+            this.Clinience.Controls.Add(this.btnThoat);
+            this.Clinience.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.Clinience.DisabledBackColor = System.Drawing.Color.Empty;
+            resources.ApplyResources(this.Clinience, "Clinience");
+            this.Clinience.Name = "Clinience";
             // 
-            // labelControl2
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.labelControl2.Location = new System.Drawing.Point(173, 118);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(65, 16);
-            this.labelControl2.TabIndex = 20;
-            this.labelControl2.Text = "Mật khẩu:";
             // 
-            // labelControl1
+            this.Clinience.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.MenuSide2;
+            this.Clinience.Style.BackColorGradientAngle = 90;
+            this.Clinience.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.MenuBackground;
+            this.Clinience.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.Clinience.Style.BorderBottomWidth = 1;
+            this.Clinience.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.Clinience.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.Clinience.Style.BorderLeftWidth = 1;
+            this.Clinience.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.Clinience.Style.BorderRightWidth = 1;
+            this.Clinience.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.Clinience.Style.BorderTopWidth = 1;
+            this.Clinience.Style.CornerDiameter = 4;
+            this.Clinience.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.Clinience.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.Clinience.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.Clinience.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.labelControl1.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
-            this.labelControl1.LineStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.labelControl1.Location = new System.Drawing.Point(173, 69);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(100, 16);
-            this.labelControl1.TabIndex = 19;
-            this.labelControl1.Text = "Tên đăng nhập:";
             // 
-            // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
-            this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
-            this.label2.Location = new System.Drawing.Point(39, 62);
-            this.label2.MaximumSize = new System.Drawing.Size(100, 100);
-            this.label2.MinimumSize = new System.Drawing.Size(100, 100);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 100);
-            this.label2.TabIndex = 18;
+            this.Clinience.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
-            // labelControl3
             // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(192)))), ((int)(((byte)(251)))));
-            this.labelControl3.Location = new System.Drawing.Point(146, 9);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(104, 33);
-            this.labelControl3.TabIndex = 25;
-            this.labelControl3.Text = "Clinience";
             // 
-            // txtTenDangNhap
-            // 
-            this.txtTenDangNhap.Location = new System.Drawing.Point(173, 92);
-            this.txtTenDangNhap.Name = "txtTenDangNhap";
-            this.txtTenDangNhap.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenDangNhap.Properties.Appearance.Options.UseFont = true;
-            this.txtTenDangNhap.Size = new System.Drawing.Size(187, 22);
-            this.txtTenDangNhap.TabIndex = 27;
-            // 
-            // txtMatKhau
-            // 
-            this.txtMatKhau.Location = new System.Drawing.Point(173, 140);
-            this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatKhau.Properties.Appearance.Options.UseFont = true;
-            this.txtMatKhau.Properties.UseSystemPasswordChar = true;
-            this.txtMatKhau.Size = new System.Drawing.Size(187, 22);
-            this.txtMatKhau.TabIndex = 28;
-            // 
-            // btnDangNhap
-            // 
-            this.btnDangNhap.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangNhap.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(179)))), ((int)(((byte)(251)))));
-            this.btnDangNhap.Appearance.Options.UseFont = true;
-            this.btnDangNhap.Appearance.Options.UseForeColor = true;
-            this.btnDangNhap.Image = ((System.Drawing.Image)(resources.GetObject("btnDangNhap.Image")));
-            this.btnDangNhap.Location = new System.Drawing.Point(68, 198);
-            this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(102, 33);
-            this.btnDangNhap.TabIndex = 29;
-            this.btnDangNhap.Text = "Đăng nhập";
-            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
+            this.Clinience.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // btnThoat
             // 
-            this.btnThoat.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(179)))), ((int)(((byte)(251)))));
+            this.btnThoat.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnThoat.Appearance.Font")));
+            this.btnThoat.Appearance.ForeColor = ((System.Drawing.Color)(resources.GetObject("btnThoat.Appearance.ForeColor")));
             this.btnThoat.Appearance.Options.UseFont = true;
             this.btnThoat.Appearance.Options.UseForeColor = true;
             this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
-            this.btnThoat.Location = new System.Drawing.Point(238, 198);
+            resources.ApplyResources(this.btnThoat, "btnThoat");
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(102, 33);
-            this.btnThoat.TabIndex = 30;
-            this.btnThoat.Text = "Thoát";
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
+            // btnDangNhap
+            // 
+            this.btnDangNhap.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnDangNhap.Appearance.Font")));
+            this.btnDangNhap.Appearance.ForeColor = ((System.Drawing.Color)(resources.GetObject("btnDangNhap.Appearance.ForeColor")));
+            this.btnDangNhap.Appearance.Options.UseFont = true;
+            this.btnDangNhap.Appearance.Options.UseForeColor = true;
+            this.btnDangNhap.Image = ((System.Drawing.Image)(resources.GetObject("btnDangNhap.Image")));
+            resources.ApplyResources(this.btnDangNhap, "btnDangNhap");
+            this.btnDangNhap.Name = "btnDangNhap";
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
+            // 
+            // txtMatKhau
+            // 
+            resources.ApplyResources(this.txtMatKhau, "txtMatKhau");
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("txtMatKhau.Properties.Appearance.Font")));
+            this.txtMatKhau.Properties.Appearance.Options.UseFont = true;
+            this.txtMatKhau.Properties.UseSystemPasswordChar = true;
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl1.Appearance.Font")));
+            this.labelControl1.Appearance.ForeColor = ((System.Drawing.Color)(resources.GetObject("labelControl1.Appearance.ForeColor")));
+            this.labelControl1.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
+            this.labelControl1.LineStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            resources.ApplyResources(this.labelControl1, "labelControl1");
+            this.labelControl1.Name = "labelControl1";
+            // 
+            // txtTenDangNhap
+            // 
+            resources.ApplyResources(this.txtTenDangNhap, "txtTenDangNhap");
+            this.txtTenDangNhap.Name = "txtTenDangNhap";
+            this.txtTenDangNhap.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("txtTenDangNhap.Properties.Appearance.Font")));
+            this.txtTenDangNhap.Properties.Appearance.Options.UseFont = true;
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl2.Appearance.Font")));
+            this.labelControl2.Appearance.ForeColor = ((System.Drawing.Color)(resources.GetObject("labelControl2.Appearance.ForeColor")));
+            resources.ApplyResources(this.labelControl2, "labelControl2");
+            this.labelControl2.Name = "labelControl2";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
+            this.label2.Name = "label2";
+            // 
+            // line1
+            // 
+            this.line1.BackColor = System.Drawing.Color.Transparent;
+            this.line1.ForeColor = System.Drawing.SystemColors.Highlight;
+            resources.ApplyResources(this.line1, "line1");
+            this.line1.Name = "line1";
             // 
             // DangNhap
             // 
-            this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Appearance.BackColor = ((System.Drawing.Color)(resources.GetObject("DangNhap.Appearance.BackColor")));
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(456, 290);
             this.ControlBox = false;
-            this.Controls.Add(this.panelControl1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Controls.Add(this.Clinience);
+            this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.None;
+            this.LookAndFeel.SkinName = "Office 2013 Light Gray";
             this.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "DangNhap";
-            this.Opacity = 0.99D;
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Clinience";
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
-            this.panelControl1.ResumeLayout(false);
-            this.panelControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).EndInit();
+            this.Clinience.ResumeLayout(false);
+            this.Clinience.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DevExpress.XtraEditors.PanelControl panelControl1;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevComponents.DotNetBar.Controls.GroupPanel Clinience;
         private System.Windows.Forms.Label label2;
-        private DevExpress.XtraEditors.SimpleButton btnThoat;
-        private DevExpress.XtraEditors.SimpleButton btnDangNhap;
-        private DevExpress.XtraEditors.TextEdit txtMatKhau;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.TextEdit txtTenDangNhap;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.TextEdit txtMatKhau;
+        private DevExpress.XtraEditors.SimpleButton btnDangNhap;
+        private DevExpress.XtraEditors.SimpleButton btnThoat;
+        private DevComponents.DotNetBar.Controls.Line line1;
     }
 }

@@ -100,3 +100,5 @@ F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debu
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.Properties.Resources.resources
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\PresentationLayer.csproj.GenerateResource.Cache
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.exe.licenses
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\DevComponents.DotNetBar2.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\DevComponents.DotNetBar2.xml
