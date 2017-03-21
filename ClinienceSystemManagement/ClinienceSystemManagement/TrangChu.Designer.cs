@@ -72,9 +72,11 @@
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl1
@@ -161,6 +163,7 @@
             this.btnLamSang.Id = 2;
             this.btnLamSang.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnLamSang.LargeGlyph")));
             this.btnLamSang.Name = "btnLamSang";
+            this.btnLamSang.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLamSang_ItemClick);
             // 
             // btnThuoc
             // 
@@ -169,6 +172,7 @@
             this.btnThuoc.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnThuoc.LargeGlyph")));
             this.btnThuoc.LargeWidth = 70;
             this.btnThuoc.Name = "btnThuoc";
+            this.btnThuoc.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThuoc_ItemClick);
             // 
             // btnDoanhThu
             // 
@@ -423,6 +427,10 @@
             this.popupMenu1.Name = "popupMenu1";
             this.popupMenu1.Ribbon = this.ribbonControl1;
             // 
+            // xtraTabbedMdiManager1
+            // 
+            this.xtraTabbedMdiManager1.MdiParent = this;
+            // 
             // TrangChu
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
@@ -432,6 +440,7 @@
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
             this.Name = "TrangChu";
             this.Ribbon = this.ribbonControl1;
             this.StatusBar = this.ribbonStatusBar1;
@@ -441,6 +450,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -488,6 +498,7 @@
         private DevExpress.XtraBars.BarButtonItem btnDangXuat;
         private DevExpress.XtraBars.BarButtonItem btnThoat;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar1;
+        private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
     }
 }
 

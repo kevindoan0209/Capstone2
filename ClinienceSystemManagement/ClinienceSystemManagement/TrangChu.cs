@@ -1,4 +1,5 @@
 ﻿using ClinienceSystemManagement;
+using ClinienceSystemManagement.Hệ_Thống;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -46,6 +47,46 @@ namespace PresentationLayer
             if (dlr == DialogResult.Yes)
             {
                 Application.Exit();
+            }
+        }
+        private Form KiemTraTonTai(Type type)
+        {
+            foreach (Form f in this.MdiChildren)
+            {
+                if (f.GetType() == type)
+                {
+                    return f;
+                }
+            }
+            return null;
+        }
+        private void btnLamSang_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.KiemTraTonTai(typeof(DanhMucCanLamSang));
+            if(frm != null)
+            {
+                frm.Activate();
+            }
+            else
+            {
+                DanhMucCanLamSang formCanLamSang = new DanhMucCanLamSang();
+                formCanLamSang.MdiParent = this;
+                formCanLamSang.Show();
+            }
+        }
+
+        private void btnThuoc_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.KiemTraTonTai(typeof(DanhMucThuoc));
+            if (frm != null)
+            {
+                frm.Activate();
+            }
+            else
+            {
+                DanhMucThuoc formThuoc = new DanhMucThuoc();
+                formThuoc.MdiParent = this;
+                formThuoc.Show();
             }
         }
     }

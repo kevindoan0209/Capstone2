@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar.Layout, Version=14.0.0.15, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.BonusSkins.v15.1" />
     <Reference Include="DevExpress.Data.v15.1" />
@@ -41,7 +42,10 @@
     <Reference Include="DevExpress.XtraBars.v15.1" />
     <Reference Include="DevExpress.Sparkline.v15.1.Core" />
     <Reference Include="DevExpress.XtraEditors.v15.1" />
+    <Reference Include="DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraNavBar.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -60,6 +64,18 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="HeThong\DanhMucCanLamSang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\DanhMucCanLamSang.Designer.cs">
+      <DependentUpon>DanhMucCanLamSang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\DanhMucThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\DanhMucThuoc.Designer.cs">
+      <DependentUpon>DanhMucThuoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="TrangChu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +86,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\DanhMucCanLamSang.resx">
+      <DependentUpon>DanhMucCanLamSang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\DanhMucThuoc.resx">
+      <DependentUpon>DanhMucThuoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TrangChu.resx">
       <DependentUpon>TrangChu.cs</DependentUpon>
@@ -103,6 +125,12 @@
       <Project>{bb7fb89f-a800-4cf5-bf1e-89c913e7a724}</Project>
       <Name>DataAccessLayer</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DatHen\" />
+    <Folder Include="KhamBenh\" />
+    <Folder Include="TaiKhoan\" />
+    <Folder Include="TroGiup\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
