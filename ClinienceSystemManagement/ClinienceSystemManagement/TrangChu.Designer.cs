@@ -34,13 +34,13 @@
             DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation2 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.applicationMenu1 = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
+            this.btnNguoiDung = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonGroup1 = new DevExpress.XtraBars.BarButtonGroup();
             this.btnBenh = new DevExpress.XtraBars.BarButtonItem();
             this.btnLamSang = new DevExpress.XtraBars.BarButtonItem();
             this.btnThuoc = new DevExpress.XtraBars.BarButtonItem();
             this.btnDoanhThu = new DevExpress.XtraBars.BarButtonItem();
-            this.btnNguoiDung = new DevExpress.XtraBars.BarButtonItem();
             this.btnPhongKham = new DevExpress.XtraBars.BarButtonItem();
             this.btnLichTaiKham = new DevExpress.XtraBars.BarButtonItem();
             this.btnLichHen = new DevExpress.XtraBars.BarButtonItem();
@@ -70,6 +70,7 @@
             this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
@@ -105,7 +106,7 @@
             this.btnDangXuat,
             this.btnThoat});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 11;
+            this.ribbonControl1.MaxItemId = 1;
             this.ribbonControl1.MiniToolbars.Add(this.ribbonMiniToolbar1);
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -116,11 +117,21 @@
             this.ribbonPage4});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
             this.ribbonControl1.Size = new System.Drawing.Size(850, 146);
+            this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             // 
             // applicationMenu1
             // 
+            this.applicationMenu1.ItemLinks.Add(this.btnNguoiDung);
             this.applicationMenu1.Name = "applicationMenu1";
             this.applicationMenu1.Ribbon = this.ribbonControl1;
+            // 
+            // btnNguoiDung
+            // 
+            this.btnNguoiDung.Caption = "Người dùng";
+            this.btnNguoiDung.Id = 5;
+            this.btnNguoiDung.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnNguoiDung.LargeGlyph")));
+            this.btnNguoiDung.LargeWidth = 70;
+            this.btnNguoiDung.Name = "btnNguoiDung";
             // 
             // barButtonItem1
             // 
@@ -166,14 +177,6 @@
             this.btnDoanhThu.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnDoanhThu.LargeGlyph")));
             this.btnDoanhThu.LargeWidth = 70;
             this.btnDoanhThu.Name = "btnDoanhThu";
-            // 
-            // btnNguoiDung
-            // 
-            this.btnNguoiDung.Caption = "Người dùng";
-            this.btnNguoiDung.Id = 5;
-            this.btnNguoiDung.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnNguoiDung.LargeGlyph")));
-            this.btnNguoiDung.LargeWidth = 70;
-            this.btnNguoiDung.Name = "btnNguoiDung";
             // 
             // btnPhongKham
             // 
@@ -293,6 +296,10 @@
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThoat_ItemClick);
             // 
+            // ribbonMiniToolbar1
+            // 
+            this.ribbonMiniToolbar1.ItemLinks.Add(this.btnBenh);
+            // 
             // ribbonPage5
             // 
             this.ribbonPage5.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -368,7 +375,7 @@
             this.ribbonPageGroup5.ItemLinks.Add(this.btnThuoc);
             this.ribbonPageGroup5.ItemLinks.Add(this.btnBenh);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
-            this.ribbonPageGroup5.Text = "Loại";
+            this.ribbonPageGroup5.Text = "Danh mục";
             // 
             // ribbonPageGroup8
             // 
@@ -404,6 +411,13 @@
             this.ribbonPageGroup11.Name = "ribbonPageGroup11";
             this.ribbonPageGroup11.Text = "Hướng dẫn";
             // 
+            // ribbonStatusBar1
+            // 
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 381);
+            this.ribbonStatusBar1.Name = "ribbonStatusBar1";
+            this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(850, 31);
+            // 
             // popupMenu1
             // 
             this.popupMenu1.Name = "popupMenu1";
@@ -414,11 +428,13 @@
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(850, 416);
+            this.ClientSize = new System.Drawing.Size(850, 412);
+            this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TrangChu";
             this.Ribbon = this.ribbonControl1;
+            this.StatusBar = this.ribbonStatusBar1;
             this.Text = "Clinience";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.TrangChu_Load);
@@ -471,6 +487,7 @@
         private DevExpress.XtraBars.BarSubItem barSubItem1;
         private DevExpress.XtraBars.BarButtonItem btnDangXuat;
         private DevExpress.XtraBars.BarButtonItem btnThoat;
+        private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar1;
     }
 }
 
