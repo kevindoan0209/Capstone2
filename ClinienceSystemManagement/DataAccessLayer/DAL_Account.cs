@@ -10,12 +10,12 @@ namespace DataAccessLayer
 {
     public class DAL_Account:DbConection
     {
-        public DataTable DangNhap(string TenDangNhap, string MatKhau)
+        public DataTable DangNhap(string tenDangNhap, string matKhau)
         {
-            SqlCommand command = new SqlCommand("Account_Select_DangNhap", connect());
-            command.CommandType = CommandType.StoredProcedure;
-            command.Parameters.AddWithValue("@TenDangNhap", TenDangNhap);
-            command.Parameters.AddWithValue("@MatKhau", MatKhau);
+            String sqlCommand = "select * from Account where Account_Password = @MatKhau and Account_UserName = @TenDangNhap";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@TenDangNhap", tenDangNhap);
+            command.Parameters.AddWithValue("@MatKhau", matKhau);
             SqlDataAdapter data = new SqlDataAdapter(command);
             DataTable dt = new DataTable();
             data.Fill(dt);

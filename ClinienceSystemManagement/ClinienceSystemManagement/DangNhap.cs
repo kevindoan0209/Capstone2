@@ -20,7 +20,7 @@ namespace ClinienceSystemManagement
             String MatKhau = txtMatKhau.Text;
             if (string.IsNullOrEmpty(txtTenDangNhap.Text) || string.IsNullOrEmpty(txtMatKhau.Text))
             {
-                MessageBox.Show("Vui lòng nhập tên đăng nhập và mật khẩu");
+                MessageBox.Show("Vui lòng nhập tên đăng nhập và mật khẩu", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 txtTenDangNhap.Focus();
             }
             else
@@ -31,15 +31,11 @@ namespace ClinienceSystemManagement
                     if (dt.Rows.Count > 0)
                     {
                         DataRow dr = dt.Rows[0];
-                        MessageBox.Show("Đăng nhập thành công");
-                        this.DialogResult = DialogResult.OK;
-                        TrangChu trangchu = new TrangChu();
-                        trangchu.Show();
-                        
+                        this.DialogResult = DialogResult.OK;                 
                     }
                     else
                     {
-                        MessageBox.Show("Đăng nhập thất bại ! Tên đăng nhập hoặc mật khẩu không hợp lệ");
+                        MessageBox.Show("Tên đăng nhập hoặc mật khẩu không hợp lệ", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         txtTenDangNhap.Text = "";
                         txtMatKhau.Text = "";
                         txtTenDangNhap.Focus();
@@ -54,7 +50,11 @@ namespace ClinienceSystemManagement
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult dlr = MessageBox.Show("Bạn có thật sự muốn thoát", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dlr == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }
