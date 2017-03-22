@@ -89,14 +89,18 @@
             // btnHuy
             // 
             this.btnHuy.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.btnHuy.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.Image")));
             resources.ApplyResources(this.btnHuy, "btnHuy");
             this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnTao
             // 
             this.btnTao.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.btnTao.Image = ((System.Drawing.Image)(resources.GetObject("btnTao.Image")));
             resources.ApplyResources(this.btnTao, "btnTao");
             this.btnTao.Name = "btnTao";
+            this.btnTao.Click += new System.EventHandler(this.btnTao_Click);
             // 
             // xtraTabContarol1
             // 
@@ -178,7 +182,7 @@
             resources.ApplyResources(this.cbxPhanNhom, "cbxPhanNhom");
             this.cbxPhanNhom.Name = "cbxPhanNhom";
             this.cbxPhanNhom.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("comboBoxEdit1.Properties.Buttons"))))});
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("cbxPhanNhom.Properties.Buttons"))))});
             // 
             // labelControl2
             // 
@@ -205,28 +209,28 @@
             resources.ApplyResources(this.txtGiaTriNho, "txtGiaTriNho");
             this.txtGiaTriNho.Name = "txtGiaTriNho";
             this.txtGiaTriNho.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("textEdit5.Properties.Buttons"))))});
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txtGiaTriNho.Properties.Buttons"))))});
             this.txtGiaTriNho.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
             this.txtGiaTriNho.Properties.Increment = new decimal(new int[] {
             10,
             0,
             0,
             131072});
-            this.txtGiaTriNho.Properties.Mask.MaskType = ((DevExpress.XtraEditors.Mask.MaskType)(resources.GetObject("textEdit5.Properties.Mask.MaskType")));
+            this.txtGiaTriNho.Properties.Mask.MaskType = ((DevExpress.XtraEditors.Mask.MaskType)(resources.GetObject("txtGiaTriNho.Properties.Mask.MaskType")));
             // 
             // txtGiaTriLon
             // 
             resources.ApplyResources(this.txtGiaTriLon, "txtGiaTriLon");
             this.txtGiaTriLon.Name = "txtGiaTriLon";
             this.txtGiaTriLon.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("textEdit6.Properties.Buttons"))))});
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txtGiaTriLon.Properties.Buttons"))))});
             this.txtGiaTriLon.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
             this.txtGiaTriLon.Properties.Increment = new decimal(new int[] {
             10,
             0,
             0,
             131072});
-            this.txtGiaTriLon.Properties.Mask.MaskType = ((DevExpress.XtraEditors.Mask.MaskType)(resources.GetObject("textEdit6.Properties.Mask.MaskType")));
+            this.txtGiaTriLon.Properties.Mask.MaskType = ((DevExpress.XtraEditors.Mask.MaskType)(resources.GetObject("txtGiaTriLon.Properties.Mask.MaskType")));
             // 
             // xtraTabPage2
             // 
@@ -287,6 +291,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.xtraTabContarol1);
             this.Controls.Add(this.panelControl1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ThemDanhMucCanLamSang";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);

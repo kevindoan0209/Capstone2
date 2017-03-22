@@ -148,3 +148,16 @@ F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debu
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\DevComponents.DotNetBar.Layout.dll
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.Hệ_Thống.DanhMucThuoc.resources
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.HeThong.ThemDanhMucCanLamSang.resources
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\DevExpress.DataAccess.v15.1.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\DevExpress.Xpo.v15.1.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\DevExpress.DataAccess.v15.1.xml
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\DevExpress.Xpo.v15.1.xml
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\de\DevExpress.DataAccess.v15.1.resources.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\es\DevExpress.DataAccess.v15.1.resources.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\ja\DevExpress.DataAccess.v15.1.resources.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\ru\DevExpress.DataAccess.v15.1.resources.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\de\DevExpress.Xpo.v15.1.resources.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\es\DevExpress.Xpo.v15.1.resources.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\ja\DevExpress.Xpo.v15.1.resources.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\ru\DevExpress.Xpo.v15.1.resources.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\ClinienceSystemManagement.exe.config

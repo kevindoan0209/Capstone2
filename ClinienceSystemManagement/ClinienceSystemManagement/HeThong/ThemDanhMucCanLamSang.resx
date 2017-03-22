@@ -117,63 +117,30 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;btnHuy.Name" xml:space="preserve">
-    <value>btnHuy</value>
-  </data>
-  <data name="&gt;&gt;btnHuy.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnHuy.Parent" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;btnHuy.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnTao.Name" xml:space="preserve">
-    <value>btnTao</value>
-  </data>
-  <data name="&gt;&gt;btnTao.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnTao.Parent" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;btnTao.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
+  <metadata name="panelControl1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="btnHuy.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 358</value>
-  </data>
-  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>556, 53</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="btnHuy.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        hQAAAIUB4uz/wQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADWSURBVDhPrVNB
+        DsIgEMSLT7FrfE1p/IdHb/IlY/oUv9Ar6KHXdWcLlTZtTKSHSWHYGWYpGGae4F3TwVtyvqGHfDvFMHZY
+        m9d/J8bsvD1egqVewCvoUYPaqYEQwVbtgmAFVZtM1CDuPBb4mp75fInTJDBAX0KMsV+W7nw+7UND18Rh
+        DA5rIycaaGV3conELijUtgRqAnGcYy1PIoY3gxNOhCIXzDBJJYAWCbqcVCyYzMUAtBsYbNBC2SEW/0Y4
+        F10kjVZ6lZNJTPLHY8qAvnCw8Qn/eM5sPrJJWpkQMOXHAAAAAElFTkSuQmCC
+</value>
   </data>
   <data name="btnHuy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>468, 15</value>
+    <value>460, 15</value>
   </data>
   <data name="btnHuy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+    <value>75, 25</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnHuy.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
@@ -192,17 +159,30 @@
   <data name="&gt;&gt;btnHuy.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="btnTao.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="btnTao.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        cwAAAHMBY8FD/gAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADaSURBVDhPtZM9
+        D8FQFIavv+dvlMEfQIXVcIcyEQOTycYiEoOBTWIyWUSiUY201PdHXzlNSWlpBSd5pvucJ2e5TBB5PSJy
+        ENliFapueNLq9jFb6ORchCTPM4YQAMZuy36BsBDHWJ5bju0XKPJNANYlzkBaKkPRVp6BWrODqapZjmPn
+        /BAgEryETK7iCb09+67Ap/wu0Gj3MJGVQJDrCiyNNfbHEza7w1vIIdczYJpmIF4GtocjjO3+LeS8DASd
+        /1wwGI7svv+Q6wpEUxyxjBQIcu8B53f+FEHk9SsJXgoGAcqBAwAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="btnTao.Location" type="System.Drawing.Point, System.Drawing">
-    <value>387, 15</value>
+    <value>379, 15</value>
   </data>
   <data name="btnTao.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+    <value>75, 25</value>
   </data>
   <data name="btnTao.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="btnTao.Text" xml:space="preserve">
-    <value>Tạo</value>
+    <value>Lưu</value>
   </data>
   <data name="&gt;&gt;btnTao.Name" xml:space="preserve">
     <value>btnTao</value>
@@ -216,8 +196,48 @@
   <data name="&gt;&gt;btnTao.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 362</value>
+  </data>
+  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>556, 53</value>
+  </data>
+  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="xtraTabContarol1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 11</value>
+    <value>25, 15</value>
+  </data>
+  <metadata name="xtraTabPage1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="txtDanhMuc.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="txtDanhMuc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 219</value>
+  </data>
+  <data name="txtDanhMuc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>452, 64</value>
+  </data>
+  <data name="txtDanhMuc.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
   <data name="&gt;&gt;txtDanhMuc.Name" xml:space="preserve">
     <value>txtDanhMuc</value>
@@ -231,6 +251,21 @@
   <data name="&gt;&gt;txtDanhMuc.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="labelControl8.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="labelControl8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 200</value>
+  </data>
+  <data name="labelControl8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 13</value>
+  </data>
+  <data name="labelControl8.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="labelControl8.Text" xml:space="preserve">
+    <value>Danh mục: ( Mỗi mục trên một dòng)</value>
+  </data>
   <data name="&gt;&gt;labelControl8.Name" xml:space="preserve">
     <value>labelControl8</value>
   </data>
@@ -242,6 +277,21 @@
   </data>
   <data name="&gt;&gt;labelControl8.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <metadata name="labelControl7.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="labelControl7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>274, 156</value>
+  </data>
+  <data name="labelControl7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 13</value>
+  </data>
+  <data name="labelControl7.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="labelControl7.Text" xml:space="preserve">
+    <value>Giá trị lớn nhất:</value>
   </data>
   <data name="&gt;&gt;labelControl7.Name" xml:space="preserve">
     <value>labelControl7</value>
@@ -255,6 +305,21 @@
   <data name="&gt;&gt;labelControl7.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <metadata name="labelControl6.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="labelControl6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 155</value>
+  </data>
+  <data name="labelControl6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 13</value>
+  </data>
+  <data name="labelControl6.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="labelControl6.Text" xml:space="preserve">
+    <value>Giá trị nhỏ nhất:</value>
+  </data>
   <data name="&gt;&gt;labelControl6.Name" xml:space="preserve">
     <value>labelControl6</value>
   </data>
@@ -266,6 +331,18 @@
   </data>
   <data name="&gt;&gt;labelControl6.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <metadata name="txtDonVi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="txtDonVi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 129</value>
+  </data>
+  <data name="txtDonVi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <data name="txtDonVi.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
   </data>
   <data name="&gt;&gt;txtDonVi.Name" xml:space="preserve">
     <value>txtDonVi</value>
@@ -279,6 +356,21 @@
   <data name="&gt;&gt;txtDonVi.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <metadata name="labelControl5.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="labelControl5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 110</value>
+  </data>
+  <data name="labelControl5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="labelControl5.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="labelControl5.Text" xml:space="preserve">
+    <value>Đơn vị:</value>
+  </data>
   <data name="&gt;&gt;labelControl5.Name" xml:space="preserve">
     <value>labelControl5</value>
   </data>
@@ -290,6 +382,21 @@
   </data>
   <data name="&gt;&gt;labelControl5.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <metadata name="labelControl4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="labelControl4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>274, 65</value>
+  </data>
+  <data name="labelControl4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 13</value>
+  </data>
+  <data name="labelControl4.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="labelControl4.Text" xml:space="preserve">
+    <value>Giá trị tham chiếu:</value>
   </data>
   <data name="&gt;&gt;labelControl4.Name" xml:space="preserve">
     <value>labelControl4</value>
@@ -303,6 +410,18 @@
   <data name="&gt;&gt;labelControl4.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <metadata name="txtThamChieu.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="txtThamChieu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>274, 86</value>
+  </data>
+  <data name="txtThamChieu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 64</value>
+  </data>
+  <data name="txtThamChieu.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
   <data name="&gt;&gt;txtThamChieu.Name" xml:space="preserve">
     <value>txtThamChieu</value>
   </data>
@@ -314,6 +433,21 @@
   </data>
   <data name="&gt;&gt;txtThamChieu.ZOrder" xml:space="preserve">
     <value>7</value>
+  </data>
+  <metadata name="labelControl3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="labelControl3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>274, 20</value>
+  </data>
+  <data name="labelControl3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 13</value>
+  </data>
+  <data name="labelControl3.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="labelControl3.Text" xml:space="preserve">
+    <value>Phân nhóm:</value>
   </data>
   <data name="&gt;&gt;labelControl3.Name" xml:space="preserve">
     <value>labelControl3</value>
@@ -327,6 +461,22 @@
   <data name="&gt;&gt;labelControl3.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <metadata name="cbxPhanNhom.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="cbxPhanNhom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>274, 39</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v15.1" name="DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="cbxPhanNhom.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.1">
+    <value>Combo</value>
+  </data>
+  <data name="cbxPhanNhom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 20</value>
+  </data>
+  <data name="cbxPhanNhom.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
   <data name="&gt;&gt;cbxPhanNhom.Name" xml:space="preserve">
     <value>cbxPhanNhom</value>
   </data>
@@ -338,6 +488,21 @@
   </data>
   <data name="&gt;&gt;cbxPhanNhom.ZOrder" xml:space="preserve">
     <value>9</value>
+  </data>
+  <metadata name="labelControl2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="labelControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 65</value>
+  </data>
+  <data name="labelControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 13</value>
+  </data>
+  <data name="labelControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="labelControl2.Text" xml:space="preserve">
+    <value>Mã:</value>
   </data>
   <data name="&gt;&gt;labelControl2.Name" xml:space="preserve">
     <value>labelControl2</value>
@@ -351,6 +516,21 @@
   <data name="&gt;&gt;labelControl2.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
+  <metadata name="labelControl1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="labelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 20</value>
+  </data>
+  <data name="labelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 13</value>
+  </data>
+  <data name="labelControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="labelControl1.Text" xml:space="preserve">
+    <value>Tên danh mục cận lâm sàng:</value>
+  </data>
   <data name="&gt;&gt;labelControl1.Name" xml:space="preserve">
     <value>labelControl1</value>
   </data>
@@ -362,6 +542,18 @@
   </data>
   <data name="&gt;&gt;labelControl1.ZOrder" xml:space="preserve">
     <value>11</value>
+  </data>
+  <metadata name="txtMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="txtMa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 84</value>
+  </data>
+  <data name="txtMa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <data name="txtMa.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;txtMa.Name" xml:space="preserve">
     <value>txtMa</value>
@@ -375,6 +567,18 @@
   <data name="&gt;&gt;txtMa.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
+  <metadata name="txtTen.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="txtTen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 39</value>
+  </data>
+  <data name="txtTen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 20</value>
+  </data>
+  <data name="txtTen.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;txtTen.Name" xml:space="preserve">
     <value>txtTen</value>
   </data>
@@ -387,6 +591,28 @@
   <data name="&gt;&gt;txtTen.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
+  <metadata name="txtGiaTriNho.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="txtGiaTriNho.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtGiaTriNho.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 174</value>
+  </data>
+  <data name="txtGiaTriNho.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.1">
+    <value>Combo</value>
+  </data>
+  <assembly alias="DevExpress.XtraEditors.v15.1" name="DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="txtGiaTriNho.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v15.1">
+    <value>None</value>
+  </data>
+  <data name="txtGiaTriNho.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 20</value>
+  </data>
+  <data name="txtGiaTriNho.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
   <data name="&gt;&gt;txtGiaTriNho.Name" xml:space="preserve">
     <value>txtGiaTriNho</value>
   </data>
@@ -398,6 +624,27 @@
   </data>
   <data name="&gt;&gt;txtGiaTriNho.ZOrder" xml:space="preserve">
     <value>14</value>
+  </data>
+  <metadata name="txtGiaTriLon.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="txtGiaTriLon.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtGiaTriLon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>274, 175</value>
+  </data>
+  <data name="txtGiaTriLon.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.1">
+    <value>Combo</value>
+  </data>
+  <data name="txtGiaTriLon.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v15.1">
+    <value>None</value>
+  </data>
+  <data name="txtGiaTriLon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 20</value>
+  </data>
+  <data name="txtGiaTriLon.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
   </data>
   <data name="&gt;&gt;txtGiaTriLon.Name" xml:space="preserve">
     <value>txtGiaTriLon</value>
@@ -435,6 +682,12 @@
   <data name="xtraTabContarol1.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
+  <metadata name="xtraTabPage2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="txtGhiChu.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="txtGhiChu.Location" type="System.Drawing.Point, System.Drawing">
     <value>27, 220</value>
   </data>
@@ -456,6 +709,9 @@
   <data name="&gt;&gt;txtGhiChu.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="labelControl9.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="labelControl9.Location" type="System.Drawing.Point, System.Drawing">
     <value>27, 201</value>
   </data>
@@ -480,6 +736,9 @@
   <data name="&gt;&gt;labelControl9.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <metadata name="labelControl12.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="labelControl12.Location" type="System.Drawing.Point, System.Drawing">
     <value>27, 156</value>
   </data>
@@ -504,6 +763,9 @@
   <data name="&gt;&gt;labelControl12.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <metadata name="txtDiaChi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="txtDiaChi.Location" type="System.Drawing.Point, System.Drawing">
     <value>27, 175</value>
   </data>
@@ -525,6 +787,9 @@
   <data name="&gt;&gt;txtDiaChi.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <metadata name="labelControl11.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="labelControl11.Location" type="System.Drawing.Point, System.Drawing">
     <value>27, 111</value>
   </data>
@@ -549,6 +814,9 @@
   <data name="&gt;&gt;labelControl11.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <metadata name="txtMoTa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="txtMoTa.Location" type="System.Drawing.Point, System.Drawing">
     <value>27, 41</value>
   </data>
@@ -570,6 +838,9 @@
   <data name="&gt;&gt;txtMoTa.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <metadata name="labelControl10.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="labelControl10.Location" type="System.Drawing.Point, System.Drawing">
     <value>27, 22</value>
   </data>
@@ -594,6 +865,9 @@
   <data name="&gt;&gt;labelControl10.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <metadata name="txtTenKhac.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="txtTenKhac.Location" type="System.Drawing.Point, System.Drawing">
     <value>27, 130</value>
   </data>
@@ -645,397 +919,17 @@
   <data name="&gt;&gt;xtraTabContarol1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="txtDanhMuc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 219</value>
-  </data>
-  <data name="txtDanhMuc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>452, 64</value>
-  </data>
-  <data name="txtDanhMuc.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;txtDanhMuc.Name" xml:space="preserve">
-    <value>txtDanhMuc</value>
-  </data>
-  <data name="&gt;&gt;txtDanhMuc.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txtDanhMuc.Parent" xml:space="preserve">
-    <value>xtraTabPage1</value>
-  </data>
-  <data name="&gt;&gt;txtDanhMuc.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="labelControl8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 200</value>
-  </data>
-  <data name="labelControl8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 13</value>
-  </data>
-  <data name="labelControl8.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="labelControl8.Text" xml:space="preserve">
-    <value>Danh mục: ( Mỗi mục trên một dòng)</value>
-  </data>
-  <data name="&gt;&gt;labelControl8.Name" xml:space="preserve">
-    <value>labelControl8</value>
-  </data>
-  <data name="&gt;&gt;labelControl8.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;labelControl8.Parent" xml:space="preserve">
-    <value>xtraTabPage1</value>
-  </data>
-  <data name="&gt;&gt;labelControl8.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="labelControl7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>274, 156</value>
-  </data>
-  <data name="labelControl7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 13</value>
-  </data>
-  <data name="labelControl7.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="labelControl7.Text" xml:space="preserve">
-    <value>Giá trị lớn nhất:</value>
-  </data>
-  <data name="&gt;&gt;labelControl7.Name" xml:space="preserve">
-    <value>labelControl7</value>
-  </data>
-  <data name="&gt;&gt;labelControl7.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;labelControl7.Parent" xml:space="preserve">
-    <value>xtraTabPage1</value>
-  </data>
-  <data name="&gt;&gt;labelControl7.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="labelControl6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 155</value>
-  </data>
-  <data name="labelControl6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 13</value>
-  </data>
-  <data name="labelControl6.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="labelControl6.Text" xml:space="preserve">
-    <value>Giá trị nhỏ nhất:</value>
-  </data>
-  <data name="&gt;&gt;labelControl6.Name" xml:space="preserve">
-    <value>labelControl6</value>
-  </data>
-  <data name="&gt;&gt;labelControl6.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;labelControl6.Parent" xml:space="preserve">
-    <value>xtraTabPage1</value>
-  </data>
-  <data name="&gt;&gt;labelControl6.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="txtDonVi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 129</value>
-  </data>
-  <data name="txtDonVi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 20</value>
-  </data>
-  <data name="txtDonVi.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;txtDonVi.Name" xml:space="preserve">
-    <value>txtDonVi</value>
-  </data>
-  <data name="&gt;&gt;txtDonVi.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txtDonVi.Parent" xml:space="preserve">
-    <value>xtraTabPage1</value>
-  </data>
-  <data name="&gt;&gt;txtDonVi.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="labelControl5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 110</value>
-  </data>
-  <data name="labelControl5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
-  </data>
-  <data name="labelControl5.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="labelControl5.Text" xml:space="preserve">
-    <value>Đơn vị:</value>
-  </data>
-  <data name="&gt;&gt;labelControl5.Name" xml:space="preserve">
-    <value>labelControl5</value>
-  </data>
-  <data name="&gt;&gt;labelControl5.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;labelControl5.Parent" xml:space="preserve">
-    <value>xtraTabPage1</value>
-  </data>
-  <data name="&gt;&gt;labelControl5.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="labelControl4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>274, 65</value>
-  </data>
-  <data name="labelControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 13</value>
-  </data>
-  <data name="labelControl4.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="labelControl4.Text" xml:space="preserve">
-    <value>Giá trị tham chiếu:</value>
-  </data>
-  <data name="&gt;&gt;labelControl4.Name" xml:space="preserve">
-    <value>labelControl4</value>
-  </data>
-  <data name="&gt;&gt;labelControl4.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;labelControl4.Parent" xml:space="preserve">
-    <value>xtraTabPage1</value>
-  </data>
-  <data name="&gt;&gt;labelControl4.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="txtThamChieu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>274, 86</value>
-  </data>
-  <data name="txtThamChieu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 64</value>
-  </data>
-  <data name="txtThamChieu.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;txtThamChieu.Name" xml:space="preserve">
-    <value>txtThamChieu</value>
-  </data>
-  <data name="&gt;&gt;txtThamChieu.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txtThamChieu.Parent" xml:space="preserve">
-    <value>xtraTabPage1</value>
-  </data>
-  <data name="&gt;&gt;txtThamChieu.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="labelControl3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>274, 20</value>
-  </data>
-  <data name="labelControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 13</value>
-  </data>
-  <data name="labelControl3.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="labelControl3.Text" xml:space="preserve">
-    <value>Phân nhóm:</value>
-  </data>
-  <data name="&gt;&gt;labelControl3.Name" xml:space="preserve">
-    <value>labelControl3</value>
-  </data>
-  <data name="&gt;&gt;labelControl3.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;labelControl3.Parent" xml:space="preserve">
-    <value>xtraTabPage1</value>
-  </data>
-  <data name="&gt;&gt;labelControl3.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="cbxPhanNhom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>274, 39</value>
-  </data>
-  <assembly alias="DevExpress.Utils.v15.1" name="DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="comboBoxEdit1.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.1">
-    <value>Combo</value>
-  </data>
-  <data name="cbxPhanNhom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 20</value>
-  </data>
-  <data name="cbxPhanNhom.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;cbxPhanNhom.Name" xml:space="preserve">
-    <value>cbxPhanNhom</value>
-  </data>
-  <data name="&gt;&gt;cbxPhanNhom.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;cbxPhanNhom.Parent" xml:space="preserve">
-    <value>xtraTabPage1</value>
-  </data>
-  <data name="&gt;&gt;cbxPhanNhom.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="labelControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 65</value>
-  </data>
-  <data name="labelControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>18, 13</value>
-  </data>
-  <data name="labelControl2.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="labelControl2.Text" xml:space="preserve">
-    <value>Mã:</value>
-  </data>
-  <data name="&gt;&gt;labelControl2.Name" xml:space="preserve">
-    <value>labelControl2</value>
-  </data>
-  <data name="&gt;&gt;labelControl2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;labelControl2.Parent" xml:space="preserve">
-    <value>xtraTabPage1</value>
-  </data>
-  <data name="&gt;&gt;labelControl2.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="labelControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 20</value>
-  </data>
-  <data name="labelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 13</value>
-  </data>
-  <data name="labelControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="labelControl1.Text" xml:space="preserve">
-    <value>Tên danh mục cận lâm sàng:</value>
-  </data>
-  <data name="&gt;&gt;labelControl1.Name" xml:space="preserve">
-    <value>labelControl1</value>
-  </data>
-  <data name="&gt;&gt;labelControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;labelControl1.Parent" xml:space="preserve">
-    <value>xtraTabPage1</value>
-  </data>
-  <data name="&gt;&gt;labelControl1.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="txtMa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 84</value>
-  </data>
-  <data name="txtMa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 20</value>
-  </data>
-  <data name="txtMa.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;txtMa.Name" xml:space="preserve">
-    <value>txtMa</value>
-  </data>
-  <data name="&gt;&gt;txtMa.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txtMa.Parent" xml:space="preserve">
-    <value>xtraTabPage1</value>
-  </data>
-  <data name="&gt;&gt;txtMa.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="txtTen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 39</value>
-  </data>
-  <data name="txtTen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>225, 20</value>
-  </data>
-  <data name="txtTen.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;txtTen.Name" xml:space="preserve">
-    <value>txtTen</value>
-  </data>
-  <data name="&gt;&gt;txtTen.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txtTen.Parent" xml:space="preserve">
-    <value>xtraTabPage1</value>
-  </data>
-  <data name="&gt;&gt;txtTen.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="txtGiaTriNho.EditValue" type="System.Decimal, mscorlib">
-    <value>0.00</value>
-  </data>
-  <data name="txtGiaTriNho.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 174</value>
-  </data>
-  <data name="textEdit5.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.1">
-    <value>Combo</value>
-  </data>
-  <assembly alias="DevExpress.XtraEditors.v15.1" name="DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="textEdit5.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v15.1">
-    <value>None</value>
-  </data>
-  <data name="txtGiaTriNho.Size" type="System.Drawing.Size, System.Drawing">
-    <value>225, 20</value>
-  </data>
-  <data name="txtGiaTriNho.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;txtGiaTriNho.Name" xml:space="preserve">
-    <value>txtGiaTriNho</value>
-  </data>
-  <data name="&gt;&gt;txtGiaTriNho.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txtGiaTriNho.Parent" xml:space="preserve">
-    <value>xtraTabPage1</value>
-  </data>
-  <data name="&gt;&gt;txtGiaTriNho.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="txtGiaTriLon.EditValue" type="System.Decimal, mscorlib">
-    <value>0.00</value>
-  </data>
-  <data name="txtGiaTriLon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>274, 175</value>
-  </data>
-  <data name="textEdit6.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.1">
-    <value>Combo</value>
-  </data>
-  <data name="textEdit6.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v15.1">
-    <value>None</value>
-  </data>
-  <data name="txtGiaTriLon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 20</value>
-  </data>
-  <data name="txtGiaTriLon.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;txtGiaTriLon.Name" xml:space="preserve">
-    <value>txtGiaTriLon</value>
-  </data>
-  <data name="&gt;&gt;txtGiaTriLon.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txtGiaTriLon.Parent" xml:space="preserve">
-    <value>xtraTabPage1</value>
-  </data>
-  <data name="&gt;&gt;txtGiaTriLon.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>556, 411</value>
+    <value>556, 415</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
