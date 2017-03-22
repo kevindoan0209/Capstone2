@@ -76,6 +76,12 @@
     <Compile Include="HeThong\DanhMucThuoc.Designer.cs">
       <DependentUpon>DanhMucThuoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="HeThong\ThemDanhMucCanLamSang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\ThemDanhMucCanLamSang.Designer.cs">
+      <DependentUpon>ThemDanhMucCanLamSang.cs</DependentUpon>
+    </Compile>
     <Compile Include="TrangChu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HeThong\DanhMucThuoc.resx">
       <DependentUpon>DanhMucThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\ThemDanhMucCanLamSang.resx">
+      <DependentUpon>ThemDanhMucCanLamSang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TrangChu.resx">
       <DependentUpon>TrangChu.cs</DependentUpon>
