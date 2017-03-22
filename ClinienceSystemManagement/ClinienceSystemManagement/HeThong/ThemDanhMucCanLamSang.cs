@@ -17,5 +17,7 @@ namespace ClinienceSystemManagement.HeThong
         {
             InitializeComponent();
         }
+
+       
     }
 }
