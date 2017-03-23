@@ -222,24 +222,54 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panelControl2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <metadata name="panelControl1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="labelControl1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="labelControl1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
+  <data name="labelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>365, 16</value>
+  </data>
+  <data name="labelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>351, 14</value>
+  </data>
+  <data name="labelControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="labelControl1.Text" xml:space="preserve">
+    <value>* Nhấn chuột phải trên danh sách để xóa hoặc cập nhật dữ liệu</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Name" xml:space="preserve">
+    <value>labelControl1</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="btnLamMoi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="btnLamMoi.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAAG8AAABvAfGi3EMAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
-        AAABNUlEQVQ4T6VTQU7DQAzsA4ADnBAfQYIvwC1StkFIFAmRLTyAU/sUTnlFpSqbtHAOlzym1eJJ7eBd
-        9oDEYVR57Jl6bWfivf8XkiTw5O7ObWNuyjq/fd5mF6ka4BdRtsWldaYj+Ai9bc11XB8EL664osI9C/bU
-        wRf9wmwnXOnMm9YEBoBt8sXcmff56v5MuMdtdkriSkx0J6OwbMyDXWdHEqegTHrhDol6uuTEZtbOjiUZ
-        gzsZniOD1eID6vzj9bM4icUCqhkGjO0gHkgEbNDpYg2Ywpzr+M+myyGJdpjcoc1YLMDzqGYjYnBjksie
-        TSrhUsCgMXCJfxK0GhLLDVS6E6wUq8WKhRMEAY5EmWDaHR/TeFw4Nq0JDADuRJ6j0eHM4/og0MBgh+3Q
-        B4UPK1UDJMm/w0++AWZJpqNq3h9oAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        bwAAAG8B8aLcQwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAE1SURBVDhPpVNB
+        TsNADOwDgAOcEB9Bgi/ALVK2QUgUCZEtPIBT+xROeUWlKpu0cA6XPKbV4knt4F32gMRhVHnsmXptZ+K9
+        /xeSJPDk7s5tY27KOr993mYXqRrgF1G2xaV1piP4CL1tzXVcHwQvrriiwj0L9tTBF/3CbCdc6cyb1gQG
+        gG3yxdyZ9/nq/ky4x212SuJKTHQno7BszINdZ0cSp6BMeuEOiXq65MRm1s6OJRmDOxmeI4PV4gPq/OP1
+        sziJxQKqGQaM7SAeSARs0OliDZjCnOv4z6bLIYl2mNyhzVgswPOoZiNicGOSyJ5NKuFSwKAxcIl/ErQa
+        EssNVLoTrBSrxYqFEwQBjkSZYNodH9N4XDg2rQkMAO5EnqPR4czj+iDQwGCH7dAHhQ8rVQMkyb/DT74B
+        Zkmmo2reH2gAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="btnLamMoi.Location" type="System.Drawing.Point, System.Drawing">
@@ -264,7 +294,7 @@
     <value>panelControl1</value>
   </data>
   <data name="&gt;&gt;btnLamMoi.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="btnThem.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -300,7 +330,7 @@
     <value>panelControl1</value>
   </data>
   <data name="&gt;&gt;btnThem.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
@@ -324,7 +354,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
+  </data>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>153, 17</value>
+  </metadata>
+  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 48</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
+    <value>contextMenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="grcDanhMuc.DataMember" xml:space="preserve">
     <value>Paraclinical</value>
@@ -378,16 +420,16 @@
     <value>2</value>
   </data>
   <assembly alias="DevExpress.Data.v15.1" name="DevExpress.Data.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="gridView1.GroupSummary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v15.1">
+  <data name="gvData.GroupSummary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v15.1">
     <value>Count</value>
   </data>
-  <data name="gridView1.GroupSummary1" xml:space="preserve">
+  <data name="gvData.GroupSummary1" xml:space="preserve">
     <value>Paraclinical.Paraclinical_Group_Name</value>
   </data>
-  <data name="gridView1.GroupSummary2" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="gvData.GroupSummary2" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="gridView1.GroupSummary3" xml:space="preserve">
+  <data name="gvData.GroupSummary3" xml:space="preserve">
     <value>(Count={0})</value>
   </data>
   <data name="grcDanhMuc.Size" type="System.Drawing.Size, System.Drawing">
@@ -406,7 +448,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;grcDanhMuc.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
+  </data>
+  <data name="cmsCapNhat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 22</value>
+  </data>
+  <data name="cmsCapNhat.Text" xml:space="preserve">
+    <value>Cập nhật</value>
+  </data>
+  <data name="cmsXoa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 22</value>
+  </data>
+  <data name="cmsXoa.Text" xml:space="preserve">
+    <value>Xóa</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -707,16 +761,28 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Danh mục cận lâm sàng</value>
   </data>
+  <data name="&gt;&gt;cmsCapNhat.Name" xml:space="preserve">
+    <value>cmsCapNhat</value>
+  </data>
+  <data name="&gt;&gt;cmsCapNhat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmsXoa.Name" xml:space="preserve">
+    <value>cmsXoa</value>
+  </data>
+  <data name="&gt;&gt;cmsXoa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;sqlDataSource1.Name" xml:space="preserve">
     <value>sqlDataSource1</value>
   </data>
   <data name="&gt;&gt;sqlDataSource1.Type" xml:space="preserve">
     <value>DevExpress.DataAccess.Sql.SqlDataSource, DevExpress.DataAccess.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;gridView1.Name" xml:space="preserve">
-    <value>gridView1</value>
+  <data name="&gt;&gt;gvData.Name" xml:space="preserve">
+    <value>gvData</value>
   </data>
-  <data name="&gt;&gt;gridView1.Type" xml:space="preserve">
+  <data name="&gt;&gt;gvData.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;colParaclinical_ID.Name" xml:space="preserve">

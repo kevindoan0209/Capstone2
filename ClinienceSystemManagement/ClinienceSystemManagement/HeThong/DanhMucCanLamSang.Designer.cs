@@ -45,23 +45,28 @@
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.btnLamMoi = new DevExpress.XtraEditors.SimpleButton();
             this.btnThem = new DevExpress.XtraEditors.SimpleButton();
             this.grcDanhMuc = new DevExpress.XtraGrid.GridControl();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.cmsCapNhat = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsXoa = new System.Windows.Forms.ToolStripMenuItem();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gvData = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colParaclinical_ID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colParaclinical_Name = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colParaclinical_ReferenceValue = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colParaclinical_ValueMin = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colParaclinical_ValueMax = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colParaclinical_Group_Name = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.btnLamMoi = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grcDanhMuc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvData)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl2
@@ -85,10 +90,19 @@
             // 
             // panelControl1
             // 
+            this.panelControl1.Controls.Add(this.labelControl1);
             this.panelControl1.Controls.Add(this.btnLamMoi);
             this.panelControl1.Controls.Add(this.btnThem);
             resources.ApplyResources(this.panelControl1, "panelControl1");
             this.panelControl1.Name = "panelControl1";
+            // 
+            // btnLamMoi
+            // 
+            this.btnLamMoi.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.btnLamMoi.Image = ((System.Drawing.Image)(resources.GetObject("btnLamMoi.Image")));
+            resources.ApplyResources(this.btnLamMoi, "btnLamMoi");
+            this.btnLamMoi.Name = "btnLamMoi";
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // btnThem
             // 
@@ -100,12 +114,35 @@
             // 
             // grcDanhMuc
             // 
+            this.grcDanhMuc.ContextMenuStrip = this.contextMenuStrip1;
             resources.ApplyResources(this.grcDanhMuc, "grcDanhMuc");
             this.grcDanhMuc.DataSource = this.sqlDataSource1;
-            this.grcDanhMuc.MainView = this.gridView1;
+            this.grcDanhMuc.MainView = this.gvData;
             this.grcDanhMuc.Name = "grcDanhMuc";
             this.grcDanhMuc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
+            this.gvData});
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cmsCapNhat,
+            this.cmsXoa});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
+            // 
+            // cmsCapNhat
+            // 
+            this.cmsCapNhat.BackColor = System.Drawing.SystemColors.Control;
+            this.cmsCapNhat.Name = "cmsCapNhat";
+            resources.ApplyResources(this.cmsCapNhat, "cmsCapNhat");
+            this.cmsCapNhat.Click += new System.EventHandler(this.cmsCapNhat_Click);
+            // 
+            // cmsXoa
+            // 
+            this.cmsXoa.BackColor = System.Drawing.SystemColors.Control;
+            this.cmsXoa.Name = "cmsXoa";
+            resources.ApplyResources(this.cmsXoa, "cmsXoa");
+            this.cmsXoa.Click += new System.EventHandler(this.cmsXoa_Click);
             // 
             // sqlDataSource1
             // 
@@ -143,21 +180,21 @@
             tableQuery2});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
-            // gridView1
+            // gvData
             // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gvData.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colParaclinical_ID,
             this.colParaclinical_Name,
             this.colParaclinical_ReferenceValue,
             this.colParaclinical_ValueMin,
             this.colParaclinical_ValueMax,
             this.colParaclinical_Group_Name});
-            this.gridView1.GridControl = this.grcDanhMuc;
-            this.gridView1.GroupSummary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridGroupSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridView1.GroupSummary"))), resources.GetString("gridView1.GroupSummary1"), ((DevExpress.XtraGrid.Columns.GridColumn)(resources.GetObject("gridView1.GroupSummary2"))), resources.GetString("gridView1.GroupSummary3"))});
-            this.gridView1.Name = "gridView1";
-            this.gridView1.OptionsFind.AlwaysVisible = true;
-            this.gridView1.OptionsFind.FindNullPrompt = "Nhập vào thông tin tìm kiếm...";
+            this.gvData.GridControl = this.grcDanhMuc;
+            this.gvData.GroupSummary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridGroupSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gvData.GroupSummary"))), resources.GetString("gvData.GroupSummary1"), ((DevExpress.XtraGrid.Columns.GridColumn)(resources.GetObject("gvData.GroupSummary2"))), resources.GetString("gvData.GroupSummary3"))});
+            this.gvData.Name = "gvData";
+            this.gvData.OptionsFind.AlwaysVisible = true;
+            this.gvData.OptionsFind.FindNullPrompt = "Nhập vào thông tin tìm kiếm...";
             // 
             // colParaclinical_ID
             // 
@@ -195,13 +232,11 @@
             this.colParaclinical_Group_Name.Name = "colParaclinical_Group_Name";
             resources.ApplyResources(this.colParaclinical_Group_Name, "colParaclinical_Group_Name");
             // 
-            // btnLamMoi
+            // labelControl1
             // 
-            this.btnLamMoi.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.btnLamMoi.Image = ((System.Drawing.Image)(resources.GetObject("btnLamMoi.Image")));
-            resources.ApplyResources(this.btnLamMoi, "btnLamMoi");
-            this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
+            resources.ApplyResources(this.labelControl1, "labelControl1");
+            this.labelControl1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl1.Appearance.Font")));
+            this.labelControl1.Name = "labelControl1";
             // 
             // DanhMucCanLamSang
             // 
@@ -216,8 +251,10 @@
             this.panelControl2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
+            this.panelControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grcDanhMuc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvData)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -230,7 +267,7 @@
         private System.Windows.Forms.TextBox txtTimKiem;
         private DevExpress.XtraEditors.SimpleButton btnThem;
         private DevExpress.XtraGrid.GridControl grcDanhMuc;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gvData;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
         private DevExpress.XtraGrid.Columns.GridColumn colParaclinical_ID;
         private DevExpress.XtraGrid.Columns.GridColumn colParaclinical_Name;
@@ -239,5 +276,9 @@
         private DevExpress.XtraGrid.Columns.GridColumn colParaclinical_ValueMax;
         private DevExpress.XtraGrid.Columns.GridColumn colParaclinical_Group_Name;
         private DevExpress.XtraEditors.SimpleButton btnLamMoi;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem cmsCapNhat;
+        private System.Windows.Forms.ToolStripMenuItem cmsXoa;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
     }
 }

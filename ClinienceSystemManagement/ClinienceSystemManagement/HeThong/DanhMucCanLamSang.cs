@@ -43,7 +43,8 @@ namespace ClinienceSystemManagement
             else
             {
                 ChiTietCanLamSang formThemCanLamSang = new ChiTietCanLamSang();
-                formThemCanLamSang.ShowDialog();
+                formThemCanLamSang.ShowDialog();     
+                sqlDataSource1.Fill();
             }
         }
         public void button1_Click(object sender, EventArgs e)
@@ -53,6 +54,39 @@ namespace ClinienceSystemManagement
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
             sqlDataSource1.Fill();
+        }
+
+        private void cmsCapNhat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmsXoa_Click(object sender, EventArgs e)
+        {
+            if (XtraMessageBox.Show("Bạn có muốn xóa không?","Clinience",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                int rowIndex = gvData.FocusedRowHandle;
+                string colID = "Paraclinical_ID";
+                string colName = "Paraclinical_Name";
+                object value = gvData.GetRowCellValue(rowIndex, colID);
+                if (value != null)
+                {
+                    DataClinienceDataContext db = new DataClinienceDataContext();
+                    var danhMuc = db.Paraclinicals.Where(s => s.Paraclinical_ID == value).SingleOrDefault();
+                    if(danhMuc != null)
+                    {
+                        db.Paraclinicals.DeleteOnSubmit(danhMuc);
+                        db.SubmitChanges();
+                        sqlDataSource1.Fill();
+                        XtraMessageBox.Show("Đã xóa thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);     
+                    }      
+                }
+                else
+                {
+                    XtraMessageBox.Show("Bạn chưa chọn đối tượng cần xóa", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
+            }
         }
     }
 
