@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 29.625" name="DataClinience">
+  <DataContextMoniker Name="/DataClinienceDataContext" />
+  <nestedChildShapes>
+    <classShape Id="2683e262-7c88-480e-8e1e-90bf47a29f8b" absoluteBounds="1.75, 13.125, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/DataClinienceDataContext/Account" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e566eba9-6154-4f88-9cbe-8ee0b932e752" absoluteBounds="1.7650000000000001, 13.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a325259b-13af-49d3-9a20-0142ea4570da" absoluteBounds="2, 16.375, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/DataClinienceDataContext/Account_Type" />
+      <nestedChildShapes>
+        <elementListCompartment Id="29190765-d3ce-431c-8939-64abdc24411f" absoluteBounds="2.015, 16.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b912779f-a6f3-411a-ab46-0444afe0ba35" absoluteBounds="3.5, 6.5, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/DataClinienceDataContext/Appointment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4d7430a5-cd5c-46b1-8981-8ae7da66e6b0" absoluteBounds="3.515, 6.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8d756576-a95f-48d0-bdf3-e678977a618e" absoluteBounds="3.5, 18.5, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/DataClinienceDataContext/Disease" />
+      <nestedChildShapes>
+        <elementListCompartment Id="db11c0c0-f55f-4ef4-80b7-8000ddf9bb6b" absoluteBounds="3.515, 18.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="159f88f8-baec-44e4-827d-1b250caa1044" absoluteBounds="0.75, 2.875, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/DataClinienceDataContext/Doctor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="48a19ac8-a743-4f0b-a46b-0eb7cad6335b" absoluteBounds="0.765, 3.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1a9887a0-1588-41ca-a045-3222464770d8" absoluteBounds="1.5, 9.75, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/DataClinienceDataContext/Human" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9f2dd5fa-f83b-4a20-aa83-86b91618a0f2" absoluteBounds="1.5150000000000001, 10.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4ff93535-0a28-4a26-8615-c18aa14c1eba" absoluteBounds="3.5, 26.25, 2, 2.3478011067708309">
+      <DataClassMoniker Name="/DataClinienceDataContext/Medicine" />
+      <nestedChildShapes>
+        <elementListCompartment Id="42feca5e-3a1c-4340-8ff6-171d5a297867" absoluteBounds="3.515, 26.71, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2c85dae5-6da2-40df-871d-b390723dadc9" absoluteBounds="0.75, 27.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataClinienceDataContext/Medicine_Ingredient" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c1151f1c-5d16-4b20-81b9-c6841f04d11e" absoluteBounds="0.765, 28.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0e4eb41c-b9c4-4c82-96fb-85c84fca8d1e" absoluteBounds="0.75, 25.625, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/DataClinienceDataContext/Medicine_Unit" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1d2c6cc2-40b3-4335-9179-286d76541c88" absoluteBounds="0.765, 26.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b80d167b-1628-4f49-8107-b48f2dc14ab5" absoluteBounds="3.5, 20.875, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/DataClinienceDataContext/Paraclinical" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9babd14e-aad1-4440-867a-d53a13467d9f" absoluteBounds="3.515, 21.335, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5db145de-6425-4f01-96a5-9ae5316c8e10" absoluteBounds="0.75, 21.875, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/DataClinienceDataContext/Paraclinical_Group" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cff41e3c-d2ca-481d-b28f-40daa37df018" absoluteBounds="0.765, 22.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a8997e2e-2174-4904-8dfc-89635ca4086d" absoluteBounds="6.25, 3.875, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/DataClinienceDataContext/Paraclinical_Medicine" />
+      <nestedChildShapes>
+        <elementListCompartment Id="808e1089-83de-4cf6-bc47-14a39948665e" absoluteBounds="6.265, 4.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dd517183-641d-4155-80fc-2c8f958cb052" absoluteBounds="0.75, 6, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/DataClinienceDataContext/Patient" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7628c972-7789-4601-8781-5cf8d6bade8a" absoluteBounds="0.765, 6.46, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="26b5f076-cecb-4350-928a-fa9b948cccf0" absoluteBounds="3.5, 3.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DataClinienceDataContext/Precription" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f48424ea-e327-4b6c-97c0-66a61f65a7a8" absoluteBounds="3.515, 3.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d28c96de-5713-48e2-bd66-46bce5aaca0a" absoluteBounds="6.25, 0.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DataClinienceDataContext/Precription_Disease" />
+      <nestedChildShapes>
+        <elementListCompartment Id="674af1c2-b613-409b-89c8-147efd2a12eb" absoluteBounds="6.265, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="74e4b5e6-08e1-4c7f-a7fa-b645fd59b934" absoluteBounds="6.25, 6.5, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/DataClinienceDataContext/Precription_Medicine" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e4775874-b03f-4f0c-911c-0ee109c5567e" absoluteBounds="6.265, 6.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.875 : 16.375); (2.875 : 14.8958968098958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClinienceDataContext/Account_Type/Account_Type_Account" />
+      <nodes>
+        <classShapeMoniker Id="a325259b-13af-49d3-9a20-0142ea4570da" />
+        <classShapeMoniker Id="2683e262-7c88-480e-8e1e-90bf47a29f8b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.06899251302083); (3.125 : 4.44399251302083); (3.125 : 7.48159912109375); (3.19791666666667 : 7.48159912109375 : JumpStart); (3.36458333333333 : 7.48159912109375 : JumpEnd); (3.5 : 7.48159912109375)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClinienceDataContext/Doctor/Doctor_Appointment" />
+      <nodes>
+        <classShapeMoniker Id="159f88f8-baec-44e4-827d-1b250caa1044" />
+        <classShapeMoniker Id="b912779f-a6f3-411a-ab46-0444afe0ba35" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.28125 : 9.75); (3.28125 : 3.44074375651042); (2.75 : 3.44074375651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClinienceDataContext/Human/Human_Doctor" />
+      <nodes>
+        <classShapeMoniker Id="1a9887a0-1588-41ca-a045-3222464770d8" />
+        <classShapeMoniker Id="159f88f8-baec-44e4-827d-1b250caa1044" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.625 : 13.125); (2.625 : 12.2901025390625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClinienceDataContext/Account/Account_Human" />
+      <nodes>
+        <classShapeMoniker Id="2683e262-7c88-480e-8e1e-90bf47a29f8b" />
+        <classShapeMoniker Id="1a9887a0-1588-41ca-a045-3222464770d8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 28.1739005533854); (3.5 : 28.1739005533854)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClinienceDataContext/Medicine_Ingredient/Medicine_Ingredient_Medicine" />
+      <nodes>
+        <classShapeMoniker Id="2c85dae5-6da2-40df-871d-b390723dadc9" />
+        <classShapeMoniker Id="4ff93535-0a28-4a26-8615-c18aa14c1eba" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 26.6306469726563); (3.5 : 26.6306469726563)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClinienceDataContext/Medicine_Unit/Medicine_Unit_Medicine" />
+      <nodes>
+        <classShapeMoniker Id="0e4eb41c-b9c4-4c82-96fb-85c84fca8d1e" />
+        <classShapeMoniker Id="4ff93535-0a28-4a26-8615-c18aa14c1eba" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 22.4719962565104); (3.5 : 22.4719962565104)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClinienceDataContext/Paraclinical_Group/Paraclinical_Group_Paraclinical" />
+      <nodes>
+        <classShapeMoniker Id="5db145de-6425-4f01-96a5-9ae5316c8e10" />
+        <classShapeMoniker Id="b80d167b-1628-4f49-8107-b48f2dc14ab5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 20.875); (5.875 : 20.5); (5.875 : 4.47199625651042); (5.97916666666667 : 4.47199625651042 : JumpStart); (6.14583333333333 : 4.47199625651042 : JumpEnd); (6.25 : 4.47199625651042)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClinienceDataContext/Paraclinical/Paraclinical_Paraclinical_Medicine" />
+      <nodes>
+        <classShapeMoniker Id="b80d167b-1628-4f49-8107-b48f2dc14ab5" />
+        <classShapeMoniker Id="a8997e2e-2174-4904-8dfc-89635ca4086d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.92829956054688); (3.04166666666667 : 6.92829956054687 : JumpStart); (3.36458333333333 : 6.92829956054688 : JumpEnd); (3.5 : 6.92829956054688)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClinienceDataContext/Patient/Patient_Appointment" />
+      <nodes>
+        <classShapeMoniker Id="dd517183-641d-4155-80fc-2c8f958cb052" />
+        <classShapeMoniker Id="b912779f-a6f3-411a-ab46-0444afe0ba35" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.11099812825521); (5.97916666666667 : 4.11099812825521 : JumpStart); (6.14583333333333 : 4.11099812825521 : JumpEnd); (6.25 : 4.11099812825521)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClinienceDataContext/Precription/Precription_Paraclinical_Medicine" />
+      <nodes>
+        <classShapeMoniker Id="26b5f076-cecb-4350-928a-fa9b948cccf0" />
+        <classShapeMoniker Id="a8997e2e-2174-4904-8dfc-89635ca4086d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 3.78611563476563); (3.19791666666667 : 3.78611563476563 : JumpStart); (3.36458333333333 : 3.78611563476563 : JumpEnd); (3.5 : 3.78611563476563)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClinienceDataContext/Doctor/Doctor_Precription" />
+      <nodes>
+        <classShapeMoniker Id="159f88f8-baec-44e4-827d-1b250caa1044" />
+        <classShapeMoniker Id="26b5f076-cecb-4350-928a-fa9b948cccf0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.06307592307692); (2.9375 : 5.87557592307692); (2.9375 : 6.09453713601763); (3.06607443490112 : 5.96596270111651 : JumpStart); (3.18392556509888 : 5.84811157091875 : JumpEnd); (3.22232443490112 : 5.80971270111651 : JumpStart); (3.34017556509888 : 5.69186157091875 : JumpEnd); (3.50153746153846 : 5.53049967447917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClinienceDataContext/Patient/Patient_Precription" />
+      <nodes>
+        <classShapeMoniker Id="dd517183-641d-4155-80fc-2c8f958cb052" />
+        <classShapeMoniker Id="26b5f076-cecb-4350-928a-fa9b948cccf0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 18.5618490375601); (5.81607443490112 : 18.245774602659 : JumpStart); (5.93392556509888 : 18.1279234724612 : JumpEnd); (6.0625 : 17.9993490375601); (6.0625 : 1.44314697265625); (6.25 : 1.44314697265625)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClinienceDataContext/Disease/Disease_Precription_Disease" />
+      <nodes>
+        <classShapeMoniker Id="8d756576-a95f-48d0-bdf3-e678977a618e" />
+        <classShapeMoniker Id="d28c96de-5713-48e2-bd66-46bce5aaca0a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 3.375); (4.5 : 1.82097295898437); (5.97916666666667 : 1.82097295898437 : JumpStart); (6.14583333333333 : 1.82097295898437 : JumpEnd); (6.25 : 1.82097295898437)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClinienceDataContext/Precription/Precription_Precription_Disease" />
+      <nodes>
+        <classShapeMoniker Id="26b5f076-cecb-4350-928a-fa9b948cccf0" />
+        <classShapeMoniker Id="d28c96de-5713-48e2-bd66-46bce5aaca0a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 27.4239005533854); (7.25 : 27.4239005533854); (7.25 : 8.4631982421875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClinienceDataContext/Medicine/Medicine_Precription_Medicine" />
+      <nodes>
+        <classShapeMoniker Id="4ff93535-0a28-4a26-8615-c18aa14c1eba" />
+        <classShapeMoniker Id="74e4b5e6-08e1-4c7f-a7fa-b645fd59b934" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 5.46896021294071); (5.81607443490112 : 5.78503464784183 : JumpStart); (5.93392556509888 : 5.90288577803958 : JumpEnd); (5.9375 : 5.90646021294071); (5.9375 : 7.48159912109375); (5.97916666666667 : 7.48159912109375 : JumpStart); (6.14583333333333 : 7.48159912109375 : JumpEnd); (6.25 : 7.48159912109375)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClinienceDataContext/Precription/Precription_Precription_Medicine" />
+      <nodes>
+        <classShapeMoniker Id="26b5f076-cecb-4350-928a-fa9b948cccf0" />
+        <classShapeMoniker Id="74e4b5e6-08e1-4c7f-a7fa-b645fd59b934" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

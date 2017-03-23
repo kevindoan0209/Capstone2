@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using ClinienceSystemManagement.HeThong;
+using DataAccessLayer;
 
 namespace ClinienceSystemManagement
 {
@@ -34,23 +35,25 @@ namespace ClinienceSystemManagement
         }
         private void btnThem_Click(object sender, EventArgs e)
         {
-            Form frm = this.KiemTraTonTai(typeof(ThemDanhMucCanLamSang));
+            Form frm = this.KiemTraTonTai(typeof(ChiTietCanLamSang));
             if (frm != null)
             {
                 frm.Activate();
             }
             else
             {
-                ThemDanhMucCanLamSang formThemCanLamSang = new ThemDanhMucCanLamSang();
-                formThemCanLamSang.Show();
+                ChiTietCanLamSang formThemCanLamSang = new ChiTietCanLamSang();
+                formThemCanLamSang.ShowDialog();
             }
         }
-
-        private void DanhMucCanLamSang_Load(object sender, EventArgs e)
+        public void button1_Click(object sender, EventArgs e)
         {
-
+            sqlDataSource1.Fill();
         }
-
-
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            sqlDataSource1.Fill();
+        }
     }
+
 }

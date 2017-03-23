@@ -8,3 +8,4 @@ F:\GitHub\Capstone2\ClinienceSystemManagement\DataAccessLayer\bin\Debug\DataAcce
 F:\GitHub\Capstone2\ClinienceSystemManagement\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
 F:\GitHub\Capstone2\ClinienceSystemManagement\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 F:\GitHub\Capstone2\ClinienceSystemManagement\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+F:\GitHub\Capstone2\ClinienceSystemManagement\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config

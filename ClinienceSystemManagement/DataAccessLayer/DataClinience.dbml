@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ClinienceSystemManagement" Class="DataClinienceDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-M75UEQH\SQLEXPRESS;Initial Catalog=ClinienceSystemManagement;Integrated Security=True;Encrypt=False;TrustServerCertificate=True" SettingsObjectName="DataAccessLayer.Properties.Settings" SettingsPropertyName="ClinienceSystemManagementConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Account" Member="Accounts">
+    <Type Name="Account">
+      <Column Name="Account_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Account_Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Account_UserName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Account_Password" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Account_Type_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Account_Human" Member="Human" ThisKey="Account_ID" OtherKey="Account_ID" Type="Human" Cardinality="One" />
+      <Association Name="Account_Type_Account" Member="Account_Type" ThisKey="Account_Type_ID" OtherKey="Account_Type_ID" Type="Account_Type" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Account_Type" Member="Account_Types">
+    <Type Name="Account_Type">
+      <Column Name="Account_Type_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Account_Type_Authority" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="Account_Type_Account" Member="Accounts" ThisKey="Account_Type_ID" OtherKey="Account_Type_ID" Type="Account" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Appointment" Member="Appointments">
+    <Type Name="Appointment">
+      <Column Name="Appointment_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Appointment_Time" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Appointment_Duration" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Appointment_Note" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Account_ID_Patient" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Account_ID_Doctor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Doctor_Appointment" Member="Doctor" ThisKey="Account_ID_Doctor" OtherKey="Account_ID" Type="Doctor" IsForeignKey="true" />
+      <Association Name="Patient_Appointment" Member="Patient" ThisKey="Account_ID_Patient" OtherKey="Account_ID" Type="Patient" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Disease" Member="Diseases">
+    <Type Name="Disease">
+      <Column Name="Disease_ID" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Disease_Name" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Disease_Description" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Association Name="Disease_Precription_Disease" Member="Precription_Diseases" ThisKey="Disease_ID" OtherKey="Disease_ID" Type="Precription_Disease" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Doctor" Member="Doctors">
+    <Type Name="Doctor">
+      <Column Name="Account_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Doctor_Professional" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Doctor_Appointment" Member="Appointments" ThisKey="Account_ID" OtherKey="Account_ID_Doctor" Type="Appointment" />
+      <Association Name="Doctor_Precription" Member="Precriptions" ThisKey="Account_ID" OtherKey="Account_ID_Doctor" Type="Precription" />
+      <Association Name="Human_Doctor" Member="Human" ThisKey="Account_ID" OtherKey="Account_ID" Type="Human" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Human" Member="Humans">
+    <Type Name="Human">
+      <Column Name="Account_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Account_Age" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Account_Sex" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Account_Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Account_Phone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Account_Job" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Account_City" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Account_Address" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Account_Note" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Association Name="Human_Doctor" Member="Doctor" ThisKey="Account_ID" OtherKey="Account_ID" Type="Doctor" Cardinality="One" />
+      <Association Name="Account_Human" Member="Account" ThisKey="Account_ID" OtherKey="Account_ID" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Medicine" Member="Medicines">
+    <Type Name="Medicine">
+      <Column Name="Medicine_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Medicine_Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Unit_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Ingredient_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Medicine_Usage" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Medicine_Quantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Medicine_Note" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Medicine_Price" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Medicine_Precription_Medicine" Member="Precription_Medicines" ThisKey="Medicine_ID" OtherKey="Medicine_ID" Type="Precription_Medicine" />
+      <Association Name="Medicine_Ingredient_Medicine" Member="Medicine_Ingredient" ThisKey="Ingredient_ID" OtherKey="Ingredient_ID" Type="Medicine_Ingredient" IsForeignKey="true" />
+      <Association Name="Medicine_Unit_Medicine" Member="Medicine_Unit" ThisKey="Unit_ID" OtherKey="Unit_ID" Type="Medicine_Unit" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Medicine_Ingredient" Member="Medicine_Ingredients">
+    <Type Name="Medicine_Ingredient">
+      <Column Name="Ingredient_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Ingredient_Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Ingredient_Unit" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ingredient_Content" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Medicine_Ingredient_Medicine" Member="Medicines" ThisKey="Ingredient_ID" OtherKey="Ingredient_ID" Type="Medicine" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Medicine_Unit" Member="Medicine_Units">
+    <Type Name="Medicine_Unit">
+      <Column Name="Unit_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Unit_Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Unit_Note" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Association Name="Medicine_Unit_Medicine" Member="Medicines" ThisKey="Unit_ID" OtherKey="Unit_ID" Type="Medicine" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Paraclinical" Member="Paraclinicals">
+    <Type Name="Paraclinical">
+      <Column Name="Paraclinical_ID" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Paraclinical_Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Paraclinical_Group_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Paraclinical_Note" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Paraclinical_Unit" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Paraclinical_AnotherName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Paraclinical_Link" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Paraclinical_Description" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Paraclinical_ReferenceValue" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Paraclinical_ValueMin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Paraclinical_ValueMax" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Paraclinical_Category" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Association Name="Paraclinical_Paraclinical_Medicine" Member="Paraclinical_Medicines" ThisKey="Paraclinical_ID" OtherKey="Paraclinical_ID" Type="Paraclinical_Medicine" />
+      <Association Name="Paraclinical_Group_Paraclinical" Member="Paraclinical_Group" ThisKey="Paraclinical_Group_ID" OtherKey="Paraclinical_Group_ID" Type="Paraclinical_Group" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Paraclinical_Group" Member="Paraclinical_Groups">
+    <Type Name="Paraclinical_Group">
+      <Column Name="Paraclinical_Group_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Paraclinical_Group_Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Paraclinical_Group_Paraclinical" Member="Paraclinicals" ThisKey="Paraclinical_Group_ID" OtherKey="Paraclinical_Group_ID" Type="Paraclinical" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Paraclinical_Medicine" Member="Paraclinical_Medicines">
+    <Type Name="Paraclinical_Medicine">
+      <Column Name="Paraclinical_ID" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Precription_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Paraclinical_Paraclinical_Medicine" Member="Paraclinical" ThisKey="Paraclinical_ID" OtherKey="Paraclinical_ID" Type="Paraclinical" IsForeignKey="true" />
+      <Association Name="Precription_Paraclinical_Medicine" Member="Precription" ThisKey="Precription_ID" OtherKey="Precription_ID" Type="Precription" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Patient" Member="Patients">
+    <Type Name="Patient">
+      <Column Name="Account_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Patient_Issue" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Patient_Note" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Patient_Temperature" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Patient_BloodPressure" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Patient_Pulse" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Patient_Breathing" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Patient_Weight" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Patient_Height" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Patient_Waist" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Patient_Hips" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Patient_Appointment" Member="Appointments" ThisKey="Account_ID" OtherKey="Account_ID_Patient" Type="Appointment" />
+      <Association Name="Patient_Precription" Member="Precriptions" ThisKey="Account_ID" OtherKey="Account_ID_Patient" Type="Precription" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Precription" Member="Precriptions">
+    <Type Name="Precription">
+      <Column Name="Precription_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Precription_Note" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Precription_Date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Precription_Money" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Precription_Amount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Account_ID_Patient" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Account_ID_Doctor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Precription_Paraclinical_Medicine" Member="Paraclinical_Medicines" ThisKey="Precription_ID" OtherKey="Precription_ID" Type="Paraclinical_Medicine" />
+      <Association Name="Precription_Precription_Disease" Member="Precription_Diseases" ThisKey="Precription_ID" OtherKey="Precription_ID" Type="Precription_Disease" />
+      <Association Name="Precription_Precription_Medicine" Member="Precription_Medicines" ThisKey="Precription_ID" OtherKey="Precription_ID" Type="Precription_Medicine" />
+      <Association Name="Doctor_Precription" Member="Doctor" ThisKey="Account_ID_Doctor" OtherKey="Account_ID" Type="Doctor" IsForeignKey="true" />
+      <Association Name="Patient_Precription" Member="Patient" ThisKey="Account_ID_Patient" OtherKey="Account_ID" Type="Patient" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Precription_Disease" Member="Precription_Diseases">
+    <Type Name="Precription_Disease">
+      <Column Name="Precription_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Disease_ID" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Comment" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Association Name="Disease_Precription_Disease" Member="Disease" ThisKey="Disease_ID" OtherKey="Disease_ID" Type="Disease" IsForeignKey="true" />
+      <Association Name="Precription_Precription_Disease" Member="Precription" ThisKey="Precription_ID" OtherKey="Precription_ID" Type="Precription" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Precription_Medicine" Member="Precription_Medicines">
+    <Type Name="Precription_Medicine">
+      <Column Name="Precription_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Medicine_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Quantity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Discount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Note" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Medicine_Precription_Medicine" Member="Medicine" ThisKey="Medicine_ID" OtherKey="Medicine_ID" Type="Medicine" IsForeignKey="true" />
+      <Association Name="Precription_Precription_Medicine" Member="Precription" ThisKey="Precription_ID" OtherKey="Precription_ID" Type="Precription" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

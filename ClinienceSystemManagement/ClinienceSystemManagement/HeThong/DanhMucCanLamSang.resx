@@ -227,44 +227,44 @@
   <metadata name="panelControl1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="btnThem.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="btnLamMoi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="&gt;&gt;btnThem.Name" xml:space="preserve">
-    <value>btnThem</value>
+  <data name="btnLamMoi.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAG8AAABvAfGi3EMAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAABNUlEQVQ4T6VTQU7DQAzsA4ADnBAfQYIvwC1StkFIFAmRLTyAU/sUTnlFpSqbtHAOlzym1eJJ7eBd
+        9oDEYVR57Jl6bWfivf8XkiTw5O7ObWNuyjq/fd5mF6ka4BdRtsWldaYj+Ai9bc11XB8EL664osI9C/bU
+        wRf9wmwnXOnMm9YEBoBt8sXcmff56v5MuMdtdkriSkx0J6OwbMyDXWdHEqegTHrhDol6uuTEZtbOjiUZ
+        gzsZniOD1eID6vzj9bM4icUCqhkGjO0gHkgEbNDpYg2Ywpzr+M+myyGJdpjcoc1YLMDzqGYjYnBjksie
+        TSrhUsCgMXCJfxK0GhLLDVS6E6wUq8WKhRMEAY5EmWDaHR/TeFw4Nq0JDADuRJ6j0eHM4/og0MBgh+3Q
+        B4UPK1UDJMm/w0++AWZJpqNq3h9oAAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="&gt;&gt;btnThem.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="btnLamMoi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 9</value>
   </data>
-  <data name="&gt;&gt;btnThem.Parent" xml:space="preserve">
-    <value>panelControl1</value>
+  <data name="btnLamMoi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 28</value>
   </data>
-  <data name="&gt;&gt;btnThem.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 410</value>
-  </data>
-  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>738, 44</value>
-  </data>
-  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnLamMoi.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
+  <data name="btnLamMoi.Text" xml:space="preserve">
+    <value>Làm mới</value>
+  </data>
+  <data name="&gt;&gt;btnLamMoi.Name" xml:space="preserve">
+    <value>btnLamMoi</value>
+  </data>
+  <data name="&gt;&gt;btnLamMoi.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnLamMoi.Parent" xml:space="preserve">
     <value>panelControl1</value>
   </data>
-  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;btnLamMoi.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="btnThem.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -300,9 +300,33 @@
     <value>panelControl1</value>
   </data>
   <data name="&gt;&gt;btnThem.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
-  <data name="gridControl1.DataMember" xml:space="preserve">
+  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 410</value>
+  </data>
+  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>738, 44</value>
+  </data>
+  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="grcDanhMuc.DataMember" xml:space="preserve">
     <value>Paraclinical</value>
   </data>
   <metadata name="sqlDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -311,10 +335,10 @@
   <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlBhcmFjbGluaWNhbCI+PEZpZWxkIE5hbWU9IlBhcmFjbGluaWNhbF9JRCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQYXJhY2xpbmljYWxfTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQYXJhY2xpbmljYWxfUmVmZXJlbmNlVmFsdWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUGFyYWNsaW5pY2FsX1ZhbHVlTWluIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUGFyYWNsaW5pY2FsX1ZhbHVlTWF4IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUGFyYWNsaW5pY2FsX0dyb3VwX05hbWUiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
   </data>
-  <data name="gridControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="grcDanhMuc.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="grcDanhMuc.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 61</value>
   </data>
   <data name="colParaclinical_ID.Visible" type="System.Boolean, mscorlib">
@@ -366,22 +390,22 @@
   <data name="gridView1.GroupSummary3" xml:space="preserve">
     <value>(Count={0})</value>
   </data>
-  <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="grcDanhMuc.Size" type="System.Drawing.Size, System.Drawing">
     <value>738, 349</value>
   </data>
-  <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
+  <data name="grcDanhMuc.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;gridControl1.Name" xml:space="preserve">
-    <value>gridControl1</value>
+  <data name="&gt;&gt;grcDanhMuc.Name" xml:space="preserve">
+    <value>grcDanhMuc</value>
   </data>
-  <data name="&gt;&gt;gridControl1.Type" xml:space="preserve">
+  <data name="&gt;&gt;grcDanhMuc.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;gridControl1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;grcDanhMuc.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;gridControl1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;grcDanhMuc.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

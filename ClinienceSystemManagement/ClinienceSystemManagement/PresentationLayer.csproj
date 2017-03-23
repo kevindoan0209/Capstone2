@@ -50,6 +50,7 @@
     <Reference Include="DevExpress.XtraPrinting.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -78,11 +79,11 @@
     <Compile Include="HeThong\DanhMucThuoc.Designer.cs">
       <DependentUpon>DanhMucThuoc.cs</DependentUpon>
     </Compile>
-    <Compile Include="HeThong\ThemDanhMucCanLamSang.cs">
+    <Compile Include="HeThong\ChiTietCanLamSang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HeThong\ThemDanhMucCanLamSang.Designer.cs">
-      <DependentUpon>ThemDanhMucCanLamSang.cs</DependentUpon>
+    <Compile Include="HeThong\ChiTietCanLamSang.Designer.cs">
+      <DependentUpon>ChiTietCanLamSang.cs</DependentUpon>
     </Compile>
     <Compile Include="TrangChu.cs">
       <SubType>Form</SubType>
@@ -101,8 +102,8 @@
     <EmbeddedResource Include="HeThong\DanhMucThuoc.resx">
       <DependentUpon>DanhMucThuoc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HeThong\ThemDanhMucCanLamSang.resx">
-      <DependentUpon>ThemDanhMucCanLamSang.cs</DependentUpon>
+    <EmbeddedResource Include="HeThong\ChiTietCanLamSang.resx">
+      <DependentUpon>ChiTietCanLamSang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TrangChu.resx">
       <DependentUpon>TrangChu.cs</DependentUpon>

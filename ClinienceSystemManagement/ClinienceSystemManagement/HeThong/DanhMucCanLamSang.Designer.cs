@@ -30,23 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DanhMucCanLamSang));
-            DevExpress.DataAccess.Sql.TableQuery tableQuery4 = new DevExpress.DataAccess.Sql.TableQuery();
-            DevExpress.DataAccess.Sql.RelationInfo relationInfo4 = new DevExpress.DataAccess.Sql.RelationInfo();
-            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo4 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
-            DevExpress.DataAccess.Sql.TableInfo tableInfo7 = new DevExpress.DataAccess.Sql.TableInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo19 = new DevExpress.DataAccess.Sql.ColumnInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo20 = new DevExpress.DataAccess.Sql.ColumnInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo21 = new DevExpress.DataAccess.Sql.ColumnInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo22 = new DevExpress.DataAccess.Sql.ColumnInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo23 = new DevExpress.DataAccess.Sql.ColumnInfo();
-            DevExpress.DataAccess.Sql.TableInfo tableInfo8 = new DevExpress.DataAccess.Sql.TableInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo24 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.TableQuery tableQuery2 = new DevExpress.DataAccess.Sql.TableQuery();
+            DevExpress.DataAccess.Sql.RelationInfo relationInfo2 = new DevExpress.DataAccess.Sql.RelationInfo();
+            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo2 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
+            DevExpress.DataAccess.Sql.TableInfo tableInfo3 = new DevExpress.DataAccess.Sql.TableInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo7 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo8 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo9 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo10 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo11 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.TableInfo tableInfo4 = new DevExpress.DataAccess.Sql.TableInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo12 = new DevExpress.DataAccess.Sql.ColumnInfo();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btnThem = new DevExpress.XtraEditors.SimpleButton();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.grcDanhMuc = new DevExpress.XtraGrid.GridControl();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colParaclinical_ID = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -55,11 +55,12 @@
             this.colParaclinical_ValueMin = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colParaclinical_ValueMax = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colParaclinical_Group_Name = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.btnLamMoi = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grcDanhMuc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,6 +85,7 @@
             // 
             // panelControl1
             // 
+            this.panelControl1.Controls.Add(this.btnLamMoi);
             this.panelControl1.Controls.Add(this.btnThem);
             resources.ApplyResources(this.panelControl1, "panelControl1");
             this.panelControl1.Name = "panelControl1";
@@ -96,49 +98,49 @@
             this.btnThem.Name = "btnThem";
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // gridControl1
+            // grcDanhMuc
             // 
-            resources.ApplyResources(this.gridControl1, "gridControl1");
-            this.gridControl1.DataSource = this.sqlDataSource1;
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            resources.ApplyResources(this.grcDanhMuc, "grcDanhMuc");
+            this.grcDanhMuc.DataSource = this.sqlDataSource1;
+            this.grcDanhMuc.MainView = this.gridView1;
+            this.grcDanhMuc.Name = "grcDanhMuc";
+            this.grcDanhMuc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
             // sqlDataSource1
             // 
             this.sqlDataSource1.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            tableQuery4.Name = "Paraclinical";
-            relationColumnInfo4.NestedKeyColumn = "Paraclinical_Group_ID";
-            relationColumnInfo4.ParentKeyColumn = "Paraclinical_Group_ID";
-            relationInfo4.KeyColumns.AddRange(new DevExpress.DataAccess.Sql.RelationColumnInfo[] {
-            relationColumnInfo4});
-            relationInfo4.NestedTable = "Paraclinical_Group";
-            relationInfo4.ParentTable = "Paraclinical";
-            tableQuery4.Relations.AddRange(new DevExpress.DataAccess.Sql.RelationInfo[] {
-            relationInfo4});
-            tableInfo7.Name = "Paraclinical";
-            columnInfo19.Name = "Paraclinical_ID";
-            columnInfo20.Name = "Paraclinical_Name";
-            columnInfo21.Name = "Paraclinical_ReferenceValue";
-            columnInfo22.Name = "Paraclinical_ValueMin";
-            columnInfo23.Name = "Paraclinical_ValueMax";
-            tableInfo7.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
-            columnInfo19,
-            columnInfo20,
-            columnInfo21,
-            columnInfo22,
-            columnInfo23});
-            tableInfo8.Name = "Paraclinical_Group";
-            columnInfo24.Name = "Paraclinical_Group_Name";
-            tableInfo8.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
-            columnInfo24});
-            tableQuery4.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
-            tableInfo7,
-            tableInfo8});
+            tableQuery2.Name = "Paraclinical";
+            relationColumnInfo2.NestedKeyColumn = "Paraclinical_Group_ID";
+            relationColumnInfo2.ParentKeyColumn = "Paraclinical_Group_ID";
+            relationInfo2.KeyColumns.AddRange(new DevExpress.DataAccess.Sql.RelationColumnInfo[] {
+            relationColumnInfo2});
+            relationInfo2.NestedTable = "Paraclinical_Group";
+            relationInfo2.ParentTable = "Paraclinical";
+            tableQuery2.Relations.AddRange(new DevExpress.DataAccess.Sql.RelationInfo[] {
+            relationInfo2});
+            tableInfo3.Name = "Paraclinical";
+            columnInfo7.Name = "Paraclinical_ID";
+            columnInfo8.Name = "Paraclinical_Name";
+            columnInfo9.Name = "Paraclinical_ReferenceValue";
+            columnInfo10.Name = "Paraclinical_ValueMin";
+            columnInfo11.Name = "Paraclinical_ValueMax";
+            tableInfo3.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
+            columnInfo7,
+            columnInfo8,
+            columnInfo9,
+            columnInfo10,
+            columnInfo11});
+            tableInfo4.Name = "Paraclinical_Group";
+            columnInfo12.Name = "Paraclinical_Group_Name";
+            tableInfo4.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
+            columnInfo12});
+            tableQuery2.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
+            tableInfo3,
+            tableInfo4});
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            tableQuery4});
+            tableQuery2});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // gridView1
@@ -150,7 +152,7 @@
             this.colParaclinical_ValueMin,
             this.colParaclinical_ValueMax,
             this.colParaclinical_Group_Name});
-            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.GridControl = this.grcDanhMuc;
             this.gridView1.GroupSummary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridGroupSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridView1.GroupSummary"))), resources.GetString("gridView1.GroupSummary1"), ((DevExpress.XtraGrid.Columns.GridColumn)(resources.GetObject("gridView1.GroupSummary2"))), resources.GetString("gridView1.GroupSummary3"))});
             this.gridView1.Name = "gridView1";
@@ -193,21 +195,28 @@
             this.colParaclinical_Group_Name.Name = "colParaclinical_Group_Name";
             resources.ApplyResources(this.colParaclinical_Group_Name, "colParaclinical_Group_Name");
             // 
+            // btnLamMoi
+            // 
+            this.btnLamMoi.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.btnLamMoi.Image = ((System.Drawing.Image)(resources.GetObject("btnLamMoi.Image")));
+            resources.ApplyResources(this.btnLamMoi, "btnLamMoi");
+            this.btnLamMoi.Name = "btnLamMoi";
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
+            // 
             // DanhMucCanLamSang
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.gridControl1);
+            this.Controls.Add(this.grcDanhMuc);
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.panelControl2);
             this.Name = "DanhMucCanLamSang";
-            this.Load += new System.EventHandler(this.DanhMucCanLamSang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             this.panelControl2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grcDanhMuc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -220,7 +229,7 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private System.Windows.Forms.TextBox txtTimKiem;
         private DevExpress.XtraEditors.SimpleButton btnThem;
-        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.GridControl grcDanhMuc;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
         private DevExpress.XtraGrid.Columns.GridColumn colParaclinical_ID;
@@ -229,5 +238,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colParaclinical_ValueMin;
         private DevExpress.XtraGrid.Columns.GridColumn colParaclinical_ValueMax;
         private DevExpress.XtraGrid.Columns.GridColumn colParaclinical_Group_Name;
+        private DevExpress.XtraEditors.SimpleButton btnLamMoi;
     }
 }
