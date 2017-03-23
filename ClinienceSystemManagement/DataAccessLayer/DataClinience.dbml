@@ -105,8 +105,8 @@
       <Column Name="Paraclinical_Link" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
       <Column Name="Paraclinical_Description" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
       <Column Name="Paraclinical_ReferenceValue" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="Paraclinical_ValueMin" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Paraclinical_ValueMax" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Paraclinical_ValueMin" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Paraclinical_ValueMax" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="Paraclinical_Category" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
       <Association Name="Paraclinical_Paraclinical_Medicine" Member="Paraclinical_Medicines" ThisKey="Paraclinical_ID" OtherKey="Paraclinical_ID" Type="Paraclinical_Medicine" />
       <Association Name="Paraclinical_Group_Paraclinical" Member="Paraclinical_Group" ThisKey="Paraclinical_Group_ID" OtherKey="Paraclinical_Group_ID" Type="Paraclinical_Group" IsForeignKey="true" />

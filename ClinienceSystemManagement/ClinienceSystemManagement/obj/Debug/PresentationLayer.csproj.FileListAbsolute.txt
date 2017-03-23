@@ -158,7 +158,6 @@ F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debu
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\ja\DevExpress.Xpo.v15.1.resources.dll
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\ru\DevExpress.Xpo.v15.1.resources.dll
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\ClinienceSystemManagement.exe.config
-F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.HeThong.ChiTietCanLamSang.resources
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\DevExpress.CodeRush.Common.dll
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\DevExpress.CodeRush.Core.dll
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\DevExpress.CodeRush.Extensions.dll
@@ -203,3 +202,4 @@ F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debu
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\VSLangProj2.xml
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.Login.resources
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\PresentationLayer.Home.resources
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.HeThong.ParaclinicalDetail.resources

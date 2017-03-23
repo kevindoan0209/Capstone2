@@ -11,9 +11,9 @@ using DevExpress.XtraEditors;
 
 namespace ClinienceSystemManagement.HeThong
 {
-    public partial class ChiTietDanhMucThuoc : DevExpress.XtraEditors.XtraForm
+    public partial class MedicineDetail : DevExpress.XtraEditors.XtraForm
     {
-        public ChiTietDanhMucThuoc()
+        public MedicineDetail()
         {
             InitializeComponent();
         }

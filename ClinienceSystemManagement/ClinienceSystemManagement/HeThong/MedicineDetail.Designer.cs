@@ -1,6 +1,6 @@
 ﻿namespace ClinienceSystemManagement.HeThong
 {
-    partial class ChiTietDanhMucThuoc
+    partial class MedicineDetail
     {
         /// <summary>
         /// Required designer variable.

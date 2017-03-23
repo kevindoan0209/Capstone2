@@ -32,6 +32,7 @@ namespace ClinienceSystemManagement
                     {
                         DataRow dr = dt.Rows[0];
                         this.DialogResult = DialogResult.OK;
+                        XtraMessageBox.Show("Đăng nhập thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {

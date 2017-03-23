@@ -75,29 +75,29 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="HeThong\ChiTietDanhMucThuoc.cs">
+    <Compile Include="HeThong\MedicineDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HeThong\ChiTietDanhMucThuoc.Designer.cs">
-      <DependentUpon>ChiTietDanhMucThuoc.cs</DependentUpon>
+    <Compile Include="HeThong\MedicineDetail.Designer.cs">
+      <DependentUpon>MedicineDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="HeThong\DanhMucCanLamSang.cs">
+    <Compile Include="HeThong\Paraclinical.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HeThong\DanhMucCanLamSang.Designer.cs">
-      <DependentUpon>DanhMucCanLamSang.cs</DependentUpon>
+    <Compile Include="HeThong\Paraclinical.Designer.cs">
+      <DependentUpon>Paraclinical.cs</DependentUpon>
     </Compile>
-    <Compile Include="HeThong\DanhMucThuoc.cs">
+    <Compile Include="HeThong\Medicine.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HeThong\DanhMucThuoc.Designer.cs">
-      <DependentUpon>DanhMucThuoc.cs</DependentUpon>
+    <Compile Include="HeThong\Medicine.Designer.cs">
+      <DependentUpon>Medicine.cs</DependentUpon>
     </Compile>
-    <Compile Include="HeThong\ChiTietCanLamSang.cs">
+    <Compile Include="HeThong\ParaclinicalDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HeThong\ChiTietCanLamSang.Designer.cs">
-      <DependentUpon>ChiTietCanLamSang.cs</DependentUpon>
+    <Compile Include="HeThong\ParaclinicalDetail.Designer.cs">
+      <DependentUpon>ParaclinicalDetail.cs</DependentUpon>
     </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -110,14 +110,14 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HeThong\DanhMucCanLamSang.resx">
-      <DependentUpon>DanhMucCanLamSang.cs</DependentUpon>
+    <EmbeddedResource Include="HeThong\Paraclinical.resx">
+      <DependentUpon>Paraclinical.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HeThong\DanhMucThuoc.resx">
-      <DependentUpon>DanhMucThuoc.cs</DependentUpon>
+    <EmbeddedResource Include="HeThong\Medicine.resx">
+      <DependentUpon>Medicine.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HeThong\ChiTietCanLamSang.resx">
-      <DependentUpon>ChiTietCanLamSang.cs</DependentUpon>
+    <EmbeddedResource Include="HeThong\ParaclinicalDetail.resx">
+      <DependentUpon>ParaclinicalDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>

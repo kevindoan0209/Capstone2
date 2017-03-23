@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using ClinienceSystemManagement.HeThong;
@@ -22,7 +17,8 @@ namespace ClinienceSystemManagement
             // Fill a SqlDataSource
             sqlDataSource1.Fill();
         }
-        private Form KiemTraTonTai(Type type)
+
+        private Form IsExits(Type type)
         {
             foreach (Form f in this.MdiChildren)
             {
@@ -33,25 +29,23 @@ namespace ClinienceSystemManagement
             }
             return null;
         }
+
         private void btnThem_Click(object sender, EventArgs e)
         {
-            Form frm = this.KiemTraTonTai(typeof(ChiTietCanLamSang));
+            Form frm = this.IsExits(typeof(ParaclinicalDetail));
             if (frm != null)
             {
                 frm.Activate();
             }
             else
             {
-                ChiTietCanLamSang formThemCanLamSang = new ChiTietCanLamSang();
-                formThemCanLamSang.isAdd = true;
-                formThemCanLamSang.ShowDialog();     
+                ParaclinicalDetail pd = new ParaclinicalDetail();
+                pd.isAdd = true;
+                pd.ShowDialog();
                 sqlDataSource1.Fill();
             }
         }
-        public void button1_Click(object sender, EventArgs e)
-        {
-            sqlDataSource1.Fill();
-        }
+
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
             sqlDataSource1.Fill();
@@ -64,12 +58,12 @@ namespace ClinienceSystemManagement
             object value = gvData.GetRowCellValue(rowIndex, colID);
             if (value != null)
             {
-                ChiTietCanLamSang formThemCanLamSang = new ChiTietCanLamSang();
-                formThemCanLamSang.Id = (string)value;
-                formThemCanLamSang.isAdd = false;
-                formThemCanLamSang.ShowDialog();
+                ParaclinicalDetail pd = new ParaclinicalDetail();
+                pd.Id = (string)value;
+                pd.isAdd = false;
+                pd.ShowDialog();
                 sqlDataSource1.Fill();
-                XtraMessageBox.Show("Cập nhật thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
+             
             }
             else
             {
@@ -78,30 +72,34 @@ namespace ClinienceSystemManagement
         }
         private void cmsXoa_Click(object sender, EventArgs e)
         {
-            if (XtraMessageBox.Show("Bạn có muốn xóa không?", "Clinience",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
+            if (XtraMessageBox.Show("Bạn có muốn xóa không?", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 int rowIndex = gvData.FocusedRowHandle;
-                string colID = "Paraclinical_ID";           
+                string colID = "Paraclinical_ID";
                 object value = gvData.GetRowCellValue(rowIndex, colID);
                 if (value != null)
                 {
-                    DataClinienceDataContext db = new DataClinienceDataContext();
-                    var danhMuc = db.Paraclinicals.Where(s => s.Paraclinical_ID == (string)value).SingleOrDefault();
-                    if(danhMuc != null)
+                    DataClinienceDataContext dc = new DataClinienceDataContext();
+                    var para = dc.Paraclinicals.Where(s => s.Paraclinical_ID == (string)value).SingleOrDefault();
+                    if (para != null)
                     {
-                        db.Paraclinicals.DeleteOnSubmit(danhMuc);
-                        db.SubmitChanges();
+                        dc.Paraclinicals.DeleteOnSubmit(para);
+                        dc.SubmitChanges();
                         sqlDataSource1.Fill();
-                        XtraMessageBox.Show("Đã xóa thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);     
-                    }      
+                        XtraMessageBox.Show("Đã xóa thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
                 else
                 {
                     XtraMessageBox.Show("Bạn chưa chọn đối tượng cần xóa", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-
             }
         }
-    }
 
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            string data = txtTimKiem.Text;
+            txtTimKiem.Text = "";
+        }
+    }
 }

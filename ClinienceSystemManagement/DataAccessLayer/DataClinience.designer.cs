@@ -2160,9 +2160,9 @@ namespace DataAccessLayer
 		
 		private string _Paraclinical_ReferenceValue;
 		
-		private System.Nullable<int> _Paraclinical_ValueMin;
+		private System.Nullable<double> _Paraclinical_ValueMin;
 		
-		private System.Nullable<int> _Paraclinical_ValueMax;
+		private System.Nullable<double> _Paraclinical_ValueMax;
 		
 		private string _Paraclinical_Category;
 		
@@ -2192,9 +2192,9 @@ namespace DataAccessLayer
     partial void OnParaclinical_DescriptionChanged();
     partial void OnParaclinical_ReferenceValueChanging(string value);
     partial void OnParaclinical_ReferenceValueChanged();
-    partial void OnParaclinical_ValueMinChanging(System.Nullable<int> value);
+    partial void OnParaclinical_ValueMinChanging(System.Nullable<double> value);
     partial void OnParaclinical_ValueMinChanged();
-    partial void OnParaclinical_ValueMaxChanging(System.Nullable<int> value);
+    partial void OnParaclinical_ValueMaxChanging(System.Nullable<double> value);
     partial void OnParaclinical_ValueMaxChanged();
     partial void OnParaclinical_CategoryChanging(string value);
     partial void OnParaclinical_CategoryChanged();
@@ -2391,8 +2391,8 @@ namespace DataAccessLayer
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Paraclinical_ValueMin", DbType="Int")]
-		public System.Nullable<int> Paraclinical_ValueMin
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Paraclinical_ValueMin", DbType="Float")]
+		public System.Nullable<double> Paraclinical_ValueMin
 		{
 			get
 			{
@@ -2411,8 +2411,8 @@ namespace DataAccessLayer
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Paraclinical_ValueMax", DbType="Int")]
-		public System.Nullable<int> Paraclinical_ValueMax
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Paraclinical_ValueMax", DbType="Float")]
+		public System.Nullable<double> Paraclinical_ValueMax
 		{
 			get
 			{
