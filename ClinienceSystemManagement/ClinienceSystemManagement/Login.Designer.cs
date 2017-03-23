@@ -1,6 +1,6 @@
 ﻿namespace ClinienceSystemManagement
 {
-    partial class DangNhap
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DangNhap));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.Clinience = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.line1 = new DevComponents.DotNetBar.Controls.Line();
             this.label2 = new System.Windows.Forms.Label();

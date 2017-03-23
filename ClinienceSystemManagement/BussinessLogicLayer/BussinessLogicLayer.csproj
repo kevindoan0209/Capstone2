@@ -42,8 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL_TaiKhoan.cs" />
-    <Compile Include="BLL_CanLamSang.cs" />
+    <Compile Include="BLL_Account.cs" />
+    <Compile Include="BLL_Paraclinical.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

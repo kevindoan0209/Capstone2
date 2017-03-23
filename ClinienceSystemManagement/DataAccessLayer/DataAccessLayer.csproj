@@ -41,8 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAL_CanLamSang.cs" />
-    <Compile Include="DAL_TaiKhoan.cs" />
+    <Compile Include="DAL_Paraclinical.cs" />
+    <Compile Include="DAL_Account.cs" />
     <Compile Include="DataClinience.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

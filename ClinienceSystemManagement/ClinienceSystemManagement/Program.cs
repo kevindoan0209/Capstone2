@@ -21,7 +21,7 @@ namespace PresentationLayer
 
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
-            Application.Run(new TrangChu());
+            Application.Run(new Home());
         }
     }
 }

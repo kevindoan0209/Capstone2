@@ -105,7 +105,7 @@ namespace ClinienceSystemManagement.HeThong
                             string thamChieu = txtThamChieu.Text;
                             string phanNhom = lkePhanNhom.GetColumnValue("Paraclinical_Group_ID").ToString();
                             int maNhom = Convert.ToInt32(phanNhom.ToString());
-                            BLL_CanLamSang.CapNhat(tenCanLamSang, ma, giaTriNho, giaTriLon, tenKhac, donVi, danhMuc, diaChi, ghiChu, moTa, thamChieu, maNhom);
+                            BLL_Paraclinical.Update(tenCanLamSang, ma, giaTriNho, giaTriLon, tenKhac, donVi, danhMuc, diaChi, ghiChu, moTa, thamChieu, maNhom);
                             this.Close();
                         }
                     }
@@ -160,7 +160,7 @@ namespace ClinienceSystemManagement.HeThong
                                 string thamChieu = txtThamChieu.Text;
                                 string phanNhom = lkePhanNhom.GetColumnValue("Paraclinical_Group_ID").ToString();
                                 int maNhom = Convert.ToInt32(phanNhom.ToString());
-                                BLL_CanLamSang.Them(tenCanLamSang, ma, giaTriNho, giaTriLon, tenKhac, donVi, danhMuc, diaChi, ghiChu, moTa, thamChieu, maNhom);
+                                BLL_Paraclinical.Insert(tenCanLamSang, ma, giaTriNho, giaTriLon, tenKhac, donVi, danhMuc, diaChi, ghiChu, moTa, thamChieu, maNhom);
                                 this.Close();
                             }
                         }

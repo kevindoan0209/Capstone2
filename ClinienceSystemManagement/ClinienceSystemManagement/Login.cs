@@ -4,14 +4,13 @@ using System.Data;
 using System.Linq;
 using System.Windows.Forms;
 using BussinessLogicLayer;
-using PresentationLayer;
 using DevExpress.XtraEditors;
 
 namespace ClinienceSystemManagement
 {
-    public partial class DangNhap : DevExpress.XtraEditors.XtraForm
+    public partial class Login : DevExpress.XtraEditors.XtraForm
     {
-        public DangNhap()
+        public Login()
         {
             InitializeComponent();
         }
@@ -28,11 +27,11 @@ namespace ClinienceSystemManagement
             {
                 try
                 {
-                    DataTable dt = BLL_TaiKhoan.DangNhap(TenDangNhap, MatKhau);
+                    DataTable dt = BLL_Account.Login(TenDangNhap, MatKhau);
                     if (dt.Rows.Count > 0)
                     {
                         DataRow dr = dt.Rows[0];
-                        this.DialogResult = DialogResult.OK;                 
+                        this.DialogResult = DialogResult.OK;
                     }
                     else
                     {
@@ -46,7 +45,7 @@ namespace ClinienceSystemManagement
                 {
                     MessageBox.Show(ex.Message);
                 }
-            }        
+            }
         }
 
         private void btnThoat_Click(object sender, EventArgs e)

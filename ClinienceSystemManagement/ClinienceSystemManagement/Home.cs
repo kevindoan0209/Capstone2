@@ -12,33 +12,33 @@ using System.Windows.Forms;
 
 namespace PresentationLayer
 {
-    public partial class TrangChu : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class Home : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        public TrangChu()
+        public Home()
         {
             InitializeComponent();
         }
-        private void DangNhap()
+        private void Login()
         {
-            DangNhap dangnhap = new DangNhap();
-            dangnhap.ShowDialog();
+            Login login = new Login();
+            login.ShowDialog();
         }
 
         private void TrangChu_Load(object sender, EventArgs e)
         {
-            DangNhap();
+            Login();
         }
 
         private void btnDangNhap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            DangNhap();
+            Login();
         }
 
         private void btnDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (XtraMessageBox.Show("Bạn có muốn đăng xuất", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
-                DangNhap();
+                Login();
             }
         }
 
@@ -50,7 +50,7 @@ namespace PresentationLayer
                 Application.Exit();
             }
         }
-        private Form KiemTraTonTai(Type type)
+        private Form IsExits(Type type)
         {
             foreach (Form f in this.MdiChildren)
             {
@@ -63,7 +63,7 @@ namespace PresentationLayer
         }
         private void btnLamSang_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Form frm = this.KiemTraTonTai(typeof(DanhMucCanLamSang));
+            Form frm = this.IsExits(typeof(DanhMucCanLamSang));
             if(frm != null)
             {
                 frm.Activate();
@@ -78,7 +78,7 @@ namespace PresentationLayer
 
         private void btnThuoc_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Form frm = this.KiemTraTonTai(typeof(DanhMucThuoc));
+            Form frm = this.IsExits(typeof(DanhMucThuoc));
             if (frm != null)
             {
                 frm.Activate();

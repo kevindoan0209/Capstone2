@@ -95,8 +95,6 @@ F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debu
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\ja\DevExpress.XtraEditors.v15.1.resources.dll
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\ru\DevExpress.XtraEditors.v15.1.resources.dll
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\PresentationLayer.csprojResolveAssemblyReference.cache
-F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.DangNhap.resources
-F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\PresentationLayer.TrangChu.resources
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.Properties.Resources.resources
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\PresentationLayer.csproj.GenerateResource.Cache
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.exe.licenses
@@ -203,3 +201,5 @@ F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debu
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\VSLangProj.xml
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\VSLangProj80.xml
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\VSLangProj2.xml
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.Login.resources
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\PresentationLayer.Home.resources
