@@ -58,9 +58,23 @@ namespace ClinienceSystemManagement
 
         private void cmsCapNhat_Click(object sender, EventArgs e)
         {
-
+            int rowIndex = gvData.FocusedRowHandle;
+            string colID = "Paraclinical_ID";
+            string colName = "Paraclinical_Name";
+            object value = gvData.GetRowCellValue(rowIndex, colID);
+            if (value != null)
+            {
+                ChiTietCanLamSang formThemCanLamSang = new ChiTietCanLamSang();
+                formThemCanLamSang.Id = (string)value;
+                formThemCanLamSang.ShowDialog();
+                sqlDataSource1.Fill();
+                XtraMessageBox.Show("Cập nhật thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                XtraMessageBox.Show("Bạn chưa chọn đối tượng để cập nhật", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
-
         private void cmsXoa_Click(object sender, EventArgs e)
         {
             if (XtraMessageBox.Show("Bạn có muốn xóa không?","Clinience",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)

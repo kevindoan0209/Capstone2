@@ -37,5 +37,23 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@maNhom", maNhom);
             return command.ExecuteNonQuery();
         }
+        public int CapNhat(string tenCanLamSang, string ma, int giaTriNho, int giaTriLon, string tenKhac, string donVi, string danhMuc, string diaChi, string ghiChu, string moTa, string thamChieu, int maNhom)
+        {
+            String sqlCommand = "Update Paraclinical set Paraclinical_Name =@tenCanLamSang,Paraclinical_ValueMin =@giaTriNho,Paraclinical_ValueMax =@giaTriLon,Paraclinical_AnotherName =@tenKhac,Paraclinical_Unit =@donVi,Paraclinical_Category =@danhMuc,Paraclinical_Link =@diaChi,Paraclinical_Note =@ghiChu,Paraclinical_Description =@moTa,Paraclinical_ReferenceValue =@thamChieu,Paraclinical_Group_ID =@maNhom where Paraclinical_ID = @ma";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@tenCanLamSang", tenCanLamSang);
+            command.Parameters.AddWithValue("@ma", ma);
+            command.Parameters.AddWithValue("@giaTriNho", giaTriNho);
+            command.Parameters.AddWithValue("@giaTriLon", giaTriLon);
+            command.Parameters.AddWithValue("@tenKhac", tenKhac);
+            command.Parameters.AddWithValue("@donVi", donVi);
+            command.Parameters.AddWithValue("@danhMuc", danhMuc);
+            command.Parameters.AddWithValue("@diaChi", diaChi);
+            command.Parameters.AddWithValue("@ghiChu", ghiChu);
+            command.Parameters.AddWithValue("@moTa", moTa);
+            command.Parameters.AddWithValue("@thamChieu", thamChieu);
+            command.Parameters.AddWithValue("@maNhom", maNhom);
+            return command.ExecuteNonQuery();
+        }
     }
 }

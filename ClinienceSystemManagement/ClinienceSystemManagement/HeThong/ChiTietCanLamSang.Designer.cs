@@ -35,6 +35,7 @@
             DevExpress.DataAccess.Sql.ColumnInfo columnInfo1 = new DevExpress.DataAccess.Sql.ColumnInfo();
             DevExpress.DataAccess.Sql.ColumnInfo columnInfo2 = new DevExpress.DataAccess.Sql.ColumnInfo();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
             this.btnTao = new DevExpress.XtraEditors.SimpleButton();
             this.xtraTabContarol1 = new DevExpress.XtraTab.XtraTabControl();
@@ -89,10 +90,18 @@
             // 
             // panelControl1
             // 
+            this.panelControl1.Controls.Add(this.button1);
             this.panelControl1.Controls.Add(this.btnHuy);
             this.panelControl1.Controls.Add(this.btnTao);
             resources.ApplyResources(this.panelControl1, "panelControl1");
             this.panelControl1.Name = "panelControl1";
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnHuy
             // 
@@ -322,7 +331,7 @@
             resources.ApplyResources(this.txtTenKhac, "txtTenKhac");
             this.txtTenKhac.Name = "txtTenKhac";
             // 
-            // ThemDanhMucCanLamSang
+            // ChiTietCanLamSang
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -330,7 +339,7 @@
             this.Controls.Add(this.panelControl1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "ThemDanhMucCanLamSang";
+            this.Name = "ChiTietCanLamSang";
             this.Load += new System.EventHandler(this.ThemDanhMucCanLamSang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
@@ -391,5 +400,6 @@
         private DevExpress.XtraEditors.LookUpEdit lkePhanNhom;
         private System.Windows.Forms.BindingSource bindingSource1;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using BussinessLogicLayer;
+using DataAccessLayer;
 
 namespace ClinienceSystemManagement.HeThong
 {
@@ -39,6 +40,78 @@ namespace ClinienceSystemManagement.HeThong
             txtGhiChu.Text = "";
             txtMoTa.Text = "";
             txtThamChieu.Text = "";
+        }
+        public string Id = null;
+        private void FillDataUpdate()
+        {
+            if (Id != null)
+            {
+                DataClinienceDataContext db = new DataClinienceDataContext();
+                var danhMuc = db.Paraclinicals.Where(i => i.Paraclinical_ID == Id).SingleOrDefault();
+                if(danhMuc != null)
+                {
+                    txtTen.EditValue = danhMuc.Paraclinical_Name;
+                    txtMa.EditValue = danhMuc.Paraclinical_ID;
+                    txtGiaTriNho.EditValue = danhMuc.Paraclinical_ValueMin;
+                    txtGiaTriLon.EditValue = danhMuc.Paraclinical_ValueMax;
+                    txtTenKhac.EditValue = danhMuc.Paraclinical_AnotherName;
+                    txtDonVi.EditValue = danhMuc.Paraclinical_Unit;
+                    txtDanhMuc.EditValue = danhMuc.Paraclinical_Category;
+                    txtDiaChi.EditValue = danhMuc.Paraclinical_Link;
+                    txtGhiChu.EditValue = danhMuc.Paraclinical_Note;
+                    txtMoTa.EditValue = danhMuc.Paraclinical_Description;
+                    txtThamChieu.EditValue = danhMuc.Paraclinical_ReferenceValue;
+                }
+            }
+        }
+        private void saveUpdate()
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(txtTen.Text))
+                {
+                    XtraMessageBox.Show("Vui lòng nhập tên cận lâm sàng", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    txtTen.Focus();
+                }
+                else
+                {
+                    if (string.IsNullOrEmpty(txtMa.Text))
+                    {
+                        XtraMessageBox.Show("Vui lòng nhập mã cận lâm sàng", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        txtMa.Focus();
+                    }
+                    else
+                    {
+                        if (lkePhanNhom.Text == "Chọn nhóm")
+                        {
+                            XtraMessageBox.Show("Vui lòng chọn nhóm cận lâm sàng", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            lkePhanNhom.Focus();
+                        }
+                        else
+                        {
+                            string tenCanLamSang = txtTen.Text;
+                            string ma = txtMa.Text;
+                            int giaTriNho = Convert.ToInt32(txtGiaTriNho.Value.ToString());
+                            int giaTriLon = Convert.ToInt32(txtGiaTriLon.Value.ToString());
+                            string tenKhac = txtTenKhac.Text;
+                            string donVi = txtDonVi.Text;
+                            string danhMuc = txtDanhMuc.Text;
+                            string diaChi = txtDiaChi.Text;
+                            string ghiChu = txtGhiChu.Text;
+                            string moTa = txtMoTa.Text;
+                            string thamChieu = txtThamChieu.Text;
+                            string phanNhom = lkePhanNhom.GetColumnValue("Paraclinical_Group_ID").ToString();
+                            int maNhom = Convert.ToInt32(phanNhom.ToString());
+                            BLL_CanLamSang.CapNhat(tenCanLamSang, ma, giaTriNho, giaTriLon, tenKhac, donVi, danhMuc, diaChi, ghiChu, moTa, thamChieu, maNhom);
+                            this.Close();
+                        }
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Mã danh mục này đã tồn tại");
+            }
         }
         private void btnTao_Click(object sender, EventArgs e)
         {
@@ -92,8 +165,57 @@ namespace ClinienceSystemManagement.HeThong
 
         private void ThemDanhMucCanLamSang_Load(object sender, EventArgs e)
         {
-
+            FillDataUpdate();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(txtTen.Text))
+                {
+                    XtraMessageBox.Show("Vui lòng nhập tên cận lâm sàng", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    txtTen.Focus();
+                }
+                else
+                {
+                    if (string.IsNullOrEmpty(txtMa.Text))
+                    {
+                        XtraMessageBox.Show("Vui lòng nhập mã cận lâm sàng", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        txtMa.Focus();
+                    }
+                    else
+                    {
+                        if (lkePhanNhom.Text == "Chọn nhóm")
+                        {
+                            XtraMessageBox.Show("Vui lòng chọn nhóm cận lâm sàng", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            lkePhanNhom.Focus();
+                        }
+                        else
+                        {
+                            string tenCanLamSang = txtTen.Text;
+                            string ma = txtMa.Text;
+                            int giaTriNho = Convert.ToInt32(txtGiaTriNho.Value.ToString());
+                            int giaTriLon = Convert.ToInt32(txtGiaTriLon.Value.ToString());
+                            string tenKhac = txtTenKhac.Text;
+                            string donVi = txtDonVi.Text;
+                            string danhMuc = txtDanhMuc.Text;
+                            string diaChi = txtDiaChi.Text;
+                            string ghiChu = txtGhiChu.Text;
+                            string moTa = txtMoTa.Text;
+                            string thamChieu = txtThamChieu.Text;
+                            string phanNhom = lkePhanNhom.GetColumnValue("Paraclinical_Group_ID").ToString();
+                            int maNhom = Convert.ToInt32(phanNhom.ToString());
+                            BLL_CanLamSang.CapNhat(tenCanLamSang, ma, giaTriNho, giaTriLon, tenKhac, donVi, danhMuc, diaChi, ghiChu, moTa, thamChieu, maNhom);
+                            this.Close();
+                        }
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Mã danh mục này đã tồn tại");
+            }
+        }
     }
 }
