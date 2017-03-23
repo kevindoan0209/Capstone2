@@ -227,6 +227,72 @@
   <metadata name="panelControl1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="btnLamMoi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="btnThem.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="&gt;&gt;labelControl1.Name" xml:space="preserve">
+    <value>labelControl1</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnLamMoi.Name" xml:space="preserve">
+    <value>btnLamMoi</value>
+  </data>
+  <data name="&gt;&gt;btnLamMoi.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnLamMoi.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;btnLamMoi.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnThem.Name" xml:space="preserve">
+    <value>btnThem</value>
+  </data>
+  <data name="&gt;&gt;btnThem.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnThem.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;btnThem.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 410</value>
+  </data>
+  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>738, 44</value>
+  </data>
+  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="labelControl1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -332,30 +398,6 @@
   <data name="&gt;&gt;btnThem.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 410</value>
-  </data>
-  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>738, 44</value>
-  </data>
-  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>153, 17</value>
   </metadata>
@@ -383,11 +425,26 @@
   <data name="grcDanhMuc.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 61</value>
   </data>
+  <data name="gvData.Appearance.FixedLine.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
+  </data>
+  <data name="gvData.Appearance.HeaderPanel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 11.25pt</value>
+  </data>
+  <data name="colParaclinical_ID.Caption" xml:space="preserve">
+    <value>Mã</value>
+  </data>
   <data name="colParaclinical_ID.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="colParaclinical_ID.VisibleIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="colParaclinical_ID.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="colParaclinical_Name.Caption" xml:space="preserve">
+    <value>Tên</value>
   </data>
   <data name="colParaclinical_Name.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -395,11 +452,23 @@
   <data name="colParaclinical_Name.VisibleIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
+  <data name="colParaclinical_Name.Width" type="System.Int32, mscorlib">
+    <value>179</value>
+  </data>
+  <data name="colParaclinical_ReferenceValue.Caption" xml:space="preserve">
+    <value>Giá trị tham chiếu</value>
+  </data>
   <data name="colParaclinical_ReferenceValue.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="colParaclinical_ReferenceValue.VisibleIndex" type="System.Int32, mscorlib">
     <value>3</value>
+  </data>
+  <data name="colParaclinical_ReferenceValue.Width" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="colParaclinical_ValueMin.Caption" xml:space="preserve">
+    <value>Giá trị nhỏ nhất</value>
   </data>
   <data name="colParaclinical_ValueMin.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -407,17 +476,32 @@
   <data name="colParaclinical_ValueMin.VisibleIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
+  <data name="colParaclinical_ValueMin.Width" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="colParaclinical_ValueMax.Caption" xml:space="preserve">
+    <value>Giá trị lớn nhất</value>
+  </data>
   <data name="colParaclinical_ValueMax.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="colParaclinical_ValueMax.VisibleIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
+  <data name="colParaclinical_ValueMax.Width" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
+  <data name="colParaclinical_Group_Name.Caption" xml:space="preserve">
+    <value>Loại</value>
+  </data>
   <data name="colParaclinical_Group_Name.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="colParaclinical_Group_Name.VisibleIndex" type="System.Int32, mscorlib">
     <value>2</value>
+  </data>
+  <data name="colParaclinical_Group_Name.Width" type="System.Int32, mscorlib">
+    <value>105</value>
   </data>
   <assembly alias="DevExpress.Data.v15.1" name="DevExpress.Data.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   <data name="gvData.GroupSummary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v15.1">

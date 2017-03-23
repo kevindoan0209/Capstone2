@@ -43,6 +43,7 @@ namespace ClinienceSystemManagement
             else
             {
                 ChiTietCanLamSang formThemCanLamSang = new ChiTietCanLamSang();
+                formThemCanLamSang.isAdd = true;
                 formThemCanLamSang.ShowDialog();     
                 sqlDataSource1.Fill();
             }
@@ -60,12 +61,12 @@ namespace ClinienceSystemManagement
         {
             int rowIndex = gvData.FocusedRowHandle;
             string colID = "Paraclinical_ID";
-            string colName = "Paraclinical_Name";
             object value = gvData.GetRowCellValue(rowIndex, colID);
             if (value != null)
             {
                 ChiTietCanLamSang formThemCanLamSang = new ChiTietCanLamSang();
                 formThemCanLamSang.Id = (string)value;
+                formThemCanLamSang.isAdd = false;
                 formThemCanLamSang.ShowDialog();
                 sqlDataSource1.Fill();
                 XtraMessageBox.Show("Cập nhật thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -77,16 +78,15 @@ namespace ClinienceSystemManagement
         }
         private void cmsXoa_Click(object sender, EventArgs e)
         {
-            if (XtraMessageBox.Show("Bạn có muốn xóa không?","Clinience",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
+            if (XtraMessageBox.Show("Bạn có muốn xóa không?", "Clinience",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 int rowIndex = gvData.FocusedRowHandle;
-                string colID = "Paraclinical_ID";
-                string colName = "Paraclinical_Name";
+                string colID = "Paraclinical_ID";           
                 object value = gvData.GetRowCellValue(rowIndex, colID);
                 if (value != null)
                 {
                     DataClinienceDataContext db = new DataClinienceDataContext();
-                    var danhMuc = db.Paraclinicals.Where(s => s.Paraclinical_ID == value).SingleOrDefault();
+                    var danhMuc = db.Paraclinicals.Where(s => s.Paraclinical_ID == (string)value).SingleOrDefault();
                     if(danhMuc != null)
                     {
                         db.Paraclinicals.DeleteOnSubmit(danhMuc);

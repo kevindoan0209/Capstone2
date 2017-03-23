@@ -45,6 +45,7 @@
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.btnLamMoi = new DevExpress.XtraEditors.SimpleButton();
             this.btnThem = new DevExpress.XtraEditors.SimpleButton();
             this.grcDanhMuc = new DevExpress.XtraGrid.GridControl();
@@ -59,7 +60,6 @@
             this.colParaclinical_ValueMin = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colParaclinical_ValueMax = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colParaclinical_Group_Name = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
@@ -95,6 +95,12 @@
             this.panelControl1.Controls.Add(this.btnThem);
             resources.ApplyResources(this.panelControl1, "panelControl1");
             this.panelControl1.Name = "panelControl1";
+            // 
+            // labelControl1
+            // 
+            resources.ApplyResources(this.labelControl1, "labelControl1");
+            this.labelControl1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl1.Appearance.Font")));
+            this.labelControl1.Name = "labelControl1";
             // 
             // btnLamMoi
             // 
@@ -182,6 +188,10 @@
             // 
             // gvData
             // 
+            this.gvData.Appearance.FixedLine.Font = ((System.Drawing.Font)(resources.GetObject("gvData.Appearance.FixedLine.Font")));
+            this.gvData.Appearance.FixedLine.Options.UseFont = true;
+            this.gvData.Appearance.HeaderPanel.Font = ((System.Drawing.Font)(resources.GetObject("gvData.Appearance.HeaderPanel.Font")));
+            this.gvData.Appearance.HeaderPanel.Options.UseFont = true;
             this.gvData.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colParaclinical_ID,
             this.colParaclinical_Name,
@@ -193,50 +203,46 @@
             this.gvData.GroupSummary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridGroupSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gvData.GroupSummary"))), resources.GetString("gvData.GroupSummary1"), ((DevExpress.XtraGrid.Columns.GridColumn)(resources.GetObject("gvData.GroupSummary2"))), resources.GetString("gvData.GroupSummary3"))});
             this.gvData.Name = "gvData";
+            this.gvData.OptionsBehavior.Editable = false;
             this.gvData.OptionsFind.AlwaysVisible = true;
             this.gvData.OptionsFind.FindNullPrompt = "Nhập vào thông tin tìm kiếm...";
+            this.gvData.OptionsView.EnableAppearanceEvenRow = true;
             // 
             // colParaclinical_ID
             // 
+            resources.ApplyResources(this.colParaclinical_ID, "colParaclinical_ID");
             this.colParaclinical_ID.FieldName = "Paraclinical_ID";
             this.colParaclinical_ID.Name = "colParaclinical_ID";
-            resources.ApplyResources(this.colParaclinical_ID, "colParaclinical_ID");
             // 
             // colParaclinical_Name
             // 
+            resources.ApplyResources(this.colParaclinical_Name, "colParaclinical_Name");
             this.colParaclinical_Name.FieldName = "Paraclinical_Name";
             this.colParaclinical_Name.Name = "colParaclinical_Name";
-            resources.ApplyResources(this.colParaclinical_Name, "colParaclinical_Name");
             // 
             // colParaclinical_ReferenceValue
             // 
+            resources.ApplyResources(this.colParaclinical_ReferenceValue, "colParaclinical_ReferenceValue");
             this.colParaclinical_ReferenceValue.FieldName = "Paraclinical_ReferenceValue";
             this.colParaclinical_ReferenceValue.Name = "colParaclinical_ReferenceValue";
-            resources.ApplyResources(this.colParaclinical_ReferenceValue, "colParaclinical_ReferenceValue");
             // 
             // colParaclinical_ValueMin
             // 
+            resources.ApplyResources(this.colParaclinical_ValueMin, "colParaclinical_ValueMin");
             this.colParaclinical_ValueMin.FieldName = "Paraclinical_ValueMin";
             this.colParaclinical_ValueMin.Name = "colParaclinical_ValueMin";
-            resources.ApplyResources(this.colParaclinical_ValueMin, "colParaclinical_ValueMin");
             // 
             // colParaclinical_ValueMax
             // 
+            resources.ApplyResources(this.colParaclinical_ValueMax, "colParaclinical_ValueMax");
             this.colParaclinical_ValueMax.FieldName = "Paraclinical_ValueMax";
             this.colParaclinical_ValueMax.Name = "colParaclinical_ValueMax";
-            resources.ApplyResources(this.colParaclinical_ValueMax, "colParaclinical_ValueMax");
             // 
             // colParaclinical_Group_Name
             // 
+            resources.ApplyResources(this.colParaclinical_Group_Name, "colParaclinical_Group_Name");
             this.colParaclinical_Group_Name.FieldName = "Paraclinical_Group_Name";
             this.colParaclinical_Group_Name.Name = "colParaclinical_Group_Name";
-            resources.ApplyResources(this.colParaclinical_Group_Name, "colParaclinical_Group_Name");
-            // 
-            // labelControl1
-            // 
-            resources.ApplyResources(this.labelControl1, "labelControl1");
-            this.labelControl1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl1.Appearance.Font")));
-            this.labelControl1.Name = "labelControl1";
             // 
             // DanhMucCanLamSang
             // 
