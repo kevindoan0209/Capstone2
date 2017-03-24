@@ -109,7 +109,17 @@ namespace PresentationLayer
 
         private void btnDonVi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            Form frm = this.IsExits(typeof(MedicineUnit));
+            if (frm != null)
+            {
+                frm.Activate();
+            }
+            else
+            {
+                MedicineUnit mu = new MedicineUnit();
+                mu.MdiParent = this;
+                mu.Show();
+            }
         }
 
         private void btnThanhPhan_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

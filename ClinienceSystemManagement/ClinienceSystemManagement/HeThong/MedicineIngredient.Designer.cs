@@ -30,14 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MedicineIngredient));
-            DevExpress.DataAccess.Sql.TableQuery tableQuery3 = new DevExpress.DataAccess.Sql.TableQuery();
-            DevExpress.DataAccess.Sql.TableInfo tableInfo3 = new DevExpress.DataAccess.Sql.TableInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo7 = new DevExpress.DataAccess.Sql.ColumnInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo8 = new DevExpress.DataAccess.Sql.ColumnInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo9 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.TableQuery tableQuery1 = new DevExpress.DataAccess.Sql.TableQuery();
+            DevExpress.DataAccess.Sql.TableInfo tableInfo1 = new DevExpress.DataAccess.Sql.TableInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo1 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo2 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo3 = new DevExpress.DataAccess.Sql.ColumnInfo();
             this.panel1 = new System.Windows.Forms.Panel();
             this.xtraTabContarol1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.btnReset = new DevExpress.XtraEditors.SimpleButton();
             this.txtGhiChu = new DevExpress.XtraEditors.MemoEdit();
             this.btnTao = new DevExpress.XtraEditors.SimpleButton();
@@ -47,6 +48,9 @@
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.txtMa = new DevExpress.XtraEditors.TextEdit();
             this.grcDanhMuc = new DevExpress.XtraGrid.GridControl();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.cmsCapNhat = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsXoa = new System.Windows.Forms.ToolStripMenuItem();
             this.sqlDataSource3 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.gvDanhMuc = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colIngredient_ID = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -54,10 +58,6 @@
             this.colIngredient_Note = new DevExpress.XtraGrid.Columns.GridColumn();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.cmsCapNhat = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsXoa = new System.Windows.Forms.ToolStripMenuItem();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabContarol1)).BeginInit();
             this.xtraTabContarol1.SuspendLayout();
@@ -66,8 +66,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtTen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMa.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grcDanhMuc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvDanhMuc)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvDanhMuc)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -83,7 +83,7 @@
             // xtraTabContarol1
             // 
             this.xtraTabContarol1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.xtraTabContarol1.Location = new System.Drawing.Point(22, 18);
+            this.xtraTabContarol1.Location = new System.Drawing.Point(21, 18);
             this.xtraTabContarol1.Name = "xtraTabContarol1";
             this.xtraTabContarol1.SelectedTabPage = this.xtraTabPage2;
             this.xtraTabContarol1.Size = new System.Drawing.Size(244, 358);
@@ -105,6 +105,16 @@
             this.xtraTabPage2.Name = "xtraTabPage2";
             this.xtraTabPage2.Size = new System.Drawing.Size(238, 330);
             this.xtraTabPage2.Text = "Thông tin thành phần";
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl1.Location = new System.Drawing.Point(19, 287);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(191, 28);
+            this.labelControl1.TabIndex = 24;
+            this.labelControl1.Text = "* Nhấn chuột phải trên danh sách \r\nđể xóa hoặc cập nhật dữ liệu";
             // 
             // btnReset
             // 
@@ -188,23 +198,45 @@
             this.grcDanhMuc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvDanhMuc});
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cmsCapNhat,
+            this.cmsXoa});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(123, 48);
+            // 
+            // cmsCapNhat
+            // 
+            this.cmsCapNhat.Name = "cmsCapNhat";
+            this.cmsCapNhat.Size = new System.Drawing.Size(122, 22);
+            this.cmsCapNhat.Text = "Cập nhật";
+            this.cmsCapNhat.Click += new System.EventHandler(this.cmsCapNhat_Click);
+            // 
+            // cmsXoa
+            // 
+            this.cmsXoa.Name = "cmsXoa";
+            this.cmsXoa.Size = new System.Drawing.Size(122, 22);
+            this.cmsXoa.Text = "Xóa";
+            this.cmsXoa.Click += new System.EventHandler(this.cmsXoa_Click);
+            // 
             // sqlDataSource3
             // 
             this.sqlDataSource3.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource3.Name = "sqlDataSource3";
-            tableQuery3.Name = "Ingredient";
-            tableInfo3.Name = "Ingredient";
-            columnInfo7.Name = "Ingredient_ID";
-            columnInfo8.Name = "Ingredient_Name";
-            columnInfo9.Name = "Ingredient_Note";
-            tableInfo3.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
-            columnInfo7,
-            columnInfo8,
-            columnInfo9});
-            tableQuery3.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
-            tableInfo3});
+            tableQuery1.Name = "Ingredient";
+            tableInfo1.Name = "Ingredient";
+            columnInfo1.Name = "Ingredient_ID";
+            columnInfo2.Name = "Ingredient_Name";
+            columnInfo3.Name = "Ingredient_Note";
+            tableInfo1.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
+            columnInfo1,
+            columnInfo2,
+            columnInfo3});
+            tableQuery1.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
+            tableInfo1});
             this.sqlDataSource3.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            tableQuery3});
+            tableQuery1});
             this.sqlDataSource3.ResultSchemaSerializable = resources.GetString("sqlDataSource3.ResultSchemaSerializable");
             // 
             // gvDanhMuc
@@ -256,38 +288,6 @@
             // 
             this.sqlDataSource2.Name = "sqlDataSource2";
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cmsCapNhat,
-            this.cmsXoa});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(123, 48);
-            // 
-            // cmsCapNhat
-            // 
-            this.cmsCapNhat.Name = "cmsCapNhat";
-            this.cmsCapNhat.Size = new System.Drawing.Size(122, 22);
-            this.cmsCapNhat.Text = "Cập nhật";
-            this.cmsCapNhat.Click += new System.EventHandler(this.cmsCapNhat_Click);
-            // 
-            // cmsXoa
-            // 
-            this.cmsXoa.Name = "cmsXoa";
-            this.cmsXoa.Size = new System.Drawing.Size(122, 22);
-            this.cmsXoa.Text = "Xóa";
-            this.cmsXoa.Click += new System.EventHandler(this.cmsXoa_Click);
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.labelControl1.Location = new System.Drawing.Point(19, 285);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(191, 28);
-            this.labelControl1.TabIndex = 24;
-            this.labelControl1.Text = "* Nhấn chuột phải trên danh sách \r\nđể xóa hoặc cập nhật dữ liệu";
-            // 
             // MedicineIngredient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -308,8 +308,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtTen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMa.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grcDanhMuc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvDanhMuc)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvDanhMuc)).EndInit();
             this.ResumeLayout(false);
 
         }

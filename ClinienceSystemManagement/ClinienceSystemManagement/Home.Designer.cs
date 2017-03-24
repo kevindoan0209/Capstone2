@@ -173,7 +173,7 @@
             // 
             // btnThuoc
             // 
-            this.btnThuoc.Caption = "Danh mục thuốc";
+            this.btnThuoc.Caption = "Thuốc";
             this.btnThuoc.Id = 3;
             this.btnThuoc.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnThuoc.LargeGlyph")));
             this.btnThuoc.LargeWidth = 70;
@@ -391,9 +391,9 @@
             // 
             this.ribbonPage3.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup5,
+            this.ribbonPageGroup4,
             this.ribbonPageGroup8,
-            this.ribbonPageGroup7,
-            this.ribbonPageGroup4});
+            this.ribbonPageGroup7});
             this.ribbonPage3.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage3.Image")));
             this.ribbonPage3.Name = "ribbonPage3";
             this.ribbonPage3.Text = "Hệ Thống";
@@ -401,7 +401,6 @@
             // ribbonPageGroup5
             // 
             this.ribbonPageGroup5.ItemLinks.Add(this.btnLamSang);
-            this.ribbonPageGroup5.ItemLinks.Add(this.btnThuoc);
             this.ribbonPageGroup5.ItemLinks.Add(this.btnBenh);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             this.ribbonPageGroup5.Text = "Danh mục";
@@ -420,10 +419,11 @@
             // 
             // ribbonPageGroup4
             // 
+            this.ribbonPageGroup4.ItemLinks.Add(this.btnThuoc);
             this.ribbonPageGroup4.ItemLinks.Add(this.btnDonVi);
             this.ribbonPageGroup4.ItemLinks.Add(this.btnThanhPhan);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
-            this.ribbonPageGroup4.Text = "Thuốc";
+            this.ribbonPageGroup4.Text = "Danh mục thuốc";
             // 
             // ribbonPage4
             // 

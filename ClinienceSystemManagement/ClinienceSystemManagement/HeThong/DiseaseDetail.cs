@@ -112,6 +112,7 @@ namespace ClinienceSystemManagement.HeThong
                             string id = txtMa.Text;
                             string description = txtMoTa.Text;
                             BLL_Disease.Insert(id, name, description);
+                            XtraMessageBox.Show("Đã thêm thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             this.Close();                 
                         }
                     }

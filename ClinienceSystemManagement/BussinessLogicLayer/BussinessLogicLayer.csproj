@@ -45,6 +45,7 @@
     <Compile Include="BLL_Account.cs" />
     <Compile Include="BLL_Disease.cs" />
     <Compile Include="BLL_Ingredient.cs" />
+    <Compile Include="BLL_Medicine.cs" />
     <Compile Include="BLL_Paraclinical.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

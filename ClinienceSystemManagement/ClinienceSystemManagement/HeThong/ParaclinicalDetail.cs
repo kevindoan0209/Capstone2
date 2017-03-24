@@ -170,6 +170,7 @@ namespace ClinienceSystemManagement.HeThong
                                 string group = lkePhanNhom.GetColumnValue("Paraclinical_Group_ID").ToString();
                                 int groupId = Convert.ToInt32(group.ToString());
                                 BLL_Paraclinical.Insert(name, id, valueMin, valueMax, anotherName, unit, category, link, note, description, referenceValue, groupId);
+                                XtraMessageBox.Show("Đã thêm thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 this.Close();
                             }
                         }

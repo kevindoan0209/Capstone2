@@ -25,7 +25,7 @@ namespace ClinienceSystemManagement.HeThong
             sqlDataSource3.Fill();
         }
         
-        private void Reser()
+        private void Reset()
         {
             txtTen.Text = "";
             txtMa.Text = "";
@@ -69,6 +69,9 @@ namespace ClinienceSystemManagement.HeThong
                         string id = txtMa.Text;
                         string description = txtGhiChu.Text;
                         BLL_Ingredient.Update(id, name, description);
+                        Reset();
+                        txtMa.ReadOnly = false;
+                        isAdd = true;
                         XtraMessageBox.Show("Cập nhật thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
@@ -105,7 +108,9 @@ namespace ClinienceSystemManagement.HeThong
                             string name = txtTen.Text;
                             string id = txtMa.Text;
                             string description = txtGhiChu.Text;
-                            BLL_Ingredient.Insert(id, name, description);                      
+                            BLL_Ingredient.Insert(id, name, description);
+                            Reset();
+                            XtraMessageBox.Show("Đã thêm thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
                 }
@@ -165,5 +170,6 @@ namespace ClinienceSystemManagement.HeThong
                 }
             }
         }
+
     }
 }

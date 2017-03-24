@@ -120,14 +120,14 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnReset.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAAG8AAABvAfGi3EMAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
-        AAABNUlEQVQ4T6VTQU7DQAzsA4ADnBAfQYIvwC1StkFIFAmRLTyAU/sUTnlFpSqbtHAOlzym1eJJ7eBd
-        9oDEYVR57Jl6bWfivf8XkiTw5O7ObWNuyjq/fd5mF6ka4BdRtsWldaYj+Ai9bc11XB8EL664osI9C/bU
-        wRf9wmwnXOnMm9YEBoBt8sXcmff56v5MuMdtdkriSkx0J6OwbMyDXWdHEqegTHrhDol6uuTEZtbOjiUZ
-        gzsZniOD1eID6vzj9bM4icUCqhkGjO0gHkgEbNDpYg2Ywpzr+M+myyGJdpjcoc1YLMDzqGYjYnBjksie
-        TSrhUsCgMXCJfxK0GhLLDVS6E6wUq8WKhRMEAY5EmWDaHR/TeFw4Nq0JDADuRJ6j0eHM4/og0MBgh+3Q
-        B4UPK1UDJMm/w0++AWZJpqNq3h9oAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        bwAAAG8B8aLcQwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAE1SURBVDhPpVNB
+        TsNADOwDgAOcEB9Bgi/ALVK2QUgUCZEtPIBT+xROeUWlKpu0cA6XPKbV4knt4F32gMRhVHnsmXptZ+K9
+        /xeSJPDk7s5tY27KOr993mYXqRrgF1G2xaV1piP4CL1tzXVcHwQvrriiwj0L9tTBF/3CbCdc6cyb1gQG
+        gG3yxdyZ9/nq/ky4x212SuJKTHQno7BszINdZ0cSp6BMeuEOiXq65MRm1s6OJRmDOxmeI4PV4gPq/OP1
+        sziJxQKqGQaM7SAeSARs0OliDZjCnOv4z6bLIYl2mNyhzVgswPOoZiNicGOSyJ5NKuFSwKAxcIl/ErQa
+        EssNVLoTrBSrxYqFEwQBjkSZYNodH9N4XDg2rQkMAO5EnqPR4czj+iDQwGCH7dAHhQ8rVQMkyb/DT74B
+        Zkmmo2reH2gAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="btnTao.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
