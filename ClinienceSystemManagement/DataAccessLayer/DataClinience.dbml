@@ -74,10 +74,9 @@
     <Type Name="Medicine">
       <Column Name="Medicine_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="Medicine_Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Medicine_Class" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
       <Column Name="Unit_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Ingredient_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Medicine_Usage" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
-      <Column Name="Medicine_Quantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Medicine_Note" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
       <Column Name="Medicine_Price" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Association Name="Medicine_Medincine_Ingredient" Member="Medincine_Ingredients" ThisKey="Medicine_ID" OtherKey="Medicine_ID" Type="Medincine_Ingredient" />

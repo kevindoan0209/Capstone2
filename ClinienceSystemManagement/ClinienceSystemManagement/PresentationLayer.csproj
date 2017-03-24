@@ -137,6 +137,9 @@
     <EmbeddedResource Include="HeThong\DiseaseDetail.resx">
       <DependentUpon>DiseaseDetail.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\MedicineDetail.resx">
+      <DependentUpon>MedicineDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HeThong\MedicineIngredient.resx">
       <DependentUpon>MedicineIngredient.cs</DependentUpon>
     </EmbeddedResource>

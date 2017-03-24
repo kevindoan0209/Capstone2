@@ -196,7 +196,7 @@
 </value>
   </data>
   <data name="btnLamMoi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>205, 9</value>
+    <value>156, 9</value>
   </data>
   <data name="btnLamMoi.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 28</value>
@@ -235,13 +235,13 @@
     <value>16, 9</value>
   </data>
   <data name="btnThem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 28</value>
+    <value>124, 28</value>
   </data>
   <data name="btnThem.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="btnThem.Text" xml:space="preserve">
-    <value>Thêm danh mục bệnh</value>
+    <value>Thêm bệnh</value>
   </data>
   <data name="&gt;&gt;btnThem.Name" xml:space="preserve">
     <value>btnThem</value>

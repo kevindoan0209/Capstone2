@@ -18,5 +18,13 @@ namespace BussinessLogicLayer
         {
             return _medicine.UpdateUnit(id, name, note);
         }
+        public static int InsertMedicine(string name, string mclass,string usage, string note, int price )
+        {
+            return _medicine.InsertMedicine(name, mclass, usage, note, price);
+        }
+        public static int UpdateMedicine(int id, string name, string mclass, string usage, string note, int price)
+        {
+            return _medicine.UpdateMedicine(id,name, mclass, usage, note, price);
+        }
     }
 }

@@ -1655,13 +1655,11 @@ namespace DataAccessLayer
 		
 		private string _Medicine_Name;
 		
+		private string _Medicine_Class;
+		
 		private int _Unit_ID;
 		
-		private int _Ingredient_ID;
-		
 		private string _Medicine_Usage;
-		
-		private System.Nullable<int> _Medicine_Quantity;
 		
 		private string _Medicine_Note;
 		
@@ -1681,14 +1679,12 @@ namespace DataAccessLayer
     partial void OnMedicine_IDChanged();
     partial void OnMedicine_NameChanging(string value);
     partial void OnMedicine_NameChanged();
+    partial void OnMedicine_ClassChanging(string value);
+    partial void OnMedicine_ClassChanged();
     partial void OnUnit_IDChanging(int value);
     partial void OnUnit_IDChanged();
-    partial void OnIngredient_IDChanging(int value);
-    partial void OnIngredient_IDChanged();
     partial void OnMedicine_UsageChanging(string value);
     partial void OnMedicine_UsageChanged();
-    partial void OnMedicine_QuantityChanging(System.Nullable<int> value);
-    partial void OnMedicine_QuantityChanged();
     partial void OnMedicine_NoteChanging(string value);
     partial void OnMedicine_NoteChanged();
     partial void OnMedicine_PriceChanging(System.Nullable<int> value);
@@ -1743,6 +1739,26 @@ namespace DataAccessLayer
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Medicine_Class", DbType="NVarChar(200)")]
+		public string Medicine_Class
+		{
+			get
+			{
+				return this._Medicine_Class;
+			}
+			set
+			{
+				if ((this._Medicine_Class != value))
+				{
+					this.OnMedicine_ClassChanging(value);
+					this.SendPropertyChanging();
+					this._Medicine_Class = value;
+					this.SendPropertyChanged("Medicine_Class");
+					this.OnMedicine_ClassChanged();
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Unit_ID", DbType="Int NOT NULL")]
 		public int Unit_ID
 		{
@@ -1767,26 +1783,6 @@ namespace DataAccessLayer
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ingredient_ID", DbType="Int NOT NULL")]
-		public int Ingredient_ID
-		{
-			get
-			{
-				return this._Ingredient_ID;
-			}
-			set
-			{
-				if ((this._Ingredient_ID != value))
-				{
-					this.OnIngredient_IDChanging(value);
-					this.SendPropertyChanging();
-					this._Ingredient_ID = value;
-					this.SendPropertyChanged("Ingredient_ID");
-					this.OnIngredient_IDChanged();
-				}
-			}
-		}
-		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Medicine_Usage", DbType="NVarChar(200)")]
 		public string Medicine_Usage
 		{
@@ -1803,26 +1799,6 @@ namespace DataAccessLayer
 					this._Medicine_Usage = value;
 					this.SendPropertyChanged("Medicine_Usage");
 					this.OnMedicine_UsageChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Medicine_Quantity", DbType="Int")]
-		public System.Nullable<int> Medicine_Quantity
-		{
-			get
-			{
-				return this._Medicine_Quantity;
-			}
-			set
-			{
-				if ((this._Medicine_Quantity != value))
-				{
-					this.OnMedicine_QuantityChanging(value);
-					this.SendPropertyChanging();
-					this._Medicine_Quantity = value;
-					this.SendPropertyChanged("Medicine_Quantity");
-					this.OnMedicine_QuantityChanged();
 				}
 			}
 		}
