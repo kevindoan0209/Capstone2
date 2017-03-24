@@ -69,6 +69,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HeThong\Disease.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\Disease.Designer.cs">
+      <DependentUpon>Disease.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\DiseaseDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\DiseaseDetail.Designer.cs">
+      <DependentUpon>DiseaseDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\MedicineIngredient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\MedicineIngredient.Designer.cs">
+      <DependentUpon>MedicineIngredient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\MedicineUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\MedicineUnit.Designer.cs">
+      <DependentUpon>MedicineUnit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +131,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="HeThong\Disease.resx">
+      <DependentUpon>Disease.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\DiseaseDetail.resx">
+      <DependentUpon>DiseaseDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\MedicineIngredient.resx">
+      <DependentUpon>MedicineIngredient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\MedicineUnit.resx">
+      <DependentUpon>MedicineUnit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>

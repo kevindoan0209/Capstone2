@@ -48,15 +48,18 @@ namespace DataAccessLayer
     partial void InsertHuman(Human instance);
     partial void UpdateHuman(Human instance);
     partial void DeleteHuman(Human instance);
+    partial void InsertIngredient(Ingredient instance);
+    partial void UpdateIngredient(Ingredient instance);
+    partial void DeleteIngredient(Ingredient instance);
     partial void InsertMedicine(Medicine instance);
     partial void UpdateMedicine(Medicine instance);
     partial void DeleteMedicine(Medicine instance);
-    partial void InsertMedicine_Ingredient(Medicine_Ingredient instance);
-    partial void UpdateMedicine_Ingredient(Medicine_Ingredient instance);
-    partial void DeleteMedicine_Ingredient(Medicine_Ingredient instance);
     partial void InsertMedicine_Unit(Medicine_Unit instance);
     partial void UpdateMedicine_Unit(Medicine_Unit instance);
     partial void DeleteMedicine_Unit(Medicine_Unit instance);
+    partial void InsertMedincine_Ingredient(Medincine_Ingredient instance);
+    partial void UpdateMedincine_Ingredient(Medincine_Ingredient instance);
+    partial void DeleteMedincine_Ingredient(Medincine_Ingredient instance);
     partial void InsertParaclinical(Paraclinical instance);
     partial void UpdateParaclinical(Paraclinical instance);
     partial void DeleteParaclinical(Paraclinical instance);
@@ -158,6 +161,14 @@ namespace DataAccessLayer
 			}
 		}
 		
+		public System.Data.Linq.Table<Ingredient> Ingredients
+		{
+			get
+			{
+				return this.GetTable<Ingredient>();
+			}
+		}
+		
 		public System.Data.Linq.Table<Medicine> Medicines
 		{
 			get
@@ -166,19 +177,19 @@ namespace DataAccessLayer
 			}
 		}
 		
-		public System.Data.Linq.Table<Medicine_Ingredient> Medicine_Ingredients
-		{
-			get
-			{
-				return this.GetTable<Medicine_Ingredient>();
-			}
-		}
-		
 		public System.Data.Linq.Table<Medicine_Unit> Medicine_Units
 		{
 			get
 			{
 				return this.GetTable<Medicine_Unit>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Medincine_Ingredient> Medincine_Ingredients
+		{
+			get
+			{
+				return this.GetTable<Medincine_Ingredient>();
 			}
 		}
 		
@@ -1496,6 +1507,144 @@ namespace DataAccessLayer
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Ingredient")]
+	public partial class Ingredient : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private string _Ingredient_ID;
+		
+		private string _Ingredient_Name;
+		
+		private string _Ingredient_Note;
+		
+		private EntitySet<Medincine_Ingredient> _Medincine_Ingredients;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIngredient_IDChanging(string value);
+    partial void OnIngredient_IDChanged();
+    partial void OnIngredient_NameChanging(string value);
+    partial void OnIngredient_NameChanged();
+    partial void OnIngredient_NoteChanging(string value);
+    partial void OnIngredient_NoteChanged();
+    #endregion
+		
+		public Ingredient()
+		{
+			this._Medincine_Ingredients = new EntitySet<Medincine_Ingredient>(new Action<Medincine_Ingredient>(this.attach_Medincine_Ingredients), new Action<Medincine_Ingredient>(this.detach_Medincine_Ingredients));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ingredient_ID", DbType="NVarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string Ingredient_ID
+		{
+			get
+			{
+				return this._Ingredient_ID;
+			}
+			set
+			{
+				if ((this._Ingredient_ID != value))
+				{
+					this.OnIngredient_IDChanging(value);
+					this.SendPropertyChanging();
+					this._Ingredient_ID = value;
+					this.SendPropertyChanged("Ingredient_ID");
+					this.OnIngredient_IDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ingredient_Name", DbType="NVarChar(200) NOT NULL", CanBeNull=false)]
+		public string Ingredient_Name
+		{
+			get
+			{
+				return this._Ingredient_Name;
+			}
+			set
+			{
+				if ((this._Ingredient_Name != value))
+				{
+					this.OnIngredient_NameChanging(value);
+					this.SendPropertyChanging();
+					this._Ingredient_Name = value;
+					this.SendPropertyChanged("Ingredient_Name");
+					this.OnIngredient_NameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ingredient_Note", DbType="NVarChar(500)")]
+		public string Ingredient_Note
+		{
+			get
+			{
+				return this._Ingredient_Note;
+			}
+			set
+			{
+				if ((this._Ingredient_Note != value))
+				{
+					this.OnIngredient_NoteChanging(value);
+					this.SendPropertyChanging();
+					this._Ingredient_Note = value;
+					this.SendPropertyChanged("Ingredient_Note");
+					this.OnIngredient_NoteChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Ingredient_Medincine_Ingredient", Storage="_Medincine_Ingredients", ThisKey="Ingredient_ID", OtherKey="Ingredient_ID")]
+		public EntitySet<Medincine_Ingredient> Medincine_Ingredients
+		{
+			get
+			{
+				return this._Medincine_Ingredients;
+			}
+			set
+			{
+				this._Medincine_Ingredients.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_Medincine_Ingredients(Medincine_Ingredient entity)
+		{
+			this.SendPropertyChanging();
+			entity.Ingredient = this;
+		}
+		
+		private void detach_Medincine_Ingredients(Medincine_Ingredient entity)
+		{
+			this.SendPropertyChanging();
+			entity.Ingredient = null;
+		}
+	}
+	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Medicine")]
 	public partial class Medicine : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -1518,9 +1667,9 @@ namespace DataAccessLayer
 		
 		private System.Nullable<int> _Medicine_Price;
 		
-		private EntitySet<Precription_Medicine> _Precription_Medicines;
+		private EntitySet<Medincine_Ingredient> _Medincine_Ingredients;
 		
-		private EntityRef<Medicine_Ingredient> _Medicine_Ingredient;
+		private EntitySet<Precription_Medicine> _Precription_Medicines;
 		
 		private EntityRef<Medicine_Unit> _Medicine_Unit;
 		
@@ -1548,8 +1697,8 @@ namespace DataAccessLayer
 		
 		public Medicine()
 		{
+			this._Medincine_Ingredients = new EntitySet<Medincine_Ingredient>(new Action<Medincine_Ingredient>(this.attach_Medincine_Ingredients), new Action<Medincine_Ingredient>(this.detach_Medincine_Ingredients));
 			this._Precription_Medicines = new EntitySet<Precription_Medicine>(new Action<Precription_Medicine>(this.attach_Precription_Medicines), new Action<Precription_Medicine>(this.detach_Precription_Medicines));
-			this._Medicine_Ingredient = default(EntityRef<Medicine_Ingredient>);
 			this._Medicine_Unit = default(EntityRef<Medicine_Unit>);
 			OnCreated();
 		}
@@ -1629,10 +1778,6 @@ namespace DataAccessLayer
 			{
 				if ((this._Ingredient_ID != value))
 				{
-					if (this._Medicine_Ingredient.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnIngredient_IDChanging(value);
 					this.SendPropertyChanging();
 					this._Ingredient_ID = value;
@@ -1722,6 +1867,19 @@ namespace DataAccessLayer
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Medicine_Medincine_Ingredient", Storage="_Medincine_Ingredients", ThisKey="Medicine_ID", OtherKey="Medicine_ID")]
+		public EntitySet<Medincine_Ingredient> Medincine_Ingredients
+		{
+			get
+			{
+				return this._Medincine_Ingredients;
+			}
+			set
+			{
+				this._Medincine_Ingredients.Assign(value);
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Medicine_Precription_Medicine", Storage="_Precription_Medicines", ThisKey="Medicine_ID", OtherKey="Medicine_ID")]
 		public EntitySet<Precription_Medicine> Precription_Medicines
 		{
@@ -1732,40 +1890,6 @@ namespace DataAccessLayer
 			set
 			{
 				this._Precription_Medicines.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Medicine_Ingredient_Medicine", Storage="_Medicine_Ingredient", ThisKey="Ingredient_ID", OtherKey="Ingredient_ID", IsForeignKey=true)]
-		public Medicine_Ingredient Medicine_Ingredient
-		{
-			get
-			{
-				return this._Medicine_Ingredient.Entity;
-			}
-			set
-			{
-				Medicine_Ingredient previousValue = this._Medicine_Ingredient.Entity;
-				if (((previousValue != value) 
-							|| (this._Medicine_Ingredient.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._Medicine_Ingredient.Entity = null;
-						previousValue.Medicines.Remove(this);
-					}
-					this._Medicine_Ingredient.Entity = value;
-					if ((value != null))
-					{
-						value.Medicines.Add(this);
-						this._Ingredient_ID = value.Ingredient_ID;
-					}
-					else
-					{
-						this._Ingredient_ID = default(int);
-					}
-					this.SendPropertyChanged("Medicine_Ingredient");
-				}
 			}
 		}
 		
@@ -1823,6 +1947,18 @@ namespace DataAccessLayer
 			}
 		}
 		
+		private void attach_Medincine_Ingredients(Medincine_Ingredient entity)
+		{
+			this.SendPropertyChanging();
+			entity.Medicine = this;
+		}
+		
+		private void detach_Medincine_Ingredients(Medincine_Ingredient entity)
+		{
+			this.SendPropertyChanging();
+			entity.Medicine = null;
+		}
+		
 		private void attach_Precription_Medicines(Precription_Medicine entity)
 		{
 			this.SendPropertyChanging();
@@ -1833,168 +1969,6 @@ namespace DataAccessLayer
 		{
 			this.SendPropertyChanging();
 			entity.Medicine = null;
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Medicine_Ingredient")]
-	public partial class Medicine_Ingredient : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _Ingredient_ID;
-		
-		private string _Ingredient_Name;
-		
-		private string _Ingredient_Unit;
-		
-		private System.Nullable<int> _Ingredient_Content;
-		
-		private EntitySet<Medicine> _Medicines;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnIngredient_IDChanging(int value);
-    partial void OnIngredient_IDChanged();
-    partial void OnIngredient_NameChanging(string value);
-    partial void OnIngredient_NameChanged();
-    partial void OnIngredient_UnitChanging(string value);
-    partial void OnIngredient_UnitChanged();
-    partial void OnIngredient_ContentChanging(System.Nullable<int> value);
-    partial void OnIngredient_ContentChanged();
-    #endregion
-		
-		public Medicine_Ingredient()
-		{
-			this._Medicines = new EntitySet<Medicine>(new Action<Medicine>(this.attach_Medicines), new Action<Medicine>(this.detach_Medicines));
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ingredient_ID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int Ingredient_ID
-		{
-			get
-			{
-				return this._Ingredient_ID;
-			}
-			set
-			{
-				if ((this._Ingredient_ID != value))
-				{
-					this.OnIngredient_IDChanging(value);
-					this.SendPropertyChanging();
-					this._Ingredient_ID = value;
-					this.SendPropertyChanged("Ingredient_ID");
-					this.OnIngredient_IDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ingredient_Name", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
-		public string Ingredient_Name
-		{
-			get
-			{
-				return this._Ingredient_Name;
-			}
-			set
-			{
-				if ((this._Ingredient_Name != value))
-				{
-					this.OnIngredient_NameChanging(value);
-					this.SendPropertyChanging();
-					this._Ingredient_Name = value;
-					this.SendPropertyChanged("Ingredient_Name");
-					this.OnIngredient_NameChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ingredient_Unit", DbType="NVarChar(50)")]
-		public string Ingredient_Unit
-		{
-			get
-			{
-				return this._Ingredient_Unit;
-			}
-			set
-			{
-				if ((this._Ingredient_Unit != value))
-				{
-					this.OnIngredient_UnitChanging(value);
-					this.SendPropertyChanging();
-					this._Ingredient_Unit = value;
-					this.SendPropertyChanged("Ingredient_Unit");
-					this.OnIngredient_UnitChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ingredient_Content", DbType="Int")]
-		public System.Nullable<int> Ingredient_Content
-		{
-			get
-			{
-				return this._Ingredient_Content;
-			}
-			set
-			{
-				if ((this._Ingredient_Content != value))
-				{
-					this.OnIngredient_ContentChanging(value);
-					this.SendPropertyChanging();
-					this._Ingredient_Content = value;
-					this.SendPropertyChanged("Ingredient_Content");
-					this.OnIngredient_ContentChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Medicine_Ingredient_Medicine", Storage="_Medicines", ThisKey="Ingredient_ID", OtherKey="Ingredient_ID")]
-		public EntitySet<Medicine> Medicines
-		{
-			get
-			{
-				return this._Medicines;
-			}
-			set
-			{
-				this._Medicines.Assign(value);
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-		
-		private void attach_Medicines(Medicine entity)
-		{
-			this.SendPropertyChanging();
-			entity.Medicine_Ingredient = this;
-		}
-		
-		private void detach_Medicines(Medicine entity)
-		{
-			this.SendPropertyChanging();
-			entity.Medicine_Ingredient = null;
 		}
 	}
 	
@@ -2133,6 +2107,222 @@ namespace DataAccessLayer
 		{
 			this.SendPropertyChanging();
 			entity.Medicine_Unit = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Medincine_Ingredient")]
+	public partial class Medincine_Ingredient : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Medicine_ID;
+		
+		private string _Ingredient_ID;
+		
+		private string _Unit;
+		
+		private System.Nullable<double> _ContentUnit;
+		
+		private EntityRef<Ingredient> _Ingredient;
+		
+		private EntityRef<Medicine> _Medicine;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnMedicine_IDChanging(int value);
+    partial void OnMedicine_IDChanged();
+    partial void OnIngredient_IDChanging(string value);
+    partial void OnIngredient_IDChanged();
+    partial void OnUnitChanging(string value);
+    partial void OnUnitChanged();
+    partial void OnContentUnitChanging(System.Nullable<double> value);
+    partial void OnContentUnitChanged();
+    #endregion
+		
+		public Medincine_Ingredient()
+		{
+			this._Ingredient = default(EntityRef<Ingredient>);
+			this._Medicine = default(EntityRef<Medicine>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Medicine_ID", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int Medicine_ID
+		{
+			get
+			{
+				return this._Medicine_ID;
+			}
+			set
+			{
+				if ((this._Medicine_ID != value))
+				{
+					if (this._Medicine.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnMedicine_IDChanging(value);
+					this.SendPropertyChanging();
+					this._Medicine_ID = value;
+					this.SendPropertyChanged("Medicine_ID");
+					this.OnMedicine_IDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ingredient_ID", DbType="NVarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string Ingredient_ID
+		{
+			get
+			{
+				return this._Ingredient_ID;
+			}
+			set
+			{
+				if ((this._Ingredient_ID != value))
+				{
+					if (this._Ingredient.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnIngredient_IDChanging(value);
+					this.SendPropertyChanging();
+					this._Ingredient_ID = value;
+					this.SendPropertyChanged("Ingredient_ID");
+					this.OnIngredient_IDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Unit", DbType="NVarChar(50)")]
+		public string Unit
+		{
+			get
+			{
+				return this._Unit;
+			}
+			set
+			{
+				if ((this._Unit != value))
+				{
+					this.OnUnitChanging(value);
+					this.SendPropertyChanging();
+					this._Unit = value;
+					this.SendPropertyChanged("Unit");
+					this.OnUnitChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ContentUnit", DbType="Float")]
+		public System.Nullable<double> ContentUnit
+		{
+			get
+			{
+				return this._ContentUnit;
+			}
+			set
+			{
+				if ((this._ContentUnit != value))
+				{
+					this.OnContentUnitChanging(value);
+					this.SendPropertyChanging();
+					this._ContentUnit = value;
+					this.SendPropertyChanged("ContentUnit");
+					this.OnContentUnitChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Ingredient_Medincine_Ingredient", Storage="_Ingredient", ThisKey="Ingredient_ID", OtherKey="Ingredient_ID", IsForeignKey=true)]
+		public Ingredient Ingredient
+		{
+			get
+			{
+				return this._Ingredient.Entity;
+			}
+			set
+			{
+				Ingredient previousValue = this._Ingredient.Entity;
+				if (((previousValue != value) 
+							|| (this._Ingredient.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Ingredient.Entity = null;
+						previousValue.Medincine_Ingredients.Remove(this);
+					}
+					this._Ingredient.Entity = value;
+					if ((value != null))
+					{
+						value.Medincine_Ingredients.Add(this);
+						this._Ingredient_ID = value.Ingredient_ID;
+					}
+					else
+					{
+						this._Ingredient_ID = default(string);
+					}
+					this.SendPropertyChanged("Ingredient");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Medicine_Medincine_Ingredient", Storage="_Medicine", ThisKey="Medicine_ID", OtherKey="Medicine_ID", IsForeignKey=true)]
+		public Medicine Medicine
+		{
+			get
+			{
+				return this._Medicine.Entity;
+			}
+			set
+			{
+				Medicine previousValue = this._Medicine.Entity;
+				if (((previousValue != value) 
+							|| (this._Medicine.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Medicine.Entity = null;
+						previousValue.Medincine_Ingredients.Remove(this);
+					}
+					this._Medicine.Entity = value;
+					if ((value != null))
+					{
+						value.Medincine_Ingredients.Add(this);
+						this._Medicine_ID = value.Medicine_ID;
+					}
+					else
+					{
+						this._Medicine_ID = default(int);
+					}
+					this.SendPropertyChanged("Medicine");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
 		}
 	}
 	

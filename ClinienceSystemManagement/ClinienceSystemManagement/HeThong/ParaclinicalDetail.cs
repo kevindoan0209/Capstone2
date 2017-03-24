@@ -178,7 +178,7 @@ namespace ClinienceSystemManagement.HeThong
             }
             catch (Exception)
             {
-                MessageBox.Show("Mã danh mục này đã tồn tại");
+                MessageBox.Show("Mã đối tượng này đã tồn tại");
             }
         }
     }

@@ -1,5 +1,6 @@
 ﻿using ClinienceSystemManagement;
 using ClinienceSystemManagement.Hệ_Thống;
+using ClinienceSystemManagement.HeThong;
 using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
@@ -88,6 +89,41 @@ namespace PresentationLayer
                 DanhMucThuoc formThuoc = new DanhMucThuoc();
                 formThuoc.MdiParent = this;
                 formThuoc.Show();
+            }
+        }
+
+        private void btnBenh_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.IsExits(typeof(Disease));
+            if (frm != null)
+            {
+                frm.Activate();
+            }
+            else
+            {
+                Disease disease = new Disease();
+                disease.MdiParent = this;
+                disease.Show();
+            }
+        }
+
+        private void btnDonVi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        private void btnThanhPhan_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.IsExits(typeof(MedicineIngredient));
+            if (frm != null)
+            {
+                frm.Activate();
+            }
+            else
+            {
+                MedicineIngredient mi = new MedicineIngredient();
+                mi.MdiParent = this;
+                mi.Show();
             }
         }
     }

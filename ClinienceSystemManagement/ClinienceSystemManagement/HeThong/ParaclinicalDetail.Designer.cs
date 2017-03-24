@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ParaclinicalDetail));
-            DevExpress.DataAccess.Sql.TableQuery tableQuery2 = new DevExpress.DataAccess.Sql.TableQuery();
-            DevExpress.DataAccess.Sql.TableInfo tableInfo2 = new DevExpress.DataAccess.Sql.TableInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo3 = new DevExpress.DataAccess.Sql.ColumnInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo4 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.TableQuery tableQuery1 = new DevExpress.DataAccess.Sql.TableQuery();
+            DevExpress.DataAccess.Sql.TableInfo tableInfo1 = new DevExpress.DataAccess.Sql.TableInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo1 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo2 = new DevExpress.DataAccess.Sql.ColumnInfo();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
             this.btnTao = new DevExpress.XtraEditors.SimpleButton();
@@ -163,17 +163,17 @@
             // 
             this.sqlDataSource1.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            tableQuery2.Name = "Paraclinical_Group";
-            tableInfo2.Name = "Paraclinical_Group";
-            columnInfo3.Name = "Paraclinical_Group_ID";
-            columnInfo4.Name = "Paraclinical_Group_Name";
-            tableInfo2.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
-            columnInfo3,
-            columnInfo4});
-            tableQuery2.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
-            tableInfo2});
+            tableQuery1.Name = "Paraclinical_Group";
+            tableInfo1.Name = "Paraclinical_Group";
+            columnInfo1.Name = "Paraclinical_Group_ID";
+            columnInfo2.Name = "Paraclinical_Group_Name";
+            tableInfo1.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
+            columnInfo1,
+            columnInfo2});
+            tableQuery1.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
+            tableInfo1});
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            tableQuery2});
+            tableQuery1});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // txtDanhMuc
