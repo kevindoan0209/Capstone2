@@ -30,16 +30,27 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DanhMucThuoc));
-            DevExpress.DataAccess.Sql.TableQuery tableQuery2 = new DevExpress.DataAccess.Sql.TableQuery();
-            DevExpress.DataAccess.Sql.RelationInfo relationInfo2 = new DevExpress.DataAccess.Sql.RelationInfo();
-            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo2 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
-            DevExpress.DataAccess.Sql.TableInfo tableInfo3 = new DevExpress.DataAccess.Sql.TableInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo6 = new DevExpress.DataAccess.Sql.ColumnInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo7 = new DevExpress.DataAccess.Sql.ColumnInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo8 = new DevExpress.DataAccess.Sql.ColumnInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo9 = new DevExpress.DataAccess.Sql.ColumnInfo();
-            DevExpress.DataAccess.Sql.TableInfo tableInfo4 = new DevExpress.DataAccess.Sql.TableInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo10 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.TableQuery tableQuery3 = new DevExpress.DataAccess.Sql.TableQuery();
+            DevExpress.DataAccess.Sql.RelationInfo relationInfo3 = new DevExpress.DataAccess.Sql.RelationInfo();
+            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo3 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
+            DevExpress.DataAccess.Sql.TableInfo tableInfo5 = new DevExpress.DataAccess.Sql.TableInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo12 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo13 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo14 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo15 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.TableInfo tableInfo6 = new DevExpress.DataAccess.Sql.TableInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo16 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.TableQuery tableQuery4 = new DevExpress.DataAccess.Sql.TableQuery();
+            DevExpress.DataAccess.Sql.RelationInfo relationInfo4 = new DevExpress.DataAccess.Sql.RelationInfo();
+            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo4 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
+            DevExpress.DataAccess.Sql.TableInfo tableInfo7 = new DevExpress.DataAccess.Sql.TableInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo17 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo18 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo19 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo20 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo21 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.TableInfo tableInfo8 = new DevExpress.DataAccess.Sql.TableInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo22 = new DevExpress.DataAccess.Sql.ColumnInfo();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.cmsCapNhat = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsXoa = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,13 +61,15 @@
             this.btnLamMoi = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.grcDanhMuc = new DevExpress.XtraGrid.GridControl();
-            this.gvDanhMuc = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.sqlDataSource5 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.grcDanhMuc = new DevExpress.XtraGrid.GridControl();
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.gvDanhMuc = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colMedicine_ID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colMedicine_Name = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colMedicine_Class = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colMedicine_Note = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colMedicine_Price = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMedicine_Class = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colUnit_Name = new DevExpress.XtraGrid.Columns.GridColumn();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
@@ -169,11 +182,45 @@
             this.labelControl1.TabIndex = 3;
             this.labelControl1.Text = "* Nhấn chuột phải trên danh sách để xóa hoặc cập nhật dữ liệu";
             // 
+            // sqlDataSource5
+            // 
+            this.sqlDataSource5.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
+            this.sqlDataSource5.Name = "sqlDataSource5";
+            tableQuery3.Name = "Medicine";
+            relationColumnInfo3.NestedKeyColumn = "Unit_ID";
+            relationColumnInfo3.ParentKeyColumn = "Unit_ID";
+            relationInfo3.KeyColumns.AddRange(new DevExpress.DataAccess.Sql.RelationColumnInfo[] {
+            relationColumnInfo3});
+            relationInfo3.NestedTable = "Medicine_Unit";
+            relationInfo3.ParentTable = "Medicine";
+            tableQuery3.Relations.AddRange(new DevExpress.DataAccess.Sql.RelationInfo[] {
+            relationInfo3});
+            tableInfo5.Name = "Medicine";
+            columnInfo12.Name = "Medicine_Name";
+            columnInfo13.Name = "Medicine_Class";
+            columnInfo14.Name = "Medicine_Note";
+            columnInfo15.Name = "Medicine_Price";
+            tableInfo5.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
+            columnInfo12,
+            columnInfo13,
+            columnInfo14,
+            columnInfo15});
+            tableInfo6.Name = "Medicine_Unit";
+            columnInfo16.Name = "Unit_Name";
+            tableInfo6.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
+            columnInfo16});
+            tableQuery3.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
+            tableInfo5,
+            tableInfo6});
+            this.sqlDataSource5.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            tableQuery3});
+            this.sqlDataSource5.ResultSchemaSerializable = resources.GetString("sqlDataSource5.ResultSchemaSerializable");
+            // 
             // grcDanhMuc
             // 
             this.grcDanhMuc.ContextMenuStrip = this.contextMenuStrip1;
             this.grcDanhMuc.DataMember = "Medicine";
-            this.grcDanhMuc.DataSource = this.sqlDataSource5;
+            this.grcDanhMuc.DataSource = this.sqlDataSource1;
             this.grcDanhMuc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grcDanhMuc.Location = new System.Drawing.Point(0, 61);
             this.grcDanhMuc.MainView = this.gvDanhMuc;
@@ -183,53 +230,62 @@
             this.grcDanhMuc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvDanhMuc});
             // 
+            // sqlDataSource1
+            // 
+            this.sqlDataSource1.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
+            this.sqlDataSource1.Name = "sqlDataSource1";
+            tableQuery4.Name = "Medicine";
+            relationColumnInfo4.NestedKeyColumn = "Unit_ID";
+            relationColumnInfo4.ParentKeyColumn = "Unit_ID";
+            relationInfo4.KeyColumns.AddRange(new DevExpress.DataAccess.Sql.RelationColumnInfo[] {
+            relationColumnInfo4});
+            relationInfo4.NestedTable = "Medicine_Unit";
+            relationInfo4.ParentTable = "Medicine";
+            tableQuery4.Relations.AddRange(new DevExpress.DataAccess.Sql.RelationInfo[] {
+            relationInfo4});
+            tableInfo7.Name = "Medicine";
+            columnInfo17.Name = "Medicine_ID";
+            columnInfo18.Name = "Medicine_Name";
+            columnInfo19.Name = "Medicine_Note";
+            columnInfo20.Name = "Medicine_Price";
+            columnInfo21.Name = "Medicine_Class";
+            tableInfo7.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
+            columnInfo17,
+            columnInfo18,
+            columnInfo19,
+            columnInfo20,
+            columnInfo21});
+            tableInfo8.Name = "Medicine_Unit";
+            columnInfo22.Name = "Unit_Name";
+            tableInfo8.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
+            columnInfo22});
+            tableQuery4.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
+            tableInfo7,
+            tableInfo8});
+            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            tableQuery4});
+            this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
+            // 
             // gvDanhMuc
             // 
             this.gvDanhMuc.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gvDanhMuc.Appearance.HeaderPanel.Options.UseFont = true;
             this.gvDanhMuc.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colMedicine_ID,
             this.colMedicine_Name,
-            this.colMedicine_Class,
             this.colMedicine_Note,
             this.colMedicine_Price,
+            this.colMedicine_Class,
             this.colUnit_Name});
             this.gvDanhMuc.GridControl = this.grcDanhMuc;
             this.gvDanhMuc.Name = "gvDanhMuc";
             this.gvDanhMuc.OptionsView.EnableAppearanceEvenRow = true;
             // 
-            // sqlDataSource5
+            // colMedicine_ID
             // 
-            this.sqlDataSource5.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
-            this.sqlDataSource5.Name = "sqlDataSource5";
-            tableQuery2.Name = "Medicine";
-            relationColumnInfo2.NestedKeyColumn = "Unit_ID";
-            relationColumnInfo2.ParentKeyColumn = "Unit_ID";
-            relationInfo2.KeyColumns.AddRange(new DevExpress.DataAccess.Sql.RelationColumnInfo[] {
-            relationColumnInfo2});
-            relationInfo2.NestedTable = "Medicine_Unit";
-            relationInfo2.ParentTable = "Medicine";
-            tableQuery2.Relations.AddRange(new DevExpress.DataAccess.Sql.RelationInfo[] {
-            relationInfo2});
-            tableInfo3.Name = "Medicine";
-            columnInfo6.Name = "Medicine_Name";
-            columnInfo7.Name = "Medicine_Class";
-            columnInfo8.Name = "Medicine_Note";
-            columnInfo9.Name = "Medicine_Price";
-            tableInfo3.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
-            columnInfo6,
-            columnInfo7,
-            columnInfo8,
-            columnInfo9});
-            tableInfo4.Name = "Medicine_Unit";
-            columnInfo10.Name = "Unit_Name";
-            tableInfo4.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
-            columnInfo10});
-            tableQuery2.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
-            tableInfo3,
-            tableInfo4});
-            this.sqlDataSource5.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            tableQuery2});
-            this.sqlDataSource5.ResultSchemaSerializable = resources.GetString("sqlDataSource5.ResultSchemaSerializable");
+            this.colMedicine_ID.Caption = "Mã thuốc";
+            this.colMedicine_ID.FieldName = "Medicine_ID";
+            this.colMedicine_ID.Name = "colMedicine_ID";
             // 
             // colMedicine_Name
             // 
@@ -238,16 +294,7 @@
             this.colMedicine_Name.Name = "colMedicine_Name";
             this.colMedicine_Name.Visible = true;
             this.colMedicine_Name.VisibleIndex = 0;
-            this.colMedicine_Name.Width = 207;
-            // 
-            // colMedicine_Class
-            // 
-            this.colMedicine_Class.Caption = "Lớp thuốc";
-            this.colMedicine_Class.FieldName = "Medicine_Class";
-            this.colMedicine_Class.Name = "colMedicine_Class";
-            this.colMedicine_Class.Visible = true;
-            this.colMedicine_Class.VisibleIndex = 1;
-            this.colMedicine_Class.Width = 200;
+            this.colMedicine_Name.Width = 235;
             // 
             // colMedicine_Note
             // 
@@ -256,7 +303,7 @@
             this.colMedicine_Note.Name = "colMedicine_Note";
             this.colMedicine_Note.Visible = true;
             this.colMedicine_Note.VisibleIndex = 3;
-            this.colMedicine_Note.Width = 134;
+            this.colMedicine_Note.Width = 104;
             // 
             // colMedicine_Price
             // 
@@ -265,7 +312,16 @@
             this.colMedicine_Price.Name = "colMedicine_Price";
             this.colMedicine_Price.Visible = true;
             this.colMedicine_Price.VisibleIndex = 4;
-            this.colMedicine_Price.Width = 90;
+            this.colMedicine_Price.Width = 111;
+            // 
+            // colMedicine_Class
+            // 
+            this.colMedicine_Class.Caption = "Lớp thuốc";
+            this.colMedicine_Class.FieldName = "Medicine_Class";
+            this.colMedicine_Class.Name = "colMedicine_Class";
+            this.colMedicine_Class.Visible = true;
+            this.colMedicine_Class.VisibleIndex = 1;
+            this.colMedicine_Class.Width = 192;
             // 
             // colUnit_Name
             // 
@@ -274,7 +330,7 @@
             this.colUnit_Name.Name = "colUnit_Name";
             this.colUnit_Name.Visible = true;
             this.colUnit_Name.VisibleIndex = 2;
-            this.colUnit_Name.Width = 115;
+            this.colUnit_Name.Width = 104;
             // 
             // DanhMucThuoc
             // 
@@ -312,13 +368,15 @@
         private DevExpress.XtraEditors.SimpleButton btnLamMoi;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraGrid.GridControl grcDanhMuc;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource5;
+        private DevExpress.XtraGrid.GridControl grcDanhMuc;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
         private DevExpress.XtraGrid.Views.Grid.GridView gvDanhMuc;
+        private DevExpress.XtraGrid.Columns.GridColumn colMedicine_ID;
         private DevExpress.XtraGrid.Columns.GridColumn colMedicine_Name;
-        private DevExpress.XtraGrid.Columns.GridColumn colMedicine_Class;
         private DevExpress.XtraGrid.Columns.GridColumn colMedicine_Note;
         private DevExpress.XtraGrid.Columns.GridColumn colMedicine_Price;
+        private DevExpress.XtraGrid.Columns.GridColumn colMedicine_Class;
         private DevExpress.XtraGrid.Columns.GridColumn colUnit_Name;
     }
 }

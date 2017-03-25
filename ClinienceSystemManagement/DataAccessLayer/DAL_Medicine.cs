@@ -28,21 +28,22 @@ namespace DataAccessLayer
             return command.ExecuteNonQuery();
         }
 
-        public int InsertMedicine(string name, string mclass, string usage, string note, int price)
+        public int InsertMedicine(string name, string mclass, string usage, string note, int price,int unitid)
         {
-            const String sqlCommand = "Insert into Medicine (Medicine_Name,Medicine_Class,Medicine_Usage,Medicine_Note,Medicine_Price) values(@Name, @MClass, @Usage, @Note, @Price)";
+            const String sqlCommand = "Insert into Medicine (Medicine_Name,Medicine_Class,Medicine_Usage,Medicine_Note,Medicine_Price,Unit_ID) values(@Name, @MClass, @Usage, @Note, @Price,@Unitid)";
             SqlCommand command = new SqlCommand(sqlCommand, connect());
             command.Parameters.AddWithValue("@Name", name);
             command.Parameters.AddWithValue("@MClass", mclass);
             command.Parameters.AddWithValue("@Usage", usage);
             command.Parameters.AddWithValue("@Note", note);
             command.Parameters.AddWithValue("@Price", price);
+            command.Parameters.AddWithValue("@Unitid", unitid);
             return command.ExecuteNonQuery();
         }
 
-        public int UpdateMedicine(int id, string name, string mclass, string usage, string note, int price)
+        public int UpdateMedicine(int id, string name, string mclass, string usage, string note, int price,int unitid)
         {
-            const String sqlCommand = "Update Medicine set Medicine_Name = @Name, Medicine_Class = @MClass, Medicine_Usage = @Usage ,Medicine_Note = @Note, Medicine_Price = @Price  where Medicine_ID = @Id";
+            const String sqlCommand = "Update Medicine set Medicine_Name = @Name, Medicine_Class = @MClass, Medicine_Usage = @Usage ,Medicine_Note = @Note, Medicine_Price = @Price ,Unit_ID = @Unitid  where Medicine_ID = @Id";
             SqlCommand command = new SqlCommand(sqlCommand, connect());
             command.Parameters.AddWithValue("@Id", id);
             command.Parameters.AddWithValue("@Name", name);
@@ -50,6 +51,7 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@Usage", usage);
             command.Parameters.AddWithValue("@Note", note);
             command.Parameters.AddWithValue("@Price", price);
+            command.Parameters.AddWithValue("@Unitid", unitid);
             return command.ExecuteNonQuery();
         }
     }

@@ -241,7 +241,7 @@
     <value>Paraclinical_Group_ID</value>
   </data>
   <data name="lkePhanNhom.Properties.Columns1" xml:space="preserve">
-    <value>STT</value>
+    <value>Paraclinical_Group_ID</value>
   </data>
   <data name="lkePhanNhom.Properties.Columns2" type="System.Int32, mscorlib">
     <value>127</value>
@@ -254,7 +254,7 @@
     <value />
   </data>
   <data name="lkePhanNhom.Properties.Columns5" type="System.Boolean, mscorlib">
-    <value>True</value>
+    <value>False</value>
   </data>
   <data name="lkePhanNhom.Properties.Columns6" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v15.1">
     <value>Far</value>
@@ -263,7 +263,7 @@
     <value>Paraclinical_Group_Name</value>
   </data>
   <data name="lkePhanNhom.Properties.Columns8" xml:space="preserve">
-    <value>Tên</value>
+    <value>Nhóm</value>
   </data>
   <data name="lkePhanNhom.Properties.Columns9" type="System.Int32, mscorlib">
     <value>130</value>
