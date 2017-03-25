@@ -116,9 +116,9 @@ namespace PresentationLayer
             }
             else
             {
-                MedicineUnit mu = new MedicineUnit();
-                mu.MdiParent = this;
-                mu.Show();
+                MedicineUnit medicine = new MedicineUnit();
+                medicine.MdiParent = this;
+                medicine.Show();
             }
         }
 
@@ -131,9 +131,25 @@ namespace PresentationLayer
             }
             else
             {
-                MedicineIngredient mi = new MedicineIngredient();
-                mi.MdiParent = this;
-                mi.Show();
+                MedicineIngredient medicine = new MedicineIngredient();
+                medicine.MdiParent = this;
+                medicine.Show();
+            }
+        }
+
+        private void btnNguoiDung_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+            Form frm = this.IsExits(typeof(Human));
+            if (frm != null)
+            {
+                frm.Activate();
+            }
+            else
+            {
+                Human human = new Human();
+                human.MdiParent = this;
+                human.Show();
             }
         }
     }

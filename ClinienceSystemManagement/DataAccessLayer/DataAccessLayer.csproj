@@ -41,11 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL_Appointment.cs" />
     <Compile Include="DAL_Disease.cs" />
     <Compile Include="DAL_Ingredient.cs" />
     <Compile Include="DAL_Medicine.cs" />
     <Compile Include="DAL_Paraclinical.cs" />
-    <Compile Include="DAL_Account.cs" />
+    <Compile Include="DAL_Human.cs" />
     <Compile Include="DataClinience.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

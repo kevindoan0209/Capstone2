@@ -81,6 +81,12 @@
     <Compile Include="HeThong\DiseaseDetail.Designer.cs">
       <DependentUpon>DiseaseDetail.cs</DependentUpon>
     </Compile>
+    <Compile Include="HeThong\Human.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\Human.Designer.cs">
+      <DependentUpon>Human.cs</DependentUpon>
+    </Compile>
     <Compile Include="HeThong\MedicineIngredient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HeThong\DiseaseDetail.resx">
       <DependentUpon>DiseaseDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\Human.resx">
+      <DependentUpon>Human.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HeThong\MedicineDetail.resx">
       <DependentUpon>MedicineDetail.cs</DependentUpon>

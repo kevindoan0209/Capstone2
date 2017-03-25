@@ -29,30 +29,30 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.DataAccess.Sql.TableQuery tableQuery9 = new DevExpress.DataAccess.Sql.TableQuery();
-            DevExpress.DataAccess.Sql.TableInfo tableInfo13 = new DevExpress.DataAccess.Sql.TableInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo19 = new DevExpress.DataAccess.Sql.ColumnInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo20 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.TableQuery tableQuery13 = new DevExpress.DataAccess.Sql.TableQuery();
+            DevExpress.DataAccess.Sql.TableInfo tableInfo19 = new DevExpress.DataAccess.Sql.TableInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo28 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo29 = new DevExpress.DataAccess.Sql.ColumnInfo();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MedicineDetail));
-            DevExpress.DataAccess.Sql.TableQuery tableQuery10 = new DevExpress.DataAccess.Sql.TableQuery();
-            DevExpress.DataAccess.Sql.RelationInfo relationInfo5 = new DevExpress.DataAccess.Sql.RelationInfo();
-            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo5 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
-            DevExpress.DataAccess.Sql.RelationInfo relationInfo6 = new DevExpress.DataAccess.Sql.RelationInfo();
-            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo6 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
-            DevExpress.DataAccess.Sql.TableInfo tableInfo14 = new DevExpress.DataAccess.Sql.TableInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo21 = new DevExpress.DataAccess.Sql.ColumnInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo22 = new DevExpress.DataAccess.Sql.ColumnInfo();
-            DevExpress.DataAccess.Sql.TableInfo tableInfo15 = new DevExpress.DataAccess.Sql.TableInfo();
-            DevExpress.DataAccess.Sql.TableInfo tableInfo16 = new DevExpress.DataAccess.Sql.TableInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo23 = new DevExpress.DataAccess.Sql.ColumnInfo();
-            DevExpress.DataAccess.Sql.TableQuery tableQuery11 = new DevExpress.DataAccess.Sql.TableQuery();
-            DevExpress.DataAccess.Sql.TableInfo tableInfo17 = new DevExpress.DataAccess.Sql.TableInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo24 = new DevExpress.DataAccess.Sql.ColumnInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo25 = new DevExpress.DataAccess.Sql.ColumnInfo();
-            DevExpress.DataAccess.Sql.TableQuery tableQuery12 = new DevExpress.DataAccess.Sql.TableQuery();
-            DevExpress.DataAccess.Sql.TableInfo tableInfo18 = new DevExpress.DataAccess.Sql.TableInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo26 = new DevExpress.DataAccess.Sql.ColumnInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo27 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.TableQuery tableQuery14 = new DevExpress.DataAccess.Sql.TableQuery();
+            DevExpress.DataAccess.Sql.RelationInfo relationInfo7 = new DevExpress.DataAccess.Sql.RelationInfo();
+            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo7 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
+            DevExpress.DataAccess.Sql.RelationInfo relationInfo8 = new DevExpress.DataAccess.Sql.RelationInfo();
+            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo8 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
+            DevExpress.DataAccess.Sql.TableInfo tableInfo20 = new DevExpress.DataAccess.Sql.TableInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo30 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo31 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.TableInfo tableInfo21 = new DevExpress.DataAccess.Sql.TableInfo();
+            DevExpress.DataAccess.Sql.TableInfo tableInfo22 = new DevExpress.DataAccess.Sql.TableInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo32 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.TableQuery tableQuery15 = new DevExpress.DataAccess.Sql.TableQuery();
+            DevExpress.DataAccess.Sql.TableInfo tableInfo23 = new DevExpress.DataAccess.Sql.TableInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo33 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo34 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.TableQuery tableQuery16 = new DevExpress.DataAccess.Sql.TableQuery();
+            DevExpress.DataAccess.Sql.TableInfo tableInfo24 = new DevExpress.DataAccess.Sql.TableInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo35 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo36 = new DevExpress.DataAccess.Sql.ColumnInfo();
             this.xtraTabContarol1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
@@ -173,17 +173,17 @@
             // 
             this.sqlDataSource4.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource4.Name = "sqlDataSource4";
-            tableQuery9.Name = "Medicine_Unit";
-            tableInfo13.Name = "Medicine_Unit";
-            columnInfo19.Name = "Unit_ID";
-            columnInfo20.Name = "Unit_Name";
-            tableInfo13.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
-            columnInfo19,
-            columnInfo20});
-            tableQuery9.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
-            tableInfo13});
+            tableQuery13.Name = "Medicine_Unit";
+            tableInfo19.Name = "Medicine_Unit";
+            columnInfo28.Name = "Unit_ID";
+            columnInfo29.Name = "Unit_Name";
+            tableInfo19.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
+            columnInfo28,
+            columnInfo29});
+            tableQuery13.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
+            tableInfo19});
             this.sqlDataSource4.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            tableQuery9});
+            tableQuery13});
             this.sqlDataSource4.ResultSchemaSerializable = resources.GetString("sqlDataSource4.ResultSchemaSerializable");
             // 
             // labelControl3
@@ -249,7 +249,7 @@
             this.txtGia.Properties.NullValuePrompt = "0";
             this.txtGia.Properties.NullValuePromptShowForEmptyValue = true;
             this.txtGia.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtGia.Size = new System.Drawing.Size(202, 20);
+            this.txtGia.Size = new System.Drawing.Size(215, 20);
             this.txtGia.TabIndex = 32;
             this.txtGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGia_KeyPress);
             // 
@@ -310,39 +310,39 @@
             // 
             this.sqlDataSource2.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource2.Name = "sqlDataSource2";
-            tableQuery10.Name = "Medincine_Ingredient";
-            relationColumnInfo5.NestedKeyColumn = "Medicine_ID";
-            relationColumnInfo5.ParentKeyColumn = "Medicine_ID";
-            relationInfo5.KeyColumns.AddRange(new DevExpress.DataAccess.Sql.RelationColumnInfo[] {
-            relationColumnInfo5});
-            relationInfo5.NestedTable = "Medicine";
-            relationInfo5.ParentTable = "Medincine_Ingredient";
-            relationColumnInfo6.NestedKeyColumn = "Ingredient_ID";
-            relationColumnInfo6.ParentKeyColumn = "Ingredient_ID";
-            relationInfo6.KeyColumns.AddRange(new DevExpress.DataAccess.Sql.RelationColumnInfo[] {
-            relationColumnInfo6});
-            relationInfo6.NestedTable = "Ingredient";
-            relationInfo6.ParentTable = "Medincine_Ingredient";
-            tableQuery10.Relations.AddRange(new DevExpress.DataAccess.Sql.RelationInfo[] {
-            relationInfo5,
-            relationInfo6});
-            tableInfo14.Name = "Medincine_Ingredient";
-            columnInfo21.Name = "Unit";
-            columnInfo22.Name = "ContentUnit";
-            tableInfo14.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
-            columnInfo21,
-            columnInfo22});
-            tableInfo15.Name = "Medicine";
-            tableInfo16.Name = "Ingredient";
-            columnInfo23.Name = "Ingredient_Name";
-            tableInfo16.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
-            columnInfo23});
-            tableQuery10.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
-            tableInfo14,
-            tableInfo15,
-            tableInfo16});
+            tableQuery14.Name = "Medincine_Ingredient";
+            relationColumnInfo7.NestedKeyColumn = "Medicine_ID";
+            relationColumnInfo7.ParentKeyColumn = "Medicine_ID";
+            relationInfo7.KeyColumns.AddRange(new DevExpress.DataAccess.Sql.RelationColumnInfo[] {
+            relationColumnInfo7});
+            relationInfo7.NestedTable = "Medicine";
+            relationInfo7.ParentTable = "Medincine_Ingredient";
+            relationColumnInfo8.NestedKeyColumn = "Ingredient_ID";
+            relationColumnInfo8.ParentKeyColumn = "Ingredient_ID";
+            relationInfo8.KeyColumns.AddRange(new DevExpress.DataAccess.Sql.RelationColumnInfo[] {
+            relationColumnInfo8});
+            relationInfo8.NestedTable = "Ingredient";
+            relationInfo8.ParentTable = "Medincine_Ingredient";
+            tableQuery14.Relations.AddRange(new DevExpress.DataAccess.Sql.RelationInfo[] {
+            relationInfo7,
+            relationInfo8});
+            tableInfo20.Name = "Medincine_Ingredient";
+            columnInfo30.Name = "Unit";
+            columnInfo31.Name = "ContentUnit";
+            tableInfo20.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
+            columnInfo30,
+            columnInfo31});
+            tableInfo21.Name = "Medicine";
+            tableInfo22.Name = "Ingredient";
+            columnInfo32.Name = "Ingredient_Name";
+            tableInfo22.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
+            columnInfo32});
+            tableQuery14.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
+            tableInfo20,
+            tableInfo21,
+            tableInfo22});
             this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            tableQuery10});
+            tableQuery14});
             this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
             // 
             // bindingSource2
@@ -354,17 +354,17 @@
             // 
             this.sqlDataSource3.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource3.Name = "sqlDataSource3";
-            tableQuery11.Name = "Medicine_Unit";
-            tableInfo17.Name = "Medicine_Unit";
-            columnInfo24.Name = "Unit_ID";
-            columnInfo25.Name = "Unit_Name";
-            tableInfo17.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
-            columnInfo24,
-            columnInfo25});
-            tableQuery11.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
-            tableInfo17});
+            tableQuery15.Name = "Medicine_Unit";
+            tableInfo23.Name = "Medicine_Unit";
+            columnInfo33.Name = "Unit_ID";
+            columnInfo34.Name = "Unit_Name";
+            tableInfo23.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
+            columnInfo33,
+            columnInfo34});
+            tableQuery15.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
+            tableInfo23});
             this.sqlDataSource3.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            tableQuery11});
+            tableQuery15});
             this.sqlDataSource3.ResultSchemaSerializable = resources.GetString("sqlDataSource3.ResultSchemaSerializable");
             // 
             // btnHuy
@@ -408,22 +408,22 @@
             // 
             this.sqlDataSource1.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            tableQuery12.Name = "Paraclinical_Group";
-            tableInfo18.Name = "Paraclinical_Group";
-            columnInfo26.Name = "Paraclinical_Group_ID";
-            columnInfo27.Name = "Paraclinical_Group_Name";
-            tableInfo18.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
-            columnInfo26,
-            columnInfo27});
-            tableQuery12.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
-            tableInfo18});
+            tableQuery16.Name = "Paraclinical_Group";
+            tableInfo24.Name = "Paraclinical_Group";
+            columnInfo35.Name = "Paraclinical_Group_ID";
+            columnInfo36.Name = "Paraclinical_Group_Name";
+            tableInfo24.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
+            columnInfo35,
+            columnInfo36});
+            tableQuery16.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
+            tableInfo24});
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            tableQuery12});
+            tableQuery16});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // labelControl7
             // 
-            this.labelControl7.Location = new System.Drawing.Point(232, 38);
+            this.labelControl7.Location = new System.Drawing.Point(245, 38);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(20, 13);
             this.labelControl7.TabIndex = 33;

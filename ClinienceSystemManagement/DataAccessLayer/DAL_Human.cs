@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace DataAccessLayer
 {
-    public class DAL_Account : DbConection
+    public class DAL_Human : DbConection
     {
         public DataTable Login(string userName, string password)
         {

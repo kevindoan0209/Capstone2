@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
-            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation3 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
-            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation4 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
+            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation1 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
+            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation2 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.applicationMenu1 = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.btnNguoiDung = new DevExpress.XtraBars.BarButtonItem();
@@ -67,9 +67,9 @@
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -139,6 +139,7 @@
             this.btnNguoiDung.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnNguoiDung.LargeGlyph")));
             this.btnNguoiDung.LargeWidth = 70;
             this.btnNguoiDung.Name = "btnNguoiDung";
+            this.btnNguoiDung.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNguoiDung_ItemClick);
             // 
             // barButtonItem1
             // 
@@ -350,18 +351,18 @@
             this.ribbonPageGroup1});
             this.ribbonPage1.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage1.Image")));
             this.ribbonPage1.Name = "ribbonPage1";
-            reduceOperation3.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
-            reduceOperation3.Group = null;
-            reduceOperation3.ItemLinkIndex = 0;
-            reduceOperation3.ItemLinksCount = 0;
-            reduceOperation3.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.LargeButtons;
-            reduceOperation4.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
-            reduceOperation4.Group = null;
-            reduceOperation4.ItemLinkIndex = 0;
-            reduceOperation4.ItemLinksCount = 0;
-            reduceOperation4.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.LargeButtons;
-            this.ribbonPage1.ReduceOperations.Add(reduceOperation3);
-            this.ribbonPage1.ReduceOperations.Add(reduceOperation4);
+            reduceOperation1.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
+            reduceOperation1.Group = null;
+            reduceOperation1.ItemLinkIndex = 0;
+            reduceOperation1.ItemLinksCount = 0;
+            reduceOperation1.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.LargeButtons;
+            reduceOperation2.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
+            reduceOperation2.Group = null;
+            reduceOperation2.ItemLinkIndex = 0;
+            reduceOperation2.ItemLinksCount = 0;
+            reduceOperation2.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.LargeButtons;
+            this.ribbonPage1.ReduceOperations.Add(reduceOperation1);
+            this.ribbonPage1.ReduceOperations.Add(reduceOperation2);
             this.ribbonPage1.Text = "Khám Bệnh";
             // 
             // ribbonPageGroup1
@@ -405,6 +406,14 @@
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             this.ribbonPageGroup5.Text = "Danh mục";
             // 
+            // ribbonPageGroup4
+            // 
+            this.ribbonPageGroup4.ItemLinks.Add(this.btnThuoc);
+            this.ribbonPageGroup4.ItemLinks.Add(this.btnDonVi);
+            this.ribbonPageGroup4.ItemLinks.Add(this.btnThanhPhan);
+            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
+            this.ribbonPageGroup4.Text = "Danh mục thuốc";
+            // 
             // ribbonPageGroup8
             // 
             this.ribbonPageGroup8.ItemLinks.Add(this.btnDoanhThu);
@@ -416,14 +425,6 @@
             this.ribbonPageGroup7.ItemLinks.Add(this.btnNguoiDung);
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
             this.ribbonPageGroup7.Text = "Người dùng";
-            // 
-            // ribbonPageGroup4
-            // 
-            this.ribbonPageGroup4.ItemLinks.Add(this.btnThuoc);
-            this.ribbonPageGroup4.ItemLinks.Add(this.btnDonVi);
-            this.ribbonPageGroup4.ItemLinks.Add(this.btnThanhPhan);
-            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
-            this.ribbonPageGroup4.Text = "Danh mục thuốc";
             // 
             // ribbonPage4
             // 

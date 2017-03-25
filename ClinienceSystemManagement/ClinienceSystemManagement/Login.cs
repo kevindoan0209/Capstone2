@@ -27,7 +27,7 @@ namespace ClinienceSystemManagement
             {
                 try
                 {
-                    DataTable dt = BLL_Account.Login(TenDangNhap, MatKhau);
+                    DataTable dt = BLL_Human.Login(TenDangNhap, MatKhau);
                     if (dt.Rows.Count > 0)
                     {
                         DataRow dr = dt.Rows[0];
