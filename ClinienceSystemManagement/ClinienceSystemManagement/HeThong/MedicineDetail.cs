@@ -34,6 +34,10 @@ namespace ClinienceSystemManagement.HeThong
         {
             FillDataUpdate();
             txtMa.ReadOnly = true;
+            if (isAdd == true)
+            {
+                txtGia.Text = "0";
+            }
         }
         public void FillDataUpdate()
         {
@@ -72,16 +76,15 @@ namespace ClinienceSystemManagement.HeThong
                     }
                     else
                     {
-                        int id = Convert.ToInt32(txtMa.ToString());
+                        int id = Int32.Parse(txtMa.Text);
                         string name = txtTen.Text;
                         string mclass = txtLopThuoc.Text;
                         string usage = txtSuDung.Text;
                         string note = txtGhiChu.Text;
-                        int price = 20;
-                        // int price = Convert.ToInt32(txtGia.ToString());
+                        int price = Int32.Parse(txtGia.Text);
                         string group = lkeDonVi.GetColumnValue("Unit_ID").ToString();
-                        int unitid = Convert.ToInt32(group);
-                        BLL_Medicine.UpdateMedicine(id,name, mclass, usage, note, price, unitid);
+                        int unitid = Int32.Parse(group);
+                        BLL_Medicine.UpdateMedicine(id, name, mclass, usage, note, price, unitid);
                         this.Close();
                         XtraMessageBox.Show("Cập nhật thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
@@ -89,12 +92,14 @@ namespace ClinienceSystemManagement.HeThong
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi :" + ex.Message);
+                MessageBox.Show("Lỗi" + ex.Message);
             }
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
+            try
+            {
                 if (isAdd == false)
                 {
                     SaveUpdate();
@@ -119,8 +124,7 @@ namespace ClinienceSystemManagement.HeThong
                             string mclass = txtLopThuoc.Text;
                             string usage = txtSuDung.Text;
                             string note = txtGhiChu.Text;
-                            int price = 20;
-                           // int price = Convert.ToInt32(txtGia.ToString());
+                            int price = Int32.Parse(txtGia.Text);
                             string group = lkeDonVi.GetColumnValue("Unit_ID").ToString();
                             int unitid = Convert.ToInt32(group);
                             BLL_Medicine.InsertMedicine(name, mclass, usage, note, price, unitid);
@@ -130,6 +134,18 @@ namespace ClinienceSystemManagement.HeThong
                     }
                 }
             }
- 
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi :" + ex.Message);
+            }
+        }
+
+        private void txtGia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }
