@@ -227,3 +227,4 @@ F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debu
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\es\DevExpress.XtraVerticalGrid.v15.1.resources.dll
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\ja\DevExpress.XtraVerticalGrid.v15.1.resources.dll
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\ru\DevExpress.XtraVerticalGrid.v15.1.resources.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.HeThong.HumanDetail.resources

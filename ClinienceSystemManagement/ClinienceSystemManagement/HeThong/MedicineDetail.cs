@@ -64,7 +64,7 @@ namespace ClinienceSystemManagement.HeThong
             {
                 if (string.IsNullOrEmpty(txtTen.Text))
                 {
-                    XtraMessageBox.Show("Vui lòng tên thuốc", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    XtraMessageBox.Show("Vui lòng nhập tên thuốc", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     txtTen.Focus();
                 }
                 else

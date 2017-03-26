@@ -264,6 +264,10 @@ namespace DataAccessLayer
 		
 		private string _Account_Password;
 		
+		private System.Data.Linq.Binary _Account_Image;
+		
+		private System.Data.Linq.Binary _Account_Signature;
+		
 		private int _Account_Type_ID;
 		
 		private EntityRef<Human> _Human;
@@ -282,6 +286,10 @@ namespace DataAccessLayer
     partial void OnAccount_UserNameChanged();
     partial void OnAccount_PasswordChanging(string value);
     partial void OnAccount_PasswordChanged();
+    partial void OnAccount_ImageChanging(System.Data.Linq.Binary value);
+    partial void OnAccount_ImageChanged();
+    partial void OnAccount_SignatureChanging(System.Data.Linq.Binary value);
+    partial void OnAccount_SignatureChanged();
     partial void OnAccount_Type_IDChanging(int value);
     partial void OnAccount_Type_IDChanged();
     #endregion
@@ -369,6 +377,46 @@ namespace DataAccessLayer
 					this._Account_Password = value;
 					this.SendPropertyChanged("Account_Password");
 					this.OnAccount_PasswordChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Account_Image", DbType="Image", UpdateCheck=UpdateCheck.Never)]
+		public System.Data.Linq.Binary Account_Image
+		{
+			get
+			{
+				return this._Account_Image;
+			}
+			set
+			{
+				if ((this._Account_Image != value))
+				{
+					this.OnAccount_ImageChanging(value);
+					this.SendPropertyChanging();
+					this._Account_Image = value;
+					this.SendPropertyChanged("Account_Image");
+					this.OnAccount_ImageChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Account_Signature", DbType="Image", UpdateCheck=UpdateCheck.Never)]
+		public System.Data.Linq.Binary Account_Signature
+		{
+			get
+			{
+				return this._Account_Signature;
+			}
+			set
+			{
+				if ((this._Account_Signature != value))
+				{
+					this.OnAccount_SignatureChanging(value);
+					this.SendPropertyChanging();
+					this._Account_Signature = value;
+					this.SendPropertyChanged("Account_Signature");
+					this.OnAccount_SignatureChanged();
 				}
 			}
 		}
