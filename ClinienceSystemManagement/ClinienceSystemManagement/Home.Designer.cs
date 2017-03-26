@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
-            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation1 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
-            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation2 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
+            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation5 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
+            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation6 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.applicationMenu1 = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.btnNguoiDung = new DevExpress.XtraBars.BarButtonItem();
@@ -157,18 +157,19 @@
             // 
             // btnBenh
             // 
-            this.btnBenh.Caption = "Danh mục bênh";
+            this.btnBenh.Caption = "Bệnh";
             this.btnBenh.Id = 1;
             this.btnBenh.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnBenh.LargeGlyph")));
-            this.btnBenh.LargeWidth = 70;
+            this.btnBenh.LargeWidth = 75;
             this.btnBenh.Name = "btnBenh";
             this.btnBenh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBenh_ItemClick);
             // 
             // btnLamSang
             // 
-            this.btnLamSang.Caption = "Danh mục cận lâm sàng";
+            this.btnLamSang.Caption = "Cận lâm sàng";
             this.btnLamSang.Id = 2;
             this.btnLamSang.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnLamSang.LargeGlyph")));
+            this.btnLamSang.LargeWidth = 75;
             this.btnLamSang.Name = "btnLamSang";
             this.btnLamSang.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLamSang_ItemClick);
             // 
@@ -351,18 +352,18 @@
             this.ribbonPageGroup1});
             this.ribbonPage1.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage1.Image")));
             this.ribbonPage1.Name = "ribbonPage1";
-            reduceOperation1.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
-            reduceOperation1.Group = null;
-            reduceOperation1.ItemLinkIndex = 0;
-            reduceOperation1.ItemLinksCount = 0;
-            reduceOperation1.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.LargeButtons;
-            reduceOperation2.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
-            reduceOperation2.Group = null;
-            reduceOperation2.ItemLinkIndex = 0;
-            reduceOperation2.ItemLinksCount = 0;
-            reduceOperation2.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.LargeButtons;
-            this.ribbonPage1.ReduceOperations.Add(reduceOperation1);
-            this.ribbonPage1.ReduceOperations.Add(reduceOperation2);
+            reduceOperation5.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
+            reduceOperation5.Group = null;
+            reduceOperation5.ItemLinkIndex = 0;
+            reduceOperation5.ItemLinksCount = 0;
+            reduceOperation5.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.LargeButtons;
+            reduceOperation6.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
+            reduceOperation6.Group = null;
+            reduceOperation6.ItemLinkIndex = 0;
+            reduceOperation6.ItemLinksCount = 0;
+            reduceOperation6.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.LargeButtons;
+            this.ribbonPage1.ReduceOperations.Add(reduceOperation5);
+            this.ribbonPage1.ReduceOperations.Add(reduceOperation6);
             this.ribbonPage1.Text = "Khám Bệnh";
             // 
             // ribbonPageGroup1
