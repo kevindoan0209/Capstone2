@@ -159,6 +159,7 @@
             resources.ApplyResources(this.btnDangNhap, "btnDangNhap");
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
+         
             // 
             // btnThoat
             // 

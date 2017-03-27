@@ -69,5 +69,7 @@ namespace ClinienceSystemManagement
                 this.txtMatKhau.Properties.UseSystemPasswordChar = true;  
             }
         }
+
+       
     }
 }

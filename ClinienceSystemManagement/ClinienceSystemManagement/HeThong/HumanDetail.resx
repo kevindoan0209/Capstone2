@@ -123,9 +123,6 @@
   <metadata name="sqlDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>427, 17</value>
   </metadata>
-  <metadata name="sqlDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>427, 17</value>
-  </metadata>
   <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlBhcmFjbGluaWNhbF9Hcm91cCI+PEZpZWxkIE5hbWU9IlBhcmFjbGluaWNhbF9Hcm91cF9JRCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlBhcmFjbGluaWNhbF9Hcm91cF9OYW1lIiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
   </data>
@@ -135,13 +132,42 @@
   <metadata name="sqlDataSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>563, 17</value>
   </metadata>
-  <metadata name="sqlDataSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>563, 17</value>
-  </metadata>
   <data name="sqlDataSource2.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTIiPjxWaWV3IE5hbWU9IkFjY291bnRfVHlwZSI+PEZpZWxkIE5hbWU9IkFjY291bnRfVHlwZV9JRCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkFjY291bnRfVHlwZV9BdXRob3JpdHkiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="peAnh.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        /9j/4AAQSkZJRgABAQEAYABgAAD/4QC2RXhpZgAATU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAZKG
+        AAcAAACAAAAALAAAAABVTklDT0RFAABDAFIARQBBAFQATwBSADoAIABnAGQALQBqAHAAZQBnACAAdgAx
+        AC4AMAAgACgAdQBzAGkAbgBnACAASQBKAEcAIABKAFAARQBHACAAdgA4ADAAKQAsACAAZABlAGYAYQB1
+        AGwAdAAgAHEAdQBhAGwAaQB0AHkACgAA/9sAQwAIBgYHBgUIBwcHCQkICgwUDQwLCwwZEhMPFB0aHx4d
+        GhwcICQuJyAiLCMcHCg3KSwwMTQ0NB8nOT04MjwuMzQy/9sAQwEJCQkMCwwYDQ0YMiEcITIyMjIyMjIy
+        MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIy/8AAEQgAeAB4AwEiAAIRAQMR
+        Af/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAE
+        EQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElK
+        U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrC
+        w8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAAB
+        AgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkj
+        M1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5
+        eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm
+        5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8A9MpKWkrqMgopaKACkpalt7aW6fbEufU9hSAiordt9EiU
+        AzOXb0HArQjtYIf9XEi/QVDqLoVynLLbTv8AdhkP0U1GQVJBGCOorrbmOSS3dIn2ORwa5aaGSCQpKpDe
+        /enGXMJqxHRRRViCiiigBKKWigBKKKKACilooAkt4GuJ0iXqx6+grqre3jt4hHGMAfrWHogzet7If5iu
+        hrGo9bFxQUUUVmUFV7q0ju4ijjns3cGrFIaAOQnha3maJ/vKfzqOtTXABeKfVB/M1mV0xd1cye4lFLRT
+        ASilooASilpKAFooooA09DH+lyf7n9RXQVg6ErfaHfadu3GccdRW9WE/iNI7BRRRUDCkNLRQBz+uf8fa
+        f7n9TWXWrrgP2qM4ONnX8TWXXRD4TN7iUtFFUISilooASiiloASilooA6DQ2zZMPRz/IVp1gaLcbJ2gP
+        STkfUVv1zzVmaLYKKKKkYUUUUAZWunFrGPV/6GsCtTWrgSXCwjpH1+prMreCtEzluJRS0VYhKKKKACii
+        loAKKKKAJLaXybmOQ9FYE11wIZQQcg1xtdBosryWrK5yEbC1lUXUqLNOiiisiwpruqIXY4AGTTqzNakZ
+        LMKpwGbB+lNK7sDMKaQzTvIerMTUdLRXSZCUtFFACUUUUAFLSUUAFLRRQAAEkADJPAFdLpVvJbWpWVdr
+        FicZrG0yAzXycfKnzH8K6esqj6FRXUKKKKyLCs3WYZJrVTGudjbj9MVpUjDcpB7jFNOzuDOMpaknhaCd
+        4m6qcfWo66DISloopgJRS0UAJS1ZtbCe7PyLhO7HpW1baTbwYZx5j+rdPyqJTSGk2YlvY3Fzgxp8v95u
+        BWtb6JEmDMxkPoOBWoBjpS1m5tlKKGRxJEu1ECj0AxT6KKgoKKKKACiiigCKW3inXEsasPcVmXGhqcmC
+        Taf7rcj862KKabWwmrnJT2c9sf3sZA/vdR+dQ12RAYYIyPes+50eCbLR/un/ANnp+VaKp3JcTnaKs3Vj
+        Pan51yv94dKK0TuSdQqhFCqAAOgFOoormNQooooAKKKKACiiigAooooAKKKKACiiigBrorqVYAqeCDRR
+        RRcD/9k=
+</value>
+  </data>
   <data name="btnHuy.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA

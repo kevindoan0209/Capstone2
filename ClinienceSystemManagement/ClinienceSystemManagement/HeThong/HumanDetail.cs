@@ -167,31 +167,39 @@ namespace ClinienceSystemManagement.HeThong
                             }
                             else
                             {
-                                if (txtMatKhau.Text != txtMatKhau2.Text)
+                                if (string.IsNullOrEmpty(txtMatKhau.Text))
                                 {
-                                    XtraMessageBox.Show("Mật khẩu không trùng khớp", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                                    txtMatKhau2.Focus();
+                                    XtraMessageBox.Show("Vui lòng nhập mật khẩu", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                    txtMatKhau.Focus();
                                 }
                                 else
                                 {
-                                    string name = txtTen.Text;
-                                    string username = txtTenDangNhap.Text;
-                                    string password = txtMatKhau.Text;
-                                    string image = txtAnh.Text;
-                                    string signature = txtKiTe.Text;
-                                    string group = lkePhanQuyen.GetColumnValue("Account_Type_ID").ToString();
-                                    int type = Int32.Parse(group);
-                                    if (string.IsNullOrEmpty(txtAnh.Text))
+                                    if (txtMatKhau.Text != txtMatKhau2.Text)
                                     {
-                                        BLL_Human.InsertAccountNoImage(name, username, password, signature, type);
-                                        this.Close();
+                                        XtraMessageBox.Show("Mật khẩu không trùng khớp", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                        txtMatKhau2.Focus();
                                     }
                                     else
                                     {
-                                        BLL_Human.InsertAccount(name, username, password, image, signature, type);
-                                        this.Close();
+                                        string name = txtTen.Text;
+                                        string username = txtTenDangNhap.Text;
+                                        string password = txtMatKhau.Text;
+                                        string image = txtAnh.Text;
+                                        string signature = txtKiTe.Text;
+                                        string group = lkePhanQuyen.GetColumnValue("Account_Type_ID").ToString();
+                                        int type = Int32.Parse(group);
+                                        if (string.IsNullOrEmpty(txtAnh.Text))
+                                        {
+                                            BLL_Human.InsertAccountNoImage(name, username, password, signature, type);
+                                            this.Close();
+                                        }
+                                        else
+                                        {
+                                            BLL_Human.InsertAccount(name, username, password, image, signature, type);
+                                            this.Close();
+                                        }
+
                                     }
-                                    
                                 }
                             }
                         }
@@ -225,9 +233,9 @@ namespace ClinienceSystemManagement.HeThong
 
         private void txtMatKhau_Validating(object sender, CancelEventArgs e)
         {
-            if (txtMatKhau.Text.Length > 10 || txtMatKhau.Text.Length < 3)
+            if (txtMatKhau.Text.Length > 10 || txtMatKhau.Text.Length < 4)
             {
-                XtraMessageBox.Show("Mật khẩu phải từ 3 đến 10 kí tự", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                XtraMessageBox.Show("Mật khẩu phải từ 4 đến 10 kí tự", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 txtMatKhau.Focus();
             }
         }

@@ -401,6 +401,9 @@
   <data name="grcDanhMuc.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
+  <data name="grcDanhMuc.EmbeddedNavigator.TextStringFormat" xml:space="preserve">
+    <value>Trang {0} / {1}</value>
+  </data>
   <data name="grcDanhMuc.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 61</value>
   </data>
