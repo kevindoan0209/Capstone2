@@ -7,8 +7,8 @@
       <Column Name="Account_UserName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="Account_Password" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="Account_Image" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="Account_Signature" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
       <Column Name="Account_Type_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Account_Signatures" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Association Name="Account_Human" Member="Human" ThisKey="Account_ID" OtherKey="Account_ID" Type="Human" Cardinality="One" />
       <Association Name="Account_Type_Account" Member="Account_Type" ThisKey="Account_Type_ID" OtherKey="Account_Type_ID" Type="Account_Type" IsForeignKey="true" />
     </Type>

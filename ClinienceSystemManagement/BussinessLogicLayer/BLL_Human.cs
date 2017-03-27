@@ -17,9 +17,17 @@ namespace BussinessLogicLayer
         {
             return _account.InsertAccount(name,username,password,image,signature,type);
         }
+        public static int InsertAccountNoImage(string name, string username, string password, string signature, int type)
+        {
+            return _account.InsertAccountNoImage(name, username, password, signature, type);
+        }
         public static int UpdateAccount(int id,string name, string username, string password, string image, string signature, int type)
         {
             return _account.UpdateAccount(id,name, username, password, image, signature, type);
+        }
+        public static int UpdateAccountNoImage(int id, string name, string username, string password, string signature, int type)
+        {
+            return _account.UpdateAccountNoImage(id, name, username, password, signature,type);
         }
     }
 }

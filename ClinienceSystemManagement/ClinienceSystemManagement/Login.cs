@@ -57,5 +57,17 @@ namespace ClinienceSystemManagement
                 Application.Exit();
             }
         }
+
+        private void cbxHienMatKhai_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbxHienMatKhai.Checked)
+            {
+                this.txtMatKhau.Properties.UseSystemPasswordChar = false;   
+            }
+            else
+            {
+                this.txtMatKhau.Properties.UseSystemPasswordChar = true;  
+            }
+        }
     }
 }

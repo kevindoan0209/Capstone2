@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.DataAccess.Sql.TableQuery tableQuery1 = new DevExpress.DataAccess.Sql.TableQuery();
-            DevExpress.DataAccess.Sql.TableInfo tableInfo1 = new DevExpress.DataAccess.Sql.TableInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo1 = new DevExpress.DataAccess.Sql.ColumnInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo2 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.TableQuery tableQuery3 = new DevExpress.DataAccess.Sql.TableQuery();
+            DevExpress.DataAccess.Sql.TableInfo tableInfo3 = new DevExpress.DataAccess.Sql.TableInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo5 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo6 = new DevExpress.DataAccess.Sql.ColumnInfo();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HumanDetail));
-            DevExpress.DataAccess.Sql.TableQuery tableQuery2 = new DevExpress.DataAccess.Sql.TableQuery();
-            DevExpress.DataAccess.Sql.TableInfo tableInfo2 = new DevExpress.DataAccess.Sql.TableInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo3 = new DevExpress.DataAccess.Sql.ColumnInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo4 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.TableQuery tableQuery4 = new DevExpress.DataAccess.Sql.TableQuery();
+            DevExpress.DataAccess.Sql.TableInfo tableInfo4 = new DevExpress.DataAccess.Sql.TableInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo7 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo8 = new DevExpress.DataAccess.Sql.ColumnInfo();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.xtraTabContarol1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.txtKiTe = new DevExpress.XtraEditors.MemoEdit();
+            this.cbxHienMatKhau = new DevExpress.XtraEditors.CheckEdit();
             this.lkePhanQuyen = new DevExpress.XtraEditors.LookUpEdit();
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.txtAnh = new DevExpress.XtraEditors.TextEdit();
-            this.txtChuKi = new DevExpress.XtraEditors.TextEdit();
-            this.peChuKi = new DevExpress.XtraEditors.PictureEdit();
             this.peAnh = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.txtMa = new DevExpress.XtraEditors.TextEdit();
@@ -69,11 +69,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabContarol1)).BeginInit();
             this.xtraTabContarol1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKiTe.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbxHienMatKhau.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lkePhanQuyen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAnh.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtChuKi.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.peChuKi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.peAnh.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMa.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau2.Properties)).BeginInit();
@@ -93,17 +93,17 @@
             // 
             this.sqlDataSource1.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            tableQuery1.Name = "Paraclinical_Group";
-            tableInfo1.Name = "Paraclinical_Group";
-            columnInfo1.Name = "Paraclinical_Group_ID";
-            columnInfo2.Name = "Paraclinical_Group_Name";
-            tableInfo1.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
-            columnInfo1,
-            columnInfo2});
-            tableQuery1.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
-            tableInfo1});
+            tableQuery3.Name = "Paraclinical_Group";
+            tableInfo3.Name = "Paraclinical_Group";
+            columnInfo5.Name = "Paraclinical_Group_ID";
+            columnInfo6.Name = "Paraclinical_Group_Name";
+            tableInfo3.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
+            columnInfo5,
+            columnInfo6});
+            tableQuery3.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
+            tableInfo3});
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            tableQuery1});
+            tableQuery3});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // xtraTabContarol1
@@ -118,10 +118,10 @@
             // 
             // xtraTabPage1
             // 
+            this.xtraTabPage1.Controls.Add(this.txtKiTe);
+            this.xtraTabPage1.Controls.Add(this.cbxHienMatKhau);
             this.xtraTabPage1.Controls.Add(this.lkePhanQuyen);
             this.xtraTabPage1.Controls.Add(this.txtAnh);
-            this.xtraTabPage1.Controls.Add(this.txtChuKi);
-            this.xtraTabPage1.Controls.Add(this.peChuKi);
             this.xtraTabPage1.Controls.Add(this.peAnh);
             this.xtraTabPage1.Controls.Add(this.labelControl8);
             this.xtraTabPage1.Controls.Add(this.txtMa);
@@ -139,6 +139,24 @@
             this.xtraTabPage1.Name = "xtraTabPage1";
             this.xtraTabPage1.Size = new System.Drawing.Size(472, 286);
             this.xtraTabPage1.Text = "Thông tin người dùng";
+            // 
+            // txtKiTe
+            // 
+            this.txtKiTe.Location = new System.Drawing.Point(28, 206);
+            this.txtKiTe.Name = "txtKiTe";
+            this.txtKiTe.Properties.Appearance.Font = new System.Drawing.Font("Twilight New Moon", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKiTe.Properties.Appearance.Options.UseFont = true;
+            this.txtKiTe.Size = new System.Drawing.Size(140, 64);
+            this.txtKiTe.TabIndex = 37;
+            // 
+            // cbxHienMatKhau
+            // 
+            this.cbxHienMatKhau.Location = new System.Drawing.Point(371, 180);
+            this.cbxHienMatKhau.Name = "cbxHienMatKhau";
+            this.cbxHienMatKhau.Properties.Caption = "Hiện mật khẩu";
+            this.cbxHienMatKhau.Size = new System.Drawing.Size(91, 19);
+            this.cbxHienMatKhau.TabIndex = 36;
+            this.cbxHienMatKhau.CheckedChanged += new System.EventHandler(this.cbxHienMatKhau_CheckedChanged);
             // 
             // lkePhanQuyen
             // 
@@ -165,50 +183,33 @@
             // 
             this.sqlDataSource2.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource2.Name = "sqlDataSource2";
-            tableQuery2.Name = "Account_Type";
-            tableInfo2.Name = "Account_Type";
-            columnInfo3.Name = "Account_Type_ID";
-            columnInfo4.Name = "Account_Type_Authority";
-            tableInfo2.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
-            columnInfo3,
-            columnInfo4});
-            tableQuery2.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
-            tableInfo2});
+            tableQuery4.Name = "Account_Type";
+            tableInfo4.Name = "Account_Type";
+            columnInfo7.Name = "Account_Type_ID";
+            columnInfo8.Name = "Account_Type_Authority";
+            tableInfo4.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
+            columnInfo7,
+            columnInfo8});
+            tableQuery4.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
+            tableInfo4});
             this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            tableQuery2});
+            tableQuery4});
             this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
             // 
             // txtAnh
             // 
-            this.txtAnh.Location = new System.Drawing.Point(362, 250);
+            this.txtAnh.Location = new System.Drawing.Point(362, 205);
             this.txtAnh.Name = "txtAnh";
             this.txtAnh.Size = new System.Drawing.Size(100, 20);
-            this.txtAnh.TabIndex = 33;
+            this.txtAnh.TabIndex = 32;
             this.txtAnh.Visible = false;
-            // 
-            // txtChuKi
-            // 
-            this.txtChuKi.Location = new System.Drawing.Point(362, 205);
-            this.txtChuKi.Name = "txtChuKi";
-            this.txtChuKi.Size = new System.Drawing.Size(100, 20);
-            this.txtChuKi.TabIndex = 32;
-            this.txtChuKi.Visible = false;
-            // 
-            // peChuKi
-            // 
-            this.peChuKi.Location = new System.Drawing.Point(28, 177);
-            this.peChuKi.Name = "peChuKi";
-            this.peChuKi.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.peChuKi.Size = new System.Drawing.Size(120, 93);
-            this.peChuKi.TabIndex = 31;
-            this.peChuKi.Click += new System.EventHandler(this.peChuKi_Click);
             // 
             // peAnh
             // 
             this.peAnh.Location = new System.Drawing.Point(28, 35);
             this.peAnh.Name = "peAnh";
             this.peAnh.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.peAnh.Size = new System.Drawing.Size(120, 120);
+            this.peAnh.Size = new System.Drawing.Size(140, 140);
             this.peAnh.TabIndex = 30;
             this.peAnh.Click += new System.EventHandler(this.peAnh_Click);
             // 
@@ -239,9 +240,9 @@
             // 
             this.txtMatKhau2.Location = new System.Drawing.Point(183, 250);
             this.txtMatKhau2.Name = "txtMatKhau2";
+            this.txtMatKhau2.Properties.UseSystemPasswordChar = true;
             this.txtMatKhau2.Size = new System.Drawing.Size(173, 20);
             this.txtMatKhau2.TabIndex = 24;
-            this.txtMatKhau2.Validating += new System.ComponentModel.CancelEventHandler(this.txtMatKhau2_Validating);
             // 
             // labelControl6
             // 
@@ -255,6 +256,7 @@
             // 
             this.txtMatKhau.Location = new System.Drawing.Point(183, 205);
             this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.Properties.UseSystemPasswordChar = true;
             this.txtMatKhau.Size = new System.Drawing.Size(173, 20);
             this.txtMatKhau.TabIndex = 22;
             this.txtMatKhau.Validating += new System.ComponentModel.CancelEventHandler(this.txtMatKhau_Validating);
@@ -285,7 +287,7 @@
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(28, 161);
+            this.labelControl3.Location = new System.Drawing.Point(28, 186);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(38, 13);
             this.labelControl3.TabIndex = 15;
@@ -363,11 +365,11 @@
             this.xtraTabContarol1.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
             this.xtraTabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKiTe.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbxHienMatKhau.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lkePhanQuyen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAnh.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtChuKi.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.peChuKi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.peAnh.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMa.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau2.Properties)).EndInit();
@@ -402,11 +404,11 @@
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.TextEdit txtMa;
         private DevExpress.XtraEditors.PictureEdit peAnh;
-        private DevExpress.XtraEditors.PictureEdit peChuKi;
         private DevExpress.XtraEditors.TextEdit txtAnh;
-        private DevExpress.XtraEditors.TextEdit txtChuKi;
         private DevExpress.XtraEditors.LookUpEdit lkePhanQuyen;
         private System.Windows.Forms.BindingSource bindingSource2;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource2;
+        private DevExpress.XtraEditors.CheckEdit cbxHienMatKhau;
+        private DevExpress.XtraEditors.MemoEdit txtKiTe;
     }
 }

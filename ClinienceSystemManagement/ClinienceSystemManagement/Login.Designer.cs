@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.Clinience = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.line1 = new DevComponents.DotNetBar.Controls.Line();
             this.label2 = new System.Windows.Forms.Label();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -38,16 +39,18 @@
             this.txtMatKhau = new DevExpress.XtraEditors.TextEdit();
             this.btnDangNhap = new DevExpress.XtraEditors.SimpleButton();
             this.btnThoat = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.cbxHienMatKhai = new DevExpress.XtraEditors.CheckEdit();
             this.Clinience.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbxHienMatKhai.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // Clinience
             // 
             this.Clinience.CanvasColor = System.Drawing.SystemColors.Control;
             this.Clinience.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Windows7;
+            this.Clinience.Controls.Add(this.cbxHienMatKhai);
             this.Clinience.Controls.Add(this.labelControl3);
             this.Clinience.Controls.Add(this.line1);
             this.Clinience.Controls.Add(this.label2);
@@ -89,6 +92,15 @@
             // 
             // 
             this.Clinience.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl3.Appearance.Font")));
+            this.labelControl3.Appearance.ForeColor = ((System.Drawing.Color)(resources.GetObject("labelControl3.Appearance.ForeColor")));
+            this.labelControl3.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
+            this.labelControl3.LineStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            resources.ApplyResources(this.labelControl3, "labelControl3");
+            this.labelControl3.Name = "labelControl3";
             // 
             // line1
             // 
@@ -160,18 +172,16 @@
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // labelControl3
+            // cbxHienMatKhai
             // 
-            this.labelControl3.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl3.Appearance.Font")));
-            this.labelControl3.Appearance.ForeColor = ((System.Drawing.Color)(resources.GetObject("labelControl3.Appearance.ForeColor")));
-            this.labelControl3.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
-            this.labelControl3.LineStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            resources.ApplyResources(this.labelControl3, "labelControl3");
-            this.labelControl3.Name = "labelControl3";
+            resources.ApplyResources(this.cbxHienMatKhai, "cbxHienMatKhai");
+            this.cbxHienMatKhai.Name = "cbxHienMatKhai";
+            this.cbxHienMatKhai.Properties.Caption = resources.GetString("checkEdit1.Properties.Caption");
+            this.cbxHienMatKhai.CheckedChanged += new System.EventHandler(this.cbxHienMatKhai_CheckedChanged);
             // 
-            // DangNhap
+            // Login
             // 
-            this.Appearance.BackColor = ((System.Drawing.Color)(resources.GetObject("DangNhap.Appearance.BackColor")));
+            this.Appearance.BackColor = ((System.Drawing.Color)(resources.GetObject("Login.Appearance.BackColor")));
             this.Appearance.Options.UseBackColor = true;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -183,12 +193,13 @@
             this.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "DangNhap";
+            this.Name = "Login";
             this.ShowInTaskbar = false;
             this.Clinience.ResumeLayout(false);
             this.Clinience.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbxHienMatKhai.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -205,5 +216,6 @@
         private DevExpress.XtraEditors.SimpleButton btnThoat;
         private DevComponents.DotNetBar.Controls.Line line1;
         private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.CheckEdit cbxHienMatKhai;
     }
 }

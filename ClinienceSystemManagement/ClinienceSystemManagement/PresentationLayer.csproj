@@ -215,6 +215,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DatHen\" />
+    <Folder Include="Image\" />
     <Folder Include="KhamBenh\" />
     <Folder Include="TaiKhoan\" />
     <Folder Include="TroGiup\" />

@@ -121,6 +121,34 @@
     <value>True</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="cbxHienMatKhai.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 100</value>
+  </data>
+  <data name="checkEdit1.Properties.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbxHienMatKhai.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 19</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cbxHienMatKhai.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="cbxHienMatKhai.ToolTip" xml:space="preserve">
+    <value>Hiện mật khẩu</value>
+  </data>
+  <data name="&gt;&gt;cbxHienMatKhai.Name" xml:space="preserve">
+    <value>cbxHienMatKhai</value>
+  </data>
+  <data name="&gt;&gt;cbxHienMatKhai.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cbxHienMatKhai.Parent" xml:space="preserve">
+    <value>Clinience</value>
+  </data>
+  <data name="&gt;&gt;cbxHienMatKhai.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="labelControl3.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
@@ -133,7 +161,6 @@
   <data name="labelControl3.Size" type="System.Drawing.Size, System.Drawing">
     <value>295, 15</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="labelControl3.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
   </data>
@@ -150,7 +177,7 @@
     <value>Clinience</value>
   </data>
   <data name="&gt;&gt;labelControl3.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="line1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 148</value>
@@ -174,7 +201,7 @@
     <value>Clinience</value>
   </data>
   <data name="&gt;&gt;line1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -308,7 +335,7 @@
     <value>Clinience</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="labelControl2.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 11pt</value>
@@ -338,7 +365,7 @@
     <value>Clinience</value>
   </data>
   <data name="&gt;&gt;labelControl2.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="txtTenDangNhap.Location" type="System.Drawing.Point, System.Drawing">
     <value>154, 45</value>
@@ -365,7 +392,7 @@
     <value>Clinience</value>
   </data>
   <data name="&gt;&gt;txtTenDangNhap.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="labelControl1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 11pt</value>
@@ -395,7 +422,7 @@
     <value>Clinience</value>
   </data>
   <data name="&gt;&gt;labelControl1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="txtMatKhau.Location" type="System.Drawing.Point, System.Drawing">
     <value>155, 98</value>
@@ -422,7 +449,7 @@
     <value>Clinience</value>
   </data>
   <data name="&gt;&gt;txtMatKhau.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="btnDangNhap.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
@@ -466,7 +493,7 @@
     <value>Clinience</value>
   </data>
   <data name="&gt;&gt;btnDangNhap.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="btnThoat.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
@@ -510,7 +537,7 @@
     <value>Clinience</value>
   </data>
   <data name="&gt;&gt;btnThoat.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="Clinience.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
@@ -545,7 +572,7 @@
   <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="DangNhap.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+  <data name="Login.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
     <value>ButtonFace</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
@@ -852,7 +879,7 @@
     <value>Clinience</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>DangNhap</value>
+    <value>Login</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>

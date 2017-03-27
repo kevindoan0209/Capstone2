@@ -266,9 +266,9 @@ namespace DataAccessLayer
 		
 		private System.Data.Linq.Binary _Account_Image;
 		
-		private System.Data.Linq.Binary _Account_Signature;
-		
 		private int _Account_Type_ID;
+		
+		private string _Account_Signatures;
 		
 		private EntityRef<Human> _Human;
 		
@@ -288,10 +288,10 @@ namespace DataAccessLayer
     partial void OnAccount_PasswordChanged();
     partial void OnAccount_ImageChanging(System.Data.Linq.Binary value);
     partial void OnAccount_ImageChanged();
-    partial void OnAccount_SignatureChanging(System.Data.Linq.Binary value);
-    partial void OnAccount_SignatureChanged();
     partial void OnAccount_Type_IDChanging(int value);
     partial void OnAccount_Type_IDChanged();
+    partial void OnAccount_SignaturesChanging(string value);
+    partial void OnAccount_SignaturesChanged();
     #endregion
 		
 		public Account()
@@ -401,26 +401,6 @@ namespace DataAccessLayer
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Account_Signature", DbType="Image", UpdateCheck=UpdateCheck.Never)]
-		public System.Data.Linq.Binary Account_Signature
-		{
-			get
-			{
-				return this._Account_Signature;
-			}
-			set
-			{
-				if ((this._Account_Signature != value))
-				{
-					this.OnAccount_SignatureChanging(value);
-					this.SendPropertyChanging();
-					this._Account_Signature = value;
-					this.SendPropertyChanged("Account_Signature");
-					this.OnAccount_SignatureChanged();
-				}
-			}
-		}
-		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Account_Type_ID", DbType="Int NOT NULL")]
 		public int Account_Type_ID
 		{
@@ -441,6 +421,26 @@ namespace DataAccessLayer
 					this._Account_Type_ID = value;
 					this.SendPropertyChanged("Account_Type_ID");
 					this.OnAccount_Type_IDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Account_Signatures", DbType="NVarChar(50)")]
+		public string Account_Signatures
+		{
+			get
+			{
+				return this._Account_Signatures;
+			}
+			set
+			{
+				if ((this._Account_Signatures != value))
+				{
+					this.OnAccount_SignaturesChanging(value);
+					this.SendPropertyChanging();
+					this._Account_Signatures = value;
+					this.SendPropertyChanged("Account_Signatures");
+					this.OnAccount_SignaturesChanged();
 				}
 			}
 		}
