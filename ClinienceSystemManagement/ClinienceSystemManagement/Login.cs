@@ -5,6 +5,7 @@ using System.Linq;
 using System.Windows.Forms;
 using BussinessLogicLayer;
 using DevExpress.XtraEditors;
+using System.Threading;
 
 namespace ClinienceSystemManagement
 {
@@ -70,6 +71,12 @@ namespace ClinienceSystemManagement
             }
         }
 
-       
+        private void Login_Load(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 100; i++)
+            {
+                Thread.Sleep(100);
+            }
+        }
     }
 }

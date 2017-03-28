@@ -151,7 +151,7 @@
             // 
             // cbxHienMatKhau
             // 
-            this.cbxHienMatKhau.Location = new System.Drawing.Point(371, 180);
+            this.cbxHienMatKhau.Location = new System.Drawing.Point(362, 205);
             this.cbxHienMatKhau.Name = "cbxHienMatKhau";
             this.cbxHienMatKhau.Properties.Caption = "Hiện mật khẩu";
             this.cbxHienMatKhau.Size = new System.Drawing.Size(91, 19);

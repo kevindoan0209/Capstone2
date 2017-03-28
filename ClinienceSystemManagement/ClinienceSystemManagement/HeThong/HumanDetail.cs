@@ -25,6 +25,7 @@ namespace ClinienceSystemManagement.HeThong
             sqlDataSource2.Fill();
         }
 
+
         // Event show dialog to choice path when click insert a image 
         public void peAnh_Click(object sender, EventArgs e)
         {

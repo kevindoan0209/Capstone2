@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::ClinienceSystemManagement.LoadingScreen), true, true);
             this.Clinience = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.cbxHienMatKhai = new DevExpress.XtraEditors.CheckEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.line1 = new DevComponents.DotNetBar.Controls.Line();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,11 +41,10 @@
             this.txtMatKhau = new DevExpress.XtraEditors.TextEdit();
             this.btnDangNhap = new DevExpress.XtraEditors.SimpleButton();
             this.btnThoat = new DevExpress.XtraEditors.SimpleButton();
-            this.cbxHienMatKhai = new DevExpress.XtraEditors.CheckEdit();
             this.Clinience.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cbxHienMatKhai.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbxHienMatKhai.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // Clinience
@@ -92,6 +93,13 @@
             // 
             // 
             this.Clinience.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // cbxHienMatKhai
+            // 
+            resources.ApplyResources(this.cbxHienMatKhai, "cbxHienMatKhai");
+            this.cbxHienMatKhai.Name = "cbxHienMatKhai";
+            this.cbxHienMatKhai.Properties.Caption = resources.GetString("cbxHienMatKhai.Properties.Caption");
+            this.cbxHienMatKhai.CheckedChanged += new System.EventHandler(this.cbxHienMatKhai_CheckedChanged);
             // 
             // labelControl3
             // 
@@ -159,7 +167,6 @@
             resources.ApplyResources(this.btnDangNhap, "btnDangNhap");
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
-         
             // 
             // btnThoat
             // 
@@ -173,12 +180,9 @@
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // cbxHienMatKhai
+            // splashScreenManager1
             // 
-            resources.ApplyResources(this.cbxHienMatKhai, "cbxHienMatKhai");
-            this.cbxHienMatKhai.Name = "cbxHienMatKhai";
-            this.cbxHienMatKhai.Properties.Caption = resources.GetString("checkEdit1.Properties.Caption");
-            this.cbxHienMatKhai.CheckedChanged += new System.EventHandler(this.cbxHienMatKhai_CheckedChanged);
+            splashScreenManager1.ClosingDelay = 200;
             // 
             // Login
             // 
@@ -196,11 +200,12 @@
             this.MinimizeBox = false;
             this.Name = "Login";
             this.ShowInTaskbar = false;
+            this.Load += new System.EventHandler(this.Login_Load);
             this.Clinience.ResumeLayout(false);
             this.Clinience.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cbxHienMatKhai.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbxHienMatKhai.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
