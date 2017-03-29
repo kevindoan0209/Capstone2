@@ -20,6 +20,29 @@ namespace DataAccessLayer
             data.Fill(dt);
             return dt;
         }
+
+        public DataTable Select_Username(string username)
+        {
+            const String sqlCommand = "Select * from Account where Account_UserName = @Username";
+            SqlCommand cm = new SqlCommand(sqlCommand, connect());
+            cm.Parameters.AddWithValue("@Username", username);
+            SqlDataAdapter data = new SqlDataAdapter(cm);
+            DataTable dt = new DataTable();
+            data.Fill(dt);
+            return dt;
+        }
+
+        public DataTable Select_CheckUserNameSoftware(string username)
+        {
+            const String sqlCommand = "Select * from Account where Account_UserName = 'admin' and Account_Type_ID <= 3";
+            SqlCommand cm = new SqlCommand(sqlCommand, connect());
+            cm.Parameters.AddWithValue("@Username", username);
+            SqlDataAdapter data = new SqlDataAdapter(cm);
+            DataTable dt = new DataTable();
+            data.Fill(dt);
+            return dt;
+        }
+
         public int InsertAccount(string name, string username, string password, string image, string signature, int type)
         {
             const String sqlCommand = "Insert into Account (Account_Name,Account_UserName,Account_Password,Account_Image,Account_Signatures,Account_Type_ID) Values(@Name, @Username, @Password, @Image, @Signature, @Type)";

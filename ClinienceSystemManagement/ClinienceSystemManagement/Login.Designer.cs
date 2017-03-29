@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::ClinienceSystemManagement.LoadingScreen), true, true);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.Clinience = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.cbxHienMatKhai = new DevExpress.XtraEditors.CheckEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
@@ -46,6 +46,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).BeginInit();
             this.SuspendLayout();
+            // 
+            // splashScreenManager1
+            // 
+            splashScreenManager1.ClosingDelay = 200;
             // 
             // Clinience
             // 
@@ -179,10 +183,6 @@
             resources.ApplyResources(this.btnThoat, "btnThoat");
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
-            // 
-            // splashScreenManager1
-            // 
-            splashScreenManager1.ClosingDelay = 200;
             // 
             // Login
             // 

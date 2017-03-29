@@ -6,11 +6,13 @@ using System.Windows.Forms;
 using BussinessLogicLayer;
 using DevExpress.XtraEditors;
 using System.Threading;
+using PresentationLayer;
 
 namespace ClinienceSystemManagement
 {
     public partial class Login : DevExpress.XtraEditors.XtraForm
     {
+
         public Login()
         {
             InitializeComponent();
@@ -28,19 +30,29 @@ namespace ClinienceSystemManagement
             {
                 try
                 {
-                    DataTable dt = BLL_Human.Login(TenDangNhap, MatKhau);
-                    if (dt.Rows.Count > 0)
+                    int count = BLL_Human.Select_CheckUserNameSoftware(TenDangNhap).Rows.Count;
+                    if (count < 0)
                     {
-                        DataRow dr = dt.Rows[0];
-                        this.DialogResult = DialogResult.OK;
-                        XtraMessageBox.Show("Đăng nhập thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    else
-                    {
-                        XtraMessageBox.Show("Tên đăng nhập hoặc mật khẩu không hợp lệ", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        txtTenDangNhap.Text = "";
-                        txtMatKhau.Text = "";
+                        XtraMessageBox.Show("Tài khoản không được phép truy cập", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         txtTenDangNhap.Focus();
+                    }
+                    else {
+                        DataTable dt = BLL_Human.Login(TenDangNhap, MatKhau);
+                        if (dt.Rows.Count > 0)
+                        {
+                            DataRow dr = dt.Rows[0];
+                            Home home = new Home(TenDangNhap);
+                            this.DialogResult = DialogResult.OK;
+                            XtraMessageBox.Show("Đăng nhập thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        }
+                        else
+                        {
+                            XtraMessageBox.Show("Tên đăng nhập hoặc mật khẩu không hợp lệ", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            txtTenDangNhap.Text = "";
+                            txtMatKhau.Text = "";
+                            txtTenDangNhap.Focus();
+                        }
                     }
                 }
                 catch (Exception ex)
@@ -73,10 +85,11 @@ namespace ClinienceSystemManagement
 
         private void Login_Load(object sender, EventArgs e)
         {
-            for (int i = 0; i < 100; i++)
-            {
-                Thread.Sleep(100);
-            }
+            //for (int i = 0; i < 100; i++)
+            //{
+            //    Thread.Sleep(100);
+            //}
         }
+
     }
 }

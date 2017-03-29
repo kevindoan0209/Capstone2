@@ -17,6 +17,8 @@ namespace ClinienceSystemManagement.HeThong
     {
         public int Id;
         public bool isAdd = true;
+        private string tenDangNhap;
+
         public HumanDetail()
         {
             InitializeComponent();
@@ -24,6 +26,7 @@ namespace ClinienceSystemManagement.HeThong
             // Fill a SqlDataSource
             sqlDataSource2.Fill();
         }
+
 
 
         // Event show dialog to choice path when click insert a image 
@@ -182,6 +185,7 @@ namespace ClinienceSystemManagement.HeThong
                                     }
                                     else
                                     {
+
                                         string name = txtTen.Text;
                                         string username = txtTenDangNhap.Text;
                                         string password = txtMatKhau.Text;
@@ -189,15 +193,24 @@ namespace ClinienceSystemManagement.HeThong
                                         string signature = txtKiTe.Text;
                                         string group = lkePhanQuyen.GetColumnValue("Account_Type_ID").ToString();
                                         int type = Int32.Parse(group);
-                                        if (string.IsNullOrEmpty(txtAnh.Text))
+                                        int count = BLL_Human.Select_Username(username).Rows.Count;
+                                        if (count > 0)
                                         {
-                                            BLL_Human.InsertAccountNoImage(name, username, password, signature, type);
-                                            this.Close();
+                                            XtraMessageBox.Show("Tên đăng nhập đã tồn tại", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                            txtTenDangNhap.Focus();
                                         }
                                         else
                                         {
-                                            BLL_Human.InsertAccount(name, username, password, image, signature, type);
-                                            this.Close();
+                                            if (string.IsNullOrEmpty(txtAnh.Text))
+                                            {
+                                                BLL_Human.InsertAccountNoImage(name, username, password, signature, type);
+                                                this.Close();
+                                            }
+                                            else
+                                            {
+                                                BLL_Human.InsertAccount(name, username, password, image, signature, type);
+                                                this.Close();
+                                            }
                                         }
 
                                     }

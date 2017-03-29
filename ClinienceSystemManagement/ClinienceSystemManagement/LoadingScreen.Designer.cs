@@ -42,16 +42,16 @@
             // marqueeProgressBarControl1
             // 
             this.marqueeProgressBarControl1.EditValue = 0;
-            this.marqueeProgressBarControl1.Location = new System.Drawing.Point(23, 229);
+            this.marqueeProgressBarControl1.Location = new System.Drawing.Point(11, 211);
             this.marqueeProgressBarControl1.Name = "marqueeProgressBarControl1";
-            this.marqueeProgressBarControl1.Size = new System.Drawing.Size(404, 12);
+            this.marqueeProgressBarControl1.Size = new System.Drawing.Size(404, 24);
             this.marqueeProgressBarControl1.TabIndex = 5;
             // 
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelControl1.Location = new System.Drawing.Point(23, 271);
+            this.labelControl1.Location = new System.Drawing.Point(12, 252);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(177, 16);
             this.labelControl1.TabIndex = 6;
@@ -59,7 +59,7 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(23, 204);
+            this.labelControl2.Location = new System.Drawing.Point(11, 186);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(69, 13);
             this.labelControl2.TabIndex = 7;
@@ -68,7 +68,7 @@
             // pictureEdit2
             // 
             this.pictureEdit2.EditValue = ((object)(resources.GetObject("pictureEdit2.EditValue")));
-            this.pictureEdit2.Location = new System.Drawing.Point(12, 12);
+            this.pictureEdit2.Location = new System.Drawing.Point(1, 0);
             this.pictureEdit2.Name = "pictureEdit2";
             this.pictureEdit2.Properties.AllowFocused = false;
             this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -81,7 +81,7 @@
             // pictureEdit1
             // 
             this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
-            this.pictureEdit1.Location = new System.Drawing.Point(349, 245);
+            this.pictureEdit1.Location = new System.Drawing.Point(341, 236);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.AllowFocused = false;
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -95,7 +95,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(450, 309);
+            this.ClientSize = new System.Drawing.Size(427, 297);
             this.Controls.Add(this.pictureEdit2);
             this.Controls.Add(this.pictureEdit1);
             this.Controls.Add(this.labelControl2);

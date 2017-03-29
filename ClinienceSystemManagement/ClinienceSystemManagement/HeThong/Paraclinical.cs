@@ -101,5 +101,6 @@ namespace ClinienceSystemManagement
             string data = txtTimKiem.Text;
             txtTimKiem.Text = "";
         }
+       
     }
 }

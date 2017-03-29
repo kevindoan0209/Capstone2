@@ -20,6 +20,12 @@ namespace PresentationLayer
         {
             InitializeComponent();
         }
+        private string TenDangNhap;
+        public Home(string Text)
+        {
+            TenDangNhap = Text;
+        }
+        
         private void Login()
         {
             Login login = new Login();
@@ -33,11 +39,13 @@ namespace PresentationLayer
 
         private void btnDangNhap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Login();
+            HumanDetail hd = new HumanDetail();
+            hd.ShowDialog();
         }
 
         private void btnDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+
             if (XtraMessageBox.Show("Bạn có muốn đăng xuất", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
                 Login();
@@ -66,7 +74,7 @@ namespace PresentationLayer
         private void btnLamSang_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Form frm = this.IsExits(typeof(DanhMucCanLamSang));
-            if(frm != null)
+            if (frm != null)
             {
                 frm.Activate();
             }
@@ -151,6 +159,23 @@ namespace PresentationLayer
                 Human human = new Human();
                 human.MdiParent = this;
                 human.Show();
+            }
+        }
+
+        private void btnBarThoat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            DialogResult dlr = XtraMessageBox.Show("Bạn có thật sự muốn thoát", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dlr == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void btnBarDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (XtraMessageBox.Show("Bạn có muốn đăng xuất", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            {
+                Login();
             }
         }
     }
