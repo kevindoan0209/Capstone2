@@ -282,6 +282,7 @@
             this.btnLichHen.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnLichHen.LargeGlyph")));
             this.btnLichHen.LargeWidth = 70;
             this.btnLichHen.Name = "btnLichHen";
+            this.btnLichHen.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLichHen_ItemClick);
             // 
             // btnBenhNhan
             // 

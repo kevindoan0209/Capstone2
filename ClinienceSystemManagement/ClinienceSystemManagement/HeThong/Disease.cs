@@ -53,12 +53,6 @@ namespace ClinienceSystemManagement.HeThong
             sqlDataSource2.Fill();
         }
 
-        private void btnTimKiem_Click(object sender, EventArgs e)
-        {
-            string data = txtTimKiem.Text;
-            txtTimKiem.Text = "";
-        }
-
         private void cmsCapNhat_Click(object sender, EventArgs e)
         {
             int rowIndex = gvDanhMuc.FocusedRowHandle;

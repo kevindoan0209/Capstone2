@@ -96,11 +96,7 @@ namespace ClinienceSystemManagement
             }
         }
 
-        private void btnTimKiem_Click(object sender, EventArgs e)
-        {
-            string data = txtTimKiem.Text;
-            txtTimKiem.Text = "";
-        }
+
        
     }
 }

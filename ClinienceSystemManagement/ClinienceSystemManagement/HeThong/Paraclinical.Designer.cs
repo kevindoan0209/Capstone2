@@ -30,20 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DanhMucCanLamSang));
-            DevExpress.DataAccess.Sql.TableQuery tableQuery2 = new DevExpress.DataAccess.Sql.TableQuery();
-            DevExpress.DataAccess.Sql.RelationInfo relationInfo2 = new DevExpress.DataAccess.Sql.RelationInfo();
-            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo2 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
-            DevExpress.DataAccess.Sql.TableInfo tableInfo3 = new DevExpress.DataAccess.Sql.TableInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo7 = new DevExpress.DataAccess.Sql.ColumnInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo8 = new DevExpress.DataAccess.Sql.ColumnInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo9 = new DevExpress.DataAccess.Sql.ColumnInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo10 = new DevExpress.DataAccess.Sql.ColumnInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo11 = new DevExpress.DataAccess.Sql.ColumnInfo();
-            DevExpress.DataAccess.Sql.TableInfo tableInfo4 = new DevExpress.DataAccess.Sql.TableInfo();
-            DevExpress.DataAccess.Sql.ColumnInfo columnInfo12 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.TableQuery tableQuery1 = new DevExpress.DataAccess.Sql.TableQuery();
+            DevExpress.DataAccess.Sql.RelationInfo relationInfo1 = new DevExpress.DataAccess.Sql.RelationInfo();
+            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo1 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
+            DevExpress.DataAccess.Sql.TableInfo tableInfo1 = new DevExpress.DataAccess.Sql.TableInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo1 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo2 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo3 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo4 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo5 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.TableInfo tableInfo2 = new DevExpress.DataAccess.Sql.TableInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo6 = new DevExpress.DataAccess.Sql.ColumnInfo();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.txtTimKiem = new DevExpress.XtraEditors.TextEdit();
-            this.btnTimKiem = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.btnLamMoi = new DevExpress.XtraEditors.SimpleButton();
@@ -60,38 +58,22 @@
             this.colParaclinical_ValueMin = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colParaclinical_ValueMax = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colParaclinical_Group_Name = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.searchControl2 = new DevExpress.XtraEditors.SearchControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTimKiem.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grcDanhMuc)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchControl2.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl2
             // 
             resources.ApplyResources(this.panelControl2, "panelControl2");
-            this.panelControl2.Controls.Add(this.txtTimKiem);
-            this.panelControl2.Controls.Add(this.btnTimKiem);
+            this.panelControl2.Controls.Add(this.searchControl2);
             this.panelControl2.Name = "panelControl2";
-            // 
-            // txtTimKiem
-            // 
-            resources.ApplyResources(this.txtTimKiem, "txtTimKiem");
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Properties.AccessibleDescription = resources.GetString("txtTimKiem.Properties.AccessibleDescription");
-            this.txtTimKiem.Properties.NullValuePrompt = resources.GetString("txtTimKiem.Properties.NullValuePrompt");
-            this.txtTimKiem.Properties.NullValuePromptShowForEmptyValue = ((bool)(resources.GetObject("txtTimKiem.Properties.NullValuePromptShowForEmptyValue")));
-            // 
-            // btnTimKiem
-            // 
-            resources.ApplyResources(this.btnTimKiem, "btnTimKiem");
-            this.btnTimKiem.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
-            this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // panelControl1
             // 
@@ -166,36 +148,36 @@
             // 
             this.sqlDataSource1.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            tableQuery2.Name = "Paraclinical";
-            relationColumnInfo2.NestedKeyColumn = "Paraclinical_Group_ID";
-            relationColumnInfo2.ParentKeyColumn = "Paraclinical_Group_ID";
-            relationInfo2.KeyColumns.AddRange(new DevExpress.DataAccess.Sql.RelationColumnInfo[] {
-            relationColumnInfo2});
-            relationInfo2.NestedTable = "Paraclinical_Group";
-            relationInfo2.ParentTable = "Paraclinical";
-            tableQuery2.Relations.AddRange(new DevExpress.DataAccess.Sql.RelationInfo[] {
-            relationInfo2});
-            tableInfo3.Name = "Paraclinical";
-            columnInfo7.Name = "Paraclinical_ID";
-            columnInfo8.Name = "Paraclinical_Name";
-            columnInfo9.Name = "Paraclinical_ReferenceValue";
-            columnInfo10.Name = "Paraclinical_ValueMin";
-            columnInfo11.Name = "Paraclinical_ValueMax";
-            tableInfo3.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
-            columnInfo7,
-            columnInfo8,
-            columnInfo9,
-            columnInfo10,
-            columnInfo11});
-            tableInfo4.Name = "Paraclinical_Group";
-            columnInfo12.Name = "Paraclinical_Group_Name";
-            tableInfo4.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
-            columnInfo12});
-            tableQuery2.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
-            tableInfo3,
-            tableInfo4});
+            tableQuery1.Name = "Paraclinical";
+            relationColumnInfo1.NestedKeyColumn = "Paraclinical_Group_ID";
+            relationColumnInfo1.ParentKeyColumn = "Paraclinical_Group_ID";
+            relationInfo1.KeyColumns.AddRange(new DevExpress.DataAccess.Sql.RelationColumnInfo[] {
+            relationColumnInfo1});
+            relationInfo1.NestedTable = "Paraclinical_Group";
+            relationInfo1.ParentTable = "Paraclinical";
+            tableQuery1.Relations.AddRange(new DevExpress.DataAccess.Sql.RelationInfo[] {
+            relationInfo1});
+            tableInfo1.Name = "Paraclinical";
+            columnInfo1.Name = "Paraclinical_ID";
+            columnInfo2.Name = "Paraclinical_Name";
+            columnInfo3.Name = "Paraclinical_ReferenceValue";
+            columnInfo4.Name = "Paraclinical_ValueMin";
+            columnInfo5.Name = "Paraclinical_ValueMax";
+            tableInfo1.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
+            columnInfo1,
+            columnInfo2,
+            columnInfo3,
+            columnInfo4,
+            columnInfo5});
+            tableInfo2.Name = "Paraclinical_Group";
+            columnInfo6.Name = "Paraclinical_Group_Name";
+            tableInfo2.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
+            columnInfo6});
+            tableQuery1.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
+            tableInfo1,
+            tableInfo2});
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            tableQuery2});
+            tableQuery1});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // gvData
@@ -216,7 +198,6 @@
             new DevExpress.XtraGrid.GridGroupSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gvData.GroupSummary"))), resources.GetString("gvData.GroupSummary1"), ((DevExpress.XtraGrid.Columns.GridColumn)(resources.GetObject("gvData.GroupSummary2"))), resources.GetString("gvData.GroupSummary3"))});
             this.gvData.Name = "gvData";
             this.gvData.OptionsBehavior.Editable = false;
-            this.gvData.OptionsFind.AlwaysVisible = true;
             this.gvData.OptionsFind.FindNullPrompt = "Nhập vào thông tin tìm kiếm...";
             this.gvData.OptionsView.EnableAppearanceEvenRow = true;
             // 
@@ -256,6 +237,19 @@
             this.colParaclinical_Group_Name.FieldName = "Paraclinical_Group_Name";
             this.colParaclinical_Group_Name.Name = "colParaclinical_Group_Name";
             // 
+            // searchControl2
+            // 
+            resources.ApplyResources(this.searchControl2, "searchControl2");
+            this.searchControl2.Client = this.grcDanhMuc;
+            this.searchControl2.Name = "searchControl2";
+            this.searchControl2.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("searchControl2.Properties.Appearance.Font")));
+            this.searchControl2.Properties.Appearance.Options.UseFont = true;
+            this.searchControl2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Repository.ClearButton(),
+            new DevExpress.XtraEditors.Repository.SearchButton()});
+            this.searchControl2.Properties.Client = this.grcDanhMuc;
+            this.searchControl2.Properties.NullValuePrompt = resources.GetString("searchControl2.Properties.NullValuePrompt");
+            // 
             // DanhMucCanLamSang
             // 
             resources.ApplyResources(this, "$this");
@@ -266,13 +260,13 @@
             this.Name = "DanhMucCanLamSang";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.txtTimKiem.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grcDanhMuc)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gvData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchControl2.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -281,7 +275,6 @@
 
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.XtraEditors.PanelControl panelControl1;
-        private DevExpress.XtraEditors.SimpleButton btnTimKiem;
         private DevExpress.XtraEditors.SimpleButton btnThem;
         private DevExpress.XtraGrid.GridControl grcDanhMuc;
         private DevExpress.XtraGrid.Views.Grid.GridView gvData;
@@ -297,6 +290,6 @@
         private System.Windows.Forms.ToolStripMenuItem cmsCapNhat;
         private System.Windows.Forms.ToolStripMenuItem cmsXoa;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.TextEdit txtTimKiem;
+        private DevExpress.XtraEditors.SearchControl searchControl2;
     }
 }

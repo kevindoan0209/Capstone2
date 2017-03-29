@@ -42,8 +42,6 @@
             this.btnLamMoi = new DevExpress.XtraEditors.SimpleButton();
             this.btnThem = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.txtTimKiem = new DevExpress.XtraEditors.TextEdit();
-            this.btnTimKiem = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.grcDanhMuc = new DevExpress.XtraGrid.GridControl();
@@ -51,14 +49,15 @@
             this.colDisease_ID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDisease_Name = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDisease_Description = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.searchControl2 = new DevExpress.XtraEditors.SearchControl();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTimKiem.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grcDanhMuc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvDanhMuc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchControl2.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // cmsXoa
@@ -113,27 +112,10 @@
             resources.ApplyResources(this.panelControl1, "panelControl1");
             this.panelControl1.Name = "panelControl1";
             // 
-            // txtTimKiem
-            // 
-            resources.ApplyResources(this.txtTimKiem, "txtTimKiem");
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Properties.AccessibleDescription = resources.GetString("txtTimKiem.Properties.AccessibleDescription");
-            this.txtTimKiem.Properties.NullValuePrompt = resources.GetString("txtTimKiem.Properties.NullValuePrompt");
-            this.txtTimKiem.Properties.NullValuePromptShowForEmptyValue = ((bool)(resources.GetObject("txtTimKiem.Properties.NullValuePromptShowForEmptyValue")));
-            // 
-            // btnTimKiem
-            // 
-            resources.ApplyResources(this.btnTimKiem, "btnTimKiem");
-            this.btnTimKiem.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
-            this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
-            // 
             // panelControl2
             // 
             resources.ApplyResources(this.panelControl2, "panelControl2");
-            this.panelControl2.Controls.Add(this.txtTimKiem);
-            this.panelControl2.Controls.Add(this.btnTimKiem);
+            this.panelControl2.Controls.Add(this.searchControl2);
             this.panelControl2.Name = "panelControl2";
             // 
             // sqlDataSource2
@@ -186,6 +168,7 @@
             this.colDisease_Description});
             this.gvDanhMuc.GridControl = this.grcDanhMuc;
             this.gvDanhMuc.Name = "gvDanhMuc";
+            this.gvDanhMuc.OptionsFind.AllowFindPanel = false;
             this.gvDanhMuc.OptionsFind.AlwaysVisible = true;
             this.gvDanhMuc.OptionsFind.FindNullPrompt = "Nhập vào thông tin tìm kiếm...";
             this.gvDanhMuc.OptionsView.EnableAppearanceEvenRow = true;
@@ -208,6 +191,19 @@
             this.colDisease_Description.FieldName = "Disease_Description";
             this.colDisease_Description.Name = "colDisease_Description";
             // 
+            // searchControl2
+            // 
+            resources.ApplyResources(this.searchControl2, "searchControl2");
+            this.searchControl2.Client = this.grcDanhMuc;
+            this.searchControl2.Name = "searchControl2";
+            this.searchControl2.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("searchControl2.Properties.Appearance.Font")));
+            this.searchControl2.Properties.Appearance.Options.UseFont = true;
+            this.searchControl2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Repository.ClearButton(),
+            new DevExpress.XtraEditors.Repository.SearchButton()});
+            this.searchControl2.Properties.Client = this.grcDanhMuc;
+            this.searchControl2.Properties.NullValuePrompt = resources.GetString("searchControl2.Properties.NullValuePrompt");
+            // 
             // Disease
             // 
             resources.ApplyResources(this, "$this");
@@ -220,11 +216,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTimKiem.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grcDanhMuc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvDanhMuc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchControl2.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -237,8 +233,6 @@
         private DevExpress.XtraEditors.SimpleButton btnLamMoi;
         private DevExpress.XtraEditors.SimpleButton btnThem;
         private DevExpress.XtraEditors.PanelControl panelControl1;
-        private DevExpress.XtraEditors.TextEdit txtTimKiem;
-        private DevExpress.XtraEditors.SimpleButton btnTimKiem;
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource2;
         private DevExpress.XtraGrid.GridControl grcDanhMuc;
@@ -246,5 +240,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colDisease_ID;
         private DevExpress.XtraGrid.Columns.GridColumn colDisease_Name;
         private DevExpress.XtraGrid.Columns.GridColumn colDisease_Description;
+        private DevExpress.XtraEditors.SearchControl searchControl2;
     }
 }

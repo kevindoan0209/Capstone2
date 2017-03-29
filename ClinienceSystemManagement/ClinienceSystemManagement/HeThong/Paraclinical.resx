@@ -121,87 +121,191 @@
   <data name="panelControl2.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
-  <data name="txtTimKiem.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
+  <data name="searchControl2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom</value>
   </data>
-  <data name="txtTimKiem.EditValue" xml:space="preserve">
-    <value />
-  </data>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>153, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="txtTimKiem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>178, 20</value>
+  <data name="cmsCapNhat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 22</value>
   </data>
-  <data name="txtTimKiem.Properties.AccessibleDescription" xml:space="preserve">
-    <value />
+  <data name="cmsCapNhat.Text" xml:space="preserve">
+    <value>Cập nhật</value>
   </data>
-  <data name="txtTimKiem.Properties.NullValuePrompt" xml:space="preserve">
-    <value>Nhập vào tên cận lâm sàng..</value>
+  <data name="cmsXoa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 22</value>
+  </data>
+  <data name="cmsXoa.Text" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 48</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
+    <value>contextMenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="grcDanhMuc.DataMember" xml:space="preserve">
+    <value>Paraclinical</value>
+  </data>
+  <metadata name="sqlDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlBhcmFjbGluaWNhbCI+PEZpZWxkIE5hbWU9IlBhcmFjbGluaWNhbF9JRCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQYXJhY2xpbmljYWxfTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQYXJhY2xpbmljYWxfUmVmZXJlbmNlVmFsdWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUGFyYWNsaW5pY2FsX1ZhbHVlTWluIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUGFyYWNsaW5pY2FsX1ZhbHVlTWF4IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUGFyYWNsaW5pY2FsX0dyb3VwX05hbWUiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+  </data>
+  <data name="grcDanhMuc.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="grcDanhMuc.EmbeddedNavigator.TextStringFormat" xml:space="preserve">
+    <value>Trang {0} / {1}</value>
+  </data>
+  <data name="grcDanhMuc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 61</value>
+  </data>
+  <data name="gvData.Appearance.FixedLine.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
+  </data>
+  <data name="gvData.Appearance.HeaderPanel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 11.25pt</value>
+  </data>
+  <data name="colParaclinical_ID.Caption" xml:space="preserve">
+    <value>Mã</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="txtTimKiem.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+  <data name="colParaclinical_ID.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="txtTimKiem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>341, 20</value>
-  </data>
-  <data name="txtTimKiem.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;txtTimKiem.Name" xml:space="preserve">
-    <value>txtTimKiem</value>
-  </data>
-  <data name="&gt;&gt;txtTimKiem.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txtTimKiem.Parent" xml:space="preserve">
-    <value>panelControl2</value>
-  </data>
-  <data name="&gt;&gt;txtTimKiem.ZOrder" xml:space="preserve">
+  <data name="colParaclinical_ID.VisibleIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="btnTimKiem.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
+  <data name="colParaclinical_ID.Width" type="System.Int32, mscorlib">
+    <value>120</value>
   </data>
-  <data name="btnTimKiem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        cQAAAHEBHD+AdwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJgSURBVDhPfZJf
-        SFNhGMa7KOiimyC66LLLLgu6Ene2/lAX1QbZds4pWJRTd86QJMGBxgRD0ywQE6KLJaQwJJFCstAQmhlR
-        iJrWmKOslq79cWdb021uT997hrVj5sXzXZzve37vc9733QHgjwyCVM7x0iOmeR0vKZxF8nKCvYPjbftK
-        35VKPTirdbeel7qYsVDpbEWX24O+oRHc7HbDVNUABgtxvGzcbCapB5lPWa9h8NlLJBIJLMWTCMRSiCkJ
-        /FgOoanzPhg8ZzBLh/8B6AS7nioPPR9HiBn7vubQ4gdcvjxuLRQwGVqFoiiQbnRQkukjNtsuDUDPy/3V
-        je1q5X5mvuPPQvTGUDEexpU3Cpp9BcyG05jzLVAKJnuZBsA+furuHUBwJcUqAvd8KVRNRnGeAUi1U2k1
-        FRU4c7UenCDXagDUbWqYL/pLjU2VN8wk29sEHnxZVwGX6prBJtO2GTDR2vMQESWJNpaAYpcCGj5k8SSY
-        RSQahUF0QG+Rhc2AThpVcGkZ3uVV9Z8pNlUm891AQW3uwPAYNTF/XKg5qAGUCTV72UXQ2d6DlXgcs5E0
-        PN9ycC+uYziYUc0f/QGcvlxHTbxdalYBdBjM9pPsco2W6P3MPOIMRP/8MxyB5+kL0I6UX6hZcV4XH2fG
-        jJ+TE6b9GgDpmOg4xLbtHY2KDGZHI/SCrC4QG11LUz0/uDZyNp8dPQdMCa8xV7FHAyBxnGunQXAc5Sxy
-        NRuXS2eRTCcs8gG6y4waF4tmEZi+SHpFEA1gO6mxqXLRvKHeLR//VxSbKv8FfN/64XYqQnrJjBmx8jdS
-        qMUqEPLA0gAAAABJRU5ErkJggg==
-</value>
+  <data name="colParaclinical_Name.Caption" xml:space="preserve">
+    <value>Tên cận lâm sàng</value>
   </data>
-  <data name="btnTimKiem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>536, 19</value>
+  <data name="colParaclinical_Name.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="btnTimKiem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 22</value>
-  </data>
-  <data name="btnTimKiem.TabIndex" type="System.Int32, mscorlib">
+  <data name="colParaclinical_Name.VisibleIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="btnTimKiem.Text" xml:space="preserve">
-    <value>Tìm kiếm </value>
+  <data name="colParaclinical_Name.Width" type="System.Int32, mscorlib">
+    <value>179</value>
   </data>
-  <data name="&gt;&gt;btnTimKiem.Name" xml:space="preserve">
-    <value>btnTimKiem</value>
+  <data name="colParaclinical_ReferenceValue.Caption" xml:space="preserve">
+    <value>Giá trị tham chiếu</value>
   </data>
-  <data name="&gt;&gt;btnTimKiem.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="colParaclinical_ReferenceValue.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;btnTimKiem.Parent" xml:space="preserve">
+  <data name="colParaclinical_ReferenceValue.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="colParaclinical_ReferenceValue.Width" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="colParaclinical_ValueMin.Caption" xml:space="preserve">
+    <value>Giá trị nhỏ nhất</value>
+  </data>
+  <data name="colParaclinical_ValueMin.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colParaclinical_ValueMin.VisibleIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="colParaclinical_ValueMin.Width" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="colParaclinical_ValueMax.Caption" xml:space="preserve">
+    <value>Giá trị lớn nhất</value>
+  </data>
+  <data name="colParaclinical_ValueMax.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colParaclinical_ValueMax.VisibleIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="colParaclinical_ValueMax.Width" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
+  <data name="colParaclinical_Group_Name.Caption" xml:space="preserve">
+    <value>Loại</value>
+  </data>
+  <data name="colParaclinical_Group_Name.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colParaclinical_Group_Name.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="colParaclinical_Group_Name.Width" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <assembly alias="DevExpress.Data.v15.1" name="DevExpress.Data.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="gvData.GroupSummary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v15.1">
+    <value>Count</value>
+  </data>
+  <data name="gvData.GroupSummary1" xml:space="preserve">
+    <value>Paraclinical.Paraclinical_Group_Name</value>
+  </data>
+  <data name="gvData.GroupSummary2" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gvData.GroupSummary3" xml:space="preserve">
+    <value>(Count={0})</value>
+  </data>
+  <data name="grcDanhMuc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>738, 349</value>
+  </data>
+  <data name="grcDanhMuc.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;grcDanhMuc.Name" xml:space="preserve">
+    <value>grcDanhMuc</value>
+  </data>
+  <data name="&gt;&gt;grcDanhMuc.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;grcDanhMuc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grcDanhMuc.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="searchControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>159, 18</value>
+  </data>
+  <data name="searchControl2.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 11.25pt</value>
+  </data>
+  <data name="searchControl2.Properties.NullValuePrompt" xml:space="preserve">
+    <value>Nhập vào thông tin tìm kiếm...</value>
+  </data>
+  <data name="searchControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>420, 24</value>
+  </data>
+  <data name="searchControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="searchControl2.ToolTip" xml:space="preserve">
+    <value>Nhập vào thông tin tìm kiếm</value>
+  </data>
+  <data name="&gt;&gt;searchControl2.Name" xml:space="preserve">
+    <value>searchControl2</value>
+  </data>
+  <data name="&gt;&gt;searchControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SearchControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;searchControl2.Parent" xml:space="preserve">
     <value>panelControl2</value>
   </data>
-  <data name="&gt;&gt;btnTimKiem.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;searchControl2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="panelControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -230,72 +334,6 @@
   <metadata name="panelControl1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="btnLamMoi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="btnThem.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="&gt;&gt;labelControl1.Name" xml:space="preserve">
-    <value>labelControl1</value>
-  </data>
-  <data name="&gt;&gt;labelControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;labelControl1.Parent" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;labelControl1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnLamMoi.Name" xml:space="preserve">
-    <value>btnLamMoi</value>
-  </data>
-  <data name="&gt;&gt;btnLamMoi.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnLamMoi.Parent" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;btnLamMoi.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btnThem.Name" xml:space="preserve">
-    <value>btnThem</value>
-  </data>
-  <data name="&gt;&gt;btnThem.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnThem.Parent" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;btnThem.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 410</value>
-  </data>
-  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>738, 44</value>
-  </data>
-  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="labelControl1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Right</value>
   </data>
@@ -401,156 +439,29 @@
   <data name="&gt;&gt;btnThem.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>153, 17</value>
-  </metadata>
-  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 48</value>
+  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
   </data>
-  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
-    <value>contextMenuStrip1</value>
+  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 410</value>
   </data>
-  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>738, 44</value>
   </data>
-  <data name="grcDanhMuc.DataMember" xml:space="preserve">
-    <value>Paraclinical</value>
-  </data>
-  <metadata name="sqlDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
-    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlBhcmFjbGluaWNhbCI+PEZpZWxkIE5hbWU9IlBhcmFjbGluaWNhbF9JRCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQYXJhY2xpbmljYWxfTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQYXJhY2xpbmljYWxfUmVmZXJlbmNlVmFsdWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUGFyYWNsaW5pY2FsX1ZhbHVlTWluIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUGFyYWNsaW5pY2FsX1ZhbHVlTWF4IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUGFyYWNsaW5pY2FsX0dyb3VwX05hbWUiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
-  </data>
-  <data name="grcDanhMuc.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="grcDanhMuc.EmbeddedNavigator.TextStringFormat" xml:space="preserve">
-    <value>Trang {0} / {1}</value>
-  </data>
-  <data name="grcDanhMuc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 61</value>
-  </data>
-  <data name="gvData.Appearance.FixedLine.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt</value>
-  </data>
-  <data name="gvData.Appearance.HeaderPanel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 11.25pt</value>
-  </data>
-  <data name="colParaclinical_ID.Caption" xml:space="preserve">
-    <value>Mã</value>
-  </data>
-  <data name="colParaclinical_ID.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="colParaclinical_ID.VisibleIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="colParaclinical_ID.Width" type="System.Int32, mscorlib">
-    <value>120</value>
-  </data>
-  <data name="colParaclinical_Name.Caption" xml:space="preserve">
-    <value>Tên cận lâm sàng</value>
-  </data>
-  <data name="colParaclinical_Name.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="colParaclinical_Name.VisibleIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="colParaclinical_Name.Width" type="System.Int32, mscorlib">
-    <value>179</value>
-  </data>
-  <data name="colParaclinical_ReferenceValue.Caption" xml:space="preserve">
-    <value>Giá trị tham chiếu</value>
-  </data>
-  <data name="colParaclinical_ReferenceValue.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="colParaclinical_ReferenceValue.VisibleIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="colParaclinical_ReferenceValue.Width" type="System.Int32, mscorlib">
-    <value>105</value>
-  </data>
-  <data name="colParaclinical_ValueMin.Caption" xml:space="preserve">
-    <value>Giá trị nhỏ nhất</value>
-  </data>
-  <data name="colParaclinical_ValueMin.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="colParaclinical_ValueMin.VisibleIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="colParaclinical_ValueMin.Width" type="System.Int32, mscorlib">
-    <value>105</value>
-  </data>
-  <data name="colParaclinical_ValueMax.Caption" xml:space="preserve">
-    <value>Giá trị lớn nhất</value>
-  </data>
-  <data name="colParaclinical_ValueMax.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="colParaclinical_ValueMax.VisibleIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="colParaclinical_ValueMax.Width" type="System.Int32, mscorlib">
-    <value>106</value>
-  </data>
-  <data name="colParaclinical_Group_Name.Caption" xml:space="preserve">
-    <value>Loại</value>
-  </data>
-  <data name="colParaclinical_Group_Name.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="colParaclinical_Group_Name.VisibleIndex" type="System.Int32, mscorlib">
+  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="colParaclinical_Group_Name.Width" type="System.Int32, mscorlib">
-    <value>105</value>
+  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
+    <value>panelControl1</value>
   </data>
-  <assembly alias="DevExpress.Data.v15.1" name="DevExpress.Data.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="gvData.GroupSummary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v15.1">
-    <value>Count</value>
+  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="gvData.GroupSummary1" xml:space="preserve">
-    <value>Paraclinical.Paraclinical_Group_Name</value>
-  </data>
-  <data name="gvData.GroupSummary2" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="gvData.GroupSummary3" xml:space="preserve">
-    <value>(Count={0})</value>
-  </data>
-  <data name="grcDanhMuc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>738, 349</value>
-  </data>
-  <data name="grcDanhMuc.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;grcDanhMuc.Name" xml:space="preserve">
-    <value>grcDanhMuc</value>
-  </data>
-  <data name="&gt;&gt;grcDanhMuc.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;grcDanhMuc.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;grcDanhMuc.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="cmsCapNhat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 22</value>
-  </data>
-  <data name="cmsCapNhat.Text" xml:space="preserve">
-    <value>Cập nhật</value>
-  </data>
-  <data name="cmsXoa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 22</value>
-  </data>
-  <data name="cmsXoa.Text" xml:space="preserve">
-    <value>Xóa</value>
+  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

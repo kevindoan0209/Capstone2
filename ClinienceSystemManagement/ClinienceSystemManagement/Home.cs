@@ -1,4 +1,5 @@
 ﻿using ClinienceSystemManagement;
+using ClinienceSystemManagement.DatHen;
 using ClinienceSystemManagement.Hệ_Thống;
 using ClinienceSystemManagement.HeThong;
 using DevExpress.XtraEditors;
@@ -176,6 +177,21 @@ namespace PresentationLayer
             if (XtraMessageBox.Show("Bạn có muốn đăng xuất", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
                 Login();
+            }
+        }
+
+        private void btnLichHen_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.IsExits(typeof(Appointment));
+            if (frm != null)
+            {
+                frm.Activate();
+            }
+            else
+            {
+                Appointment appointment = new Appointment();
+                appointment.MdiParent = this;
+                appointment.Show();
             }
         }
     }

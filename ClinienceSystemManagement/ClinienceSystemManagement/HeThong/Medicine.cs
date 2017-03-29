@@ -55,24 +55,6 @@ namespace ClinienceSystemManagement.Hệ_Thống
             sqlDataSource1.Fill();
         }
 
-        private void cmsCapNhat_Click(object sender, EventArgs e)
-        {
-            int rowIndex = gvDanhMuc.FocusedRowHandle;
-            string colID = "Medicine_ID";
-            object value = gvDanhMuc.GetRowCellValue(rowIndex, colID);
-            if (value != null)
-            {
-                MedicineDetail md = new MedicineDetail();
-                md.Id = (int)value;
-                md.isAdd = false;
-                md.ShowDialog();
-                sqlDataSource1.Fill();
-            }
-            else
-            {
-                XtraMessageBox.Show("Bạn chưa chọn đối tượng để cập nhật", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
 
         private void cmsXoa_Click(object sender, EventArgs e)
         {
@@ -97,6 +79,25 @@ namespace ClinienceSystemManagement.Hệ_Thống
                 {
                     XtraMessageBox.Show("Bạn chưa chọn đối tượng cần xóa", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
+            }
+        }
+
+        private void cmsCapNhat_Click(object sender, EventArgs e)
+        {
+            int rowIndex = gvDanhMuc.FocusedRowHandle;
+            string colID = "Medicine_ID";
+            object value = gvDanhMuc.GetRowCellValue(rowIndex, colID);
+            if (value != null)
+            {
+                MedicineDetail md = new MedicineDetail();
+                md.Id = (int)value;
+                md.isAdd = false;
+                md.ShowDialog();
+                sqlDataSource1.Fill();
+            }
+            else
+            {
+                XtraMessageBox.Show("Bạn chưa chọn đối tượng để cập nhật", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }
