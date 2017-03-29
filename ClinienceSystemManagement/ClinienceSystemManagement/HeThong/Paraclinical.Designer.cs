@@ -42,10 +42,7 @@
             DevExpress.DataAccess.Sql.TableInfo tableInfo2 = new DevExpress.DataAccess.Sql.TableInfo();
             DevExpress.DataAccess.Sql.ColumnInfo columnInfo6 = new DevExpress.DataAccess.Sql.ColumnInfo();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.btnLamMoi = new DevExpress.XtraEditors.SimpleButton();
-            this.btnThem = new DevExpress.XtraEditors.SimpleButton();
+            this.searchControl2 = new DevExpress.XtraEditors.SearchControl();
             this.grcDanhMuc = new DevExpress.XtraGrid.GridControl();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.cmsCapNhat = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,15 +55,18 @@
             this.colParaclinical_ValueMin = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colParaclinical_ValueMax = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colParaclinical_Group_Name = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.searchControl2 = new DevExpress.XtraEditors.SearchControl();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.btnLamMoi = new DevExpress.XtraEditors.SimpleButton();
+            this.btnThem = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
-            this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.searchControl2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grcDanhMuc)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvData)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchControl2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+            this.panelControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelControl2
@@ -75,35 +75,18 @@
             this.panelControl2.Controls.Add(this.searchControl2);
             this.panelControl2.Name = "panelControl2";
             // 
-            // panelControl1
+            // searchControl2
             // 
-            this.panelControl1.Controls.Add(this.labelControl1);
-            this.panelControl1.Controls.Add(this.btnLamMoi);
-            this.panelControl1.Controls.Add(this.btnThem);
-            resources.ApplyResources(this.panelControl1, "panelControl1");
-            this.panelControl1.Name = "panelControl1";
-            // 
-            // labelControl1
-            // 
-            resources.ApplyResources(this.labelControl1, "labelControl1");
-            this.labelControl1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl1.Appearance.Font")));
-            this.labelControl1.Name = "labelControl1";
-            // 
-            // btnLamMoi
-            // 
-            this.btnLamMoi.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.btnLamMoi.Image = ((System.Drawing.Image)(resources.GetObject("btnLamMoi.Image")));
-            resources.ApplyResources(this.btnLamMoi, "btnLamMoi");
-            this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
-            // 
-            // btnThem
-            // 
-            this.btnThem.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
-            resources.ApplyResources(this.btnThem, "btnThem");
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            resources.ApplyResources(this.searchControl2, "searchControl2");
+            this.searchControl2.Client = this.grcDanhMuc;
+            this.searchControl2.Name = "searchControl2";
+            this.searchControl2.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("searchControl2.Properties.Appearance.Font")));
+            this.searchControl2.Properties.Appearance.Options.UseFont = true;
+            this.searchControl2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Repository.ClearButton(),
+            new DevExpress.XtraEditors.Repository.SearchButton()});
+            this.searchControl2.Properties.Client = this.grcDanhMuc;
+            this.searchControl2.Properties.NullValuePrompt = resources.GetString("searchControl2.Properties.NullValuePrompt");
             // 
             // grcDanhMuc
             // 
@@ -200,6 +183,7 @@
             this.gvData.OptionsBehavior.Editable = false;
             this.gvData.OptionsFind.FindNullPrompt = "Nhập vào thông tin tìm kiếm...";
             this.gvData.OptionsView.EnableAppearanceEvenRow = true;
+            this.gvData.OptionsView.ShowFooter = true;
             // 
             // colParaclinical_ID
             // 
@@ -237,18 +221,35 @@
             this.colParaclinical_Group_Name.FieldName = "Paraclinical_Group_Name";
             this.colParaclinical_Group_Name.Name = "colParaclinical_Group_Name";
             // 
-            // searchControl2
+            // panelControl1
             // 
-            resources.ApplyResources(this.searchControl2, "searchControl2");
-            this.searchControl2.Client = this.grcDanhMuc;
-            this.searchControl2.Name = "searchControl2";
-            this.searchControl2.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("searchControl2.Properties.Appearance.Font")));
-            this.searchControl2.Properties.Appearance.Options.UseFont = true;
-            this.searchControl2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Repository.ClearButton(),
-            new DevExpress.XtraEditors.Repository.SearchButton()});
-            this.searchControl2.Properties.Client = this.grcDanhMuc;
-            this.searchControl2.Properties.NullValuePrompt = resources.GetString("searchControl2.Properties.NullValuePrompt");
+            this.panelControl1.Controls.Add(this.labelControl1);
+            this.panelControl1.Controls.Add(this.btnLamMoi);
+            this.panelControl1.Controls.Add(this.btnThem);
+            resources.ApplyResources(this.panelControl1, "panelControl1");
+            this.panelControl1.Name = "panelControl1";
+            // 
+            // labelControl1
+            // 
+            resources.ApplyResources(this.labelControl1, "labelControl1");
+            this.labelControl1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl1.Appearance.Font")));
+            this.labelControl1.Name = "labelControl1";
+            // 
+            // btnLamMoi
+            // 
+            this.btnLamMoi.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.btnLamMoi.Image = ((System.Drawing.Image)(resources.GetObject("btnLamMoi.Image")));
+            resources.ApplyResources(this.btnLamMoi, "btnLamMoi");
+            this.btnLamMoi.Name = "btnLamMoi";
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
+            // 
+            // btnThem
+            // 
+            this.btnThem.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
+            resources.ApplyResources(this.btnThem, "btnThem");
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // DanhMucCanLamSang
             // 
@@ -260,13 +261,13 @@
             this.Name = "DanhMucCanLamSang";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
-            this.panelControl1.ResumeLayout(false);
-            this.panelControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.searchControl2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grcDanhMuc)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gvData)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchControl2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
+            this.panelControl1.ResumeLayout(false);
+            this.panelControl1.PerformLayout();
             this.ResumeLayout(false);
 
         }
