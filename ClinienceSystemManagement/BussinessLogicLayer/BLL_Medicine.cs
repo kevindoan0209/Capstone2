@@ -2,8 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace BussinessLogicLayer
 {
@@ -21,6 +20,14 @@ namespace BussinessLogicLayer
         public static int InsertMedicine(string name, string mclass,string usage, string note, int price, int unitid)
         {
             return _medicine.InsertMedicine(name, mclass, usage, note, price, unitid);
+        }
+        public static int InsertIngredient(string id, string name, string note)
+        {
+            return _medicine.InsertIngredient(id, name, note);
+        }
+        public static int UpdateIngredient(string id, string name, string note)
+        {
+            return _medicine.UpdateIngredient(id, name, note);
         }
         public static int UpdateMedicine(int id, string name, string mclass, string usage, string note, int price, int unitid)
         {

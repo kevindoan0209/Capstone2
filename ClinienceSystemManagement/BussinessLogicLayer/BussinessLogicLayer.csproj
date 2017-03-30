@@ -45,7 +45,7 @@
     <Compile Include="BLL_Appointment.cs" />
     <Compile Include="BLL_Human.cs" />
     <Compile Include="BLL_Disease.cs" />
-    <Compile Include="BLL_Ingredient.cs" />
+    <Compile Include="BLL_Precription.cs" />
     <Compile Include="BLL_Medicine.cs" />
     <Compile Include="BLL_Paraclinical.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

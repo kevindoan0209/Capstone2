@@ -141,6 +141,12 @@
     <Compile Include="HeThong\MedicineUnit.Designer.cs">
       <DependentUpon>MedicineUnit.cs</DependentUpon>
     </Compile>
+    <Compile Include="KhamBenh\PatientDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhamBenh\PatientDetail.Designer.cs">
+      <DependentUpon>PatientDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoadingScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -212,6 +218,9 @@
     <EmbeddedResource Include="HeThong\MedicineUnit.resx">
       <DependentUpon>MedicineUnit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="KhamBenh\PatientDetail.resx">
+      <DependentUpon>PatientDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoadingScreen.resx">
       <DependentUpon>LoadingScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -262,7 +271,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="KhamBenh\" />
     <Folder Include="TaiKhoan\" />
     <Folder Include="TroGiup\" />
   </ItemGroup>

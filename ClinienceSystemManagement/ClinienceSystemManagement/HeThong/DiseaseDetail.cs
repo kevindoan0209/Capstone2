@@ -72,7 +72,7 @@ namespace ClinienceSystemManagement.HeThong
                         string name = txtTen.Text;
                         string id = txtMa.Text;
                         string description = txtMoTa.Text;
-                        BLL_Disease.Update(id, name, description);
+                        BLL_Disease.UpdateDisease(id, name, description);
                         this.Close();
                         XtraMessageBox.Show("Cập nhật thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
@@ -111,7 +111,7 @@ namespace ClinienceSystemManagement.HeThong
                             string name = txtTen.Text;
                             string id = txtMa.Text;
                             string description = txtMoTa.Text;
-                            BLL_Disease.Insert(id, name, description);
+                            BLL_Disease.InsertDisease(id, name, description);
                             XtraMessageBox.Show("Đã thêm thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             this.Close();                 
                         }

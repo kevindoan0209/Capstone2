@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using DevExpress.UserSkins;
 using DevExpress.Skins;
 using ClinienceSystemManagement;
+using ClinienceSystemManagement.KhamBenh;
 
 namespace PresentationLayer
 {
@@ -21,7 +22,7 @@ namespace PresentationLayer
 
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
-            Application.Run(new Home());
+            Application.Run(new PatientDetail());
         }
     }
 }

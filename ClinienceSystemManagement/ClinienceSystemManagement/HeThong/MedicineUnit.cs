@@ -138,28 +138,37 @@ namespace ClinienceSystemManagement.HeThong
 
         private void cmsXoa_Click(object sender, EventArgs e)
         {
-            if (XtraMessageBox.Show("Bạn có muốn xóa không?", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            try
             {
-                int rowIndex = gvDanhMuc.FocusedRowHandle;
-                string colID = "Unit_ID";
-                object value = gvDanhMuc.GetRowCellValue(rowIndex, colID);
-                if (value != null)
+                if (XtraMessageBox.Show("Bạn có muốn xóa không?", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    DataClinienceDataContext dc = new DataClinienceDataContext();
-                    var ing = dc.Medicine_Units.Where(s => s.Unit_ID == (int)value).SingleOrDefault();
-                    if (ing != null)
+                    int rowIndex = gvDanhMuc.FocusedRowHandle;
+                    string colID = "Unit_ID";
+                    object value = gvDanhMuc.GetRowCellValue(rowIndex, colID);
+                    if (value != null)
                     {
-                        dc.Medicine_Units.DeleteOnSubmit(ing);
-                        dc.SubmitChanges();
-                        sqlDataSource4.Fill();
-                        XtraMessageBox.Show("Đã xóa thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        DataClinienceDataContext dc = new DataClinienceDataContext();
+                        var ing = dc.Medicine_Units.Where(s => s.Unit_ID == (int)value).SingleOrDefault();
+                        if (ing != null)
+                        {
+                            dc.Medicine_Units.DeleteOnSubmit(ing);
+                            dc.SubmitChanges();
+                            sqlDataSource4.Fill();
+                            XtraMessageBox.Show("Đã xóa thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+                    else
+                    {
+                        XtraMessageBox.Show("Bạn chưa chọn đối tượng cần xóa", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
-                else
-                {
-                    XtraMessageBox.Show("Bạn chưa chọn đối tượng cần xóa", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
             }
+            catch (Exception)
+            {
+
+                XtraMessageBox.Show("Không được phép xóa đối tượng này, đối tượng đã được thêm ở một danh mục khác", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
     }
 }

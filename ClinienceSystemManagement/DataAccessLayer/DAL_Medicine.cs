@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace DataAccessLayer
 {
@@ -40,7 +39,25 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@Unitid", unitid);
             return command.ExecuteNonQuery();
         }
+        public int InsertIngredient(string id, string name, string note)
+        {
+            const String sqlCommand = "Insert into Ingredient (Ingredient_ID,Ingredient_Name,Ingredient_Note) Values(@Id, @Name, @Note)";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@Id", id);
+            command.Parameters.AddWithValue("@Name", name);
+            command.Parameters.AddWithValue("@Note", note);
+            return command.ExecuteNonQuery();
+        }
 
+        public int UpdateIngredient(string id, string name, string note)
+        {
+            const String sqlCommand = "Update Ingredient set Ingredient_Name = @Name, Ingredient_Note = @Note where Ingredient_ID = @Id";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@Id", id);
+            command.Parameters.AddWithValue("@Name", name);
+            command.Parameters.AddWithValue("@Note", note);
+            return command.ExecuteNonQuery();
+        }
         public int UpdateMedicine(int id, string name, string mclass, string usage, string note, int price,int unitid)
         {
             const String sqlCommand = "Update Medicine set Medicine_Name = @Name, Medicine_Class = @MClass, Medicine_Usage = @Usage ,Medicine_Note = @Note, Medicine_Price = @Price ,Unit_ID = @Unitid  where Medicine_ID = @Id";

@@ -112,7 +112,7 @@ namespace ClinienceSystemManagement.HeThong
                             string referenceValue = txtThamChieu.Text;
                             string group = lkePhanNhom.GetColumnValue("Paraclinical_Group_ID").ToString();
                             int groupId = Convert.ToInt32(group.ToString());
-                            BLL_Paraclinical.Update(name, id, valueMin, valueMax, anotherName, unit, category, link, note, description, referenceValue, groupId);
+                            BLL_Paraclinical.UpdateParaclinical(name, id, valueMin, valueMax, anotherName, unit, category, link, note, description, referenceValue, groupId);
                             this.Close();
                             XtraMessageBox.Show("Cập nhật thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
@@ -169,7 +169,7 @@ namespace ClinienceSystemManagement.HeThong
                                 string referenceValue = txtThamChieu.Text;
                                 string group = lkePhanNhom.GetColumnValue("Paraclinical_Group_ID").ToString();
                                 int groupId = Convert.ToInt32(group.ToString());
-                                BLL_Paraclinical.Insert(name, id, valueMin, valueMax, anotherName, unit, category, link, note, description, referenceValue, groupId);
+                                BLL_Paraclinical.InsertParaclinical(name, id, valueMin, valueMax, anotherName, unit, category, link, note, description, referenceValue, groupId);
                                 XtraMessageBox.Show("Đã thêm thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 this.Close();
                             }

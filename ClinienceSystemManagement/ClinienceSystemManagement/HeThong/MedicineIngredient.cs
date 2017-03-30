@@ -24,7 +24,7 @@ namespace ClinienceSystemManagement.HeThong
             // Fill a SqlDataSource
             sqlDataSource3.Fill();
         }
-        
+
         private void Reset()
         {
             txtTen.Text = "";
@@ -68,7 +68,7 @@ namespace ClinienceSystemManagement.HeThong
                         string name = txtTen.Text;
                         string id = txtMa.Text;
                         string description = txtGhiChu.Text;
-                        BLL_Ingredient.Update(id, name, description);
+                        BLL_Medicine.UpdateIngredient(id, name, description);
                         Reset();
                         txtMa.ReadOnly = false;
                         isAdd = true;
@@ -108,7 +108,7 @@ namespace ClinienceSystemManagement.HeThong
                             string name = txtTen.Text;
                             string id = txtMa.Text;
                             string description = txtGhiChu.Text;
-                            BLL_Ingredient.Insert(id, name, description);
+                            BLL_Medicine.InsertIngredient(id, name, description);
                             Reset();
                             XtraMessageBox.Show("Đã thêm thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
@@ -137,7 +137,7 @@ namespace ClinienceSystemManagement.HeThong
                 isAdd = false;
                 FillDataUpdate();
                 sqlDataSource3.Fill();
-              
+
             }
             else
             {
@@ -147,29 +147,35 @@ namespace ClinienceSystemManagement.HeThong
 
         private void cmsXoa_Click(object sender, EventArgs e)
         {
-            if (XtraMessageBox.Show("Bạn có muốn xóa không?", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            try
             {
-                int rowIndex = gvDanhMuc.FocusedRowHandle;
-                string colID = "Ingredient_ID";
-                object value = gvDanhMuc.GetRowCellValue(rowIndex, colID);
-                if (value != null)
+                if (XtraMessageBox.Show("Bạn có muốn xóa không?", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    DataClinienceDataContext dc = new DataClinienceDataContext();
-                    var ing = dc.Ingredients.Where(s => s.Ingredient_ID == (string)value).SingleOrDefault();
-                    if (ing != null)
+                    int rowIndex = gvDanhMuc.FocusedRowHandle;
+                    string colID = "Ingredient_ID";
+                    object value = gvDanhMuc.GetRowCellValue(rowIndex, colID);
+                    if (value != null)
                     {
-                        dc.Ingredients.DeleteOnSubmit(ing);
-                        dc.SubmitChanges();
-                        sqlDataSource3.Fill();
-                        XtraMessageBox.Show("Đã xóa thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        DataClinienceDataContext dc = new DataClinienceDataContext();
+                        var ing = dc.Ingredients.Where(s => s.Ingredient_ID == (string)value).SingleOrDefault();
+                        if (ing != null)
+                        {
+                            dc.Ingredients.DeleteOnSubmit(ing);
+                            dc.SubmitChanges();
+                            sqlDataSource3.Fill();
+                            XtraMessageBox.Show("Đã xóa thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+                    else
+                    {
+                        XtraMessageBox.Show("Bạn chưa chọn đối tượng cần xóa", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
-                else
-                {
-                    XtraMessageBox.Show("Bạn chưa chọn đối tượng cần xóa", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
             }
+            catch (Exception)
+            {
+                XtraMessageBox.Show("Không được phép xóa đối tượng này, đối tượng đã được thêm ở một danh mục khác", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }      
         }
-
     }
 }
