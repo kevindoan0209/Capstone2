@@ -31,15 +31,9 @@ namespace ClinienceSystemManagement.HeThong
         {
             try
             {
-                //     if (isAdd == false)
-                //   {
-                //       SaveUpdate();
-                //   }
-                //    else
-                //   {
                 if (string.IsNullOrEmpty(lkeThanhPhan.Text))
                 {
-                    XtraMessageBox.Show("Vui lòng nhập mã bệnh", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    XtraMessageBox.Show("Vui chọn thành phần", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     lkeThanhPhan.Focus();
                 }
                 else
@@ -53,7 +47,6 @@ namespace ClinienceSystemManagement.HeThong
                     XtraMessageBox.Show("Đã thêm thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
                 }
-                //  }
             }
             catch (Exception ex)
             {

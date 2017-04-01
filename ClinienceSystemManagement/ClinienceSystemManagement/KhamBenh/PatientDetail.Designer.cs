@@ -28,64 +28,72 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PatientDetail));
             this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
-            this.btnTao = new DevExpress.XtraEditors.SimpleButton();
+            this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
-            this.checkEdit2 = new DevExpress.XtraEditors.CheckEdit();
-            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rbNam = new System.Windows.Forms.RadioButton();
+            this.txtGhiChu = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.memoEdit1 = new DevExpress.XtraEditors.MemoEdit();
-            this.memoEdit2 = new DevExpress.XtraEditors.MemoEdit();
-            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.memoEdit3 = new DevExpress.XtraEditors.MemoEdit();
-            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
-            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
-            this.dateEdit2 = new DevExpress.XtraEditors.DateEdit();
-            this.timeEdit1 = new DevExpress.XtraEditors.TimeEdit();
-            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.txtDiaChi = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.txtThanhPho = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.txtNgheNghiep = new DevExpress.XtraEditors.TextEdit();
+            this.txtEmail = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.txtSDT = new DevExpress.XtraEditors.TextEdit();
+            this.dtNamSinh = new DevExpress.XtraEditors.DateEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.txtTen = new DevExpress.XtraEditors.TextEdit();
+            this.peAnh = new DevExpress.XtraEditors.PictureEdit();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
+            this.dtGioKham = new DevExpress.XtraEditors.TimeEdit();
+            this.dtNgayKham = new DevExpress.XtraEditors.DateEdit();
+            this.lkeBacSi = new DevExpress.XtraEditors.LookUpEdit();
+            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
+            this.txtThanPhien = new DevExpress.XtraEditors.MemoEdit();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.txtLyDo = new DevExpress.XtraEditors.MemoEdit();
+            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.txtAnh = new DevExpress.XtraEditors.TextEdit();
+            this.txtMa = new DevExpress.XtraEditors.TextEdit();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGhiChu.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtThanhPho.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNgheNghiep.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSDT.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtNamSinh.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtNamSinh.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTen.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peAnh.Properties)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timeEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGioKham.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtNgayKham.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtNgayKham.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lkeBacSi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtThanPhien.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLyDo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAnh.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMa.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnHuy
@@ -99,20 +107,21 @@
             this.btnHuy.Text = "Hủy";
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
-            // btnTao
+            // btnLuu
             // 
-            this.btnTao.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.btnTao.Image = ((System.Drawing.Image)(resources.GetObject("btnTao.Image")));
-            this.btnTao.Location = new System.Drawing.Point(666, 16);
-            this.btnTao.Name = "btnTao";
-            this.btnTao.Size = new System.Drawing.Size(75, 25);
-            this.btnTao.TabIndex = 0;
-            this.btnTao.Text = "Lưu";
+            this.btnLuu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
+            this.btnLuu.Location = new System.Drawing.Point(666, 16);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(75, 25);
+            this.btnLuu.TabIndex = 0;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // panelControl1
             // 
             this.panelControl1.Controls.Add(this.btnHuy);
-            this.panelControl1.Controls.Add(this.btnTao);
+            this.panelControl1.Controls.Add(this.btnLuu);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelControl1.Location = new System.Drawing.Point(0, 445);
             this.panelControl1.Name = "panelControl1";
@@ -121,170 +130,69 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.memoEdit1);
+            this.groupBox1.Controls.Add(this.radioButton2);
+            this.groupBox1.Controls.Add(this.rbNam);
+            this.groupBox1.Controls.Add(this.txtGhiChu);
             this.groupBox1.Controls.Add(this.labelControl9);
             this.groupBox1.Controls.Add(this.labelControl8);
-            this.groupBox1.Controls.Add(this.textEdit6);
+            this.groupBox1.Controls.Add(this.txtDiaChi);
             this.groupBox1.Controls.Add(this.labelControl7);
-            this.groupBox1.Controls.Add(this.textEdit5);
+            this.groupBox1.Controls.Add(this.txtThanhPho);
             this.groupBox1.Controls.Add(this.labelControl6);
-            this.groupBox1.Controls.Add(this.textEdit4);
-            this.groupBox1.Controls.Add(this.textEdit3);
+            this.groupBox1.Controls.Add(this.txtNgheNghiep);
+            this.groupBox1.Controls.Add(this.txtEmail);
             this.groupBox1.Controls.Add(this.labelControl5);
             this.groupBox1.Controls.Add(this.labelControl4);
-            this.groupBox1.Controls.Add(this.textEdit2);
-            this.groupBox1.Controls.Add(this.dateEdit1);
+            this.groupBox1.Controls.Add(this.txtSDT);
+            this.groupBox1.Controls.Add(this.dtNamSinh);
             this.groupBox1.Controls.Add(this.labelControl3);
-            this.groupBox1.Controls.Add(this.checkEdit2);
-            this.groupBox1.Controls.Add(this.checkEdit1);
             this.groupBox1.Controls.Add(this.labelControl2);
             this.groupBox1.Controls.Add(this.labelControl1);
-            this.groupBox1.Controls.Add(this.textEdit1);
-            this.groupBox1.Controls.Add(this.pictureEdit1);
+            this.groupBox1.Controls.Add(this.txtTen);
+            this.groupBox1.Controls.Add(this.peAnh);
             this.groupBox1.Location = new System.Drawing.Point(23, 16);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(393, 410);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông tin bệnh nhân";
+            this.groupBox1.Text = "Thông tin chi tiết";
             // 
-            // groupBox2
+            // radioButton2
             // 
-            this.groupBox2.Controls.Add(this.labelControl14);
-            this.groupBox2.Controls.Add(this.labelControl13);
-            this.groupBox2.Controls.Add(this.timeEdit1);
-            this.groupBox2.Controls.Add(this.dateEdit2);
-            this.groupBox2.Controls.Add(this.lookUpEdit1);
-            this.groupBox2.Controls.Add(this.labelControl12);
-            this.groupBox2.Controls.Add(this.memoEdit3);
-            this.groupBox2.Controls.Add(this.labelControl11);
-            this.groupBox2.Controls.Add(this.memoEdit2);
-            this.groupBox2.Controls.Add(this.labelControl10);
-            this.groupBox2.Location = new System.Drawing.Point(422, 16);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(393, 410);
-            this.groupBox2.TabIndex = 9;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Tình trạng tiếp nhận";
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(287, 130);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(39, 17);
+            this.radioButton2.TabIndex = 23;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Nữ";
+            this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // pictureEdit1
+            // rbNam
             // 
-            this.pictureEdit1.Location = new System.Drawing.Point(15, 20);
-            this.pictureEdit1.Name = "pictureEdit1";
-            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Size = new System.Drawing.Size(140, 130);
-            this.pictureEdit1.TabIndex = 0;
+            this.rbNam.AutoSize = true;
+            this.rbNam.Location = new System.Drawing.Point(175, 130);
+            this.rbNam.Name = "rbNam";
+            this.rbNam.Size = new System.Drawing.Size(46, 17);
+            this.rbNam.TabIndex = 22;
+            this.rbNam.TabStop = true;
+            this.rbNam.Text = "Nam";
+            this.rbNam.UseVisualStyleBackColor = true;
             // 
-            // textEdit1
+            // txtGhiChu
             // 
-            this.textEdit1.Location = new System.Drawing.Point(175, 39);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(200, 20);
-            this.textEdit1.TabIndex = 1;
+            this.txtGhiChu.Location = new System.Drawing.Point(15, 321);
+            this.txtGhiChu.Name = "txtGhiChu";
+            this.txtGhiChu.Size = new System.Drawing.Size(360, 73);
+            this.txtGhiChu.TabIndex = 21;
             // 
-            // labelControl1
+            // labelControl9
             // 
-            this.labelControl1.Location = new System.Drawing.Point(175, 20);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(51, 13);
-            this.labelControl1.TabIndex = 2;
-            this.labelControl1.Text = "Họ và tên:";
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Location = new System.Drawing.Point(175, 65);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(47, 13);
-            this.labelControl2.TabIndex = 4;
-            this.labelControl2.Text = "Năm sinh:";
-            // 
-            // checkEdit1
-            // 
-            this.checkEdit1.Location = new System.Drawing.Point(175, 129);
-            this.checkEdit1.Name = "checkEdit1";
-            this.checkEdit1.Properties.Caption = "Nam";
-            this.checkEdit1.Size = new System.Drawing.Size(75, 19);
-            this.checkEdit1.TabIndex = 6;
-            // 
-            // checkEdit2
-            // 
-            this.checkEdit2.Location = new System.Drawing.Point(256, 129);
-            this.checkEdit2.Name = "checkEdit2";
-            this.checkEdit2.Properties.Caption = "Nữ";
-            this.checkEdit2.Size = new System.Drawing.Size(75, 19);
-            this.checkEdit2.TabIndex = 7;
-            // 
-            // dateEdit1
-            // 
-            this.dateEdit1.EditValue = null;
-            this.dateEdit1.Location = new System.Drawing.Point(175, 84);
-            this.dateEdit1.Name = "dateEdit1";
-            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Size = new System.Drawing.Size(200, 20);
-            this.dateEdit1.TabIndex = 9;
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Location = new System.Drawing.Point(15, 163);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(66, 13);
-            this.labelControl4.TabIndex = 11;
-            this.labelControl4.Text = "Số điện thoại:";
-            // 
-            // textEdit2
-            // 
-            this.textEdit2.Location = new System.Drawing.Point(15, 182);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(140, 20);
-            this.textEdit2.TabIndex = 10;
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.Location = new System.Drawing.Point(175, 163);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(28, 13);
-            this.labelControl5.TabIndex = 12;
-            this.labelControl5.Text = "Email:";
-            // 
-            // textEdit3
-            // 
-            this.textEdit3.Location = new System.Drawing.Point(175, 182);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Size = new System.Drawing.Size(200, 20);
-            this.textEdit3.TabIndex = 13;
-            // 
-            // labelControl6
-            // 
-            this.labelControl6.Location = new System.Drawing.Point(15, 208);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(64, 13);
-            this.labelControl6.TabIndex = 15;
-            this.labelControl6.Text = "Nghề nghiệp:";
-            // 
-            // textEdit4
-            // 
-            this.textEdit4.Location = new System.Drawing.Point(15, 230);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Size = new System.Drawing.Size(140, 20);
-            this.textEdit4.TabIndex = 14;
-            // 
-            // labelControl7
-            // 
-            this.labelControl7.Location = new System.Drawing.Point(175, 208);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(55, 13);
-            this.labelControl7.TabIndex = 17;
-            this.labelControl7.Text = "Thành phố:";
-            // 
-            // textEdit5
-            // 
-            this.textEdit5.Location = new System.Drawing.Point(175, 230);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Size = new System.Drawing.Size(200, 20);
-            this.textEdit5.TabIndex = 16;
+            this.labelControl9.Location = new System.Drawing.Point(15, 301);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(39, 13);
+            this.labelControl9.TabIndex = 20;
+            this.labelControl9.Text = "Ghi chú:";
             // 
             // labelControl8
             // 
@@ -294,104 +202,145 @@
             this.labelControl8.TabIndex = 19;
             this.labelControl8.Text = "Địa chỉ:";
             // 
-            // textEdit6
+            // txtDiaChi
             // 
-            this.textEdit6.Location = new System.Drawing.Point(15, 275);
-            this.textEdit6.Name = "textEdit6";
-            this.textEdit6.Size = new System.Drawing.Size(360, 20);
-            this.textEdit6.TabIndex = 18;
+            this.txtDiaChi.Location = new System.Drawing.Point(15, 275);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(360, 20);
+            this.txtDiaChi.TabIndex = 18;
             // 
-            // labelControl9
+            // labelControl7
             // 
-            this.labelControl9.Location = new System.Drawing.Point(15, 301);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(36, 13);
-            this.labelControl9.TabIndex = 20;
-            this.labelControl9.Text = "Địa chỉ:";
+            this.labelControl7.Location = new System.Drawing.Point(175, 208);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(55, 13);
+            this.labelControl7.TabIndex = 17;
+            this.labelControl7.Text = "Thành phố:";
             // 
-            // memoEdit1
+            // txtThanhPho
             // 
-            this.memoEdit1.Location = new System.Drawing.Point(15, 321);
-            this.memoEdit1.Name = "memoEdit1";
-            this.memoEdit1.Size = new System.Drawing.Size(360, 73);
-            this.memoEdit1.TabIndex = 21;
+            this.txtThanhPho.Location = new System.Drawing.Point(175, 230);
+            this.txtThanhPho.Name = "txtThanhPho";
+            this.txtThanhPho.Size = new System.Drawing.Size(200, 20);
+            this.txtThanhPho.TabIndex = 16;
             // 
-            // memoEdit2
+            // labelControl6
             // 
-            this.memoEdit2.Location = new System.Drawing.Point(17, 41);
-            this.memoEdit2.Name = "memoEdit2";
-            this.memoEdit2.Size = new System.Drawing.Size(360, 146);
-            this.memoEdit2.TabIndex = 23;
+            this.labelControl6.Location = new System.Drawing.Point(15, 208);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(64, 13);
+            this.labelControl6.TabIndex = 15;
+            this.labelControl6.Text = "Nghề nghiệp:";
             // 
-            // labelControl10
+            // txtNgheNghiep
             // 
-            this.labelControl10.Location = new System.Drawing.Point(17, 22);
-            this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(58, 13);
-            this.labelControl10.TabIndex = 22;
-            this.labelControl10.Text = "Lý do khám:";
+            this.txtNgheNghiep.Location = new System.Drawing.Point(15, 230);
+            this.txtNgheNghiep.Name = "txtNgheNghiep";
+            this.txtNgheNghiep.Size = new System.Drawing.Size(140, 20);
+            this.txtNgheNghiep.TabIndex = 14;
             // 
-            // labelControl11
+            // txtEmail
             // 
-            this.labelControl11.Location = new System.Drawing.Point(18, 198);
-            this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(58, 13);
-            this.labelControl11.TabIndex = 24;
-            this.labelControl11.Text = "Lý do khám:";
+            this.txtEmail.Location = new System.Drawing.Point(175, 182);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(200, 20);
+            this.txtEmail.TabIndex = 13;
             // 
-            // memoEdit3
+            // labelControl5
             // 
-            this.memoEdit3.Location = new System.Drawing.Point(17, 217);
-            this.memoEdit3.Name = "memoEdit3";
-            this.memoEdit3.Size = new System.Drawing.Size(360, 83);
-            this.memoEdit3.TabIndex = 22;
+            this.labelControl5.Location = new System.Drawing.Point(175, 163);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(28, 13);
+            this.labelControl5.TabIndex = 12;
+            this.labelControl5.Text = "Email:";
             // 
-            // labelControl12
+            // labelControl4
             // 
-            this.labelControl12.Location = new System.Drawing.Point(17, 310);
-            this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(59, 13);
-            this.labelControl12.TabIndex = 25;
-            this.labelControl12.Text = "Bác sĩ khám:";
+            this.labelControl4.Location = new System.Drawing.Point(15, 163);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(66, 13);
+            this.labelControl4.TabIndex = 11;
+            this.labelControl4.Text = "Số điện thoại:";
             // 
-            // lookUpEdit1
+            // txtSDT
             // 
-            this.lookUpEdit1.Location = new System.Drawing.Point(17, 329);
-            this.lookUpEdit1.Name = "lookUpEdit1";
-            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.txtSDT.Location = new System.Drawing.Point(15, 182);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(140, 20);
+            this.txtSDT.TabIndex = 10;
+            // 
+            // dtNamSinh
+            // 
+            this.dtNamSinh.EditValue = null;
+            this.dtNamSinh.Location = new System.Drawing.Point(175, 84);
+            this.dtNamSinh.Name = "dtNamSinh";
+            this.dtNamSinh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit1.Size = new System.Drawing.Size(141, 20);
-            this.lookUpEdit1.TabIndex = 26;
-            // 
-            // dateEdit2
-            // 
-            this.dateEdit2.EditValue = null;
-            this.dateEdit2.Location = new System.Drawing.Point(17, 374);
-            this.dateEdit2.Name = "dateEdit2";
-            this.dateEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dtNamSinh.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit2.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit2.Size = new System.Drawing.Size(117, 20);
-            this.dateEdit2.TabIndex = 27;
+            this.dtNamSinh.Size = new System.Drawing.Size(200, 20);
+            this.dtNamSinh.TabIndex = 9;
             // 
-            // timeEdit1
+            // labelControl3
             // 
-            this.timeEdit1.EditValue = new System.DateTime(2017, 3, 30, 0, 0, 0, 0);
-            this.timeEdit1.Location = new System.Drawing.Point(168, 374);
-            this.timeEdit1.Name = "timeEdit1";
-            this.timeEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.timeEdit1.Size = new System.Drawing.Size(117, 20);
-            this.timeEdit1.TabIndex = 28;
+            this.labelControl3.Location = new System.Drawing.Point(175, 110);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(42, 13);
+            this.labelControl3.TabIndex = 8;
+            this.labelControl3.Text = "Giới tính:";
             // 
-            // labelControl13
+            // labelControl2
             // 
-            this.labelControl13.Location = new System.Drawing.Point(17, 355);
-            this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(57, 13);
-            this.labelControl13.TabIndex = 29;
-            this.labelControl13.Text = "Ngày khám:";
+            this.labelControl2.Location = new System.Drawing.Point(175, 65);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(47, 13);
+            this.labelControl2.TabIndex = 4;
+            this.labelControl2.Text = "Năm sinh:";
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(175, 20);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(51, 13);
+            this.labelControl1.TabIndex = 2;
+            this.labelControl1.Text = "Họ và tên:";
+            // 
+            // txtTen
+            // 
+            this.txtTen.Location = new System.Drawing.Point(175, 39);
+            this.txtTen.Name = "txtTen";
+            this.txtTen.Size = new System.Drawing.Size(200, 20);
+            this.txtTen.TabIndex = 1;
+            // 
+            // peAnh
+            // 
+            this.peAnh.Location = new System.Drawing.Point(15, 20);
+            this.peAnh.Name = "peAnh";
+            this.peAnh.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.peAnh.Size = new System.Drawing.Size(140, 130);
+            this.peAnh.TabIndex = 0;
+            this.peAnh.Click += new System.EventHandler(this.peAnh_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.txtMa);
+            this.groupBox2.Controls.Add(this.txtAnh);
+            this.groupBox2.Controls.Add(this.labelControl14);
+            this.groupBox2.Controls.Add(this.labelControl13);
+            this.groupBox2.Controls.Add(this.dtGioKham);
+            this.groupBox2.Controls.Add(this.dtNgayKham);
+            this.groupBox2.Controls.Add(this.lkeBacSi);
+            this.groupBox2.Controls.Add(this.labelControl12);
+            this.groupBox2.Controls.Add(this.txtThanPhien);
+            this.groupBox2.Controls.Add(this.labelControl11);
+            this.groupBox2.Controls.Add(this.txtLyDo);
+            this.groupBox2.Controls.Add(this.labelControl10);
+            this.groupBox2.Location = new System.Drawing.Point(422, 16);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(393, 410);
+            this.groupBox2.TabIndex = 9;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Tình trạng tiếp nhận";
             // 
             // labelControl14
             // 
@@ -401,13 +350,107 @@
             this.labelControl14.TabIndex = 30;
             this.labelControl14.Text = "Giờ khám:";
             // 
-            // labelControl3
+            // labelControl13
             // 
-            this.labelControl3.Location = new System.Drawing.Point(175, 110);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(42, 13);
-            this.labelControl3.TabIndex = 8;
-            this.labelControl3.Text = "Giới tính:";
+            this.labelControl13.Location = new System.Drawing.Point(17, 355);
+            this.labelControl13.Name = "labelControl13";
+            this.labelControl13.Size = new System.Drawing.Size(57, 13);
+            this.labelControl13.TabIndex = 29;
+            this.labelControl13.Text = "Ngày khám:";
+            // 
+            // dtGioKham
+            // 
+            this.dtGioKham.EditValue = new System.DateTime(2017, 3, 30, 0, 0, 0, 0);
+            this.dtGioKham.Location = new System.Drawing.Point(168, 374);
+            this.dtGioKham.Name = "dtGioKham";
+            this.dtGioKham.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dtGioKham.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.TouchUI;
+            this.dtGioKham.Size = new System.Drawing.Size(117, 20);
+            this.dtGioKham.TabIndex = 28;
+            // 
+            // dtNgayKham
+            // 
+            this.dtNgayKham.EditValue = null;
+            this.dtNgayKham.Location = new System.Drawing.Point(17, 374);
+            this.dtNgayKham.Name = "dtNgayKham";
+            this.dtNgayKham.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dtNgayKham.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dtNgayKham.Size = new System.Drawing.Size(117, 20);
+            this.dtNgayKham.TabIndex = 27;
+            // 
+            // lkeBacSi
+            // 
+            this.lkeBacSi.Location = new System.Drawing.Point(17, 329);
+            this.lkeBacSi.Name = "lkeBacSi";
+            this.lkeBacSi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lkeBacSi.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Account_Name", "Bác sĩ", 95, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Account_ID", "Account_ID", 66, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Account_Type_ID", "Account_Type_ID", 96, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far)});
+            this.lkeBacSi.Properties.DataSource = this.bindingSource2;
+            this.lkeBacSi.Properties.DisplayMember = "Account_Name";
+            this.lkeBacSi.Properties.NullText = "Chọn bác sĩ";
+            this.lkeBacSi.Properties.ValueMember = "Account_ID";
+            this.lkeBacSi.Size = new System.Drawing.Size(141, 20);
+            this.lkeBacSi.TabIndex = 26;
+            // 
+            // labelControl12
+            // 
+            this.labelControl12.Location = new System.Drawing.Point(17, 310);
+            this.labelControl12.Name = "labelControl12";
+            this.labelControl12.Size = new System.Drawing.Size(59, 13);
+            this.labelControl12.TabIndex = 25;
+            this.labelControl12.Text = "Bác sĩ khám:";
+            // 
+            // txtThanPhien
+            // 
+            this.txtThanPhien.Location = new System.Drawing.Point(17, 217);
+            this.txtThanPhien.Name = "txtThanPhien";
+            this.txtThanPhien.Size = new System.Drawing.Size(360, 83);
+            this.txtThanPhien.TabIndex = 22;
+            // 
+            // labelControl11
+            // 
+            this.labelControl11.Location = new System.Drawing.Point(18, 198);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(57, 13);
+            this.labelControl11.TabIndex = 24;
+            this.labelControl11.Text = "Than phiền:";
+            // 
+            // txtLyDo
+            // 
+            this.txtLyDo.Location = new System.Drawing.Point(17, 41);
+            this.txtLyDo.Name = "txtLyDo";
+            this.txtLyDo.Size = new System.Drawing.Size(360, 146);
+            this.txtLyDo.TabIndex = 23;
+            // 
+            // labelControl10
+            // 
+            this.labelControl10.Location = new System.Drawing.Point(17, 22);
+            this.labelControl10.Name = "labelControl10";
+            this.labelControl10.Size = new System.Drawing.Size(58, 13);
+            this.labelControl10.TabIndex = 22;
+            this.labelControl10.Text = "Lý do khám:";
+            // 
+            // txtAnh
+            // 
+            this.txtAnh.Location = new System.Drawing.Point(168, 329);
+            this.txtAnh.Name = "txtAnh";
+            this.txtAnh.Size = new System.Drawing.Size(40, 20);
+            this.txtAnh.TabIndex = 24;
+            this.txtAnh.Visible = false;
+            // 
+            // txtMa
+            // 
+            this.txtMa.Location = new System.Drawing.Point(214, 329);
+            this.txtMa.Name = "txtMa";
+            this.txtMa.Size = new System.Drawing.Size(40, 20);
+            this.txtMa.TabIndex = 31;
+            this.txtMa.Visible = false;
             // 
             // PatientDetail
             // 
@@ -419,31 +462,35 @@
             this.Controls.Add(this.panelControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PatientDetail";
-            this.Text = "Danh mục bệnh nhân";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Thông tin bệnh nhân";
+            this.Load += new System.EventHandler(this.PatientDetail_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGhiChu.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtThanhPho.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNgheNghiep.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSDT.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtNamSinh.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtNamSinh.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTen.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peAnh.Properties)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timeEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGioKham.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtNgayKham.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtNgayKham.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lkeBacSi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtThanPhien.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLyDo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAnh.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMa.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -451,39 +498,44 @@
         #endregion
 
         private DevExpress.XtraEditors.SimpleButton btnHuy;
-        private DevExpress.XtraEditors.SimpleButton btnTao;
+        private DevExpress.XtraEditors.SimpleButton btnLuu;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
-        private DevExpress.XtraEditors.DateEdit dateEdit1;
-        private DevExpress.XtraEditors.CheckEdit checkEdit2;
-        private DevExpress.XtraEditors.CheckEdit checkEdit1;
+        private DevExpress.XtraEditors.PictureEdit peAnh;
+        private DevExpress.XtraEditors.DateEdit dtNamSinh;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.MemoEdit memoEdit1;
+        private DevExpress.XtraEditors.TextEdit txtTen;
+        private DevExpress.XtraEditors.MemoEdit txtGhiChu;
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraEditors.TextEdit textEdit6;
+        private DevExpress.XtraEditors.TextEdit txtDiaChi;
         private DevExpress.XtraEditors.LabelControl labelControl7;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
+        private DevExpress.XtraEditors.TextEdit txtThanhPho;
         private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
+        private DevExpress.XtraEditors.TextEdit txtNgheNghiep;
+        private DevExpress.XtraEditors.TextEdit txtEmail;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit txtSDT;
         private DevExpress.XtraEditors.LabelControl labelControl14;
         private DevExpress.XtraEditors.LabelControl labelControl13;
-        private DevExpress.XtraEditors.TimeEdit timeEdit1;
-        private DevExpress.XtraEditors.DateEdit dateEdit2;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
+        private DevExpress.XtraEditors.TimeEdit dtGioKham;
+        private DevExpress.XtraEditors.DateEdit dtNgayKham;
+        private DevExpress.XtraEditors.LookUpEdit lkeBacSi;
         private DevExpress.XtraEditors.LabelControl labelControl12;
-        private DevExpress.XtraEditors.MemoEdit memoEdit3;
+        private DevExpress.XtraEditors.MemoEdit txtThanPhien;
         private DevExpress.XtraEditors.LabelControl labelControl11;
-        private DevExpress.XtraEditors.MemoEdit memoEdit2;
+        private DevExpress.XtraEditors.MemoEdit txtLyDo;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.LabelControl labelControl3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rbNam;
+        private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.BindingSource bindingSource2;
+        private DevExpress.XtraEditors.TextEdit txtAnh;
+        private DevExpress.XtraEditors.TextEdit txtMa;
+        private System.Windows.Forms.Timer timer1;
     }
 }

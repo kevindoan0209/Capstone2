@@ -2,6 +2,7 @@
 using ClinienceSystemManagement.DatHen;
 using ClinienceSystemManagement.Hệ_Thống;
 using ClinienceSystemManagement.HeThong;
+using ClinienceSystemManagement.KhamBenh;
 using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
@@ -192,6 +193,21 @@ namespace PresentationLayer
                 Appointment appointment = new Appointment();
                 appointment.MdiParent = this;
                 appointment.Show();
+            }
+        }
+
+        private void btnBenhNhan_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.IsExits(typeof(Patient));
+            if (frm != null)
+            {
+                frm.Activate();
+            }
+            else
+            {
+                Patient patient = new Patient();
+                patient.MdiParent = this;
+                patient.Show();
             }
         }
     }

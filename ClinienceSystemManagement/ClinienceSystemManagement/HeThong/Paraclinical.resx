@@ -121,6 +121,9 @@
   <data name="panelControl2.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
+  <data name="groupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom</value>
+  </data>
   <data name="searchControl2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom</value>
   </data>
@@ -278,7 +281,7 @@
     <value>1</value>
   </data>
   <data name="searchControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>159, 18</value>
+    <value>39, 17</value>
   </data>
   <data name="searchControl2.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 11.25pt</value>
@@ -302,9 +305,33 @@
     <value>DevExpress.XtraEditors.SearchControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;searchControl2.Parent" xml:space="preserve">
-    <value>panelControl2</value>
+    <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;searchControl2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>129, 5</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>494, 50</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>panelControl2</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="panelControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">

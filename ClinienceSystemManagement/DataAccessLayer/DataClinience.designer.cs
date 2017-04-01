@@ -266,7 +266,7 @@ namespace DataAccessLayer
 		
 		private System.Data.Linq.Binary _Account_Image;
 		
-		private int _Account_Type_ID;
+		private System.Nullable<int> _Account_Type_ID;
 		
 		private string _Account_Signatures;
 		
@@ -288,7 +288,7 @@ namespace DataAccessLayer
     partial void OnAccount_PasswordChanged();
     partial void OnAccount_ImageChanging(System.Data.Linq.Binary value);
     partial void OnAccount_ImageChanged();
-    partial void OnAccount_Type_IDChanging(int value);
+    partial void OnAccount_Type_IDChanging(System.Nullable<int> value);
     partial void OnAccount_Type_IDChanged();
     partial void OnAccount_SignaturesChanging(string value);
     partial void OnAccount_SignaturesChanged();
@@ -341,7 +341,7 @@ namespace DataAccessLayer
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Account_UserName", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Account_UserName", DbType="NVarChar(50)")]
 		public string Account_UserName
 		{
 			get
@@ -361,7 +361,7 @@ namespace DataAccessLayer
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Account_Password", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Account_Password", DbType="NVarChar(50)")]
 		public string Account_Password
 		{
 			get
@@ -401,8 +401,8 @@ namespace DataAccessLayer
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Account_Type_ID", DbType="Int NOT NULL")]
-		public int Account_Type_ID
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Account_Type_ID", DbType="Int")]
+		public System.Nullable<int> Account_Type_ID
 		{
 			get
 			{
@@ -501,7 +501,7 @@ namespace DataAccessLayer
 					}
 					else
 					{
-						this._Account_Type_ID = default(int);
+						this._Account_Type_ID = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("Account_Type");
 				}
@@ -651,9 +651,11 @@ namespace DataAccessLayer
 		
 		private int _Appointment_ID;
 		
-		private System.DateTime _Appointment_Time;
+		private System.DateTime _Appointment_Date;
 		
-		private int _Appointment_Duration;
+		private System.TimeSpan _Appointment_Time;
+		
+		private System.Nullable<int> _Appointment_Duration;
 		
 		private string _Appointment_Note;
 		
@@ -671,9 +673,11 @@ namespace DataAccessLayer
     partial void OnCreated();
     partial void OnAppointment_IDChanging(int value);
     partial void OnAppointment_IDChanged();
-    partial void OnAppointment_TimeChanging(System.DateTime value);
+    partial void OnAppointment_DateChanging(System.DateTime value);
+    partial void OnAppointment_DateChanged();
+    partial void OnAppointment_TimeChanging(System.TimeSpan value);
     partial void OnAppointment_TimeChanged();
-    partial void OnAppointment_DurationChanging(int value);
+    partial void OnAppointment_DurationChanging(System.Nullable<int> value);
     partial void OnAppointment_DurationChanged();
     partial void OnAppointment_NoteChanging(string value);
     partial void OnAppointment_NoteChanged();
@@ -710,8 +714,28 @@ namespace DataAccessLayer
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Appointment_Time", DbType="DateTime NOT NULL")]
-		public System.DateTime Appointment_Time
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Appointment_Date", DbType="Date NOT NULL")]
+		public System.DateTime Appointment_Date
+		{
+			get
+			{
+				return this._Appointment_Date;
+			}
+			set
+			{
+				if ((this._Appointment_Date != value))
+				{
+					this.OnAppointment_DateChanging(value);
+					this.SendPropertyChanging();
+					this._Appointment_Date = value;
+					this.SendPropertyChanged("Appointment_Date");
+					this.OnAppointment_DateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Appointment_Time", DbType="Time NOT NULL")]
+		public System.TimeSpan Appointment_Time
 		{
 			get
 			{
@@ -730,8 +754,8 @@ namespace DataAccessLayer
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Appointment_Duration", DbType="Int NOT NULL")]
-		public int Appointment_Duration
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Appointment_Duration", DbType="Int")]
+		public System.Nullable<int> Appointment_Duration
 		{
 			get
 			{
@@ -1236,7 +1260,7 @@ namespace DataAccessLayer
 		
 		private int _Account_ID;
 		
-		private System.Nullable<int> _Account_Age;
+		private System.Nullable<System.DateTime> _Account_Age;
 		
 		private string _Account_Sex;
 		
@@ -1254,6 +1278,8 @@ namespace DataAccessLayer
 		
 		private EntityRef<Doctor> _Doctor;
 		
+		private EntityRef<Patient> _Patient;
+		
 		private EntityRef<Account> _Account;
 		
     #region Extensibility Method Definitions
@@ -1262,7 +1288,7 @@ namespace DataAccessLayer
     partial void OnCreated();
     partial void OnAccount_IDChanging(int value);
     partial void OnAccount_IDChanged();
-    partial void OnAccount_AgeChanging(System.Nullable<int> value);
+    partial void OnAccount_AgeChanging(System.Nullable<System.DateTime> value);
     partial void OnAccount_AgeChanged();
     partial void OnAccount_SexChanging(string value);
     partial void OnAccount_SexChanged();
@@ -1283,6 +1309,7 @@ namespace DataAccessLayer
 		public Human()
 		{
 			this._Doctor = default(EntityRef<Doctor>);
+			this._Patient = default(EntityRef<Patient>);
 			this._Account = default(EntityRef<Account>);
 			OnCreated();
 		}
@@ -1311,8 +1338,8 @@ namespace DataAccessLayer
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Account_Age", DbType="Int")]
-		public System.Nullable<int> Account_Age
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Account_Age", DbType="DateTime")]
+		public System.Nullable<System.DateTime> Account_Age
 		{
 			get
 			{
@@ -1496,6 +1523,35 @@ namespace DataAccessLayer
 						value.Human = this;
 					}
 					this.SendPropertyChanged("Doctor");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Human_Patient", Storage="_Patient", ThisKey="Account_ID", OtherKey="Account_ID", IsUnique=true, IsForeignKey=false)]
+		public Patient Patient
+		{
+			get
+			{
+				return this._Patient.Entity;
+			}
+			set
+			{
+				Patient previousValue = this._Patient.Entity;
+				if (((previousValue != value) 
+							|| (this._Patient.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Patient.Entity = null;
+						previousValue.Human = null;
+					}
+					this._Patient.Entity = value;
+					if ((value != null))
+					{
+						value.Human = this;
+					}
+					this.SendPropertyChanged("Patient");
 				}
 			}
 		}
@@ -3035,6 +3091,8 @@ namespace DataAccessLayer
 		
 		private int _Account_ID;
 		
+		private string _Patient_Complain;
+		
 		private string _Patient_Issue;
 		
 		private string _Patient_Note;
@@ -3059,12 +3117,16 @@ namespace DataAccessLayer
 		
 		private EntitySet<Precription> _Precriptions;
 		
+		private EntityRef<Human> _Human;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
     partial void OnAccount_IDChanging(int value);
     partial void OnAccount_IDChanged();
+    partial void OnPatient_ComplainChanging(string value);
+    partial void OnPatient_ComplainChanged();
     partial void OnPatient_IssueChanging(string value);
     partial void OnPatient_IssueChanged();
     partial void OnPatient_NoteChanging(string value);
@@ -3091,6 +3153,7 @@ namespace DataAccessLayer
 		{
 			this._Appointments = new EntitySet<Appointment>(new Action<Appointment>(this.attach_Appointments), new Action<Appointment>(this.detach_Appointments));
 			this._Precriptions = new EntitySet<Precription>(new Action<Precription>(this.attach_Precriptions), new Action<Precription>(this.detach_Precriptions));
+			this._Human = default(EntityRef<Human>);
 			OnCreated();
 		}
 		
@@ -3105,6 +3168,10 @@ namespace DataAccessLayer
 			{
 				if ((this._Account_ID != value))
 				{
+					if (this._Human.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
 					this.OnAccount_IDChanging(value);
 					this.SendPropertyChanging();
 					this._Account_ID = value;
@@ -3114,7 +3181,27 @@ namespace DataAccessLayer
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Patient_Issue", DbType="NVarChar(200)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Patient_Complain", DbType="NChar(500)")]
+		public string Patient_Complain
+		{
+			get
+			{
+				return this._Patient_Complain;
+			}
+			set
+			{
+				if ((this._Patient_Complain != value))
+				{
+					this.OnPatient_ComplainChanging(value);
+					this.SendPropertyChanging();
+					this._Patient_Complain = value;
+					this.SendPropertyChanged("Patient_Complain");
+					this.OnPatient_ComplainChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Patient_Issue", DbType="NVarChar(500)")]
 		public string Patient_Issue
 		{
 			get
@@ -3134,7 +3221,7 @@ namespace DataAccessLayer
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Patient_Note", DbType="NVarChar(200)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Patient_Note", DbType="NVarChar(500)")]
 		public string Patient_Note
 		{
 			get
@@ -3340,6 +3427,40 @@ namespace DataAccessLayer
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Human_Patient", Storage="_Human", ThisKey="Account_ID", OtherKey="Account_ID", IsForeignKey=true)]
+		public Human Human
+		{
+			get
+			{
+				return this._Human.Entity;
+			}
+			set
+			{
+				Human previousValue = this._Human.Entity;
+				if (((previousValue != value) 
+							|| (this._Human.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Human.Entity = null;
+						previousValue.Patient = null;
+					}
+					this._Human.Entity = value;
+					if ((value != null))
+					{
+						value.Patient = this;
+						this._Account_ID = value.Account_ID;
+					}
+					else
+					{
+						this._Account_ID = default(int);
+					}
+					this.SendPropertyChanged("Human");
+				}
+			}
+		}
+		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -3485,7 +3606,7 @@ namespace DataAccessLayer
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Precription_Date", DbType="Date NOT NULL")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Precription_Date", DbType="DateTime NOT NULL")]
 		public System.DateTime Precription_Date
 		{
 			get

@@ -43,7 +43,6 @@ namespace ClinienceSystemManagement.HeThong
             {
                 XtraMessageBox.Show("Không thể tải được ảnh", ex.Message);
             }
-
         }
 
         private void HumanDetail_Load(object sender, EventArgs e)
