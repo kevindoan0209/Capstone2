@@ -23,7 +23,8 @@ namespace ClinienceSystemManagement
             String MatKhau = txtMatKhau.Text;
             if (string.IsNullOrEmpty(txtTenDangNhap.Text) || string.IsNullOrEmpty(txtMatKhau.Text))
             {
-                XtraMessageBox.Show("Vui lòng nhập tên đăng nhập và mật khẩu", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+               // XtraMessageBox.Show("Vui lòng nhập tên đăng nhập và mật khẩu", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                lbTrangThai.Text = "*Vui lòng nhập tên đăng nhập và mật khẩu";
                 txtTenDangNhap.Focus();
             }
             else
@@ -33,7 +34,8 @@ namespace ClinienceSystemManagement
                     int count = BLL_Human.Select_CheckUserNameSoftware(TenDangNhap).Rows.Count;
                     if (count < 0)
                     {
-                        XtraMessageBox.Show("Tài khoản không được phép truy cập", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                       // XtraMessageBox.Show("Tài khoản không được phép truy cập", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        lbTrangThai.Text = "*Tài khoản không được phép truy cập";
                         txtTenDangNhap.Focus();
                     }
                     else {
@@ -43,12 +45,13 @@ namespace ClinienceSystemManagement
                             DataRow dr = dt.Rows[0];
                             Home home = new Home(TenDangNhap);
                             this.DialogResult = DialogResult.OK;
-                            XtraMessageBox.Show("Đăng nhập thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            //XtraMessageBox.Show("Đăng nhập thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                         }
                         else
                         {
-                            XtraMessageBox.Show("Tên đăng nhập hoặc mật khẩu không hợp lệ", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            //XtraMessageBox.Show("Tên đăng nhập hoặc mật khẩu không hợp lệ", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lbTrangThai.Text = "*Tên đăng nhập hoặc mật khẩu không hợp lệ";
                             txtTenDangNhap.Text = "";
                             txtMatKhau.Text = "";
                             txtTenDangNhap.Focus();

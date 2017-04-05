@@ -39,9 +39,10 @@ namespace ClinienceSystemManagement.HeThong
                     peAnh.Image = Image.FromFile(openFileDialog.FileName);
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                XtraMessageBox.Show("Không thể tải được ảnh", ex.Message);
+                //XtraMessageBox.Show("Không thể tải được ảnh", ex.Message);
+                lbTrangThai.Text = "*Không thể tải được ảnh";
             }
         }
 
@@ -68,6 +69,7 @@ namespace ClinienceSystemManagement.HeThong
                     lkePhanQuyen.EditValue = account.Account_Type_ID;
                     txtMatKhau2.EditValue = account.Account_Password;
                     txtMa.ReadOnly = true;
+                    txtTenDangNhap.ReadOnly = true;
                 }
             }
         }
@@ -78,28 +80,32 @@ namespace ClinienceSystemManagement.HeThong
             {
                 if (string.IsNullOrEmpty(txtTen.Text))
                 {
-                    XtraMessageBox.Show("Vui lòng nhập tên người sử dụng", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    //XtraMessageBox.Show("Vui lòng nhập tên người sử dụng", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    lbTrangThai.Text = "*Vui lòng nhập tên người sử dụng";
                     txtTen.Focus();
                 }
                 else
                 {
                     if (string.IsNullOrEmpty(txtTenDangNhap.Text))
                     {
-                        XtraMessageBox.Show("Vui lòng nhập tên đăng nhập", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        //XtraMessageBox.Show("Vui lòng nhập tên đăng nhập", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        lbTrangThai.Text = "*Vui lòng nhập tên đăng nhập";
                         txtTenDangNhap.Focus();
                     }
                     else
                     {
                         if (lkePhanQuyen.Text == "Chọn quyền hạn")
                         {
-                            XtraMessageBox.Show("Vui lòng chọn phân quyền", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            // XtraMessageBox.Show("Vui lòng chọn phân quyền", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            lbTrangThai.Text = "*Vui lòng chọn phân quyền";
                             lkePhanQuyen.Focus();
                         }
                         else
                         {
                             if (txtMatKhau.Text != txtMatKhau2.Text)
                             {
-                                XtraMessageBox.Show("Mật khẩu không trùng khớp", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                // XtraMessageBox.Show("Mật khẩu không trùng khớp", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                lbTrangThai.Text = "*Mật khẩu không trùng khớp";
                                 txtMatKhau2.Focus();
                             }
                             else
@@ -112,6 +118,7 @@ namespace ClinienceSystemManagement.HeThong
                                 string signature = txtKiTe.Text;
                                 string group = lkePhanQuyen.GetColumnValue("Account_Type_ID").ToString();
                                 int type = Int32.Parse(group);
+                                int count = BLL_Human.Select_Username(username).Rows.Count;
                                 if (string.IsNullOrEmpty(txtAnh.Text))
                                 {
                                     BLL_Human.UpdateAccountNoImage(id, name, username, password, signature, type);
@@ -146,40 +153,44 @@ namespace ClinienceSystemManagement.HeThong
                 {
                     if (string.IsNullOrEmpty(txtTen.Text))
                     {
-                        XtraMessageBox.Show("Vui lòng nhập tên người sử dụng", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        //XtraMessageBox.Show("Vui lòng nhập tên người sử dụng", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        lbTrangThai.Text = "*Vui lòng nhập tên người sử dụng";
                         txtTen.Focus();
                     }
                     else
                     {
                         if (string.IsNullOrEmpty(txtTenDangNhap.Text))
                         {
-                            XtraMessageBox.Show("Vui lòng nhập tên đăng nhập", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            //XtraMessageBox.Show("Vui lòng nhập tên đăng nhập", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            lbTrangThai.Text = "*Vui lòng nhập tên đăng nhập";
                             txtTenDangNhap.Focus();
                         }
                         else
                         {
                             if (lkePhanQuyen.Text == "Chọn quyền hạn")
                             {
-                                XtraMessageBox.Show("Vui lòng chọn phân quyền", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                // XtraMessageBox.Show("Vui lòng chọn phân quyền", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                lbTrangThai.Text = "*Vui lòng chọn phân quyền";
                                 lkePhanQuyen.Focus();
                             }
                             else
                             {
                                 if (string.IsNullOrEmpty(txtMatKhau.Text))
                                 {
-                                    XtraMessageBox.Show("Vui lòng nhập mật khẩu", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                    //XtraMessageBox.Show("Vui lòng nhập mật khẩu", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                    lbTrangThai.Text = "*Vui lòng nhập mật khẩu";
                                     txtMatKhau.Focus();
                                 }
                                 else
                                 {
                                     if (txtMatKhau.Text != txtMatKhau2.Text)
                                     {
-                                        XtraMessageBox.Show("Mật khẩu không trùng khớp", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                        //XtraMessageBox.Show("Mật khẩu không trùng khớp", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                        lbTrangThai.Text = "*Mật khẩu không trùng khớp";
                                         txtMatKhau2.Focus();
                                     }
                                     else
                                     {
-
                                         string name = txtTen.Text;
                                         string username = txtTenDangNhap.Text;
                                         string password = txtMatKhau.Text;
@@ -190,7 +201,8 @@ namespace ClinienceSystemManagement.HeThong
                                         int count = BLL_Human.Select_Username(username).Rows.Count;
                                         if (count > 0)
                                         {
-                                            XtraMessageBox.Show("Tên đăng nhập đã tồn tại", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                            //XtraMessageBox.Show("Tên đăng nhập đã tồn tại", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                            lbTrangThai.Text = "*Tên đăng nhập này đã tồn tại";
                                             txtTenDangNhap.Focus();
                                         }
                                         else
@@ -243,7 +255,8 @@ namespace ClinienceSystemManagement.HeThong
         {
             if (txtMatKhau.Text.Length > 10 || txtMatKhau.Text.Length < 4)
             {
-                XtraMessageBox.Show("Mật khẩu phải từ 4 đến 10 kí tự", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                //XtraMessageBox.Show("Mật khẩu phải từ 4 đến 10 kí tự", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                lbTrangThai.Text = "*Mật khẩu phải từ 4 đến 10 kí tự";
                 txtMatKhau.Focus();
             }
         }
@@ -252,7 +265,8 @@ namespace ClinienceSystemManagement.HeThong
         {
             if (txtTenDangNhap.Text.Length > 20 || txtTenDangNhap.Text.Length < 5)
             {
-                XtraMessageBox.Show("Tên đăng nhập phải từ 5 đến 20 kí tự", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                //XtraMessageBox.Show("Tên đăng nhập phải từ 5 đến 20 kí tự", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                lbTrangThai.Text = "*Tên đăng nhập phải từ 5 đến 20 kí tự";
                 txtTenDangNhap.Focus();
             }
         }

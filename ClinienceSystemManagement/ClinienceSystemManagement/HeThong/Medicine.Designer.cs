@@ -55,6 +55,8 @@
             this.cmsCapNhat = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsXoa = new System.Windows.Forms.ToolStripMenuItem();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.searchControl2 = new DevExpress.XtraEditors.SearchControl();
             this.grcDanhMuc = new DevExpress.XtraGrid.GridControl();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.gvDanhMuc = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -69,17 +71,15 @@
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.sqlDataSource5 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.searchControl2 = new DevExpress.XtraEditors.SearchControl();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.searchControl2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grcDanhMuc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvDanhMuc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.searchControl2.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -115,6 +115,34 @@
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(764, 61);
             this.panelControl2.TabIndex = 7;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.groupBox1.Controls.Add(this.searchControl2);
+            this.groupBox1.Location = new System.Drawing.Point(142, 5);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(494, 50);
+            this.groupBox1.TabIndex = 7;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Tìm kiếm";
+            // 
+            // searchControl2
+            // 
+            this.searchControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.searchControl2.Client = this.grcDanhMuc;
+            this.searchControl2.Location = new System.Drawing.Point(39, 17);
+            this.searchControl2.Name = "searchControl2";
+            this.searchControl2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
+            this.searchControl2.Properties.Appearance.Options.UseFont = true;
+            this.searchControl2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Repository.ClearButton(),
+            new DevExpress.XtraEditors.Repository.SearchButton()});
+            this.searchControl2.Properties.Client = this.grcDanhMuc;
+            this.searchControl2.Properties.NullValuePrompt = "Nhập vào thông tin tìm kiếm...";
+            this.searchControl2.Size = new System.Drawing.Size(420, 24);
+            this.searchControl2.TabIndex = 5;
+            this.searchControl2.ToolTip = "Nhập vào thông tin tìm kiếm";
             // 
             // grcDanhMuc
             // 
@@ -212,7 +240,7 @@
             this.colMedicine_Note.Name = "colMedicine_Note";
             this.colMedicine_Note.Visible = true;
             this.colMedicine_Note.VisibleIndex = 3;
-            this.colMedicine_Note.Width = 104;
+            this.colMedicine_Note.Width = 117;
             // 
             // colMedicine_Price
             // 
@@ -221,7 +249,7 @@
             this.colMedicine_Price.Name = "colMedicine_Price";
             this.colMedicine_Price.Visible = true;
             this.colMedicine_Price.VisibleIndex = 4;
-            this.colMedicine_Price.Width = 111;
+            this.colMedicine_Price.Width = 126;
             // 
             // colMedicine_Class
             // 
@@ -239,7 +267,7 @@
             this.colUnit_Name.Name = "colUnit_Name";
             this.colUnit_Name.Visible = true;
             this.colUnit_Name.VisibleIndex = 2;
-            this.colUnit_Name.Width = 104;
+            this.colUnit_Name.Width = 76;
             // 
             // btnThem
             // 
@@ -318,34 +346,6 @@
             tableQuery2});
             this.sqlDataSource5.ResultSchemaSerializable = resources.GetString("sqlDataSource5.ResultSchemaSerializable");
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.groupBox1.Controls.Add(this.searchControl2);
-            this.groupBox1.Location = new System.Drawing.Point(142, 5);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(494, 50);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Tìm kiếm";
-            // 
-            // searchControl2
-            // 
-            this.searchControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.searchControl2.Client = this.grcDanhMuc;
-            this.searchControl2.Location = new System.Drawing.Point(39, 17);
-            this.searchControl2.Name = "searchControl2";
-            this.searchControl2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
-            this.searchControl2.Properties.Appearance.Options.UseFont = true;
-            this.searchControl2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Repository.ClearButton(),
-            new DevExpress.XtraEditors.Repository.SearchButton()});
-            this.searchControl2.Properties.Client = this.grcDanhMuc;
-            this.searchControl2.Properties.NullValuePrompt = "Nhập vào thông tin tìm kiếm...";
-            this.searchControl2.Size = new System.Drawing.Size(420, 24);
-            this.searchControl2.TabIndex = 5;
-            this.searchControl2.ToolTip = "Nhập vào thông tin tìm kiếm";
-            // 
             // DanhMucThuoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -360,13 +360,13 @@
             this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.searchControl2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grcDanhMuc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvDanhMuc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.searchControl2.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

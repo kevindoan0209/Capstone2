@@ -187,7 +187,7 @@
     <value>0</value>
   </data>
   <data name="colParaclinical_ID.Width" type="System.Int32, mscorlib">
-    <value>120</value>
+    <value>55</value>
   </data>
   <data name="colParaclinical_Name.Caption" xml:space="preserve">
     <value>Tên cận lâm sàng</value>
@@ -199,7 +199,7 @@
     <value>1</value>
   </data>
   <data name="colParaclinical_Name.Width" type="System.Int32, mscorlib">
-    <value>179</value>
+    <value>198</value>
   </data>
   <data name="colParaclinical_ReferenceValue.Caption" xml:space="preserve">
     <value>Giá trị tham chiếu</value>
@@ -211,7 +211,7 @@
     <value>3</value>
   </data>
   <data name="colParaclinical_ReferenceValue.Width" type="System.Int32, mscorlib">
-    <value>105</value>
+    <value>116</value>
   </data>
   <data name="colParaclinical_ValueMin.Caption" xml:space="preserve">
     <value>Giá trị nhỏ nhất</value>
@@ -223,7 +223,7 @@
     <value>4</value>
   </data>
   <data name="colParaclinical_ValueMin.Width" type="System.Int32, mscorlib">
-    <value>105</value>
+    <value>116</value>
   </data>
   <data name="colParaclinical_ValueMax.Caption" xml:space="preserve">
     <value>Giá trị lớn nhất</value>
@@ -235,7 +235,7 @@
     <value>5</value>
   </data>
   <data name="colParaclinical_ValueMax.Width" type="System.Int32, mscorlib">
-    <value>106</value>
+    <value>119</value>
   </data>
   <data name="colParaclinical_Group_Name.Caption" xml:space="preserve">
     <value>Loại</value>
@@ -247,7 +247,7 @@
     <value>2</value>
   </data>
   <data name="colParaclinical_Group_Name.Width" type="System.Int32, mscorlib">
-    <value>105</value>
+    <value>116</value>
   </data>
   <assembly alias="DevExpress.Data.v15.1" name="DevExpress.Data.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   <data name="gvData.GroupSummary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v15.1">

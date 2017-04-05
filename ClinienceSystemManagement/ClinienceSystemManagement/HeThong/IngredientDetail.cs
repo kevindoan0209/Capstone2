@@ -33,7 +33,8 @@ namespace ClinienceSystemManagement.HeThong
             {
                 if (string.IsNullOrEmpty(lkeThanhPhan.Text))
                 {
-                    XtraMessageBox.Show("Vui chọn thành phần", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    //XtraMessageBox.Show("Vui chọn thành phần", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    lbTrangThai.Text = "*Vui chọn thành phần";
                     lkeThanhPhan.Focus();
                 }
                 else

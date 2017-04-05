@@ -80,21 +80,24 @@ namespace ClinienceSystemManagement.HeThong
             {
                 if (string.IsNullOrEmpty(txtTen.Text))
                 {
-                    XtraMessageBox.Show("Vui lòng nhập tên cận lâm sàng", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    //XtraMessageBox.Show("Vui lòng nhập tên cận lâm sàng", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    lbTrangThai.Text = "*Vui lòng nhập tên cận lâm sàng";
                     txtTen.Focus();
                 }
                 else
                 {
                     if (string.IsNullOrEmpty(txtMa.Text))
                     {
-                        XtraMessageBox.Show("Vui lòng nhập mã cận lâm sàng", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        //XtraMessageBox.Show("Vui lòng nhập mã cận lâm sàng", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        lbTrangThai.Text = "*Vui lòng nhập mã cận lâm sàng";
                         txtMa.Focus();
                     }
                     else
                     {
                         if (lkePhanNhom.Text == "Chọn nhóm")
                         {
-                            XtraMessageBox.Show("Vui lòng chọn nhóm cận lâm sàng", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            //XtraMessageBox.Show("Vui lòng chọn nhóm cận lâm sàng", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            lbTrangThai.Text = "*Vui lòng chọn nhóm cận lâm sàng";
                             lkePhanNhom.Focus();
                         }
                         else
@@ -137,21 +140,24 @@ namespace ClinienceSystemManagement.HeThong
                 {
                     if (string.IsNullOrEmpty(txtTen.Text))
                     {
-                        XtraMessageBox.Show("Vui lòng nhập tên cận lâm sàng", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        //XtraMessageBox.Show("Vui lòng nhập tên cận lâm sàng", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        lbTrangThai.Text = "*Vui lòng nhập tên cận lâm sàng";
                         txtTen.Focus();
                     }
                     else
                     {
                         if (string.IsNullOrEmpty(txtMa.Text))
                         {
-                            XtraMessageBox.Show("Vui lòng nhập mã cận lâm sàng", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            // XtraMessageBox.Show("Vui lòng nhập mã cận lâm sàng", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            lbTrangThai.Text = "*Vui lòng nhập mã cận lâm sàng";
                             txtMa.Focus();
                         }
                         else
                         {
                             if (lkePhanNhom.Text == "Chọn nhóm")
                             {
-                                XtraMessageBox.Show("Vui lòng chọn nhóm cận lâm sàng", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                //XtraMessageBox.Show("Vui lòng chọn nhóm cận lâm sàng", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                lbTrangThai.Text = "*Vui lòng chọn nhóm cận lâm sàng";
                                 lkePhanNhom.Focus();
                             }
                             else
@@ -179,7 +185,8 @@ namespace ClinienceSystemManagement.HeThong
             }
             catch (Exception)
             {
-                MessageBox.Show("Mã đối tượng này đã tồn tại");
+                //MessageBox.Show("Mã đối tượng này đã tồn tại");
+                lbTrangThai.Text = "*Mã đối tượng này đã tồn tại";
             }
         }
     }

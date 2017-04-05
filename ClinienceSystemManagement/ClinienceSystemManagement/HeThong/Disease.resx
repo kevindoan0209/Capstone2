@@ -316,7 +316,7 @@
     <value>0</value>
   </data>
   <data name="colDisease_ID.Width" type="System.Int32, mscorlib">
-    <value>133</value>
+    <value>55</value>
   </data>
   <data name="colDisease_Name.Caption" xml:space="preserve">
     <value>Tên bệnh</value>
@@ -328,7 +328,7 @@
     <value>1</value>
   </data>
   <data name="colDisease_Name.Width" type="System.Int32, mscorlib">
-    <value>315</value>
+    <value>356</value>
   </data>
   <data name="colDisease_Description.Caption" xml:space="preserve">
     <value>Mô tả</value>
@@ -340,7 +340,7 @@
     <value>2</value>
   </data>
   <data name="colDisease_Description.Width" type="System.Int32, mscorlib">
-    <value>280</value>
+    <value>317</value>
   </data>
   <data name="grcDanhMuc.Size" type="System.Drawing.Size, System.Drawing">
     <value>746, 358</value>

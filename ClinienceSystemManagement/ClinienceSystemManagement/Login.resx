@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="Clinience.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="cbxHienMatKhai.Location" type="System.Drawing.Point, System.Drawing">
     <value>349, 100</value>
@@ -153,34 +150,34 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="labelControl3.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
-    <value>64, 64, 64</value>
+    <value>198, 40, 40</value>
   </data>
-  <data name="labelControl3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 135</value>
+  <data name="lbTrangThai.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 131</value>
   </data>
-  <data name="labelControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>295, 15</value>
+  <data name="lbTrangThai.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 15</value>
   </data>
-  <data name="labelControl3.TabIndex" type="System.Int32, mscorlib">
+  <data name="lbTrangThai.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
   </data>
-  <data name="labelControl3.Text" xml:space="preserve">
-    <value>* Vui lòng nhập tên đăng nhập và mật khẩu để bắt đầu</value>
+  <data name="&gt;&gt;lbTrangThai.Name" xml:space="preserve">
+    <value>lbTrangThai</value>
   </data>
-  <data name="&gt;&gt;labelControl3.Name" xml:space="preserve">
-    <value>labelControl3</value>
-  </data>
-  <data name="&gt;&gt;labelControl3.Type" xml:space="preserve">
+  <data name="&gt;&gt;lbTrangThai.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;labelControl3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbTrangThai.Parent" xml:space="preserve">
     <value>Clinience</value>
   </data>
-  <data name="&gt;&gt;labelControl3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lbTrangThai.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <metadata name="line1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="line1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 148</value>
+    <value>0, 144</value>
   </data>
   <data name="line1.Size" type="System.Drawing.Size, System.Drawing">
     <value>382, 23</value>
@@ -451,6 +448,9 @@
   <data name="&gt;&gt;txtMatKhau.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <metadata name="btnDangNhap.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="btnDangNhap.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
@@ -472,7 +472,7 @@
 </value>
   </data>
   <data name="btnDangNhap.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 173</value>
+    <value>33, 170</value>
   </data>
   <data name="btnDangNhap.Size" type="System.Drawing.Size, System.Drawing">
     <value>102, 33</value>
@@ -495,6 +495,9 @@
   <data name="&gt;&gt;btnDangNhap.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <metadata name="btnThoat.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="btnThoat.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
@@ -516,7 +519,7 @@
 </value>
   </data>
   <data name="btnThoat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>239, 173</value>
+    <value>239, 170</value>
   </data>
   <data name="btnThoat.Size" type="System.Drawing.Size, System.Drawing">
     <value>102, 33</value>
@@ -546,7 +549,7 @@
     <value>30, 12</value>
   </data>
   <data name="Clinience.Size" type="System.Drawing.Size, System.Drawing">
-    <value>379, 247</value>
+    <value>379, 242</value>
   </data>
   <data name="Clinience.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -579,7 +582,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>440, 276</value>
+    <value>440, 271</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

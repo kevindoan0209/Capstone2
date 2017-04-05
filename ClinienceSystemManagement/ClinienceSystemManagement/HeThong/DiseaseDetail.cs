@@ -57,14 +57,16 @@ namespace ClinienceSystemManagement.HeThong
             {
                 if (string.IsNullOrEmpty(txtMa.Text))
                 {
-                    XtraMessageBox.Show("Vui lòng nhập mã bệnh", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                   // XtraMessageBox.Show("Vui lòng nhập mã bệnh", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    lbTrangThai.Text = "*Vui lòng nhập mã bệnh";
                     txtMa.Focus();
                 }
                 else
                 {
                     if (string.IsNullOrEmpty(txtTen.Text))
                     {
-                        XtraMessageBox.Show("Vui lòng nhập tên bệnh", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        //XtraMessageBox.Show("Vui lòng nhập tên bệnh", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        lbTrangThai.Text = "*Vui lòng nhập tên bệnh";
                         txtTen.Focus();
                     }
                     else
@@ -96,14 +98,16 @@ namespace ClinienceSystemManagement.HeThong
                 {
                     if (string.IsNullOrEmpty(txtMa.Text))
                     {
-                        XtraMessageBox.Show("Vui lòng nhập mã bệnh", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        //XtraMessageBox.Show("Vui lòng nhập mã bệnh", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        lbTrangThai.Text = "*Vui lòng nhập mã bệnh";
                         txtMa.Focus();
                     }
                     else
                     {
                         if (string.IsNullOrEmpty(txtTen.Text))
                         {
-                            XtraMessageBox.Show("Vui lòng nhập tên bệnh", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            //XtraMessageBox.Show("Vui lòng nhập tên bệnh", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            lbTrangThai.Text = "*Vui lòng nhập tên bệnh";
                             txtTen.Focus();
                         }
                         else
@@ -120,7 +124,8 @@ namespace ClinienceSystemManagement.HeThong
             }
             catch (Exception)
             {
-                MessageBox.Show("Mã đối tượng này đã tồn tại");
+                //MessageBox.Show("Mã đối tượng này đã tồn tại");
+                lbTrangThai.Text = "*Mã đối tượng này đã tồn tại";
             }
         }
     }

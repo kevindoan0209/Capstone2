@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.Clinience = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.cbxHienMatKhai = new DevExpress.XtraEditors.CheckEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.lbTrangThai = new DevExpress.XtraEditors.LabelControl();
             this.line1 = new DevComponents.DotNetBar.Controls.Line();
             this.label2 = new System.Windows.Forms.Label();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -56,7 +56,7 @@
             this.Clinience.CanvasColor = System.Drawing.SystemColors.Control;
             this.Clinience.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Windows7;
             this.Clinience.Controls.Add(this.cbxHienMatKhai);
-            this.Clinience.Controls.Add(this.labelControl3);
+            this.Clinience.Controls.Add(this.lbTrangThai);
             this.Clinience.Controls.Add(this.line1);
             this.Clinience.Controls.Add(this.label2);
             this.Clinience.Controls.Add(this.labelControl2);
@@ -105,14 +105,14 @@
             this.cbxHienMatKhai.Properties.Caption = resources.GetString("cbxHienMatKhai.Properties.Caption");
             this.cbxHienMatKhai.CheckedChanged += new System.EventHandler(this.cbxHienMatKhai_CheckedChanged);
             // 
-            // labelControl3
+            // lbTrangThai
             // 
-            this.labelControl3.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl3.Appearance.Font")));
-            this.labelControl3.Appearance.ForeColor = ((System.Drawing.Color)(resources.GetObject("labelControl3.Appearance.ForeColor")));
-            this.labelControl3.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
-            this.labelControl3.LineStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            resources.ApplyResources(this.labelControl3, "labelControl3");
-            this.labelControl3.Name = "labelControl3";
+            this.lbTrangThai.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl3.Appearance.Font")));
+            this.lbTrangThai.Appearance.ForeColor = ((System.Drawing.Color)(resources.GetObject("labelControl3.Appearance.ForeColor")));
+            this.lbTrangThai.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
+            this.lbTrangThai.LineStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            resources.ApplyResources(this.lbTrangThai, "lbTrangThai");
+            this.lbTrangThai.Name = "lbTrangThai";
             // 
             // line1
             // 
@@ -221,7 +221,7 @@
         private DevExpress.XtraEditors.SimpleButton btnDangNhap;
         private DevExpress.XtraEditors.SimpleButton btnThoat;
         private DevComponents.DotNetBar.Controls.Line line1;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.LabelControl lbTrangThai;
         private DevExpress.XtraEditors.CheckEdit cbxHienMatKhai;
     }
 }

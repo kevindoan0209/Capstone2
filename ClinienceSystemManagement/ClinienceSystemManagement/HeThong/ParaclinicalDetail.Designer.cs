@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ParaclinicalDetail));
             DevExpress.DataAccess.Sql.TableQuery tableQuery1 = new DevExpress.DataAccess.Sql.TableQuery();
             DevExpress.DataAccess.Sql.TableInfo tableInfo1 = new DevExpress.DataAccess.Sql.TableInfo();
             DevExpress.DataAccess.Sql.ColumnInfo columnInfo1 = new DevExpress.DataAccess.Sql.ColumnInfo();
             DevExpress.DataAccess.Sql.ColumnInfo columnInfo2 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ParaclinicalDetail));
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
             this.btnTao = new DevExpress.XtraEditors.SimpleButton();
@@ -66,6 +66,7 @@
             this.txtMoTa = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.txtTenKhac = new DevExpress.XtraEditors.TextEdit();
+            this.lbTrangThai = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabContarol1)).BeginInit();
@@ -89,6 +90,7 @@
             // 
             // panelControl1
             // 
+            this.panelControl1.Controls.Add(this.lbTrangThai);
             this.panelControl1.Controls.Add(this.btnHuy);
             this.panelControl1.Controls.Add(this.btnTao);
             resources.ApplyResources(this.panelControl1, "panelControl1");
@@ -322,6 +324,15 @@
             resources.ApplyResources(this.txtTenKhac, "txtTenKhac");
             this.txtTenKhac.Name = "txtTenKhac";
             // 
+            // lbTrangThai
+            // 
+            this.lbTrangThai.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lbTrangThai.Appearance.Font")));
+            this.lbTrangThai.Appearance.ForeColor = ((System.Drawing.Color)(resources.GetObject("lbTrangThai.Appearance.ForeColor")));
+            this.lbTrangThai.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
+            this.lbTrangThai.LineStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            resources.ApplyResources(this.lbTrangThai, "lbTrangThai");
+            this.lbTrangThai.Name = "lbTrangThai";
+            // 
             // ParaclinicalDetail
             // 
             resources.ApplyResources(this, "$this");
@@ -334,6 +345,7 @@
             this.Load += new System.EventHandler(this.ThemDanhMucCanLamSang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
+            this.panelControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabContarol1)).EndInit();
             this.xtraTabContarol1.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
@@ -391,5 +403,6 @@
         private DevExpress.XtraEditors.LookUpEdit lkePhanNhom;
         private System.Windows.Forms.BindingSource bindingSource1;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
+        private DevExpress.XtraEditors.LabelControl lbTrangThai;
     }
 }
