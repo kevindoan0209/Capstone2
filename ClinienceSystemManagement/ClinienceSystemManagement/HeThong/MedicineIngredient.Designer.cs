@@ -303,6 +303,16 @@
             this.grcDanhMuc.DataMember = "Ingredient";
             this.grcDanhMuc.DataSource = this.sqlDataSource4;
             this.grcDanhMuc.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grcDanhMuc.EmbeddedNavigator.Buttons.Append.Enabled = false;
+            this.grcDanhMuc.EmbeddedNavigator.Buttons.Append.Visible = false;
+            this.grcDanhMuc.EmbeddedNavigator.Buttons.CancelEdit.Enabled = false;
+            this.grcDanhMuc.EmbeddedNavigator.Buttons.CancelEdit.Visible = false;
+            this.grcDanhMuc.EmbeddedNavigator.Buttons.Edit.Enabled = false;
+            this.grcDanhMuc.EmbeddedNavigator.Buttons.Edit.Visible = false;
+            this.grcDanhMuc.EmbeddedNavigator.Buttons.EndEdit.Enabled = false;
+            this.grcDanhMuc.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
+            this.grcDanhMuc.EmbeddedNavigator.Buttons.Remove.Visible = false;
+            this.grcDanhMuc.EmbeddedNavigator.TextStringFormat = "Trang {0} / {1}";
             gridLevelNode1.RelationName = "Level1";
             this.grcDanhMuc.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
             gridLevelNode1});
@@ -311,6 +321,7 @@
             this.grcDanhMuc.Name = "grcDanhMuc";
             this.grcDanhMuc.Size = new System.Drawing.Size(447, 335);
             this.grcDanhMuc.TabIndex = 2;
+            this.grcDanhMuc.UseEmbeddedNavigator = true;
             this.grcDanhMuc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvDanhMuc});
             // 
@@ -344,6 +355,7 @@
             this.gvDanhMuc.GridControl = this.grcDanhMuc;
             this.gvDanhMuc.Name = "gvDanhMuc";
             this.gvDanhMuc.OptionsView.EnableAppearanceEvenRow = true;
+            this.gvDanhMuc.OptionsView.ShowFooter = true;
             // 
             // colIngredient_ID
             // 

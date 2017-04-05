@@ -49,9 +49,9 @@ namespace ClinienceSystemManagement.HeThong
                     this.Close();
                 }
             }
-            catch (Exception ex)
+            catch (Exception )
             {
-                MessageBox.Show("Lỗi", ex.Message);
+                lbTrangThai.Text = "*Mã đối tượng này đã tồn tại";
             }
         }
     }

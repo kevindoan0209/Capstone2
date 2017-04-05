@@ -15,7 +15,7 @@ namespace ClinienceSystemManagement.HeThong
 {
     public partial class MedicineIngredient : DevExpress.XtraEditors.XtraForm
     {
-        public string Id = null;
+        public int Id;
         public bool isAdd = true;
         public MedicineIngredient()
         {
@@ -37,7 +37,7 @@ namespace ClinienceSystemManagement.HeThong
             if (Id != null)
             {
                 DataClinienceDataContext db = new DataClinienceDataContext();
-                var ing = db.Ingredients.Where(i => i.Ingredient_ID == Id).SingleOrDefault();
+                var ing = db.Ingredients.Where(i => i.Ingredient_ID == (int)Id).SingleOrDefault();
                 if (ing != null)
                 {
                     txtMa.EditValue = ing.Ingredient_ID;
@@ -94,14 +94,6 @@ namespace ClinienceSystemManagement.HeThong
                 }
                 else
                 {
-                    if (string.IsNullOrEmpty(txtMa.Text))
-                    {
-                        //XtraMessageBox.Show("Vui lòng nhập mã thành phần", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                        lbTrangThai.Text = "*Vui lòng nhập mã thành phần";
-                        txtMa.Focus();
-                    }
-                    else
-                    {
                         if (string.IsNullOrEmpty(txtTen.Text))
                         {
                             // XtraMessageBox.Show("Vui lòng nhập tên thành phần", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -111,26 +103,26 @@ namespace ClinienceSystemManagement.HeThong
                         else
                         {
                             string name = txtTen.Text;
-                            string id = txtMa.Text;
                             string description = txtGhiChu.Text;
-                            BLL_Medicine.InsertIngredient(id, name, description);
+                            BLL_Medicine.InsertIngredient(name, description);
                             Reset();
                             lbTrangThai.Text = "";
                             XtraMessageBox.Show("Đã thêm thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
-                }
             }
-            catch (Exception)
+            catch (Exception ex )
             {
+                MessageBox.Show(ex.Message);
                 //MessageBox.Show("Mã đối tượng này đã tồn tại");
-                lbTrangThai.Text = "*Mã đối tượng này đã tồn tại";
+               // lbTrangThai.Text = "*Mã đối tượng này đã tồn tại";
             }
         }
 
         private void MedicineIngredient_Load(object sender, EventArgs e)
         {
             FillDataUpdate();
+            txtMa.ReadOnly = true;
         }
 
         private void cmsCapNhat_Click(object sender, EventArgs e)
@@ -140,7 +132,7 @@ namespace ClinienceSystemManagement.HeThong
             object value = gvDanhMuc.GetRowCellValue(rowIndex, colID);
             if (value != null)
             {
-                Id = (string)value;
+                Id = (int)value;
                 isAdd = false;
                 FillDataUpdate();
                 sqlDataSource4.Fill();
@@ -164,7 +156,7 @@ namespace ClinienceSystemManagement.HeThong
                     if (value != null)
                     {
                         DataClinienceDataContext dc = new DataClinienceDataContext();
-                        var ing = dc.Ingredients.Where(s => s.Ingredient_ID == (string)value).SingleOrDefault();
+                        var ing = dc.Ingredients.Where(s => s.Ingredient_ID == (int)value).SingleOrDefault();
                         if (ing != null)
                         {
                             dc.Ingredients.DeleteOnSubmit(ing);

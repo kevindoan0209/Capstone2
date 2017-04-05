@@ -1617,7 +1617,7 @@ namespace DataAccessLayer
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _Ingredient_ID;
+		private int _Ingredient_ID;
 		
 		private string _Ingredient_Name;
 		
@@ -1629,7 +1629,7 @@ namespace DataAccessLayer
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnIngredient_IDChanging(string value);
+    partial void OnIngredient_IDChanging(int value);
     partial void OnIngredient_IDChanged();
     partial void OnIngredient_NameChanging(string value);
     partial void OnIngredient_NameChanged();
@@ -1643,8 +1643,8 @@ namespace DataAccessLayer
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ingredient_ID", DbType="NVarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string Ingredient_ID
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ingredient_ID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Ingredient_ID
 		{
 			get
 			{
@@ -2198,7 +2198,7 @@ namespace DataAccessLayer
 		
 		private int _Medicine_ID;
 		
-		private string _Ingredient_ID;
+		private int _Ingredient_ID;
 		
 		private string _Unit;
 		
@@ -2214,7 +2214,7 @@ namespace DataAccessLayer
     partial void OnCreated();
     partial void OnMedicine_IDChanging(int value);
     partial void OnMedicine_IDChanged();
-    partial void OnIngredient_IDChanging(string value);
+    partial void OnIngredient_IDChanging(int value);
     partial void OnIngredient_IDChanged();
     partial void OnUnitChanging(string value);
     partial void OnUnitChanged();
@@ -2253,8 +2253,8 @@ namespace DataAccessLayer
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ingredient_ID", DbType="NVarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string Ingredient_ID
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ingredient_ID", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int Ingredient_ID
 		{
 			get
 			{
@@ -2344,7 +2344,7 @@ namespace DataAccessLayer
 					}
 					else
 					{
-						this._Ingredient_ID = default(string);
+						this._Ingredient_ID = default(int);
 					}
 					this.SendPropertyChanged("Ingredient");
 				}

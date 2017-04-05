@@ -39,11 +39,10 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@Unitid", unitid);
             return command.ExecuteNonQuery();
         }
-        public int InsertIngredient(string id, string name, string note)
+        public int InsertIngredient(string name, string note)
         {
-            const String sqlCommand = "Insert into Ingredient (Ingredient_ID,Ingredient_Name,Ingredient_Note) Values(@Id, @Name, @Note)";
+            const String sqlCommand = "Insert into Ingredient (Ingredient_Name,Ingredient_Note) Values(@Name, @Note)";
             SqlCommand command = new SqlCommand(sqlCommand, connect());
-            command.Parameters.AddWithValue("@Id", id);
             command.Parameters.AddWithValue("@Name", name);
             command.Parameters.AddWithValue("@Note", note);
             return command.ExecuteNonQuery();

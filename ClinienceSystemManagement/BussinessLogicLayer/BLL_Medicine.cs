@@ -21,9 +21,9 @@ namespace BussinessLogicLayer
         {
             return _medicine.InsertMedicine(name, mclass, usage, note, price, unitid);
         }
-        public static int InsertIngredient(string id, string name, string note)
+        public static int InsertIngredient(string name, string note)
         {
-            return _medicine.InsertIngredient(id, name, note);
+            return _medicine.InsertIngredient(name, note);
         }
         public static int UpdateIngredient(string id, string name, string note)
         {
