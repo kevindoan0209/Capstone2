@@ -141,6 +141,18 @@
     <Compile Include="HeThong\MedicineUnit.Designer.cs">
       <DependentUpon>MedicineUnit.cs</DependentUpon>
     </Compile>
+    <Compile Include="HeThong\SubIngredient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\SubIngredient.Designer.cs">
+      <DependentUpon>SubIngredient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\SubUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\SubUnit.Designer.cs">
+      <DependentUpon>SubUnit.cs</DependentUpon>
+    </Compile>
     <Compile Include="KhamBenh\Patient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,6 +235,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HeThong\MedicineUnit.resx">
       <DependentUpon>MedicineUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\SubIngredient.resx">
+      <DependentUpon>SubIngredient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\SubUnit.resx">
+      <DependentUpon>SubUnit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KhamBenh\Patient.resx">
       <DependentUpon>Patient.cs</DependentUpon>

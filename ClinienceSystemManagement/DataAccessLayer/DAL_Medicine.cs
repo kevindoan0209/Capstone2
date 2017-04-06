@@ -80,5 +80,13 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@Content", content);     
             return command.ExecuteNonQuery();
         }
+
+        public int GetLastIdMedicine()
+        {
+            const String sqlCommand = "SELECT IDENT_CURRENT('Medicine') as LastID";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            int temp = int.Parse(command.ExecuteScalar().ToString());
+            return temp;
+        }
     }
 }

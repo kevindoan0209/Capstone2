@@ -37,5 +37,10 @@ namespace BussinessLogicLayer
         {
             return _medicine.InsertMeIn(meId, inId, unit, content);
         }
+
+        public static int GetLastIdMedicine()
+        {
+            return _medicine.GetLastIdMedicine();
+        }
     }
 }

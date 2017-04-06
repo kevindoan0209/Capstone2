@@ -115,7 +115,7 @@ namespace ClinienceSystemManagement.HeThong
             {
                 MessageBox.Show(ex.Message);
                 //MessageBox.Show("Mã đối tượng này đã tồn tại");
-               // lbTrangThai.Text = "*Mã đối tượng này đã tồn tại";
+                lbTrangThai.Text = "*Mã đối tượng này đã tồn tại";
             }
         }
 
