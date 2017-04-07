@@ -39,14 +39,15 @@
             DevExpress.DataAccess.Sql.TableInfo tableInfo2 = new DevExpress.DataAccess.Sql.TableInfo();
             DevExpress.DataAccess.Sql.ColumnInfo columnInfo4 = new DevExpress.DataAccess.Sql.ColumnInfo();
             DevExpress.DataAccess.Sql.ColumnInfo columnInfo5 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.TableQuery tableQuery3 = new DevExpress.DataAccess.Sql.TableQuery();
+            DevExpress.DataAccess.Sql.TableInfo tableInfo3 = new DevExpress.DataAccess.Sql.TableInfo();
             DevExpress.DataAccess.Sql.ColumnInfo columnInfo6 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo7 = new DevExpress.DataAccess.Sql.ColumnInfo();
+            DevExpress.DataAccess.Sql.ColumnInfo columnInfo8 = new DevExpress.DataAccess.Sql.ColumnInfo();
             this.xtraTabContarol1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
-            this.lklThemDV = new System.Windows.Forms.LinkLabel();
-            this.lklThem = new System.Windows.Forms.LinkLabel();
-            this.lkeDonVi = new DevExpress.XtraEditors.LookUpEdit();
-            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.searchControl2 = new DevExpress.XtraEditors.SearchControl();
             this.grcDanhMuc = new DevExpress.XtraGrid.GridControl();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.csmThem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,6 +59,11 @@
             this.colIngredient_Name = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colIngredient_Note = new DevExpress.XtraGrid.Columns.GridColumn();
             this.checkChon = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
+            this.lkeDonVi = new DevExpress.XtraEditors.LookUpEdit();
+            this.bindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.lklThemDV = new System.Windows.Forms.LinkLabel();
+            this.lklThem = new System.Windows.Forms.LinkLabel();
             this.txtTen = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -73,21 +79,25 @@
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.txtSuDung = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
             this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.btnCheck = new DevExpress.XtraEditors.SimpleButton();
             this.lbTrangThai = new DevExpress.XtraEditors.LabelControl();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabContarol1)).BeginInit();
             this.xtraTabContarol1.SuspendLayout();
             this.xtraTabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lkeDonVi.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
+            this.panelControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.searchControl2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grcDanhMuc)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvDanhMuc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkChon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lkeDonVi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLopThuoc.Properties)).BeginInit();
             this.xtraTabPage1.SuspendLayout();
@@ -95,6 +105,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtMa.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGhiChu.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSuDung.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -113,9 +124,10 @@
             // 
             // xtraTabPage2
             // 
+            this.xtraTabPage2.Controls.Add(this.panelControl2);
+            this.xtraTabPage2.Controls.Add(this.lkeDonVi);
             this.xtraTabPage2.Controls.Add(this.lklThemDV);
             this.xtraTabPage2.Controls.Add(this.lklThem);
-            this.xtraTabPage2.Controls.Add(this.lkeDonVi);
             this.xtraTabPage2.Controls.Add(this.grcDanhMuc);
             this.xtraTabPage2.Controls.Add(this.txtTen);
             this.xtraTabPage2.Controls.Add(this.labelControl3);
@@ -127,68 +139,30 @@
             this.xtraTabPage2.Size = new System.Drawing.Size(453, 399);
             this.xtraTabPage2.Text = "Chi tiết thuốc";
             // 
-            // lklThemDV
+            // panelControl2
             // 
-            this.lklThemDV.AutoSize = true;
-            this.lklThemDV.Location = new System.Drawing.Point(360, 367);
-            this.lklThemDV.Name = "lklThemDV";
-            this.lklThemDV.Size = new System.Drawing.Size(65, 13);
-            this.lklThemDV.TabIndex = 39;
-            this.lklThemDV.TabStop = true;
-            this.lklThemDV.Text = "Thêm đơn vị";
-            this.lklThemDV.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lklThemDV_LinkClicked);
+            this.panelControl2.Controls.Add(this.searchControl2);
+            this.panelControl2.Location = new System.Drawing.Point(19, 124);
+            this.panelControl2.Name = "panelControl2";
+            this.panelControl2.Size = new System.Drawing.Size(406, 43);
+            this.panelControl2.TabIndex = 41;
             // 
-            // lklThem
+            // searchControl2
             // 
-            this.lklThem.AutoSize = true;
-            this.lklThem.Location = new System.Drawing.Point(19, 370);
-            this.lklThem.Name = "lklThem";
-            this.lklThem.Size = new System.Drawing.Size(91, 13);
-            this.lklThem.TabIndex = 38;
-            this.lklThem.TabStop = true;
-            this.lklThem.Text = "Thêm thành phần";
-            this.lklThem.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lklThem_LinkClicked);
-            // 
-            // lkeDonVi
-            // 
-            this.lkeDonVi.Location = new System.Drawing.Point(280, 78);
-            this.lkeDonVi.Name = "lkeDonVi";
-            this.lkeDonVi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lkeDonVi.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Unit_ID", "Unit_ID", 59, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Unit_Name", "Unit_Name", 62, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Unit_Note", "Unit_Note", 58, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Near)});
-            this.lkeDonVi.Properties.DataSource = this.bindingSource2;
-            this.lkeDonVi.Properties.DisplayMember = "Unit_Name";
-            this.lkeDonVi.Properties.NullText = "Chọn đơn vị";
-            this.lkeDonVi.Properties.ValueMember = "Unit_ID";
-            this.lkeDonVi.Size = new System.Drawing.Size(145, 20);
-            this.lkeDonVi.TabIndex = 37;
-            // 
-            // bindingSource2
-            // 
-            this.bindingSource2.DataMember = "Medicine_Unit";
-            this.bindingSource2.DataSource = this.sqlDataSource1;
-            // 
-            // sqlDataSource1
-            // 
-            this.sqlDataSource1.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
-            this.sqlDataSource1.Name = "sqlDataSource1";
-            tableQuery1.Name = "Medicine_Unit";
-            tableInfo1.Name = "Medicine_Unit";
-            columnInfo1.Name = "Unit_ID";
-            columnInfo2.Name = "Unit_Name";
-            columnInfo3.Name = "Unit_Note";
-            tableInfo1.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
-            columnInfo1,
-            columnInfo2,
-            columnInfo3});
-            tableQuery1.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
-            tableInfo1});
-            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            tableQuery1});
-            this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
+            this.searchControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.searchControl2.Client = this.grcDanhMuc;
+            this.searchControl2.Location = new System.Drawing.Point(52, 10);
+            this.searchControl2.Name = "searchControl2";
+            this.searchControl2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchControl2.Properties.Appearance.Options.UseFont = true;
+            this.searchControl2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Repository.ClearButton(),
+            new DevExpress.XtraEditors.Repository.SearchButton()});
+            this.searchControl2.Properties.Client = this.grcDanhMuc;
+            this.searchControl2.Properties.NullValuePrompt = "Nhập vào thông tin tìm kiếm...";
+            this.searchControl2.Size = new System.Drawing.Size(299, 22);
+            this.searchControl2.TabIndex = 5;
+            this.searchControl2.ToolTip = "Nhập vào thông tin tìm kiếm";
             // 
             // grcDanhMuc
             // 
@@ -201,12 +175,12 @@
             this.grcDanhMuc.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
             this.grcDanhMuc.EmbeddedNavigator.Buttons.Remove.Visible = false;
             this.grcDanhMuc.EmbeddedNavigator.TextStringFormat = "Trang {0} / {1}";
-            this.grcDanhMuc.Location = new System.Drawing.Point(20, 125);
+            this.grcDanhMuc.Location = new System.Drawing.Point(20, 165);
             this.grcDanhMuc.MainView = this.gvDanhMuc;
             this.grcDanhMuc.Name = "grcDanhMuc";
             this.grcDanhMuc.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.checkChon});
-            this.grcDanhMuc.Size = new System.Drawing.Size(405, 239);
+            this.grcDanhMuc.Size = new System.Drawing.Size(405, 199);
             this.grcDanhMuc.TabIndex = 35;
             this.grcDanhMuc.UseEmbeddedNavigator = true;
             this.grcDanhMuc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -246,19 +220,19 @@
             // 
             this.sqlDataSource4.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource4.Name = "sqlDataSource4";
-            tableQuery2.Name = "Ingredient";
-            tableInfo2.Name = "Ingredient";
-            columnInfo4.Name = "Ingredient_ID";
-            columnInfo5.Name = "Ingredient_Name";
-            columnInfo6.Name = "Ingredient_Note";
-            tableInfo2.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
-            columnInfo4,
-            columnInfo5,
-            columnInfo6});
-            tableQuery2.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
-            tableInfo2});
+            tableQuery1.Name = "Ingredient";
+            tableInfo1.Name = "Ingredient";
+            columnInfo1.Name = "Ingredient_ID";
+            columnInfo2.Name = "Ingredient_Name";
+            columnInfo3.Name = "Ingredient_Note";
+            tableInfo1.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
+            columnInfo1,
+            columnInfo2,
+            columnInfo3});
+            tableQuery1.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
+            tableInfo1});
             this.sqlDataSource4.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            tableQuery2});
+            tableQuery1});
             this.sqlDataSource4.ResultSchemaSerializable = resources.GetString("sqlDataSource4.ResultSchemaSerializable");
             // 
             // gvDanhMuc
@@ -271,7 +245,6 @@
             this.colIngredient_Note});
             this.gvDanhMuc.GridControl = this.grcDanhMuc;
             this.gvDanhMuc.Name = "gvDanhMuc";
-            this.gvDanhMuc.OptionsFind.AlwaysVisible = true;
             this.gvDanhMuc.OptionsFind.FindNullPrompt = "Nhập vào thông tin cần tìm kiếm...";
             this.gvDanhMuc.OptionsSelection.MultiSelect = true;
             this.gvDanhMuc.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
@@ -308,6 +281,63 @@
             // 
             this.checkChon.AutoHeight = false;
             this.checkChon.Name = "checkChon";
+            // 
+            // lkeDonVi
+            // 
+            this.lkeDonVi.Location = new System.Drawing.Point(280, 78);
+            this.lkeDonVi.Name = "lkeDonVi";
+            this.lkeDonVi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lkeDonVi.Properties.DataSource = this.bindingSource3;
+            this.lkeDonVi.Properties.DisplayMember = "Unit_Name";
+            this.lkeDonVi.Properties.NullText = "Chọn đơn vị";
+            this.lkeDonVi.Properties.ValueMember = "Unit_ID";
+            this.lkeDonVi.Size = new System.Drawing.Size(145, 20);
+            this.lkeDonVi.TabIndex = 40;
+            // 
+            // bindingSource3
+            // 
+            this.bindingSource3.DataMember = "Medicine_Unit";
+            this.bindingSource3.DataSource = this.sqlDataSource2;
+            // 
+            // sqlDataSource2
+            // 
+            this.sqlDataSource2.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
+            this.sqlDataSource2.Name = "sqlDataSource2";
+            tableQuery2.Name = "Medicine_Unit";
+            tableInfo2.Name = "Medicine_Unit";
+            columnInfo4.Name = "Unit_ID";
+            columnInfo5.Name = "Unit_Name";
+            tableInfo2.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
+            columnInfo4,
+            columnInfo5});
+            tableQuery2.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
+            tableInfo2});
+            this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            tableQuery2});
+            this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
+            // 
+            // lklThemDV
+            // 
+            this.lklThemDV.AutoSize = true;
+            this.lklThemDV.Location = new System.Drawing.Point(360, 367);
+            this.lklThemDV.Name = "lklThemDV";
+            this.lklThemDV.Size = new System.Drawing.Size(65, 13);
+            this.lklThemDV.TabIndex = 39;
+            this.lklThemDV.TabStop = true;
+            this.lklThemDV.Text = "Thêm đơn vị";
+            this.lklThemDV.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lklThemDV_LinkClicked);
+            // 
+            // lklThem
+            // 
+            this.lklThem.AutoSize = true;
+            this.lklThem.Location = new System.Drawing.Point(19, 370);
+            this.lklThem.Name = "lklThem";
+            this.lklThem.Size = new System.Drawing.Size(91, 13);
+            this.lklThem.TabIndex = 38;
+            this.lklThem.TabStop = true;
+            this.lklThem.Text = "Thêm thành phần";
+            this.lklThem.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lklThem_LinkClicked);
             // 
             // txtTen
             // 
@@ -436,6 +466,30 @@
             this.labelControl9.TabIndex = 24;
             this.labelControl9.Text = "Cách sử dụng:";
             // 
+            // bindingSource2
+            // 
+            this.bindingSource2.DataMember = "Medicine_Unit";
+            this.bindingSource2.DataSource = this.sqlDataSource1;
+            // 
+            // sqlDataSource1
+            // 
+            this.sqlDataSource1.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
+            this.sqlDataSource1.Name = "sqlDataSource1";
+            tableQuery3.Name = "Medicine_Unit";
+            tableInfo3.Name = "Medicine_Unit";
+            columnInfo6.Name = "Unit_ID";
+            columnInfo7.Name = "Unit_Name";
+            columnInfo8.Name = "Unit_Note";
+            tableInfo3.SelectedColumns.AddRange(new DevExpress.DataAccess.Sql.ColumnInfo[] {
+            columnInfo6,
+            columnInfo7,
+            columnInfo8});
+            tableQuery3.Tables.AddRange(new DevExpress.DataAccess.Sql.TableInfo[] {
+            tableInfo3});
+            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            tableQuery3});
+            this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
+            // 
             // btnHuy
             // 
             this.btnHuy.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
@@ -460,7 +514,6 @@
             // 
             // panelControl1
             // 
-            this.panelControl1.Controls.Add(this.btnCheck);
             this.panelControl1.Controls.Add(this.lbTrangThai);
             this.panelControl1.Controls.Add(this.btnHuy);
             this.panelControl1.Controls.Add(this.btnLuu);
@@ -469,17 +522,6 @@
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(503, 53);
             this.panelControl1.TabIndex = 8;
-            // 
-            // btnCheck
-            // 
-            this.btnCheck.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.btnCheck.Image = ((System.Drawing.Image)(resources.GetObject("btnCheck.Image")));
-            this.btnCheck.Location = new System.Drawing.Point(162, 16);
-            this.btnCheck.Name = "btnCheck";
-            this.btnCheck.Size = new System.Drawing.Size(75, 25);
-            this.btnCheck.TabIndex = 37;
-            this.btnCheck.Text = "Lưu";
-            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
             // lbTrangThai
             // 
@@ -508,12 +550,15 @@
             this.xtraTabContarol1.ResumeLayout(false);
             this.xtraTabPage2.ResumeLayout(false);
             this.xtraTabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lkeDonVi.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
+            this.panelControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.searchControl2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grcDanhMuc)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gvDanhMuc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkChon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lkeDonVi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLopThuoc.Properties)).EndInit();
             this.xtraTabPage1.ResumeLayout(false);
@@ -522,6 +567,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtMa.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGhiChu.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSuDung.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
@@ -565,11 +611,14 @@
         private DevExpress.XtraGrid.Columns.GridColumn colIngredient_Name;
         private DevExpress.XtraGrid.Columns.GridColumn colIngredient_Note;
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit checkChon;
-        private DevExpress.XtraEditors.LookUpEdit lkeDonVi;
         private System.Windows.Forms.BindingSource bindingSource2;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
         private System.Windows.Forms.LinkLabel lklThem;
         private System.Windows.Forms.LinkLabel lklThemDV;
-        private DevExpress.XtraEditors.SimpleButton btnCheck;
+        private DevExpress.XtraEditors.LookUpEdit lkeDonVi;
+        private System.Windows.Forms.BindingSource bindingSource3;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource2;
+        private DevExpress.XtraEditors.PanelControl panelControl2;
+        private DevExpress.XtraEditors.SearchControl searchControl2;
     }
 }
