@@ -465,6 +465,7 @@
             // repositoryItemPictureEdit1
             // 
             this.repositoryItemPictureEdit1.Name = "repositoryItemPictureEdit1";
+            this.repositoryItemPictureEdit1.ZoomAccelerationFactor = 1D;
             // 
             // barEditItem3
             // 
@@ -659,7 +660,6 @@
             // ribbonPageGroup3
             // 
             this.ribbonPageGroup3.ItemLinks.Add(this.btnLichHen);
-            this.ribbonPageGroup3.ItemLinks.Add(this.btnLichTaiKham);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "Lịch khám";
             // 

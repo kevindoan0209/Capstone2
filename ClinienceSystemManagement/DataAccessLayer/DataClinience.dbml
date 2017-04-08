@@ -71,6 +71,8 @@
       <Column Name="Ingredient_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="Ingredient_Name" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
       <Column Name="Ingredient_Note" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Ingredient_Unit" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ingredient_Content" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Association Name="Ingredient_Medincine_Ingredient" Member="Medincine_Ingredients" ThisKey="Ingredient_ID" OtherKey="Ingredient_ID" Type="Medincine_Ingredient" />
     </Type>
   </Table>
@@ -100,8 +102,6 @@
     <Type Name="Medincine_Ingredient">
       <Column Name="Medicine_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Ingredient_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Unit" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="ContentUnit" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Association Name="Ingredient_Medincine_Ingredient" Member="Ingredient" ThisKey="Ingredient_ID" OtherKey="Ingredient_ID" Type="Ingredient" IsForeignKey="true" />
       <Association Name="Medicine_Medincine_Ingredient" Member="Medicine" ThisKey="Medicine_ID" OtherKey="Medicine_ID" Type="Medicine" IsForeignKey="true" />
     </Type>

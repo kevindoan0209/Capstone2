@@ -1623,6 +1623,10 @@ namespace DataAccessLayer
 		
 		private string _Ingredient_Note;
 		
+		private string _Ingredient_Unit;
+		
+		private System.Nullable<double> _Ingredient_Content;
+		
 		private EntitySet<Medincine_Ingredient> _Medincine_Ingredients;
 		
     #region Extensibility Method Definitions
@@ -1635,6 +1639,10 @@ namespace DataAccessLayer
     partial void OnIngredient_NameChanged();
     partial void OnIngredient_NoteChanging(string value);
     partial void OnIngredient_NoteChanged();
+    partial void OnIngredient_UnitChanging(string value);
+    partial void OnIngredient_UnitChanged();
+    partial void OnIngredient_ContentChanging(System.Nullable<double> value);
+    partial void OnIngredient_ContentChanged();
     #endregion
 		
 		public Ingredient()
@@ -1699,6 +1707,46 @@ namespace DataAccessLayer
 					this._Ingredient_Note = value;
 					this.SendPropertyChanged("Ingredient_Note");
 					this.OnIngredient_NoteChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ingredient_Unit", DbType="NVarChar(50)")]
+		public string Ingredient_Unit
+		{
+			get
+			{
+				return this._Ingredient_Unit;
+			}
+			set
+			{
+				if ((this._Ingredient_Unit != value))
+				{
+					this.OnIngredient_UnitChanging(value);
+					this.SendPropertyChanging();
+					this._Ingredient_Unit = value;
+					this.SendPropertyChanged("Ingredient_Unit");
+					this.OnIngredient_UnitChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ingredient_Content", DbType="Float")]
+		public System.Nullable<double> Ingredient_Content
+		{
+			get
+			{
+				return this._Ingredient_Content;
+			}
+			set
+			{
+				if ((this._Ingredient_Content != value))
+				{
+					this.OnIngredient_ContentChanging(value);
+					this.SendPropertyChanging();
+					this._Ingredient_Content = value;
+					this.SendPropertyChanged("Ingredient_Content");
+					this.OnIngredient_ContentChanged();
 				}
 			}
 		}
@@ -2200,10 +2248,6 @@ namespace DataAccessLayer
 		
 		private int _Ingredient_ID;
 		
-		private string _Unit;
-		
-		private System.Nullable<double> _ContentUnit;
-		
 		private EntityRef<Ingredient> _Ingredient;
 		
 		private EntityRef<Medicine> _Medicine;
@@ -2216,10 +2260,6 @@ namespace DataAccessLayer
     partial void OnMedicine_IDChanged();
     partial void OnIngredient_IDChanging(int value);
     partial void OnIngredient_IDChanged();
-    partial void OnUnitChanging(string value);
-    partial void OnUnitChanged();
-    partial void OnContentUnitChanging(System.Nullable<double> value);
-    partial void OnContentUnitChanged();
     #endregion
 		
 		public Medincine_Ingredient()
@@ -2273,46 +2313,6 @@ namespace DataAccessLayer
 					this._Ingredient_ID = value;
 					this.SendPropertyChanged("Ingredient_ID");
 					this.OnIngredient_IDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Unit", DbType="NVarChar(50)")]
-		public string Unit
-		{
-			get
-			{
-				return this._Unit;
-			}
-			set
-			{
-				if ((this._Unit != value))
-				{
-					this.OnUnitChanging(value);
-					this.SendPropertyChanging();
-					this._Unit = value;
-					this.SendPropertyChanged("Unit");
-					this.OnUnitChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ContentUnit", DbType="Float")]
-		public System.Nullable<double> ContentUnit
-		{
-			get
-			{
-				return this._ContentUnit;
-			}
-			set
-			{
-				if ((this._ContentUnit != value))
-				{
-					this.OnContentUnitChanging(value);
-					this.SendPropertyChanging();
-					this._ContentUnit = value;
-					this.SendPropertyChanged("ContentUnit");
-					this.OnContentUnitChanged();
 				}
 			}
 		}
