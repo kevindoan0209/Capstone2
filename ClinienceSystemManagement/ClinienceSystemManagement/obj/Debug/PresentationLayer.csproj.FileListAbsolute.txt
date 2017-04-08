@@ -295,3 +295,8 @@ F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debu
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.exe.licenses
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.exe
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.pdb
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\ClinienceSystemManagementDataSet.Designer.cs
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\ClinienceSystemManagementDataSet.xsc
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\ClinienceSystemManagementDataSet.xsd
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\ClinienceSystemManagementDataSet.xss
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.DatHen.Appointment.resources
