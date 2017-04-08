@@ -22,76 +22,64 @@ namespace ClinienceSystemManagement
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomAppointmentForm));
-            this.lblSubject = new DevExpress.XtraEditors.LabelControl();
-            this.lblLocation = new DevExpress.XtraEditors.LabelControl();
-            this.tbSubject = new DevExpress.XtraEditors.TextEdit();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table1 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column2 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression2 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column3 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression3 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table2 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Join join1 = new DevExpress.DataAccess.Sql.Join();
+            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo1 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
             this.lblLabel = new DevExpress.XtraEditors.LabelControl();
             this.lblStartTime = new DevExpress.XtraEditors.LabelControl();
             this.lblEndTime = new DevExpress.XtraEditors.LabelControl();
-            this.chkAllDay = new DevExpress.XtraEditors.CheckEdit();
-            this.lblShowTimeAs = new DevExpress.XtraEditors.LabelControl();
-            this.btnOk = new DevExpress.XtraEditors.SimpleButton();
-            this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
-            this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.btnRecurrence = new DevExpress.XtraEditors.SimpleButton();
             this.edtStartDate = new DevExpress.XtraEditors.DateEdit();
             this.edtEndDate = new DevExpress.XtraEditors.DateEdit();
             this.chkReminder = new DevExpress.XtraEditors.CheckEdit();
-            this.tbDescription = new DevExpress.XtraEditors.MemoEdit();
-            this.lblResource = new DevExpress.XtraEditors.LabelControl();
-            this.tbLocation = new DevExpress.XtraEditors.TextEdit();
-            this.panel1 = new DevExpress.XtraEditors.PanelControl();
-            this.edtResource = new DevExpress.XtraScheduler.UI.AppointmentResourceEdit();
-            this.edtResources = new DevExpress.XtraScheduler.UI.AppointmentResourcesEdit();
             this.cbReminder = new DevExpress.XtraScheduler.UI.DurationEdit();
             this.edtLabel = new DevExpress.XtraScheduler.UI.AppointmentLabelEdit();
-            this.progressPanel = new System.Windows.Forms.Panel();
-            this.tbProgress = new DevExpress.XtraEditors.TrackBarControl();
-            this.lblPercentCompleteValue = new DevExpress.XtraEditors.LabelControl();
-            this.lblPercentComplete = new DevExpress.XtraEditors.LabelControl();
             this.edtStartTime = new DevExpress.XtraScheduler.UI.SchedulerTimeEdit();
             this.edtEndTime = new DevExpress.XtraScheduler.UI.SchedulerTimeEdit();
-            this.edtShowTimeAs = new DevExpress.XtraScheduler.UI.AppointmentStatusEdit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbSubject.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkAllDay.Properties)).BeginInit();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.accountBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.tbSubject = new DevExpress.XtraEditors.MemoEdit();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.lbTrangThai = new DevExpress.XtraEditors.LabelControl();
+            this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
+            this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
+            this.btnOk = new DevExpress.XtraEditors.SimpleButton();
+            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
+            this.lookUpEdit2 = new DevExpress.XtraEditors.LookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.edtStartDate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edtStartDate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edtEndDate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edtEndDate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkReminder.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbDescription.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbLocation.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panel1)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.edtResource.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edtResources.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edtResources.ResourcesCheckedListBoxControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbReminder.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edtLabel.Properties)).BeginInit();
-            this.progressPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbProgress)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbProgress.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edtStartTime.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edtEndTime.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edtShowTimeAs.Properties)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.accountBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbSubject.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+            this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblSubject
-            // 
-            resources.ApplyResources(this.lblSubject, "lblSubject");
-            this.lblSubject.Name = "lblSubject";
-            // 
-            // lblLocation
-            // 
-            resources.ApplyResources(this.lblLocation, "lblLocation");
-            this.lblLocation.Name = "lblLocation";
-            // 
-            // tbSubject
-            // 
-            resources.ApplyResources(this.tbSubject, "tbSubject");
-            this.tbSubject.Name = "tbSubject";
-            this.tbSubject.Properties.AccessibleName = resources.GetString("tbSubject.Properties.AccessibleName");
             // 
             // lblLabel
             // 
@@ -108,40 +96,6 @@ namespace ClinienceSystemManagement
             // 
             resources.ApplyResources(this.lblEndTime, "lblEndTime");
             this.lblEndTime.Name = "lblEndTime";
-            // 
-            // chkAllDay
-            // 
-            resources.ApplyResources(this.chkAllDay, "chkAllDay");
-            this.chkAllDay.Name = "chkAllDay";
-            this.chkAllDay.Properties.AccessibleName = resources.GetString("chkAllDay.Properties.AccessibleName");
-            this.chkAllDay.Properties.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
-            this.chkAllDay.Properties.AutoWidth = true;
-            this.chkAllDay.Properties.Caption = resources.GetString("chkAllDay.Properties.Caption");
-            // 
-            // lblShowTimeAs
-            // 
-            resources.ApplyResources(this.lblShowTimeAs, "lblShowTimeAs");
-            this.lblShowTimeAs.Name = "lblShowTimeAs";
-            // 
-            // btnOk
-            // 
-            resources.ApplyResources(this.btnOk, "btnOk");
-            this.btnOk.Name = "btnOk";
-            this.btnOk.Click += new System.EventHandler(this.OnBtnOkClick);
-            // 
-            // btnCancel
-            // 
-            resources.ApplyResources(this.btnCancel, "btnCancel");
-            this.btnCancel.CausesValidation = false;
-            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Name = "btnCancel";
-            // 
-            // btnDelete
-            // 
-            resources.ApplyResources(this.btnDelete, "btnDelete");
-            this.btnDelete.CausesValidation = false;
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Click += new System.EventHandler(this.OnBtnDeleteClick);
             // 
             // btnRecurrence
             // 
@@ -178,60 +132,6 @@ namespace ClinienceSystemManagement
             this.chkReminder.Properties.AutoWidth = true;
             this.chkReminder.Properties.Caption = resources.GetString("chkReminder.Properties.Caption");
             // 
-            // tbDescription
-            // 
-            resources.ApplyResources(this.tbDescription, "tbDescription");
-            this.tbDescription.Name = "tbDescription";
-            this.tbDescription.Properties.AccessibleName = resources.GetString("tbDescription.Properties.AccessibleName");
-            this.tbDescription.Properties.AccessibleRole = System.Windows.Forms.AccessibleRole.Client;
-            // 
-            // lblResource
-            // 
-            resources.ApplyResources(this.lblResource, "lblResource");
-            this.lblResource.Name = "lblResource";
-            // 
-            // tbLocation
-            // 
-            resources.ApplyResources(this.tbLocation, "tbLocation");
-            this.tbLocation.Name = "tbLocation";
-            this.tbLocation.Properties.AccessibleName = resources.GetString("tbLocation.Properties.AccessibleName");
-            // 
-            // panel1
-            // 
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.panel1.Controls.Add(this.edtResource);
-            this.panel1.Controls.Add(this.lblLabel);
-            this.panel1.Controls.Add(this.lblResource);
-            this.panel1.Controls.Add(this.edtResources);
-            this.panel1.Controls.Add(this.cbReminder);
-            this.panel1.Controls.Add(this.chkAllDay);
-            this.panel1.Controls.Add(this.edtLabel);
-            this.panel1.Controls.Add(this.chkReminder);
-            this.panel1.Name = "panel1";
-            // 
-            // edtResource
-            // 
-            resources.ApplyResources(this.edtResource, "edtResource");
-            this.edtResource.Name = "edtResource";
-            this.edtResource.Properties.AccessibleName = resources.GetString("edtResource.Properties.AccessibleName");
-            this.edtResource.Properties.AccessibleRole = System.Windows.Forms.AccessibleRole.ComboBox;
-            this.edtResource.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("edtResource.Properties.Buttons"))))});
-            // 
-            // edtResources
-            // 
-            resources.ApplyResources(this.edtResources, "edtResources");
-            this.edtResources.Name = "edtResources";
-            this.edtResources.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("edtResources.Properties.Buttons"))))});
-            // 
-            // 
-            // 
-            this.edtResources.ResourcesCheckedListBoxControl.Location = ((System.Drawing.Point)(resources.GetObject("edtResources.ResourcesCheckedListBoxControl.Location")));
-            this.edtResources.ResourcesCheckedListBoxControl.Name = "";
-            this.edtResources.ResourcesCheckedListBoxControl.TabIndex = ((int)(resources.GetObject("edtResources.ResourcesCheckedListBoxControl.TabIndex")));
-            // 
             // cbReminder
             // 
             resources.ApplyResources(this.cbReminder, "cbReminder");
@@ -251,37 +151,6 @@ namespace ClinienceSystemManagement
             this.edtLabel.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("edtLabel.Properties.Buttons"))))});
             // 
-            // progressPanel
-            // 
-            resources.ApplyResources(this.progressPanel, "progressPanel");
-            this.progressPanel.Controls.Add(this.tbProgress);
-            this.progressPanel.Controls.Add(this.lblPercentCompleteValue);
-            this.progressPanel.Controls.Add(this.lblPercentComplete);
-            this.progressPanel.Name = "progressPanel";
-            this.progressPanel.TabStop = true;
-            // 
-            // tbProgress
-            // 
-            resources.ApplyResources(this.tbProgress, "tbProgress");
-            this.tbProgress.Name = "tbProgress";
-            this.tbProgress.Properties.AutoSize = false;
-            this.tbProgress.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.tbProgress.Properties.Maximum = 100;
-            this.tbProgress.Properties.ShowValueToolTip = true;
-            this.tbProgress.Properties.TickFrequency = 10;
-            // 
-            // lblPercentCompleteValue
-            // 
-            resources.ApplyResources(this.lblPercentCompleteValue, "lblPercentCompleteValue");
-            this.lblPercentCompleteValue.Appearance.BackColor = ((System.Drawing.Color)(resources.GetObject("lblPercentCompleteValue.Appearance.BackColor")));
-            this.lblPercentCompleteValue.Name = "lblPercentCompleteValue";
-            // 
-            // lblPercentComplete
-            // 
-            resources.ApplyResources(this.lblPercentComplete, "lblPercentComplete");
-            this.lblPercentComplete.Appearance.BackColor = ((System.Drawing.Color)(resources.GetObject("lblPercentComplete.Appearance.BackColor")));
-            this.lblPercentComplete.Name = "lblPercentComplete";
-            // 
             // edtStartTime
             // 
             resources.ApplyResources(this.edtStartTime, "edtStartTime");
@@ -298,14 +167,159 @@ namespace ClinienceSystemManagement
             this.edtEndTime.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
             // 
-            // edtShowTimeAs
+            // groupBox1
             // 
-            resources.ApplyResources(this.edtShowTimeAs, "edtShowTimeAs");
-            this.edtShowTimeAs.Name = "edtShowTimeAs";
-            this.edtShowTimeAs.Properties.AccessibleName = resources.GetString("edtShowTimeAs.Properties.AccessibleName");
-            this.edtShowTimeAs.Properties.AccessibleRole = System.Windows.Forms.AccessibleRole.ComboBox;
-            this.edtShowTimeAs.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("edtShowTimeAs.Properties.Buttons"))))});
+            this.groupBox1.Controls.Add(this.lookUpEdit2);
+            this.groupBox1.Controls.Add(this.lookUpEdit1);
+            this.groupBox1.Controls.Add(this.labelControl4);
+            this.groupBox1.Controls.Add(this.labelControl3);
+            this.groupBox1.Controls.Add(this.labelControl2);
+            this.groupBox1.Controls.Add(this.textEdit1);
+            this.groupBox1.Controls.Add(this.chkReminder);
+            this.groupBox1.Controls.Add(this.cbReminder);
+            this.groupBox1.Controls.Add(this.lblLabel);
+            this.groupBox1.Controls.Add(this.labelControl1);
+            this.groupBox1.Controls.Add(this.edtLabel);
+            this.groupBox1.Controls.Add(this.lblStartTime);
+            this.groupBox1.Controls.Add(this.edtStartTime);
+            this.groupBox1.Controls.Add(this.edtEndTime);
+            this.groupBox1.Controls.Add(this.edtStartDate);
+            this.groupBox1.Controls.Add(this.edtEndDate);
+            this.groupBox1.Controls.Add(this.lblEndTime);
+            this.groupBox1.Controls.Add(this.tbSubject);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.TabStop = false;
+            // 
+            // labelControl4
+            // 
+            resources.ApplyResources(this.labelControl4, "labelControl4");
+            this.labelControl4.Name = "labelControl4";
+            // 
+            // labelControl3
+            // 
+            resources.ApplyResources(this.labelControl3, "labelControl3");
+            this.labelControl3.Name = "labelControl3";
+            // 
+            // accountBindingSource
+            // 
+            this.accountBindingSource.DataMember = "Account";
+            this.accountBindingSource.DataSource = this.sqlDataSource1;
+            // 
+            // sqlDataSource1
+            // 
+            this.sqlDataSource1.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
+            this.sqlDataSource1.Name = "sqlDataSource1";
+            columnExpression1.ColumnName = "Account_ID";
+            table1.MetaSerializable = "0|0|125|180";
+            table1.Name = "Account";
+            columnExpression1.Table = table1;
+            column1.Expression = columnExpression1;
+            columnExpression2.ColumnName = "Account_Name";
+            columnExpression2.Table = table1;
+            column2.Expression = columnExpression2;
+            columnExpression3.ColumnName = "Account_Type_ID";
+            table2.MetaSerializable = "0|0|125|80";
+            table2.Name = "Account_Type";
+            columnExpression3.Table = table2;
+            column3.Expression = columnExpression3;
+            selectQuery1.Columns.Add(column1);
+            selectQuery1.Columns.Add(column2);
+            selectQuery1.Columns.Add(column3);
+            selectQuery1.FilterString = "[Account_Type.Account_Type_ID] = 3";
+            selectQuery1.GroupFilterString = "";
+            selectQuery1.Name = "Account";
+            relationColumnInfo1.NestedKeyColumn = "Account_Type_ID";
+            relationColumnInfo1.ParentKeyColumn = "Account_Type_ID";
+            join1.KeyColumns.Add(relationColumnInfo1);
+            join1.Nested = table2;
+            join1.Parent = table1;
+            selectQuery1.Relations.Add(join1);
+            selectQuery1.Tables.Add(table1);
+            selectQuery1.Tables.Add(table2);
+            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            selectQuery1});
+            this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
+            // 
+            // labelControl2
+            // 
+            resources.ApplyResources(this.labelControl2, "labelControl2");
+            this.labelControl2.Name = "labelControl2";
+            // 
+            // textEdit1
+            // 
+            resources.ApplyResources(this.textEdit1, "textEdit1");
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Properties.AccessibleName = resources.GetString("textEdit1.Properties.AccessibleName");
+            // 
+            // labelControl1
+            // 
+            resources.ApplyResources(this.labelControl1, "labelControl1");
+            this.labelControl1.Name = "labelControl1";
+            // 
+            // tbSubject
+            // 
+            resources.ApplyResources(this.tbSubject, "tbSubject");
+            this.tbSubject.Name = "tbSubject";
+            this.tbSubject.Properties.AccessibleName = resources.GetString("tbSubject.Properties.AccessibleName");
+            // 
+            // panelControl1
+            // 
+            this.panelControl1.Controls.Add(this.lbTrangThai);
+            this.panelControl1.Controls.Add(this.btnHuy);
+            this.panelControl1.Controls.Add(this.btnRecurrence);
+            this.panelControl1.Controls.Add(this.btnDelete);
+            this.panelControl1.Controls.Add(this.btnOk);
+            resources.ApplyResources(this.panelControl1, "panelControl1");
+            this.panelControl1.Name = "panelControl1";
+            // 
+            // lbTrangThai
+            // 
+            this.lbTrangThai.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lbTrangThai.Appearance.Font")));
+            this.lbTrangThai.Appearance.ForeColor = ((System.Drawing.Color)(resources.GetObject("lbTrangThai.Appearance.ForeColor")));
+            this.lbTrangThai.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
+            this.lbTrangThai.LineStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            resources.ApplyResources(this.lbTrangThai, "lbTrangThai");
+            this.lbTrangThai.Name = "lbTrangThai";
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.btnHuy.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.Image")));
+            resources.ApplyResources(this.btnHuy, "btnHuy");
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
+            // 
+            // btnDelete
+            // 
+            resources.ApplyResources(this.btnDelete, "btnDelete");
+            this.btnDelete.CausesValidation = false;
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Click += new System.EventHandler(this.OnBtnDeleteClick);
+            // 
+            // btnOk
+            // 
+            resources.ApplyResources(this.btnOk, "btnOk");
+            this.btnOk.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.btnOk.Image = ((System.Drawing.Image)(resources.GetObject("btnOk.Image")));
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Click += new System.EventHandler(this.OnBtnOkClick);
+            // 
+            // lookUpEdit1
+            // 
+            resources.ApplyResources(this.lookUpEdit1, "lookUpEdit1");
+            this.lookUpEdit1.Name = "lookUpEdit1";
+            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lookUpEdit1.Properties.Buttons"))))});
+            this.lookUpEdit1.Properties.NullText = resources.GetString("lookUpEdit1.Properties.NullText");
+            // 
+            // lookUpEdit2
+            // 
+            resources.ApplyResources(this.lookUpEdit2, "lookUpEdit2");
+            this.lookUpEdit2.Name = "lookUpEdit2";
+            this.lookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lookUpEdit2.Properties.Buttons"))))});
+            this.lookUpEdit2.Properties.NullText = resources.GetString("lookUpEdit2.Properties.NullText");
             // 
             // CustomAppointmentForm
             // 
@@ -313,89 +327,61 @@ namespace ClinienceSystemManagement
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.btnCancel;
-            this.Controls.Add(this.tbDescription);
-            this.Controls.Add(this.progressPanel);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.edtStartTime);
-            this.Controls.Add(this.edtStartDate);
-            this.Controls.Add(this.btnOk);
-            this.Controls.Add(this.lblStartTime);
-            this.Controls.Add(this.tbSubject);
-            this.Controls.Add(this.lblLocation);
-            this.Controls.Add(this.lblSubject);
-            this.Controls.Add(this.tbLocation);
-            this.Controls.Add(this.lblEndTime);
-            this.Controls.Add(this.lblShowTimeAs);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnRecurrence);
-            this.Controls.Add(this.edtEndDate);
-            this.Controls.Add(this.edtEndTime);
-            this.Controls.Add(this.edtShowTimeAs);
+            this.Controls.Add(this.panelControl1);
+            this.Controls.Add(this.groupBox1);
             this.Name = "CustomAppointmentForm";
             this.ShowInTaskbar = false;
             this.Activated += new System.EventHandler(this.OnAppointmentFormActivated);
-            ((System.ComponentModel.ISupportInitialize)(this.tbSubject.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkAllDay.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edtStartDate.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edtStartDate.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edtEndDate.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edtEndDate.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkReminder.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbDescription.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbLocation.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panel1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.edtResource.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edtResources.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edtResources.ResourcesCheckedListBoxControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbReminder.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edtLabel.Properties)).EndInit();
-            this.progressPanel.ResumeLayout(false);
-            this.progressPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbProgress.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbProgress)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edtStartTime.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edtEndTime.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edtShowTimeAs.Properties)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.accountBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbSubject.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
+            this.panelControl1.ResumeLayout(false);
+            this.panelControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
         #endregion
-
-        protected DevExpress.XtraEditors.LabelControl lblSubject;
-        protected DevExpress.XtraEditors.LabelControl lblLocation;
         protected DevExpress.XtraEditors.LabelControl lblLabel;
         protected DevExpress.XtraEditors.LabelControl lblStartTime;
         protected DevExpress.XtraEditors.LabelControl lblEndTime;
-        protected DevExpress.XtraEditors.LabelControl lblShowTimeAs;
-        protected DevExpress.XtraEditors.CheckEdit chkAllDay;
-        protected DevExpress.XtraEditors.SimpleButton btnOk;
-        protected DevExpress.XtraEditors.SimpleButton btnCancel;
-        protected DevExpress.XtraEditors.SimpleButton btnDelete;
         protected DevExpress.XtraEditors.SimpleButton btnRecurrence;
         protected DevExpress.XtraEditors.DateEdit edtStartDate;
         protected DevExpress.XtraEditors.DateEdit edtEndDate;
         protected DevExpress.XtraScheduler.UI.SchedulerTimeEdit edtStartTime;
         protected DevExpress.XtraScheduler.UI.SchedulerTimeEdit edtEndTime;
         protected DevExpress.XtraScheduler.UI.AppointmentLabelEdit edtLabel;
-        protected DevExpress.XtraScheduler.UI.AppointmentStatusEdit edtShowTimeAs;
-        protected DevExpress.XtraEditors.TextEdit tbSubject;
-        protected DevExpress.XtraScheduler.UI.AppointmentResourceEdit edtResource;
-        protected DevExpress.XtraEditors.LabelControl lblResource;
-        protected DevExpress.XtraScheduler.UI.AppointmentResourcesEdit edtResources;
         protected DevExpress.XtraEditors.CheckEdit chkReminder;
-        protected DevExpress.XtraEditors.MemoEdit tbDescription;
         protected DevExpress.XtraScheduler.UI.DurationEdit cbReminder;
         private System.ComponentModel.IContainer components = null;
-        protected DevExpress.XtraEditors.TextEdit tbLocation;
-        protected DevExpress.XtraEditors.PanelControl panel1;
-        protected System.Windows.Forms.Panel progressPanel;
-        protected DevExpress.XtraEditors.TrackBarControl tbProgress;
-        protected DevExpress.XtraEditors.LabelControl lblPercentComplete;
-        protected DevExpress.XtraEditors.LabelControl lblPercentCompleteValue;
+        private System.Windows.Forms.GroupBox groupBox1;
+        protected DevExpress.XtraEditors.LabelControl labelControl1;
+        protected DevExpress.XtraEditors.TextEdit textEdit1;
+        protected DevExpress.XtraEditors.LabelControl labelControl4;
+        protected DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.XtraEditors.LabelControl lbTrangThai;
+        private DevExpress.XtraEditors.SimpleButton btnHuy;
+        private DevExpress.XtraEditors.MemoEdit tbSubject;
+        protected DevExpress.XtraEditors.LabelControl labelControl2;
+        protected DevExpress.XtraEditors.SimpleButton btnOk;
+        protected DevExpress.XtraEditors.SimpleButton btnDelete;
+        private System.Windows.Forms.BindingSource accountBindingSource;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEdit2;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
     }
 }
