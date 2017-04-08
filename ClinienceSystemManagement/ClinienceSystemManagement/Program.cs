@@ -23,6 +23,7 @@ namespace PresentationLayer
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
             Application.Run(new Home());
+            //
         }
     }
 }
