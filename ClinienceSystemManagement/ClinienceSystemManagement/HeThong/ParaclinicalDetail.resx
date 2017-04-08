@@ -141,7 +141,7 @@
     <value>lbTrangThai</value>
   </data>
   <data name="&gt;&gt;lbTrangThai.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;lbTrangThai.Parent" xml:space="preserve">
     <value>panelControl1</value>
@@ -178,7 +178,7 @@
     <value>btnHuy</value>
   </data>
   <data name="&gt;&gt;btnHuy.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btnHuy.Parent" xml:space="preserve">
     <value>panelControl1</value>
@@ -215,7 +215,7 @@
     <value>btnTao</value>
   </data>
   <data name="&gt;&gt;btnTao.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btnTao.Parent" xml:space="preserve">
     <value>panelControl1</value>
@@ -240,7 +240,7 @@
     <value>panelControl1</value>
   </data>
   <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -260,8 +260,8 @@
   <data name="lkePhanNhom.Location" type="System.Drawing.Point, System.Drawing">
     <value>274, 39</value>
   </data>
-  <assembly alias="DevExpress.Utils.v15.1" name="DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="lkePhanNhom.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.1">
+  <assembly alias="DevExpress.Utils.v16.1" name="DevExpress.Utils.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="lkePhanNhom.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v16.1">
     <value>Combo</value>
   </data>
   <data name="lkePhanNhom.Properties.Columns" xml:space="preserve">
@@ -273,8 +273,8 @@
   <data name="lkePhanNhom.Properties.Columns2" type="System.Int32, mscorlib">
     <value>127</value>
   </data>
-  <assembly alias="DevExpress.Data.v15.1" name="DevExpress.Data.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="lkePhanNhom.Properties.Columns3" type="DevExpress.Utils.FormatType, DevExpress.Data.v15.1">
+  <assembly alias="DevExpress.Data.v16.1" name="DevExpress.Data.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="lkePhanNhom.Properties.Columns3" type="DevExpress.Utils.FormatType, DevExpress.Data.v16.1">
     <value>Numeric</value>
   </data>
   <data name="lkePhanNhom.Properties.Columns4" xml:space="preserve">
@@ -283,7 +283,7 @@
   <data name="lkePhanNhom.Properties.Columns5" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="lkePhanNhom.Properties.Columns6" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v15.1">
+  <data name="lkePhanNhom.Properties.Columns6" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v16.1">
     <value>Far</value>
   </data>
   <data name="lkePhanNhom.Properties.Columns7" xml:space="preserve">
@@ -295,7 +295,7 @@
   <data name="lkePhanNhom.Properties.Columns9" type="System.Int32, mscorlib">
     <value>130</value>
   </data>
-  <data name="lkePhanNhom.Properties.Columns10" type="DevExpress.Utils.FormatType, DevExpress.Data.v15.1">
+  <data name="lkePhanNhom.Properties.Columns10" type="DevExpress.Utils.FormatType, DevExpress.Data.v16.1">
     <value>None</value>
   </data>
   <data name="lkePhanNhom.Properties.Columns11" xml:space="preserve">
@@ -304,7 +304,7 @@
   <data name="lkePhanNhom.Properties.Columns12" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="lkePhanNhom.Properties.Columns13" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v15.1">
+  <data name="lkePhanNhom.Properties.Columns13" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v16.1">
     <value>Near</value>
   </data>
   <metadata name="bindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -329,7 +329,7 @@
     <value>lkePhanNhom</value>
   </data>
   <data name="&gt;&gt;lkePhanNhom.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;lkePhanNhom.Parent" xml:space="preserve">
     <value>xtraTabPage1</value>
@@ -353,7 +353,7 @@
     <value>txtDanhMuc</value>
   </data>
   <data name="&gt;&gt;txtDanhMuc.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;txtDanhMuc.Parent" xml:space="preserve">
     <value>xtraTabPage1</value>
@@ -380,7 +380,7 @@
     <value>labelControl8</value>
   </data>
   <data name="&gt;&gt;labelControl8.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelControl8.Parent" xml:space="preserve">
     <value>xtraTabPage1</value>
@@ -407,7 +407,7 @@
     <value>labelControl7</value>
   </data>
   <data name="&gt;&gt;labelControl7.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelControl7.Parent" xml:space="preserve">
     <value>xtraTabPage1</value>
@@ -434,7 +434,7 @@
     <value>labelControl6</value>
   </data>
   <data name="&gt;&gt;labelControl6.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelControl6.Parent" xml:space="preserve">
     <value>xtraTabPage1</value>
@@ -458,7 +458,7 @@
     <value>txtDonVi</value>
   </data>
   <data name="&gt;&gt;txtDonVi.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;txtDonVi.Parent" xml:space="preserve">
     <value>xtraTabPage1</value>
@@ -485,7 +485,7 @@
     <value>labelControl5</value>
   </data>
   <data name="&gt;&gt;labelControl5.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelControl5.Parent" xml:space="preserve">
     <value>xtraTabPage1</value>
@@ -512,7 +512,7 @@
     <value>labelControl4</value>
   </data>
   <data name="&gt;&gt;labelControl4.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelControl4.Parent" xml:space="preserve">
     <value>xtraTabPage1</value>
@@ -536,7 +536,7 @@
     <value>txtThamChieu</value>
   </data>
   <data name="&gt;&gt;txtThamChieu.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;txtThamChieu.Parent" xml:space="preserve">
     <value>xtraTabPage1</value>
@@ -563,7 +563,7 @@
     <value>labelControl3</value>
   </data>
   <data name="&gt;&gt;labelControl3.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelControl3.Parent" xml:space="preserve">
     <value>xtraTabPage1</value>
@@ -590,7 +590,7 @@
     <value>labelControl2</value>
   </data>
   <data name="&gt;&gt;labelControl2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelControl2.Parent" xml:space="preserve">
     <value>xtraTabPage1</value>
@@ -617,7 +617,7 @@
     <value>labelControl1</value>
   </data>
   <data name="&gt;&gt;labelControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelControl1.Parent" xml:space="preserve">
     <value>xtraTabPage1</value>
@@ -641,7 +641,7 @@
     <value>txtMa</value>
   </data>
   <data name="&gt;&gt;txtMa.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;txtMa.Parent" xml:space="preserve">
     <value>xtraTabPage1</value>
@@ -665,7 +665,7 @@
     <value>txtTen</value>
   </data>
   <data name="&gt;&gt;txtTen.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;txtTen.Parent" xml:space="preserve">
     <value>xtraTabPage1</value>
@@ -682,11 +682,11 @@
   <data name="txtGiaTriNho.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 174</value>
   </data>
-  <data name="txtGiaTriNho.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.1">
+  <data name="txtGiaTriNho.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v16.1">
     <value>Combo</value>
   </data>
-  <assembly alias="DevExpress.XtraEditors.v15.1" name="DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="txtGiaTriNho.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v15.1">
+  <assembly alias="DevExpress.XtraEditors.v16.1" name="DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="txtGiaTriNho.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v16.1">
     <value>None</value>
   </data>
   <data name="txtGiaTriNho.Size" type="System.Drawing.Size, System.Drawing">
@@ -699,7 +699,7 @@
     <value>txtGiaTriNho</value>
   </data>
   <data name="&gt;&gt;txtGiaTriNho.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;txtGiaTriNho.Parent" xml:space="preserve">
     <value>xtraTabPage1</value>
@@ -716,10 +716,10 @@
   <data name="txtGiaTriLon.Location" type="System.Drawing.Point, System.Drawing">
     <value>274, 175</value>
   </data>
-  <data name="txtGiaTriLon.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.1">
+  <data name="txtGiaTriLon.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v16.1">
     <value>Combo</value>
   </data>
-  <data name="txtGiaTriLon.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v15.1">
+  <data name="txtGiaTriLon.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v16.1">
     <value>None</value>
   </data>
   <data name="txtGiaTriLon.Size" type="System.Drawing.Size, System.Drawing">
@@ -732,7 +732,7 @@
     <value>txtGiaTriLon</value>
   </data>
   <data name="&gt;&gt;txtGiaTriLon.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;txtGiaTriLon.Parent" xml:space="preserve">
     <value>xtraTabPage1</value>
@@ -750,7 +750,7 @@
     <value>xtraTabPage1</value>
   </data>
   <data name="&gt;&gt;xtraTabPage1.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;xtraTabPage1.Parent" xml:space="preserve">
     <value>xtraTabContarol1</value>
@@ -783,7 +783,7 @@
     <value>txtGhiChu</value>
   </data>
   <data name="&gt;&gt;txtGhiChu.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;txtGhiChu.Parent" xml:space="preserve">
     <value>xtraTabPage2</value>
@@ -810,7 +810,7 @@
     <value>labelControl9</value>
   </data>
   <data name="&gt;&gt;labelControl9.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelControl9.Parent" xml:space="preserve">
     <value>xtraTabPage2</value>
@@ -837,7 +837,7 @@
     <value>labelControl12</value>
   </data>
   <data name="&gt;&gt;labelControl12.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelControl12.Parent" xml:space="preserve">
     <value>xtraTabPage2</value>
@@ -861,7 +861,7 @@
     <value>txtDiaChi</value>
   </data>
   <data name="&gt;&gt;txtDiaChi.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;txtDiaChi.Parent" xml:space="preserve">
     <value>xtraTabPage2</value>
@@ -888,7 +888,7 @@
     <value>labelControl11</value>
   </data>
   <data name="&gt;&gt;labelControl11.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelControl11.Parent" xml:space="preserve">
     <value>xtraTabPage2</value>
@@ -912,7 +912,7 @@
     <value>txtMoTa</value>
   </data>
   <data name="&gt;&gt;txtMoTa.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;txtMoTa.Parent" xml:space="preserve">
     <value>xtraTabPage2</value>
@@ -939,7 +939,7 @@
     <value>labelControl10</value>
   </data>
   <data name="&gt;&gt;labelControl10.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelControl10.Parent" xml:space="preserve">
     <value>xtraTabPage2</value>
@@ -963,7 +963,7 @@
     <value>txtTenKhac</value>
   </data>
   <data name="&gt;&gt;txtTenKhac.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;txtTenKhac.Parent" xml:space="preserve">
     <value>xtraTabPage2</value>
@@ -981,7 +981,7 @@
     <value>xtraTabPage2</value>
   </data>
   <data name="&gt;&gt;xtraTabPage2.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;xtraTabPage2.Parent" xml:space="preserve">
     <value>xtraTabContarol1</value>
@@ -993,7 +993,7 @@
     <value>xtraTabContarol1</value>
   </data>
   <data name="&gt;&gt;xtraTabContarol1.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;xtraTabContarol1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1316,12 +1316,12 @@
     <value>sqlDataSource1</value>
   </data>
   <data name="&gt;&gt;sqlDataSource1.Type" xml:space="preserve">
-    <value>DevExpress.DataAccess.Sql.SqlDataSource, DevExpress.DataAccess.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.DataAccess.Sql.SqlDataSource, DevExpress.DataAccess.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>ParaclinicalDetail</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
 </root>

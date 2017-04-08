@@ -1,0 +1,861 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panelControl2.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="groupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom</value>
+  </data>
+  <data name="searchControl2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom</value>
+  </data>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>153, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="cmsCapNhat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 22</value>
+  </data>
+  <data name="cmsCapNhat.Text" xml:space="preserve">
+    <value>Cập nhật</value>
+  </data>
+  <data name="cmsXoa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 22</value>
+  </data>
+  <data name="cmsXoa.Text" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 48</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
+    <value>contextMenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="grcDanhMuc.DataMember" xml:space="preserve">
+    <value>Paraclinical</value>
+  </data>
+  <metadata name="sqlDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlBhcmFjbGluaWNhbCI+PEZpZWxkIE5hbWU9IlBhcmFjbGluaWNhbF9JRCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQYXJhY2xpbmljYWxfTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQYXJhY2xpbmljYWxfUmVmZXJlbmNlVmFsdWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUGFyYWNsaW5pY2FsX1ZhbHVlTWluIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUGFyYWNsaW5pY2FsX1ZhbHVlTWF4IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUGFyYWNsaW5pY2FsX0dyb3VwX05hbWUiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+  </data>
+  <data name="grcDanhMuc.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="grcDanhMuc.EmbeddedNavigator.TextStringFormat" xml:space="preserve">
+    <value>Trang {0} / {1}</value>
+  </data>
+  <data name="grcDanhMuc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 61</value>
+  </data>
+  <data name="gvData.Appearance.FixedLine.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
+  </data>
+  <data name="gvData.Appearance.HeaderPanel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 11.25pt</value>
+  </data>
+  <data name="colParaclinical_ID.Caption" xml:space="preserve">
+    <value>Mã</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="colParaclinical_ID.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colParaclinical_ID.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="colParaclinical_ID.Width" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="colParaclinical_Name.Caption" xml:space="preserve">
+    <value>Tên cận lâm sàng</value>
+  </data>
+  <data name="colParaclinical_Name.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colParaclinical_Name.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="colParaclinical_Name.Width" type="System.Int32, mscorlib">
+    <value>198</value>
+  </data>
+  <data name="colParaclinical_ReferenceValue.Caption" xml:space="preserve">
+    <value>Giá trị tham chiếu</value>
+  </data>
+  <data name="colParaclinical_ReferenceValue.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colParaclinical_ReferenceValue.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="colParaclinical_ReferenceValue.Width" type="System.Int32, mscorlib">
+    <value>116</value>
+  </data>
+  <data name="colParaclinical_ValueMin.Caption" xml:space="preserve">
+    <value>Giá trị nhỏ nhất</value>
+  </data>
+  <data name="colParaclinical_ValueMin.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colParaclinical_ValueMin.VisibleIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="colParaclinical_ValueMin.Width" type="System.Int32, mscorlib">
+    <value>116</value>
+  </data>
+  <data name="colParaclinical_ValueMax.Caption" xml:space="preserve">
+    <value>Giá trị lớn nhất</value>
+  </data>
+  <data name="colParaclinical_ValueMax.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colParaclinical_ValueMax.VisibleIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="colParaclinical_ValueMax.Width" type="System.Int32, mscorlib">
+    <value>119</value>
+  </data>
+  <data name="colParaclinical_Group_Name.Caption" xml:space="preserve">
+    <value>Loại</value>
+  </data>
+  <data name="colParaclinical_Group_Name.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colParaclinical_Group_Name.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="colParaclinical_Group_Name.Width" type="System.Int32, mscorlib">
+    <value>116</value>
+  </data>
+  <assembly alias="DevExpress.Data.v15.1" name="DevExpress.Data.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="gvData.GroupSummary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v15.1">
+    <value>Count</value>
+  </data>
+  <data name="gvData.GroupSummary1" xml:space="preserve">
+    <value>Paraclinical.Paraclinical_Group_Name</value>
+  </data>
+  <data name="gvData.GroupSummary2" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gvData.GroupSummary3" xml:space="preserve">
+    <value>(Count={0})</value>
+  </data>
+  <data name="grcDanhMuc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>738, 349</value>
+  </data>
+  <data name="grcDanhMuc.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;grcDanhMuc.Name" xml:space="preserve">
+    <value>grcDanhMuc</value>
+  </data>
+  <data name="&gt;&gt;grcDanhMuc.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;grcDanhMuc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grcDanhMuc.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="searchControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 17</value>
+  </data>
+  <data name="searchControl2.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 11.25pt</value>
+  </data>
+  <data name="searchControl2.Properties.NullValuePrompt" xml:space="preserve">
+    <value>Nhập vào thông tin tìm kiếm...</value>
+  </data>
+  <data name="searchControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>420, 24</value>
+  </data>
+  <data name="searchControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="searchControl2.ToolTip" xml:space="preserve">
+    <value>Nhập vào thông tin tìm kiếm</value>
+  </data>
+  <data name="&gt;&gt;searchControl2.Name" xml:space="preserve">
+    <value>searchControl2</value>
+  </data>
+  <data name="&gt;&gt;searchControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SearchControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;searchControl2.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;searchControl2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>129, 5</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>494, 50</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>panelControl2</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>738, 61</value>
+  </data>
+  <data name="panelControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panelControl2.Name" xml:space="preserve">
+    <value>panelControl2</value>
+  </data>
+  <data name="&gt;&gt;panelControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelControl2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelControl2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="panelControl1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="labelControl1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="labelControl1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
+  <data name="labelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>365, 16</value>
+  </data>
+  <data name="labelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>351, 14</value>
+  </data>
+  <data name="labelControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="labelControl1.Text" xml:space="preserve">
+    <value>* Nhấn chuột phải trên danh sách để xóa hoặc cập nhật dữ liệu</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Name" xml:space="preserve">
+    <value>labelControl1</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="btnLamMoi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="btnLamMoi.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        bwAAAG8B8aLcQwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAE1SURBVDhPpVNB
+        TsNADOwDgAOcEB9Bgi/ALVK2QUgUCZEtPIBT+xROeUWlKpu0cA6XPKbV4knt4F32gMRhVHnsmXptZ+K9
+        /xeSJPDk7s5tY27KOr993mYXqRrgF1G2xaV1piP4CL1tzXVcHwQvrriiwj0L9tTBF/3CbCdc6cyb1gQG
+        gG3yxdyZ9/nq/ky4x212SuJKTHQno7BszINdZ0cSp6BMeuEOiXq65MRm1s6OJRmDOxmeI4PV4gPq/OP1
+        sziJxQKqGQaM7SAeSARs0OliDZjCnOv4z6bLIYl2mNyhzVgswPOoZiNicGOSyJ5NKuFSwKAxcIl/ErQa
+        EssNVLoTrBSrxYqFEwQBjkSZYNodH9N4XDg2rQkMAO5EnqPR4czj+iDQwGCH7dAHhQ8rVQMkyb/DT74B
+        Zkmmo2reH2gAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnLamMoi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 9</value>
+  </data>
+  <data name="btnLamMoi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 28</value>
+  </data>
+  <data name="btnLamMoi.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnLamMoi.Text" xml:space="preserve">
+    <value>Làm mới</value>
+  </data>
+  <data name="&gt;&gt;btnLamMoi.Name" xml:space="preserve">
+    <value>btnLamMoi</value>
+  </data>
+  <data name="&gt;&gt;btnLamMoi.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnLamMoi.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;btnLamMoi.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="btnThem.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="btnThem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAF
+        RgAABUYBwbT6GgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAB7SURBVDhP3ZPR
+        CcAgDETdpXSGTlG6o4M4gJO4REnzIIKUg1L8aj8ehHh3YtRkZpI1H9uS9wrUSgOyCW4sjgVFaUA2wU1t
+        CGhKA7IJHwqIaTMwDCOn0wOo7+sFLztxVV34ljofMH0ENRgIUQ/49TtQTXDT3GeK23n4zpYuFk2JJ4hW
+        q3IAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnThem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 9</value>
+  </data>
+  <data name="btnThem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 28</value>
+  </data>
+  <data name="btnThem.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnThem.Text" xml:space="preserve">
+    <value>Thêm danh mục cận lâm sàng</value>
+  </data>
+  <data name="&gt;&gt;btnThem.Name" xml:space="preserve">
+    <value>btnThem</value>
+  </data>
+  <data name="&gt;&gt;btnThem.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnThem.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;btnThem.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 410</value>
+  </data>
+  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>738, 44</value>
+  </data>
+  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>738, 454</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAQEAAAAEAIAAoQgAAFgAAACgAAABAAAAAgAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD7wEIW+8BCdvvAQsL7wELe+8BC3vvAQt77wELe+8BC3vvA
+        Qt77wELe+8BC3vvAQt77wELe+8BC3vvAQt77wELe+8BC3vvAQt77wELe+8BC3vvAQt77wELe+8BC3vvA
+        Qt77wELe+8BC3vvAQt77wELe+8BC3vvAQt77wELe+8BC3vvAQt77wELe+8BC3vvAQt77wELe+8BC3vvA
+        Qt77wELe+8BC3vvAQt77wELe+8BC3vvAQt77wELe+8BC3vvAQt77wELe+8BC0vvAQpT7wEIyAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD7wEJU+8BC7vvAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC/PvAQpT7wEIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD7wEJc+8BC/PvA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BCrPvAQgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAD7wEIs+8BC9vvAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEJ4AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA+8BCsvvAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC8vvAQhQAAAAAAAAAAAAAAAAAAAAA+8BCCvvAQvr7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEJYAAAAAAAAAAAAAAAAAAAAAPvAQiT7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BCeAAAAAAAAAAAAAAAAAAA
+        AAD7wEIy+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BCkvvAQmT7wEJk+8BCZPvA
+        QmT7wEJk+8BCZPvAQmT7wEJk+8BCZvvAQvj7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        QoYAAAAAAAAAAAAAAAAAAAAA+8BCOvvAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        QkwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPvAQgL7wEL0+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEKOAAAAAAAAAAAAAAAAAAAAAPvAQj77wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEJMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD7wEIC+8BC9PvA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BClAAAAAAAAAAAAAAAAAAAAAD7wEJC+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BCTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA+8BCAvvAQvT7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQpYAAAAAAAAAAAAA
+        AAAAAAAA+8BCQvvAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQkwAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAPvAQgL7wEL0+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEKWAAAAAAAAAAAAAAAAAAAAAPvAQkL7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEJMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD7wEIC+8BC9PvAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BCmAAAAAAAAAAAAAAAAAAAAAD7wEJE+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BCTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+8BCAvvA
+        QvT7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQpgAAAAAAAAAAAAAAAAAAAAA+8BCRvvA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQkwAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAPvAQgL7wEL0+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEKYAAAAAAAA
+        AAAAAAAAAAAAAPvAQkb7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEJMAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD7wEIC+8BC9PvAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BCmAAAAAAAAAAAAAAAAAAAAAD7wEJG+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BCTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+8BCAvvAQvT7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQpgAAAAAAAAAAAAAAAAAAAAA+8BCRvvAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BClPvAQj77wEI++8BCPvvA
+        Qj77wEI++8BCPvvAQj77wEI++8BCPvvAQhIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAD7wEI8+8BCPvvAQj77wEI++8BCPvvAQj77wEI++8BCPvvAQj77wEJW+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEKYAAAAAAAAAAAAAAAAAAAAAPvA
+        Qkb7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        QnIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+8BCHvvA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BCmAAA
+        AAAAAAAAAAAAAAAAAAD7wEJG+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEJyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAPvAQh77wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQpgAAAAAAAAAAAAAAAAAAAAA+8BCRvvAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BCcgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD7wEIe+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEKYAAAAAAAAAAAAAAAAAAAAAPvAQkb7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQnIAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+8BCHvvAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BCmAAAAAAAAAAAAAAAAAAA
+        AAD7wEJG+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEJyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPvA
+        Qh77wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        QpgAAAAAAAAAAAAAAAAAAAAA+8BCRvvAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BCcgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD7wEIe+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEKYAAAAAAAAAAAAAAAAAAAAAPvAQkb7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQnIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+8BCHvvAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BCmAAAAAAAAAAAAAAAAAAAAAD7wEJG+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEJyAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPvAQh77wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQpgAAAAAAAAAAAAA
+        AAAAAAAA+8BCRvvAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BCcgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAD7wEIe+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEKYAAAAAAAAAAAAAAAAAAAAAPvAQkb7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQvD7wELm+8BC5vvAQub7wELm+8BC5vvAQub7wELm+8BC5vvA
+        Qub7wEJEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD7wEIC+8BC3PvAQub7wELm+8BC5vvA
+        Qub7wELm+8BC5vvAQub7wELm+8BC6PvAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BCmAAAAAAAAAAAAAAAAAAAAAD7wEJG+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BCTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+8BCAvvA
+        QvT7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQpgAAAAAAAAAAAAAAAAAAAAA+8BCRvvA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQkwAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAPvAQgL7wEL0+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEKYAAAAAAAA
+        AAAAAAAAAAAAAPvAQkb7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEJMAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD7wEIC+8BC9PvAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BCmAAAAAAAAAAAAAAAAAAAAAD7wEJG+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BCTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+8BCAvvAQvT7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQpgAAAAAAAAAAAAAAAAAAAAA+8BCRvvAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQkwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPvA
+        QgL7wEL0+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEKYAAAAAAAAAAAAAAAAAAAAAPvA
+        Qkb7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEJMAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD7wEIC+8BC9PvAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BCmAAA
+        AAAAAAAAAAAAAAAAAAD7wEIk+8BC3vvAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BCTAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+8BCAvvAQvT7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC9vvAQmAAAAAAAAAAAAAAAAAAAAAAAAAAAPvAQgr7wEKI+8BC+PvAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQkwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPvAQgL7wEL0+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BCvPvAQigAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPvA
+        Qi77wELG+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEJs+8BCLPvAQiz7wEIs+8BCLPvAQiz7wEIs+8BCLPvA
+        Qiz7wEIu+8BC9vvAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wELq+8BCXvvAQgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA+8BCAvvAQmj7wELu+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQvz7wEKe+8BCFAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+8BCGvvAQqj7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQtb7wEJAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+8BCSPvAQpr7wEJu+8BCBgAAAAAAAAAAAAAAAAAA
+        AAAAAAAA+8BCSPvAQtz7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC9vvA
+        Qn77wEIIAAAAAAAAAAAAAAAAAAAAAAAAAAD7wEJA+8BCmPvAQnr7wEIK+8BCUvvAQvz7wEL/+8BC//vA
+        QtT7wEI8AAAAAAAAAAAAAAAAAAAAAAAAAAD7wEIK+8BChvvAQvj7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BCvPvAQiYAAAAAAAAAAAAAAAAAAAAAAAAAAPvAQhb7wEKi+8BC/PvAQv/7wEL/+8BCpPvA
+        QrD7wEL/+8BC//vAQv/7wEL/+8BC/PvAQpT7wEIOAAAAAAAAAAAAAAAAAAAAAAAAAAD7wEIu+8BCwvvA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wELo+8BCXvvAQgIAAAAAAAAAAAAAAAAAAAAAAAAAAPvAQlr7wELq+8BC//vA
+        Qv/7wEL/+8BC//vAQt77wEKW+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC3vvAQkYAAAAAAAAAAAAA
+        AAAAAAAAAAAAAPvAQgL7wEJm+8BC7PvAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQvz7wEKc+8BCFAAAAAAAAAAAAAAAAAAAAAAAAAAA+8BCHPvA
+        QrL7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wELY+8BCGvvAQsj7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL8+8BCmvvAQhAAAAAAAAAAAAAAAAAAAAAAAAAAAPvAQhj7wEKm+8BC/PvAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQtT7wEJAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAD7wEIC+8BCYvvAQu77wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wELy+8BCUAAAAAD7wEIG+8BCfvvA
+        Qvj7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wELg+8BCSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPvA
+        Qkj7wELa+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC9PvAQnz7wEIIAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD7wEIg+8BCuPvAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wELE+8BCJgAA
+        AAAAAAAAAAAAAAAAAAD7wEI0+8BC1PvAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQvz7wEKc+8BCEAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA+8BCCvvAQob7wEL4+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BCuvvA
+        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
+        AAD7wEIC+8BCbvvAQvL7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL4+8BCfvvAQgYAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD7wEIO+8BCmvvAQvz7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wELo+8BCVAAA
+        AAAAAAAAAAAAAAAAAAD7wEIm+8BCwvvAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wELM+8BCMAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD7wEJI+8BC4PvAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEKs+8BCGPvAQgT7wEJ0+8BC9PvAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qvb7wEJ8+8BCBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPvA
+        Qg77wEKY+8BC/PvAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQuz7wELO+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQsr7wEIsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAPvAQkb7wELe+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC9vvAQnj7wEIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+8BCDvvAQpb7wEL8+8BC//vA
+        Qv/7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL/+8BCxvvAQioAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA+8BCQvvAQtz7wEL/+8BC//vAQv/7wEL/+8BC//vAQv/7wEL0+8BCdPvAQgQAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD7wEIM+8BCjvvAQvz7wEL/+8BC//vAQv/7wELA+8BCJgAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD7wEI4+8BCvvvA
+        Qs77wEJm+8BCAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA/wAAAAAAAH/8AAAAAAAAH/gAAAAAAAAP8AAAAAAAAA/gAAAAAAAAB+AAAAAAAAAH4AAAAAAA
+        AAfgAAAP+AAAA+AAAB/4AAAD4AAAH/gAAAPgAAAf+AAAA+AAAB/4AAAD4AAAH/gAAAPgAAAf+AAAA+AA
+        AB/4AAAD4AAAH/gAAAPgAAAf+AAAA+AAP////gAD4AB////+AAPgAH////4AA+AAf////gAD4AB////+
+        AAPgAH////4AA+AAf////gAD4AB////+AAPgAH////4AA+AAf////gAD4AAAH/gAAAPgAAAf+AAAA+AA
+        AB/4AAAD4AAAH/gAAAPgAAAf+AAAA+AAAB/4AAAD4AAAH/gAAAPgAAAf+AAAB/AAAB/4AAAP/AAAH/gA
+        AD//AAAAAAAAf/+AAAAAAAH/3+AAAAAAB/uH8AAAAAAP4AH8AAAAAD/AAP8AAAAAfwCAP4AAAAH+AeAf
+        4AAAB/gD8AfwAAAP8A/4A/wAAD/AH/4A/wAAf4B//wB/gAH+AP//wB/gB/wD///gD/gP8Af///gD/D/g
+        H////AH/f4A/////AH//AP////+AP/wB/////+AP+Af/////8AfgD//////8AcA///////4AAH//////
+        /4AB////////wAP////////wD/////////gf/////////n////8=
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Danh mục cận lâm sàng</value>
+  </data>
+  <data name="&gt;&gt;cmsCapNhat.Name" xml:space="preserve">
+    <value>cmsCapNhat</value>
+  </data>
+  <data name="&gt;&gt;cmsCapNhat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmsXoa.Name" xml:space="preserve">
+    <value>cmsXoa</value>
+  </data>
+  <data name="&gt;&gt;cmsXoa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sqlDataSource1.Name" xml:space="preserve">
+    <value>sqlDataSource1</value>
+  </data>
+  <data name="&gt;&gt;sqlDataSource1.Type" xml:space="preserve">
+    <value>DevExpress.DataAccess.Sql.SqlDataSource, DevExpress.DataAccess.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gvData.Name" xml:space="preserve">
+    <value>gvData</value>
+  </data>
+  <data name="&gt;&gt;gvData.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colParaclinical_ID.Name" xml:space="preserve">
+    <value>colParaclinical_ID</value>
+  </data>
+  <data name="&gt;&gt;colParaclinical_ID.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colParaclinical_Name.Name" xml:space="preserve">
+    <value>colParaclinical_Name</value>
+  </data>
+  <data name="&gt;&gt;colParaclinical_Name.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colParaclinical_ReferenceValue.Name" xml:space="preserve">
+    <value>colParaclinical_ReferenceValue</value>
+  </data>
+  <data name="&gt;&gt;colParaclinical_ReferenceValue.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colParaclinical_ValueMin.Name" xml:space="preserve">
+    <value>colParaclinical_ValueMin</value>
+  </data>
+  <data name="&gt;&gt;colParaclinical_ValueMin.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colParaclinical_ValueMax.Name" xml:space="preserve">
+    <value>colParaclinical_ValueMax</value>
+  </data>
+  <data name="&gt;&gt;colParaclinical_ValueMax.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colParaclinical_Group_Name.Name" xml:space="preserve">
+    <value>colParaclinical_Group_Name</value>
+  </data>
+  <data name="&gt;&gt;colParaclinical_Group_Name.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>DanhMucCanLamSang</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+</root>

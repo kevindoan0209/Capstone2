@@ -166,7 +166,7 @@
     <value>labelControl1</value>
   </data>
   <data name="&gt;&gt;labelControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelControl1.Parent" xml:space="preserve">
     <value>panelControl1</value>
@@ -205,7 +205,7 @@
     <value>btnLamMoi</value>
   </data>
   <data name="&gt;&gt;btnLamMoi.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btnLamMoi.Parent" xml:space="preserve">
     <value>panelControl1</value>
@@ -241,7 +241,7 @@
     <value>btnThem</value>
   </data>
   <data name="&gt;&gt;btnThem.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btnThem.Parent" xml:space="preserve">
     <value>panelControl1</value>
@@ -268,7 +268,7 @@
     <value>panelControl1</value>
   </data>
   <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -352,7 +352,7 @@
     <value>grcDanhMuc</value>
   </data>
   <data name="&gt;&gt;grcDanhMuc.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;grcDanhMuc.Parent" xml:space="preserve">
     <value>$this</value>
@@ -382,7 +382,7 @@
     <value>searchControl2</value>
   </data>
   <data name="&gt;&gt;searchControl2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SearchControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.SearchControl, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;searchControl2.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -430,7 +430,7 @@
     <value>panelControl2</value>
   </data>
   <data name="&gt;&gt;panelControl2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;panelControl2.Parent" xml:space="preserve">
     <value>$this</value>
@@ -18497,36 +18497,36 @@
     <value>sqlDataSource2</value>
   </data>
   <data name="&gt;&gt;sqlDataSource2.Type" xml:space="preserve">
-    <value>DevExpress.DataAccess.Sql.SqlDataSource, DevExpress.DataAccess.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.DataAccess.Sql.SqlDataSource, DevExpress.DataAccess.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;gvDanhMuc.Name" xml:space="preserve">
     <value>gvDanhMuc</value>
   </data>
   <data name="&gt;&gt;gvDanhMuc.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;colDisease_ID.Name" xml:space="preserve">
     <value>colDisease_ID</value>
   </data>
   <data name="&gt;&gt;colDisease_ID.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;colDisease_Name.Name" xml:space="preserve">
     <value>colDisease_Name</value>
   </data>
   <data name="&gt;&gt;colDisease_Name.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;colDisease_Description.Name" xml:space="preserve">
     <value>colDisease_Description</value>
   </data>
   <data name="&gt;&gt;colDisease_Description.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Disease</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
 </root>

@@ -1,5 +1,4 @@
 ﻿using ClinienceSystemManagement;
-using ClinienceSystemManagement.DatHen;
 using ClinienceSystemManagement.Hệ_Thống;
 using ClinienceSystemManagement.HeThong;
 using ClinienceSystemManagement.KhamBenh;
@@ -183,14 +182,14 @@ namespace PresentationLayer
 
         private void btnLichHen_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Form frm = this.IsExits(typeof(Appointment));
+            Form frm = this.IsExits(typeof(Disease));
             if (frm != null)
             {
                 frm.Activate();
             }
             else
             {
-                Appointment appointment = new Appointment();
+                Disease appointment = new Disease();
                 appointment.MdiParent = this;
                 appointment.Show();
             }

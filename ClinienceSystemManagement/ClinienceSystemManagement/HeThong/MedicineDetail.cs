@@ -152,7 +152,7 @@ namespace ClinienceSystemManagement.HeThong
                             this.Close();
 
                             int lastID = BLL_Medicine.GetLastIdMedicine();
-                            string unit = null;
+                            string unit = "";
                             double content = 0;
                             try { 
                             for (int i = 0; i < n; i++)

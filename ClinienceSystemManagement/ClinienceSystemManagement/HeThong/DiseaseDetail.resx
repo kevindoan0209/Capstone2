@@ -142,7 +142,7 @@
     <value>labelControl1</value>
   </data>
   <data name="&gt;&gt;labelControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelControl1.Parent" xml:space="preserve">
     <value>xtraTabPage2</value>
@@ -154,7 +154,7 @@
     <value>txtMoTa</value>
   </data>
   <data name="&gt;&gt;txtMoTa.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;txtMoTa.Parent" xml:space="preserve">
     <value>xtraTabPage2</value>
@@ -166,7 +166,7 @@
     <value>labelControl9</value>
   </data>
   <data name="&gt;&gt;labelControl9.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelControl9.Parent" xml:space="preserve">
     <value>xtraTabPage2</value>
@@ -178,7 +178,7 @@
     <value>labelControl12</value>
   </data>
   <data name="&gt;&gt;labelControl12.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelControl12.Parent" xml:space="preserve">
     <value>xtraTabPage2</value>
@@ -190,7 +190,7 @@
     <value>txtTen</value>
   </data>
   <data name="&gt;&gt;txtTen.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;txtTen.Parent" xml:space="preserve">
     <value>xtraTabPage2</value>
@@ -202,7 +202,7 @@
     <value>labelControl11</value>
   </data>
   <data name="&gt;&gt;labelControl11.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelControl11.Parent" xml:space="preserve">
     <value>xtraTabPage2</value>
@@ -214,7 +214,7 @@
     <value>txtMa</value>
   </data>
   <data name="&gt;&gt;txtMa.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;txtMa.Parent" xml:space="preserve">
     <value>xtraTabPage2</value>
@@ -233,7 +233,7 @@
     <value>xtraTabPage2</value>
   </data>
   <data name="&gt;&gt;xtraTabPage2.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;xtraTabPage2.Parent" xml:space="preserve">
     <value>xtraTabContarol1</value>
@@ -258,7 +258,7 @@
     <value>labelControl1</value>
   </data>
   <data name="&gt;&gt;labelControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelControl1.Parent" xml:space="preserve">
     <value>xtraTabPage2</value>
@@ -282,7 +282,7 @@
     <value>txtMoTa</value>
   </data>
   <data name="&gt;&gt;txtMoTa.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;txtMoTa.Parent" xml:space="preserve">
     <value>xtraTabPage2</value>
@@ -309,7 +309,7 @@
     <value>labelControl9</value>
   </data>
   <data name="&gt;&gt;labelControl9.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelControl9.Parent" xml:space="preserve">
     <value>xtraTabPage2</value>
@@ -336,7 +336,7 @@
     <value>labelControl12</value>
   </data>
   <data name="&gt;&gt;labelControl12.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelControl12.Parent" xml:space="preserve">
     <value>xtraTabPage2</value>
@@ -360,7 +360,7 @@
     <value>txtTen</value>
   </data>
   <data name="&gt;&gt;txtTen.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;txtTen.Parent" xml:space="preserve">
     <value>xtraTabPage2</value>
@@ -387,7 +387,7 @@
     <value>labelControl11</value>
   </data>
   <data name="&gt;&gt;labelControl11.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelControl11.Parent" xml:space="preserve">
     <value>xtraTabPage2</value>
@@ -411,7 +411,7 @@
     <value>txtMa</value>
   </data>
   <data name="&gt;&gt;txtMa.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;txtMa.Parent" xml:space="preserve">
     <value>xtraTabPage2</value>
@@ -444,7 +444,7 @@
     <value>xtraTabContarol1</value>
   </data>
   <data name="&gt;&gt;xtraTabContarol1.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;xtraTabContarol1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -481,7 +481,7 @@
     <value>btnHuy</value>
   </data>
   <data name="&gt;&gt;btnHuy.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btnHuy.Parent" xml:space="preserve">
     <value>panelControl1</value>
@@ -518,7 +518,7 @@
     <value>btnLuu</value>
   </data>
   <data name="&gt;&gt;btnLuu.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btnLuu.Parent" xml:space="preserve">
     <value>panelControl1</value>
@@ -545,7 +545,7 @@
     <value>lbTrangThai</value>
   </data>
   <data name="&gt;&gt;lbTrangThai.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;lbTrangThai.Parent" xml:space="preserve">
     <value>panelControl1</value>
@@ -570,7 +570,7 @@
     <value>panelControl1</value>
   </data>
   <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -18631,12 +18631,12 @@
     <value>sqlDataSource1</value>
   </data>
   <data name="&gt;&gt;sqlDataSource1.Type" xml:space="preserve">
-    <value>DevExpress.DataAccess.Sql.SqlDataSource, DevExpress.DataAccess.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.DataAccess.Sql.SqlDataSource, DevExpress.DataAccess.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>DiseaseDetail</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
 </root>
