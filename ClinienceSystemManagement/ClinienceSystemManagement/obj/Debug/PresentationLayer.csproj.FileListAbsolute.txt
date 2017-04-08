@@ -300,3 +300,16 @@ F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debu
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\ClinienceSystemManagementDataSet.xsd
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\ClinienceSystemManagementDataSet.xss
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.DatHen.Appointment.resources
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\de\ClinienceSystemManagement.resources.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\es\ClinienceSystemManagement.resources.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\ja\ClinienceSystemManagement.resources.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\ru\ClinienceSystemManagement.resources.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.CustomAppointmentForm.resources
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.CustomAppointmentForm.de.resources
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.CustomAppointmentForm.es.resources
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.CustomAppointmentForm.ja.resources
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.CustomAppointmentForm.ru.resources
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\de\ClinienceSystemManagement.resources.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\es\ClinienceSystemManagement.resources.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ja\ClinienceSystemManagement.resources.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ru\ClinienceSystemManagement.resources.dll
