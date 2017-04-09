@@ -39,22 +39,26 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@Unitid", unitid);
             return command.ExecuteNonQuery();
         }
-        public int InsertIngredient(string name, string note)
+        public int InsertIngredient(string name, string note, string unit, double content)
         {
-            const String sqlCommand = "Insert into Ingredient (Ingredient_Name,Ingredient_Note) Values(@Name, @Note)";
+            const String sqlCommand = "Insert into Ingredient (Ingredient_Name,Ingredient_Note,Ingredient_Unit,Ingredient_Content) Values(@Name, @Note,@Unit,@Content)";
             SqlCommand command = new SqlCommand(sqlCommand, connect());
             command.Parameters.AddWithValue("@Name", name);
             command.Parameters.AddWithValue("@Note", note);
+            command.Parameters.AddWithValue("@Unit", unit);
+            command.Parameters.AddWithValue("@Content", content);
             return command.ExecuteNonQuery();
         }
 
-        public int UpdateIngredient(string id, string name, string note)
+        public int UpdateIngredient(string id, string name, string note, string unit, double content)
         {
-            const String sqlCommand = "Update Ingredient set Ingredient_Name = @Name, Ingredient_Note = @Note where Ingredient_ID = @Id";
+            const String sqlCommand = "Update Ingredient set Ingredient_Name = @Name, Ingredient_Note = @Note, Ingredient_Unit = @Unit,Ingredient_Content = @Content where Ingredient_ID = @Id";
             SqlCommand command = new SqlCommand(sqlCommand, connect());
             command.Parameters.AddWithValue("@Id", id);
             command.Parameters.AddWithValue("@Name", name);
             command.Parameters.AddWithValue("@Note", note);
+            command.Parameters.AddWithValue("@Unit", unit);
+            command.Parameters.AddWithValue("@Content", content);
             return command.ExecuteNonQuery();
         }
         public int UpdateMedicine(int id, string name, string mclass, string usage, string note, int price,int unitid)

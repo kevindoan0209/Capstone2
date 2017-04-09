@@ -33,7 +33,9 @@ namespace ClinienceSystemManagement.HeThong
                 {
                     string name = txtTen.Text;
                     string description = txtGhiChu.Text;
-                    BLL_Medicine.InsertIngredient(name, description);
+                    string unit = txtDonVi.Text;
+                    double content = Convert.ToDouble(txtHamLuongTPT.Value.ToString());
+                    BLL_Medicine.InsertIngredient(name, description, unit, content);
                     lbTrangThai.Text = "";
                     this.Close();
                     XtraMessageBox.Show("Đã thêm thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);

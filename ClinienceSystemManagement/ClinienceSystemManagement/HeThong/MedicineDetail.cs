@@ -184,21 +184,7 @@ namespace ClinienceSystemManagement.HeThong
             }
         }
 
-        private void csmThem_Click(object sender, EventArgs e)
-        {
-            Form frm = this.IsExits(typeof(IngredientDetail));
-            if (frm != null)
-            {
-                frm.Activate();
-            }
-            else
-            {
-                IngredientDetail id = new IngredientDetail();
-                id.isAdd = true;
-                id.ShowDialog();
-                sqlDataSource4.Fill();
-            }
-        }
+     
 
         private void csmCapNhat_Click(object sender, EventArgs e)
         {
