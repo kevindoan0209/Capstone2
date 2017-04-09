@@ -75,6 +75,7 @@
             this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit2.Properties.ShowMenu = false;
+            this.pictureEdit2.Properties.ZoomAccelerationFactor = 1D;
             this.pictureEdit2.Size = new System.Drawing.Size(426, 180);
             this.pictureEdit2.TabIndex = 9;
             // 
@@ -88,6 +89,7 @@
             this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit1.Properties.ShowMenu = false;
+            this.pictureEdit1.Properties.ZoomAccelerationFactor = 1D;
             this.pictureEdit1.Size = new System.Drawing.Size(86, 60);
             this.pictureEdit1.TabIndex = 8;
             // 
@@ -101,6 +103,7 @@
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.marqueeProgressBarControl1);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "LoadingScreen";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.marqueeProgressBarControl1.Properties)).EndInit();

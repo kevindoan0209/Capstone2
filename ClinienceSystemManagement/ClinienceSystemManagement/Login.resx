@@ -146,10 +146,10 @@
   <data name="&gt;&gt;cbxHienMatKhai.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="labelControl3.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lbTrangThai.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
-  <data name="labelControl3.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+  <data name="lbTrangThai.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
     <value>198, 40, 40</value>
   </data>
   <data name="lbTrangThai.Location" type="System.Drawing.Point, System.Drawing">
@@ -448,9 +448,6 @@
   <data name="&gt;&gt;txtMatKhau.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <metadata name="btnDangNhap.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="btnDangNhap.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
@@ -472,7 +469,7 @@
 </value>
   </data>
   <data name="btnDangNhap.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 170</value>
+    <value>34, 170</value>
   </data>
   <data name="btnDangNhap.Size" type="System.Drawing.Size, System.Drawing">
     <value>102, 33</value>
@@ -495,9 +492,6 @@
   <data name="&gt;&gt;btnDangNhap.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <metadata name="btnThoat.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="btnThoat.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>

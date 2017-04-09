@@ -107,8 +107,8 @@
             // 
             // lbTrangThai
             // 
-            this.lbTrangThai.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl3.Appearance.Font")));
-            this.lbTrangThai.Appearance.ForeColor = ((System.Drawing.Color)(resources.GetObject("labelControl3.Appearance.ForeColor")));
+            this.lbTrangThai.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lbTrangThai.Appearance.Font")));
+            this.lbTrangThai.Appearance.ForeColor = ((System.Drawing.Color)(resources.GetObject("lbTrangThai.Appearance.ForeColor")));
             this.lbTrangThai.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
             this.lbTrangThai.LineStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             resources.ApplyResources(this.lbTrangThai, "lbTrangThai");

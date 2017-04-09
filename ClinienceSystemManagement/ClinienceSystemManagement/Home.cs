@@ -31,10 +31,21 @@ namespace PresentationLayer
             Login login = new Login();
             login.ShowDialog();
         }
-
+        private void HandleAuthority()
+        {
+            if (Type <= 2)
+            {
+                ribbonPage3.Visible = true;
+            }
+            else
+            {
+                ribbonPage3.Visible = false;
+            }
+        }
         private void TrangChu_Load(object sender, EventArgs e)
         {
             Login();
+            HandleAuthority();
         }
 
         private void btnDangNhap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -45,9 +56,8 @@ namespace PresentationLayer
         }
         private void btnDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
             if (XtraMessageBox.Show("Bạn có muốn đăng xuất", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
-            {
+            {      
                 UserName = string.Empty;
                 Id = 0;
                 Type = 0;
@@ -178,6 +188,9 @@ namespace PresentationLayer
         {
             if (XtraMessageBox.Show("Bạn có muốn đăng xuất", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
+                UserName = string.Empty;
+                Id = 0;
+                Type = 0;
                 Login();
             }
         }
@@ -210,6 +223,18 @@ namespace PresentationLayer
                 patient.MdiParent = this;
                 patient.Show();
             }
+        }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ChangePassword cp = new ChangePassword();
+            cp.Id = (int)Id;
+            cp.ShowDialog();
+        }
+
+        private void btnBarGioiThieu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
         }
     }
 }

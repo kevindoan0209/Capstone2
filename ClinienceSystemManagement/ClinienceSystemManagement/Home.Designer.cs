@@ -109,6 +109,7 @@
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
@@ -173,9 +174,10 @@
             this.barListItem1,
             this.skinRibbonGalleryBarItem1,
             this.barEditItem5,
-            this.barEditItem6});
+            this.barEditItem6,
+            this.barButtonItem3});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 27;
+            this.ribbonControl1.MaxItemId = 28;
             this.ribbonControl1.MiniToolbars.Add(this.ribbonMiniToolbar1);
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -525,6 +527,7 @@
             this.barSubItem4.ItemClickFireMode = DevExpress.XtraBars.BarItemEventFireMode.Postponed;
             this.barSubItem4.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.btnBarGioiThieu),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem3),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnBarDangXuat),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnBarThoat)});
             this.barSubItem4.Name = "barSubItem4";
@@ -534,6 +537,7 @@
             this.btnBarGioiThieu.Caption = "Giới thiệu";
             this.btnBarGioiThieu.Id = 19;
             this.btnBarGioiThieu.Name = "btnBarGioiThieu";
+            this.btnBarGioiThieu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBarGioiThieu_ItemClick);
             // 
             // btnBarDangXuat
             // 
@@ -741,6 +745,13 @@
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
             // 
+            // barButtonItem3
+            // 
+            this.barButtonItem3.Caption = "Đổi mật khẩu";
+            this.barButtonItem3.Id = 27;
+            this.barButtonItem3.Name = "barButtonItem3";
+            this.barButtonItem3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem3_ItemClick);
+            // 
             // Home
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
@@ -847,6 +858,7 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit2;
         private DevExpress.XtraBars.BarEditItem barEditItem6;
         private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit3;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
     }
 }
 

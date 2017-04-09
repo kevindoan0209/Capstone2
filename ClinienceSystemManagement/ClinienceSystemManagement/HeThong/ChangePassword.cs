@@ -39,30 +39,29 @@ namespace ClinienceSystemManagement.HeThong
         {
             try
             {
-                if (string.IsNullOrEmpty(txtTen.Text))
-                {
-                    //XtraMessageBox.Show("Vui lòng nhập tên người sử dụng", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    lbTrangThai.Text = "*Vui lòng nhập tên người sử dụng";
-                    txtTen.Focus();
-                }
-                else
-                {
-                    if (txtMatKhau.Text != txtMatKhau2.Text)
+                    if (string.IsNullOrEmpty(txtMatKhau.Text))
                     {
-                        // XtraMessageBox.Show("Mật khẩu không trùng khớp", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                        lbTrangThai.Text = "*Mật khẩu không trùng khớp";
-                        txtMatKhau2.Focus();
+                        lbTrangThai.Text = "*Nhập mật khẩu";
+                        txtMatKhau.Focus();
                     }
                     else
                     {
-                        int id = Int32.Parse(txtMa.Text);
-                        string name = txtTen.Text;
-                        string password = txtMatKhau.Text;
-                        BLL_Human.UpdateAccountPassword(id, name, password);
-                        this.Close();
-                        XtraMessageBox.Show("Đổi mật khẩu thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        if (txtMatKhau.Text != txtMatKhau2.Text)
+                        {
+                            // XtraMessageBox.Show("Mật khẩu không trùng khớp", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            lbTrangThai.Text = "*Mật khẩu không trùng khớp";
+                            txtMatKhau2.Focus();
+                        }
+                        else
+                        {
+                            int id = Int32.Parse(txtMa.Text);
+                            string name = txtTen.Text;
+                            string password = txtMatKhau.Text;
+                            BLL_Human.UpdateAccountPassword(id, name, password);
+                            this.Close();
+                            XtraMessageBox.Show("Đổi mật khẩu thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
                     }
-                }
             }
             catch (Exception ex)
             {

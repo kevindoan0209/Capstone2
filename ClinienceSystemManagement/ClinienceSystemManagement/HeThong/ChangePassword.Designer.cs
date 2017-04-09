@@ -81,7 +81,7 @@
             this.lbTrangThai.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.lbTrangThai.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
             this.lbTrangThai.LineStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.lbTrangThai.Location = new System.Drawing.Point(31, 16);
+            this.lbTrangThai.Location = new System.Drawing.Point(19, 13);
             this.lbTrangThai.Name = "lbTrangThai";
             this.lbTrangThai.Size = new System.Drawing.Size(0, 15);
             this.lbTrangThai.TabIndex = 34;
@@ -90,9 +90,9 @@
             // 
             this.btnHuy.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.btnHuy.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.Image")));
-            this.btnHuy.Location = new System.Drawing.Point(229, 8);
+            this.btnHuy.Location = new System.Drawing.Point(243, 9);
             this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(75, 25);
+            this.btnHuy.Size = new System.Drawing.Size(64, 25);
             this.btnHuy.TabIndex = 1;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
@@ -101,9 +101,9 @@
             // 
             this.btnTao.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.btnTao.Image = ((System.Drawing.Image)(resources.GetObject("btnTao.Image")));
-            this.btnTao.Location = new System.Drawing.Point(148, 8);
+            this.btnTao.Location = new System.Drawing.Point(173, 9);
             this.btnTao.Name = "btnTao";
-            this.btnTao.Size = new System.Drawing.Size(75, 25);
+            this.btnTao.Size = new System.Drawing.Size(64, 25);
             this.btnTao.TabIndex = 0;
             this.btnTao.Text = "Lưu";
             this.btnTao.Click += new System.EventHandler(this.btnTao_Click);
@@ -116,7 +116,7 @@
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelControl1.Location = new System.Drawing.Point(0, 194);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(322, 43);
+            this.panelControl1.Size = new System.Drawing.Size(332, 43);
             this.panelControl1.TabIndex = 8;
             // 
             // cbxHienMatKhau
@@ -231,7 +231,7 @@
             // 
             // xtraTabContarol1
             // 
-            this.xtraTabContarol1.Location = new System.Drawing.Point(19, 12);
+            this.xtraTabContarol1.Location = new System.Drawing.Point(22, 12);
             this.xtraTabContarol1.Name = "xtraTabContarol1";
             this.xtraTabContarol1.SelectedTabPage = this.xtraTabPage1;
             this.xtraTabContarol1.Size = new System.Drawing.Size(290, 175);
@@ -267,7 +267,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(322, 237);
+            this.ClientSize = new System.Drawing.Size(332, 237);
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.xtraTabContarol1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
