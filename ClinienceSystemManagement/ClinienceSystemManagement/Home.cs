@@ -18,14 +18,12 @@ namespace PresentationLayer
 {
     public partial class Home : DevExpress.XtraBars.Ribbon.RibbonForm
     {
+        public static string UserName = string.Empty;
+        public static int Type;
+        public static int Id;
         public Home()
         {
             InitializeComponent();
-        }
-        private string TenDangNhap;
-        public Home(string Text)
-        {
-            TenDangNhap = Text;
         }
         
         private void Login()
@@ -41,15 +39,18 @@ namespace PresentationLayer
 
         private void btnDangNhap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            HumanDetail hd = new HumanDetail();
-            hd.ShowDialog();
+            ChangePassword cp = new ChangePassword();
+            cp.Id = (int)Id;
+            cp.ShowDialog();
         }
-
         private void btnDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
 
             if (XtraMessageBox.Show("Bạn có muốn đăng xuất", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
+                UserName = string.Empty;
+                Id = 0;
+                Type = 0;
                 Login();
             }
         }

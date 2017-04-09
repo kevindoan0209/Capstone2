@@ -93,6 +93,15 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@Type", type);
             return command.ExecuteNonQuery();
         }
+        public int UpdateAccountPassword(int id, string name,string password)
+        {
+            const String sqlCommand = "Update Account set Account_Name = @Name, Account_Password = @Password Where Account_ID = @Id";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@Id", id);
+            command.Parameters.AddWithValue("@Name", name);
+            command.Parameters.AddWithValue("@Password", password);
+            return command.ExecuteNonQuery();
+        }
         private byte[] convertImagetoByte(String image)
         {
             FileStream fs;

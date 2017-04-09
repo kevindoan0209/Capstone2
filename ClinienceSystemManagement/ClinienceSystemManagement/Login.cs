@@ -43,7 +43,12 @@ namespace ClinienceSystemManagement
                         if (dt.Rows.Count > 0)
                         {
                             DataRow dr = dt.Rows[0];
-                            Home home = new Home(TenDangNhap);
+                            string name = dr["Account_Name"].ToString();
+                            int id = Convert.ToInt32(dr["Account_ID"]);
+                            int type = Convert.ToInt32(dr["Account_Type_ID"]);
+                            Home.UserName = name;
+                            Home.Id = id;
+                            Home.Type = type;
                             this.DialogResult = DialogResult.OK;
                             //XtraMessageBox.Show("Đăng nhập thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

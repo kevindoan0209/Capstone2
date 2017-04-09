@@ -64,6 +64,10 @@
             this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
             this.xtraTabContarol1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            this.txtHamLuongTPT = new DevExpress.XtraEditors.SpinEdit();
+            this.txtDonVi = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.txtGhiChu = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.txtTen2 = new DevExpress.XtraEditors.LabelControl();
@@ -77,15 +81,13 @@
             this.sqlDataSource3 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.bindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.txtHamLuongTPT = new DevExpress.XtraEditors.SpinEdit();
-            this.txtDonVi = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabContarol1)).BeginInit();
             this.xtraTabContarol1.SuspendLayout();
             this.xtraTabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtHamLuongTPT.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDonVi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGhiChu.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMa.Properties)).BeginInit();
@@ -93,8 +95,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtHamLuongTPT.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDonVi.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // sqlDataSource1
@@ -185,6 +185,48 @@
             this.xtraTabPage2.Name = "xtraTabPage2";
             this.xtraTabPage2.Size = new System.Drawing.Size(285, 191);
             this.xtraTabPage2.Text = "Thành phần";
+            // 
+            // txtHamLuongTPT
+            // 
+            this.txtHamLuongTPT.EditValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.txtHamLuongTPT.Location = new System.Drawing.Point(22, 74);
+            this.txtHamLuongTPT.Name = "txtHamLuongTPT";
+            this.txtHamLuongTPT.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtHamLuongTPT.Properties.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.txtHamLuongTPT.Size = new System.Drawing.Size(86, 20);
+            this.txtHamLuongTPT.TabIndex = 47;
+            // 
+            // txtDonVi
+            // 
+            this.txtDonVi.Location = new System.Drawing.Point(114, 74);
+            this.txtDonVi.Name = "txtDonVi";
+            this.txtDonVi.Size = new System.Drawing.Size(151, 20);
+            this.txtDonVi.TabIndex = 46;
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Location = new System.Drawing.Point(114, 55);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(35, 13);
+            this.labelControl3.TabIndex = 45;
+            this.labelControl3.Text = "Đơn vị:";
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Location = new System.Drawing.Point(22, 55);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(55, 13);
+            this.labelControl4.TabIndex = 44;
+            this.labelControl4.Text = "Hàm lượng:";
             // 
             // txtGhiChu
             // 
@@ -316,48 +358,6 @@
             this.bindingSource1.DataMember = "Paraclinical_Group";
             this.bindingSource1.DataSource = this.sqlDataSource1;
             // 
-            // txtHamLuongTPT
-            // 
-            this.txtHamLuongTPT.EditValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.txtHamLuongTPT.Location = new System.Drawing.Point(22, 74);
-            this.txtHamLuongTPT.Name = "txtHamLuongTPT";
-            this.txtHamLuongTPT.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtHamLuongTPT.Properties.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            this.txtHamLuongTPT.Size = new System.Drawing.Size(86, 20);
-            this.txtHamLuongTPT.TabIndex = 47;
-            // 
-            // txtDonVi
-            // 
-            this.txtDonVi.Location = new System.Drawing.Point(114, 74);
-            this.txtDonVi.Name = "txtDonVi";
-            this.txtDonVi.Size = new System.Drawing.Size(151, 20);
-            this.txtDonVi.TabIndex = 46;
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Location = new System.Drawing.Point(114, 55);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(35, 13);
-            this.labelControl3.TabIndex = 45;
-            this.labelControl3.Text = "Đơn vị:";
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Location = new System.Drawing.Point(22, 55);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(55, 13);
-            this.labelControl4.TabIndex = 44;
-            this.labelControl4.Text = "Hàm lượng:";
-            // 
             // SubIngredient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -366,6 +366,8 @@
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.xtraTabContarol1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "SubIngredient";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm thành phần";
@@ -377,6 +379,8 @@
             this.xtraTabContarol1.ResumeLayout(false);
             this.xtraTabPage2.ResumeLayout(false);
             this.xtraTabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtHamLuongTPT.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDonVi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGhiChu.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMa.Properties)).EndInit();
@@ -384,8 +388,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtHamLuongTPT.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDonVi.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -33,6 +33,10 @@ namespace BussinessLogicLayer
         {
             return _human.UpdateAccountNoImage(id, name, username, password, signature,type);
         }
+        public static int UpdateAccountPassword(int id, string name,string password)
+        {
+            return _human.UpdateAccountPassword(id, name, password);
+        }
 
         public static DataTable Select_Username(string username)
         {

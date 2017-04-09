@@ -112,6 +112,12 @@
     <Compile Include="CustomAppointmentForm.Designer.cs">
       <DependentUpon>CustomAppointmentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="HeThong\ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="HeThong\Disease.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -234,6 +240,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustomAppointmentForm.ru.resx">
       <DependentUpon>CustomAppointmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HeThong\Disease.resx">
       <DependentUpon>Disease.cs</DependentUpon>
