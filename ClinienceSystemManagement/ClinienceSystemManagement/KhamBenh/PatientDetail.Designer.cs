@@ -55,17 +55,15 @@
             this.txtTen = new DevExpress.XtraEditors.TextEdit();
             this.peAnh = new DevExpress.XtraEditors.PictureEdit();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lkeBacSi = new DevExpress.XtraEditors.LookUpEdit();
+            this.txtMa = new DevExpress.XtraEditors.TextEdit();
+            this.txtAnh = new DevExpress.XtraEditors.TextEdit();
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.txtThanPhien = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.txtLyDo = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.txtAnh = new DevExpress.XtraEditors.TextEdit();
-            this.txtMa = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -80,13 +78,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtTen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.peAnh.Properties)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lkeBacSi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMa.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAnh.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtThanPhien.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLyDo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAnh.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMa.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // btnHuy
@@ -113,7 +110,9 @@
             // 
             // panelControl1
             // 
+            this.panelControl1.Controls.Add(this.txtMa);
             this.panelControl1.Controls.Add(this.btnHuy);
+            this.panelControl1.Controls.Add(this.txtAnh);
             this.panelControl1.Controls.Add(this.btnLuu);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelControl1.Location = new System.Drawing.Point(0, 445);
@@ -317,10 +316,6 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.txtMa);
-            this.groupBox2.Controls.Add(this.txtAnh);
-            this.groupBox2.Controls.Add(this.lkeBacSi);
-            this.groupBox2.Controls.Add(this.labelControl12);
             this.groupBox2.Controls.Add(this.txtThanPhien);
             this.groupBox2.Controls.Add(this.labelControl11);
             this.groupBox2.Controls.Add(this.txtLyDo);
@@ -332,36 +327,27 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tình trạng tiếp nhận";
             // 
-            // lkeBacSi
+            // txtMa
             // 
-            this.lkeBacSi.Location = new System.Drawing.Point(18, 374);
-            this.lkeBacSi.Name = "lkeBacSi";
-            this.lkeBacSi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lkeBacSi.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Account_Name", "Bác sĩ", 95, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Account_ID", "Account_ID", 66, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Account_Type_ID", "Account_Type_ID", 96, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far)});
-            this.lkeBacSi.Properties.DataSource = this.bindingSource2;
-            this.lkeBacSi.Properties.DisplayMember = "Account_Name";
-            this.lkeBacSi.Properties.NullText = "Chọn bác sĩ";
-            this.lkeBacSi.Properties.ValueMember = "Account_ID";
-            this.lkeBacSi.Size = new System.Drawing.Size(141, 20);
-            this.lkeBacSi.TabIndex = 26;
+            this.txtMa.Location = new System.Drawing.Point(613, 13);
+            this.txtMa.Name = "txtMa";
+            this.txtMa.Size = new System.Drawing.Size(46, 20);
+            this.txtMa.TabIndex = 27;
+            this.txtMa.Visible = false;
             // 
-            // labelControl12
+            // txtAnh
             // 
-            this.labelControl12.Location = new System.Drawing.Point(18, 355);
-            this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(59, 13);
-            this.labelControl12.TabIndex = 25;
-            this.labelControl12.Text = "Bác sĩ khám:";
+            this.txtAnh.Location = new System.Drawing.Point(561, 13);
+            this.txtAnh.Name = "txtAnh";
+            this.txtAnh.Size = new System.Drawing.Size(46, 20);
+            this.txtAnh.TabIndex = 24;
+            this.txtAnh.Visible = false;
             // 
             // txtThanPhien
             // 
             this.txtThanPhien.Location = new System.Drawing.Point(17, 217);
             this.txtThanPhien.Name = "txtThanPhien";
-            this.txtThanPhien.Size = new System.Drawing.Size(360, 132);
+            this.txtThanPhien.Size = new System.Drawing.Size(360, 177);
             this.txtThanPhien.TabIndex = 22;
             // 
             // labelControl11
@@ -386,22 +372,6 @@
             this.labelControl10.Size = new System.Drawing.Size(58, 13);
             this.labelControl10.TabIndex = 22;
             this.labelControl10.Text = "Lý do khám:";
-            // 
-            // txtAnh
-            // 
-            this.txtAnh.Location = new System.Drawing.Point(165, 374);
-            this.txtAnh.Name = "txtAnh";
-            this.txtAnh.Size = new System.Drawing.Size(46, 20);
-            this.txtAnh.TabIndex = 24;
-            this.txtAnh.Visible = false;
-            // 
-            // txtMa
-            // 
-            this.txtMa.Location = new System.Drawing.Point(217, 374);
-            this.txtMa.Name = "txtMa";
-            this.txtMa.Size = new System.Drawing.Size(46, 20);
-            this.txtMa.TabIndex = 27;
-            this.txtMa.Visible = false;
             // 
             // PatientDetail
             // 
@@ -432,13 +402,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.peAnh.Properties)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lkeBacSi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMa.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAnh.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtThanPhien.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLyDo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAnh.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMa.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -467,8 +436,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.TextEdit txtSDT;
-        private DevExpress.XtraEditors.LookUpEdit lkeBacSi;
-        private DevExpress.XtraEditors.LabelControl labelControl12;
         private DevExpress.XtraEditors.MemoEdit txtThanPhien;
         private DevExpress.XtraEditors.LabelControl labelControl11;
         private DevExpress.XtraEditors.MemoEdit txtLyDo;

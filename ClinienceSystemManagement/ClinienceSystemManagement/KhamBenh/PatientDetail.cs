@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using BussinessLogicLayer;
 
 namespace ClinienceSystemManagement.KhamBenh
 {
@@ -61,24 +62,18 @@ namespace ClinienceSystemManagement.KhamBenh
                 }
                 else
                 {
-                    if (lkeBacSi.Text == "Chọn bác sĩ")
-                    {
-                        XtraMessageBox.Show("Vui lòng chọn bác sĩ", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                        lkeBacSi.Focus();
-                    }
-                    else
-                    {
+
                             string name = txtTen.Text;
                             string image = txtAnh.Text;
-                            DateTime birthdate = DateTime.Parse(dtNamSinh.Text);
-                            string gioitinh;
+                            //DateTime age = DateTime.Parse(dtNamSinh.Text);
+                            string sex;
                             if (rbNam.Checked == true)
                             {
-                                gioitinh = "Nam";
+                                sex = "Nam";
                             }
                             else
                             {
-                                gioitinh = "Nữ";
+                                sex = "Nữ";
                             }
                             string phone = txtSDT.Text;
                             string email = txtEmail.Text;
@@ -88,12 +83,13 @@ namespace ClinienceSystemManagement.KhamBenh
                             string note = txtGhiChu.Text;
                             string reason = txtLyDo.Text;
                             string complain = txtThanPhien.Text;
-                            string group = lkeBacSi.GetColumnValue("Account_ID").ToString();
-                            int doctor = Convert.ToInt32(group.ToString());
-                         //   BLL_Paraclinical.UpdateParaclinical(name, id, valueMin, valueMax, anotherName, unit, category, link, note, description, referenceValue, groupId);
+
+                            BLL_Human.InsertAccountPatient(name,image);
+                            int lastID = BLL_Human.GetLastIdAccount();
+                          //  BLL_Human.InsertHumanPatient(lastID,age,sex,email,phone,job,city,address);
+                          //  BLL_Human.InsertStatusPatient(complain, reason, lastID);
                             this.Close();
                         }
-                    }
             }
             catch (Exception ex)
             {
