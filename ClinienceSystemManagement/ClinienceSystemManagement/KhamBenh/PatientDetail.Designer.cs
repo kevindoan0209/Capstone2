@@ -36,10 +36,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rbNu = new System.Windows.Forms.RadioButton();
             this.rbNam = new System.Windows.Forms.RadioButton();
-            this.txtGhiChu = new DevExpress.XtraEditors.MemoEdit();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.txtDiaChi = new DevExpress.XtraEditors.TextEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.txtThanhPho = new DevExpress.XtraEditors.TextEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
@@ -65,11 +62,10 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.lbTrangThai = new DevExpress.XtraEditors.LabelControl();
+            this.txtDiaChi = new DevExpress.XtraEditors.MemoEdit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGhiChu.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtThanhPho.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNgheNghiep.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).BeginInit();
@@ -85,6 +81,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtThanPhien.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLyDo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // btnHuy
@@ -117,7 +114,7 @@
             this.panelControl1.Controls.Add(this.txtAnh);
             this.panelControl1.Controls.Add(this.btnLuu);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl1.Location = new System.Drawing.Point(0, 445);
+            this.panelControl1.Location = new System.Drawing.Point(0, 375);
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(834, 53);
             this.panelControl1.TabIndex = 7;
@@ -126,10 +123,8 @@
             // 
             this.groupBox1.Controls.Add(this.rbNu);
             this.groupBox1.Controls.Add(this.rbNam);
-            this.groupBox1.Controls.Add(this.txtGhiChu);
-            this.groupBox1.Controls.Add(this.labelControl9);
-            this.groupBox1.Controls.Add(this.labelControl8);
             this.groupBox1.Controls.Add(this.txtDiaChi);
+            this.groupBox1.Controls.Add(this.labelControl8);
             this.groupBox1.Controls.Add(this.labelControl7);
             this.groupBox1.Controls.Add(this.txtThanhPho);
             this.groupBox1.Controls.Add(this.labelControl6);
@@ -146,7 +141,7 @@
             this.groupBox1.Controls.Add(this.peAnh);
             this.groupBox1.Location = new System.Drawing.Point(23, 16);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(393, 410);
+            this.groupBox1.Size = new System.Drawing.Size(393, 346);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin chi tiết";
@@ -173,21 +168,6 @@
             this.rbNam.Text = "Nam";
             this.rbNam.UseVisualStyleBackColor = true;
             // 
-            // txtGhiChu
-            // 
-            this.txtGhiChu.Location = new System.Drawing.Point(15, 321);
-            this.txtGhiChu.Name = "txtGhiChu";
-            this.txtGhiChu.Size = new System.Drawing.Size(360, 73);
-            this.txtGhiChu.TabIndex = 21;
-            // 
-            // labelControl9
-            // 
-            this.labelControl9.Location = new System.Drawing.Point(15, 301);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(39, 13);
-            this.labelControl9.TabIndex = 20;
-            this.labelControl9.Text = "Ghi chú:";
-            // 
             // labelControl8
             // 
             this.labelControl8.Location = new System.Drawing.Point(15, 256);
@@ -195,13 +175,6 @@
             this.labelControl8.Size = new System.Drawing.Size(36, 13);
             this.labelControl8.TabIndex = 19;
             this.labelControl8.Text = "Địa chỉ:";
-            // 
-            // txtDiaChi
-            // 
-            this.txtDiaChi.Location = new System.Drawing.Point(15, 275);
-            this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(360, 20);
-            this.txtDiaChi.TabIndex = 18;
             // 
             // labelControl7
             // 
@@ -324,7 +297,7 @@
             this.groupBox2.Controls.Add(this.labelControl10);
             this.groupBox2.Location = new System.Drawing.Point(422, 16);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(393, 410);
+            this.groupBox2.Size = new System.Drawing.Size(393, 346);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tình trạng tiếp nhận";
@@ -349,7 +322,7 @@
             // 
             this.txtThanPhien.Location = new System.Drawing.Point(17, 217);
             this.txtThanPhien.Name = "txtThanPhien";
-            this.txtThanPhien.Size = new System.Drawing.Size(360, 177);
+            this.txtThanPhien.Size = new System.Drawing.Size(360, 110);
             this.txtThanPhien.TabIndex = 22;
             // 
             // labelControl11
@@ -386,11 +359,18 @@
             this.lbTrangThai.Size = new System.Drawing.Size(0, 15);
             this.lbTrangThai.TabIndex = 34;
             // 
+            // txtDiaChi
+            // 
+            this.txtDiaChi.Location = new System.Drawing.Point(15, 275);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(360, 52);
+            this.txtDiaChi.TabIndex = 21;
+            // 
             // PatientDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(834, 498);
+            this.ClientSize = new System.Drawing.Size(834, 428);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panelControl1);
@@ -404,8 +384,6 @@
             this.panelControl1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGhiChu.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtThanhPho.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNgheNghiep.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).EndInit();
@@ -422,6 +400,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtThanPhien.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLyDo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -438,10 +417,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.TextEdit txtTen;
-        private DevExpress.XtraEditors.MemoEdit txtGhiChu;
-        private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraEditors.TextEdit txtDiaChi;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.TextEdit txtThanhPho;
         private DevExpress.XtraEditors.LabelControl labelControl6;
@@ -463,5 +439,6 @@
         private DevExpress.XtraEditors.TextEdit txtAnh;
         private DevExpress.XtraEditors.TextEdit txtMa;
         private DevExpress.XtraEditors.LabelControl lbTrangThai;
+        private DevExpress.XtraEditors.MemoEdit txtDiaChi;
     }
 }

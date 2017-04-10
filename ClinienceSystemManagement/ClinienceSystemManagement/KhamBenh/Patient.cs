@@ -98,7 +98,21 @@ namespace ClinienceSystemManagement.KhamBenh
 
         private void cmsCapNhat_Click(object sender, EventArgs e)
         {
-
+            int rowIndex = gvDanhMuc.FocusedRowHandle;
+            string colID = "Account_ID";
+            object value = gvDanhMuc.GetRowCellValue(rowIndex, colID);
+            if (value != null)
+            {
+                PatientDetail pd = new PatientDetail();
+                pd.Id = (int)value;
+                pd.isAdd = false;
+                pd.ShowDialog();
+                sqlDataSource1.Fill();
+            }
+            else
+            {
+                XtraMessageBox.Show("Bạn chưa chọn đối tượng để cập nhật", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void cmsXoa_Click(object sender, EventArgs e)
@@ -121,8 +135,8 @@ namespace ClinienceSystemManagement.KhamBenh
                         {
                             dc.Accounts.DeleteOnSubmit(account);
                             dc.Humans.DeleteOnSubmit(human);
-                        //    dc.Patients.DeleteOnSubmit(patient);
-                          //  dc.PatientStatus.DeleteOnSubmit(patientstatus);
+                            dc.Patients.DeleteOnSubmit(patient);
+                            dc.PatientStatus.DeleteOnSubmit(patientstatus);
                             dc.SubmitChanges();
                             sqlDataSource1.Fill();
                             XtraMessageBox.Show("Đã xóa thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);

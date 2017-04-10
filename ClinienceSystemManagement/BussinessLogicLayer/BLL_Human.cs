@@ -68,7 +68,7 @@ namespace BussinessLogicLayer
             return _human.UpdateAccountPatient(id, name,image);
         }
 
-        public static int UpdateAccountPatientNoImage(int id, string name,string signature)
+        public static int UpdateAccountPatientNoImage(int id, string name)
         {
             return _human.UpdateAccountPatientNoImage(id, name);
         }
@@ -84,9 +84,9 @@ namespace BussinessLogicLayer
         {
             return _human.InsertStatusPatient(complain,issue,accountId);
         }
-        public static int UpdateStatusPatient(int id,string complain, string issue, int accountId)
+        public static int UpdateStatusPatient(int id,string complain, string issue)
         {
-            return _human.UpdateStatusPatient(id,complain, issue, accountId);
+            return _human.UpdateStatusPatient(id,complain, issue);
         }
     }
 }

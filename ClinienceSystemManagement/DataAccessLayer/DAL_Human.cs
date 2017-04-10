@@ -176,14 +176,13 @@ namespace DataAccessLayer
             return command.ExecuteNonQuery();
         }
 
-        public int UpdateStatusPatient(int id, string complain, string issue, int accountId)
+        public int UpdateStatusPatient(int id, string complain, string issue)
         {
-            const String sqlCommand = "Update PatientStatus set PatientStatus_Complain = @Complain, PatientStatus_Issue = @Issue , Account_ID = @AccountId  Where PatientStatus_ID = @Id";
+            const String sqlCommand = "Update PatientStatus set PatientStatus_Complain = @Complain, PatientStatus_Issue = @Issue Where Account_ID = @AccountId";
             SqlCommand command = new SqlCommand(sqlCommand, connect());
             command.Parameters.AddWithValue("@Id", id);
             command.Parameters.AddWithValue("@Complain", complain);
             command.Parameters.AddWithValue("@Issue", issue);
-            command.Parameters.AddWithValue("@AccountId", accountId);       
             return command.ExecuteNonQuery();
         }
 
