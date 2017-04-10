@@ -151,9 +151,18 @@
       <Column Name="Patient_Waist" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Patient_Hips" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Association Name="Patient_Appointment" Member="Appointments" ThisKey="Account_ID" OtherKey="Account_ID_Patient" Type="Appointment" />
+      <Association Name="Patient_PatientStatus" Member="PatientStatus" ThisKey="Account_ID" OtherKey="Account_ID" Type="PatientStatus" />
       <Association Name="Patient_Precription" Member="Precriptions" ThisKey="Account_ID" OtherKey="Account_ID_Patient" Type="Precription" />
-      <Association Name="Patient_Status" Member="Status" ThisKey="Account_ID" OtherKey="Account_ID" Type="Status" />
       <Association Name="Human_Patient" Member="Human" ThisKey="Account_ID" OtherKey="Account_ID" Type="Human" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PatientStatus" Member="PatientStatus">
+    <Type Name="PatientStatus">
+      <Column Name="PatientStatus_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PatientStatus_Complain" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="PatientStatus_Issue" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Account_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Patient_PatientStatus" Member="Patient" ThisKey="Account_ID" OtherKey="Account_ID" Type="Patient" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Precription" Member="Precriptions">
@@ -191,15 +200,6 @@
       <Column Name="Amount" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Association Name="Medicine_Precription_Medicine" Member="Medicine" ThisKey="Medicine_ID" OtherKey="Medicine_ID" Type="Medicine" IsForeignKey="true" />
       <Association Name="Precription_Precription_Medicine" Member="Precription" ThisKey="Precription_ID" OtherKey="Precription_ID" Type="Precription" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.Status" Member="Status">
-    <Type Name="Status">
-      <Column Name="Status_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="Status_Complain" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
-      <Column Name="Status_Issue" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
-      <Column Name="Account_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Association Name="Patient_Status" Member="Patient" ThisKey="Account_ID" OtherKey="Account_ID" Type="Patient" IsForeignKey="true" />
     </Type>
   </Table>
 </Database>

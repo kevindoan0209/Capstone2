@@ -63,6 +63,7 @@ namespace ClinienceSystemManagement.KhamBenh
             lbThanhPho.Text = "";
             lbTuoi.Text = "";
             peAnh.EditValue = "";
+            lbCongViec.Text = "";
         }
 
         private void grcDanhMuc_Click(object sender, EventArgs e)
@@ -86,6 +87,7 @@ namespace ClinienceSystemManagement.KhamBenh
                     lbThanhPho.Text = human.Account_City;
                     lbTuoi.Text = Convert.ToString(human.Account_Age);
                     peAnh.EditValue = account.Account_Image;
+                    lbCongViec.Text = human.Account_Job;
                 }
                 else
                 {
@@ -93,5 +95,53 @@ namespace ClinienceSystemManagement.KhamBenh
                 }
             }
         }
+
+        private void cmsCapNhat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmsXoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (XtraMessageBox.Show("Bạn có muốn xóa không?", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    int rowIndex = gvDanhMuc.FocusedRowHandle;
+                    string colID = "Account_ID";
+                    object value = gvDanhMuc.GetRowCellValue(rowIndex, colID);
+                    if (value != null)
+                    {
+                        DataClinienceDataContext dc = new DataClinienceDataContext();
+                        var account = dc.Accounts.Where(s => s.Account_ID == (int)value).SingleOrDefault();
+                        var human = dc.Humans.Where(s => s.Account_ID == (int)value).SingleOrDefault();
+                        var patient = dc.Patients.Where(s => s.Account_ID == (int)value).SingleOrDefault();
+                        var patientstatus = dc.PatientStatus.Where(s => s.Account_ID == (int)value).SingleOrDefault();
+                        if (account != null)
+                        {
+                            dc.Accounts.DeleteOnSubmit(account);
+                            dc.Humans.DeleteOnSubmit(human);
+                        //    dc.Patients.DeleteOnSubmit(patient);
+                          //  dc.PatientStatus.DeleteOnSubmit(patientstatus);
+                            dc.SubmitChanges();
+                            sqlDataSource1.Fill();
+                            XtraMessageBox.Show("Đã xóa thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+                    else
+                    {
+                        XtraMessageBox.Show("Bạn chưa chọn đối tượng cần xóa", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
+            catch (Exception)
+            {
+
+                XtraMessageBox.Show("Không được phép xóa đối tượng này, đối tượng đã được thêm ở một danh mục khác", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+
     }
 }

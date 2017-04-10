@@ -34,7 +34,7 @@
             this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rbNu = new System.Windows.Forms.RadioButton();
             this.rbNam = new System.Windows.Forms.RadioButton();
             this.txtGhiChu = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
@@ -64,6 +64,7 @@
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.lbTrangThai = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -110,6 +111,7 @@
             // 
             // panelControl1
             // 
+            this.panelControl1.Controls.Add(this.lbTrangThai);
             this.panelControl1.Controls.Add(this.txtMa);
             this.panelControl1.Controls.Add(this.btnHuy);
             this.panelControl1.Controls.Add(this.txtAnh);
@@ -122,7 +124,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton2);
+            this.groupBox1.Controls.Add(this.rbNu);
             this.groupBox1.Controls.Add(this.rbNam);
             this.groupBox1.Controls.Add(this.txtGhiChu);
             this.groupBox1.Controls.Add(this.labelControl9);
@@ -149,16 +151,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin chi tiết";
             // 
-            // radioButton2
+            // rbNu
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(287, 130);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(39, 17);
-            this.radioButton2.TabIndex = 23;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Nữ";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbNu.AutoSize = true;
+            this.rbNu.Location = new System.Drawing.Point(287, 130);
+            this.rbNu.Name = "rbNu";
+            this.rbNu.Size = new System.Drawing.Size(39, 17);
+            this.rbNu.TabIndex = 23;
+            this.rbNu.TabStop = true;
+            this.rbNu.Text = "Nữ";
+            this.rbNu.UseVisualStyleBackColor = true;
             // 
             // rbNam
             // 
@@ -263,7 +265,7 @@
             // 
             // dtNamSinh
             // 
-            this.dtNamSinh.EditValue = null;
+            this.dtNamSinh.EditValue = new System.DateTime(2017, 4, 10, 0, 0, 0, 0);
             this.dtNamSinh.Location = new System.Drawing.Point(175, 84);
             this.dtNamSinh.Name = "dtNamSinh";
             this.dtNamSinh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -373,6 +375,17 @@
             this.labelControl10.TabIndex = 22;
             this.labelControl10.Text = "Lý do khám:";
             // 
+            // lbTrangThai
+            // 
+            this.lbTrangThai.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lbTrangThai.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.lbTrangThai.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
+            this.lbTrangThai.LineStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.lbTrangThai.Location = new System.Drawing.Point(23, 19);
+            this.lbTrangThai.Name = "lbTrangThai";
+            this.lbTrangThai.Size = new System.Drawing.Size(0, 15);
+            this.lbTrangThai.TabIndex = 34;
+            // 
             // PatientDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -388,6 +401,7 @@
             this.Load += new System.EventHandler(this.PatientDetail_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
+            this.panelControl1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtGhiChu.Properties)).EndInit();
@@ -441,12 +455,13 @@
         private DevExpress.XtraEditors.MemoEdit txtLyDo;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rbNu;
         private System.Windows.Forms.RadioButton rbNam;
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.BindingSource bindingSource2;
         private System.Windows.Forms.Timer timer1;
         private DevExpress.XtraEditors.TextEdit txtAnh;
         private DevExpress.XtraEditors.TextEdit txtMa;
+        private DevExpress.XtraEditors.LabelControl lbTrangThai;
     }
 }

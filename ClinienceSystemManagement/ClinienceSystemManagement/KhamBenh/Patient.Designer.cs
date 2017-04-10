@@ -58,6 +58,8 @@
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression11 = new DevExpress.DataAccess.Sql.ColumnExpression();
             DevExpress.DataAccess.Sql.Join join1 = new DevExpress.DataAccess.Sql.Join();
             DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo1 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.lbCongViec = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.lbTuoi = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -81,6 +83,9 @@
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.btnLamMoi = new DevExpress.XtraEditors.SimpleButton();
             this.grcDanhMuc = new DevExpress.XtraGrid.GridControl();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.cmsCapNhat = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsXoa = new System.Windows.Forms.ToolStripMenuItem();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.gvDanhMuc = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colAccount_ID = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -94,11 +99,9 @@
             this.colAccount_Job = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colAccount_City = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colAccount_Address = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.cmsCapNhat = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsXoa = new System.Windows.Forms.ToolStripMenuItem();
             groupBox2 = new System.Windows.Forms.GroupBox();
             groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -114,12 +117,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grcDanhMuc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvDanhMuc)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvDanhMuc)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(this.pictureBox8);
+            groupBox2.Controls.Add(this.lbCongViec);
             groupBox2.Controls.Add(this.pictureBox7);
             groupBox2.Controls.Add(this.lbTuoi);
             groupBox2.Controls.Add(this.pictureBox6);
@@ -137,15 +142,32 @@
             groupBox2.Controls.Add(this.peAnh);
             groupBox2.Location = new System.Drawing.Point(14, 81);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new System.Drawing.Size(271, 273);
+            groupBox2.Size = new System.Drawing.Size(271, 415);
             groupBox2.TabIndex = 9;
             groupBox2.TabStop = false;
-            groupBox2.Text = "Thông tin";
+            groupBox2.Text = "Hồ sơ";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(17, 246);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(17, 17);
+            this.pictureBox8.TabIndex = 19;
+            this.pictureBox8.TabStop = false;
+            // 
+            // lbCongViec
+            // 
+            this.lbCongViec.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCongViec.Location = new System.Drawing.Point(40, 245);
+            this.lbCongViec.Name = "lbCongViec";
+            this.lbCongViec.Size = new System.Drawing.Size(0, 18);
+            this.lbCongViec.TabIndex = 18;
             // 
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(108, 98);
+            this.pictureBox7.Location = new System.Drawing.Point(17, 212);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(17, 17);
             this.pictureBox7.TabIndex = 17;
@@ -154,7 +176,7 @@
             // lbTuoi
             // 
             this.lbTuoi.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTuoi.Location = new System.Drawing.Point(131, 97);
+            this.lbTuoi.Location = new System.Drawing.Point(40, 211);
             this.lbTuoi.Name = "lbTuoi";
             this.lbTuoi.Size = new System.Drawing.Size(0, 18);
             this.lbTuoi.TabIndex = 16;
@@ -162,7 +184,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(13, 235);
+            this.pictureBox6.Location = new System.Drawing.Point(17, 385);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(17, 17);
             this.pictureBox6.TabIndex = 15;
@@ -171,7 +193,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(14, 165);
+            this.pictureBox5.Location = new System.Drawing.Point(18, 315);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(17, 17);
             this.pictureBox5.TabIndex = 14;
@@ -180,7 +202,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(108, 62);
+            this.pictureBox4.Location = new System.Drawing.Point(17, 177);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(17, 17);
             this.pictureBox4.TabIndex = 13;
@@ -189,7 +211,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(13, 199);
+            this.pictureBox3.Location = new System.Drawing.Point(17, 349);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(17, 17);
             this.pictureBox3.TabIndex = 12;
@@ -198,7 +220,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(13, 131);
+            this.pictureBox2.Location = new System.Drawing.Point(17, 281);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(17, 17);
             this.pictureBox2.TabIndex = 11;
@@ -207,7 +229,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(108, 25);
+            this.pictureBox1.Location = new System.Drawing.Point(17, 143);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(17, 17);
             this.pictureBox1.TabIndex = 10;
@@ -216,7 +238,7 @@
             // lbThanhPho
             // 
             this.lbThanhPho.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbThanhPho.Location = new System.Drawing.Point(39, 235);
+            this.lbThanhPho.Location = new System.Drawing.Point(43, 385);
             this.lbThanhPho.Name = "lbThanhPho";
             this.lbThanhPho.Size = new System.Drawing.Size(0, 18);
             this.lbThanhPho.TabIndex = 9;
@@ -224,7 +246,7 @@
             // lbEmail
             // 
             this.lbEmail.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEmail.Location = new System.Drawing.Point(39, 164);
+            this.lbEmail.Location = new System.Drawing.Point(43, 314);
             this.lbEmail.Name = "lbEmail";
             this.lbEmail.Size = new System.Drawing.Size(0, 18);
             this.lbEmail.TabIndex = 8;
@@ -232,7 +254,7 @@
             // lbSoDienThoai
             // 
             this.lbSoDienThoai.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSoDienThoai.Location = new System.Drawing.Point(38, 129);
+            this.lbSoDienThoai.Location = new System.Drawing.Point(42, 279);
             this.lbSoDienThoai.Name = "lbSoDienThoai";
             this.lbSoDienThoai.Size = new System.Drawing.Size(0, 18);
             this.lbSoDienThoai.TabIndex = 7;
@@ -240,7 +262,7 @@
             // lbDiaChi
             // 
             this.lbDiaChi.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDiaChi.Location = new System.Drawing.Point(39, 198);
+            this.lbDiaChi.Location = new System.Drawing.Point(43, 348);
             this.lbDiaChi.Name = "lbDiaChi";
             this.lbDiaChi.Size = new System.Drawing.Size(0, 18);
             this.lbDiaChi.TabIndex = 6;
@@ -248,7 +270,7 @@
             // lbGioiTinh
             // 
             this.lbGioiTinh.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbGioiTinh.Location = new System.Drawing.Point(131, 61);
+            this.lbGioiTinh.Location = new System.Drawing.Point(40, 175);
             this.lbGioiTinh.Name = "lbGioiTinh";
             this.lbGioiTinh.Size = new System.Drawing.Size(0, 18);
             this.lbGioiTinh.TabIndex = 5;
@@ -256,7 +278,7 @@
             // lbTen
             // 
             this.lbTen.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTen.Location = new System.Drawing.Point(132, 25);
+            this.lbTen.Location = new System.Drawing.Point(41, 142);
             this.lbTen.Name = "lbTen";
             this.lbTen.Size = new System.Drawing.Size(0, 18);
             this.lbTen.TabIndex = 4;
@@ -264,11 +286,11 @@
             // peAnh
             // 
             this.peAnh.EditValue = ((object)(resources.GetObject("peAnh.EditValue")));
-            this.peAnh.Location = new System.Drawing.Point(10, 25);
+            this.peAnh.Location = new System.Drawing.Point(13, 23);
             this.peAnh.Name = "peAnh";
             this.peAnh.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.peAnh.Properties.ZoomAccelerationFactor = 1D;
-            this.peAnh.Size = new System.Drawing.Size(90, 90);
+            this.peAnh.Size = new System.Drawing.Size(110, 110);
             this.peAnh.TabIndex = 3;
             // 
             // btnTiepNhan
@@ -289,7 +311,7 @@
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(299, 445);
+            this.panelControl1.Size = new System.Drawing.Size(299, 506);
             this.panelControl1.TabIndex = 0;
             // 
             // groupBox1
@@ -324,9 +346,9 @@
             this.panelControl2.Controls.Add(this.simpleButton2);
             this.panelControl2.Controls.Add(this.btnLamMoi);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl2.Location = new System.Drawing.Point(299, 396);
+            this.panelControl2.Location = new System.Drawing.Point(299, 457);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(476, 49);
+            this.panelControl2.Size = new System.Drawing.Size(510, 49);
             this.panelControl2.TabIndex = 1;
             // 
             // simpleButton2
@@ -334,7 +356,7 @@
             this.simpleButton2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.simpleButton2.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(322, 11);
+            this.simpleButton2.Location = new System.Drawing.Point(356, 11);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(142, 28);
             this.simpleButton2.TabIndex = 5;
@@ -353,6 +375,7 @@
             // 
             // grcDanhMuc
             // 
+            this.grcDanhMuc.ContextMenuStrip = this.contextMenuStrip1;
             this.grcDanhMuc.DataMember = "Account";
             this.grcDanhMuc.DataSource = this.sqlDataSource1;
             this.grcDanhMuc.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -364,12 +387,36 @@
             this.grcDanhMuc.Location = new System.Drawing.Point(299, 0);
             this.grcDanhMuc.MainView = this.gvDanhMuc;
             this.grcDanhMuc.Name = "grcDanhMuc";
-            this.grcDanhMuc.Size = new System.Drawing.Size(476, 396);
+            this.grcDanhMuc.Size = new System.Drawing.Size(510, 457);
             this.grcDanhMuc.TabIndex = 2;
             this.grcDanhMuc.UseEmbeddedNavigator = true;
             this.grcDanhMuc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvDanhMuc});
             this.grcDanhMuc.Click += new System.EventHandler(this.grcDanhMuc_Click);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cmsCapNhat,
+            this.cmsXoa});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(123, 48);
+            // 
+            // cmsCapNhat
+            // 
+            this.cmsCapNhat.BackColor = System.Drawing.SystemColors.Control;
+            this.cmsCapNhat.Name = "cmsCapNhat";
+            this.cmsCapNhat.Size = new System.Drawing.Size(122, 22);
+            this.cmsCapNhat.Text = "Cập nhật";
+            this.cmsCapNhat.Click += new System.EventHandler(this.cmsCapNhat_Click);
+            // 
+            // cmsXoa
+            // 
+            this.cmsXoa.BackColor = System.Drawing.SystemColors.Control;
+            this.cmsXoa.Name = "cmsXoa";
+            this.cmsXoa.Size = new System.Drawing.Size(122, 22);
+            this.cmsXoa.Text = "Xóa";
+            this.cmsXoa.Click += new System.EventHandler(this.cmsXoa_Click);
             // 
             // sqlDataSource1
             // 
@@ -538,33 +585,11 @@
             this.colAccount_Address.VisibleIndex = 4;
             this.colAccount_Address.Width = 124;
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cmsCapNhat,
-            this.cmsXoa});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(123, 48);
-            // 
-            // cmsCapNhat
-            // 
-            this.cmsCapNhat.BackColor = System.Drawing.SystemColors.Control;
-            this.cmsCapNhat.Name = "cmsCapNhat";
-            this.cmsCapNhat.Size = new System.Drawing.Size(122, 22);
-            this.cmsCapNhat.Text = "Cập nhật";
-            // 
-            // cmsXoa
-            // 
-            this.cmsXoa.BackColor = System.Drawing.SystemColors.Control;
-            this.cmsXoa.Name = "cmsXoa";
-            this.cmsXoa.Size = new System.Drawing.Size(122, 22);
-            this.cmsXoa.Text = "Xóa";
-            // 
             // Patient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(775, 445);
+            this.ClientSize = new System.Drawing.Size(809, 506);
             this.Controls.Add(this.grcDanhMuc);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panelControl1);
@@ -573,6 +598,7 @@
             this.Text = "Bệnh nhân";
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -588,8 +614,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grcDanhMuc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvDanhMuc)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvDanhMuc)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -635,5 +661,7 @@
         private DevExpress.XtraEditors.LabelControl lbTen;
         private System.Windows.Forms.PictureBox pictureBox7;
         private DevExpress.XtraEditors.LabelControl lbTuoi;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private DevExpress.XtraEditors.LabelControl lbCongViec;
     }
 }
