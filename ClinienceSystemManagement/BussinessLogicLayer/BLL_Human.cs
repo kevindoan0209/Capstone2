@@ -47,5 +47,46 @@ namespace BussinessLogicLayer
         {
             return _human.Select_CheckUserNameSoftware(username);
         }
+
+        public static int GetLastIdAccount()
+        {
+            return _human.GetLastIdAccount();
+        }
+
+        public static int InsertAccountPatient(string name,string image)
+        {
+            return _human.InsertAccountPatient(name,image);
+        }
+
+        public static int InsertAccountPatientNoImage(string name)
+        {
+            return _human.InsertAccountPatientNoImage(name);
+        }
+
+        public static int UpdateAccountPatient(int id, string name,string image)
+        {
+            return _human.UpdateAccountPatient(id, name,image);
+        }
+
+        public static int UpdateAccountPatientNoImage(int id, string name,string signature)
+        {
+            return _human.UpdateAccountPatientNoImage(id, name);
+        }
+        public static int InsertHumanPatient(int id, DateTime age, string sex, string email, string phone, string job, string city, string address )
+        {
+            return _human.InsertHumanPatient(id,age,sex,email,phone,job,city,address);
+        }
+        public static int UpdateHumanPatient(int id, DateTime age, string sex, string email, string phone, string job, string city, string address)
+        {
+            return _human.UpdateHumanPatient(id, age, sex, email, phone, job, city, address);
+        }
+        public static int InsertStatusPatient(string complain, string issue, int accountId)
+        {
+            return _human.InsertStatusPatient(complain,issue,accountId);
+        }
+        public static int UpdateStatusPatient(int id,string complain, string issue, int accountId)
+        {
+            return _human.UpdateStatusPatient(id,complain, issue, accountId);
+        }
     }
 }

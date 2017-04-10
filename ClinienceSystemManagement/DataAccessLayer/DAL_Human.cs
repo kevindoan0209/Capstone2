@@ -102,6 +102,91 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@Password", password);
             return command.ExecuteNonQuery();
         }
+
+        public int InsertAccountPatient(string name,string image)
+        {
+            const String sqlCommand = "Insert into Account (Account_Name,Account_Image) Values(@Name, @Image)";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@Name", name);
+            command.Parameters.AddWithValue("@Image", convertImagetoByte(image));
+            return command.ExecuteNonQuery();
+        }
+        public int InsertAccountPatientNoImage(string name)
+        {
+            const String sqlCommand = "Insert into Account (Account_Name) Values(@Name)";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@Name", name);
+            return command.ExecuteNonQuery();
+        }
+
+        public int UpdateAccountPatient(int id, string name,string image)
+        {
+            const String sqlCommand = "Update Account set Account_Name = @Name,Account_Image = @Image Where Account_ID = @Id";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@Id", id);
+            command.Parameters.AddWithValue("@Name", name);
+            command.Parameters.AddWithValue("@Image", convertImagetoByte(image));
+            return command.ExecuteNonQuery();
+        }
+
+        public int UpdateAccountPatientNoImage(int id, string name)
+        {
+            const String sqlCommand = "Update Account set Account_Name = @Name Where Account_ID = @Id";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@Id", id);
+            command.Parameters.AddWithValue("@Name", name);
+            return command.ExecuteNonQuery();
+        }
+        public int InsertHumanPatient(int id, DateTime age, string sex, string email, string phone, string job, string city, string address)
+        {
+            const String sqlCommand = "Insert into Human (Account_ID,Account_Age,Account_Sex,Account_Email,Account_Phone,Account_Job,Account_City,Account_Address) Values(@Id, @Age, @Sex, @Email, @Phone, @Job, @City, @Address)";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@Id", id);
+            command.Parameters.AddWithValue("@Age", age);
+            command.Parameters.AddWithValue("@Sex", sex);
+            command.Parameters.AddWithValue("@Email", email);
+            command.Parameters.AddWithValue("@Phone", phone);
+            command.Parameters.AddWithValue("@Job", job);
+            command.Parameters.AddWithValue("@City", city);
+            command.Parameters.AddWithValue("@Address", address);
+            return command.ExecuteNonQuery();
+        }
+        public int UpdateHumanPatient(int id, DateTime age, string sex, string email, string phone, string job, string city, string address)
+        {
+            const String sqlCommand = "Update Human set Account_Age = @Age, Account_Sex = @Sex, Account_Email = @Email, Account_Phone = @Phone, Account_Job = @Job, Account_City = @City, Account_Address = @Address Where Account_ID = @Id";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@Id", id);
+            command.Parameters.AddWithValue("@Age", age);
+            command.Parameters.AddWithValue("@Sex", sex);
+            command.Parameters.AddWithValue("@Email", email);
+            command.Parameters.AddWithValue("@Phone", phone);
+            command.Parameters.AddWithValue("@Job", job);
+            command.Parameters.AddWithValue("@City", city);
+            command.Parameters.AddWithValue("@Address", address);
+            return command.ExecuteNonQuery();
+        }
+
+        public int InsertStatusPatient(string complain, string issue, int accountId)
+        {
+            const String sqlCommand = "Insert into PatientStatus (PatientStatus_Complain,PatientStatus_Issue,Account_ID) Values(@Complain, @Issue, @AccountId)";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@Complain", complain);
+            command.Parameters.AddWithValue("@Issue", issue);
+            command.Parameters.AddWithValue("@AccountId", accountId);
+            return command.ExecuteNonQuery();
+        }
+
+        public int UpdateStatusPatient(int id, string complain, string issue, int accountId)
+        {
+            const String sqlCommand = "Update PatientStatus set PatientStatus_Complain = @Complain, PatientStatus_Issue = @Issue , Account_ID = @AccountId  Where PatientStatus_ID = @Id";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@Id", id);
+            command.Parameters.AddWithValue("@Complain", complain);
+            command.Parameters.AddWithValue("@Issue", issue);
+            command.Parameters.AddWithValue("@AccountId", accountId);       
+            return command.ExecuteNonQuery();
+        }
+
         private byte[] convertImagetoByte(String image)
         {
             FileStream fs;
@@ -110,6 +195,14 @@ namespace DataAccessLayer
             fs.Read(picbyte, 0, System.Convert.ToInt32(fs.Length));
             fs.Close();
             return picbyte;
+        }
+
+        public int GetLastIdAccount()
+        {
+            const String sqlCommand = "SELECT IDENT_CURRENT('Account') as LastID";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            int temp = int.Parse(command.ExecuteScalar().ToString());
+            return temp;
         }
     }
 }

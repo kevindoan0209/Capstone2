@@ -31,33 +31,35 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.GroupBox groupBox2;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Patient));
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery3 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column23 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression23 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table5 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column24 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression24 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column25 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression25 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column26 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression26 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column27 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression27 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table6 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column28 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression28 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column29 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression29 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column30 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression30 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column31 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression31 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column32 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression32 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column33 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression33 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Join join3 = new DevExpress.DataAccess.Sql.Join();
-            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo3 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table1 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column2 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression2 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column3 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression3 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column4 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression4 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column5 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression5 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table2 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column6 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression6 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column7 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression7 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column8 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression8 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column9 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression9 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column10 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression10 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column11 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression11 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Join join1 = new DevExpress.DataAccess.Sql.Join();
+            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo1 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.lbTuoi = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -95,10 +97,9 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.cmsCapNhat = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsXoa = new System.Windows.Forms.ToolStripMenuItem();
-            this.lbTuoi = new DevExpress.XtraEditors.LabelControl();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             groupBox2 = new System.Windows.Forms.GroupBox();
             groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -115,7 +116,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.grcDanhMuc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvDanhMuc)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -135,17 +135,34 @@
             groupBox2.Controls.Add(this.lbGioiTinh);
             groupBox2.Controls.Add(this.lbTen);
             groupBox2.Controls.Add(this.peAnh);
-            groupBox2.Location = new System.Drawing.Point(14, 80);
+            groupBox2.Location = new System.Drawing.Point(14, 81);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new System.Drawing.Size(271, 273);
             groupBox2.TabIndex = 9;
             groupBox2.TabStop = false;
             groupBox2.Text = "Thông tin";
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(108, 98);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(17, 17);
+            this.pictureBox7.TabIndex = 17;
+            this.pictureBox7.TabStop = false;
+            // 
+            // lbTuoi
+            // 
+            this.lbTuoi.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTuoi.Location = new System.Drawing.Point(131, 97);
+            this.lbTuoi.Name = "lbTuoi";
+            this.lbTuoi.Size = new System.Drawing.Size(0, 18);
+            this.lbTuoi.TabIndex = 16;
+            // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(13, 231);
+            this.pictureBox6.Location = new System.Drawing.Point(13, 235);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(17, 17);
             this.pictureBox6.TabIndex = 15;
@@ -154,7 +171,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(14, 161);
+            this.pictureBox5.Location = new System.Drawing.Point(14, 165);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(17, 17);
             this.pictureBox5.TabIndex = 14;
@@ -163,7 +180,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(108, 60);
+            this.pictureBox4.Location = new System.Drawing.Point(108, 62);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(17, 17);
             this.pictureBox4.TabIndex = 13;
@@ -172,7 +189,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(13, 195);
+            this.pictureBox3.Location = new System.Drawing.Point(13, 199);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(17, 17);
             this.pictureBox3.TabIndex = 12;
@@ -181,7 +198,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(13, 127);
+            this.pictureBox2.Location = new System.Drawing.Point(13, 131);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(17, 17);
             this.pictureBox2.TabIndex = 11;
@@ -190,7 +207,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(108, 23);
+            this.pictureBox1.Location = new System.Drawing.Point(108, 25);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(17, 17);
             this.pictureBox1.TabIndex = 10;
@@ -198,62 +215,56 @@
             // 
             // lbThanhPho
             // 
-            this.lbThanhPho.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbThanhPho.Location = new System.Drawing.Point(37, 232);
+            this.lbThanhPho.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbThanhPho.Location = new System.Drawing.Point(39, 235);
             this.lbThanhPho.Name = "lbThanhPho";
-            this.lbThanhPho.Size = new System.Drawing.Size(75, 16);
+            this.lbThanhPho.Size = new System.Drawing.Size(0, 18);
             this.lbThanhPho.TabIndex = 9;
-            this.lbThanhPho.Text = "labelControl6";
             // 
             // lbEmail
             // 
-            this.lbEmail.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEmail.Location = new System.Drawing.Point(37, 161);
+            this.lbEmail.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEmail.Location = new System.Drawing.Point(39, 164);
             this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(75, 16);
+            this.lbEmail.Size = new System.Drawing.Size(0, 18);
             this.lbEmail.TabIndex = 8;
-            this.lbEmail.Text = "labelControl5";
             // 
             // lbSoDienThoai
             // 
-            this.lbSoDienThoai.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSoDienThoai.Location = new System.Drawing.Point(37, 128);
+            this.lbSoDienThoai.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSoDienThoai.Location = new System.Drawing.Point(38, 129);
             this.lbSoDienThoai.Name = "lbSoDienThoai";
-            this.lbSoDienThoai.Size = new System.Drawing.Size(75, 16);
+            this.lbSoDienThoai.Size = new System.Drawing.Size(0, 18);
             this.lbSoDienThoai.TabIndex = 7;
-            this.lbSoDienThoai.Text = "labelControl4";
             // 
             // lbDiaChi
             // 
-            this.lbDiaChi.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDiaChi.Location = new System.Drawing.Point(37, 195);
+            this.lbDiaChi.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDiaChi.Location = new System.Drawing.Point(39, 198);
             this.lbDiaChi.Name = "lbDiaChi";
-            this.lbDiaChi.Size = new System.Drawing.Size(75, 16);
+            this.lbDiaChi.Size = new System.Drawing.Size(0, 18);
             this.lbDiaChi.TabIndex = 6;
-            this.lbDiaChi.Text = "labelControl3";
             // 
             // lbGioiTinh
             // 
-            this.lbGioiTinh.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbGioiTinh.Location = new System.Drawing.Point(132, 61);
+            this.lbGioiTinh.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGioiTinh.Location = new System.Drawing.Point(131, 61);
             this.lbGioiTinh.Name = "lbGioiTinh";
-            this.lbGioiTinh.Size = new System.Drawing.Size(75, 16);
+            this.lbGioiTinh.Size = new System.Drawing.Size(0, 18);
             this.lbGioiTinh.TabIndex = 5;
-            this.lbGioiTinh.Text = "labelControl2";
             // 
             // lbTen
             // 
-            this.lbTen.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTen.Location = new System.Drawing.Point(132, 23);
+            this.lbTen.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTen.Location = new System.Drawing.Point(132, 25);
             this.lbTen.Name = "lbTen";
-            this.lbTen.Size = new System.Drawing.Size(76, 16);
+            this.lbTen.Size = new System.Drawing.Size(0, 18);
             this.lbTen.TabIndex = 4;
-            this.lbTen.Text = "labelControl1";
             // 
             // peAnh
             // 
             this.peAnh.EditValue = ((object)(resources.GetObject("peAnh.EditValue")));
-            this.peAnh.Location = new System.Drawing.Point(10, 23);
+            this.peAnh.Location = new System.Drawing.Point(10, 25);
             this.peAnh.Name = "peAnh";
             this.peAnh.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.peAnh.Properties.ZoomAccelerationFactor = 1D;
@@ -364,67 +375,67 @@
             // 
             this.sqlDataSource1.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            columnExpression23.ColumnName = "Account_ID";
-            table5.MetaSerializable = "0|0|125|180";
-            table5.Name = "Account";
-            columnExpression23.Table = table5;
-            column23.Expression = columnExpression23;
-            columnExpression24.ColumnName = "Account_Name";
-            columnExpression24.Table = table5;
-            column24.Expression = columnExpression24;
-            columnExpression25.ColumnName = "Account_Image";
-            columnExpression25.Table = table5;
-            column25.Expression = columnExpression25;
-            columnExpression26.ColumnName = "Account_Type_ID";
-            columnExpression26.Table = table5;
-            column26.Expression = columnExpression26;
-            columnExpression27.ColumnName = "Account_Age";
-            table6.MetaSerializable = "0|0|125|200";
-            table6.Name = "Human";
-            columnExpression27.Table = table6;
-            column27.Expression = columnExpression27;
-            columnExpression28.ColumnName = "Account_Sex";
-            columnExpression28.Table = table6;
-            column28.Expression = columnExpression28;
-            columnExpression29.ColumnName = "Account_Email";
-            columnExpression29.Table = table6;
-            column29.Expression = columnExpression29;
-            columnExpression30.ColumnName = "Account_Phone";
-            columnExpression30.Table = table6;
-            column30.Expression = columnExpression30;
-            columnExpression31.ColumnName = "Account_Job";
-            columnExpression31.Table = table6;
-            column31.Expression = columnExpression31;
-            columnExpression32.ColumnName = "Account_City";
-            columnExpression32.Table = table6;
-            column32.Expression = columnExpression32;
-            columnExpression33.ColumnName = "Account_Address";
-            columnExpression33.Table = table6;
-            column33.Expression = columnExpression33;
-            selectQuery3.Columns.Add(column23);
-            selectQuery3.Columns.Add(column24);
-            selectQuery3.Columns.Add(column25);
-            selectQuery3.Columns.Add(column26);
-            selectQuery3.Columns.Add(column27);
-            selectQuery3.Columns.Add(column28);
-            selectQuery3.Columns.Add(column29);
-            selectQuery3.Columns.Add(column30);
-            selectQuery3.Columns.Add(column31);
-            selectQuery3.Columns.Add(column32);
-            selectQuery3.Columns.Add(column33);
-            selectQuery3.FilterString = "[Account.Account_Type_ID] = 5";
-            selectQuery3.GroupFilterString = "";
-            selectQuery3.Name = "Account";
-            relationColumnInfo3.NestedKeyColumn = "Account_ID";
-            relationColumnInfo3.ParentKeyColumn = "Account_ID";
-            join3.KeyColumns.Add(relationColumnInfo3);
-            join3.Nested = table6;
-            join3.Parent = table5;
-            selectQuery3.Relations.Add(join3);
-            selectQuery3.Tables.Add(table5);
-            selectQuery3.Tables.Add(table6);
+            columnExpression1.ColumnName = "Account_ID";
+            table1.MetaSerializable = "0|0|125|180";
+            table1.Name = "Account";
+            columnExpression1.Table = table1;
+            column1.Expression = columnExpression1;
+            columnExpression2.ColumnName = "Account_Name";
+            columnExpression2.Table = table1;
+            column2.Expression = columnExpression2;
+            columnExpression3.ColumnName = "Account_Image";
+            columnExpression3.Table = table1;
+            column3.Expression = columnExpression3;
+            columnExpression4.ColumnName = "Account_Type_ID";
+            columnExpression4.Table = table1;
+            column4.Expression = columnExpression4;
+            columnExpression5.ColumnName = "Account_Age";
+            table2.MetaSerializable = "0|0|125|200";
+            table2.Name = "Human";
+            columnExpression5.Table = table2;
+            column5.Expression = columnExpression5;
+            columnExpression6.ColumnName = "Account_Sex";
+            columnExpression6.Table = table2;
+            column6.Expression = columnExpression6;
+            columnExpression7.ColumnName = "Account_Email";
+            columnExpression7.Table = table2;
+            column7.Expression = columnExpression7;
+            columnExpression8.ColumnName = "Account_Phone";
+            columnExpression8.Table = table2;
+            column8.Expression = columnExpression8;
+            columnExpression9.ColumnName = "Account_Job";
+            columnExpression9.Table = table2;
+            column9.Expression = columnExpression9;
+            columnExpression10.ColumnName = "Account_City";
+            columnExpression10.Table = table2;
+            column10.Expression = columnExpression10;
+            columnExpression11.ColumnName = "Account_Address";
+            columnExpression11.Table = table2;
+            column11.Expression = columnExpression11;
+            selectQuery1.Columns.Add(column1);
+            selectQuery1.Columns.Add(column2);
+            selectQuery1.Columns.Add(column3);
+            selectQuery1.Columns.Add(column4);
+            selectQuery1.Columns.Add(column5);
+            selectQuery1.Columns.Add(column6);
+            selectQuery1.Columns.Add(column7);
+            selectQuery1.Columns.Add(column8);
+            selectQuery1.Columns.Add(column9);
+            selectQuery1.Columns.Add(column10);
+            selectQuery1.Columns.Add(column11);
+            selectQuery1.FilterString = "[Account.Account_Type_ID] = 5";
+            selectQuery1.GroupFilterString = "";
+            selectQuery1.Name = "Account";
+            relationColumnInfo1.NestedKeyColumn = "Account_ID";
+            relationColumnInfo1.ParentKeyColumn = "Account_ID";
+            join1.KeyColumns.Add(relationColumnInfo1);
+            join1.Nested = table2;
+            join1.Parent = table1;
+            selectQuery1.Relations.Add(join1);
+            selectQuery1.Tables.Add(table1);
+            selectQuery1.Tables.Add(table2);
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery3});
+            selectQuery1});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // gvDanhMuc
@@ -460,7 +471,7 @@
             this.colAccount_Name.Name = "colAccount_Name";
             this.colAccount_Name.Visible = true;
             this.colAccount_Name.VisibleIndex = 0;
-            this.colAccount_Name.Width = 103;
+            this.colAccount_Name.Width = 95;
             // 
             // colAccount_Image
             // 
@@ -479,7 +490,7 @@
             this.colAccount_Age.Name = "colAccount_Age";
             this.colAccount_Age.Visible = true;
             this.colAccount_Age.VisibleIndex = 1;
-            this.colAccount_Age.Width = 50;
+            this.colAccount_Age.Width = 48;
             // 
             // colAccount_Sex
             // 
@@ -488,7 +499,7 @@
             this.colAccount_Sex.Name = "colAccount_Sex";
             this.colAccount_Sex.Visible = true;
             this.colAccount_Sex.VisibleIndex = 2;
-            this.colAccount_Sex.Width = 59;
+            this.colAccount_Sex.Width = 43;
             // 
             // colAccount_Email
             // 
@@ -502,7 +513,7 @@
             this.colAccount_Phone.Name = "colAccount_Phone";
             this.colAccount_Phone.Visible = true;
             this.colAccount_Phone.VisibleIndex = 3;
-            this.colAccount_Phone.Width = 62;
+            this.colAccount_Phone.Width = 66;
             // 
             // colAccount_Job
             // 
@@ -511,7 +522,7 @@
             this.colAccount_Job.Name = "colAccount_Job";
             this.colAccount_Job.Visible = true;
             this.colAccount_Job.VisibleIndex = 5;
-            this.colAccount_Job.Width = 68;
+            this.colAccount_Job.Width = 82;
             // 
             // colAccount_City
             // 
@@ -525,7 +536,7 @@
             this.colAccount_Address.Name = "colAccount_Address";
             this.colAccount_Address.Visible = true;
             this.colAccount_Address.VisibleIndex = 4;
-            this.colAccount_Address.Width = 116;
+            this.colAccount_Address.Width = 124;
             // 
             // contextMenuStrip1
             // 
@@ -549,24 +560,6 @@
             this.cmsXoa.Size = new System.Drawing.Size(122, 22);
             this.cmsXoa.Text = "Xóa";
             // 
-            // lbTuoi
-            // 
-            this.lbTuoi.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTuoi.Location = new System.Drawing.Point(132, 97);
-            this.lbTuoi.Name = "lbTuoi";
-            this.lbTuoi.Size = new System.Drawing.Size(75, 16);
-            this.lbTuoi.TabIndex = 16;
-            this.lbTuoi.Text = "labelControl7";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(108, 96);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(17, 17);
-            this.pictureBox7.TabIndex = 17;
-            this.pictureBox7.TabStop = false;
-            // 
             // Patient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -580,6 +573,7 @@
             this.Text = "Bệnh nhân";
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -596,7 +590,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.grcDanhMuc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvDanhMuc)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
 
         }

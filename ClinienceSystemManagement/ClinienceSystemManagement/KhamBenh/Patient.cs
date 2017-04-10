@@ -50,7 +50,19 @@ namespace ClinienceSystemManagement.KhamBenh
 
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
+            ResetFillData();
             sqlDataSource1.Fill();
+        }
+        private void ResetFillData()
+        {
+            lbTen.Text = "";
+            lbDiaChi.Text = "";
+            lbEmail.Text = "";
+            lbGioiTinh.Text = "";
+            lbSoDienThoai.Text = "";
+            lbThanhPho.Text = "";
+            lbTuoi.Text = "";
+            peAnh.EditValue = "";
         }
 
         private void grcDanhMuc_Click(object sender, EventArgs e)
@@ -68,11 +80,12 @@ namespace ClinienceSystemManagement.KhamBenh
                 {
                     lbTen.Text = account.Account_Name;
                     lbDiaChi.Text = human.Account_Address;
-                    lbEmail.Text = human.Account_Address;
+                    lbEmail.Text = human.Account_Email;
                     lbGioiTinh.Text = human.Account_Sex;
                     lbSoDienThoai.Text = human.Account_Phone;
                     lbThanhPho.Text = human.Account_City;
                     lbTuoi.Text = Convert.ToString(human.Account_Age);
+                    peAnh.EditValue = account.Account_Image;
                 }
                 else
                 {
