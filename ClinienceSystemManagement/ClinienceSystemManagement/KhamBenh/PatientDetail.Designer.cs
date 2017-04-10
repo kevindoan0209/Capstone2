@@ -55,21 +55,17 @@
             this.txtTen = new DevExpress.XtraEditors.TextEdit();
             this.peAnh = new DevExpress.XtraEditors.PictureEdit();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
-            this.dtGioKham = new DevExpress.XtraEditors.TimeEdit();
-            this.dtNgayKham = new DevExpress.XtraEditors.DateEdit();
             this.lkeBacSi = new DevExpress.XtraEditors.LookUpEdit();
+            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.txtThanPhien = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.txtLyDo = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.txtAnh = new DevExpress.XtraEditors.TextEdit();
             this.txtMa = new DevExpress.XtraEditors.TextEdit();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -84,16 +80,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtTen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.peAnh.Properties)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtGioKham.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtNgayKham.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtNgayKham.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lkeBacSi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtThanPhien.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLyDo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAnh.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMa.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnHuy
@@ -317,6 +310,7 @@
             this.peAnh.Location = new System.Drawing.Point(15, 20);
             this.peAnh.Name = "peAnh";
             this.peAnh.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.peAnh.Properties.ZoomAccelerationFactor = 1D;
             this.peAnh.Size = new System.Drawing.Size(140, 130);
             this.peAnh.TabIndex = 0;
             this.peAnh.Click += new System.EventHandler(this.peAnh_Click);
@@ -325,10 +319,6 @@
             // 
             this.groupBox2.Controls.Add(this.txtMa);
             this.groupBox2.Controls.Add(this.txtAnh);
-            this.groupBox2.Controls.Add(this.labelControl14);
-            this.groupBox2.Controls.Add(this.labelControl13);
-            this.groupBox2.Controls.Add(this.dtGioKham);
-            this.groupBox2.Controls.Add(this.dtNgayKham);
             this.groupBox2.Controls.Add(this.lkeBacSi);
             this.groupBox2.Controls.Add(this.labelControl12);
             this.groupBox2.Controls.Add(this.txtThanPhien);
@@ -342,48 +332,9 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tình trạng tiếp nhận";
             // 
-            // labelControl14
-            // 
-            this.labelControl14.Location = new System.Drawing.Point(168, 355);
-            this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(47, 13);
-            this.labelControl14.TabIndex = 30;
-            this.labelControl14.Text = "Giờ khám:";
-            // 
-            // labelControl13
-            // 
-            this.labelControl13.Location = new System.Drawing.Point(17, 355);
-            this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(57, 13);
-            this.labelControl13.TabIndex = 29;
-            this.labelControl13.Text = "Ngày khám:";
-            // 
-            // dtGioKham
-            // 
-            this.dtGioKham.EditValue = new System.DateTime(2017, 3, 30, 0, 0, 0, 0);
-            this.dtGioKham.Location = new System.Drawing.Point(168, 374);
-            this.dtGioKham.Name = "dtGioKham";
-            this.dtGioKham.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtGioKham.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.TouchUI;
-            this.dtGioKham.Size = new System.Drawing.Size(117, 20);
-            this.dtGioKham.TabIndex = 28;
-            // 
-            // dtNgayKham
-            // 
-            this.dtNgayKham.EditValue = null;
-            this.dtNgayKham.Location = new System.Drawing.Point(17, 374);
-            this.dtNgayKham.Name = "dtNgayKham";
-            this.dtNgayKham.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtNgayKham.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtNgayKham.Size = new System.Drawing.Size(117, 20);
-            this.dtNgayKham.TabIndex = 27;
-            // 
             // lkeBacSi
             // 
-            this.lkeBacSi.Location = new System.Drawing.Point(17, 329);
+            this.lkeBacSi.Location = new System.Drawing.Point(18, 374);
             this.lkeBacSi.Name = "lkeBacSi";
             this.lkeBacSi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -400,7 +351,7 @@
             // 
             // labelControl12
             // 
-            this.labelControl12.Location = new System.Drawing.Point(17, 310);
+            this.labelControl12.Location = new System.Drawing.Point(18, 355);
             this.labelControl12.Name = "labelControl12";
             this.labelControl12.Size = new System.Drawing.Size(59, 13);
             this.labelControl12.TabIndex = 25;
@@ -410,7 +361,7 @@
             // 
             this.txtThanPhien.Location = new System.Drawing.Point(17, 217);
             this.txtThanPhien.Name = "txtThanPhien";
-            this.txtThanPhien.Size = new System.Drawing.Size(360, 83);
+            this.txtThanPhien.Size = new System.Drawing.Size(360, 132);
             this.txtThanPhien.TabIndex = 22;
             // 
             // labelControl11
@@ -438,18 +389,18 @@
             // 
             // txtAnh
             // 
-            this.txtAnh.Location = new System.Drawing.Point(168, 329);
+            this.txtAnh.Location = new System.Drawing.Point(165, 374);
             this.txtAnh.Name = "txtAnh";
-            this.txtAnh.Size = new System.Drawing.Size(40, 20);
+            this.txtAnh.Size = new System.Drawing.Size(46, 20);
             this.txtAnh.TabIndex = 24;
             this.txtAnh.Visible = false;
             // 
             // txtMa
             // 
-            this.txtMa.Location = new System.Drawing.Point(214, 329);
+            this.txtMa.Location = new System.Drawing.Point(217, 374);
             this.txtMa.Name = "txtMa";
-            this.txtMa.Size = new System.Drawing.Size(40, 20);
-            this.txtMa.TabIndex = 31;
+            this.txtMa.Size = new System.Drawing.Size(46, 20);
+            this.txtMa.TabIndex = 27;
             this.txtMa.Visible = false;
             // 
             // PatientDetail
@@ -481,16 +432,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.peAnh.Properties)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtGioKham.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtNgayKham.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtNgayKham.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lkeBacSi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtThanPhien.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLyDo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAnh.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMa.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -519,10 +467,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.TextEdit txtSDT;
-        private DevExpress.XtraEditors.LabelControl labelControl14;
-        private DevExpress.XtraEditors.LabelControl labelControl13;
-        private DevExpress.XtraEditors.TimeEdit dtGioKham;
-        private DevExpress.XtraEditors.DateEdit dtNgayKham;
         private DevExpress.XtraEditors.LookUpEdit lkeBacSi;
         private DevExpress.XtraEditors.LabelControl labelControl12;
         private DevExpress.XtraEditors.MemoEdit txtThanPhien;
@@ -534,8 +478,8 @@
         private System.Windows.Forms.RadioButton rbNam;
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.BindingSource bindingSource2;
+        private System.Windows.Forms.Timer timer1;
         private DevExpress.XtraEditors.TextEdit txtAnh;
         private DevExpress.XtraEditors.TextEdit txtMa;
-        private System.Windows.Forms.Timer timer1;
     }
 }

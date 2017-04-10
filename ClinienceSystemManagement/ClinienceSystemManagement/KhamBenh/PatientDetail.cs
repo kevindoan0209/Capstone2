@@ -68,18 +68,9 @@ namespace ClinienceSystemManagement.KhamBenh
                     }
                     else
                     {
-                        if (string.IsNullOrEmpty(dtNgayKham.Text))
-                        {
-                            XtraMessageBox.Show("Vui lòng chọn ngày khám", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                            dtNgayKham.Focus();
-                        }
-                        else
-                        {
                             string name = txtTen.Text;
                             string image = txtAnh.Text;
                             DateTime birthdate = DateTime.Parse(dtNamSinh.Text);
-                            DateTime date = DateTime.Parse(dtNgayKham.Text);
-                            DateTime time = DateTime.Parse(dtGioKham.Text);
                             string gioitinh;
                             if (rbNam.Checked == true)
                             {
@@ -103,7 +94,6 @@ namespace ClinienceSystemManagement.KhamBenh
                             this.Close();
                         }
                     }
-                }
             }
             catch (Exception ex)
             {

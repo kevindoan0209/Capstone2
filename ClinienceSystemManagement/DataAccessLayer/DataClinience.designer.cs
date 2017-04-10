@@ -81,6 +81,9 @@ namespace DataAccessLayer
     partial void InsertPrecription_Medicine(Precription_Medicine instance);
     partial void UpdatePrecription_Medicine(Precription_Medicine instance);
     partial void DeletePrecription_Medicine(Precription_Medicine instance);
+    partial void InsertStatus(Status instance);
+    partial void UpdateStatus(Status instance);
+    partial void DeleteStatus(Status instance);
     #endregion
 		
 		public DataClinienceDataContext() : 
@@ -246,6 +249,14 @@ namespace DataAccessLayer
 			get
 			{
 				return this.GetTable<Precription_Medicine>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Status> Status
+		{
+			get
+			{
+				return this.GetTable<Status>();
 			}
 		}
 	}
@@ -651,17 +662,17 @@ namespace DataAccessLayer
 		
 		private int _Appointment_ID;
 		
-		private System.DateTime _Appointment_Date;
+		private string _Appointment_Label;
 		
-		private System.TimeSpan _Appointment_Time;
+		private System.DateTime _Appointment_StartDate;
 		
-		private System.Nullable<int> _Appointment_Duration;
-		
-		private string _Appointment_Note;
+		private System.DateTime _Appointment_EndDate;
 		
 		private int _Account_ID_Patient;
 		
 		private int _Account_ID_Doctor;
+		
+		private string _Appointment_Note;
 		
 		private EntityRef<Doctor> _Doctor;
 		
@@ -673,18 +684,18 @@ namespace DataAccessLayer
     partial void OnCreated();
     partial void OnAppointment_IDChanging(int value);
     partial void OnAppointment_IDChanged();
-    partial void OnAppointment_DateChanging(System.DateTime value);
-    partial void OnAppointment_DateChanged();
-    partial void OnAppointment_TimeChanging(System.TimeSpan value);
-    partial void OnAppointment_TimeChanged();
-    partial void OnAppointment_DurationChanging(System.Nullable<int> value);
-    partial void OnAppointment_DurationChanged();
-    partial void OnAppointment_NoteChanging(string value);
-    partial void OnAppointment_NoteChanged();
+    partial void OnAppointment_LabelChanging(string value);
+    partial void OnAppointment_LabelChanged();
+    partial void OnAppointment_StartDateChanging(System.DateTime value);
+    partial void OnAppointment_StartDateChanged();
+    partial void OnAppointment_EndDateChanging(System.DateTime value);
+    partial void OnAppointment_EndDateChanged();
     partial void OnAccount_ID_PatientChanging(int value);
     partial void OnAccount_ID_PatientChanged();
     partial void OnAccount_ID_DoctorChanging(int value);
     partial void OnAccount_ID_DoctorChanged();
+    partial void OnAppointment_NoteChanging(string value);
+    partial void OnAppointment_NoteChanged();
     #endregion
 		
 		public Appointment()
@@ -714,82 +725,62 @@ namespace DataAccessLayer
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Appointment_Date", DbType="Date NOT NULL")]
-		public System.DateTime Appointment_Date
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Appointment_Label", DbType="NVarChar(100)")]
+		public string Appointment_Label
 		{
 			get
 			{
-				return this._Appointment_Date;
+				return this._Appointment_Label;
 			}
 			set
 			{
-				if ((this._Appointment_Date != value))
+				if ((this._Appointment_Label != value))
 				{
-					this.OnAppointment_DateChanging(value);
+					this.OnAppointment_LabelChanging(value);
 					this.SendPropertyChanging();
-					this._Appointment_Date = value;
-					this.SendPropertyChanged("Appointment_Date");
-					this.OnAppointment_DateChanged();
+					this._Appointment_Label = value;
+					this.SendPropertyChanged("Appointment_Label");
+					this.OnAppointment_LabelChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Appointment_Time", DbType="Time NOT NULL")]
-		public System.TimeSpan Appointment_Time
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Appointment_StartDate", DbType="SmallDateTime NOT NULL")]
+		public System.DateTime Appointment_StartDate
 		{
 			get
 			{
-				return this._Appointment_Time;
+				return this._Appointment_StartDate;
 			}
 			set
 			{
-				if ((this._Appointment_Time != value))
+				if ((this._Appointment_StartDate != value))
 				{
-					this.OnAppointment_TimeChanging(value);
+					this.OnAppointment_StartDateChanging(value);
 					this.SendPropertyChanging();
-					this._Appointment_Time = value;
-					this.SendPropertyChanged("Appointment_Time");
-					this.OnAppointment_TimeChanged();
+					this._Appointment_StartDate = value;
+					this.SendPropertyChanged("Appointment_StartDate");
+					this.OnAppointment_StartDateChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Appointment_Duration", DbType="Int")]
-		public System.Nullable<int> Appointment_Duration
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Appointment_EndDate", DbType="SmallDateTime NOT NULL")]
+		public System.DateTime Appointment_EndDate
 		{
 			get
 			{
-				return this._Appointment_Duration;
+				return this._Appointment_EndDate;
 			}
 			set
 			{
-				if ((this._Appointment_Duration != value))
+				if ((this._Appointment_EndDate != value))
 				{
-					this.OnAppointment_DurationChanging(value);
+					this.OnAppointment_EndDateChanging(value);
 					this.SendPropertyChanging();
-					this._Appointment_Duration = value;
-					this.SendPropertyChanged("Appointment_Duration");
-					this.OnAppointment_DurationChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Appointment_Note", DbType="NVarChar(200)")]
-		public string Appointment_Note
-		{
-			get
-			{
-				return this._Appointment_Note;
-			}
-			set
-			{
-				if ((this._Appointment_Note != value))
-				{
-					this.OnAppointment_NoteChanging(value);
-					this.SendPropertyChanging();
-					this._Appointment_Note = value;
-					this.SendPropertyChanged("Appointment_Note");
-					this.OnAppointment_NoteChanged();
+					this._Appointment_EndDate = value;
+					this.SendPropertyChanged("Appointment_EndDate");
+					this.OnAppointment_EndDateChanged();
 				}
 			}
 		}
@@ -838,6 +829,26 @@ namespace DataAccessLayer
 					this._Account_ID_Doctor = value;
 					this.SendPropertyChanged("Account_ID_Doctor");
 					this.OnAccount_ID_DoctorChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Appointment_Note", DbType="NVarChar(200)")]
+		public string Appointment_Note
+		{
+			get
+			{
+				return this._Appointment_Note;
+			}
+			set
+			{
+				if ((this._Appointment_Note != value))
+				{
+					this.OnAppointment_NoteChanging(value);
+					this.SendPropertyChanging();
+					this._Appointment_Note = value;
+					this.SendPropertyChanged("Appointment_Note");
+					this.OnAppointment_NoteChanged();
 				}
 			}
 		}
@@ -1274,8 +1285,6 @@ namespace DataAccessLayer
 		
 		private string _Account_Address;
 		
-		private string _Account_Note;
-		
 		private EntityRef<Doctor> _Doctor;
 		
 		private EntityRef<Patient> _Patient;
@@ -1302,8 +1311,6 @@ namespace DataAccessLayer
     partial void OnAccount_CityChanged();
     partial void OnAccount_AddressChanging(string value);
     partial void OnAccount_AddressChanged();
-    partial void OnAccount_NoteChanging(string value);
-    partial void OnAccount_NoteChanged();
     #endregion
 		
 		public Human()
@@ -1338,7 +1345,7 @@ namespace DataAccessLayer
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Account_Age", DbType="DateTime")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Account_Age", DbType="Date")]
 		public System.Nullable<System.DateTime> Account_Age
 		{
 			get
@@ -1474,26 +1481,6 @@ namespace DataAccessLayer
 					this._Account_Address = value;
 					this.SendPropertyChanged("Account_Address");
 					this.OnAccount_AddressChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Account_Note", DbType="NVarChar(200)")]
-		public string Account_Note
-		{
-			get
-			{
-				return this._Account_Note;
-			}
-			set
-			{
-				if ((this._Account_Note != value))
-				{
-					this.OnAccount_NoteChanging(value);
-					this.SendPropertyChanging();
-					this._Account_Note = value;
-					this.SendPropertyChanged("Account_Note");
-					this.OnAccount_NoteChanged();
 				}
 			}
 		}
@@ -3091,10 +3078,6 @@ namespace DataAccessLayer
 		
 		private int _Account_ID;
 		
-		private string _Patient_Complain;
-		
-		private string _Patient_Issue;
-		
 		private string _Patient_Note;
 		
 		private System.Nullable<int> _Patient_Temperature;
@@ -3117,6 +3100,8 @@ namespace DataAccessLayer
 		
 		private EntitySet<Precription> _Precriptions;
 		
+		private EntitySet<Status> _Status;
+		
 		private EntityRef<Human> _Human;
 		
     #region Extensibility Method Definitions
@@ -3125,10 +3110,6 @@ namespace DataAccessLayer
     partial void OnCreated();
     partial void OnAccount_IDChanging(int value);
     partial void OnAccount_IDChanged();
-    partial void OnPatient_ComplainChanging(string value);
-    partial void OnPatient_ComplainChanged();
-    partial void OnPatient_IssueChanging(string value);
-    partial void OnPatient_IssueChanged();
     partial void OnPatient_NoteChanging(string value);
     partial void OnPatient_NoteChanged();
     partial void OnPatient_TemperatureChanging(System.Nullable<int> value);
@@ -3153,6 +3134,7 @@ namespace DataAccessLayer
 		{
 			this._Appointments = new EntitySet<Appointment>(new Action<Appointment>(this.attach_Appointments), new Action<Appointment>(this.detach_Appointments));
 			this._Precriptions = new EntitySet<Precription>(new Action<Precription>(this.attach_Precriptions), new Action<Precription>(this.detach_Precriptions));
+			this._Status = new EntitySet<Status>(new Action<Status>(this.attach_Status), new Action<Status>(this.detach_Status));
 			this._Human = default(EntityRef<Human>);
 			OnCreated();
 		}
@@ -3177,46 +3159,6 @@ namespace DataAccessLayer
 					this._Account_ID = value;
 					this.SendPropertyChanged("Account_ID");
 					this.OnAccount_IDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Patient_Complain", DbType="NChar(500)")]
-		public string Patient_Complain
-		{
-			get
-			{
-				return this._Patient_Complain;
-			}
-			set
-			{
-				if ((this._Patient_Complain != value))
-				{
-					this.OnPatient_ComplainChanging(value);
-					this.SendPropertyChanging();
-					this._Patient_Complain = value;
-					this.SendPropertyChanged("Patient_Complain");
-					this.OnPatient_ComplainChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Patient_Issue", DbType="NVarChar(500)")]
-		public string Patient_Issue
-		{
-			get
-			{
-				return this._Patient_Issue;
-			}
-			set
-			{
-				if ((this._Patient_Issue != value))
-				{
-					this.OnPatient_IssueChanging(value);
-					this.SendPropertyChanging();
-					this._Patient_Issue = value;
-					this.SendPropertyChanged("Patient_Issue");
-					this.OnPatient_IssueChanged();
 				}
 			}
 		}
@@ -3427,6 +3369,19 @@ namespace DataAccessLayer
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Patient_Status", Storage="_Status", ThisKey="Account_ID", OtherKey="Account_ID")]
+		public EntitySet<Status> Status
+		{
+			get
+			{
+				return this._Status;
+			}
+			set
+			{
+				this._Status.Assign(value);
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Human_Patient", Storage="_Human", ThisKey="Account_ID", OtherKey="Account_ID", IsForeignKey=true)]
 		public Human Human
 		{
@@ -3500,6 +3455,18 @@ namespace DataAccessLayer
 		}
 		
 		private void detach_Precriptions(Precription entity)
+		{
+			this.SendPropertyChanging();
+			entity.Patient = null;
+		}
+		
+		private void attach_Status(Status entity)
+		{
+			this.SendPropertyChanging();
+			entity.Patient = this;
+		}
+		
+		private void detach_Status(Status entity)
 		{
 			this.SendPropertyChanging();
 			entity.Patient = null;
@@ -4309,6 +4276,181 @@ namespace DataAccessLayer
 						this._Precription_ID = default(int);
 					}
 					this.SendPropertyChanged("Precription");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Status")]
+	public partial class Status : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Status_ID;
+		
+		private string _Status_Complain;
+		
+		private string _Status_Issue;
+		
+		private int _Account_ID;
+		
+		private EntityRef<Patient> _Patient;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnStatus_IDChanging(int value);
+    partial void OnStatus_IDChanged();
+    partial void OnStatus_ComplainChanging(string value);
+    partial void OnStatus_ComplainChanged();
+    partial void OnStatus_IssueChanging(string value);
+    partial void OnStatus_IssueChanged();
+    partial void OnAccount_IDChanging(int value);
+    partial void OnAccount_IDChanged();
+    #endregion
+		
+		public Status()
+		{
+			this._Patient = default(EntityRef<Patient>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Status_ID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Status_ID
+		{
+			get
+			{
+				return this._Status_ID;
+			}
+			set
+			{
+				if ((this._Status_ID != value))
+				{
+					this.OnStatus_IDChanging(value);
+					this.SendPropertyChanging();
+					this._Status_ID = value;
+					this.SendPropertyChanged("Status_ID");
+					this.OnStatus_IDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Status_Complain", DbType="NVarChar(500)")]
+		public string Status_Complain
+		{
+			get
+			{
+				return this._Status_Complain;
+			}
+			set
+			{
+				if ((this._Status_Complain != value))
+				{
+					this.OnStatus_ComplainChanging(value);
+					this.SendPropertyChanging();
+					this._Status_Complain = value;
+					this.SendPropertyChanged("Status_Complain");
+					this.OnStatus_ComplainChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Status_Issue", DbType="NVarChar(500)")]
+		public string Status_Issue
+		{
+			get
+			{
+				return this._Status_Issue;
+			}
+			set
+			{
+				if ((this._Status_Issue != value))
+				{
+					this.OnStatus_IssueChanging(value);
+					this.SendPropertyChanging();
+					this._Status_Issue = value;
+					this.SendPropertyChanged("Status_Issue");
+					this.OnStatus_IssueChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Account_ID", DbType="Int NOT NULL")]
+		public int Account_ID
+		{
+			get
+			{
+				return this._Account_ID;
+			}
+			set
+			{
+				if ((this._Account_ID != value))
+				{
+					if (this._Patient.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnAccount_IDChanging(value);
+					this.SendPropertyChanging();
+					this._Account_ID = value;
+					this.SendPropertyChanged("Account_ID");
+					this.OnAccount_IDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Patient_Status", Storage="_Patient", ThisKey="Account_ID", OtherKey="Account_ID", IsForeignKey=true)]
+		public Patient Patient
+		{
+			get
+			{
+				return this._Patient.Entity;
+			}
+			set
+			{
+				Patient previousValue = this._Patient.Entity;
+				if (((previousValue != value) 
+							|| (this._Patient.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Patient.Entity = null;
+						previousValue.Status.Remove(this);
+					}
+					this._Patient.Entity = value;
+					if ((value != null))
+					{
+						value.Status.Add(this);
+						this._Account_ID = value.Account_ID;
+					}
+					else
+					{
+						this._Account_ID = default(int);
+					}
+					this.SendPropertyChanged("Patient");
 				}
 			}
 		}
