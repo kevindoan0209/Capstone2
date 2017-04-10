@@ -156,6 +156,10 @@ namespace ClinienceSystemManagement.KhamBenh
 
         }
 
-
+        private void btnXuatFile_Click(object sender, EventArgs e)
+        {
+            string FileName = "C:\\DanhSachBenhNhan.xls";
+            grcDanhMuc.ExportToXls(FileName);
+        }
     }
 }
