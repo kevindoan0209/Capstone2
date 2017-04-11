@@ -84,6 +84,10 @@ namespace ClinienceSystemManagement.KhamBenh
                     }
                     peAnh.EditValue = account.Account_Image;
                     txtMa.ReadOnly = true;
+                    txtLyDo.ReadOnly = true;
+                    txtThanPhien.ReadOnly = true;
+                    txtLyDo.Text = "";
+                    txtThanPhien.Text = "";
                 }
             }
         }
@@ -190,6 +194,12 @@ namespace ClinienceSystemManagement.KhamBenh
             {
                 MessageBox.Show("Lỗi:" + ex.Message);
             }
+        }
+
+        private void txtSDT_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                e.Handled = true;
         }
     }
 }

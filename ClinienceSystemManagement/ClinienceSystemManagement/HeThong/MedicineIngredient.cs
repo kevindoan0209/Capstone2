@@ -80,6 +80,7 @@ namespace ClinienceSystemManagement.HeThong
                         isAdd = true;
                         lbTrangThai.Text = "";
                         XtraMessageBox.Show("Cập nhật thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        txtMa.ReadOnly = true;
                     }
                 }
             }
@@ -98,26 +99,27 @@ namespace ClinienceSystemManagement.HeThong
                 }
                 else
                 {
-                        if (string.IsNullOrEmpty(txtTen.Text))
-                        {
-                            // XtraMessageBox.Show("Vui lòng nhập tên thành phần", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                            lbTrangThai.Text = "*Vui lòng nhập tên thành phần";
-                            txtTen.Focus();
-                        }
-                        else
-                        {
-                            string name = txtTen.Text;
-                            string description = txtGhiChu.Text;
-                            string unit = txtDonVi.Text;
-                            double content = Convert.ToDouble(txtHamLuongTPT.Value.ToString());
-                            BLL_Medicine.InsertIngredient(name, description, unit, content);
-                            Reset();
-                            lbTrangThai.Text = "";
-                            XtraMessageBox.Show("Đã thêm thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
+                    if (string.IsNullOrEmpty(txtTen.Text))
+                    {
+                        // XtraMessageBox.Show("Vui lòng nhập tên thành phần", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        lbTrangThai.Text = "*Vui lòng nhập tên thành phần";
+                        txtTen.Focus();
                     }
+                    else
+                    {
+                        string name = txtTen.Text;
+                        string description = txtGhiChu.Text;
+                        string unit = txtDonVi.Text;
+                        double content = Convert.ToDouble(txtHamLuongTPT.Value.ToString());
+                        BLL_Medicine.InsertIngredient(name, description, unit, content);
+                        Reset();
+                        lbTrangThai.Text = "";
+                        XtraMessageBox.Show("Đã thêm thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        txtMa.ReadOnly = true;
+                    }
+                }
             }
-            catch (Exception ex )
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
                 //MessageBox.Show("Mã đối tượng này đã tồn tại");
@@ -180,7 +182,7 @@ namespace ClinienceSystemManagement.HeThong
             catch (Exception)
             {
                 XtraMessageBox.Show("Không được phép xóa đối tượng này, đối tượng đã được thêm ở một danh mục khác", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }      
+            }
         }
     }
 }

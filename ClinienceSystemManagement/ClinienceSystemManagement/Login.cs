@@ -99,5 +99,44 @@ namespace ClinienceSystemManagement
             //}
         }
 
+        private void txtTenDangNhap_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (txtTenDangNhap.Text.Length > 20 || txtTenDangNhap.Text.Length < 5)
+            {
+                lbTrangThai.Text = "*Tên đăng nhập phải từ 5 đến 20 kí tự";
+                txtTenDangNhap.Focus();
+            }
+        }
+
+        private void txtMatKhau_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (txtTenDangNhap.Text.Length > 10 || txtTenDangNhap.Text.Length < 4)
+            {
+                lbTrangThai.Text = "*Mật khẩu phải từ 4 đến 10 kí tự";
+                txtTenDangNhap.Focus();
+            }
+        }
+
+        private void txtTenDangNhap_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsSymbol(e.KeyChar) && !Char.IsWhiteSpace(e.KeyChar))
+                e.Handled = false;
+            else
+            {
+                lbTrangThai.Text = "*Không được phép nhập kí tự đặc biệt";
+                e.Handled = true;
+            }          
+        }
+
+        private void txtMatKhau_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsSymbol(e.KeyChar) && !Char.IsWhiteSpace(e.KeyChar))
+                e.Handled = false;
+            else
+            {
+                lbTrangThai.Text = "*Không được phép nhập kí tự đặc biệt";
+                e.Handled = true;
+            }
+        }
     }
 }

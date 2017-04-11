@@ -142,6 +142,8 @@
             this.txtTenDangNhap.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("txtTenDangNhap.Properties.Appearance.Font")));
             this.txtTenDangNhap.Properties.Appearance.Options.UseFont = true;
             this.txtTenDangNhap.Properties.MaxLength = 20;
+            this.txtTenDangNhap.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTenDangNhap_KeyPress);
+            this.txtTenDangNhap.Validating += new System.ComponentModel.CancelEventHandler(this.txtTenDangNhap_Validating);
             // 
             // labelControl1
             // 
@@ -159,6 +161,8 @@
             this.txtMatKhau.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("txtMatKhau.Properties.Appearance.Font")));
             this.txtMatKhau.Properties.Appearance.Options.UseFont = true;
             this.txtMatKhau.Properties.UseSystemPasswordChar = true;
+            this.txtMatKhau.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMatKhau_KeyPress);
+            this.txtMatKhau.Validating += new System.ComponentModel.CancelEventHandler(this.txtMatKhau_Validating);
             // 
             // btnDangNhap
             // 

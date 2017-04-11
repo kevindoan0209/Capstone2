@@ -33,9 +33,9 @@ namespace BussinessLogicLayer
         {
             return _medicine.UpdateMedicine(id,name, mclass, usage, note, price, unitid);
         }
-        public static int InsertMeIn(int meId, int inId, string unit, double content)
+        public static int InsertMeIn(int meId, int inId)
         {
-            return _medicine.InsertMeIn(meId, inId, unit, content);
+            return _medicine.InsertMeIn(meId, inId);
         }
 
         public static int GetLastIdMedicine()

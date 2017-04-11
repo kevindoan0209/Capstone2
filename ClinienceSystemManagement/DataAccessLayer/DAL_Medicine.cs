@@ -74,14 +74,12 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@Unitid", unitid);
             return command.ExecuteNonQuery();
         }
-        public int InsertMeIn(int meId, int inId, string unit, double content)
+        public int InsertMeIn(int meId, int inId)
         {
-            const String sqlCommand = "Insert into Medincine_Ingredient (Medicine_ID,Ingredient_ID,Unit,ContentUnit) Values(@MeId, @InId, @Unit,@Content)";
+            const String sqlCommand = "Insert into Medincine_Ingredient (Medicine_ID,Ingredient_ID) Values(@MeId, @InId)";
             SqlCommand command = new SqlCommand(sqlCommand, connect());
             command.Parameters.AddWithValue("@MeId", meId);
-            command.Parameters.AddWithValue("@InId", inId);
-            command.Parameters.AddWithValue("@Unit", unit);
-            command.Parameters.AddWithValue("@Content", content);     
+            command.Parameters.AddWithValue("@InId", inId);   
             return command.ExecuteNonQuery();
         }
 

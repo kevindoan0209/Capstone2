@@ -161,5 +161,35 @@ namespace ClinienceSystemManagement.KhamBenh
             string FileName = "C:\\DanhSachBenhNhan.xls";
             grcDanhMuc.ExportToXls(FileName);
         }
+
+        private void csmXem_Click(object sender, EventArgs e)
+        {
+            int rowIndex = gvDanhMuc.FocusedRowHandle;
+            string colID = "Account_ID";
+            object value = gvDanhMuc.GetRowCellValue(rowIndex, colID);
+            if (value != null)
+            {
+                int Id = (int)value;
+                DataClinienceDataContext db = new DataClinienceDataContext();
+                var account = db.Accounts.Where(i => i.Account_ID == (int)Id).SingleOrDefault();
+                var human = db.Humans.Where(i => i.Account_ID == (int)Id).SingleOrDefault();
+                if (account != null)
+                {
+                    lbTen.Text = account.Account_Name;
+                    lbDiaChi.Text = human.Account_Address;
+                    lbEmail.Text = human.Account_Email;
+                    lbGioiTinh.Text = human.Account_Sex;
+                    lbSoDienThoai.Text = human.Account_Phone;
+                    lbThanhPho.Text = human.Account_City;
+                    lbTuoi.Text = Convert.ToString(human.Account_Age);
+                    peAnh.EditValue = account.Account_Image;
+                    lbCongViec.Text = human.Account_Job;
+                }
+                else
+                {
+                    XtraMessageBox.Show("Bạn chưa chọn đối tượng để xem thông tin chi tiết", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+        }
     }
 }

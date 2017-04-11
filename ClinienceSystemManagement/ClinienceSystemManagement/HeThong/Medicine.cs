@@ -69,8 +69,10 @@ namespace ClinienceSystemManagement.Hệ_Thống
                     {
                         DataClinienceDataContext dc = new DataClinienceDataContext();
                         var medicine = dc.Medicines.Where(s => s.Medicine_ID == (int)value).SingleOrDefault();
+                        var ingredient = dc.Medincine_Ingredients.Where(s => s.Medicine_ID == (int)value).SingleOrDefault();
                         if (medicine != null)
                         {
+                           // dc.Medincine_Ingredients.DeleteOnSubmit(ingredient);
                             dc.Medicines.DeleteOnSubmit(medicine);
                             dc.SubmitChanges();
                             sqlDataSource1.Fill();
@@ -107,6 +109,12 @@ namespace ClinienceSystemManagement.Hệ_Thống
             {
                 XtraMessageBox.Show("Bạn chưa chọn đối tượng để cập nhật", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void btnXuatFile_Click(object sender, EventArgs e)
+        {
+            string FileName = "C:\\DanhSachThuoc.xls";
+            grcDanhMuc.ExportToXls(FileName);
         }
     }
 }

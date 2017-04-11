@@ -101,5 +101,11 @@ namespace ClinienceSystemManagement
                 XtraMessageBox.Show("Không được phép xóa đối tượng này, đối tượng đã được thêm ở một danh mục khác", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnXuatFile_Click(object sender, EventArgs e)
+        {
+            string FileName = "C:\\DanhSachCanLamSang.xls";
+            grcDanhMuc.ExportToXls(FileName);
+        }
     }
 }

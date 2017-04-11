@@ -30,18 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MedicineIngredient));
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery3 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column11 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression11 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table3 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column12 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression12 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column13 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression13 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column14 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression14 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column15 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression15 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table1 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column2 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression2 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column3 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression3 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column4 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression4 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column5 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression5 = new DevExpress.DataAccess.Sql.ColumnExpression();
             this.panel1 = new System.Windows.Forms.Panel();
             this.xtraTabContarol1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
@@ -65,14 +65,14 @@
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.searchControl2 = new DevExpress.XtraEditors.SearchControl();
+            this.grcDanhMuc = new DevExpress.XtraGrid.GridControl();
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.gvDanhMuc = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colIngredient_Name = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colIngredient_ID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colIngredient_Note = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colIngredient_Unit = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colIngredient_Content = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.grcDanhMuc = new DevExpress.XtraGrid.GridControl();
-            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabContarol1)).BeginInit();
             this.xtraTabContarol1.SuspendLayout();
@@ -87,8 +87,8 @@
             this.panelControl1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.searchControl2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvDanhMuc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grcDanhMuc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvDanhMuc)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -322,66 +322,6 @@
             this.searchControl2.TabIndex = 5;
             this.searchControl2.ToolTip = "Nhập vào thông tin tìm kiếm";
             // 
-            // gvDanhMuc
-            // 
-            this.gvDanhMuc.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gvDanhMuc.Appearance.HeaderPanel.Options.UseFont = true;
-            this.gvDanhMuc.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colIngredient_Name,
-            this.colIngredient_ID,
-            this.colIngredient_Note,
-            this.colIngredient_Unit,
-            this.colIngredient_Content});
-            this.gvDanhMuc.GridControl = this.grcDanhMuc;
-            this.gvDanhMuc.Name = "gvDanhMuc";
-            this.gvDanhMuc.OptionsView.EnableAppearanceEvenRow = true;
-            this.gvDanhMuc.OptionsView.ShowFooter = true;
-            // 
-            // colIngredient_Name
-            // 
-            this.colIngredient_Name.Caption = "Tên thành phần";
-            this.colIngredient_Name.FieldName = "Ingredient_Name";
-            this.colIngredient_Name.Name = "colIngredient_Name";
-            this.colIngredient_Name.Visible = true;
-            this.colIngredient_Name.VisibleIndex = 1;
-            this.colIngredient_Name.Width = 121;
-            // 
-            // colIngredient_ID
-            // 
-            this.colIngredient_ID.Caption = "Mã";
-            this.colIngredient_ID.FieldName = "Ingredient_ID";
-            this.colIngredient_ID.Name = "colIngredient_ID";
-            this.colIngredient_ID.Visible = true;
-            this.colIngredient_ID.VisibleIndex = 0;
-            this.colIngredient_ID.Width = 33;
-            // 
-            // colIngredient_Note
-            // 
-            this.colIngredient_Note.Caption = "Ghi chú";
-            this.colIngredient_Note.FieldName = "Ingredient_Note";
-            this.colIngredient_Note.Name = "colIngredient_Note";
-            this.colIngredient_Note.Visible = true;
-            this.colIngredient_Note.VisibleIndex = 4;
-            this.colIngredient_Note.Width = 141;
-            // 
-            // colIngredient_Unit
-            // 
-            this.colIngredient_Unit.Caption = "Đơn vị";
-            this.colIngredient_Unit.FieldName = "Ingredient_Unit";
-            this.colIngredient_Unit.Name = "colIngredient_Unit";
-            this.colIngredient_Unit.Visible = true;
-            this.colIngredient_Unit.VisibleIndex = 2;
-            this.colIngredient_Unit.Width = 57;
-            // 
-            // colIngredient_Content
-            // 
-            this.colIngredient_Content.Caption = "Hàm lượng";
-            this.colIngredient_Content.FieldName = "Ingredient_Content";
-            this.colIngredient_Content.Name = "colIngredient_Content";
-            this.colIngredient_Content.Visible = true;
-            this.colIngredient_Content.VisibleIndex = 3;
-            this.colIngredient_Content.Width = 77;
-            // 
             // grcDanhMuc
             // 
             this.grcDanhMuc.ContextMenuStrip = this.contextMenuStrip1;
@@ -407,33 +347,91 @@
             // 
             this.sqlDataSource1.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            columnExpression11.ColumnName = "Ingredient_Name";
-            table3.MetaSerializable = "0|0|125|140";
-            table3.Name = "Ingredient";
-            columnExpression11.Table = table3;
-            column11.Expression = columnExpression11;
-            columnExpression12.ColumnName = "Ingredient_ID";
-            columnExpression12.Table = table3;
-            column12.Expression = columnExpression12;
-            columnExpression13.ColumnName = "Ingredient_Note";
-            columnExpression13.Table = table3;
-            column13.Expression = columnExpression13;
-            columnExpression14.ColumnName = "Ingredient_Unit";
-            columnExpression14.Table = table3;
-            column14.Expression = columnExpression14;
-            columnExpression15.ColumnName = "Ingredient_Content";
-            columnExpression15.Table = table3;
-            column15.Expression = columnExpression15;
-            selectQuery3.Columns.Add(column11);
-            selectQuery3.Columns.Add(column12);
-            selectQuery3.Columns.Add(column13);
-            selectQuery3.Columns.Add(column14);
-            selectQuery3.Columns.Add(column15);
-            selectQuery3.Name = "Ingredient";
-            selectQuery3.Tables.Add(table3);
+            columnExpression1.ColumnName = "Ingredient_Name";
+            table1.MetaSerializable = "0|0|125|140";
+            table1.Name = "Ingredient";
+            columnExpression1.Table = table1;
+            column1.Expression = columnExpression1;
+            columnExpression2.ColumnName = "Ingredient_ID";
+            columnExpression2.Table = table1;
+            column2.Expression = columnExpression2;
+            columnExpression3.ColumnName = "Ingredient_Note";
+            columnExpression3.Table = table1;
+            column3.Expression = columnExpression3;
+            columnExpression4.ColumnName = "Ingredient_Unit";
+            columnExpression4.Table = table1;
+            column4.Expression = columnExpression4;
+            columnExpression5.ColumnName = "Ingredient_Content";
+            columnExpression5.Table = table1;
+            column5.Expression = columnExpression5;
+            selectQuery1.Columns.Add(column1);
+            selectQuery1.Columns.Add(column2);
+            selectQuery1.Columns.Add(column3);
+            selectQuery1.Columns.Add(column4);
+            selectQuery1.Columns.Add(column5);
+            selectQuery1.Name = "Ingredient";
+            selectQuery1.Tables.Add(table1);
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery3});
+            selectQuery1});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
+            // 
+            // gvDanhMuc
+            // 
+            this.gvDanhMuc.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gvDanhMuc.Appearance.HeaderPanel.Options.UseFont = true;
+            this.gvDanhMuc.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colIngredient_Name,
+            this.colIngredient_ID,
+            this.colIngredient_Note,
+            this.colIngredient_Unit,
+            this.colIngredient_Content});
+            this.gvDanhMuc.GridControl = this.grcDanhMuc;
+            this.gvDanhMuc.Name = "gvDanhMuc";
+            this.gvDanhMuc.OptionsView.EnableAppearanceEvenRow = true;
+            this.gvDanhMuc.OptionsView.ShowFooter = true;
+            // 
+            // colIngredient_Name
+            // 
+            this.colIngredient_Name.Caption = "Tên thành phần";
+            this.colIngredient_Name.FieldName = "Ingredient_Name";
+            this.colIngredient_Name.Name = "colIngredient_Name";
+            this.colIngredient_Name.Visible = true;
+            this.colIngredient_Name.VisibleIndex = 0;
+            this.colIngredient_Name.Width = 121;
+            // 
+            // colIngredient_ID
+            // 
+            this.colIngredient_ID.Caption = "Mã";
+            this.colIngredient_ID.FieldName = "Ingredient_ID";
+            this.colIngredient_ID.Name = "colIngredient_ID";
+            this.colIngredient_ID.Width = 33;
+            // 
+            // colIngredient_Note
+            // 
+            this.colIngredient_Note.Caption = "Ghi chú";
+            this.colIngredient_Note.FieldName = "Ingredient_Note";
+            this.colIngredient_Note.Name = "colIngredient_Note";
+            this.colIngredient_Note.Visible = true;
+            this.colIngredient_Note.VisibleIndex = 3;
+            this.colIngredient_Note.Width = 141;
+            // 
+            // colIngredient_Unit
+            // 
+            this.colIngredient_Unit.Caption = "Đơn vị";
+            this.colIngredient_Unit.FieldName = "Ingredient_Unit";
+            this.colIngredient_Unit.Name = "colIngredient_Unit";
+            this.colIngredient_Unit.Visible = true;
+            this.colIngredient_Unit.VisibleIndex = 1;
+            this.colIngredient_Unit.Width = 57;
+            // 
+            // colIngredient_Content
+            // 
+            this.colIngredient_Content.Caption = "Hàm lượng";
+            this.colIngredient_Content.FieldName = "Ingredient_Content";
+            this.colIngredient_Content.Name = "colIngredient_Content";
+            this.colIngredient_Content.Visible = true;
+            this.colIngredient_Content.VisibleIndex = 2;
+            this.colIngredient_Content.Width = 77;
             // 
             // MedicineIngredient
             // 
@@ -462,8 +460,8 @@
             this.panelControl1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.searchControl2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvDanhMuc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grcDanhMuc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvDanhMuc)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -80,10 +80,12 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.searchControl2 = new DevExpress.XtraEditors.SearchControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.btnXuatFile = new DevExpress.XtraEditors.SimpleButton();
             this.btnLamMoi = new DevExpress.XtraEditors.SimpleButton();
             this.grcDanhMuc = new DevExpress.XtraGrid.GridControl();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.csmXem = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsCapNhat = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsXoa = new System.Windows.Forms.ToolStripMenuItem();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
@@ -150,7 +152,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(17, 246);
+            this.pictureBox8.Location = new System.Drawing.Point(17, 249);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(17, 17);
             this.pictureBox8.TabIndex = 19;
@@ -159,7 +161,7 @@
             // lbCongViec
             // 
             this.lbCongViec.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCongViec.Location = new System.Drawing.Point(40, 245);
+            this.lbCongViec.Location = new System.Drawing.Point(40, 248);
             this.lbCongViec.Name = "lbCongViec";
             this.lbCongViec.Size = new System.Drawing.Size(0, 18);
             this.lbCongViec.TabIndex = 18;
@@ -167,7 +169,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(17, 212);
+            this.pictureBox7.Location = new System.Drawing.Point(17, 215);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(17, 17);
             this.pictureBox7.TabIndex = 17;
@@ -176,7 +178,7 @@
             // lbTuoi
             // 
             this.lbTuoi.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTuoi.Location = new System.Drawing.Point(40, 211);
+            this.lbTuoi.Location = new System.Drawing.Point(40, 214);
             this.lbTuoi.Name = "lbTuoi";
             this.lbTuoi.Size = new System.Drawing.Size(0, 18);
             this.lbTuoi.TabIndex = 16;
@@ -184,7 +186,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(17, 385);
+            this.pictureBox6.Location = new System.Drawing.Point(17, 388);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(17, 17);
             this.pictureBox6.TabIndex = 15;
@@ -193,7 +195,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(18, 315);
+            this.pictureBox5.Location = new System.Drawing.Point(18, 318);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(17, 17);
             this.pictureBox5.TabIndex = 14;
@@ -202,7 +204,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(17, 177);
+            this.pictureBox4.Location = new System.Drawing.Point(17, 180);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(17, 17);
             this.pictureBox4.TabIndex = 13;
@@ -211,7 +213,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(17, 349);
+            this.pictureBox3.Location = new System.Drawing.Point(17, 352);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(17, 17);
             this.pictureBox3.TabIndex = 12;
@@ -220,7 +222,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(17, 281);
+            this.pictureBox2.Location = new System.Drawing.Point(17, 284);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(17, 17);
             this.pictureBox2.TabIndex = 11;
@@ -229,7 +231,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(17, 143);
+            this.pictureBox1.Location = new System.Drawing.Point(17, 146);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(17, 17);
             this.pictureBox1.TabIndex = 10;
@@ -238,7 +240,7 @@
             // lbThanhPho
             // 
             this.lbThanhPho.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbThanhPho.Location = new System.Drawing.Point(43, 385);
+            this.lbThanhPho.Location = new System.Drawing.Point(43, 388);
             this.lbThanhPho.Name = "lbThanhPho";
             this.lbThanhPho.Size = new System.Drawing.Size(0, 18);
             this.lbThanhPho.TabIndex = 9;
@@ -246,7 +248,7 @@
             // lbEmail
             // 
             this.lbEmail.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEmail.Location = new System.Drawing.Point(43, 314);
+            this.lbEmail.Location = new System.Drawing.Point(43, 317);
             this.lbEmail.Name = "lbEmail";
             this.lbEmail.Size = new System.Drawing.Size(0, 18);
             this.lbEmail.TabIndex = 8;
@@ -254,7 +256,7 @@
             // lbSoDienThoai
             // 
             this.lbSoDienThoai.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSoDienThoai.Location = new System.Drawing.Point(42, 279);
+            this.lbSoDienThoai.Location = new System.Drawing.Point(42, 282);
             this.lbSoDienThoai.Name = "lbSoDienThoai";
             this.lbSoDienThoai.Size = new System.Drawing.Size(0, 18);
             this.lbSoDienThoai.TabIndex = 7;
@@ -262,7 +264,7 @@
             // lbDiaChi
             // 
             this.lbDiaChi.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDiaChi.Location = new System.Drawing.Point(43, 348);
+            this.lbDiaChi.Location = new System.Drawing.Point(43, 351);
             this.lbDiaChi.Name = "lbDiaChi";
             this.lbDiaChi.Size = new System.Drawing.Size(0, 18);
             this.lbDiaChi.TabIndex = 6;
@@ -270,7 +272,7 @@
             // lbGioiTinh
             // 
             this.lbGioiTinh.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbGioiTinh.Location = new System.Drawing.Point(40, 175);
+            this.lbGioiTinh.Location = new System.Drawing.Point(40, 178);
             this.lbGioiTinh.Name = "lbGioiTinh";
             this.lbGioiTinh.Size = new System.Drawing.Size(0, 18);
             this.lbGioiTinh.TabIndex = 5;
@@ -278,7 +280,7 @@
             // lbTen
             // 
             this.lbTen.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTen.Location = new System.Drawing.Point(41, 142);
+            this.lbTen.Location = new System.Drawing.Point(41, 145);
             this.lbTen.Name = "lbTen";
             this.lbTen.Size = new System.Drawing.Size(0, 18);
             this.lbTen.TabIndex = 4;
@@ -342,6 +344,7 @@
             // 
             // panelControl2
             // 
+            this.panelControl2.Controls.Add(this.labelControl1);
             this.panelControl2.Controls.Add(this.btnTiepNhan);
             this.panelControl2.Controls.Add(this.btnXuatFile);
             this.panelControl2.Controls.Add(this.btnLamMoi);
@@ -351,12 +354,22 @@
             this.panelControl2.Size = new System.Drawing.Size(510, 49);
             this.panelControl2.TabIndex = 1;
             // 
+            // labelControl1
+            // 
+            this.labelControl1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl1.Location = new System.Drawing.Point(147, 17);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(351, 14);
+            this.labelControl1.TabIndex = 4;
+            this.labelControl1.Text = "* Nhấn chuột phải trên danh sách để xóa hoặc cập nhật dữ liệu";
+            // 
             // btnXuatFile
             // 
-            this.btnXuatFile.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnXuatFile.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnXuatFile.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.btnXuatFile.Image = ((System.Drawing.Image)(resources.GetObject("btnXuatFile.Image")));
-            this.btnXuatFile.Location = new System.Drawing.Point(356, 11);
+            this.btnXuatFile.Location = new System.Drawing.Point(239, 11);
             this.btnXuatFile.Name = "btnXuatFile";
             this.btnXuatFile.Size = new System.Drawing.Size(142, 28);
             this.btnXuatFile.TabIndex = 5;
@@ -398,16 +411,24 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.csmXem,
             this.cmsCapNhat,
             this.cmsXoa});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(123, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(151, 70);
+            // 
+            // csmXem
+            // 
+            this.csmXem.Name = "csmXem";
+            this.csmXem.Size = new System.Drawing.Size(150, 22);
+            this.csmXem.Text = "Xem thông tin";
+            this.csmXem.Click += new System.EventHandler(this.csmXem_Click);
             // 
             // cmsCapNhat
             // 
             this.cmsCapNhat.BackColor = System.Drawing.SystemColors.Control;
             this.cmsCapNhat.Name = "cmsCapNhat";
-            this.cmsCapNhat.Size = new System.Drawing.Size(122, 22);
+            this.cmsCapNhat.Size = new System.Drawing.Size(150, 22);
             this.cmsCapNhat.Text = "Cập nhật";
             this.cmsCapNhat.Click += new System.EventHandler(this.cmsCapNhat_Click);
             // 
@@ -415,7 +436,7 @@
             // 
             this.cmsXoa.BackColor = System.Drawing.SystemColors.Control;
             this.cmsXoa.Name = "cmsXoa";
-            this.cmsXoa.Size = new System.Drawing.Size(122, 22);
+            this.cmsXoa.Size = new System.Drawing.Size(150, 22);
             this.cmsXoa.Text = "Xóa";
             this.cmsXoa.Click += new System.EventHandler(this.cmsXoa_Click);
             // 
@@ -614,6 +635,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.searchControl2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
+            this.panelControl2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grcDanhMuc)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gvDanhMuc)).EndInit();
@@ -664,5 +686,7 @@
         private DevExpress.XtraEditors.LabelControl lbTuoi;
         private System.Windows.Forms.PictureBox pictureBox8;
         private DevExpress.XtraEditors.LabelControl lbCongViec;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private System.Windows.Forms.ToolStripMenuItem csmXem;
     }
 }

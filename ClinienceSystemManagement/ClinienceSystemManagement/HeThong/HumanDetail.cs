@@ -270,5 +270,27 @@ namespace ClinienceSystemManagement.HeThong
                 txtTenDangNhap.Focus();
             }
         }
+
+        private void txtTenDangNhap_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsSymbol(e.KeyChar) && !Char.IsWhiteSpace(e.KeyChar))
+                e.Handled = false;
+            else
+            {
+                lbTrangThai.Text = "*Không được phép nhập kí tự đặc biệt";
+                e.Handled = true;
+            }
+        }
+
+        private void txtMatKhau_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsSymbol(e.KeyChar) && !Char.IsWhiteSpace(e.KeyChar))
+                e.Handled = false;
+            else
+            {
+                lbTrangThai.Text = "*Không được phép nhập kí tự đặc biệt";
+                e.Handled = true;
+            }
+        }
     }
 }

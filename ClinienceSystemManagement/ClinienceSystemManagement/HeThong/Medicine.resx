@@ -157,6 +157,19 @@
   <metadata name="panelControl1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="btnXuatFile.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        bwAAAG8B8aLcQwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFsSURBVDhPjZM9
+        S8NAGMeLijq4iKi1aeq1Vhdxcenk4iCIDi6Ci4sv+AXcXQS/gbi6iXQrSrcONnfXYkHFooKgboIugqmK
+        kr93jbmYNAkdftzdc8/z415jAGwMbR9UQzTpIk6zPapG4ApooiiSllEivYGwzAl49gecMJQG+0IEiSU1
+        9sMyBetmFbiY/QAjdVS0ARl3E6hWENtYaPaPY50q7sDTeVSnGlYt9waatMBT1zL+L2FoWDQdYMkcmP4i
+        2nk158zLFTqUR2Zk3E1oJulrYKMNVCa+xIq2UCVxRX2y25P7h90pxbpAUweojJvW/TZwtWgK0aeC6t/i
+        DPKeYpbckFK7mBOK82nTetiB9bTXyt0mxA1wj4Bqz2BxYgsYMVoEj7sut+sRAjmQp071mtrC5dy7SPA+
+        Ij52GC5oBsQ7MLQjdYhGYsVT4CdQIK8n7Br9hApk3/feA4kUtEOwIOIz+WkRtPWdPbziLNX/C0trtpKI
+        yAXzAAAAAElFTkSuQmCC
+</value>
+  </data>
   <metadata name="sqlDataSource5.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>561, 56</value>
   </metadata>

@@ -152,23 +152,18 @@ namespace ClinienceSystemManagement.HeThong
                             this.Close();
 
                             int lastID = BLL_Medicine.GetLastIdMedicine();
-                            string unit = "";
-                            double content = 0;
-                            try { 
-                            for (int i = 0; i < n; i++)
-                            {                          
-                                int ingredientId = _getChecked[i];
-                                BLL_Medicine.InsertMeIn(lastID, ingredientId, unit, content);
+                          
+                                for (int i = 0; i < n; i++)
+                                {                          
+                                    int ingredientId = _getChecked[i];
+                                    BLL_Medicine.InsertMeIn(lastID, ingredientId);
+                                }
                             }
-                            }
-                            catch (Exception)
-                            {
-                                MessageBox.Show("Thành phần này đã tồn tại");
-                            }
+                         
                             XtraMessageBox.Show("Đã thêm thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
-                }
+                
             }
             catch (Exception ex)
             {
@@ -181,61 +176,6 @@ namespace ClinienceSystemManagement.HeThong
             if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
             {
                 e.Handled = true;
-            }
-        }
-
-     
-
-        private void csmCapNhat_Click(object sender, EventArgs e)
-        {
-            int rowIndex = gvDanhMuc.FocusedRowHandle;
-            string colID = "Account_ID";
-            object value = gvDanhMuc.GetRowCellValue(rowIndex, colID);
-            if (value != null)
-            {
-                HumanDetail md = new HumanDetail();
-                md.Id = (int)value;
-                md.isAdd = false;
-                md.ShowDialog();
-                sqlDataSource4.Fill();
-            }
-            else
-            {
-                XtraMessageBox.Show("Bạn chưa chọn đối tượng để cập nhật", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
-
-        private void csmXoa_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (XtraMessageBox.Show("Bạn có muốn xóa không?", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    int rowIndex = gvDanhMuc.FocusedRowHandle;
-                    string colID = "Account_ID";
-                    object value = gvDanhMuc.GetRowCellValue(rowIndex, colID);
-                    
-                    if (value != null)
-                    {
-                        DataClinienceDataContext dc = new DataClinienceDataContext();
-                        var account = dc.Accounts.Where(s => s.Account_ID == (int)value).SingleOrDefault();
-                        if (account != null)
-                        {
-                            dc.Accounts.DeleteOnSubmit(account);
-                            dc.SubmitChanges();
-                            sqlDataSource4.Fill();
-                            XtraMessageBox.Show("Đã xóa thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
-                    }
-                    else
-                    {
-                        XtraMessageBox.Show("Bạn chưa chọn đối tượng cần xóa", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
-            catch (Exception)
-            {
-                XtraMessageBox.Show("Không được phép xóa đối tượng này, đối tượng đã được thêm ở một danh mục khác", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -327,17 +267,6 @@ namespace ClinienceSystemManagement.HeThong
                 su.ShowDialog();
                 sqlDataSource4.Fill();
             }
-        }
-        String a;
-        private void btnCheck_Click(object sender, EventArgs e)
-        {
-            lbTrangThai.Text = "";
-            for (int i = 0; i < n; i++)
-            {
-                int ingredientId = _getChecked[i];
-                a = ingredientId + " , " + a;
-                lbTrangThai.Text = a;
-            }
-        }
+        }     
     }
 }
