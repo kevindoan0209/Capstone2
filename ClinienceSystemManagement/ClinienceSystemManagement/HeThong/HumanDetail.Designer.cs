@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery3 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column5 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression5 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table3 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column6 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression6 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery5 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column9 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression9 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table5 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column10 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression10 = new DevExpress.DataAccess.Sql.ColumnExpression();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HumanDetail));
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery4 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column7 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression7 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table4 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column8 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression8 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery6 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column11 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression11 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table6 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column12 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression12 = new DevExpress.DataAccess.Sql.ColumnExpression();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.xtraTabContarol1 = new DevExpress.XtraTab.XtraTabControl();
@@ -98,28 +98,26 @@
             // 
             this.sqlDataSource1.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            columnExpression5.ColumnName = "Paraclinical_Group_ID";
-            table3.Name = "Paraclinical_Group";
-            columnExpression5.Table = table3;
-            column5.Expression = columnExpression5;
-            columnExpression6.ColumnName = "Paraclinical_Group_Name";
-            columnExpression6.Table = table3;
-            column6.Expression = columnExpression6;
-            selectQuery3.Columns.Add(column5);
-            selectQuery3.Columns.Add(column6);
-            selectQuery3.Name = "Paraclinical_Group";
-            selectQuery3.Tables.Add(table3);
+            columnExpression9.ColumnName = "Paraclinical_Group_ID";
+            table5.Name = "Paraclinical_Group";
+            columnExpression9.Table = table5;
+            column9.Expression = columnExpression9;
+            columnExpression10.ColumnName = "Paraclinical_Group_Name";
+            columnExpression10.Table = table5;
+            column10.Expression = columnExpression10;
+            selectQuery5.Columns.Add(column9);
+            selectQuery5.Columns.Add(column10);
+            selectQuery5.Name = "Paraclinical_Group";
+            selectQuery5.Tables.Add(table5);
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery3});
+            selectQuery5});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // xtraTabContarol1
             // 
-            this.xtraTabContarol1.Location = new System.Drawing.Point(26, 14);
+            resources.ApplyResources(this.xtraTabContarol1, "xtraTabContarol1");
             this.xtraTabContarol1.Name = "xtraTabContarol1";
             this.xtraTabContarol1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabContarol1.Size = new System.Drawing.Size(478, 314);
-            this.xtraTabContarol1.TabIndex = 7;
             this.xtraTabContarol1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1});
             // 
@@ -144,42 +142,35 @@
             this.xtraTabPage1.Controls.Add(this.labelControl1);
             this.xtraTabPage1.Controls.Add(this.txtTen);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(472, 286);
-            this.xtraTabPage1.Text = "Thông tin người dùng";
+            resources.ApplyResources(this.xtraTabPage1, "xtraTabPage1");
             // 
             // txtKiTe
             // 
-            this.txtKiTe.Location = new System.Drawing.Point(28, 206);
+            resources.ApplyResources(this.txtKiTe, "txtKiTe");
             this.txtKiTe.Name = "txtKiTe";
-            this.txtKiTe.Properties.Appearance.Font = new System.Drawing.Font("Twilight New Moon", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKiTe.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("txtKiTe.Properties.Appearance.Font")));
             this.txtKiTe.Properties.Appearance.Options.UseFont = true;
-            this.txtKiTe.Size = new System.Drawing.Size(140, 64);
-            this.txtKiTe.TabIndex = 37;
             // 
             // cbxHienMatKhau
             // 
-            this.cbxHienMatKhau.Location = new System.Drawing.Point(362, 205);
+            resources.ApplyResources(this.cbxHienMatKhau, "cbxHienMatKhau");
             this.cbxHienMatKhau.Name = "cbxHienMatKhau";
-            this.cbxHienMatKhau.Properties.Caption = "Hiện mật khẩu";
-            this.cbxHienMatKhau.Size = new System.Drawing.Size(91, 19);
-            this.cbxHienMatKhau.TabIndex = 36;
+            this.cbxHienMatKhau.Properties.Caption = resources.GetString("cbxHienMatKhau.Properties.Caption");
             this.cbxHienMatKhau.CheckedChanged += new System.EventHandler(this.cbxHienMatKhau_CheckedChanged);
             // 
             // lkePhanQuyen
             // 
-            this.lkePhanQuyen.Location = new System.Drawing.Point(183, 164);
+            resources.ApplyResources(this.lkePhanQuyen, "lkePhanQuyen");
             this.lkePhanQuyen.Name = "lkePhanQuyen";
             this.lkePhanQuyen.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lkePhanQuyen.Properties.Buttons"))))});
             this.lkePhanQuyen.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Account_Type_ID", "Account_Type_ID", 109, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Account_Type_Authority", "Phân quyền", 130, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lkePhanQuyen.Properties.Columns"), resources.GetString("lkePhanQuyen.Properties.Columns1"), ((int)(resources.GetObject("lkePhanQuyen.Properties.Columns2"))), ((DevExpress.Utils.FormatType)(resources.GetObject("lkePhanQuyen.Properties.Columns3"))), resources.GetString("lkePhanQuyen.Properties.Columns4"), ((bool)(resources.GetObject("lkePhanQuyen.Properties.Columns5"))), ((DevExpress.Utils.HorzAlignment)(resources.GetObject("lkePhanQuyen.Properties.Columns6")))),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lkePhanQuyen.Properties.Columns7"), resources.GetString("lkePhanQuyen.Properties.Columns8"), ((int)(resources.GetObject("lkePhanQuyen.Properties.Columns9"))), ((DevExpress.Utils.FormatType)(resources.GetObject("lkePhanQuyen.Properties.Columns10"))), resources.GetString("lkePhanQuyen.Properties.Columns11"), ((bool)(resources.GetObject("lkePhanQuyen.Properties.Columns12"))), ((DevExpress.Utils.HorzAlignment)(resources.GetObject("lkePhanQuyen.Properties.Columns13"))))});
             this.lkePhanQuyen.Properties.DataSource = this.bindingSource2;
             this.lkePhanQuyen.Properties.DisplayMember = "Account_Type_Authority";
-            this.lkePhanQuyen.Properties.NullText = "Chọn quyền hạn";
+            this.lkePhanQuyen.Properties.NullText = resources.GetString("lkePhanQuyen.Properties.NullText");
             this.lkePhanQuyen.Properties.ValueMember = "Account_Type_ID";
-            this.lkePhanQuyen.Size = new System.Drawing.Size(110, 20);
-            this.lkePhanQuyen.TabIndex = 34;
             // 
             // bindingSource2
             // 
@@ -190,165 +181,119 @@
             // 
             this.sqlDataSource2.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource2.Name = "sqlDataSource2";
-            columnExpression7.ColumnName = "Account_Type_ID";
-            table4.Name = "Account_Type";
-            columnExpression7.Table = table4;
-            column7.Expression = columnExpression7;
-            columnExpression8.ColumnName = "Account_Type_Authority";
-            columnExpression8.Table = table4;
-            column8.Expression = columnExpression8;
-            selectQuery4.Columns.Add(column7);
-            selectQuery4.Columns.Add(column8);
-            selectQuery4.Name = "Account_Type";
-            selectQuery4.Tables.Add(table4);
+            columnExpression11.ColumnName = "Account_Type_ID";
+            table6.Name = "Account_Type";
+            columnExpression11.Table = table6;
+            column11.Expression = columnExpression11;
+            columnExpression12.ColumnName = "Account_Type_Authority";
+            columnExpression12.Table = table6;
+            column12.Expression = columnExpression12;
+            selectQuery6.Columns.Add(column11);
+            selectQuery6.Columns.Add(column12);
+            selectQuery6.Name = "Account_Type";
+            selectQuery6.Tables.Add(table6);
             this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery4});
+            selectQuery6});
             this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
             // 
             // txtAnh
             // 
-            this.txtAnh.Location = new System.Drawing.Point(362, 205);
+            resources.ApplyResources(this.txtAnh, "txtAnh");
             this.txtAnh.Name = "txtAnh";
-            this.txtAnh.Size = new System.Drawing.Size(100, 20);
-            this.txtAnh.TabIndex = 32;
-            this.txtAnh.Visible = false;
             // 
             // peAnh
             // 
-            this.peAnh.EditValue = ((object)(resources.GetObject("peAnh.EditValue")));
-            this.peAnh.Location = new System.Drawing.Point(28, 35);
+            resources.ApplyResources(this.peAnh, "peAnh");
             this.peAnh.Name = "peAnh";
             this.peAnh.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.peAnh.Properties.ZoomAccelerationFactor = 1D;
-            this.peAnh.Size = new System.Drawing.Size(140, 140);
-            this.peAnh.TabIndex = 30;
             this.peAnh.Click += new System.EventHandler(this.peAnh_Click);
             // 
             // labelControl8
             // 
-            this.labelControl8.Location = new System.Drawing.Point(183, 16);
+            resources.ApplyResources(this.labelControl8, "labelControl8");
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(18, 13);
-            this.labelControl8.TabIndex = 29;
-            this.labelControl8.Text = "Mã:";
             // 
             // txtMa
             // 
-            this.txtMa.Location = new System.Drawing.Point(183, 33);
+            resources.ApplyResources(this.txtMa, "txtMa");
             this.txtMa.Name = "txtMa";
-            this.txtMa.Size = new System.Drawing.Size(110, 20);
-            this.txtMa.TabIndex = 28;
             // 
             // labelControl7
             // 
-            this.labelControl7.Location = new System.Drawing.Point(183, 231);
+            resources.ApplyResources(this.labelControl7, "labelControl7");
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(89, 13);
-            this.labelControl7.TabIndex = 25;
-            this.labelControl7.Text = "Nhập lại mật khẩu:";
             // 
             // txtMatKhau2
             // 
-            this.txtMatKhau2.Location = new System.Drawing.Point(183, 250);
+            resources.ApplyResources(this.txtMatKhau2, "txtMatKhau2");
             this.txtMatKhau2.Name = "txtMatKhau2";
             this.txtMatKhau2.Properties.UseSystemPasswordChar = true;
-            this.txtMatKhau2.Size = new System.Drawing.Size(173, 20);
-            this.txtMatKhau2.TabIndex = 24;
             // 
             // labelControl6
             // 
-            this.labelControl6.Location = new System.Drawing.Point(183, 186);
+            resources.ApplyResources(this.labelControl6, "labelControl6");
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(48, 13);
-            this.labelControl6.TabIndex = 23;
-            this.labelControl6.Text = "Mật khẩu:";
             // 
             // txtMatKhau
             // 
-            this.txtMatKhau.Location = new System.Drawing.Point(183, 205);
+            resources.ApplyResources(this.txtMatKhau, "txtMatKhau");
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Properties.UseSystemPasswordChar = true;
-            this.txtMatKhau.Size = new System.Drawing.Size(173, 20);
-            this.txtMatKhau.TabIndex = 22;
             this.txtMatKhau.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMatKhau_KeyPress);
             this.txtMatKhau.Validating += new System.ComponentModel.CancelEventHandler(this.txtMatKhau_Validating);
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(183, 145);
+            resources.ApplyResources(this.labelControl5, "labelControl5");
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(61, 13);
-            this.labelControl5.TabIndex = 18;
-            this.labelControl5.Text = "Phân quyền:";
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(183, 100);
+            resources.ApplyResources(this.labelControl4, "labelControl4");
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(76, 13);
-            this.labelControl4.TabIndex = 17;
-            this.labelControl4.Text = "Tên đăng nhập:";
             // 
             // txtTenDangNhap
             // 
-            this.txtTenDangNhap.Location = new System.Drawing.Point(183, 119);
+            resources.ApplyResources(this.txtTenDangNhap, "txtTenDangNhap");
             this.txtTenDangNhap.Name = "txtTenDangNhap";
-            this.txtTenDangNhap.Size = new System.Drawing.Size(256, 20);
-            this.txtTenDangNhap.TabIndex = 16;
             this.txtTenDangNhap.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTenDangNhap_KeyPress);
             this.txtTenDangNhap.Validating += new System.ComponentModel.CancelEventHandler(this.txtTenDangNhap_Validating);
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(28, 186);
+            resources.ApplyResources(this.labelControl3, "labelControl3");
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(38, 13);
-            this.labelControl3.TabIndex = 15;
-            this.labelControl3.Text = "Chữ ký:";
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(28, 16);
+            resources.ApplyResources(this.labelControl2, "labelControl2");
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(76, 13);
-            this.labelControl2.TabIndex = 14;
-            this.labelControl2.Text = "Ảnh (140*140):";
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(183, 55);
+            resources.ApplyResources(this.labelControl1, "labelControl1");
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(51, 13);
-            this.labelControl1.TabIndex = 2;
-            this.labelControl1.Text = "Họ và tên:";
             // 
             // txtTen
             // 
-            this.txtTen.Location = new System.Drawing.Point(183, 74);
+            resources.ApplyResources(this.txtTen, "txtTen");
             this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(256, 20);
-            this.txtTen.TabIndex = 0;
             // 
             // btnHuy
             // 
             this.btnHuy.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.btnHuy.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.Image")));
-            this.btnHuy.Location = new System.Drawing.Point(429, 16);
+            resources.ApplyResources(this.btnHuy, "btnHuy");
             this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(75, 25);
-            this.btnHuy.TabIndex = 1;
-            this.btnHuy.Text = "Hủy";
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnTao
             // 
             this.btnTao.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.btnTao.Image = ((System.Drawing.Image)(resources.GetObject("btnTao.Image")));
-            this.btnTao.Location = new System.Drawing.Point(348, 16);
+            resources.ApplyResources(this.btnTao, "btnTao");
             this.btnTao.Name = "btnTao";
-            this.btnTao.Size = new System.Drawing.Size(75, 25);
-            this.btnTao.TabIndex = 0;
-            this.btnTao.Text = "Lưu";
             this.btnTao.Click += new System.EventHandler(this.btnTao_Click);
             // 
             // panelControl1
@@ -356,34 +301,28 @@
             this.panelControl1.Controls.Add(this.lbTrangThai);
             this.panelControl1.Controls.Add(this.btnHuy);
             this.panelControl1.Controls.Add(this.btnTao);
-            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl1.Location = new System.Drawing.Point(0, 340);
+            resources.ApplyResources(this.panelControl1, "panelControl1");
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(525, 53);
-            this.panelControl1.TabIndex = 6;
             // 
             // lbTrangThai
             // 
-            this.lbTrangThai.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lbTrangThai.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.lbTrangThai.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lbTrangThai.Appearance.Font")));
+            this.lbTrangThai.Appearance.ForeColor = ((System.Drawing.Color)(resources.GetObject("lbTrangThai.Appearance.ForeColor")));
             this.lbTrangThai.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
             this.lbTrangThai.LineStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.lbTrangThai.Location = new System.Drawing.Point(31, 16);
+            resources.ApplyResources(this.lbTrangThai, "lbTrangThai");
             this.lbTrangThai.Name = "lbTrangThai";
-            this.lbTrangThai.Size = new System.Drawing.Size(0, 15);
-            this.lbTrangThai.TabIndex = 34;
             // 
             // HumanDetail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(525, 393);
             this.Controls.Add(this.xtraTabContarol1);
             this.Controls.Add(this.panelControl1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "HumanDetail";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Danh mục người dùng";
             this.Load += new System.EventHandler(this.HumanDetail_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabContarol1)).EndInit();

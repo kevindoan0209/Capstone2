@@ -3,6 +3,7 @@ using ClinienceSystemManagement.DatHen;
 using ClinienceSystemManagement.Hệ_Thống;
 using ClinienceSystemManagement.HeThong;
 using ClinienceSystemManagement.KhamBenh;
+using ClinienceSystemManagement.TroGiup;
 using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
@@ -25,7 +26,7 @@ namespace PresentationLayer
         {
             InitializeComponent();
         }
-        
+
         private void Login()
         {
             Login login = new Login();
@@ -44,8 +45,13 @@ namespace PresentationLayer
         }
         private void TrangChu_Load(object sender, EventArgs e)
         {
+            Intro intro = new Intro();
+            intro.MdiParent = this;
+            intro.Show();
+
             Login();
             HandleAuthority();
+
         }
 
         private void btnDangNhap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -57,7 +63,7 @@ namespace PresentationLayer
         private void btnDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (XtraMessageBox.Show("Bạn có muốn đăng xuất", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
-            {      
+            {
                 UserName = string.Empty;
                 Id = 0;
                 Type = 0;
@@ -235,6 +241,34 @@ namespace PresentationLayer
         private void btnBarGioiThieu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
 
+        }
+
+        private void btnPhanMem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.IsExits(typeof(AboutProduct));
+            if (frm != null)
+            {
+                frm.Activate();
+            }
+            else
+            {
+                AboutProduct about = new AboutProduct();
+                about.ShowDialog();
+            }
+        }
+
+        private void btnPhongKham_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.IsExits(typeof(About));
+            if (frm != null)
+            {
+                frm.Activate();
+            }
+            else
+            {
+                About about = new About();
+                about.ShowDialog();
+            }
         }
     }
 }

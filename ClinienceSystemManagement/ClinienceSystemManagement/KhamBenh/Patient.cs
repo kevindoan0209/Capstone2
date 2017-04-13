@@ -103,10 +103,9 @@ namespace ClinienceSystemManagement.KhamBenh
             object value = gvDanhMuc.GetRowCellValue(rowIndex, colID);
             if (value != null)
             {
-                PatientDetail pd = new PatientDetail();
-                pd.Id = (int)value;
-                pd.isAdd = false;
-                pd.ShowDialog();
+                SubPatientDetail sp = new SubPatientDetail();
+                sp.Id = (int)value;
+                sp.ShowDialog();
                 sqlDataSource1.Fill();
             }
             else
