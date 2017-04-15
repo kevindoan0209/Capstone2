@@ -317,3 +317,4 @@ F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debu
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.TroGiup.About.resources
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.TroGiup.AboutProduct.resources
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.Intro.resources
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.KhamBenh.Examination.resources

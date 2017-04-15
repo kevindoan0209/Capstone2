@@ -22,7 +22,6 @@ namespace ClinienceSystemManagement
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomAppointmentForm));
             this.lblLabel = new DevExpress.XtraEditors.LabelControl();
             this.lblStartTime = new DevExpress.XtraEditors.LabelControl();
@@ -35,6 +34,7 @@ namespace ClinienceSystemManagement
             this.edtStartTime = new DevExpress.XtraScheduler.UI.SchedulerTimeEdit();
             this.edtEndTime = new DevExpress.XtraScheduler.UI.SchedulerTimeEdit();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.lookUpEdit2 = new DevExpress.XtraEditors.LookUpEdit();
             this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
@@ -48,7 +48,6 @@ namespace ClinienceSystemManagement
             this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.btnOk = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.edtStartDate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edtStartDate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edtEndDate.Properties.CalendarTimeProperties)).BeginInit();
@@ -172,6 +171,11 @@ namespace ClinienceSystemManagement
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
+            // labelControl5
+            // 
+            resources.ApplyResources(this.labelControl5, "labelControl5");
+            this.labelControl5.Name = "labelControl5";
+            // 
             // lookUpEdit2
             // 
             resources.ApplyResources(this.lookUpEdit2, "lookUpEdit2");
@@ -219,7 +223,7 @@ namespace ClinienceSystemManagement
             // 
             resources.ApplyResources(this.txtMa, "txtMa");
             this.txtMa.Name = "txtMa";
-            this.txtMa.Properties.AccessibleName = resources.GetString("textEdit1.Properties.AccessibleName");
+            this.txtMa.Properties.AccessibleName = resources.GetString("txtMa.Properties.AccessibleName");
             // 
             // labelControl1
             // 
@@ -230,7 +234,7 @@ namespace ClinienceSystemManagement
             // 
             resources.ApplyResources(this.txtGhiChu, "txtGhiChu");
             this.txtGhiChu.Name = "txtGhiChu";
-            this.txtGhiChu.Properties.AccessibleName = resources.GetString("tbSubject.Properties.AccessibleName");
+            this.txtGhiChu.Properties.AccessibleName = resources.GetString("txtGhiChu.Properties.AccessibleName");
             // 
             // panelControl1
             // 
@@ -274,11 +278,6 @@ namespace ClinienceSystemManagement
             this.btnOk.Image = ((System.Drawing.Image)(resources.GetObject("btnOk.Image")));
             this.btnOk.Name = "btnOk";
             this.btnOk.Click += new System.EventHandler(this.OnBtnOkClick);
-            // 
-            // labelControl5
-            // 
-            resources.ApplyResources(this.labelControl5, "labelControl5");
-            this.labelControl5.Name = "labelControl5";
             // 
             // CustomAppointmentForm
             // 

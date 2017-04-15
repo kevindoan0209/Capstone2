@@ -91,7 +91,7 @@ namespace ClinienceSystemManagement.KhamBenh
                 }
                 else
                 {
-                    XtraMessageBox.Show("Bạn chưa chọn đối tượng để xem thông tin chi tiết", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    XtraMessageBox.Show("Bạn chưa chọn bệnh nhân để xem thông tin chi tiết", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
         }
@@ -150,7 +150,7 @@ namespace ClinienceSystemManagement.KhamBenh
             catch (Exception)
             {
 
-                XtraMessageBox.Show("Không được phép xóa đối tượng này, đối tượng đã được thêm ở một danh mục khác", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                XtraMessageBox.Show("Không được phép xóa bệnh nhân này, bệnh nhân đã được thêm ở một danh mục khác", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -186,8 +186,44 @@ namespace ClinienceSystemManagement.KhamBenh
                 }
                 else
                 {
-                    XtraMessageBox.Show("Bạn chưa chọn đối tượng để xem thông tin chi tiết", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    XtraMessageBox.Show("Bạn chưa chọn bệnh nhân để xem thông tin chi tiết", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
+            }
+        }
+
+        private void csmTaoPK_Click(object sender, EventArgs e)
+        {
+            int rowIndex = gvDanhMuc.FocusedRowHandle;
+            string colID = "Account_ID";
+            object value = gvDanhMuc.GetRowCellValue(rowIndex, colID);
+            if (value != null)
+            {
+                Examination ex = new Examination();
+                ex.Id = (int)value;
+                ex.ShowDialog();
+                sqlDataSource1.Fill();
+            }
+            else
+            {
+                XtraMessageBox.Show("Bạn chưa chọn bệnh nhân để tạo phiên khám", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btnTaoPK_Click(object sender, EventArgs e)
+        {
+            int rowIndex = gvDanhMuc.FocusedRowHandle;
+            string colID = "Account_ID";
+            object value = gvDanhMuc.GetRowCellValue(rowIndex, colID);
+            if (value != null)
+            {
+                Examination ex = new Examination();
+                ex.Id = (int)value;
+                ex.ShowDialog();
+                sqlDataSource1.Fill();
+            }
+            else
+            {
+                XtraMessageBox.Show("Bạn chưa chọn bệnh nhân để tạo phiên khám", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

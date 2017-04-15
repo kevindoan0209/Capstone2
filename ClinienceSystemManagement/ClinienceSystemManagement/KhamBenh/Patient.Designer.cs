@@ -81,6 +81,7 @@
             this.searchControl2 = new DevExpress.XtraEditors.SearchControl();
             this.grcDanhMuc = new DevExpress.XtraGrid.GridControl();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.csmTaoPK = new System.Windows.Forms.ToolStripMenuItem();
             this.csmXem = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsCapNhat = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsXoa = new System.Windows.Forms.ToolStripMenuItem();
@@ -98,6 +99,7 @@
             this.colAccount_City = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colAccount_Address = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.btnTaoPK = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.btnXuatFile = new DevExpress.XtraEditors.SimpleButton();
             this.btnLamMoi = new DevExpress.XtraEditors.SimpleButton();
@@ -355,6 +357,7 @@
             this.grcDanhMuc.EmbeddedNavigator.Buttons.Edit.Visible = false;
             this.grcDanhMuc.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
             this.grcDanhMuc.EmbeddedNavigator.Buttons.Remove.Visible = false;
+            this.grcDanhMuc.EmbeddedNavigator.TextStringFormat = "Trang {0} / {1}";
             this.grcDanhMuc.Location = new System.Drawing.Point(299, 0);
             this.grcDanhMuc.MainView = this.gvDanhMuc;
             this.grcDanhMuc.Name = "grcDanhMuc";
@@ -368,16 +371,24 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.csmTaoPK,
             this.csmXem,
             this.cmsCapNhat,
             this.cmsXoa});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(151, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(161, 92);
+            // 
+            // csmTaoPK
+            // 
+            this.csmTaoPK.Name = "csmTaoPK";
+            this.csmTaoPK.Size = new System.Drawing.Size(160, 22);
+            this.csmTaoPK.Text = "Tạo phiên khám";
+            this.csmTaoPK.Click += new System.EventHandler(this.csmTaoPK_Click);
             // 
             // csmXem
             // 
             this.csmXem.Name = "csmXem";
-            this.csmXem.Size = new System.Drawing.Size(150, 22);
+            this.csmXem.Size = new System.Drawing.Size(160, 22);
             this.csmXem.Text = "Xem thông tin";
             this.csmXem.Click += new System.EventHandler(this.csmXem_Click);
             // 
@@ -385,7 +396,7 @@
             // 
             this.cmsCapNhat.BackColor = System.Drawing.SystemColors.Control;
             this.cmsCapNhat.Name = "cmsCapNhat";
-            this.cmsCapNhat.Size = new System.Drawing.Size(150, 22);
+            this.cmsCapNhat.Size = new System.Drawing.Size(160, 22);
             this.cmsCapNhat.Text = "Cập nhật";
             this.cmsCapNhat.Click += new System.EventHandler(this.cmsCapNhat_Click);
             // 
@@ -393,7 +404,7 @@
             // 
             this.cmsXoa.BackColor = System.Drawing.SystemColors.Control;
             this.cmsXoa.Name = "cmsXoa";
-            this.cmsXoa.Size = new System.Drawing.Size(150, 22);
+            this.cmsXoa.Size = new System.Drawing.Size(160, 22);
             this.cmsXoa.Text = "Xóa";
             this.cmsXoa.Click += new System.EventHandler(this.cmsXoa_Click);
             // 
@@ -497,7 +508,7 @@
             this.colAccount_Name.Name = "colAccount_Name";
             this.colAccount_Name.Visible = true;
             this.colAccount_Name.VisibleIndex = 0;
-            this.colAccount_Name.Width = 95;
+            this.colAccount_Name.Width = 109;
             // 
             // colAccount_Image
             // 
@@ -516,7 +527,7 @@
             this.colAccount_Age.Name = "colAccount_Age";
             this.colAccount_Age.Visible = true;
             this.colAccount_Age.VisibleIndex = 1;
-            this.colAccount_Age.Width = 48;
+            this.colAccount_Age.Width = 50;
             // 
             // colAccount_Sex
             // 
@@ -525,7 +536,7 @@
             this.colAccount_Sex.Name = "colAccount_Sex";
             this.colAccount_Sex.Visible = true;
             this.colAccount_Sex.VisibleIndex = 2;
-            this.colAccount_Sex.Width = 43;
+            this.colAccount_Sex.Width = 45;
             // 
             // colAccount_Email
             // 
@@ -539,7 +550,7 @@
             this.colAccount_Phone.Name = "colAccount_Phone";
             this.colAccount_Phone.Visible = true;
             this.colAccount_Phone.VisibleIndex = 3;
-            this.colAccount_Phone.Width = 66;
+            this.colAccount_Phone.Width = 77;
             // 
             // colAccount_Job
             // 
@@ -548,7 +559,7 @@
             this.colAccount_Job.Name = "colAccount_Job";
             this.colAccount_Job.Visible = true;
             this.colAccount_Job.VisibleIndex = 5;
-            this.colAccount_Job.Width = 82;
+            this.colAccount_Job.Width = 104;
             // 
             // colAccount_City
             // 
@@ -562,10 +573,11 @@
             this.colAccount_Address.Name = "colAccount_Address";
             this.colAccount_Address.Visible = true;
             this.colAccount_Address.VisibleIndex = 4;
-            this.colAccount_Address.Width = 124;
+            this.colAccount_Address.Width = 107;
             // 
             // panelControl2
             // 
+            this.panelControl2.Controls.Add(this.btnTaoPK);
             this.panelControl2.Controls.Add(this.labelControl1);
             this.panelControl2.Controls.Add(this.btnTiepNhan);
             this.panelControl2.Controls.Add(this.btnXuatFile);
@@ -575,6 +587,17 @@
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(510, 49);
             this.panelControl2.TabIndex = 1;
+            // 
+            // btnTaoPK
+            // 
+            this.btnTaoPK.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.btnTaoPK.Image = ((System.Drawing.Image)(resources.GetObject("btnTaoPK.Image")));
+            this.btnTaoPK.Location = new System.Drawing.Point(158, 11);
+            this.btnTaoPK.Name = "btnTaoPK";
+            this.btnTaoPK.Size = new System.Drawing.Size(128, 28);
+            this.btnTaoPK.TabIndex = 6;
+            this.btnTaoPK.Text = "Tạo phiêm khám";
+            this.btnTaoPK.Click += new System.EventHandler(this.btnTaoPK_Click);
             // 
             // labelControl1
             // 
@@ -591,7 +614,7 @@
             this.btnXuatFile.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnXuatFile.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.btnXuatFile.Image = ((System.Drawing.Image)(resources.GetObject("btnXuatFile.Image")));
-            this.btnXuatFile.Location = new System.Drawing.Point(239, 11);
+            this.btnXuatFile.Location = new System.Drawing.Point(373, 11);
             this.btnXuatFile.Name = "btnXuatFile";
             this.btnXuatFile.Size = new System.Drawing.Size(142, 28);
             this.btnXuatFile.TabIndex = 5;
@@ -602,7 +625,7 @@
             // 
             this.btnLamMoi.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.btnLamMoi.Image = ((System.Drawing.Image)(resources.GetObject("btnLamMoi.Image")));
-            this.btnLamMoi.Location = new System.Drawing.Point(158, 11);
+            this.btnLamMoi.Location = new System.Drawing.Point(292, 11);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(75, 28);
             this.btnLamMoi.TabIndex = 4;
@@ -690,5 +713,7 @@
         private DevExpress.XtraEditors.LabelControl lbCongViec;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.ToolStripMenuItem csmXem;
+        private System.Windows.Forms.ToolStripMenuItem csmTaoPK;
+        private DevExpress.XtraEditors.SimpleButton btnTaoPK;
     }
 }

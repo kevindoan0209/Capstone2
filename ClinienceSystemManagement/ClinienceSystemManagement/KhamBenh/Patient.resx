@@ -367,6 +367,21 @@
   <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IkFjY291bnQiPjxGaWVsZCBOYW1lPSJBY2NvdW50X0lEIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQWNjb3VudF9OYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkFjY291bnRfSW1hZ2UiIFR5cGU9IkJ5dGVBcnJheSIgLz48RmllbGQgTmFtZT0iQWNjb3VudF9UeXBlX0lEIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQWNjb3VudF9BZ2UiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJBY2NvdW50X1NleCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJBY2NvdW50X0VtYWlsIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkFjY291bnRfUGhvbmUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQWNjb3VudF9Kb2IiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQWNjb3VudF9DaXR5IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkFjY291bnRfQWRkcmVzcyIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
   </data>
+  <data name="btnTaoPK.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAANoAAADaASIXBHgAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAAB40lEQVRIS72WO0vDUBiG/Q+OLpaGglUHwRuU2qGtUHTwii6Cg2MXF8HFnyC4iwgigoMKLjoI8YJF
+        8VI1beqt9poem15SSNIMSsyxNJ7g0TYHcXiWc77vfZIvOSENqqrqsO6mRsZpWdUoaaim6bNcM06rA800
+        CO6czSvsUA/IHWzRYuz2wiyFo136ccq7iWYaBCGnJVK8pI/LJU4lRUyE9tDMbwI5G73HNZoggmb+v4Bz
+        W18yHkolwmd/Lm0v76CZfyuA+FpO0UxTgtdJRya3MHMJBtpk3H4FK9mIwGhXTpuvAucsJ8NXuJoKhAJ+
+        doLRH6SQzuJqKtQWxNAGMNbN8/PTweLa4lFVoAjpIlzj56ZugK9FQetNCcBIZ14pcZJ+5RjkdCRILOD9
+        wywuFEUWUjliQcZre5dCgZNyPh6VC8kUEvwG18p87Km4vnRILkD4w4dM4QX+kbAuKCQ5XE2FGoK0h4pj
+        G/ttb9L9eUDOJ+Lfx4JCKqibOgWfJ1fgBH0svwBfZfgZqUvAIXcABtvE16GOAhjvzf4E3M8MtovVHlMC
+        iBik9ROMQ2LPTtH6ekaUMDRoZwH47MpPwH1D/W8C7c9gP+WhWGODaWg00yAIOajWB5d1QxtTGNNYGy/F
+        aLi+MtWGDzFJOuOBeg3pAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="btnXuatFile.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA

@@ -91,10 +91,7 @@ namespace ClinienceSystemManagement.KhamBenh
                 }
             }
         }
-        private void SaveUpdate()
-        {
-            
-        }
+
 
         private void btnLuu_Click(object sender, EventArgs e)
         {

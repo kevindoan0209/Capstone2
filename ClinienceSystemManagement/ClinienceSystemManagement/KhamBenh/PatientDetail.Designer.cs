@@ -60,9 +60,15 @@
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.txtLyDo = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.dtNgayKetThuc = new DevExpress.XtraEditors.DateEdit();
+            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
+            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
+            this.dtNgayBatDau = new DevExpress.XtraEditors.DateEdit();
+            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtMa.Properties)).BeginInit();
@@ -82,6 +88,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtLyDo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtNgayKetThuc.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtNgayKetThuc.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtNgayBatDau.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtNgayBatDau.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // btnHuy
@@ -132,17 +143,17 @@
             // 
             // txtMa
             // 
-            this.txtMa.Location = new System.Drawing.Point(613, 13);
+            this.txtMa.Location = new System.Drawing.Point(650, 18);
             this.txtMa.Name = "txtMa";
-            this.txtMa.Size = new System.Drawing.Size(46, 20);
+            this.txtMa.Size = new System.Drawing.Size(10, 20);
             this.txtMa.TabIndex = 27;
             this.txtMa.Visible = false;
             // 
             // txtAnh
             // 
-            this.txtAnh.Location = new System.Drawing.Point(561, 13);
+            this.txtAnh.Location = new System.Drawing.Point(650, 16);
             this.txtAnh.Name = "txtAnh";
-            this.txtAnh.Size = new System.Drawing.Size(46, 20);
+            this.txtAnh.Size = new System.Drawing.Size(10, 20);
             this.txtAnh.TabIndex = 24;
             this.txtAnh.Visible = false;
             // 
@@ -280,6 +291,8 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dtNamSinh.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dtNamSinh.Properties.CalendarView = DevExpress.XtraEditors.Repository.CalendarView.TouchUI;
+            this.dtNamSinh.Properties.VistaDisplayMode = DevExpress.Utils.DefaultBoolean.False;
             this.dtNamSinh.Size = new System.Drawing.Size(200, 20);
             this.dtNamSinh.TabIndex = 9;
             // 
@@ -326,6 +339,12 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.labelControl9);
+            this.groupBox2.Controls.Add(this.dtNgayKetThuc);
+            this.groupBox2.Controls.Add(this.lookUpEdit1);
+            this.groupBox2.Controls.Add(this.labelControl12);
+            this.groupBox2.Controls.Add(this.dtNgayBatDau);
+            this.groupBox2.Controls.Add(this.labelControl13);
             this.groupBox2.Controls.Add(this.txtThanPhien);
             this.groupBox2.Controls.Add(this.labelControl11);
             this.groupBox2.Controls.Add(this.txtLyDo);
@@ -339,14 +358,14 @@
             // 
             // txtThanPhien
             // 
-            this.txtThanPhien.Location = new System.Drawing.Point(17, 217);
+            this.txtThanPhien.Location = new System.Drawing.Point(18, 162);
             this.txtThanPhien.Name = "txtThanPhien";
-            this.txtThanPhien.Size = new System.Drawing.Size(360, 110);
+            this.txtThanPhien.Size = new System.Drawing.Size(360, 118);
             this.txtThanPhien.TabIndex = 22;
             // 
             // labelControl11
             // 
-            this.labelControl11.Location = new System.Drawing.Point(18, 198);
+            this.labelControl11.Location = new System.Drawing.Point(18, 142);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(57, 13);
             this.labelControl11.TabIndex = 24;
@@ -356,7 +375,7 @@
             // 
             this.txtLyDo.Location = new System.Drawing.Point(17, 41);
             this.txtLyDo.Name = "txtLyDo";
-            this.txtLyDo.Size = new System.Drawing.Size(360, 146);
+            this.txtLyDo.Size = new System.Drawing.Size(360, 95);
             this.txtLyDo.TabIndex = 23;
             // 
             // labelControl10
@@ -366,6 +385,78 @@
             this.labelControl10.Size = new System.Drawing.Size(58, 13);
             this.labelControl10.TabIndex = 22;
             this.labelControl10.Text = "Lý do khám:";
+            // 
+            // labelControl9
+            // 
+            this.labelControl9.Location = new System.Drawing.Point(271, 286);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(71, 13);
+            this.labelControl9.TabIndex = 38;
+            this.labelControl9.Text = "Ngày kết thúc:";
+            // 
+            // dtNgayKetThuc
+            // 
+            this.dtNgayKetThuc.EditValue = new System.DateTime(2017, 4, 15, 10, 37, 57, 812);
+            this.dtNgayKetThuc.Location = new System.Drawing.Point(271, 305);
+            this.dtNgayKetThuc.Name = "dtNgayKetThuc";
+            this.dtNgayKetThuc.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dtNgayKetThuc.Properties.CalendarTimeEditing = DevExpress.Utils.DefaultBoolean.True;
+            this.dtNgayKetThuc.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dtNgayKetThuc.Properties.CalendarView = DevExpress.XtraEditors.Repository.CalendarView.TouchUI;
+            this.dtNgayKetThuc.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.dtNgayKetThuc.Properties.VistaDisplayMode = DevExpress.Utils.DefaultBoolean.False;
+            this.dtNgayKetThuc.Size = new System.Drawing.Size(107, 20);
+            this.dtNgayKetThuc.TabIndex = 37;
+            // 
+            // lookUpEdit1
+            // 
+            this.lookUpEdit1.Location = new System.Drawing.Point(19, 305);
+            this.lookUpEdit1.Name = "lookUpEdit1";
+            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEdit1.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Account_ID", "Account_ID", 79, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Account_Name", "Bác sĩ", 82, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Account_Type_ID", "Account_Type_ID", 96, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far)});
+            this.lookUpEdit1.Properties.DisplayMember = "Account_Name";
+            this.lookUpEdit1.Properties.NullText = "Bác sĩ";
+            this.lookUpEdit1.Properties.ValueMember = "Account_ID";
+            this.lookUpEdit1.Size = new System.Drawing.Size(116, 20);
+            this.lookUpEdit1.TabIndex = 36;
+            // 
+            // labelControl12
+            // 
+            this.labelControl12.Location = new System.Drawing.Point(153, 286);
+            this.labelControl12.Name = "labelControl12";
+            this.labelControl12.Size = new System.Drawing.Size(69, 13);
+            this.labelControl12.TabIndex = 35;
+            this.labelControl12.Text = "Ngày bắt đầu:";
+            // 
+            // dtNgayBatDau
+            // 
+            this.dtNgayBatDau.EditValue = new System.DateTime(2017, 4, 15, 10, 37, 57, 812);
+            this.dtNgayBatDau.Location = new System.Drawing.Point(153, 305);
+            this.dtNgayBatDau.Name = "dtNgayBatDau";
+            this.dtNgayBatDau.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dtNgayBatDau.Properties.CalendarTimeEditing = DevExpress.Utils.DefaultBoolean.True;
+            this.dtNgayBatDau.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dtNgayBatDau.Properties.CalendarView = DevExpress.XtraEditors.Repository.CalendarView.TouchUI;
+            this.dtNgayBatDau.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.dtNgayBatDau.Properties.VistaDisplayMode = DevExpress.Utils.DefaultBoolean.False;
+            this.dtNgayBatDau.Size = new System.Drawing.Size(107, 20);
+            this.dtNgayBatDau.TabIndex = 33;
+            // 
+            // labelControl13
+            // 
+            this.labelControl13.Location = new System.Drawing.Point(18, 286);
+            this.labelControl13.Name = "labelControl13";
+            this.labelControl13.Size = new System.Drawing.Size(59, 13);
+            this.labelControl13.TabIndex = 34;
+            this.labelControl13.Text = "Bác sĩ khám:";
             // 
             // PatientDetail
             // 
@@ -405,6 +496,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtLyDo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtNgayKetThuc.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtNgayKetThuc.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtNgayBatDau.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtNgayBatDau.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -444,5 +540,11 @@
         private DevExpress.XtraEditors.TextEdit txtMa;
         private DevExpress.XtraEditors.LabelControl lbTrangThai;
         private DevExpress.XtraEditors.MemoEdit txtDiaChi;
+        private DevExpress.XtraEditors.LabelControl labelControl9;
+        private DevExpress.XtraEditors.DateEdit dtNgayKetThuc;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
+        private DevExpress.XtraEditors.LabelControl labelControl12;
+        private DevExpress.XtraEditors.DateEdit dtNgayBatDau;
+        private DevExpress.XtraEditors.LabelControl labelControl13;
     }
 }
