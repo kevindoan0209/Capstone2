@@ -198,7 +198,7 @@ namespace ClinienceSystemManagement.KhamBenh
             object value = gvDanhMuc.GetRowCellValue(rowIndex, colID);
             if (value != null)
             {
-                Examination ex = new Examination();
+                SubExamination ex = new SubExamination();
                 ex.Id = (int)value;
                 ex.ShowDialog();
                 sqlDataSource1.Fill();
@@ -216,7 +216,7 @@ namespace ClinienceSystemManagement.KhamBenh
             object value = gvDanhMuc.GetRowCellValue(rowIndex, colID);
             if (value != null)
             {
-                Examination ex = new Examination();
+                SubExamination ex = new SubExamination();
                 ex.Id = (int)value;
                 ex.ShowDialog();
                 sqlDataSource1.Fill();
