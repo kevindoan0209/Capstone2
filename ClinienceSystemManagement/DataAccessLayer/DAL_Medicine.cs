@@ -90,5 +90,13 @@ namespace DataAccessLayer
             int temp = int.Parse(command.ExecuteScalar().ToString());
             return temp;
         }
+
+        public int DeleteMedincineIngredient(int medicineId)
+        {
+            const String sqlCommand = "  Delete from Medincine_Ingredient where Medicine_ID = @MedicineId";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@MedicineId", medicineId);
+            return command.ExecuteNonQuery();
+        }
     }
 }

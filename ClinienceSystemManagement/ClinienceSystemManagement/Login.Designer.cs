@@ -87,7 +87,7 @@
             this.Clinience.Style.CornerDiameter = 4;
             this.Clinience.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
             this.Clinience.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.Clinience.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.Clinience.Style.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(87)))), ((int)(((byte)(155)))));
             this.Clinience.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             // 
             // 
@@ -170,7 +170,6 @@
             this.btnDangNhap.Appearance.ForeColor = ((System.Drawing.Color)(resources.GetObject("btnDangNhap.Appearance.ForeColor")));
             this.btnDangNhap.Appearance.Options.UseFont = true;
             this.btnDangNhap.Appearance.Options.UseForeColor = true;
-            this.btnDangNhap.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.btnDangNhap.Image = ((System.Drawing.Image)(resources.GetObject("btnDangNhap.Image")));
             resources.ApplyResources(this.btnDangNhap, "btnDangNhap");
             this.btnDangNhap.Name = "btnDangNhap";
@@ -182,7 +181,6 @@
             this.btnThoat.Appearance.ForeColor = ((System.Drawing.Color)(resources.GetObject("btnThoat.Appearance.ForeColor")));
             this.btnThoat.Appearance.Options.UseFont = true;
             this.btnThoat.Appearance.Options.UseForeColor = true;
-            this.btnThoat.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
             resources.ApplyResources(this.btnThoat, "btnThoat");
             this.btnThoat.Name = "btnThoat";

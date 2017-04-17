@@ -42,5 +42,9 @@ namespace BussinessLogicLayer
         {
             return _medicine.GetLastIdMedicine();
         }
+        public static int DeleteMedincineIngredient(int medicineId)
+        {
+            return _medicine.DeleteMedincineIngredient(medicineId);
+        }
     }
 }

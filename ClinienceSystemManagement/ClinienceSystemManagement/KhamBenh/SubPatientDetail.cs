@@ -59,7 +59,7 @@ namespace ClinienceSystemManagement.KhamBenh
                 var account = db.Accounts.Where(i => i.Account_ID == Id).SingleOrDefault();
                 var human = db.Humans.Where(i => i.Account_ID == Id).SingleOrDefault();
                 var patient = db.Patients.Where(i => i.Account_ID == Id).SingleOrDefault();
-                var patientstatus = db.PatientStatus.Where(i => i.Account_ID == Id).SingleOrDefault();        
+               // var patientstatus = db.PatientStatus.Where(i => i.Account_ID == Id).SingleOrDefault();        
                 if (account != null)
                 {
                     txtMa.EditValue = account.Account_ID;

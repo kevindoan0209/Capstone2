@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SubExamination));
             DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
             DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
@@ -54,8 +55,8 @@
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.dtNgayKetThuc = new DevExpress.XtraEditors.DateEdit();
             this.lkeBacSi = new DevExpress.XtraEditors.LookUpEdit();
-            this.accountBindingSource1 = new System.Windows.Forms.BindingSource();
-            this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource();
+            this.accountBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.txtTen = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -65,11 +66,11 @@
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.txtLyDo = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            this.accountBindingSource = new System.Windows.Forms.BindingSource();
-            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource();
-            this.timer1 = new System.Windows.Forms.Timer();
-            this.bindingSource2 = new System.Windows.Forms.BindingSource();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource();
+            this.accountBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtMa.Properties)).BeginInit();
@@ -127,16 +128,16 @@
             this.lbTrangThai.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.lbTrangThai.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
             this.lbTrangThai.LineStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.lbTrangThai.Location = new System.Drawing.Point(23, 19);
+            this.lbTrangThai.Location = new System.Drawing.Point(23, 20);
             this.lbTrangThai.Name = "lbTrangThai";
             this.lbTrangThai.Size = new System.Drawing.Size(0, 15);
             this.lbTrangThai.TabIndex = 34;
             // 
             // txtMa
             // 
-            this.txtMa.Location = new System.Drawing.Point(215, 18);
+            this.txtMa.Location = new System.Drawing.Point(244, 18);
             this.txtMa.Name = "txtMa";
-            this.txtMa.Size = new System.Drawing.Size(39, 20);
+            this.txtMa.Size = new System.Drawing.Size(10, 20);
             this.txtMa.TabIndex = 27;
             this.txtMa.Visible = false;
             // 
@@ -165,9 +166,9 @@
             // 
             this.labelControl3.Location = new System.Drawing.Point(270, 364);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(71, 13);
+            this.labelControl3.Size = new System.Drawing.Size(89, 13);
             this.labelControl3.TabIndex = 32;
-            this.labelControl3.Text = "Ngày kết thúc:";
+            this.labelControl3.Text = "Thời gian kết thúc:";
             // 
             // dtNgayKetThuc
             // 
@@ -254,9 +255,9 @@
             // 
             this.labelControl2.Location = new System.Drawing.Point(152, 364);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(69, 13);
+            this.labelControl2.Size = new System.Drawing.Size(87, 13);
             this.labelControl2.TabIndex = 26;
-            this.labelControl2.Text = "Ngày bắt đầu:";
+            this.labelControl2.Text = "Thời gian bắt đầu:";
             // 
             // dtNgayBatDau
             // 

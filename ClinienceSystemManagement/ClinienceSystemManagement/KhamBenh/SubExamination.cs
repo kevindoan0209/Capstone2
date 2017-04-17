@@ -28,6 +28,8 @@ namespace ClinienceSystemManagement.KhamBenh
         private void PatientDetail_Load(object sender, EventArgs e)
         {
             txtMa.ReadOnly = true;
+            dtNgayBatDau.EditValue = DateTime.Now;
+            dtNgayKetThuc.EditValue = DateTime.Now;
             FillDataUpdate();
         }
         private void FillDataUpdate()
@@ -39,7 +41,7 @@ namespace ClinienceSystemManagement.KhamBenh
                 if (account != null)
                 {
                     txtMa.EditValue = account.Account_ID;
-                    txtTen.Text = account.Account_Name;                     
+                    txtTen.Text = account.Account_Name;
                     txtMa.ReadOnly = true;
                 }
             }
@@ -64,19 +66,27 @@ namespace ClinienceSystemManagement.KhamBenh
         private void btnLuu_Click(object sender, EventArgs e)
         {
 
-                if (string.IsNullOrEmpty(txtLyDo.Text))
+            if (string.IsNullOrEmpty(txtLyDo.Text))
+            {
+                lbTrangThai.Text = "*Vui lòng nhập lí do khám";
+                txtLyDo.Focus();
+            }
+            else
+            {
+                if (lkeBacSi.Text == "Bác sĩ")
                 {
-                    lbTrangThai.Text = "*Vui lòng nhập lí do khám";
-                    txtLyDo.Focus();
+                    lbTrangThai.Text = "*Vui lòng chọn bác sĩ";
+                    lkeBacSi.Focus();
                 }
                 else
                 {
-                    if (lkeBacSi.Text == "Bác sĩ")
+                    if (dtNgayBatDau.DateTime >= dtNgayKetThuc.DateTime )
                     {
-                        lbTrangThai.Text = "*Vui lòng chọn bác sĩ";
-                        lkeBacSi.Focus();
+                        lbTrangThai.Text = "*Vui lòng chọn thời gian";
+                        dtNgayKetThuc.Focus();
                     }
-                    else {
+                    else
+                    {
                         DateTime beginDate = dtNgayBatDau.DateTime;
                         DateTime endDate = dtNgayKetThuc.DateTime;
                         String reason = txtLyDo.Text;
@@ -94,14 +104,14 @@ namespace ClinienceSystemManagement.KhamBenh
                         }
                         else
                         {
-                            MainExamination me = new MainExamination();
-                           // me.MdiParent = this;
-                            me.Show();
+                            MainExamination ex = new MainExamination();
+                            // me.MdiParent = this;
+                            ex.Id = (int)patientId;
+                            ex.Show();
                         }
                     }
                 }
-            
-
+            }
         }
     }
 }

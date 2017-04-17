@@ -106,7 +106,7 @@ namespace ClinienceSystemManagement.HeThong
 
         private void btnXuatFile_Click(object sender, EventArgs e)
         {
-            string FileName = "C:\\DanhSachNguoiDung.xls";
+            string FileName = "E:\\DanhSachNguoiDung.xls";
             grcDanhMuc.ExportToXls(FileName);
         }
     }

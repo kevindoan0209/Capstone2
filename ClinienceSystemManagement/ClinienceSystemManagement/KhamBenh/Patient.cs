@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using DataAccessLayer;
+using BussinessLogicLayer;
 
 namespace ClinienceSystemManagement.KhamBenh
 {
@@ -85,7 +86,10 @@ namespace ClinienceSystemManagement.KhamBenh
                     lbGioiTinh.Text = human.Account_Sex;
                     lbSoDienThoai.Text = human.Account_Phone;
                     lbThanhPho.Text = human.Account_City;
-                    lbTuoi.Text = Convert.ToString(human.Account_Age);
+                    // lbTuoi.Text = Convert.ToString(human.Account_Age);
+                    DateTime age = Convert.ToDateTime(human.Account_Age);
+                    int ageInYrs = DateTime.Now.Year - age.Year;
+                    lbTuoi.Text = ageInYrs + " tuổi";
                     peAnh.EditValue = account.Account_Image;
                     lbCongViec.Text = human.Account_Job;
                 }
@@ -116,48 +120,43 @@ namespace ClinienceSystemManagement.KhamBenh
 
         private void cmsXoa_Click(object sender, EventArgs e)
         {
-            try
+
+            if (XtraMessageBox.Show("Bạn có muốn xóa không?", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                if (XtraMessageBox.Show("Bạn có muốn xóa không?", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                int rowIndex = gvDanhMuc.FocusedRowHandle;
+                string colID = "Account_ID";
+                object value = gvDanhMuc.GetRowCellValue(rowIndex, colID);
+                if (value != null)
                 {
-                    int rowIndex = gvDanhMuc.FocusedRowHandle;
-                    string colID = "Account_ID";
-                    object value = gvDanhMuc.GetRowCellValue(rowIndex, colID);
-                    if (value != null)
+                    DataClinienceDataContext dc = new DataClinienceDataContext();
+                    var account = dc.Accounts.Where(s => s.Account_ID == (int)value).SingleOrDefault();
+                    var human = dc.Humans.Where(s => s.Account_ID == (int)value).SingleOrDefault();
+                    var patient = dc.Patients.Where(s => s.Account_ID == (int)value).SingleOrDefault();
+                    if (account != null)
                     {
-                        DataClinienceDataContext dc = new DataClinienceDataContext();
-                        var account = dc.Accounts.Where(s => s.Account_ID == (int)value).SingleOrDefault();
-                        var human = dc.Humans.Where(s => s.Account_ID == (int)value).SingleOrDefault();
-                        var patient = dc.Patients.Where(s => s.Account_ID == (int)value).SingleOrDefault();
-                        var patientstatus = dc.PatientStatus.Where(s => s.Account_ID == (int)value).SingleOrDefault();
-                        if (account != null)
-                        {
-                            dc.Accounts.DeleteOnSubmit(account);
-                            dc.Humans.DeleteOnSubmit(human);
-                            dc.Patients.DeleteOnSubmit(patient);
-                            dc.PatientStatus.DeleteOnSubmit(patientstatus);
-                            dc.SubmitChanges();
-                            sqlDataSource1.Fill();
-                            XtraMessageBox.Show("Đã xóa thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
-                    }
-                    else
-                    {
-                        XtraMessageBox.Show("Bạn chưa chọn đối tượng cần xóa", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        int patientId = (int)value;
+                        BLL_Appointment.DeleteAppointment(patientId);
+                        dc.Accounts.DeleteOnSubmit(account);
+                        dc.Humans.DeleteOnSubmit(human);
+                        dc.Patients.DeleteOnSubmit(patient);
+                        dc.SubmitChanges();
+                        sqlDataSource1.Fill();
+                        XtraMessageBox.Show("Đã xóa thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
+                else
+                {
+                    XtraMessageBox.Show("Bạn chưa chọn đối tượng cần xóa", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
-            catch (Exception)
-            {
 
-                XtraMessageBox.Show("Không được phép xóa bệnh nhân này, bệnh nhân đã được thêm ở một danh mục khác", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+
 
         }
 
         private void btnXuatFile_Click(object sender, EventArgs e)
         {
-            string FileName = "C:\\DanhSachBenhNhan.xls";
+            string FileName = "E:\\DanhSachBenhNhan.xls";
             grcDanhMuc.ExportToXls(FileName);
         }
 
@@ -180,7 +179,10 @@ namespace ClinienceSystemManagement.KhamBenh
                     lbGioiTinh.Text = human.Account_Sex;
                     lbSoDienThoai.Text = human.Account_Phone;
                     lbThanhPho.Text = human.Account_City;
-                    lbTuoi.Text = Convert.ToString(human.Account_Age);
+                    //  lbTuoi.Text = Convert.ToString(human.Account_Age);
+                    DateTime age = Convert.ToDateTime(human.Account_Age);
+                    int ageInYrs = DateTime.Now.Year - age.Year;
+                    lbTuoi.Text = ageInYrs + " tuổi";
                     peAnh.EditValue = account.Account_Image;
                     lbCongViec.Text = human.Account_Job;
                 }
@@ -226,5 +228,7 @@ namespace ClinienceSystemManagement.KhamBenh
                 XtraMessageBox.Show("Bạn chưa chọn bệnh nhân để tạo phiên khám", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+  
     }
 }

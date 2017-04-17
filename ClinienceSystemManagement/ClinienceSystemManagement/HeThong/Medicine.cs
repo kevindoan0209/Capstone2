@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using DataAccessLayer;
 using ClinienceSystemManagement.HeThong;
+using BussinessLogicLayer;
 
 namespace ClinienceSystemManagement.Hệ_Thống
 {
@@ -68,11 +69,11 @@ namespace ClinienceSystemManagement.Hệ_Thống
                     if (value != null)
                     {
                         DataClinienceDataContext dc = new DataClinienceDataContext();
-                        var medicine = dc.Medicines.Where(s => s.Medicine_ID == (int)value).SingleOrDefault();
-                        var ingredient = dc.Medincine_Ingredients.Where(s => s.Medicine_ID == (int)value).SingleOrDefault();
+                        var medicine = dc.Medicines.Where(s => s.Medicine_ID == (int)value).SingleOrDefault();                  
                         if (medicine != null)
                         {
-                           // dc.Medincine_Ingredients.DeleteOnSubmit(ingredient);
+                            int medicineId = (int)value;
+                            BLL_Medicine.DeleteMedincineIngredient(medicineId);
                             dc.Medicines.DeleteOnSubmit(medicine);
                             dc.SubmitChanges();
                             sqlDataSource1.Fill();
@@ -113,7 +114,7 @@ namespace ClinienceSystemManagement.Hệ_Thống
 
         private void btnXuatFile_Click(object sender, EventArgs e)
         {
-            string FileName = "C:\\DanhSachThuoc.xls";
+            string FileName = "E:\\DanhSachThuoc.xls";
             grcDanhMuc.ExportToXls(FileName);
         }
     }

@@ -369,17 +369,17 @@
   </data>
   <data name="btnTaoPK.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAANoAAADaASIXBHgAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
-        AAAB40lEQVRIS72WO0vDUBiG/Q+OLpaGglUHwRuU2qGtUHTwii6Cg2MXF8HFnyC4iwgigoMKLjoI8YJF
-        8VI1beqt9poem15SSNIMSsyxNJ7g0TYHcXiWc77vfZIvOSENqqrqsO6mRsZpWdUoaaim6bNcM06rA800
-        CO6czSvsUA/IHWzRYuz2wiyFo136ccq7iWYaBCGnJVK8pI/LJU4lRUyE9tDMbwI5G73HNZoggmb+v4Bz
-        W18yHkolwmd/Lm0v76CZfyuA+FpO0UxTgtdJRya3MHMJBtpk3H4FK9mIwGhXTpuvAucsJ8NXuJoKhAJ+
-        doLRH6SQzuJqKtQWxNAGMNbN8/PTweLa4lFVoAjpIlzj56ZugK9FQetNCcBIZ14pcZJ+5RjkdCRILOD9
-        wywuFEUWUjliQcZre5dCgZNyPh6VC8kUEvwG18p87Km4vnRILkD4w4dM4QX+kbAuKCQ5XE2FGoK0h4pj
-        G/ttb9L9eUDOJ+Lfx4JCKqibOgWfJ1fgBH0svwBfZfgZqUvAIXcABtvE16GOAhjvzf4E3M8MtovVHlMC
-        iBik9ROMQ2LPTtH6ekaUMDRoZwH47MpPwH1D/W8C7c9gP+WhWGODaWg00yAIOajWB5d1QxtTGNNYGy/F
-        aLi+MtWGDzFJOuOBeg3pAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        2gAAANoBIhcEeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHjSURBVEhLvZY7
+        S8NQGIb9D44uloaCVQfBG5Taoa1QdPCKLoKDYxcXwcWfILiLCCKCgwouOgjxgkXxUjVt6q32mh6bXlJI
+        0gxKzLE0nuDRNgdxeJZzvu99ki85IQ2qquqw7qZGxmlZ1ShpqKbps1wzTqsDzTQI7pzNK+xQD8gdbNFi
+        7PbCLIWjXfpxyruJZhoEIaclUrykj8slTiVFTIT20MxvAjkbvcc1miCCZv6/gHNbXzIeSiXCZ38ubS/v
+        oJl/K4D4Wk7RTFOC10lHJrcwcwkG2mTcfgUr2YjAaFdOm68C5ywnw1e4mgqEAn52gtEfpJDO4moq1BbE
+        0AYw1s3z89PB4triUVWgCOkiXOPnpm6Ar0VB600JwEhnXilxkn7lGOR0JEgs4P3DLC4URRZSOWJBxmt7
+        l0KBk3I+HpULyRQS/AbXynzsqbi+dEguQPjDh0zhBf6RsC4oJDlcTYUagrSHimMb+21v0v15QM4n4t/H
+        gkIqqJs6BZ8nV+AEfSy/AF9l+BmpS8AhdwAG28TXoY4CGO/N/gTczwy2i9UeUwKIGKT1E4xDYs9O0fp6
+        RpQwNGhnAfjsyk/AfUP9bwLtz2A/5aFYY4NpaDTTIAg5qNYHl3VDG1MY01gbL8VouL4y1YYPMUk644F6
+        DekAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="btnXuatFile.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

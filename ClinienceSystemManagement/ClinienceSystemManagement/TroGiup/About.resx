@@ -508,7 +508,7 @@
     <value>Tahoma, 12.75pt, style=Bold</value>
   </data>
   <data name="labelX1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 17</value>
+    <value>15, 17</value>
   </data>
   <data name="labelX1.Size" type="System.Drawing.Size, System.Drawing">
     <value>424, 35</value>
@@ -532,7 +532,7 @@
     <value>9</value>
   </data>
   <data name="groupPanel1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt</value>
+    <value>UVN Bach Tuyet, 12pt</value>
   </data>
   <data name="groupPanel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>21, 12</value>

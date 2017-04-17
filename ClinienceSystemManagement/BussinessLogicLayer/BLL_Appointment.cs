@@ -13,5 +13,9 @@ namespace BussinessLogicLayer
         {
             return _appointment.InsertNewAppointment(beginDate,endDate,reason,complain, patientId, doctorId);
         }
+        public static int DeleteAppointment(int patientId)
+        {
+            return _appointment.DeleteAppointment(patientId);
+        }
     }
 }

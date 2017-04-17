@@ -303,6 +303,7 @@
             this.btnPhienKham.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnPhienKham.LargeGlyph")));
             this.btnPhienKham.LargeWidth = 70;
             this.btnPhienKham.Name = "btnPhienKham";
+            this.btnPhienKham.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPhienKham_ItemClick);
             // 
             // btnSuDung
             // 

@@ -28,6 +28,8 @@ namespace ClinienceSystemManagement.KhamBenh
         private void PatientDetail_Load(object sender, EventArgs e)
         {
             txtMa.ReadOnly = true;
+            dtNgayBatDau.EditValue = DateTime.Now;
+            dtNgayKetThuc.EditValue = DateTime.Now;
             FillDataUpdate();
         }
 
@@ -63,7 +65,8 @@ namespace ClinienceSystemManagement.KhamBenh
                 var account = db.Accounts.Where(i => i.Account_ID == Id).SingleOrDefault();
                 var human = db.Humans.Where(i => i.Account_ID == Id).SingleOrDefault();
                 var patient = db.Patients.Where(i => i.Account_ID == Id).SingleOrDefault();
-                var patientstatus = db.PatientStatus.Where(i => i.Account_ID == Id).SingleOrDefault();        
+              //  var appointment = db.Appointmentsses.Where(i => i.Account_ID_Patient == Id).SingleOrDefault();
+                // var patientstatus = db.PatientStatus.Where(i => i.Account_ID == Id).SingleOrDefault();
                 if (account != null)
                 {
                     txtMa.EditValue = account.Account_ID;
@@ -72,8 +75,8 @@ namespace ClinienceSystemManagement.KhamBenh
                     txtEmail.EditValue = human.Account_Email;
                     txtThanhPho.EditValue = human.Account_City;
                     txtSDT.EditValue = human.Account_Phone;
-                    txtLyDo.EditValue = patientstatus.PatientStatus_Issue;
-                    txtThanPhien.EditValue = patientstatus.PatientStatus_Complain;
+                  //  txtLyDo.EditValue = appointment.Appointment_Issue;
+                   // txtThanPhien.EditValue = appointment.Appointment_Complain;
                     dtNamSinh.EditValue = human.Account_Age;
                     txtNgheNghiep.EditValue = human.Account_Job;
                     string sex = human.Account_Sex;
@@ -103,7 +106,6 @@ namespace ClinienceSystemManagement.KhamBenh
                 if (string.IsNullOrEmpty(txtTen.Text))
                 {
                     lbTrangThai.Text = "*Vui lòng nhập họ và tên";
-                    // XtraMessageBox.Show("Vui lòng nhập họ và tên", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     txtTen.Focus();
                 }
                 else
@@ -121,69 +123,96 @@ namespace ClinienceSystemManagement.KhamBenh
                         }
                         else
                         {
-                            string name = txtTen.Text;
-                            string image = txtAnh.Text;
-                            //DateTime age = DateTime.Parse(dtNamSinh.Text);
-                            string sex;
-                            if (rbNam.Checked == true)
+                            if (string.IsNullOrEmpty(txtLyDo.Text))
                             {
-                                sex = "Nam";
+                                lbTrangThai.Text = "*Vui lòng nhập lý do khám";
+                                txtLyDo.Focus();
+                            }
+                            else { 
+                            if (lkeBacSi.Text == "Bác sĩ")
+                            {
+                                lbTrangThai.Text = "*Vui lòng chọn bác sĩ";
+                                lkeBacSi.Focus();
                             }
                             else
                             {
-                                sex = "Nữ";
-                            }
-                            string phone = txtSDT.Text;
-                            string email = txtEmail.Text;
-                            string job = txtNgheNghiep.Text;
-                            string address = txtDiaChi.Text;
-                            string city = txtThanhPho.Text;                          
-                            DateTime age = dtNamSinh.DateTime;
-                            string reason = txtLyDo.Text;
-                            string complain = txtThanPhien.Text;
-                           
-                            if (string.IsNullOrEmpty(txtAnh.Text))
-                            {
-                                if (isAdd == false)
+                                if (dtNgayBatDau.DateTime >= dtNgayKetThuc.DateTime)
                                 {
-                                    int id = Convert.ToInt32(txtMa.Text);
-                                    BLL_Human.UpdateAccountPatientNoImage(id, name);
-                                    BLL_Human.UpdateHumanPatient(id, age, sex, email, phone, job, city, address);
-                                    //BLL_Human.UpdateStatusPatient(id,complain, reason);
-                                    XtraMessageBox.Show("Cập nhật thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                    this.Close();
+                                    lbTrangThai.Text = "*Vui lòng chọn thời gian";
+                                    dtNgayKetThuc.Focus();
                                 }
                                 else
                                 {
-                                    BLL_Human.InsertAccountPatientNoImage(name);
-                                    int lastID = BLL_Human.GetLastIdAccount();
-                                    BLL_Human.InsertHumanPatient(lastID, age, sex, email, phone, job, city, address);
-                                    BAL_Patient.InsertPatientNoValue(lastID);
-                                    BLL_Human.InsertStatusPatient(complain, reason, lastID);
-                                    XtraMessageBox.Show("Đã thêm thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                    this.Close();
-                                }
-                            }
-                            else
-                            {
-                                if (isAdd == false)
-                                {
-                                    int id = Convert.ToInt32(txtMa.Text);
-                                    BLL_Human.UpdateAccountPatient(id, name,image);
-                                    BLL_Human.UpdateHumanPatient(id, age, sex, email, phone, job, city, address);
-                                    //   BLL_Human.UpdateStatusPatient(id,complain, reason);
-                                    XtraMessageBox.Show("Cập nhật thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                    this.Close();
-                                }
-                                else
-                                {
-                                    BLL_Human.InsertAccountPatient(name, image);
-                                    int lastID = BLL_Human.GetLastIdAccount();
-                                    BLL_Human.InsertHumanPatient(lastID, age, sex, email, phone, job, city, address);
-                                    BAL_Patient.InsertPatientNoValue(lastID);
-                                    BLL_Human.InsertStatusPatient(complain, reason, lastID);
-                                    XtraMessageBox.Show("Đã thêm thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                    this.Close();
+                                    string name = txtTen.Text;
+                                    string image = txtAnh.Text;
+                                    //DateTime age = DateTime.Parse(dtNamSinh.Text);
+                                    string sex;
+                                    if (rbNam.Checked == true)
+                                    {
+                                        sex = "Nam";
+                                    }
+                                    else
+                                    {
+                                        sex = "Nữ";
+                                    }
+                                    string phone = txtSDT.Text;
+                                    string email = txtEmail.Text;
+                                    string job = txtNgheNghiep.Text;
+                                    string address = txtDiaChi.Text;
+                                    string city = txtThanhPho.Text;
+                                    DateTime age = dtNamSinh.DateTime;
+                                    string reason = txtLyDo.Text;
+                                    string complain = txtThanPhien.Text;
+                                    string group = lkeBacSi.GetColumnValue("Account_ID").ToString();
+                                    int doctorId = Convert.ToInt32(group);
+                                    DateTime beginDate = dtNgayBatDau.DateTime;
+                                    DateTime endDate = dtNgayKetThuc.DateTime;
+
+                                        if (string.IsNullOrEmpty(txtAnh.Text))
+                                        {
+                                            if (isAdd == false)
+                                            {
+                                                int id = Convert.ToInt32(txtMa.Text);
+                                                BLL_Human.UpdateAccountPatientNoImage(id, name);
+                                                BLL_Human.UpdateHumanPatient(id, age, sex, email, phone, job, city, address);
+                                                XtraMessageBox.Show("Cập nhật thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                                this.Close();
+                                            }
+                                            else
+                                            {
+                                                BLL_Human.InsertAccountPatientNoImage(name);
+                                                int lastID = BLL_Human.GetLastIdAccount();
+                                                BLL_Human.InsertHumanPatient(lastID, age, sex, email, phone, job, city, address);
+                                                BAL_Patient.InsertPatientNoValue(lastID);
+                                                //BLL_Human.InsertStatusPatient(complain, reason, lastID);
+                                                BLL_Appointment.InsertNewAppointment(beginDate, endDate, reason, complain, lastID, doctorId);
+                                                XtraMessageBox.Show("Đã thêm thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                                this.Close();
+                                            }
+                                        }
+                                        else
+                                        {
+                                            if (isAdd == false)
+                                            {
+                                                int id = Convert.ToInt32(txtMa.Text);
+                                                BLL_Human.UpdateAccountPatient(id, name, image);
+                                                BLL_Human.UpdateHumanPatient(id, age, sex, email, phone, job, city, address);
+                                                XtraMessageBox.Show("Cập nhật thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                                this.Close();
+                                            }
+                                            else
+                                            {
+                                                BLL_Human.InsertAccountPatient(name, image);
+                                                int lastID = BLL_Human.GetLastIdAccount();
+                                                BLL_Human.InsertHumanPatient(lastID, age, sex, email, phone, job, city, address);
+                                                BAL_Patient.InsertPatientNoValue(lastID);
+                                                //BLL_Human.InsertStatusPatient(complain, reason, lastID);
+                                                BLL_Appointment.InsertNewAppointment(beginDate, endDate, reason, complain, lastID, doctorId);
+                                                XtraMessageBox.Show("Đã thêm thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                                this.Close();
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }

@@ -72,7 +72,7 @@ namespace ClinienceSystemManagement
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            DialogResult dlr = XtraMessageBox.Show("Bạn có thật sự muốn thoát", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dlr = XtraMessageBox.Show("Bạn có thật sự muốn thoát ?", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dlr == DialogResult.Yes)
             {
                 Application.Exit();

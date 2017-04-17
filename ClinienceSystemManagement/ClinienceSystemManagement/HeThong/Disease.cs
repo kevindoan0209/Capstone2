@@ -110,7 +110,7 @@ namespace ClinienceSystemManagement.HeThong
 
         private void btnXuatFile_Click(object sender, EventArgs e)
         {
-            string FileName = "C:\\DanhSachBenh.xls";
+            string FileName = "E:\\DanhSachBenh.xls";
             grcDanhMuc.ExportToXls(FileName);
         }
     }

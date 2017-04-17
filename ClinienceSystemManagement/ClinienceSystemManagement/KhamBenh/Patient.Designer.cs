@@ -162,10 +162,10 @@
             // 
             // lbCongViec
             // 
-            this.lbCongViec.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCongViec.Location = new System.Drawing.Point(40, 248);
+            this.lbCongViec.Appearance.Font = new System.Drawing.Font("UVN Bai Sau", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCongViec.Location = new System.Drawing.Point(42, 247);
             this.lbCongViec.Name = "lbCongViec";
-            this.lbCongViec.Size = new System.Drawing.Size(0, 18);
+            this.lbCongViec.Size = new System.Drawing.Size(0, 21);
             this.lbCongViec.TabIndex = 18;
             // 
             // pictureBox7
@@ -179,10 +179,10 @@
             // 
             // lbTuoi
             // 
-            this.lbTuoi.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTuoi.Location = new System.Drawing.Point(40, 214);
+            this.lbTuoi.Appearance.Font = new System.Drawing.Font("UVN Bai Sau", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTuoi.Location = new System.Drawing.Point(42, 213);
             this.lbTuoi.Name = "lbTuoi";
-            this.lbTuoi.Size = new System.Drawing.Size(0, 18);
+            this.lbTuoi.Size = new System.Drawing.Size(0, 21);
             this.lbTuoi.TabIndex = 16;
             // 
             // pictureBox6
@@ -197,7 +197,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(18, 318);
+            this.pictureBox5.Location = new System.Drawing.Point(17, 318);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(17, 17);
             this.pictureBox5.TabIndex = 14;
@@ -241,56 +241,56 @@
             // 
             // lbThanhPho
             // 
-            this.lbThanhPho.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbThanhPho.Location = new System.Drawing.Point(43, 388);
+            this.lbThanhPho.Appearance.Font = new System.Drawing.Font("UVN Bai Sau", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbThanhPho.Location = new System.Drawing.Point(42, 386);
             this.lbThanhPho.Name = "lbThanhPho";
-            this.lbThanhPho.Size = new System.Drawing.Size(0, 18);
+            this.lbThanhPho.Size = new System.Drawing.Size(0, 21);
             this.lbThanhPho.TabIndex = 9;
             // 
             // lbEmail
             // 
-            this.lbEmail.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEmail.Location = new System.Drawing.Point(43, 317);
+            this.lbEmail.Appearance.Font = new System.Drawing.Font("UVN Bai Sau", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEmail.Location = new System.Drawing.Point(42, 315);
             this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(0, 18);
+            this.lbEmail.Size = new System.Drawing.Size(0, 21);
             this.lbEmail.TabIndex = 8;
             // 
             // lbSoDienThoai
             // 
-            this.lbSoDienThoai.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSoDienThoai.Location = new System.Drawing.Point(42, 282);
+            this.lbSoDienThoai.Appearance.Font = new System.Drawing.Font("UVN Bai Sau", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSoDienThoai.Location = new System.Drawing.Point(42, 280);
             this.lbSoDienThoai.Name = "lbSoDienThoai";
-            this.lbSoDienThoai.Size = new System.Drawing.Size(0, 18);
+            this.lbSoDienThoai.Size = new System.Drawing.Size(0, 21);
             this.lbSoDienThoai.TabIndex = 7;
             // 
             // lbDiaChi
             // 
-            this.lbDiaChi.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDiaChi.Location = new System.Drawing.Point(43, 351);
+            this.lbDiaChi.Appearance.Font = new System.Drawing.Font("UVN Bai Sau", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDiaChi.Location = new System.Drawing.Point(42, 350);
             this.lbDiaChi.Name = "lbDiaChi";
-            this.lbDiaChi.Size = new System.Drawing.Size(0, 18);
+            this.lbDiaChi.Size = new System.Drawing.Size(0, 21);
             this.lbDiaChi.TabIndex = 6;
             // 
             // lbGioiTinh
             // 
-            this.lbGioiTinh.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbGioiTinh.Location = new System.Drawing.Point(40, 178);
+            this.lbGioiTinh.Appearance.Font = new System.Drawing.Font("UVN Bai Sau", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGioiTinh.Location = new System.Drawing.Point(42, 177);
             this.lbGioiTinh.Name = "lbGioiTinh";
-            this.lbGioiTinh.Size = new System.Drawing.Size(0, 18);
+            this.lbGioiTinh.Size = new System.Drawing.Size(0, 21);
             this.lbGioiTinh.TabIndex = 5;
             // 
             // lbTen
             // 
-            this.lbTen.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTen.Location = new System.Drawing.Point(41, 145);
+            this.lbTen.Appearance.Font = new System.Drawing.Font("UVN Bai Sau", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTen.Location = new System.Drawing.Point(42, 144);
             this.lbTen.Name = "lbTen";
-            this.lbTen.Size = new System.Drawing.Size(0, 18);
+            this.lbTen.Size = new System.Drawing.Size(0, 21);
             this.lbTen.TabIndex = 4;
             // 
             // peAnh
             // 
             this.peAnh.EditValue = ((object)(resources.GetObject("peAnh.EditValue")));
-            this.peAnh.Location = new System.Drawing.Point(13, 23);
+            this.peAnh.Location = new System.Drawing.Point(15, 23);
             this.peAnh.Name = "peAnh";
             this.peAnh.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.peAnh.Properties.ZoomAccelerationFactor = 1D;

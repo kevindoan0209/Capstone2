@@ -62,7 +62,7 @@ namespace PresentationLayer
         }
         private void btnDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (XtraMessageBox.Show("Bạn có muốn đăng xuất", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            if (XtraMessageBox.Show("Bạn có muốn đăng xuất ?", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
                 UserName = string.Empty;
                 Id = 0;
@@ -73,7 +73,7 @@ namespace PresentationLayer
 
         private void btnThoat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            DialogResult dlr = XtraMessageBox.Show("Bạn có thật sự muốn thoát", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dlr = XtraMessageBox.Show("Bạn có thật sự muốn thoát ?", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dlr == DialogResult.Yes)
             {
                 Application.Exit();
@@ -183,7 +183,7 @@ namespace PresentationLayer
 
         private void btnBarThoat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            DialogResult dlr = XtraMessageBox.Show("Bạn có thật sự muốn thoát", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dlr = XtraMessageBox.Show("Bạn có thật sự muốn thoát ?", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dlr == DialogResult.Yes)
             {
                 Application.Exit();
@@ -192,7 +192,7 @@ namespace PresentationLayer
 
         private void btnBarDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (XtraMessageBox.Show("Bạn có muốn đăng xuất", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            if (XtraMessageBox.Show("Bạn có muốn đăng xuất ?", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
                 UserName = string.Empty;
                 Id = 0;
@@ -268,6 +268,21 @@ namespace PresentationLayer
             {
                 About about = new About();
                 about.ShowDialog();
+            }
+        }
+
+        private void btnPhienKham_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.IsExits(typeof(MainExamination));
+            if (frm != null)
+            {
+                frm.Activate();
+            }
+            else
+            {
+                MainExamination me = new MainExamination();
+                me.MdiParent = this;
+                me.Show();
             }
         }
     }

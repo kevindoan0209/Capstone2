@@ -104,7 +104,7 @@ namespace ClinienceSystemManagement
 
         private void btnXuatFile_Click(object sender, EventArgs e)
         {
-            string FileName = "C:\\DanhSachCanLamSang.xls";
+            string FileName = "E:\\DanhSachCanLamSang.xls";
             grcDanhMuc.ExportToXls(FileName);
         }
     }

@@ -335,16 +335,16 @@
     <value>3</value>
   </data>
   <data name="labelControl2.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt</value>
+    <value>UVN Bach Tuyet, 11.25pt, style=Italic</value>
   </data>
   <data name="labelControl2.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
-    <value>34, 49, 63</value>
+    <value>1, 87, 155</value>
   </data>
   <data name="labelControl2.Location" type="System.Drawing.Point, System.Drawing">
     <value>155, 73</value>
   </data>
   <data name="labelControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 18</value>
+    <value>72, 21</value>
   </data>
   <data name="labelControl2.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -365,13 +365,13 @@
     <value>4</value>
   </data>
   <data name="txtTenDangNhap.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 45</value>
+    <value>154, 44</value>
   </data>
   <data name="txtTenDangNhap.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
+    <value>UVN Bach Tuyet, 9.75pt</value>
   </data>
   <data name="txtTenDangNhap.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 22</value>
+    <value>187, 24</value>
   </data>
   <data name="txtTenDangNhap.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
@@ -392,16 +392,16 @@
     <value>5</value>
   </data>
   <data name="labelControl1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt</value>
+    <value>UVN Bach Tuyet, 11.25pt, style=Italic</value>
   </data>
   <data name="labelControl1.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
-    <value>34, 49, 63</value>
+    <value>1, 87, 155</value>
   </data>
   <data name="labelControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 20</value>
+    <value>154, 19</value>
   </data>
   <data name="labelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 18</value>
+    <value>110, 21</value>
   </data>
   <data name="labelControl1.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -449,10 +449,10 @@
     <value>7</value>
   </data>
   <data name="btnDangNhap.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
+    <value>UVN Bai Sau, 9.75pt</value>
   </data>
   <data name="btnDangNhap.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
-    <value>34, 49, 63</value>
+    <value>1, 87, 155</value>
   </data>
   <data name="btnDangNhap.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -469,7 +469,7 @@
 </value>
   </data>
   <data name="btnDangNhap.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 170</value>
+    <value>35, 168</value>
   </data>
   <data name="btnDangNhap.Size" type="System.Drawing.Size, System.Drawing">
     <value>102, 33</value>
@@ -493,10 +493,10 @@
     <value>8</value>
   </data>
   <data name="btnThoat.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
+    <value>UVN Bai Sau, 9.75pt</value>
   </data>
   <data name="btnThoat.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
-    <value>34, 49, 63</value>
+    <value>1, 87, 155</value>
   </data>
   <data name="btnThoat.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -513,7 +513,7 @@
 </value>
   </data>
   <data name="btnThoat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>239, 170</value>
+    <value>238, 168</value>
   </data>
   <data name="btnThoat.Size" type="System.Drawing.Size, System.Drawing">
     <value>102, 33</value>
@@ -537,7 +537,7 @@
     <value>9</value>
   </data>
   <data name="Clinience.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt</value>
+    <value>UVN Bach Tuyet, 12.75pt</value>
   </data>
   <data name="Clinience.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 9</value>

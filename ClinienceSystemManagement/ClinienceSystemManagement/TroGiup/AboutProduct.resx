@@ -130,7 +130,7 @@
     <value>Tahoma, 9.75pt</value>
   </data>
   <data name="linkLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>182, 149</value>
+    <value>185, 149</value>
   </data>
   <data name="linkLabel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 16</value>
@@ -170,7 +170,7 @@
 </value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>158, 67</value>
+    <value>161, 67</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>17, 17</value>
@@ -194,7 +194,7 @@
     <value>Tahoma, 9.75pt</value>
   </data>
   <data name="labelX4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>185, 120</value>
+    <value>188, 120</value>
   </data>
   <data name="labelX4.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 19</value>
@@ -221,7 +221,7 @@
     <value>Tahoma, 9.75pt</value>
   </data>
   <data name="labelX3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>185, 91</value>
+    <value>188, 91</value>
   </data>
   <data name="labelX3.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 19</value>
@@ -248,7 +248,7 @@
     <value>Tahoma, 9.75pt</value>
   </data>
   <data name="labelX2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>185, 64</value>
+    <value>188, 64</value>
   </data>
   <data name="labelX2.Size" type="System.Drawing.Size, System.Drawing">
     <value>186, 19</value>
@@ -273,21 +273,21 @@
   </data>
   <data name="pictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAAG8AAABvAfGi3EMAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
-        AAAB4ElEQVQ4T62T7y+bURTH+x/JIjYyjGAjsRBZMiVeyBIWkSEtYiQ8sicZFdItEoK9KbOgfpRGSGxd
-        Gguq7aM/9IlJEVPtU+uPiGVtyXd9buJ2ou0bXnxyT27O+ZyTc3MlLYp+yHsUaH7fS04S98Ri1YImMp6A
-        Cc1iSPK6sxufqmvgzsgF2yCDmpXijyIFDCOD9MscSrd3oZydx/ctAzgHT9DqdNBvGzEyNQ0iGH1Vi5PH
-        eXjXKMcUW4mg4gG6GDmkk2qUGWz4EBWIyfGQtPYNIBmfl7RJkRhtdiTDJQhJuV+BObqYfeUgTGbuhuD0
-        +Ainrl8ILI2ROK7AvGmA52UV/I+ewPJVRwUXwy0IdzyHh+dwVf8Qf9kKuI+cNwXcjw0IZeXwR5+SV03S
-        YufIR1zVpSI4oyTJv/UaXL5JR4h5AffBXkxw3CBHIC0Le0OjtNhosSKYl4vw2yIy/nVH/+oEkYqTUYFN
-        o4UvpxBnBcWwLq8Qgau9iUh939S0WLBsINL6FBFZDrxmfUwgYl1dw1lhCXzZBWSJwcxsBJ7l02LPTzsu
-        m7IQbiuCYDfSeyoQ2dGv47CDgcnEwdNYA34h1l1c3LmKhXvfQe9uCeLxf3I87i6I/q4Qt+uIJMLl9R4m
-        RBD4f/LzPi9Ch2bGAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        bwAAAG8B8aLcQwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHgSURBVDhPrZPv
+        L5tRFMf7H8kiNjKMYCOxEFkyJV7IEhaRIS1iJDyyJxkV0i0Sgr0ps6B+lEZIbF0aC6rtoz/0iUkRU+1T
+        64+IZW3Jd31u4nai7RtefHJPbs75nJNzcyUtin7IexRoft9LThL3xGLVgiYynoAJzWJI8rqzG5+qa+DO
+        yAXbIIOaleKPIgUMI4P0yxxKt3ehnJ3H9y0DOAdP0Op00G8bMTI1DSIYfVWLk8d5eNcoxxRbiaDiAboY
+        OaSTapQZbPgQFYjJ8ZC09g0gGZ+XtEmRGG12JMMlCEm5X4E5uph95SBMZu6G4PT4CKeuXwgsjZE4rsC8
+        aYDnZRX8j57A8lVHBRfDLQh3PIeH53BV/xB/2Qq4j5w3BdyPDQhl5fBHn5JXTdJi58hHXNWlIjijJMm/
+        9RpcvklHiHkB98FeTHDcIEcgLQt7Q6O02GixIpiXi/DbIjL+dUf/6gSRipNRgU2jhS+nEGcFxbAurxCB
+        q72JSH3f1LRYsGwg0voUEVkOvGZ9TCBiXV3DWWEJfNkFZInBzGwEnuXTYs9POy6bshBuK4JgN9J7KhDZ
+        0a/jsIOBycTB01gDfiHWXVzcuYqFe99B724J4vF/cjzuLoj+rhC364gkwuX1HiZEEPh/8vM+L0KHZsYA
+        AAAASUVORK5CYII=
 </value>
   </data>
   <data name="pictureBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>158, 149</value>
+    <value>161, 149</value>
   </data>
   <data name="pictureBox6.Size" type="System.Drawing.Size, System.Drawing">
     <value>17, 17</value>
@@ -322,7 +322,7 @@
 </value>
   </data>
   <data name="pictureBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>158, 120</value>
+    <value>161, 120</value>
   </data>
   <data name="pictureBox5.Size" type="System.Drawing.Size, System.Drawing">
     <value>17, 17</value>
@@ -354,7 +354,7 @@
 </value>
   </data>
   <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>158, 94</value>
+    <value>161, 94</value>
   </data>
   <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>17, 17</value>
@@ -512,7 +512,7 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 65</value>
+    <value>37, 65</value>
   </data>
   <data name="label2.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
@@ -542,7 +542,7 @@
     <value>Tahoma, 14.25pt, style=Bold</value>
   </data>
   <data name="labelX1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>73, 13</value>
+    <value>76, 13</value>
   </data>
   <data name="labelX1.Size" type="System.Drawing.Size, System.Drawing">
     <value>298, 35</value>
@@ -566,7 +566,7 @@
     <value>9</value>
   </data>
   <data name="groupPanel1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt</value>
+    <value>UVN Bach Tuyet, 12pt</value>
   </data>
   <data name="groupPanel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>24, 12</value>

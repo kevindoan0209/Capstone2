@@ -9,7 +9,9 @@
       <Column Name="Account_Image" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
       <Column Name="Account_Type_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Account_Signatures" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Account_Appointmentss" Member="Appointmentsses" ThisKey="Account_ID" OtherKey="Account_ID_Doctor" Type="Appointmentss" />
       <Association Name="Account_Human" Member="Human" ThisKey="Account_ID" OtherKey="Account_ID" Type="Human" Cardinality="One" />
+      <Association Name="Account_Precription" Member="Precriptions" ThisKey="Account_ID" OtherKey="Account_ID_Doctor" Type="Precription" />
       <Association Name="Account_Type_Account" Member="Account_Type" ThisKey="Account_Type_ID" OtherKey="Account_Type_ID" Type="Account_Type" IsForeignKey="true" />
     </Type>
   </Table>
@@ -20,17 +22,19 @@
       <Association Name="Account_Type_Account" Member="Accounts" ThisKey="Account_Type_ID" OtherKey="Account_Type_ID" Type="Account" />
     </Type>
   </Table>
-  <Table Name="dbo.Appointment" Member="Appointments">
-    <Type Name="Appointment">
+  <Table Name="dbo.Appointmentss" Member="Appointmentsses">
+    <Type Name="Appointmentss">
       <Column Name="Appointment_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="Appointment_Label" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="Appointment_StartDate" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
-      <Column Name="Appointment_EndDate" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
       <Column Name="Account_ID_Patient" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Account_ID_Doctor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Appointment_Complain" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Appointment_Issue" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Appointment_StartDate" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Appointment_EndDate" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Appointment_Label" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
       <Column Name="Appointment_Note" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
-      <Association Name="Doctor_Appointment" Member="Doctor" ThisKey="Account_ID_Doctor" OtherKey="Account_ID" Type="Doctor" IsForeignKey="true" />
-      <Association Name="Patient_Appointment" Member="Patient" ThisKey="Account_ID_Patient" OtherKey="Account_ID" Type="Patient" IsForeignKey="true" />
+      <Association Name="Account_Appointmentss" Member="Account" ThisKey="Account_ID_Doctor" OtherKey="Account_ID" Type="Account" IsForeignKey="true" />
+      <Association Name="Patient_Appointmentss" Member="Patient" ThisKey="Account_ID_Patient" OtherKey="Account_ID" Type="Patient" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Disease" Member="Diseases">
@@ -39,15 +43,6 @@
       <Column Name="Disease_Name" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
       <Column Name="Disease_Description" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
       <Association Name="Disease_Precription_Disease" Member="Precription_Diseases" ThisKey="Disease_ID" OtherKey="Disease_ID" Type="Precription_Disease" />
-    </Type>
-  </Table>
-  <Table Name="dbo.Doctor" Member="Doctors">
-    <Type Name="Doctor">
-      <Column Name="Account_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Doctor_Professional" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Association Name="Doctor_Appointment" Member="Appointments" ThisKey="Account_ID" OtherKey="Account_ID_Doctor" Type="Appointment" />
-      <Association Name="Doctor_Precription" Member="Precriptions" ThisKey="Account_ID" OtherKey="Account_ID_Doctor" Type="Precription" />
-      <Association Name="Human_Doctor" Member="Human" ThisKey="Account_ID" OtherKey="Account_ID" Type="Human" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Human" Member="Humans">
@@ -60,7 +55,6 @@
       <Column Name="Account_Job" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="Account_City" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="Account_Address" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Association Name="Human_Doctor" Member="Doctor" ThisKey="Account_ID" OtherKey="Account_ID" Type="Doctor" Cardinality="One" />
       <Association Name="Human_Patient" Member="Patient" ThisKey="Account_ID" OtherKey="Account_ID" Type="Patient" Cardinality="One" />
       <Association Name="Account_Human" Member="Account" ThisKey="Account_ID" OtherKey="Account_ID" Type="Account" IsForeignKey="true" />
     </Type>
@@ -150,19 +144,9 @@
       <Column Name="Patient_Height" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Patient_Waist" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Patient_Hips" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="Patient_Appointment" Member="Appointments" ThisKey="Account_ID" OtherKey="Account_ID_Patient" Type="Appointment" />
-      <Association Name="Patient_PatientStatus" Member="PatientStatus" ThisKey="Account_ID" OtherKey="Account_ID" Type="PatientStatus" />
+      <Association Name="Patient_Appointmentss" Member="Appointmentsses" ThisKey="Account_ID" OtherKey="Account_ID_Patient" Type="Appointmentss" />
       <Association Name="Patient_Precription" Member="Precriptions" ThisKey="Account_ID" OtherKey="Account_ID_Patient" Type="Precription" />
       <Association Name="Human_Patient" Member="Human" ThisKey="Account_ID" OtherKey="Account_ID" Type="Human" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.PatientStatus" Member="PatientStatus">
-    <Type Name="PatientStatus">
-      <Column Name="PatientStatus_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="PatientStatus_Complain" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
-      <Column Name="PatientStatus_Issue" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
-      <Column Name="Account_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Association Name="Patient_PatientStatus" Member="Patient" ThisKey="Account_ID" OtherKey="Account_ID" Type="Patient" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Precription" Member="Precriptions">
@@ -177,7 +161,7 @@
       <Association Name="Precription_Paraclinical_Medicine" Member="Paraclinical_Medicines" ThisKey="Precription_ID" OtherKey="Precription_ID" Type="Paraclinical_Medicine" />
       <Association Name="Precription_Precription_Disease" Member="Precription_Diseases" ThisKey="Precription_ID" OtherKey="Precription_ID" Type="Precription_Disease" />
       <Association Name="Precription_Precription_Medicine" Member="Precription_Medicines" ThisKey="Precription_ID" OtherKey="Precription_ID" Type="Precription_Medicine" />
-      <Association Name="Doctor_Precription" Member="Doctor" ThisKey="Account_ID_Doctor" OtherKey="Account_ID" Type="Doctor" IsForeignKey="true" />
+      <Association Name="Account_Precription" Member="Account" ThisKey="Account_ID_Doctor" OtherKey="Account_ID" Type="Account" IsForeignKey="true" />
       <Association Name="Patient_Precription" Member="Patient" ThisKey="Account_ID_Patient" OtherKey="Account_ID" Type="Patient" IsForeignKey="true" />
     </Type>
   </Table>
