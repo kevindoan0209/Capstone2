@@ -320,3 +320,16 @@ F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debu
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.KhamBenh.SubExamination.resources
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.KhamBenh.MainExamination.resources
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.KhamBenh.Examination.resources
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\DevExpress.Spreadsheet.v16.1.Core.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\DevExpress.XtraSpreadsheet.v16.1.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\DevExpress.Spreadsheet.v16.1.Core.xml
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\DevExpress.XtraSpreadsheet.v16.1.xml
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\de\DevExpress.Spreadsheet.v16.1.Core.resources.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\es\DevExpress.Spreadsheet.v16.1.Core.resources.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\ja\DevExpress.Spreadsheet.v16.1.Core.resources.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\ru\DevExpress.Spreadsheet.v16.1.Core.resources.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\de\DevExpress.XtraSpreadsheet.v16.1.resources.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\es\DevExpress.XtraSpreadsheet.v16.1.resources.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\ja\DevExpress.XtraSpreadsheet.v16.1.resources.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\bin\Debug\ru\DevExpress.XtraSpreadsheet.v16.1.resources.dll
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.KhamBenh.Precription.resources

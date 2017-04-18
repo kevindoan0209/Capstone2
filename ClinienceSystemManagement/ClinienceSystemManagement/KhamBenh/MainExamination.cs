@@ -18,6 +18,7 @@ namespace ClinienceSystemManagement.KhamBenh
         public MainExamination()
         {
             InitializeComponent();
+
         }
         public void FillData()
         {
@@ -89,5 +90,7 @@ namespace ClinienceSystemManagement.KhamBenh
                 sp.Id = (int)Id;
                 sp.ShowDialog();
         }
+
+
     }
 }
