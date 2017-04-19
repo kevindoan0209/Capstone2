@@ -16,7 +16,7 @@ namespace ClinienceSystemManagement.KhamBenh
     public partial class Examination : DevExpress.XtraEditors.XtraForm
     {
         public int Id;
-        public bool isAdd = true;
+        // public bool isAdd = true;
         public Examination()
         {
             InitializeComponent();
@@ -49,46 +49,52 @@ namespace ClinienceSystemManagement.KhamBenh
         {
             this.Close();
         }
-
+        MainExamination ex = new MainExamination();
         private void btnLuu_Click(object sender, EventArgs e)
         {
-
-            if (string.IsNullOrEmpty(txtLyDo.Text))
+            try
             {
-                lbTrangThai.Text = "*Vui lòng nhập lí do khám";
-                txtLyDo.Focus();
-            }
-            else
-            {
-                if (lkeBacSi.Text == "Bác sĩ")
+                if (string.IsNullOrEmpty(txtLyDo.Text))
                 {
-                    lbTrangThai.Text = "*Vui lòng chọn bác sĩ";
-                    lkeBacSi.Focus();
+                    lbTrangThai.Text = "*Vui lòng nhập lí do khám";
+                    txtLyDo.Focus();
                 }
                 else
                 {
-                    if (dtNgayBatDau.DateTime >= dtNgayKetThuc.DateTime)
+                    if (lkeBacSi.Text == "Bác sĩ")
                     {
-                        lbTrangThai.Text = "*Vui lòng chọn thời gian";
-                        dtNgayKetThuc.Focus();           
+                        lbTrangThai.Text = "*Vui lòng chọn bác sĩ";
+                        lkeBacSi.Focus();
                     }
                     else
                     {
-                        DateTime beginDate = dtNgayBatDau.DateTime;
-                        DateTime endDate = dtNgayKetThuc.DateTime;
-                        String reason = txtLyDo.Text;
-                        String complain = txtThanPhien.Text;
-                        string group = lkeBacSi.GetColumnValue("Account_ID").ToString();
-                        int doctorId = Convert.ToInt32(group);
-                        string group2 = lkeBenhNhan.GetColumnValue("Account_ID").ToString();
-                        int patientId = Convert.ToInt32(group2);
-                        BLL_Appointment.InsertNewAppointment(beginDate, endDate, reason, complain, patientId, doctorId);
-                        Examination ex = new Examination();
-                        ex.Id = (int)patientId;
-                        ex.Show();
-                        this.Close();
+                        if (dtNgayBatDau.DateTime >= dtNgayKetThuc.DateTime)
+                        {
+                            lbTrangThai.Text = "*Vui lòng chọn thời gian";
+                            dtNgayKetThuc.Focus();
+                        }
+                        else
+                        {
+                            DateTime beginDate = dtNgayBatDau.DateTime;
+                            DateTime endDate = dtNgayKetThuc.DateTime;
+                            String reason = txtLyDo.Text;
+                            String complain = txtThanPhien.Text;
+                            string group = lkeBacSi.GetColumnValue("Account_ID").ToString();
+                            int doctorId = Convert.ToInt32(group);
+                            string group2 = lkeBenhNhan.GetColumnValue("Account_ID").ToString();
+                            int patientId = Convert.ToInt32(group2);
+                            BLL_Appointment.InsertNewAppointment(beginDate, endDate, reason, complain, patientId, doctorId);
+                            this.Close();
+
+                            ex.Id = (int)patientId;
+                            ex.FillData();
+                        }
                     }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi:" + ex.Message);
             }
         }
     }

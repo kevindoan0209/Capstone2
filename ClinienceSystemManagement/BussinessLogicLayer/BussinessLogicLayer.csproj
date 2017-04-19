@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BAL_Patient.cs" />
+    <Compile Include="BLL_Patient.cs" />
     <Compile Include="BLL_Appointment.cs" />
     <Compile Include="BLL_Human.cs" />
     <Compile Include="BLL_Disease.cs" />

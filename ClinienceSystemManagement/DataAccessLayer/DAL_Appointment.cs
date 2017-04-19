@@ -26,5 +26,29 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@patientId", patientId);
             return command.ExecuteNonQuery();
         }
+        public int GetLastIdAppointment()
+        {
+            const String sqlCommand = "SELECT IDENT_CURRENT('Appointmentss') as LastID";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            int temp = int.Parse(command.ExecuteScalar().ToString());
+            return temp;
+        }
+        public string GetNameDoctor(int doctorId)
+        {
+            const String sqlCommand = "Select Account_Name from Account Where Account_ID = @DoctorId";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@DoctorId", doctorId);
+            String name = command.ExecuteScalar().ToString();
+            return name;
+        }
+        public int UpdateAppointment(int id,string reason, string complain)
+        {
+            const String sqlCommand = "Update Appointmentss set Appointment_Issue = @Reason , Appointment_Complain = @Complain Where Appointment_ID = @Id";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@Id", id);
+            command.Parameters.AddWithValue("@Reason", reason);
+            command.Parameters.AddWithValue("@Complain", complain);
+            return command.ExecuteNonQuery();
+        }
     }
 }

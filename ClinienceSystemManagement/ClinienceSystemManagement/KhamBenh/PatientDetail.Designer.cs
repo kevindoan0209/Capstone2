@@ -30,17 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PatientDetail));
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table1 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column2 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression2 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column3 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression3 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery2 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column4 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression4 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table2 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column5 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression5 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column6 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression6 = new DevExpress.DataAccess.Sql.ColumnExpression();
             this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
             this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.btnTao = new DevExpress.XtraEditors.SimpleButton();
             this.lbTrangThai = new DevExpress.XtraEditors.LabelControl();
             this.txtMa = new DevExpress.XtraEditors.TextEdit();
             this.txtAnh = new DevExpress.XtraEditors.TextEdit();
@@ -130,6 +131,7 @@
             // 
             // panelControl1
             // 
+            this.panelControl1.Controls.Add(this.btnTao);
             this.panelControl1.Controls.Add(this.lbTrangThai);
             this.panelControl1.Controls.Add(this.txtMa);
             this.panelControl1.Controls.Add(this.btnHuy);
@@ -140,6 +142,17 @@
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(834, 53);
             this.panelControl1.TabIndex = 7;
+            // 
+            // btnTao
+            // 
+            this.btnTao.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.btnTao.Image = ((System.Drawing.Image)(resources.GetObject("btnTao.Image")));
+            this.btnTao.Location = new System.Drawing.Point(544, 16);
+            this.btnTao.Name = "btnTao";
+            this.btnTao.Size = new System.Drawing.Size(118, 25);
+            this.btnTao.TabIndex = 35;
+            this.btnTao.Text = "Tạo phiên khám";
+            this.btnTao.Click += new System.EventHandler(this.btnTao_Click);
             // 
             // lbTrangThai
             // 
@@ -154,7 +167,7 @@
             // 
             // txtMa
             // 
-            this.txtMa.Location = new System.Drawing.Point(650, 18);
+            this.txtMa.Location = new System.Drawing.Point(528, 18);
             this.txtMa.Name = "txtMa";
             this.txtMa.Size = new System.Drawing.Size(10, 20);
             this.txtMa.TabIndex = 27;
@@ -162,7 +175,7 @@
             // 
             // txtAnh
             // 
-            this.txtAnh.Location = new System.Drawing.Point(650, 16);
+            this.txtAnh.Location = new System.Drawing.Point(528, 16);
             this.txtAnh.Name = "txtAnh";
             this.txtAnh.Size = new System.Drawing.Size(10, 20);
             this.txtAnh.TabIndex = 24;
@@ -393,26 +406,26 @@
             // 
             this.sqlDataSource1.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            columnExpression1.ColumnName = "Account_ID";
-            table1.MetaSerializable = "0|0|125|180";
-            table1.Name = "Account";
-            columnExpression1.Table = table1;
-            column1.Expression = columnExpression1;
-            columnExpression2.ColumnName = "Account_Name";
-            columnExpression2.Table = table1;
-            column2.Expression = columnExpression2;
-            columnExpression3.ColumnName = "Account_Type_ID";
-            columnExpression3.Table = table1;
-            column3.Expression = columnExpression3;
-            selectQuery1.Columns.Add(column1);
-            selectQuery1.Columns.Add(column2);
-            selectQuery1.Columns.Add(column3);
-            selectQuery1.FilterString = "[Account.Account_Type_ID] = 2";
-            selectQuery1.GroupFilterString = "";
-            selectQuery1.Name = "Account";
-            selectQuery1.Tables.Add(table1);
+            columnExpression4.ColumnName = "Account_ID";
+            table2.MetaSerializable = "0|0|125|180";
+            table2.Name = "Account";
+            columnExpression4.Table = table2;
+            column4.Expression = columnExpression4;
+            columnExpression5.ColumnName = "Account_Name";
+            columnExpression5.Table = table2;
+            column5.Expression = columnExpression5;
+            columnExpression6.ColumnName = "Account_Type_ID";
+            columnExpression6.Table = table2;
+            column6.Expression = columnExpression6;
+            selectQuery2.Columns.Add(column4);
+            selectQuery2.Columns.Add(column5);
+            selectQuery2.Columns.Add(column6);
+            selectQuery2.FilterString = "[Account.Account_Type_ID] = 2";
+            selectQuery2.GroupFilterString = "";
+            selectQuery2.Name = "Account";
+            selectQuery2.Tables.Add(table2);
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery1});
+            selectQuery2});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // labelControl9
@@ -592,5 +605,6 @@
         private DevExpress.XtraEditors.LookUpEdit lkeBacSi;
         private System.Windows.Forms.BindingSource accountBindingSource;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
+        private DevExpress.XtraEditors.SimpleButton btnTao;
     }
 }

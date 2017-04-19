@@ -65,52 +65,60 @@ namespace ClinienceSystemManagement.KhamBenh
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
+            try
+            {
 
-            if (string.IsNullOrEmpty(txtLyDo.Text))
-            {
-                lbTrangThai.Text = "*Vui lòng nhập lí do khám";
-                txtLyDo.Focus();
-            }
-            else
-            {
-                if (lkeBacSi.Text == "Bác sĩ")
+                if (string.IsNullOrEmpty(txtLyDo.Text))
                 {
-                    lbTrangThai.Text = "*Vui lòng chọn bác sĩ";
-                    lkeBacSi.Focus();
+                    lbTrangThai.Text = "*Vui lòng nhập lí do khám";
+                    txtLyDo.Focus();
                 }
                 else
                 {
-                    if (dtNgayBatDau.DateTime >= dtNgayKetThuc.DateTime )
+                    if (lkeBacSi.Text == "Bác sĩ")
                     {
-                        lbTrangThai.Text = "*Vui lòng chọn thời gian";
-                        dtNgayKetThuc.Focus();
+                        lbTrangThai.Text = "*Vui lòng chọn bác sĩ";
+                        lkeBacSi.Focus();
                     }
                     else
                     {
-                        DateTime beginDate = dtNgayBatDau.DateTime;
-                        DateTime endDate = dtNgayKetThuc.DateTime;
-                        String reason = txtLyDo.Text;
-                        String complain = txtThanPhien.Text;
-                        int patientId = Convert.ToInt32(txtMa.Text);
-                        string group = lkeBacSi.GetColumnValue("Account_ID").ToString();
-                        int doctorId = Convert.ToInt32(group);
-                        BLL_Appointment.InsertNewAppointment(beginDate, endDate, reason, complain, patientId, doctorId);
-                        XtraMessageBox.Show("Tạo phiên khám thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        this.Close();
-                        Form frm = this.IsExits(typeof(MainExamination));
-                        if (frm != null)
+                        if (dtNgayBatDau.DateTime >= dtNgayKetThuc.DateTime)
                         {
-                            frm.Activate();
+                            lbTrangThai.Text = "*Vui lòng chọn thời gian";
+                            dtNgayKetThuc.Focus();
                         }
                         else
                         {
-                            MainExamination ex = new MainExamination();
-                            // me.MdiParent = this;
-                            ex.Id = (int)patientId;
-                            ex.Show();
+                            DateTime beginDate = dtNgayBatDau.DateTime;
+                            DateTime endDate = dtNgayKetThuc.DateTime;
+                            String reason = txtLyDo.Text;
+                            String complain = txtThanPhien.Text;
+                            int patientId = Convert.ToInt32(txtMa.Text);
+                            string group = lkeBacSi.GetColumnValue("Account_ID").ToString();
+                            int doctorId = Convert.ToInt32(group);
+                            BLL_Appointment.InsertNewAppointment(beginDate, endDate, reason, complain, patientId, doctorId);
+
+                            XtraMessageBox.Show("Tạo phiên khám thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.Close();
+                            Form frm = this.IsExits(typeof(MainExamination));
+                            if (frm != null)
+                            {
+                                frm.Activate();
+                            }
+                            else
+                            {
+                                MainExamination ex = new MainExamination();
+                                //ex.MdiParent = this;
+                                ex.Id = (int)patientId;
+                                ex.Show();
+                            }
                         }
                     }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi:" + ex.Message);
             }
         }
     }
