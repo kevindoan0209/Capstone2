@@ -34,7 +34,7 @@ namespace ClinienceSystemManagement.HeThong
         }
         private void FillDataUpdate()
         {
-            if (Id != null)
+            if (Id != 0)
             {
                 DataClinienceDataContext db = new DataClinienceDataContext();
                 var ing = db.Ingredients.Where(i => i.Ingredient_ID == (int)Id).SingleOrDefault();
