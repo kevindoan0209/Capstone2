@@ -97,8 +97,12 @@ namespace ClinienceSystemManagement.KhamBenh
                             string group = lkeBacSi.GetColumnValue("Account_ID").ToString();
                             int doctorId = Convert.ToInt32(group);
                             BLL_Appointment.InsertNewAppointment(beginDate, endDate, reason, complain, patientId, doctorId);
-
                             XtraMessageBox.Show("Tạo phiên khám thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            String note = "";
+                            DateTime date = DateTime.Now;
+                            int money = 0;
+                            BLL_Precription.InsertNewPrecription(note, date, money, patientId, doctorId);
+                            int lastPreID = BLL_Precription.GetLastIdPrecription();
                             this.Close();
                             Form frm = this.IsExits(typeof(MainExamination));
                             if (frm != null)
@@ -109,6 +113,7 @@ namespace ClinienceSystemManagement.KhamBenh
                             {
                                 MainExamination ex = new MainExamination();
                                 //ex.MdiParent = this;
+                                ex.PreId = (int)lastPreID;
                                 ex.Id = (int)patientId;
                                 ex.Show();
                             }

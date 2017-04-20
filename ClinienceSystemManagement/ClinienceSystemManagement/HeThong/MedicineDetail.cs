@@ -17,7 +17,7 @@ namespace ClinienceSystemManagement.HeThong
     {
         public int Id;
         public bool isAdd = true;
-        private int [] _getChecked = new int [1000000];
+        private int[] _getChecked = new int[1000000];
         private int n = 0;
         private bool _checkExisting = false;
         public MedicineDetail()
@@ -152,18 +152,18 @@ namespace ClinienceSystemManagement.HeThong
                             this.Close();
 
                             int lastID = BLL_Medicine.GetLastIdMedicine();
-                          
-                                for (int i = 0; i < n; i++)
-                                {                          
-                                    int ingredientId = _getChecked[i];
-                                    BLL_Medicine.InsertMeIn(lastID, ingredientId);
-                                }
+
+                            for (int i = 0; i < n; i++)
+                            {
+                                int ingredientId = _getChecked[i];
+                                BLL_Medicine.InsertMeIn(lastID, ingredientId);
                             }
-                         
-                            XtraMessageBox.Show("Đã thêm thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
+
+                        XtraMessageBox.Show("Đã thêm thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
-                
+                }
+
             }
             catch (Exception ex)
             {
@@ -179,7 +179,7 @@ namespace ClinienceSystemManagement.HeThong
             }
         }
 
-        private int findValueOfArrary(int []a, int n, int x)
+        private int findValueOfArrary(int[] a, int n, int x)
         {
             for (int i = 0; i < n; i++)
                 if (a[i] == x)
@@ -188,7 +188,7 @@ namespace ClinienceSystemManagement.HeThong
         }
         private void deleteValueOfArray(int[] a, int n, int x)
         {
-            int vt = findValueOfArrary(a, n, x); 
+            int vt = findValueOfArrary(a, n, x);
             if (vt == -1)
                 XtraMessageBox.Show("Lỗi", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             else
@@ -210,14 +210,14 @@ namespace ClinienceSystemManagement.HeThong
                 if (ingredient != null)
                 {
                     try
-                    {                     
+                    {
                         int ingredientId = ingredient.Ingredient_ID;
                         for (int i = 0; i < n; i++)
                         {
                             if (_getChecked[i] == ingredientId)
-                            {     
+                            {
                                 _checkExisting = true;
-                            }                                       
+                            }
                         }
 
                         if (_checkExisting == true)
@@ -267,6 +267,6 @@ namespace ClinienceSystemManagement.HeThong
                 su.ShowDialog();
                 sqlDataSource4.Fill();
             }
-        }     
+        }
     }
 }

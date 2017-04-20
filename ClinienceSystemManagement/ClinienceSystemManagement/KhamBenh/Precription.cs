@@ -22,5 +22,7 @@ namespace ClinienceSystemManagement.KhamBenh
         {
             gridView1.Columns.Add(new DevExpress.XtraGrid.Columns.GridColumn());
         }
+
+
     }
 }

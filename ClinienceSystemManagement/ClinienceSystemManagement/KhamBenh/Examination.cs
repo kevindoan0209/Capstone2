@@ -84,8 +84,13 @@ namespace ClinienceSystemManagement.KhamBenh
                             string group2 = lkeBenhNhan.GetColumnValue("Account_ID").ToString();
                             int patientId = Convert.ToInt32(group2);
                             BLL_Appointment.InsertNewAppointment(beginDate, endDate, reason, complain, patientId, doctorId);
+                            String note = "";
+                            DateTime date = DateTime.Now;
+                            int money = 0;
+                            BLL_Precription.InsertNewPrecription(note, date, money, patientId, doctorId);
+                            int lastPreID = BLL_Precription.GetLastIdPrecription();
                             this.Close();
-
+                            ex.PreId = (int)lastPreID;
                             ex.Id = (int)patientId;
                             ex.FillData();
                         }

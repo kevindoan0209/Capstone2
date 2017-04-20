@@ -319,8 +319,18 @@ namespace ClinienceSystemManagement.KhamBenh
                                                 BLL_Patient.InsertPatientNoValue(lastID);
                                                 //BLL_Human.InsertStatusPatient(complain, reason, lastID);
                                                 BLL_Appointment.InsertNewAppointment(beginDate, endDate, reason, complain, lastID, doctorId);
+                                                String note = "";
+                                                DateTime date = DateTime.Now;
+                                                int money = 0;
+                                                BLL_Precription.InsertNewPrecription(note, date, money, lastID, doctorId);
+                                                int lastPreID = BLL_Precription.GetLastIdPrecription();
                                                 XtraMessageBox.Show("Đã thêm thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                                 this.Close();
+                                                MainExamination ex = new MainExamination();
+                                                //ex.MdiParent = this;
+                                                ex.PreId = (int)lastPreID;
+                                                ex.Id = (int)lastID;
+                                                ex.Show();
                                             }
                                         }
                                         else
@@ -339,10 +349,20 @@ namespace ClinienceSystemManagement.KhamBenh
                                                 int lastID = BLL_Human.GetLastIdAccount();
                                                 BLL_Human.InsertHumanPatient(lastID, age, sex, email, phone, job, city, address);
                                                 BLL_Patient.InsertPatientNoValue(lastID);
-                                                //BLL_Human.InsertStatusPatient(complain, reason, lastID);
                                                 BLL_Appointment.InsertNewAppointment(beginDate, endDate, reason, complain, lastID, doctorId);
+                                                String note = "";
+                                                DateTime date = DateTime.Now;
+                                                int money = 0;
+                                                BLL_Precription.InsertNewPrecription(note, date, money, lastID, doctorId);
+                                                int lastPreID = BLL_Precription.GetLastIdPrecription();
+                                                //BLL_Human.InsertStatusPatient(complain, reason, lastID);
                                                 XtraMessageBox.Show("Đã thêm thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                                 this.Close();
+                                                MainExamination ex = new MainExamination();
+                                                //ex.MdiParent = this;
+                                                ex.PreId = (int)lastPreID;
+                                                ex.Id = (int)lastID;
+                                                ex.Show();
                                             }
                                         }
                                     }

@@ -31,18 +31,18 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.GroupBox groupBox2;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainExamination));
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery9 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column17 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression17 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table9 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column18 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression18 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery10 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column19 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression19 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table10 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column20 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression20 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table1 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column2 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression2 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery2 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column3 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression3 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table2 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column4 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression4 = new DevExpress.DataAccess.Sql.ColumnExpression();
             this.lbNgayKham = new DevExpress.XtraEditors.LabelControl();
             this.label8 = new System.Windows.Forms.Label();
             this.lbBacSi = new DevExpress.XtraEditors.LabelControl();
@@ -70,6 +70,8 @@
             this.btnXetNghiem = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.btnTiepNhan = new DevExpress.XtraEditors.SimpleButton();
+            this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
+            this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
@@ -119,31 +121,24 @@
             this.gridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.memoEdit2 = new DevExpress.XtraEditors.MemoEdit();
+            this.txtChanDoan = new DevExpress.XtraEditors.MemoEdit();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.label1 = new System.Windows.Forms.Label();
-            this.memoEdit1 = new DevExpress.XtraEditors.MemoEdit();
+            this.txtKhamThucThe = new DevExpress.XtraEditors.MemoEdit();
             this.diseaseBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.xtraTabControl2 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.txtLuuY = new DevExpress.XtraEditors.MemoEdit();
+            this.hyperlinkLabelControl1 = new DevExpress.XtraEditors.HyperlinkLabelControl();
             this.label4 = new System.Windows.Forms.Label();
-            this.xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.memoEdit4 = new DevExpress.XtraEditors.MemoEdit();
-            this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
-            this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
             this.txtThanPhien = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.txtLyDo = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            this.hyperlinkLabelControl1 = new DevExpress.XtraEditors.HyperlinkLabelControl();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtLuuY = new DevExpress.XtraEditors.MemoEdit();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             groupBox2 = new System.Windows.Forms.GroupBox();
             groupBox2.SuspendLayout();
@@ -208,22 +203,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diseaseBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtChanDoan.Properties)).BeginInit();
             this.xtraTabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKhamThucThe.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diseaseBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
             this.panelControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl2)).BeginInit();
             this.xtraTabControl2.SuspendLayout();
             this.xtraTabPage3.SuspendLayout();
-            this.xtraTabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtThanPhien.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtLyDo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLuuY.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtThanPhien.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLyDo.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -505,6 +497,8 @@
             // panelControl2
             // 
             this.panelControl2.Controls.Add(this.btnTiepNhan);
+            this.panelControl2.Controls.Add(this.btnHuy);
+            this.panelControl2.Controls.Add(this.btnLuu);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelControl2.Location = new System.Drawing.Point(299, 534);
             this.panelControl2.Name = "panelControl2";
@@ -521,6 +515,30 @@
             this.btnTiepNhan.TabIndex = 4;
             this.btnTiepNhan.Text = "Bệnh nhân";
             this.btnTiepNhan.Click += new System.EventHandler(this.btnTiepNhan_Click);
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnHuy.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.btnHuy.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.Image")));
+            this.btnHuy.Location = new System.Drawing.Point(594, 8);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(75, 25);
+            this.btnHuy.TabIndex = 41;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLuu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
+            this.btnLuu.Location = new System.Drawing.Point(507, 8);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(81, 25);
+            this.btnLuu.TabIndex = 40;
+            this.btnLuu.Text = "Cập nhật";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // panelControl1
             // 
@@ -569,7 +587,7 @@
             0,
             0,
             0});
-            this.txtThanNhiet.Location = new System.Drawing.Point(95, -2);
+            this.txtThanNhiet.Location = new System.Drawing.Point(95, 12);
             this.txtThanNhiet.Name = "txtThanNhiet";
             this.txtThanNhiet.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -591,7 +609,7 @@
             0,
             0,
             0});
-            this.txtHuyetThu.Location = new System.Drawing.Point(97, 25);
+            this.txtHuyetThu.Location = new System.Drawing.Point(97, 39);
             this.txtHuyetThu.Name = "txtHuyetThu";
             this.txtHuyetThu.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -613,7 +631,7 @@
             0,
             0,
             0});
-            this.txtHuyetTr.Location = new System.Drawing.Point(97, 51);
+            this.txtHuyetTr.Location = new System.Drawing.Point(97, 65);
             this.txtHuyetTr.Name = "txtHuyetTr";
             this.txtHuyetTr.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -635,7 +653,7 @@
             0,
             0,
             0});
-            this.txtMach.Location = new System.Drawing.Point(97, 77);
+            this.txtMach.Location = new System.Drawing.Point(97, 91);
             this.txtMach.Name = "txtMach";
             this.txtMach.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -657,7 +675,7 @@
             0,
             0,
             0});
-            this.txtNhipTho.Location = new System.Drawing.Point(97, 103);
+            this.txtNhipTho.Location = new System.Drawing.Point(97, 117);
             this.txtNhipTho.Name = "txtNhipTho";
             this.txtNhipTho.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -679,7 +697,7 @@
             0,
             0,
             0});
-            this.txtChieuCao.Location = new System.Drawing.Point(97, 129);
+            this.txtChieuCao.Location = new System.Drawing.Point(97, 143);
             this.txtChieuCao.Name = "txtChieuCao";
             this.txtChieuCao.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -701,7 +719,7 @@
             0,
             0,
             0});
-            this.txtCanNang.Location = new System.Drawing.Point(97, 155);
+            this.txtCanNang.Location = new System.Drawing.Point(97, 169);
             this.txtCanNang.Name = "txtCanNang";
             this.txtCanNang.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -723,7 +741,7 @@
             0,
             0,
             0});
-            this.txtVong2.Location = new System.Drawing.Point(97, 181);
+            this.txtVong2.Location = new System.Drawing.Point(97, 195);
             this.txtVong2.Name = "txtVong2";
             this.txtVong2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -745,7 +763,7 @@
             0,
             0,
             0});
-            this.txtVong3.Location = new System.Drawing.Point(97, 207);
+            this.txtVong3.Location = new System.Drawing.Point(97, 221);
             this.txtVong3.Name = "txtVong3";
             this.txtVong3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -792,7 +810,7 @@
             this.layoutControlItem2,
             this.simpleLabelItem1,
             this.simpleLabelItem10});
-            this.layoutControlGroup1.Location = new System.Drawing.Point(0, -14);
+            this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.OptionsItemText.TextAlignMode = DevExpress.XtraLayout.TextAlignModeGroup.CustomSize;
             this.layoutControlGroup1.OptionsItemText.TextToControlDistance = 2;
@@ -1048,7 +1066,7 @@
             this.xtraTabPage1.Controls.Add(this.gridLookUpEdit1);
             this.xtraTabPage1.Controls.Add(this.label3);
             this.xtraTabPage1.Controls.Add(this.label2);
-            this.xtraTabPage1.Controls.Add(this.memoEdit2);
+            this.xtraTabPage1.Controls.Add(this.txtChanDoan);
             this.xtraTabPage1.Name = "xtraTabPage1";
             this.xtraTabPage1.Size = new System.Drawing.Size(347, 121);
             this.xtraTabPage1.Text = "Chẩn đoán";
@@ -1087,20 +1105,20 @@
             // 
             this.sqlDataSource2.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource2.Name = "sqlDataSource2";
-            columnExpression17.ColumnName = "Disease_ID";
-            table9.MetaSerializable = "0|0|125|100";
-            table9.Name = "Disease";
-            columnExpression17.Table = table9;
-            column17.Expression = columnExpression17;
-            columnExpression18.ColumnName = "Disease_Name";
-            columnExpression18.Table = table9;
-            column18.Expression = columnExpression18;
-            selectQuery9.Columns.Add(column17);
-            selectQuery9.Columns.Add(column18);
-            selectQuery9.Name = "Disease";
-            selectQuery9.Tables.Add(table9);
+            columnExpression1.ColumnName = "Disease_ID";
+            table1.MetaSerializable = "0|0|125|100";
+            table1.Name = "Disease";
+            columnExpression1.Table = table1;
+            column1.Expression = columnExpression1;
+            columnExpression2.ColumnName = "Disease_Name";
+            columnExpression2.Table = table1;
+            column2.Expression = columnExpression2;
+            selectQuery1.Columns.Add(column1);
+            selectQuery1.Columns.Add(column2);
+            selectQuery1.Name = "Disease";
+            selectQuery1.Tables.Add(table1);
             this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery9});
+            selectQuery1});
             this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
             // 
             // gridLookUpEdit1View
@@ -1111,6 +1129,7 @@
             this.gridLookUpEdit1View.OptionsSelection.MultiSelect = true;
             this.gridLookUpEdit1View.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
             this.gridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
+            this.gridLookUpEdit1View.SelectionChanged += new DevExpress.Data.SelectionChangedEventHandler(this.gridLookUpEdit1View_SelectionChanged);
             // 
             // label3
             // 
@@ -1132,20 +1151,20 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Chẩn đoán khác:";
             // 
-            // memoEdit2
+            // txtChanDoan
             // 
-            this.memoEdit2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.memoEdit2.Location = new System.Drawing.Point(13, 74);
-            this.memoEdit2.Name = "memoEdit2";
-            this.memoEdit2.Size = new System.Drawing.Size(320, 37);
-            this.memoEdit2.TabIndex = 1;
+            this.txtChanDoan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtChanDoan.Location = new System.Drawing.Point(13, 74);
+            this.txtChanDoan.Name = "txtChanDoan";
+            this.txtChanDoan.Size = new System.Drawing.Size(320, 37);
+            this.txtChanDoan.TabIndex = 1;
             // 
             // xtraTabPage2
             // 
             this.xtraTabPage2.Controls.Add(this.label1);
-            this.xtraTabPage2.Controls.Add(this.memoEdit1);
+            this.xtraTabPage2.Controls.Add(this.txtKhamThucThe);
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(347, 135);
+            this.xtraTabPage2.Size = new System.Drawing.Size(347, 121);
             this.xtraTabPage2.Text = "Khám thực thể";
             // 
             // label1
@@ -1158,13 +1177,13 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Khám thực thể:";
             // 
-            // memoEdit1
+            // txtKhamThucThe
             // 
-            this.memoEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.memoEdit1.Location = new System.Drawing.Point(18, 29);
-            this.memoEdit1.Name = "memoEdit1";
-            this.memoEdit1.Size = new System.Drawing.Size(311, 95);
-            this.memoEdit1.TabIndex = 0;
+            this.txtKhamThucThe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtKhamThucThe.Location = new System.Drawing.Point(18, 29);
+            this.txtKhamThucThe.Name = "txtKhamThucThe";
+            this.txtKhamThucThe.Size = new System.Drawing.Size(311, 75);
+            this.txtKhamThucThe.TabIndex = 0;
             // 
             // diseaseBindingSource
             // 
@@ -1175,27 +1194,25 @@
             // 
             this.sqlDataSource1.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            columnExpression19.ColumnName = "Disease_ID";
-            table10.MetaSerializable = "0|0|125|100";
-            table10.Name = "Disease";
-            columnExpression19.Table = table10;
-            column19.Expression = columnExpression19;
-            columnExpression20.ColumnName = "Disease_Name";
-            columnExpression20.Table = table10;
-            column20.Expression = columnExpression20;
-            selectQuery10.Columns.Add(column19);
-            selectQuery10.Columns.Add(column20);
-            selectQuery10.Name = "Disease";
-            selectQuery10.Tables.Add(table10);
+            columnExpression3.ColumnName = "Disease_ID";
+            table2.MetaSerializable = "0|0|125|100";
+            table2.Name = "Disease";
+            columnExpression3.Table = table2;
+            column3.Expression = columnExpression3;
+            columnExpression4.ColumnName = "Disease_Name";
+            columnExpression4.Table = table2;
+            column4.Expression = columnExpression4;
+            selectQuery2.Columns.Add(column3);
+            selectQuery2.Columns.Add(column4);
+            selectQuery2.Name = "Disease";
+            selectQuery2.Tables.Add(table2);
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery10});
+            selectQuery2});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // panelControl4
             // 
             this.panelControl4.Controls.Add(this.xtraTabControl2);
-            this.panelControl4.Controls.Add(this.btnHuy);
-            this.panelControl4.Controls.Add(this.btnLuu);
             this.panelControl4.Controls.Add(this.txtThanPhien);
             this.panelControl4.Controls.Add(this.xtraTabControl1);
             this.panelControl4.Controls.Add(this.labelControl11);
@@ -1217,8 +1234,7 @@
             this.xtraTabControl2.Size = new System.Drawing.Size(353, 159);
             this.xtraTabControl2.TabIndex = 42;
             this.xtraTabControl2.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
-            this.xtraTabPage3,
-            this.xtraTabPage4});
+            this.xtraTabPage3});
             // 
             // xtraTabPage3
             // 
@@ -1231,6 +1247,45 @@
             this.xtraTabPage3.Size = new System.Drawing.Size(347, 131);
             this.xtraTabPage3.Text = "Điều trị";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(11, 54);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(41, 13);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "Lưu ý:";
+            // 
+            // textEdit2
+            // 
+            this.textEdit2.EditValue = "Chưa có toa thuốc";
+            this.textEdit2.Location = new System.Drawing.Point(14, 28);
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.textEdit2.Properties.Appearance.Options.UseForeColor = true;
+            this.textEdit2.Size = new System.Drawing.Size(207, 20);
+            this.textEdit2.TabIndex = 7;
+            // 
+            // txtLuuY
+            // 
+            this.txtLuuY.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLuuY.Location = new System.Drawing.Point(14, 71);
+            this.txtLuuY.Name = "txtLuuY";
+            this.txtLuuY.Size = new System.Drawing.Size(320, 46);
+            this.txtLuuY.TabIndex = 6;
+            // 
+            // hyperlinkLabelControl1
+            // 
+            this.hyperlinkLabelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.hyperlinkLabelControl1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hyperlinkLabelControl1.Location = new System.Drawing.Point(263, 29);
+            this.hyperlinkLabelControl1.Name = "hyperlinkLabelControl1";
+            this.hyperlinkLabelControl1.Size = new System.Drawing.Size(75, 13);
+            this.hyperlinkLabelControl1.TabIndex = 6;
+            this.hyperlinkLabelControl1.Text = "Thêm toa thuốc";
+            this.hyperlinkLabelControl1.Click += new System.EventHandler(this.hyperlinkLabelControl1_Click);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -1240,76 +1295,6 @@
             this.label4.Size = new System.Drawing.Size(66, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "Toa thuốc:";
-            // 
-            // xtraTabPage4
-            // 
-            this.xtraTabPage4.Controls.Add(this.textEdit1);
-            this.xtraTabPage4.Controls.Add(this.label5);
-            this.xtraTabPage4.Controls.Add(this.label6);
-            this.xtraTabPage4.Controls.Add(this.memoEdit4);
-            this.xtraTabPage4.Name = "xtraTabPage4";
-            this.xtraTabPage4.Size = new System.Drawing.Size(347, 131);
-            this.xtraTabPage4.Text = "Thủ thuật";
-            // 
-            // textEdit1
-            // 
-            this.textEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textEdit1.Location = new System.Drawing.Point(18, 26);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(312, 20);
-            this.textEdit1.TabIndex = 3;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(15, 10);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 13);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Tên:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(15, 53);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 13);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Kết quả:";
-            // 
-            // memoEdit4
-            // 
-            this.memoEdit4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.memoEdit4.Location = new System.Drawing.Point(18, 69);
-            this.memoEdit4.Name = "memoEdit4";
-            this.memoEdit4.Size = new System.Drawing.Size(312, 47);
-            this.memoEdit4.TabIndex = 0;
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnHuy.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.btnHuy.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.Image")));
-            this.btnHuy.Location = new System.Drawing.Point(291, 127);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(75, 25);
-            this.btnHuy.TabIndex = 41;
-            this.btnHuy.Text = "Hủy";
-            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLuu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
-            this.btnLuu.Location = new System.Drawing.Point(204, 127);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(81, 25);
-            this.btnLuu.TabIndex = 40;
-            this.btnLuu.Text = "Cập nhật";
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // txtThanPhien
             // 
@@ -1344,45 +1329,6 @@
             this.labelControl10.Size = new System.Drawing.Size(58, 13);
             this.labelControl10.TabIndex = 37;
             this.labelControl10.Text = "Lý do khám:";
-            // 
-            // hyperlinkLabelControl1
-            // 
-            this.hyperlinkLabelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.hyperlinkLabelControl1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hyperlinkLabelControl1.Location = new System.Drawing.Point(263, 29);
-            this.hyperlinkLabelControl1.Name = "hyperlinkLabelControl1";
-            this.hyperlinkLabelControl1.Size = new System.Drawing.Size(75, 13);
-            this.hyperlinkLabelControl1.TabIndex = 6;
-            this.hyperlinkLabelControl1.Text = "Thêm toa thuốc";
-            this.hyperlinkLabelControl1.Click += new System.EventHandler(this.hyperlinkLabelControl1_Click);
-            // 
-            // textEdit2
-            // 
-            this.textEdit2.EditValue = "Chưa có toa thuốc";
-            this.textEdit2.Location = new System.Drawing.Point(14, 28);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.textEdit2.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit2.Size = new System.Drawing.Size(207, 20);
-            this.textEdit2.TabIndex = 7;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(11, 54);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(41, 13);
-            this.label9.TabIndex = 7;
-            this.label9.Text = "Lưu ý:";
-            // 
-            // txtLuuY
-            // 
-            this.txtLuuY.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLuuY.Location = new System.Drawing.Point(14, 71);
-            this.txtLuuY.Name = "txtLuuY";
-            this.txtLuuY.Size = new System.Drawing.Size(320, 46);
-            this.txtLuuY.TabIndex = 6;
             // 
             // contextMenuStrip1
             // 
@@ -1467,10 +1413,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diseaseBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtChanDoan.Properties)).EndInit();
             this.xtraTabPage2.ResumeLayout(false);
             this.xtraTabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKhamThucThe.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diseaseBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
             this.panelControl4.ResumeLayout(false);
@@ -1479,14 +1425,10 @@
             this.xtraTabControl2.ResumeLayout(false);
             this.xtraTabPage3.ResumeLayout(false);
             this.xtraTabPage3.PerformLayout();
-            this.xtraTabPage4.ResumeLayout(false);
-            this.xtraTabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtThanPhien.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtLyDo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLuuY.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtThanPhien.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLyDo.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1528,18 +1470,10 @@
         private DevExpress.XtraEditors.SimpleButton btnLuu;
         private DevExpress.XtraEditors.SimpleButton btnHuy;
         private System.Windows.Forms.Label label1;
-        private DevExpress.XtraEditors.MemoEdit memoEdit1;
+        private DevExpress.XtraEditors.MemoEdit txtKhamThucThe;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private DevExpress.XtraEditors.MemoEdit memoEdit2;
-        private DevExpress.XtraTab.XtraTabControl xtraTabControl2;
-        private DevExpress.XtraTab.XtraTabPage xtraTabPage3;
-        private System.Windows.Forms.Label label4;
-        private DevExpress.XtraTab.XtraTabPage xtraTabPage4;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private DevExpress.XtraEditors.MemoEdit memoEdit4;
+        private DevExpress.XtraEditors.MemoEdit txtChanDoan;
         private System.Windows.Forms.BindingSource diseaseBindingSource;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
@@ -1589,10 +1523,13 @@
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource2;
         private DevExpress.XtraGrid.Views.Grid.GridView gridLookUpEdit1View;
         private DevExpress.XtraEditors.HyperlinkLabelControl lnkThemBenh;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.HyperlinkLabelControl hyperlinkLabelControl1;
-        private System.Windows.Forms.Label label9;
-        private DevExpress.XtraEditors.MemoEdit txtLuuY;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private DevExpress.XtraTab.XtraTabControl xtraTabControl2;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage3;
+        private System.Windows.Forms.Label label9;
+        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.MemoEdit txtLuuY;
+        private DevExpress.XtraEditors.HyperlinkLabelControl hyperlinkLabelControl1;
+        private System.Windows.Forms.Label label4;
     }
 }

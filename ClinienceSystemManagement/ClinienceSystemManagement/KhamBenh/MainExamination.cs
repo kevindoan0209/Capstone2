@@ -19,6 +19,10 @@ namespace ClinienceSystemManagement.KhamBenh
         public int Id;
         public int doctorId;
         public int AppointmentId;
+        public int PreId;
+        private String[] _getChecked = new String[1000000];
+        private int n = 0;
+        private bool _checkExisting = false;
         public MainExamination()
         {
             InitializeComponent();
@@ -143,10 +147,17 @@ namespace ClinienceSystemManagement.KhamBenh
                     BLL_Patient.UpdatePatient(Id, temp, bloodTh, bloodTr, pulse, breath, weight, height, waist, hip);
                     btnHuy.Enabled = false;
                     btnLuu.Enabled = false;
-                    String note = "";
+                    String note = Convert.ToString(txtLuuY.Text);
+                    String diagnose = Convert.ToString(txtChanDoan.Text);
+                    String checkup = Convert.ToString(txtKhamThucThe.Text);
                     DateTime date = DateTime.Now;
                     int money = 0;
-                    BLL_Precription.InsertNewPrecription(note, date, money, Id, doctorId);
+                    BLL_Precription.UpdatePrecription(PreId,note, date, money, diagnose, checkup, Id, doctorId);
+                    for (int i = 0; i < n; i++)
+                    {
+                        String diseaseId = _getChecked[i];
+                        BLL_Precription.InsertPrecriptionDisease(diseaseId, PreId);
+                    }
                 }
             }
             catch (Exception ex)
@@ -163,7 +174,77 @@ namespace ClinienceSystemManagement.KhamBenh
 
         private void hyperlinkLabelControl1_Click(object sender, EventArgs e)
         {
-            textEdit2.Text = "Đã có toa thuốc";
+            Form frm = this.IsExits(typeof(Precription));
+            if (frm != null)
+            {
+                frm.Activate();
+            }
+            else
+            {
+                Precription ex = new Precription();
+                // ex.MdiParent = this;
+                ex.Show();
+            }
+        }
+        private int findValueOfArrary(String[] a, int n, String x)
+        {
+            for (int i = 0; i < n; i++)
+                if (a[i] == x)
+                    return i;
+            return -1;
+        }
+        private void deleteValueOfArray(String[] a, int n, String x)
+        {
+            int vt = findValueOfArrary(a, n, x);
+            if (vt == -1)
+                XtraMessageBox.Show("Lỗi", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            else
+            {
+                for (int i = vt; i < (n - 1); i++)
+                    a[i] = a[i + 1];
+                //n--;
+            }
+        }
+
+        private void gridLookUpEdit1View_SelectionChanged(object sender, DevExpress.Data.SelectionChangedEventArgs e)
+        {
+            int rowIndex = gridLookUpEdit1View.FocusedRowHandle;
+            string colID = "Disease_ID";
+            object value = gridLookUpEdit1View.GetRowCellValue(rowIndex, colID);
+            if (value != null)
+            {
+                DataClinienceDataContext dc = new DataClinienceDataContext();
+                var disease = dc.Diseases.Where(s => s.Disease_ID == (String)value).SingleOrDefault();
+                if (disease != null)
+                {
+                    try
+                    {
+                        String diseaseId = disease.Disease_ID;
+                        for (int i = 0; i < n; i++)
+                        {
+                            if (_getChecked[i] == diseaseId)
+                            {
+                                _checkExisting = true;
+                            }
+                        }
+
+                        if (_checkExisting == true)
+                        {
+                            deleteValueOfArray(_getChecked, n, diseaseId);
+                            _checkExisting = false;
+                            n--;
+                        }
+                        else
+                        {
+                            _getChecked[n++] = diseaseId;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        XtraMessageBox.Show("Lỗi" + ex.Message, "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                }
+            }
         }
     }
 }
