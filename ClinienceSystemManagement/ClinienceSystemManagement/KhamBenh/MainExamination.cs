@@ -39,6 +39,7 @@ namespace ClinienceSystemManagement.KhamBenh
                 var account = db.Accounts.Where(i => i.Account_ID == Id).SingleOrDefault();
                 var human = db.Humans.Where(i => i.Account_ID == Id).SingleOrDefault();
                 var patient = db.Patients.Where(i => i.Account_ID == Id).SingleOrDefault();
+
                 int lastID = BLL_Appointment.GetLastIdAppointment();
                 var appointment = db.Appointmentsses.Where(i => i.Appointment_ID == lastID).SingleOrDefault();  
                 if (account != null)
@@ -60,6 +61,15 @@ namespace ClinienceSystemManagement.KhamBenh
                     lbTuoi.Text = ageInYrs + " tuổi";
                     lbCongViec.Text = human.Account_Job;
                     peAnh.EditValue = account.Account_Image;
+                    txtThanNhiet.EditValue = patient.Patient_Temperature;
+                    txtHuyetThu.EditValue = patient.Patient_BloodPressureThu;
+                    txtHuyetTr.EditValue = patient.Patient_BloodPressureTr;
+                    txtMach.EditValue = patient.Patient_Pulse;
+                    txtNhipTho.EditValue = patient.Patient_Breathing;
+                    txtChieuCao.EditValue = patient.Patient_Height;
+                    txtCanNang.EditValue = patient.Patient_Weight;
+                    txtVong2.EditValue = patient.Patient_Waist;
+                    txtVong3.EditValue = patient.Patient_Hips;
                 }
             }
         }
@@ -92,7 +102,7 @@ namespace ClinienceSystemManagement.KhamBenh
         private void MainExamination_Load(object sender, EventArgs e)
         {
             FillData();
-            textEdit2.ReadOnly = true;
+            txtToaThuoc.ReadOnly = true;
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
@@ -168,22 +178,36 @@ namespace ClinienceSystemManagement.KhamBenh
 
         private void lnkThemBenh_Click(object sender, EventArgs e)
         {
-            DiseaseDetail dd = new DiseaseDetail();
-            dd.ShowDialog();
+            if (Id != 0)
+            {
+                DiseaseDetail dd = new DiseaseDetail();
+                dd.ShowDialog();
+            }
+            else
+            {
+                XtraMessageBox.Show("Chưa có thông tin bệnh nhân", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
 
         private void hyperlinkLabelControl1_Click(object sender, EventArgs e)
         {
-            Form frm = this.IsExits(typeof(Precription));
-            if (frm != null)
-            {
-                frm.Activate();
+            if (Id !=0) {
+                Form frm = this.IsExits(typeof(Precription));
+                if (frm != null)
+                {
+                    frm.Activate();
+                }
+                else
+                {
+                    txtToaThuoc.Text = "Đã có toa thuốc";
+                    Precription ex = new Precription();
+                    ex.Id = (int)PreId;
+                    ex.Show();
+                }
             }
             else
             {
-                Precription ex = new Precription();
-                // ex.MdiParent = this;
-                ex.Show();
+                XtraMessageBox.Show("Chưa có thông tin bệnh nhân", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
         private int findValueOfArrary(String[] a, int n, String x)

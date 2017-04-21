@@ -42,9 +42,6 @@ namespace DataAccessLayer
     partial void InsertDisease(Disease instance);
     partial void UpdateDisease(Disease instance);
     partial void DeleteDisease(Disease instance);
-    partial void InsertDoctor(Doctor instance);
-    partial void UpdateDoctor(Doctor instance);
-    partial void DeleteDoctor(Doctor instance);
     partial void InsertHuman(Human instance);
     partial void UpdateHuman(Human instance);
     partial void DeleteHuman(Human instance);
@@ -145,14 +142,6 @@ namespace DataAccessLayer
 			get
 			{
 				return this.GetTable<Disease>();
-			}
-		}
-		
-		public System.Data.Linq.Table<Doctor> Doctors
-		{
-			get
-			{
-				return this.GetTable<Doctor>();
 			}
 		}
 		
@@ -1181,92 +1170,6 @@ namespace DataAccessLayer
 		{
 			this.SendPropertyChanging();
 			entity.Disease = null;
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Doctor")]
-	public partial class Doctor : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _Account_ID;
-		
-		private string _Doctor_Professional;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnAccount_IDChanging(int value);
-    partial void OnAccount_IDChanged();
-    partial void OnDoctor_ProfessionalChanging(string value);
-    partial void OnDoctor_ProfessionalChanged();
-    #endregion
-		
-		public Doctor()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Account_ID", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int Account_ID
-		{
-			get
-			{
-				return this._Account_ID;
-			}
-			set
-			{
-				if ((this._Account_ID != value))
-				{
-					this.OnAccount_IDChanging(value);
-					this.SendPropertyChanging();
-					this._Account_ID = value;
-					this.SendPropertyChanged("Account_ID");
-					this.OnAccount_IDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Doctor_Professional", DbType="NVarChar(50)")]
-		public string Doctor_Professional
-		{
-			get
-			{
-				return this._Doctor_Professional;
-			}
-			set
-			{
-				if ((this._Doctor_Professional != value))
-				{
-					this.OnDoctor_ProfessionalChanging(value);
-					this.SendPropertyChanging();
-					this._Doctor_Professional = value;
-					this.SendPropertyChanged("Doctor_Professional");
-					this.OnDoctor_ProfessionalChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
 		}
 	}
 	
@@ -3586,11 +3489,17 @@ namespace DataAccessLayer
 		
 		private int _Precription_ID;
 		
-		private string _Precription_Note;
-		
 		private System.DateTime _Precription_Date;
 		
 		private System.Nullable<int> _Precription_Money;
+		
+		private string _Precription_Diagnose;
+		
+		private string _Precription_Checkup;
+		
+		private string _Precription_Treatment;
+		
+		private string _Precription_Note;
 		
 		private int _Account_ID_Patient;
 		
@@ -3612,12 +3521,18 @@ namespace DataAccessLayer
     partial void OnCreated();
     partial void OnPrecription_IDChanging(int value);
     partial void OnPrecription_IDChanged();
-    partial void OnPrecription_NoteChanging(string value);
-    partial void OnPrecription_NoteChanged();
     partial void OnPrecription_DateChanging(System.DateTime value);
     partial void OnPrecription_DateChanged();
     partial void OnPrecription_MoneyChanging(System.Nullable<int> value);
     partial void OnPrecription_MoneyChanged();
+    partial void OnPrecription_DiagnoseChanging(string value);
+    partial void OnPrecription_DiagnoseChanged();
+    partial void OnPrecription_CheckupChanging(string value);
+    partial void OnPrecription_CheckupChanged();
+    partial void OnPrecription_TreatmentChanging(string value);
+    partial void OnPrecription_TreatmentChanged();
+    partial void OnPrecription_NoteChanging(string value);
+    partial void OnPrecription_NoteChanged();
     partial void OnAccount_ID_PatientChanging(int value);
     partial void OnAccount_ID_PatientChanged();
     partial void OnAccount_ID_DoctorChanging(int value);
@@ -3650,26 +3565,6 @@ namespace DataAccessLayer
 					this._Precription_ID = value;
 					this.SendPropertyChanged("Precription_ID");
 					this.OnPrecription_IDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Precription_Note", DbType="NVarChar(500)")]
-		public string Precription_Note
-		{
-			get
-			{
-				return this._Precription_Note;
-			}
-			set
-			{
-				if ((this._Precription_Note != value))
-				{
-					this.OnPrecription_NoteChanging(value);
-					this.SendPropertyChanging();
-					this._Precription_Note = value;
-					this.SendPropertyChanged("Precription_Note");
-					this.OnPrecription_NoteChanged();
 				}
 			}
 		}
@@ -3710,6 +3605,86 @@ namespace DataAccessLayer
 					this._Precription_Money = value;
 					this.SendPropertyChanged("Precription_Money");
 					this.OnPrecription_MoneyChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Precription_Diagnose", DbType="NVarChar(500)")]
+		public string Precription_Diagnose
+		{
+			get
+			{
+				return this._Precription_Diagnose;
+			}
+			set
+			{
+				if ((this._Precription_Diagnose != value))
+				{
+					this.OnPrecription_DiagnoseChanging(value);
+					this.SendPropertyChanging();
+					this._Precription_Diagnose = value;
+					this.SendPropertyChanged("Precription_Diagnose");
+					this.OnPrecription_DiagnoseChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Precription_Checkup", DbType="NVarChar(500)")]
+		public string Precription_Checkup
+		{
+			get
+			{
+				return this._Precription_Checkup;
+			}
+			set
+			{
+				if ((this._Precription_Checkup != value))
+				{
+					this.OnPrecription_CheckupChanging(value);
+					this.SendPropertyChanging();
+					this._Precription_Checkup = value;
+					this.SendPropertyChanged("Precription_Checkup");
+					this.OnPrecription_CheckupChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Precription_Treatment", DbType="NVarChar(500)")]
+		public string Precription_Treatment
+		{
+			get
+			{
+				return this._Precription_Treatment;
+			}
+			set
+			{
+				if ((this._Precription_Treatment != value))
+				{
+					this.OnPrecription_TreatmentChanging(value);
+					this.SendPropertyChanging();
+					this._Precription_Treatment = value;
+					this.SendPropertyChanged("Precription_Treatment");
+					this.OnPrecription_TreatmentChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Precription_Note", DbType="NVarChar(500)")]
+		public string Precription_Note
+		{
+			get
+			{
+				return this._Precription_Note;
+			}
+			set
+			{
+				if ((this._Precription_Note != value))
+				{
+					this.OnPrecription_NoteChanging(value);
+					this.SendPropertyChanging();
+					this._Precription_Note = value;
+					this.SendPropertyChanged("Precription_Note");
+					this.OnPrecription_NoteChanged();
 				}
 			}
 		}
@@ -3936,8 +3911,6 @@ namespace DataAccessLayer
 		
 		private string _Disease_ID;
 		
-		private string _Note;
-		
 		private EntityRef<Disease> _Disease;
 		
 		private EntityRef<Precription> _Precription;
@@ -3950,8 +3923,6 @@ namespace DataAccessLayer
     partial void OnPrecription_IDChanged();
     partial void OnDisease_IDChanging(string value);
     partial void OnDisease_IDChanged();
-    partial void OnNoteChanging(string value);
-    partial void OnNoteChanged();
     #endregion
 		
 		public Precription_Disease()
@@ -4005,26 +3976,6 @@ namespace DataAccessLayer
 					this._Disease_ID = value;
 					this.SendPropertyChanged("Disease_ID");
 					this.OnDisease_IDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Note", DbType="NVarChar(500)")]
-		public string Note
-		{
-			get
-			{
-				return this._Note;
-			}
-			set
-			{
-				if ((this._Note != value))
-				{
-					this.OnNoteChanging(value);
-					this.SendPropertyChanging();
-					this._Note = value;
-					this.SendPropertyChanged("Note");
-					this.OnNoteChanged();
 				}
 			}
 		}
@@ -4130,8 +4081,6 @@ namespace DataAccessLayer
 		
 		private int _Quantity;
 		
-		private System.Nullable<int> _Discount;
-		
 		private string _Note;
 		
 		private System.Nullable<int> _Amount;
@@ -4150,8 +4099,6 @@ namespace DataAccessLayer
     partial void OnMedicine_IDChanged();
     partial void OnQuantityChanging(int value);
     partial void OnQuantityChanged();
-    partial void OnDiscountChanging(System.Nullable<int> value);
-    partial void OnDiscountChanged();
     partial void OnNoteChanging(string value);
     partial void OnNoteChanged();
     partial void OnAmountChanging(System.Nullable<int> value);
@@ -4229,26 +4176,6 @@ namespace DataAccessLayer
 					this._Quantity = value;
 					this.SendPropertyChanged("Quantity");
 					this.OnQuantityChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Discount", DbType="Int")]
-		public System.Nullable<int> Discount
-		{
-			get
-			{
-				return this._Discount;
-			}
-			set
-			{
-				if ((this._Discount != value))
-				{
-					this.OnDiscountChanging(value);
-					this.SendPropertyChanging();
-					this._Discount = value;
-					this.SendPropertyChanged("Discount");
-					this.OnDiscountChanged();
 				}
 			}
 		}

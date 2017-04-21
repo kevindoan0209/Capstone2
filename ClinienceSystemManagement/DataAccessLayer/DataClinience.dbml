@@ -45,12 +45,6 @@
       <Association Name="Disease_Precription_Disease" Member="Precription_Diseases" ThisKey="Disease_ID" OtherKey="Disease_ID" Type="Precription_Disease" />
     </Type>
   </Table>
-  <Table Name="dbo.Doctor" Member="Doctors">
-    <Type Name="Doctor">
-      <Column Name="Account_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Doctor_Professional" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.Human" Member="Humans">
     <Type Name="Human">
       <Column Name="Account_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -167,9 +161,12 @@
   <Table Name="dbo.Precription" Member="Precriptions">
     <Type Name="Precription">
       <Column Name="Precription_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="Precription_Note" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
       <Column Name="Precription_Date" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
       <Column Name="Precription_Money" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Precription_Diagnose" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Precription_Checkup" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Precription_Treatment" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Precription_Note" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
       <Column Name="Account_ID_Patient" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Account_ID_Doctor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Association Name="Precription_Paraclinical_Medicine" Member="Paraclinical_Medicines" ThisKey="Precription_ID" OtherKey="Precription_ID" Type="Paraclinical_Medicine" />
@@ -183,7 +180,6 @@
     <Type Name="Precription_Disease">
       <Column Name="Precription_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Disease_ID" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Note" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
       <Association Name="Disease_Precription_Disease" Member="Disease" ThisKey="Disease_ID" OtherKey="Disease_ID" Type="Disease" IsForeignKey="true" />
       <Association Name="Precription_Precription_Disease" Member="Precription" ThisKey="Precription_ID" OtherKey="Precription_ID" Type="Precription" IsForeignKey="true" />
     </Type>
@@ -193,7 +189,6 @@
       <Column Name="Precription_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Medicine_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Quantity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Discount" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Note" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
       <Column Name="Amount" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Association Name="Medicine_Precription_Medicine" Member="Medicine" ThisKey="Medicine_ID" OtherKey="Medicine_ID" Type="Medicine" IsForeignKey="true" />

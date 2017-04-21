@@ -131,7 +131,7 @@
             this.xtraTabControl2 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
             this.label9 = new System.Windows.Forms.Label();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.txtToaThuoc = new DevExpress.XtraEditors.TextEdit();
             this.txtLuuY = new DevExpress.XtraEditors.MemoEdit();
             this.hyperlinkLabelControl1 = new DevExpress.XtraEditors.HyperlinkLabelControl();
             this.label4 = new System.Windows.Forms.Label();
@@ -212,7 +212,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl2)).BeginInit();
             this.xtraTabControl2.SuspendLayout();
             this.xtraTabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtToaThuoc.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLuuY.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtThanPhien.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLyDo.Properties)).BeginInit();
@@ -1239,7 +1239,7 @@
             // xtraTabPage3
             // 
             this.xtraTabPage3.Controls.Add(this.label9);
-            this.xtraTabPage3.Controls.Add(this.textEdit2);
+            this.xtraTabPage3.Controls.Add(this.txtToaThuoc);
             this.xtraTabPage3.Controls.Add(this.txtLuuY);
             this.xtraTabPage3.Controls.Add(this.hyperlinkLabelControl1);
             this.xtraTabPage3.Controls.Add(this.label4);
@@ -1257,15 +1257,15 @@
             this.label9.TabIndex = 7;
             this.label9.Text = "Lưu ý:";
             // 
-            // textEdit2
+            // txtToaThuoc
             // 
-            this.textEdit2.EditValue = "Chưa có toa thuốc";
-            this.textEdit2.Location = new System.Drawing.Point(14, 28);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.textEdit2.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit2.Size = new System.Drawing.Size(207, 20);
-            this.textEdit2.TabIndex = 7;
+            this.txtToaThuoc.EditValue = "Chưa có toa thuốc";
+            this.txtToaThuoc.Location = new System.Drawing.Point(14, 28);
+            this.txtToaThuoc.Name = "txtToaThuoc";
+            this.txtToaThuoc.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.txtToaThuoc.Properties.Appearance.Options.UseForeColor = true;
+            this.txtToaThuoc.Size = new System.Drawing.Size(207, 20);
+            this.txtToaThuoc.TabIndex = 7;
             // 
             // txtLuuY
             // 
@@ -1425,7 +1425,7 @@
             this.xtraTabControl2.ResumeLayout(false);
             this.xtraTabPage3.ResumeLayout(false);
             this.xtraTabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtToaThuoc.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLuuY.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtThanPhien.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLyDo.Properties)).EndInit();
@@ -1527,7 +1527,7 @@
         private DevExpress.XtraTab.XtraTabControl xtraTabControl2;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage3;
         private System.Windows.Forms.Label label9;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit txtToaThuoc;
         private DevExpress.XtraEditors.MemoEdit txtLuuY;
         private DevExpress.XtraEditors.HyperlinkLabelControl hyperlinkLabelControl1;
         private System.Windows.Forms.Label label4;

@@ -30,14 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Disease));
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery2 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column4 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression4 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table2 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column5 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression5 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column6 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression6 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery5 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column13 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression13 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table5 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column14 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression14 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column15 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression15 = new DevExpress.DataAccess.Sql.ColumnExpression();
             this.cmsXoa = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsCapNhat = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -178,23 +178,23 @@
             // 
             this.sqlDataSource2.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource2.Name = "sqlDataSource2";
-            columnExpression4.ColumnName = "Disease_ID";
-            table2.Name = "Disease";
-            columnExpression4.Table = table2;
-            column4.Expression = columnExpression4;
-            columnExpression5.ColumnName = "Disease_Name";
-            columnExpression5.Table = table2;
-            column5.Expression = columnExpression5;
-            columnExpression6.ColumnName = "Disease_Description";
-            columnExpression6.Table = table2;
-            column6.Expression = columnExpression6;
-            selectQuery2.Columns.Add(column4);
-            selectQuery2.Columns.Add(column5);
-            selectQuery2.Columns.Add(column6);
-            selectQuery2.Name = "Disease";
-            selectQuery2.Tables.Add(table2);
+            columnExpression13.ColumnName = "Disease_ID";
+            table5.Name = "Disease";
+            columnExpression13.Table = table5;
+            column13.Expression = columnExpression13;
+            columnExpression14.ColumnName = "Disease_Name";
+            columnExpression14.Table = table5;
+            column14.Expression = columnExpression14;
+            columnExpression15.ColumnName = "Disease_Description";
+            columnExpression15.Table = table5;
+            column15.Expression = columnExpression15;
+            selectQuery5.Columns.Add(column13);
+            selectQuery5.Columns.Add(column14);
+            selectQuery5.Columns.Add(column15);
+            selectQuery5.Name = "Disease";
+            selectQuery5.Tables.Add(table5);
             this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery2});
+            selectQuery5});
             this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
             // 
             // gvDanhMuc
@@ -207,6 +207,7 @@
             this.colDisease_Description});
             this.gvDanhMuc.GridControl = this.grcDanhMuc;
             this.gvDanhMuc.Name = "gvDanhMuc";
+            this.gvDanhMuc.OptionsFilter.FilterEditorUseMenuForOperandsAndOperators = false;
             this.gvDanhMuc.OptionsFind.AllowFindPanel = false;
             this.gvDanhMuc.OptionsFind.AlwaysVisible = true;
             this.gvDanhMuc.OptionsFind.FindNullPrompt = "Nhập vào thông tin tìm kiếm...";
@@ -239,6 +240,7 @@
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.panelControl2);
             this.Name = "Disease";
+            this.Load += new System.EventHandler(this.Disease_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);

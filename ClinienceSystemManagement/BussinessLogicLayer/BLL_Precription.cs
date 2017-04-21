@@ -17,14 +17,18 @@ namespace BussinessLogicLayer
         {
             return _precription.UpdatePrecription(precriptionId,note,date,money, diagnose, checkup,patientId, doctorId);
         }
-
-        public static int InsertPrecriptionMedicine(int precriptionId, int medicineId, int quantity, int discount, string note, int amount)
+        public static int UpdateTreatment(string treatment, int preId)
         {
-            return _precription.InsertPrecriptionMedicine(precriptionId, medicineId, quantity, discount, note, amount);
+            return _precription.UpdateTreatment(treatment,preId);
         }
-        public static int UpdatePrecriptionMedicine(int precriptionId, int medicineId, int quantity, int discount, string note, int amount)
+
+        public static int InsertPrecriptionMedicine(int precriptionId, int medicineId, int quantity, string note, int amount)
         {
-            return _precription.UpdatePrecriptionMedicine(precriptionId, medicineId, quantity, discount, note, amount);
+            return _precription.InsertPrecriptionMedicine(precriptionId, medicineId, quantity, note, amount);
+        }
+        public static int UpdatePrecriptionMedicine(int precriptionId, int medicineId, int quantity, string note, int amount)
+        {
+            return _precription.UpdatePrecriptionMedicine(precriptionId, medicineId, quantity, note, amount);
         }
 
         public static int InsertPrecriptionParaclinical(string paraclinicalId, int precriptionId)

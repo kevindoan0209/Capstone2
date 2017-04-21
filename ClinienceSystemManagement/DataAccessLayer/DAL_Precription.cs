@@ -34,27 +34,33 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@DoctorId", doctorId);
             return command.ExecuteNonQuery();
         }
-
-        public int InsertPrecriptionMedicine(int precriptionId, int medicineId, int quantity, int discount, string note , int amount)
+        public int UpdateTreatment(string treatment, int preId)
         {
-            const String sqlCommand = "Insert into Precription_Medicine (Precription_ID,Medicine_ID,Quantity,Discount,Note,Amount) Values(@PrecriptionId, @MedicineId, @Quantity, @Discount, @Note, @Amount)";
+            const String sqlCommand = "Update Precription set Precription_Treatment = @Treatment Where Precription_ID = @PrecriptionId";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@Treatment", treatment);
+            command.Parameters.AddWithValue("@PrecriptionId", preId);
+            return command.ExecuteNonQuery();
+        }
+
+        public int InsertPrecriptionMedicine(int precriptionId, int medicineId, int quantity,string note , int amount)
+        {
+            const String sqlCommand = "Insert into Precription_Medicine (Precription_ID,Medicine_ID,Quantity,Note,Amount) Values(@PrecriptionId, @MedicineId, @Quantity,@Note, @Amount)";
             SqlCommand command = new SqlCommand(sqlCommand, connect());
             command.Parameters.AddWithValue("@PrecriptionId", precriptionId);
             command.Parameters.AddWithValue("@MedicineId", medicineId);
             command.Parameters.AddWithValue("@Quantity", quantity);
-            command.Parameters.AddWithValue("@Discount", discount);
             command.Parameters.AddWithValue("@Note", note);
             command.Parameters.AddWithValue("@Amount", amount);
             return command.ExecuteNonQuery();
         }
-        public int UpdatePrecriptionMedicine(int precriptionId, int medicineId, int quantity, int discount, string note, int amount)
+        public int UpdatePrecriptionMedicine(int precriptionId, int medicineId, int quantity,string note, int amount)
         {
-            const String sqlCommand = "Update Precription_Medicine set Quantity = @Quantity, Discount =@Discount, Note = @Note, Amount = @Amount Where Precription_ID = @PrecriptionId and Medicine_ID = @MedicineId";
+            const String sqlCommand = "Update Precription_Medicine set Quantity = @Quantity, Note = @Note, Amount = @Amount Where Precription_ID = @PrecriptionId and Medicine_ID = @MedicineId";
             SqlCommand command = new SqlCommand(sqlCommand, connect());
             command.Parameters.AddWithValue("@PrecriptionId", precriptionId);
             command.Parameters.AddWithValue("@MedicineId", medicineId);
             command.Parameters.AddWithValue("@Quantity", quantity);
-            command.Parameters.AddWithValue("@Discount", discount);
             command.Parameters.AddWithValue("@Note", note);
             command.Parameters.AddWithValue("@Amount", amount);
             return command.ExecuteNonQuery();
@@ -92,6 +98,7 @@ namespace DataAccessLayer
             int temp = int.Parse(command.ExecuteScalar().ToString());
             return temp;
         }
+
 
     }
 }
