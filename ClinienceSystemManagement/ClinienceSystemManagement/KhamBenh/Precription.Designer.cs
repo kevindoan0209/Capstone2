@@ -91,7 +91,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.grcDanhMuc = new DevExpress.XtraGrid.GridControl();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.cmsCapNhat = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsXoa = new System.Windows.Forms.ToolStripMenuItem();
             this.sqlDataSource3 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.gvDanhMuc = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -116,7 +115,6 @@
             this.txtChiDan = new DevExpress.XtraEditors.MemoEdit();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtSoLuong = new DevExpress.XtraEditors.SpinEdit();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.lbChanDoan = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -131,6 +129,7 @@
             this.txtAnh = new DevExpress.XtraEditors.TextEdit();
             this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
             this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.txtSoLuong = new DevExpress.XtraEditors.SpinEdit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grcDanhMuc)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -140,12 +139,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.lkeTenThuoc.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.medicineBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtChiDan.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSoLuong.Properties)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtMa.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAnh.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSoLuong.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -170,6 +169,7 @@
             this.grcDanhMuc.EmbeddedNavigator.Buttons.Edit.Visible = false;
             this.grcDanhMuc.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
             this.grcDanhMuc.EmbeddedNavigator.Buttons.Remove.Visible = false;
+            this.grcDanhMuc.EmbeddedNavigator.TextStringFormat = "Trang {0} / {1}";
             this.grcDanhMuc.Location = new System.Drawing.Point(15, 19);
             this.grcDanhMuc.MainView = this.gvDanhMuc;
             this.grcDanhMuc.Name = "grcDanhMuc";
@@ -182,23 +182,15 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cmsCapNhat,
             this.cmsXoa});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(123, 48);
-            // 
-            // cmsCapNhat
-            // 
-            this.cmsCapNhat.BackColor = System.Drawing.SystemColors.Control;
-            this.cmsCapNhat.Name = "cmsCapNhat";
-            this.cmsCapNhat.Size = new System.Drawing.Size(122, 22);
-            this.cmsCapNhat.Text = "Cập nhật";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(95, 26);
             // 
             // cmsXoa
             // 
             this.cmsXoa.BackColor = System.Drawing.SystemColors.Control;
             this.cmsXoa.Name = "cmsXoa";
-            this.cmsXoa.Size = new System.Drawing.Size(122, 22);
+            this.cmsXoa.Size = new System.Drawing.Size(94, 22);
             this.cmsXoa.Text = "Xóa";
             this.cmsXoa.Click += new System.EventHandler(this.cmsXoa_Click);
             // 
@@ -285,6 +277,7 @@
             this.gvDanhMuc.GridControl = this.grcDanhMuc;
             this.gvDanhMuc.Name = "gvDanhMuc";
             this.gvDanhMuc.OptionsView.EnableAppearanceEvenRow = true;
+            this.gvDanhMuc.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never;
             // 
             // colPrecription_ID
             // 
@@ -375,6 +368,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.txtSoLuong);
             this.groupBox2.Controls.Add(this.lkeTenThuoc);
             this.groupBox2.Controls.Add(this.btnLamMoi);
             this.groupBox2.Controls.Add(this.btnThem);
@@ -382,7 +376,6 @@
             this.groupBox2.Controls.Add(this.txtChiDan);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.txtSoLuong);
             this.groupBox2.Location = new System.Drawing.Point(582, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(311, 212);
@@ -489,22 +482,6 @@
             this.label2.Size = new System.Drawing.Size(69, 14);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên thuốc:";
-            // 
-            // txtSoLuong
-            // 
-            this.txtSoLuong.EditValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.txtSoLuong.Location = new System.Drawing.Point(17, 76);
-            this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtSoLuong.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
-            this.txtSoLuong.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
-            this.txtSoLuong.Size = new System.Drawing.Size(96, 20);
-            this.txtSoLuong.TabIndex = 2;
             // 
             // groupBox3
             // 
@@ -703,6 +680,20 @@
             selectQuery3});
             this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
             // 
+            // txtSoLuong
+            // 
+            this.txtSoLuong.EditValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.txtSoLuong.Location = new System.Drawing.Point(17, 76);
+            this.txtSoLuong.Name = "txtSoLuong";
+            this.txtSoLuong.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtSoLuong.Size = new System.Drawing.Size(100, 20);
+            this.txtSoLuong.TabIndex = 9;
+            // 
             // Precription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -730,7 +721,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.lkeTenThuoc.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.medicineBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtChiDan.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSoLuong.Properties)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
@@ -738,6 +728,7 @@
             this.panelControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtMa.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAnh.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSoLuong.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -753,7 +744,6 @@
         private System.Windows.Forms.Label label2;
         private DevExpress.XtraEditors.SimpleButton btnThem;
         private DevExpress.XtraEditors.SimpleButton btnLamMoi;
-        private DevExpress.XtraEditors.SpinEdit txtSoLuong;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label lbMaBenh;
         private System.Windows.Forms.Label lbKhamThucThe;
@@ -784,7 +774,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn colNote;
         private DevExpress.XtraGrid.Columns.GridColumn colAmount;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem cmsCapNhat;
         private System.Windows.Forms.ToolStripMenuItem cmsXoa;
+        private DevExpress.XtraEditors.SpinEdit txtSoLuong;
     }
 }

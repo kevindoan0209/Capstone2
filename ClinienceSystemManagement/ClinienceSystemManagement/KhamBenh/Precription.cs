@@ -60,7 +60,8 @@ namespace ClinienceSystemManagement.KhamBenh
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-
+            try
+            {
 
                 if (lkeTenThuoc.Text == "Chọn thuốc")
                 {
@@ -69,29 +70,38 @@ namespace ClinienceSystemManagement.KhamBenh
                 }
                 else
                 {
-                    string group = lkeTenThuoc.GetColumnValue("Medicine_ID").ToString();
-                    int medicineId = Convert.ToInt32(group);
-                    DataClinienceDataContext db = new DataClinienceDataContext();
-                    var medicine = db.Medicines.Where(i => i.Medicine_ID == medicineId).SingleOrDefault();
-                    int price = Convert.ToInt32(medicine.Medicine_Price);   
-                    int quantity = Convert.ToInt32(txtSoLuong.Value.ToString());
-                    String note = Convert.ToString(txtChiDan.Text);            
-                    int amout = (quantity * price);
-                    BLL_Precription.InsertPrecriptionMedicine(Id, medicineId, quantity, note, amout);
-                    
-                    sqlDataSource3.Fill();
-                    Reset();
+                    if (txtSoLuong.Value.ToString() == "0")
+                    {
+                        lkeTenThuoc.Focus();
+                        lbTrangThai.Text = "*Vui lòng nhập số lượng";
+                    }
+                    else
+                    {
+                        string group = lkeTenThuoc.GetColumnValue("Medicine_ID").ToString();
+                        int medicineId = Convert.ToInt32(group);
+                        DataClinienceDataContext db = new DataClinienceDataContext();
+                        var medicine = db.Medicines.Where(i => i.Medicine_ID == medicineId).SingleOrDefault();
+                        int price = Convert.ToInt32(medicine.Medicine_Price);
+                        int quantity = Convert.ToInt32(txtSoLuong.Value.ToString());
+                        String note = Convert.ToString(txtChiDan.Text);
+                        int amout = (quantity * price);
+                        BLL_Precription.InsertPrecriptionMedicine(Id, medicineId, quantity, note, amout);
+                        sqlDataSource3.Fill();
+                        Reset();
+                    }
                 }
-            
+            }
+            catch (Exception)
+            {
+                XtraMessageBox.Show("Thuốc này đã được thêm vào toa", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
 
         }
 
         private void Precription_Load(object sender, EventArgs e)
         {
             FillDataUpdate();
-
-            gvDanhMuc.Columns["Quantity"].Summary.Add(DevExpress.Data.SummaryItemType.Sum, "Quantity", "Sum={0}");
-            gvDanhMuc.Columns["Amount"].Summary.Add(DevExpress.Data.SummaryItemType.Sum, "Amount", "Sum={0}");
             String preId = Convert.ToString(txtMa.Text);
             String filter = "[Precription_ID] ='" + preId + "'";
             gvDanhMuc.ActiveFilterString = filter;
@@ -108,9 +118,10 @@ namespace ClinienceSystemManagement.KhamBenh
                     object value = gvDanhMuc.GetRowCellValue(rowIndex, colID);
                     if (value != null)
                     {
-
-                            sqlDataSource3.Fill();
-                            XtraMessageBox.Show("Đã xóa thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        int medicineId = (int)value;
+                        BLL_Precription.DeletePrecriptionMedicine(medicineId,Id);
+                        sqlDataSource3.Fill();
+                        XtraMessageBox.Show("Đã xóa thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
@@ -126,8 +137,13 @@ namespace ClinienceSystemManagement.KhamBenh
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
+            int money = BLL_Precription.GetTotalMoney(Id);
+            BLL_Precription.UpdatePrecriptionMoney(money,Id);
             String treatment = Convert.ToString(txtDieuTri.Text);
             BLL_Precription.UpdateTreatment(treatment, Id);
+            this.Close();
         }
+
+
     }
 }

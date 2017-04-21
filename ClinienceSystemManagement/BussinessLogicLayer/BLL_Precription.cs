@@ -48,5 +48,20 @@ namespace BussinessLogicLayer
         {
             return _precription.GetLastIdPrecription();
         }
+
+        public static int DeletePrecriptionMedicine(int medicineId, int precriptionId)
+        {
+            return _precription.DeletePrecriptionMedicine(medicineId, precriptionId);
+        }
+
+        public static int UpdatePrecriptionMoney(int money, int preId)
+        {
+            return _precription.UpdatePrecriptionMoney(money, preId);
+        }
+
+        public static int GetTotalMoney(int preId)
+        {
+            return _precription.GetTotalMoney(preId);
+        }
     }
 }

@@ -98,6 +98,31 @@ namespace DataAccessLayer
             int temp = int.Parse(command.ExecuteScalar().ToString());
             return temp;
         }
+        public int DeletePrecriptionMedicine(int medicineId, int precriptionId)
+        {
+            const String sqlCommand = "Delete Precription_Medicine where Medicine_ID = @medicineId and Precription_ID = @preId";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@medicineId", medicineId);
+            command.Parameters.AddWithValue("@preId", precriptionId);
+            return command.ExecuteNonQuery();
+        }
+        public int UpdatePrecriptionMoney(int money, int preId)
+        {
+            const String sqlCommand = "Update Precription set Precription_Money = @Money Where Precription_ID = @PreId";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@Money", money);
+            command.Parameters.AddWithValue("@PreId", preId);
+            return command.ExecuteNonQuery();
+        }
+
+        public int GetTotalMoney(int preId)
+        {
+            const String sqlCommand = "SELECT SUM(Amount) FROM Precription_Medicine Where Precription_ID = @PreId";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@PreId", preId);
+            int temp = int.Parse(command.ExecuteScalar().ToString());
+            return temp;
+        }
 
 
     }
