@@ -36,6 +36,12 @@ namespace DataAccessLayer
     partial void InsertAccount_Type(Account_Type instance);
     partial void UpdateAccount_Type(Account_Type instance);
     partial void DeleteAccount_Type(Account_Type instance);
+    partial void InsertAllergic(Allergic instance);
+    partial void UpdateAllergic(Allergic instance);
+    partial void DeleteAllergic(Allergic instance);
+    partial void InsertAllergic_Type(Allergic_Type instance);
+    partial void UpdateAllergic_Type(Allergic_Type instance);
+    partial void DeleteAllergic_Type(Allergic_Type instance);
     partial void InsertAppointmentss(Appointmentss instance);
     partial void UpdateAppointmentss(Appointmentss instance);
     partial void DeleteAppointmentss(Appointmentss instance);
@@ -69,9 +75,6 @@ namespace DataAccessLayer
     partial void InsertPatient(Patient instance);
     partial void UpdatePatient(Patient instance);
     partial void DeletePatient(Patient instance);
-    partial void InsertPatientStatus(PatientStatus instance);
-    partial void UpdatePatientStatus(PatientStatus instance);
-    partial void DeletePatientStatus(PatientStatus instance);
     partial void InsertPrecription(Precription instance);
     partial void UpdatePrecription(Precription instance);
     partial void DeletePrecription(Precription instance);
@@ -126,6 +129,22 @@ namespace DataAccessLayer
 			get
 			{
 				return this.GetTable<Account_Type>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Allergic> Allergics
+		{
+			get
+			{
+				return this.GetTable<Allergic>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Allergic_Type> Allergic_Types
+		{
+			get
+			{
+				return this.GetTable<Allergic_Type>();
 			}
 		}
 		
@@ -214,14 +233,6 @@ namespace DataAccessLayer
 			get
 			{
 				return this.GetTable<Patient>();
-			}
-		}
-		
-		public System.Data.Linq.Table<PatientStatus> PatientStatus
-		{
-			get
-			{
-				return this.GetTable<PatientStatus>();
 			}
 		}
 		
@@ -696,6 +707,360 @@ namespace DataAccessLayer
 		{
 			this.SendPropertyChanging();
 			entity.Account_Type = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Allergic")]
+	public partial class Allergic : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Allergic_ID;
+		
+		private int _Allergic_Type_ID;
+		
+		private int _Precription_ID;
+		
+		private string _Allergic_Name;
+		
+		private string _Allergic_Note;
+		
+		private EntityRef<Allergic_Type> _Allergic_Type;
+		
+		private EntityRef<Precription> _Precription;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnAllergic_IDChanging(int value);
+    partial void OnAllergic_IDChanged();
+    partial void OnAllergic_Type_IDChanging(int value);
+    partial void OnAllergic_Type_IDChanged();
+    partial void OnPrecription_IDChanging(int value);
+    partial void OnPrecription_IDChanged();
+    partial void OnAllergic_NameChanging(string value);
+    partial void OnAllergic_NameChanged();
+    partial void OnAllergic_NoteChanging(string value);
+    partial void OnAllergic_NoteChanged();
+    #endregion
+		
+		public Allergic()
+		{
+			this._Allergic_Type = default(EntityRef<Allergic_Type>);
+			this._Precription = default(EntityRef<Precription>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Allergic_ID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Allergic_ID
+		{
+			get
+			{
+				return this._Allergic_ID;
+			}
+			set
+			{
+				if ((this._Allergic_ID != value))
+				{
+					this.OnAllergic_IDChanging(value);
+					this.SendPropertyChanging();
+					this._Allergic_ID = value;
+					this.SendPropertyChanged("Allergic_ID");
+					this.OnAllergic_IDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Allergic_Type_ID", DbType="Int NOT NULL")]
+		public int Allergic_Type_ID
+		{
+			get
+			{
+				return this._Allergic_Type_ID;
+			}
+			set
+			{
+				if ((this._Allergic_Type_ID != value))
+				{
+					if (this._Allergic_Type.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnAllergic_Type_IDChanging(value);
+					this.SendPropertyChanging();
+					this._Allergic_Type_ID = value;
+					this.SendPropertyChanged("Allergic_Type_ID");
+					this.OnAllergic_Type_IDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Precription_ID", DbType="Int NOT NULL")]
+		public int Precription_ID
+		{
+			get
+			{
+				return this._Precription_ID;
+			}
+			set
+			{
+				if ((this._Precription_ID != value))
+				{
+					if (this._Precription.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnPrecription_IDChanging(value);
+					this.SendPropertyChanging();
+					this._Precription_ID = value;
+					this.SendPropertyChanged("Precription_ID");
+					this.OnPrecription_IDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Allergic_Name", DbType="NVarChar(500)")]
+		public string Allergic_Name
+		{
+			get
+			{
+				return this._Allergic_Name;
+			}
+			set
+			{
+				if ((this._Allergic_Name != value))
+				{
+					this.OnAllergic_NameChanging(value);
+					this.SendPropertyChanging();
+					this._Allergic_Name = value;
+					this.SendPropertyChanged("Allergic_Name");
+					this.OnAllergic_NameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Allergic_Note", DbType="NVarChar(500)")]
+		public string Allergic_Note
+		{
+			get
+			{
+				return this._Allergic_Note;
+			}
+			set
+			{
+				if ((this._Allergic_Note != value))
+				{
+					this.OnAllergic_NoteChanging(value);
+					this.SendPropertyChanging();
+					this._Allergic_Note = value;
+					this.SendPropertyChanged("Allergic_Note");
+					this.OnAllergic_NoteChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Allergic_Type_Allergic", Storage="_Allergic_Type", ThisKey="Allergic_Type_ID", OtherKey="Allergic_Type_ID", IsForeignKey=true)]
+		public Allergic_Type Allergic_Type
+		{
+			get
+			{
+				return this._Allergic_Type.Entity;
+			}
+			set
+			{
+				Allergic_Type previousValue = this._Allergic_Type.Entity;
+				if (((previousValue != value) 
+							|| (this._Allergic_Type.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Allergic_Type.Entity = null;
+						previousValue.Allergics.Remove(this);
+					}
+					this._Allergic_Type.Entity = value;
+					if ((value != null))
+					{
+						value.Allergics.Add(this);
+						this._Allergic_Type_ID = value.Allergic_Type_ID;
+					}
+					else
+					{
+						this._Allergic_Type_ID = default(int);
+					}
+					this.SendPropertyChanged("Allergic_Type");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Precription_Allergic", Storage="_Precription", ThisKey="Precription_ID", OtherKey="Precription_ID", IsForeignKey=true)]
+		public Precription Precription
+		{
+			get
+			{
+				return this._Precription.Entity;
+			}
+			set
+			{
+				Precription previousValue = this._Precription.Entity;
+				if (((previousValue != value) 
+							|| (this._Precription.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Precription.Entity = null;
+						previousValue.Allergics.Remove(this);
+					}
+					this._Precription.Entity = value;
+					if ((value != null))
+					{
+						value.Allergics.Add(this);
+						this._Precription_ID = value.Precription_ID;
+					}
+					else
+					{
+						this._Precription_ID = default(int);
+					}
+					this.SendPropertyChanged("Precription");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Allergic_Type")]
+	public partial class Allergic_Type : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Allergic_Type_ID;
+		
+		private string _Allergic_Type_Name;
+		
+		private EntitySet<Allergic> _Allergics;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnAllergic_Type_IDChanging(int value);
+    partial void OnAllergic_Type_IDChanged();
+    partial void OnAllergic_Type_NameChanging(string value);
+    partial void OnAllergic_Type_NameChanged();
+    #endregion
+		
+		public Allergic_Type()
+		{
+			this._Allergics = new EntitySet<Allergic>(new Action<Allergic>(this.attach_Allergics), new Action<Allergic>(this.detach_Allergics));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Allergic_Type_ID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Allergic_Type_ID
+		{
+			get
+			{
+				return this._Allergic_Type_ID;
+			}
+			set
+			{
+				if ((this._Allergic_Type_ID != value))
+				{
+					this.OnAllergic_Type_IDChanging(value);
+					this.SendPropertyChanging();
+					this._Allergic_Type_ID = value;
+					this.SendPropertyChanged("Allergic_Type_ID");
+					this.OnAllergic_Type_IDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Allergic_Type_Name", DbType="NVarChar(50)")]
+		public string Allergic_Type_Name
+		{
+			get
+			{
+				return this._Allergic_Type_Name;
+			}
+			set
+			{
+				if ((this._Allergic_Type_Name != value))
+				{
+					this.OnAllergic_Type_NameChanging(value);
+					this.SendPropertyChanging();
+					this._Allergic_Type_Name = value;
+					this.SendPropertyChanged("Allergic_Type_Name");
+					this.OnAllergic_Type_NameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Allergic_Type_Allergic", Storage="_Allergics", ThisKey="Allergic_Type_ID", OtherKey="Allergic_Type_ID")]
+		public EntitySet<Allergic> Allergics
+		{
+			get
+			{
+				return this._Allergics;
+			}
+			set
+			{
+				this._Allergics.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_Allergics(Allergic entity)
+		{
+			this.SendPropertyChanging();
+			entity.Allergic_Type = this;
+		}
+		
+		private void detach_Allergics(Allergic entity)
+		{
+			this.SendPropertyChanging();
+			entity.Allergic_Type = null;
 		}
 	}
 	
@@ -3347,140 +3712,6 @@ namespace DataAccessLayer
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.PatientStatus")]
-	public partial class PatientStatus : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _PatientStatus_ID;
-		
-		private string _PatientStatus_Complain;
-		
-		private string _PatientStatus_Issue;
-		
-		private int _Account_ID;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnPatientStatus_IDChanging(int value);
-    partial void OnPatientStatus_IDChanged();
-    partial void OnPatientStatus_ComplainChanging(string value);
-    partial void OnPatientStatus_ComplainChanged();
-    partial void OnPatientStatus_IssueChanging(string value);
-    partial void OnPatientStatus_IssueChanged();
-    partial void OnAccount_IDChanging(int value);
-    partial void OnAccount_IDChanged();
-    #endregion
-		
-		public PatientStatus()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PatientStatus_ID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int PatientStatus_ID
-		{
-			get
-			{
-				return this._PatientStatus_ID;
-			}
-			set
-			{
-				if ((this._PatientStatus_ID != value))
-				{
-					this.OnPatientStatus_IDChanging(value);
-					this.SendPropertyChanging();
-					this._PatientStatus_ID = value;
-					this.SendPropertyChanged("PatientStatus_ID");
-					this.OnPatientStatus_IDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PatientStatus_Complain", DbType="NVarChar(500)")]
-		public string PatientStatus_Complain
-		{
-			get
-			{
-				return this._PatientStatus_Complain;
-			}
-			set
-			{
-				if ((this._PatientStatus_Complain != value))
-				{
-					this.OnPatientStatus_ComplainChanging(value);
-					this.SendPropertyChanging();
-					this._PatientStatus_Complain = value;
-					this.SendPropertyChanged("PatientStatus_Complain");
-					this.OnPatientStatus_ComplainChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PatientStatus_Issue", DbType="NVarChar(500)")]
-		public string PatientStatus_Issue
-		{
-			get
-			{
-				return this._PatientStatus_Issue;
-			}
-			set
-			{
-				if ((this._PatientStatus_Issue != value))
-				{
-					this.OnPatientStatus_IssueChanging(value);
-					this.SendPropertyChanging();
-					this._PatientStatus_Issue = value;
-					this.SendPropertyChanged("PatientStatus_Issue");
-					this.OnPatientStatus_IssueChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Account_ID", DbType="Int NOT NULL")]
-		public int Account_ID
-		{
-			get
-			{
-				return this._Account_ID;
-			}
-			set
-			{
-				if ((this._Account_ID != value))
-				{
-					this.OnAccount_IDChanging(value);
-					this.SendPropertyChanging();
-					this._Account_ID = value;
-					this.SendPropertyChanged("Account_ID");
-					this.OnAccount_IDChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Precription")]
 	public partial class Precription : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -3504,6 +3735,8 @@ namespace DataAccessLayer
 		private int _Account_ID_Patient;
 		
 		private int _Account_ID_Doctor;
+		
+		private EntitySet<Allergic> _Allergics;
 		
 		private EntitySet<Paraclinical_Medicine> _Paraclinical_Medicines;
 		
@@ -3541,6 +3774,7 @@ namespace DataAccessLayer
 		
 		public Precription()
 		{
+			this._Allergics = new EntitySet<Allergic>(new Action<Allergic>(this.attach_Allergics), new Action<Allergic>(this.detach_Allergics));
 			this._Paraclinical_Medicines = new EntitySet<Paraclinical_Medicine>(new Action<Paraclinical_Medicine>(this.attach_Paraclinical_Medicines), new Action<Paraclinical_Medicine>(this.detach_Paraclinical_Medicines));
 			this._Precription_Diseases = new EntitySet<Precription_Disease>(new Action<Precription_Disease>(this.attach_Precription_Diseases), new Action<Precription_Disease>(this.detach_Precription_Diseases));
 			this._Precription_Medicines = new EntitySet<Precription_Medicine>(new Action<Precription_Medicine>(this.attach_Precription_Medicines), new Action<Precription_Medicine>(this.detach_Precription_Medicines));
@@ -3737,6 +3971,19 @@ namespace DataAccessLayer
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Precription_Allergic", Storage="_Allergics", ThisKey="Precription_ID", OtherKey="Precription_ID")]
+		public EntitySet<Allergic> Allergics
+		{
+			get
+			{
+				return this._Allergics;
+			}
+			set
+			{
+				this._Allergics.Assign(value);
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Precription_Paraclinical_Medicine", Storage="_Paraclinical_Medicines", ThisKey="Precription_ID", OtherKey="Precription_ID")]
 		public EntitySet<Paraclinical_Medicine> Paraclinical_Medicines
 		{
@@ -3862,6 +4109,18 @@ namespace DataAccessLayer
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
+		}
+		
+		private void attach_Allergics(Allergic entity)
+		{
+			this.SendPropertyChanging();
+			entity.Precription = this;
+		}
+		
+		private void detach_Allergics(Allergic entity)
+		{
+			this.SendPropertyChanging();
+			entity.Precription = null;
 		}
 		
 		private void attach_Paraclinical_Medicines(Paraclinical_Medicine entity)

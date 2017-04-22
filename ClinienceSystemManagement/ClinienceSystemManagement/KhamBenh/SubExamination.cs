@@ -115,6 +115,7 @@ namespace ClinienceSystemManagement.KhamBenh
                                 //ex.MdiParent = this;
                                 ex.PreId = (int)lastPreID;
                                 ex.Id = (int)patientId;
+                                ex.doctorId = (int)doctorId;
                                 ex.ShowDialog();
                             }
                         }

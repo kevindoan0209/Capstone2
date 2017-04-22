@@ -178,6 +178,12 @@
     <Compile Include="Intro.Designer.cs">
       <DependentUpon>Intro.cs</DependentUpon>
     </Compile>
+    <Compile Include="KhamBenh\Allergic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhamBenh\Allergic.Designer.cs">
+      <DependentUpon>Allergic.cs</DependentUpon>
+    </Compile>
     <Compile Include="KhamBenh\MainExamination.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -327,6 +333,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Intro.resx">
       <DependentUpon>Intro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhamBenh\Allergic.resx">
+      <DependentUpon>Allergic.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KhamBenh\MainExamination.resx">
       <DependentUpon>MainExamination.cs</DependentUpon>

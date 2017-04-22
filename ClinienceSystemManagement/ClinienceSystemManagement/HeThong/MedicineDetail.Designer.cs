@@ -226,6 +226,7 @@
             this.gvDanhMuc.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
             this.gvDanhMuc.OptionsSelection.ResetSelectionClickOutsideCheckboxSelector = true;
             this.gvDanhMuc.OptionsView.EnableAppearanceEvenRow = true;
+            this.gvDanhMuc.OptionsView.ShowGroupPanel = false;
             this.gvDanhMuc.SelectionChanged += new DevExpress.Data.SelectionChangedEventHandler(this.gvDanhMuc_SelectionChanged);
             // 
             // colIngredient_ID
@@ -242,7 +243,7 @@
             this.colIngredient_Name.Name = "colIngredient_Name";
             this.colIngredient_Name.Visible = true;
             this.colIngredient_Name.VisibleIndex = 1;
-            this.colIngredient_Name.Width = 143;
+            this.colIngredient_Name.Width = 198;
             // 
             // colIngredient_Note
             // 
@@ -251,7 +252,7 @@
             this.colIngredient_Note.Name = "colIngredient_Note";
             this.colIngredient_Note.Visible = true;
             this.colIngredient_Note.VisibleIndex = 2;
-            this.colIngredient_Note.Width = 104;
+            this.colIngredient_Note.Width = 148;
             // 
             // checkChon
             // 
