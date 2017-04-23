@@ -30,21 +30,24 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(About));
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.labelX5 = new DevComponents.DotNetBar.LabelX();
-            this.labelX4 = new DevComponents.DotNetBar.LabelX();
-            this.labelX3 = new DevComponents.DotNetBar.LabelX();
-            this.labelX2 = new DevComponents.DotNetBar.LabelX();
+            this.lbFax = new DevComponents.DotNetBar.LabelX();
+            this.lbEmail = new DevComponents.DotNetBar.LabelX();
+            this.lbDienThoai = new DevComponents.DotNetBar.LabelX();
+            this.lbDiaChi = new DevComponents.DotNetBar.LabelX();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lbTen = new DevComponents.DotNetBar.LabelX();
             this.groupPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupPanel1
@@ -53,10 +56,12 @@
             this.groupPanel1.BackColor = System.Drawing.Color.Transparent;
             this.groupPanel1.CanvasColor = System.Drawing.Color.Transparent;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel1.Controls.Add(this.labelX5);
-            this.groupPanel1.Controls.Add(this.labelX4);
-            this.groupPanel1.Controls.Add(this.labelX3);
-            this.groupPanel1.Controls.Add(this.labelX2);
+            this.groupPanel1.Controls.Add(this.lbTen);
+            this.groupPanel1.Controls.Add(this.pictureBox1);
+            this.groupPanel1.Controls.Add(this.lbFax);
+            this.groupPanel1.Controls.Add(this.lbEmail);
+            this.groupPanel1.Controls.Add(this.lbDienThoai);
+            this.groupPanel1.Controls.Add(this.lbDiaChi);
             this.groupPanel1.Controls.Add(this.pictureBox6);
             this.groupPanel1.Controls.Add(this.pictureBox5);
             this.groupPanel1.Controls.Add(this.pictureBox3);
@@ -94,49 +99,49 @@
             // 
             this.groupPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
-            // labelX5
+            // lbFax
             // 
-            this.labelX5.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            resources.ApplyResources(this.labelX5, "labelX5");
-            this.labelX5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.labelX5.Name = "labelX5";
-            // 
-            // labelX4
-            // 
-            this.labelX4.BackColor = System.Drawing.Color.Transparent;
+            this.lbFax.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
             // 
-            this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            resources.ApplyResources(this.labelX4, "labelX4");
-            this.labelX4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.labelX4.Name = "labelX4";
+            this.lbFax.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            resources.ApplyResources(this.lbFax, "lbFax");
+            this.lbFax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lbFax.Name = "lbFax";
             // 
-            // labelX3
+            // lbEmail
             // 
-            this.labelX3.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            resources.ApplyResources(this.labelX3, "labelX3");
-            this.labelX3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.labelX3.Name = "labelX3";
-            // 
-            // labelX2
-            // 
-            this.labelX2.BackColor = System.Drawing.Color.Transparent;
+            this.lbEmail.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
             // 
-            this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            resources.ApplyResources(this.labelX2, "labelX2");
-            this.labelX2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.labelX2.Name = "labelX2";
+            this.lbEmail.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            resources.ApplyResources(this.lbEmail, "lbEmail");
+            this.lbEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lbEmail.Name = "lbEmail";
+            // 
+            // lbDienThoai
+            // 
+            this.lbDienThoai.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.lbDienThoai.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            resources.ApplyResources(this.lbDienThoai, "lbDienThoai");
+            this.lbDienThoai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lbDienThoai.Name = "lbDienThoai";
+            // 
+            // lbDiaChi
+            // 
+            this.lbDiaChi.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.lbDiaChi.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            resources.ApplyResources(this.lbDiaChi, "lbDiaChi");
+            this.lbDiaChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lbDiaChi.Name = "lbDiaChi";
             // 
             // pictureBox6
             // 
@@ -180,6 +185,23 @@
             this.labelX1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(190)))), ((int)(((byte)(249)))));
             this.labelX1.Name = "labelX1";
             // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
+            // lbTen
+            // 
+            this.lbTen.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.lbTen.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            resources.ApplyResources(this.lbTen, "lbTen");
+            this.lbTen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lbTen.Name = "lbTen";
+            // 
             // About
             // 
             resources.ApplyResources(this, "$this");
@@ -189,12 +211,14 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "About";
+            this.Load += new System.EventHandler(this.About_Load);
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -204,13 +228,15 @@
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
         private DevComponents.DotNetBar.LabelX labelX1;
         private System.Windows.Forms.Label label2;
-        private DevComponents.DotNetBar.LabelX labelX5;
-        private DevComponents.DotNetBar.LabelX labelX4;
-        private DevComponents.DotNetBar.LabelX labelX3;
-        private DevComponents.DotNetBar.LabelX labelX2;
+        private DevComponents.DotNetBar.LabelX lbFax;
+        private DevComponents.DotNetBar.LabelX lbEmail;
+        private DevComponents.DotNetBar.LabelX lbDienThoai;
+        private DevComponents.DotNetBar.LabelX lbDiaChi;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private DevComponents.DotNetBar.LabelX lbTen;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

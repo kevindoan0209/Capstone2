@@ -110,6 +110,7 @@
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
@@ -175,9 +176,10 @@
             this.skinRibbonGalleryBarItem1,
             this.barEditItem5,
             this.barEditItem6,
-            this.barButtonItem3});
+            this.barButtonItem3,
+            this.barButtonItem4});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 28;
+            this.ribbonControl1.MaxItemId = 29;
             this.ribbonControl1.MiniToolbars.Add(this.ribbonMiniToolbar1);
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -726,6 +728,7 @@
             // 
             // ribbonPageGroup10
             // 
+            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem4);
             this.ribbonPageGroup10.ItemLinks.Add(this.btnPhongKham);
             this.ribbonPageGroup10.ItemLinks.Add(this.btnPhanMem);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
@@ -754,6 +757,15 @@
             // xtraTabbedMdiManager1
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
+            // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "Cập nhật";
+            this.barButtonItem4.Id = 28;
+            this.barButtonItem4.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.LargeGlyph")));
+            this.barButtonItem4.LargeWidth = 70;
+            this.barButtonItem4.Name = "barButtonItem4";
+            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
             // 
             // Home
             // 
@@ -862,6 +874,7 @@
         private DevExpress.XtraBars.BarEditItem barEditItem6;
         private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit3;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
     }
 }
 

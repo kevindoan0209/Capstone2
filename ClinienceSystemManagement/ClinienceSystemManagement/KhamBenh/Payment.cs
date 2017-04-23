@@ -14,7 +14,7 @@ namespace ClinienceSystemManagement.KhamBenh
 {
     public partial class Payment : DevExpress.XtraEditors.XtraForm
     {
-        public int preId ;
+        public int preId = 1023 ;
         public Payment()
         {
             InitializeComponent();
@@ -79,8 +79,9 @@ namespace ClinienceSystemManagement.KhamBenh
 
         private void Payment_Load(object sender, EventArgs e)
         {
+            int cost = BLL_Clinience.GetCost();
+            lbChiPhiKhamBenh.Text = Convert.ToString(cost);
             txtChiPhiKhac.ReadOnly = true;
-            lbChiPhiKhamBenh.Text = "150000";
             int money = BLL_Precription.GetTotalMoney(preId);
             lbChiPhiThuoc.Text = Convert.ToString(money);
             lbTongChiPhi.Text = Convert.ToString(Convert.ToDouble(lbChiPhiKhamBenh.Text) + Convert.ToDouble(lbChiPhiThuoc.Text) + Convert.ToDouble(lbChiPhiPhatSinh.Text));
@@ -175,9 +176,29 @@ namespace ClinienceSystemManagement.KhamBenh
 
         private void btnKhamBenh_Click(object sender, EventArgs e)
         {
-            ClinienceDetail cd = new ClinienceDetail();
-            cd.ShowDialog();
-           // lbChiPhiKhamBenh.Text = ""
+            ClinienceCost cc = new ClinienceCost();
+            cc.ShowDialog();
+            int cost = BLL_Clinience.GetCost();
+            lbChiPhiKhamBenh.Text = Convert.ToString(cost);
+            int money = BLL_Precription.GetTotalMoney(preId);
+            lbChiPhiThuoc.Text = Convert.ToString(money);
+            lbTongChiPhi.Text = Convert.ToString(Convert.ToDouble(lbChiPhiKhamBenh.Text) + Convert.ToDouble(lbChiPhiThuoc.Text) + Convert.ToDouble(lbChiPhiPhatSinh.Text));
+            int discount = Convert.ToInt32(lbGiamGia.Text);
+            int sum = Convert.ToInt32(lbTongChiPhi.Text);
+            double amount = sum - ((sum * discount) / 100);
+            lbChiPhiHienTai.Text = Convert.ToString(amount);
+            // lbChiPhiKhamBenh.Text = ""
+        }
+
+        private void btnLamMoi_Click_1(object sender, EventArgs e)
+        {
+            int cost = BLL_Clinience.GetCost();
+            lbChiPhiKhamBenh.Text = Convert.ToString(cost);
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

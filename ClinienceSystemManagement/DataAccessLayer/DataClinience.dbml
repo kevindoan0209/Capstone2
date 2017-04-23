@@ -55,6 +55,17 @@
       <Association Name="Patient_Appointmentss" Member="Patient" ThisKey="Account_ID_Patient" OtherKey="Account_ID" Type="Patient" IsForeignKey="true" />
     </Type>
   </Table>
+  <Table Name="dbo.Clinience" Member="Cliniences">
+    <Type Name="Clinience">
+      <Column Name="Clinience_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Clinience_Name" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Clinience_Tel" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Clinience_Email" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Clinience_Address" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Clinience_Fax" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Clinience_Cost" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.Disease" Member="Diseases">
     <Type Name="Disease">
       <Column Name="Disease_ID" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />

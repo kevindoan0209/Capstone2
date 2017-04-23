@@ -45,6 +45,9 @@ namespace DataAccessLayer
     partial void InsertAppointmentss(Appointmentss instance);
     partial void UpdateAppointmentss(Appointmentss instance);
     partial void DeleteAppointmentss(Appointmentss instance);
+    partial void InsertClinience(Clinience instance);
+    partial void UpdateClinience(Clinience instance);
+    partial void DeleteClinience(Clinience instance);
     partial void InsertDisease(Disease instance);
     partial void UpdateDisease(Disease instance);
     partial void DeleteDisease(Disease instance);
@@ -153,6 +156,14 @@ namespace DataAccessLayer
 			get
 			{
 				return this.GetTable<Appointmentss>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Clinience> Cliniences
+		{
+			get
+			{
+				return this.GetTable<Clinience>();
 			}
 		}
 		
@@ -1375,6 +1386,212 @@ namespace DataAccessLayer
 						this._Account_ID_Patient = default(int);
 					}
 					this.SendPropertyChanged("Patient");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Clinience")]
+	public partial class Clinience : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Clinience_ID;
+		
+		private string _Clinience_Name;
+		
+		private string _Clinience_Tel;
+		
+		private string _Clinience_Email;
+		
+		private string _Clinience_Address;
+		
+		private string _Clinience_Fax;
+		
+		private System.Nullable<int> _Clinience_Cost;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnClinience_IDChanging(int value);
+    partial void OnClinience_IDChanged();
+    partial void OnClinience_NameChanging(string value);
+    partial void OnClinience_NameChanged();
+    partial void OnClinience_TelChanging(string value);
+    partial void OnClinience_TelChanged();
+    partial void OnClinience_EmailChanging(string value);
+    partial void OnClinience_EmailChanged();
+    partial void OnClinience_AddressChanging(string value);
+    partial void OnClinience_AddressChanged();
+    partial void OnClinience_FaxChanging(string value);
+    partial void OnClinience_FaxChanged();
+    partial void OnClinience_CostChanging(System.Nullable<int> value);
+    partial void OnClinience_CostChanged();
+    #endregion
+		
+		public Clinience()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Clinience_ID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Clinience_ID
+		{
+			get
+			{
+				return this._Clinience_ID;
+			}
+			set
+			{
+				if ((this._Clinience_ID != value))
+				{
+					this.OnClinience_IDChanging(value);
+					this.SendPropertyChanging();
+					this._Clinience_ID = value;
+					this.SendPropertyChanged("Clinience_ID");
+					this.OnClinience_IDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Clinience_Name", DbType="NVarChar(500)")]
+		public string Clinience_Name
+		{
+			get
+			{
+				return this._Clinience_Name;
+			}
+			set
+			{
+				if ((this._Clinience_Name != value))
+				{
+					this.OnClinience_NameChanging(value);
+					this.SendPropertyChanging();
+					this._Clinience_Name = value;
+					this.SendPropertyChanged("Clinience_Name");
+					this.OnClinience_NameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Clinience_Tel", DbType="NVarChar(500)")]
+		public string Clinience_Tel
+		{
+			get
+			{
+				return this._Clinience_Tel;
+			}
+			set
+			{
+				if ((this._Clinience_Tel != value))
+				{
+					this.OnClinience_TelChanging(value);
+					this.SendPropertyChanging();
+					this._Clinience_Tel = value;
+					this.SendPropertyChanged("Clinience_Tel");
+					this.OnClinience_TelChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Clinience_Email", DbType="NVarChar(500)")]
+		public string Clinience_Email
+		{
+			get
+			{
+				return this._Clinience_Email;
+			}
+			set
+			{
+				if ((this._Clinience_Email != value))
+				{
+					this.OnClinience_EmailChanging(value);
+					this.SendPropertyChanging();
+					this._Clinience_Email = value;
+					this.SendPropertyChanged("Clinience_Email");
+					this.OnClinience_EmailChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Clinience_Address", DbType="NVarChar(500)")]
+		public string Clinience_Address
+		{
+			get
+			{
+				return this._Clinience_Address;
+			}
+			set
+			{
+				if ((this._Clinience_Address != value))
+				{
+					this.OnClinience_AddressChanging(value);
+					this.SendPropertyChanging();
+					this._Clinience_Address = value;
+					this.SendPropertyChanged("Clinience_Address");
+					this.OnClinience_AddressChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Clinience_Fax", DbType="NVarChar(500)")]
+		public string Clinience_Fax
+		{
+			get
+			{
+				return this._Clinience_Fax;
+			}
+			set
+			{
+				if ((this._Clinience_Fax != value))
+				{
+					this.OnClinience_FaxChanging(value);
+					this.SendPropertyChanging();
+					this._Clinience_Fax = value;
+					this.SendPropertyChanged("Clinience_Fax");
+					this.OnClinience_FaxChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Clinience_Cost", DbType="Int")]
+		public System.Nullable<int> Clinience_Cost
+		{
+			get
+			{
+				return this._Clinience_Cost;
+			}
+			set
+			{
+				if ((this._Clinience_Cost != value))
+				{
+					this.OnClinience_CostChanging(value);
+					this.SendPropertyChanging();
+					this._Clinience_Cost = value;
+					this.SendPropertyChanged("Clinience_Cost");
+					this.OnClinience_CostChanged();
 				}
 			}
 		}

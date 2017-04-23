@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using BussinessLogicLayer;
+using DataAccessLayer;
 
 namespace ClinienceSystemManagement.KhamBenh
 {
@@ -24,6 +25,20 @@ namespace ClinienceSystemManagement.KhamBenh
             this.Close();
         }
 
+        private void FillData()
+        {
+            DataClinienceDataContext db = new DataClinienceDataContext();
+            var clinience = db.Cliniences.Where(i => i.Clinience_ID == 1).SingleOrDefault();
+            if (clinience != null)
+            {
+                txtTen.Text = clinience.Clinience_Name;
+                txtFax.Text = clinience.Clinience_Fax;
+                txtEmail.Text = clinience.Clinience_Email;
+                txtDiaChi.Text = clinience.Clinience_Address;
+                txtDienThoai.Text = clinience.Clinience_Tel;
+                txtGia.Text = Convert.ToString(clinience.Clinience_Cost);
+            }
+        }
         private void btnLuu_Click(object sender, EventArgs e)
         {
             try
@@ -35,13 +50,23 @@ namespace ClinienceSystemManagement.KhamBenh
                 }
                 else
                 {
-                    String name = Convert.ToString(txtTen.Text);
-                    String tel = Convert.ToString(txtDienThoai.Text);
-                    String address = Convert.ToString(txtDiaChi.Text);
-                    String email = Convert.ToString(txtEmail.Text);
-                    String fax = Convert.ToString(txtFax.Text);
-                    int cost  = Convert.ToInt32(txtGia.Text);
-                    BLL_Clinience.UpdateClinience(name, tel, email,address, fax, cost,1);
+                    if (txtGia.Text == "0")
+                    {
+                        lbTrangThai.Text = "*Vui lòng nhập giá khám";
+                        txtGia.Focus();
+                    }
+                    else
+                    {
+                        String name = Convert.ToString(txtTen.Text);
+                        String tel = Convert.ToString(txtDienThoai.Text);
+                        String address = Convert.ToString(txtDiaChi.Text);
+                        String email = Convert.ToString(txtEmail.Text);
+                        String fax = Convert.ToString(txtFax.Text);
+                        int cost = Convert.ToInt32(txtGia.Text);
+                        BLL_Clinience.UpdateClinience(name, tel, email, address, fax, cost, 1);
+                        this.Close();
+                        XtraMessageBox.Show("Cập nhật thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
             }
             catch (Exception ex)
@@ -52,7 +77,7 @@ namespace ClinienceSystemManagement.KhamBenh
 
         private void ClinienceDetail_Load(object sender, EventArgs e)
         {
-
+            FillData();
         }
 
         private void txtGia_KeyPress(object sender, KeyPressEventArgs e)

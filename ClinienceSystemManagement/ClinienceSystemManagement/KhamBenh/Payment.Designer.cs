@@ -104,6 +104,7 @@
             this.simpleButton1.Size = new System.Drawing.Size(75, 25);
             this.simpleButton1.TabIndex = 37;
             this.simpleButton1.Text = "Đóng";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // lbTrangThai
             // 
@@ -366,6 +367,8 @@
             // 
             this.txtChiPhiKhac.Location = new System.Drawing.Point(16, 97);
             this.txtChiPhiKhac.Name = "txtChiPhiKhac";
+            this.txtChiPhiKhac.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtChiPhiKhac.Properties.Appearance.Options.UseFont = true;
             this.txtChiPhiKhac.Size = new System.Drawing.Size(367, 48);
             this.txtChiPhiKhac.TabIndex = 23;
             // 
@@ -589,6 +592,8 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panelControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Payment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thanh toán";

@@ -285,5 +285,19 @@ namespace PresentationLayer
                 me.Show();
             }
         }
+
+        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.IsExits(typeof(ClinienceDetail));
+            if (frm != null)
+            {
+                frm.Activate();
+            }
+            else
+            {
+                ClinienceDetail cd = new ClinienceDetail();
+                cd.ShowDialog();
+            }
+        }
     }
 }

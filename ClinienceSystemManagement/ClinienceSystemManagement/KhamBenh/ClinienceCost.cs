@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using BussinessLogicLayer;
+using DataAccessLayer;
 
 namespace ClinienceSystemManagement.KhamBenh
 {
@@ -40,9 +41,20 @@ namespace ClinienceSystemManagement.KhamBenh
             }
         }
 
+        private void FillData()
+        {
+            DataClinienceDataContext db = new DataClinienceDataContext();
+            var clinience = db.Cliniences.Where(i => i.Clinience_ID == 1).SingleOrDefault();
+            if (clinience != null)
+            {
+                txtGiaHienTai.Text = Convert.ToString(clinience.Clinience_Cost);
+            }
+        }
         private void ClinienceCost_Load(object sender, EventArgs e)
         {
+            FillData();
             txtGiaHienTai.ReadOnly = true;
+            txtGiaMoi.Focus();
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -51,6 +63,8 @@ namespace ClinienceSystemManagement.KhamBenh
             {
                 int cost = Convert.ToInt32(txtGiaMoi.Text);
                 BLL_Clinience.UpdateClinienceCost(1, cost);
+                this.Close();
+                XtraMessageBox.Show("Cập nhật thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {

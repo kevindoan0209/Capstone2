@@ -103,6 +103,7 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.btnXuatFile = new DevExpress.XtraEditors.SimpleButton();
             this.btnLamMoi = new DevExpress.XtraEditors.SimpleButton();
+            this.csmLichSu = new System.Windows.Forms.ToolStripMenuItem();
             groupBox2 = new System.Windows.Forms.GroupBox();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -372,11 +373,12 @@
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.csmTaoPK,
+            this.csmLichSu,
             this.csmXem,
             this.cmsCapNhat,
             this.cmsXoa});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(161, 92);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(161, 114);
             // 
             // csmTaoPK
             // 
@@ -632,6 +634,12 @@
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
+            // csmLichSu
+            // 
+            this.csmLichSu.Name = "csmLichSu";
+            this.csmLichSu.Size = new System.Drawing.Size(160, 22);
+            this.csmLichSu.Text = "Lịch sử khám";
+            // 
             // Patient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -715,5 +723,6 @@
         private System.Windows.Forms.ToolStripMenuItem csmXem;
         private System.Windows.Forms.ToolStripMenuItem csmTaoPK;
         private DevExpress.XtraEditors.SimpleButton btnTaoPK;
+        private System.Windows.Forms.ToolStripMenuItem csmLichSu;
     }
 }

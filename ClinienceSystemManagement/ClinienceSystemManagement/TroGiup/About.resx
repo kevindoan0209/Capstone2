@@ -122,115 +122,164 @@
     <value>None</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="labelX5.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lbTen.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt</value>
   </data>
-  <data name="labelX5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>185, 145</value>
+  <data name="lbTen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 54</value>
   </data>
-  <data name="labelX5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 19</value>
+  <data name="lbTen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 19</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="labelX5.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
+  <data name="lbTen.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
   </data>
-  <data name="labelX5.Text" xml:space="preserve">
-    <value>(+84) (236) 365 0443</value>
+  <data name="&gt;&gt;lbTen.Name" xml:space="preserve">
+    <value>lbTen</value>
   </data>
-  <data name="&gt;&gt;labelX5.Name" xml:space="preserve">
-    <value>labelX5</value>
-  </data>
-  <data name="&gt;&gt;labelX5.Type" xml:space="preserve">
+  <data name="&gt;&gt;lbTen.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04</value>
   </data>
-  <data name="&gt;&gt;labelX5.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbTen.Parent" xml:space="preserve">
     <value>groupPanel1</value>
   </data>
-  <data name="&gt;&gt;labelX5.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lbTen.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="labelX4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt</value>
-  </data>
-  <data name="labelX4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>185, 120</value>
-  </data>
-  <data name="labelX4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 19</value>
-  </data>
-  <data name="labelX4.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="labelX4.Text" xml:space="preserve">
-    <value>fit@duytan.edu.vn</value>
-  </data>
-  <data name="&gt;&gt;labelX4.Name" xml:space="preserve">
-    <value>labelX4</value>
-  </data>
-  <data name="&gt;&gt;labelX4.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04</value>
-  </data>
-  <data name="&gt;&gt;labelX4.Parent" xml:space="preserve">
-    <value>groupPanel1</value>
-  </data>
-  <data name="&gt;&gt;labelX4.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="labelX3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt</value>
-  </data>
-  <data name="labelX3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>185, 91</value>
-  </data>
-  <data name="labelX3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 19</value>
-  </data>
-  <data name="labelX3.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="labelX3.Text" xml:space="preserve">
-    <value>(+84) (236) 365 0403</value>
-  </data>
-  <data name="&gt;&gt;labelX3.Name" xml:space="preserve">
-    <value>labelX3</value>
-  </data>
-  <data name="&gt;&gt;labelX3.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04</value>
-  </data>
-  <data name="&gt;&gt;labelX3.Parent" xml:space="preserve">
-    <value>groupPanel1</value>
-  </data>
-  <data name="&gt;&gt;labelX3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="labelX2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt</value>
-  </data>
-  <data name="labelX2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>185, 66</value>
-  </data>
-  <data name="labelX2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>291, 19</value>
-  </data>
-  <data name="labelX2.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="labelX2.Text" xml:space="preserve">
-    <value>254 Nguyễn Văn Linh, Hải Châu, Đà Nẵng
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAG8AAABvAfGi3EMAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAABvElEQVQ4T3VT2yuDYRifP2FE5rQhIhfuZYUr5c6ta3EpRW5EwpUZpeUQWg61OY055dDa9822xmxj
+        u1BSihFCyW6mft733bfPt+311u/r6Xl+z+97n8OrApCCsqBYWRYQB0uDop0gKsFOfTSWzlcaWbqAq4uQ
+        YwT4BzHKodwUAZYcEvY4CVxQblKECUh/5pK1Z8fQWC0odhyk+GkOE6B1EQf32gVb61APjSF/aRnZo0YU
+        7tqU8RjNVUkN+wsEiLrfyeyCCROKDneYTW+iHhn/4xHoQuKAihi026i99qDl5pKh0SdAL5yiOXIu+yjK
+        ZxbQSnx1YW9SxE4F6JhQEXJh8vkenz9xUhr/PH9/wRa9QzXhSgJRWSCJmis3+h9uESJkeuJEMPLxim7v
+        GbTmJZkngQmwEnhYeXvC1ssjSpyHUA8boHWfpHPsmU1UoMd/gabFVeSa5njJiSZyxxgQkGOYQr15Fb0+
+        uWHpSIyRlJm5SJcC8mbn0eZwoENwyqNUQl4k6ZOxyiXiERqsG6gyTrNFUsYyVlkWSdyElaNZs0C/tom+
+        27Aymf+YlKB1JZ9z513kvd3v+Src33bxnzNUvwUQsQevJDBLAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="&gt;&gt;labelX2.Name" xml:space="preserve">
-    <value>labelX2</value>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;labelX2.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04</value>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>158, 56</value>
   </data>
-  <data name="&gt;&gt;labelX2.Parent" xml:space="preserve">
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 17</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
     <value>groupPanel1</value>
   </data>
-  <data name="&gt;&gt;labelX2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbFax.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
+  </data>
+  <data name="lbFax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 158</value>
+  </data>
+  <data name="lbFax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 19</value>
+  </data>
+  <data name="lbFax.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;lbFax.Name" xml:space="preserve">
+    <value>lbFax</value>
+  </data>
+  <data name="&gt;&gt;lbFax.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04</value>
+  </data>
+  <data name="&gt;&gt;lbFax.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;lbFax.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lbEmail.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
+  </data>
+  <data name="lbEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 133</value>
+  </data>
+  <data name="lbEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 19</value>
+  </data>
+  <data name="lbEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;lbEmail.Name" xml:space="preserve">
+    <value>lbEmail</value>
+  </data>
+  <data name="&gt;&gt;lbEmail.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04</value>
+  </data>
+  <data name="&gt;&gt;lbEmail.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;lbEmail.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="lbDienThoai.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
+  </data>
+  <data name="lbDienThoai.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 104</value>
+  </data>
+  <data name="lbDienThoai.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 19</value>
+  </data>
+  <data name="lbDienThoai.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;lbDienThoai.Name" xml:space="preserve">
+    <value>lbDienThoai</value>
+  </data>
+  <data name="&gt;&gt;lbDienThoai.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04</value>
+  </data>
+  <data name="&gt;&gt;lbDienThoai.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;lbDienThoai.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lbDiaChi.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
+  </data>
+  <data name="lbDiaChi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 79</value>
+  </data>
+  <data name="lbDiaChi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>291, 19</value>
+  </data>
+  <data name="lbDiaChi.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;lbDiaChi.Name" xml:space="preserve">
+    <value>lbDiaChi</value>
+  </data>
+  <data name="&gt;&gt;lbDiaChi.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04</value>
+  </data>
+  <data name="&gt;&gt;lbDiaChi.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;lbDiaChi.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="pictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -246,7 +295,7 @@
 </value>
   </data>
   <data name="pictureBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>158, 149</value>
+    <value>158, 162</value>
   </data>
   <data name="pictureBox6.Size" type="System.Drawing.Size, System.Drawing">
     <value>17, 17</value>
@@ -264,7 +313,7 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;pictureBox6.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="pictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -281,7 +330,7 @@
 </value>
   </data>
   <data name="pictureBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>158, 120</value>
+    <value>158, 133</value>
   </data>
   <data name="pictureBox5.Size" type="System.Drawing.Size, System.Drawing">
     <value>17, 17</value>
@@ -299,7 +348,7 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;pictureBox5.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -315,7 +364,7 @@
 </value>
   </data>
   <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>158, 66</value>
+    <value>158, 79</value>
   </data>
   <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>17, 17</value>
@@ -333,7 +382,7 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -347,7 +396,7 @@
 </value>
   </data>
   <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>158, 94</value>
+    <value>158, 107</value>
   </data>
   <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>17, 17</value>
@@ -365,7 +414,7 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -502,13 +551,13 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="labelX1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12.75pt, style=Bold</value>
   </data>
   <data name="labelX1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 17</value>
+    <value>15, 14</value>
   </data>
   <data name="labelX1.Size" type="System.Drawing.Size, System.Drawing">
     <value>424, 35</value>
@@ -529,7 +578,7 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;labelX1.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="groupPanel1.Font" type="System.Drawing.Font, System.Drawing">
     <value>UVN Bach Tuyet, 12pt</value>

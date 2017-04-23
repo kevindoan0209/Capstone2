@@ -18,5 +18,9 @@ namespace BussinessLogicLayer
         {
             return _clinience.UpdateClinienceCost(Id, cost);
         }
+        public static int GetCost()
+        {
+            return _clinience.GetCost();
+        }
     }
 }

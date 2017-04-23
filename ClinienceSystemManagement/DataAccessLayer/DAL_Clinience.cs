@@ -30,5 +30,12 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@Cost", cost);     
             return command.ExecuteNonQuery();
         }
+        public int GetCost()
+        {
+            const String sqlCommand = "SELECT SUM(Clinience_Cost) FROM Clinience;";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            int temp = int.Parse(command.ExecuteScalar().ToString());
+            return temp;
+        }
     }
 }
