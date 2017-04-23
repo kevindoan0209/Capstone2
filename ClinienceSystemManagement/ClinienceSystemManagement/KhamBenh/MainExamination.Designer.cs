@@ -539,6 +539,7 @@
             this.btnThanhToan.Size = new System.Drawing.Size(92, 28);
             this.btnThanhToan.TabIndex = 7;
             this.btnThanhToan.Text = "Thanh toán";
+            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
             // btnInKetQua
             // 

@@ -29,82 +29,82 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table1 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column2 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression2 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column3 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression3 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table2 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column4 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression4 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column5 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression5 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column6 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression6 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table3 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column7 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression7 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column8 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression8 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column9 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression9 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Join join1 = new DevExpress.DataAccess.Sql.Join();
-            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo1 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
-            DevExpress.DataAccess.Sql.Join join2 = new DevExpress.DataAccess.Sql.Join();
-            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo2 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery5 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column27 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression27 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table10 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column28 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression28 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column29 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression29 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table11 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column30 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression30 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column31 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression31 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column32 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression32 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table12 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column33 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression33 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column34 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression34 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column35 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression35 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Join join6 = new DevExpress.DataAccess.Sql.Join();
+            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo6 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
+            DevExpress.DataAccess.Sql.Join join7 = new DevExpress.DataAccess.Sql.Join();
+            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo7 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Precription));
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery2 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column10 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression10 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table4 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column11 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression11 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery3 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column12 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression12 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table5 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column13 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression13 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column14 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression14 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table6 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column15 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression15 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column16 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression16 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column17 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression17 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table7 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column18 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression18 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column19 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression19 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column20 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression20 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Join join3 = new DevExpress.DataAccess.Sql.Join();
-            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo3 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
-            DevExpress.DataAccess.Sql.Join join4 = new DevExpress.DataAccess.Sql.Join();
-            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo4 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery4 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column21 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression21 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table8 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column22 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression22 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column23 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression23 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table9 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column24 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression24 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column25 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression25 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column26 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression26 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Join join5 = new DevExpress.DataAccess.Sql.Join();
-            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo5 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery6 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column36 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression36 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table13 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column37 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression37 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery7 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column38 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression38 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table14 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column39 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression39 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column40 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression40 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table15 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column41 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression41 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column42 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression42 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column43 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression43 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table16 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column44 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression44 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column45 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression45 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column46 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression46 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Join join8 = new DevExpress.DataAccess.Sql.Join();
+            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo8 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
+            DevExpress.DataAccess.Sql.Join join9 = new DevExpress.DataAccess.Sql.Join();
+            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo9 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery8 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column47 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression47 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table17 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column48 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression48 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column49 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression49 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table18 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column50 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression50 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column51 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression51 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column52 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression52 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Join join10 = new DevExpress.DataAccess.Sql.Join();
+            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo10 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.grcDanhMuc = new DevExpress.XtraGrid.GridControl();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -141,6 +141,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.btnToaThuoc = new DevExpress.XtraEditors.SimpleButton();
             this.lbTrangThai = new DevExpress.XtraEditors.LabelControl();
             this.txtMa = new DevExpress.XtraEditors.TextEdit();
             this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
@@ -148,6 +149,7 @@
             this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
             this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.btnDiUng = new DevExpress.XtraEditors.SimpleButton();
             this.grcDiUng = new DevExpress.XtraGrid.GridControl();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -160,8 +162,9 @@
             this.colPrecription_ID1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colAllergic_Name = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colAllergic_Note = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.btnToaThuoc = new DevExpress.XtraEditors.SimpleButton();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lbTien = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grcDanhMuc)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -185,6 +188,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.lbTien);
+            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.grcDanhMuc);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtDieuTri);
@@ -209,7 +215,7 @@
             this.grcDanhMuc.Location = new System.Drawing.Point(15, 19);
             this.grcDanhMuc.MainView = this.gvDanhMuc;
             this.grcDanhMuc.Name = "grcDanhMuc";
-            this.grcDanhMuc.Size = new System.Drawing.Size(505, 234);
+            this.grcDanhMuc.Size = new System.Drawing.Size(505, 228);
             this.grcDanhMuc.TabIndex = 3;
             this.grcDanhMuc.UseEmbeddedNavigator = true;
             this.grcDanhMuc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -234,66 +240,66 @@
             // 
             this.sqlDataSource3.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource3.Name = "sqlDataSource3";
-            columnExpression1.ColumnName = "Precription_ID";
-            table1.MetaSerializable = "0|0|125|140";
-            table1.Name = "Precription_Medicine";
-            columnExpression1.Table = table1;
-            column1.Expression = columnExpression1;
-            columnExpression2.ColumnName = "Medicine_ID";
-            columnExpression2.Table = table1;
-            column2.Expression = columnExpression2;
-            columnExpression3.ColumnName = "Medicine_Name";
-            table2.MetaSerializable = "0|0|125|180";
-            table2.Name = "Medicine";
-            columnExpression3.Table = table2;
-            column3.Expression = columnExpression3;
-            columnExpression4.ColumnName = "Unit_ID";
-            columnExpression4.Table = table2;
-            column4.Expression = columnExpression4;
-            columnExpression5.ColumnName = "Medicine_Price";
-            columnExpression5.Table = table2;
-            column5.Expression = columnExpression5;
-            columnExpression6.ColumnName = "Unit_Name";
-            table3.MetaSerializable = "0|0|125|100";
-            table3.Name = "Medicine_Unit";
-            columnExpression6.Table = table3;
-            column6.Expression = columnExpression6;
-            columnExpression7.ColumnName = "Quantity";
-            columnExpression7.Table = table1;
-            column7.Expression = columnExpression7;
-            columnExpression8.ColumnName = "Note";
-            columnExpression8.Table = table1;
-            column8.Expression = columnExpression8;
-            columnExpression9.ColumnName = "Amount";
-            columnExpression9.Table = table1;
-            column9.Expression = columnExpression9;
-            selectQuery1.Columns.Add(column1);
-            selectQuery1.Columns.Add(column2);
-            selectQuery1.Columns.Add(column3);
-            selectQuery1.Columns.Add(column4);
-            selectQuery1.Columns.Add(column5);
-            selectQuery1.Columns.Add(column6);
-            selectQuery1.Columns.Add(column7);
-            selectQuery1.Columns.Add(column8);
-            selectQuery1.Columns.Add(column9);
-            selectQuery1.Name = "Precription_Medicine";
-            relationColumnInfo1.NestedKeyColumn = "Medicine_ID";
-            relationColumnInfo1.ParentKeyColumn = "Medicine_ID";
-            join1.KeyColumns.Add(relationColumnInfo1);
-            join1.Nested = table2;
-            join1.Parent = table1;
-            relationColumnInfo2.NestedKeyColumn = "Unit_ID";
-            relationColumnInfo2.ParentKeyColumn = "Unit_ID";
-            join2.KeyColumns.Add(relationColumnInfo2);
-            join2.Nested = table3;
-            join2.Parent = table2;
-            selectQuery1.Relations.Add(join1);
-            selectQuery1.Relations.Add(join2);
-            selectQuery1.Tables.Add(table1);
-            selectQuery1.Tables.Add(table2);
-            selectQuery1.Tables.Add(table3);
+            columnExpression27.ColumnName = "Precription_ID";
+            table10.MetaSerializable = "0|0|125|140";
+            table10.Name = "Precription_Medicine";
+            columnExpression27.Table = table10;
+            column27.Expression = columnExpression27;
+            columnExpression28.ColumnName = "Medicine_ID";
+            columnExpression28.Table = table10;
+            column28.Expression = columnExpression28;
+            columnExpression29.ColumnName = "Medicine_Name";
+            table11.MetaSerializable = "0|0|125|180";
+            table11.Name = "Medicine";
+            columnExpression29.Table = table11;
+            column29.Expression = columnExpression29;
+            columnExpression30.ColumnName = "Unit_ID";
+            columnExpression30.Table = table11;
+            column30.Expression = columnExpression30;
+            columnExpression31.ColumnName = "Medicine_Price";
+            columnExpression31.Table = table11;
+            column31.Expression = columnExpression31;
+            columnExpression32.ColumnName = "Unit_Name";
+            table12.MetaSerializable = "0|0|125|100";
+            table12.Name = "Medicine_Unit";
+            columnExpression32.Table = table12;
+            column32.Expression = columnExpression32;
+            columnExpression33.ColumnName = "Quantity";
+            columnExpression33.Table = table10;
+            column33.Expression = columnExpression33;
+            columnExpression34.ColumnName = "Note";
+            columnExpression34.Table = table10;
+            column34.Expression = columnExpression34;
+            columnExpression35.ColumnName = "Amount";
+            columnExpression35.Table = table10;
+            column35.Expression = columnExpression35;
+            selectQuery5.Columns.Add(column27);
+            selectQuery5.Columns.Add(column28);
+            selectQuery5.Columns.Add(column29);
+            selectQuery5.Columns.Add(column30);
+            selectQuery5.Columns.Add(column31);
+            selectQuery5.Columns.Add(column32);
+            selectQuery5.Columns.Add(column33);
+            selectQuery5.Columns.Add(column34);
+            selectQuery5.Columns.Add(column35);
+            selectQuery5.Name = "Precription_Medicine";
+            relationColumnInfo6.NestedKeyColumn = "Medicine_ID";
+            relationColumnInfo6.ParentKeyColumn = "Medicine_ID";
+            join6.KeyColumns.Add(relationColumnInfo6);
+            join6.Nested = table11;
+            join6.Parent = table10;
+            relationColumnInfo7.NestedKeyColumn = "Unit_ID";
+            relationColumnInfo7.ParentKeyColumn = "Unit_ID";
+            join7.KeyColumns.Add(relationColumnInfo7);
+            join7.Nested = table12;
+            join7.Parent = table11;
+            selectQuery5.Relations.Add(join6);
+            selectQuery5.Relations.Add(join7);
+            selectQuery5.Tables.Add(table10);
+            selectQuery5.Tables.Add(table11);
+            selectQuery5.Tables.Add(table12);
             this.sqlDataSource3.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery1});
+            selectQuery5});
             this.sqlDataSource3.ResultSchemaSerializable = resources.GetString("sqlDataSource3.ResultSchemaSerializable");
             // 
             // gvDanhMuc
@@ -390,7 +396,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 260);
+            this.label1.Location = new System.Drawing.Point(12, 257);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 14);
             this.label1.TabIndex = 2;
@@ -459,20 +465,20 @@
             // 
             this.sqlDataSource1.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            columnExpression10.ColumnName = "Medicine_ID";
-            table4.MetaSerializable = "0|0|125|180";
-            table4.Name = "Medicine";
-            columnExpression10.Table = table4;
-            column10.Expression = columnExpression10;
-            columnExpression11.ColumnName = "Medicine_Name";
-            columnExpression11.Table = table4;
-            column11.Expression = columnExpression11;
-            selectQuery2.Columns.Add(column10);
-            selectQuery2.Columns.Add(column11);
-            selectQuery2.Name = "Medicine";
-            selectQuery2.Tables.Add(table4);
+            columnExpression36.ColumnName = "Medicine_ID";
+            table13.MetaSerializable = "0|0|125|180";
+            table13.Name = "Medicine";
+            columnExpression36.Table = table13;
+            column36.Expression = columnExpression36;
+            columnExpression37.ColumnName = "Medicine_Name";
+            columnExpression37.Table = table13;
+            column37.Expression = columnExpression37;
+            selectQuery6.Columns.Add(column36);
+            selectQuery6.Columns.Add(column37);
+            selectQuery6.Name = "Medicine";
+            selectQuery6.Tables.Add(table13);
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery2});
+            selectQuery6});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // btnLamMoi
@@ -623,6 +629,17 @@
             this.panelControl1.Size = new System.Drawing.Size(919, 46);
             this.panelControl1.TabIndex = 8;
             // 
+            // btnToaThuoc
+            // 
+            this.btnToaThuoc.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnToaThuoc.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.btnToaThuoc.Image = ((System.Drawing.Image)(resources.GetObject("btnToaThuoc.Image")));
+            this.btnToaThuoc.Location = new System.Drawing.Point(634, 9);
+            this.btnToaThuoc.Name = "btnToaThuoc";
+            this.btnToaThuoc.Size = new System.Drawing.Size(97, 28);
+            this.btnToaThuoc.TabIndex = 35;
+            this.btnToaThuoc.Text = "In toa thuốc";
+            // 
             // lbTrangThai
             // 
             this.lbTrangThai.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -650,7 +667,7 @@
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(75, 25);
             this.btnHuy.TabIndex = 1;
-            this.btnHuy.Text = "Hủy";
+            this.btnHuy.Text = "Đóng";
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // txtAnh
@@ -676,66 +693,66 @@
             // 
             this.sqlDataSource2.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource2.Name = "sqlDataSource2";
-            columnExpression12.ColumnName = "Precription_ID";
-            table5.MetaSerializable = "0|0|125|140";
-            table5.Name = "Precription_Medicine";
-            columnExpression12.Table = table5;
-            column12.Expression = columnExpression12;
-            columnExpression13.ColumnName = "Medicine_ID";
-            columnExpression13.Table = table5;
-            column13.Expression = columnExpression13;
-            columnExpression14.ColumnName = "Medicine_Name";
-            table6.MetaSerializable = "0|0|125|180";
-            table6.Name = "Medicine";
-            columnExpression14.Table = table6;
-            column14.Expression = columnExpression14;
-            columnExpression15.ColumnName = "Medicine_Price";
-            columnExpression15.Table = table6;
-            column15.Expression = columnExpression15;
-            columnExpression16.ColumnName = "Unit_ID";
-            columnExpression16.Table = table6;
-            column16.Expression = columnExpression16;
-            columnExpression17.ColumnName = "Unit_Name";
-            table7.MetaSerializable = "0|0|125|100";
-            table7.Name = "Medicine_Unit";
-            columnExpression17.Table = table7;
-            column17.Expression = columnExpression17;
-            columnExpression18.ColumnName = "Quantity";
-            columnExpression18.Table = table5;
-            column18.Expression = columnExpression18;
-            columnExpression19.ColumnName = "Note";
-            columnExpression19.Table = table5;
-            column19.Expression = columnExpression19;
-            columnExpression20.ColumnName = "Amount";
-            columnExpression20.Table = table5;
-            column20.Expression = columnExpression20;
-            selectQuery3.Columns.Add(column12);
-            selectQuery3.Columns.Add(column13);
-            selectQuery3.Columns.Add(column14);
-            selectQuery3.Columns.Add(column15);
-            selectQuery3.Columns.Add(column16);
-            selectQuery3.Columns.Add(column17);
-            selectQuery3.Columns.Add(column18);
-            selectQuery3.Columns.Add(column19);
-            selectQuery3.Columns.Add(column20);
-            selectQuery3.Name = "Precription_Medicine";
-            relationColumnInfo3.NestedKeyColumn = "Medicine_ID";
-            relationColumnInfo3.ParentKeyColumn = "Medicine_ID";
-            join3.KeyColumns.Add(relationColumnInfo3);
-            join3.Nested = table6;
-            join3.Parent = table5;
-            relationColumnInfo4.NestedKeyColumn = "Unit_ID";
-            relationColumnInfo4.ParentKeyColumn = "Unit_ID";
-            join4.KeyColumns.Add(relationColumnInfo4);
-            join4.Nested = table7;
-            join4.Parent = table6;
-            selectQuery3.Relations.Add(join3);
-            selectQuery3.Relations.Add(join4);
-            selectQuery3.Tables.Add(table5);
-            selectQuery3.Tables.Add(table6);
-            selectQuery3.Tables.Add(table7);
+            columnExpression38.ColumnName = "Precription_ID";
+            table14.MetaSerializable = "0|0|125|140";
+            table14.Name = "Precription_Medicine";
+            columnExpression38.Table = table14;
+            column38.Expression = columnExpression38;
+            columnExpression39.ColumnName = "Medicine_ID";
+            columnExpression39.Table = table14;
+            column39.Expression = columnExpression39;
+            columnExpression40.ColumnName = "Medicine_Name";
+            table15.MetaSerializable = "0|0|125|180";
+            table15.Name = "Medicine";
+            columnExpression40.Table = table15;
+            column40.Expression = columnExpression40;
+            columnExpression41.ColumnName = "Medicine_Price";
+            columnExpression41.Table = table15;
+            column41.Expression = columnExpression41;
+            columnExpression42.ColumnName = "Unit_ID";
+            columnExpression42.Table = table15;
+            column42.Expression = columnExpression42;
+            columnExpression43.ColumnName = "Unit_Name";
+            table16.MetaSerializable = "0|0|125|100";
+            table16.Name = "Medicine_Unit";
+            columnExpression43.Table = table16;
+            column43.Expression = columnExpression43;
+            columnExpression44.ColumnName = "Quantity";
+            columnExpression44.Table = table14;
+            column44.Expression = columnExpression44;
+            columnExpression45.ColumnName = "Note";
+            columnExpression45.Table = table14;
+            column45.Expression = columnExpression45;
+            columnExpression46.ColumnName = "Amount";
+            columnExpression46.Table = table14;
+            column46.Expression = columnExpression46;
+            selectQuery7.Columns.Add(column38);
+            selectQuery7.Columns.Add(column39);
+            selectQuery7.Columns.Add(column40);
+            selectQuery7.Columns.Add(column41);
+            selectQuery7.Columns.Add(column42);
+            selectQuery7.Columns.Add(column43);
+            selectQuery7.Columns.Add(column44);
+            selectQuery7.Columns.Add(column45);
+            selectQuery7.Columns.Add(column46);
+            selectQuery7.Name = "Precription_Medicine";
+            relationColumnInfo8.NestedKeyColumn = "Medicine_ID";
+            relationColumnInfo8.ParentKeyColumn = "Medicine_ID";
+            join8.KeyColumns.Add(relationColumnInfo8);
+            join8.Nested = table15;
+            join8.Parent = table14;
+            relationColumnInfo9.NestedKeyColumn = "Unit_ID";
+            relationColumnInfo9.ParentKeyColumn = "Unit_ID";
+            join9.KeyColumns.Add(relationColumnInfo9);
+            join9.Nested = table16;
+            join9.Parent = table15;
+            selectQuery7.Relations.Add(join8);
+            selectQuery7.Relations.Add(join9);
+            selectQuery7.Tables.Add(table14);
+            selectQuery7.Tables.Add(table15);
+            selectQuery7.Tables.Add(table16);
             this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery3});
+            selectQuery7});
             this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
             // 
             // groupBox4
@@ -749,6 +766,16 @@
             this.groupBox4.TabIndex = 9;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Thông tin dị ứng";
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(276, 15);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(24, 25);
+            this.simpleButton1.TabIndex = 11;
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // btnDiUng
             // 
@@ -768,7 +795,7 @@
             this.grcDiUng.Location = new System.Drawing.Point(11, 46);
             this.grcDiUng.MainView = this.gvDiUng;
             this.grcDiUng.Name = "grcDiUng";
-            this.grcDiUng.Size = new System.Drawing.Size(289, 230);
+            this.grcDiUng.Size = new System.Drawing.Size(289, 251);
             this.grcDiUng.TabIndex = 0;
             this.grcDiUng.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvDiUng});
@@ -791,45 +818,45 @@
             // 
             this.sqlDataSource4.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource4.Name = "sqlDataSource4";
-            columnExpression21.ColumnName = "Allergic_ID";
-            table8.MetaSerializable = "0|0|125|140";
-            table8.Name = "Allergic";
-            columnExpression21.Table = table8;
-            column21.Expression = columnExpression21;
-            columnExpression22.ColumnName = "Allergic_Type_ID";
-            columnExpression22.Table = table8;
-            column22.Expression = columnExpression22;
-            columnExpression23.ColumnName = "Allergic_Type_Name";
-            table9.MetaSerializable = "0|0|125|80";
-            table9.Name = "Allergic_Type";
-            columnExpression23.Table = table9;
-            column23.Expression = columnExpression23;
-            columnExpression24.ColumnName = "Precription_ID";
-            columnExpression24.Table = table8;
-            column24.Expression = columnExpression24;
-            columnExpression25.ColumnName = "Allergic_Name";
-            columnExpression25.Table = table8;
-            column25.Expression = columnExpression25;
-            columnExpression26.ColumnName = "Allergic_Note";
-            columnExpression26.Table = table8;
-            column26.Expression = columnExpression26;
-            selectQuery4.Columns.Add(column21);
-            selectQuery4.Columns.Add(column22);
-            selectQuery4.Columns.Add(column23);
-            selectQuery4.Columns.Add(column24);
-            selectQuery4.Columns.Add(column25);
-            selectQuery4.Columns.Add(column26);
-            selectQuery4.Name = "Allergic";
-            relationColumnInfo5.NestedKeyColumn = "Allergic_Type_ID";
-            relationColumnInfo5.ParentKeyColumn = "Allergic_Type_ID";
-            join5.KeyColumns.Add(relationColumnInfo5);
-            join5.Nested = table9;
-            join5.Parent = table8;
-            selectQuery4.Relations.Add(join5);
-            selectQuery4.Tables.Add(table8);
-            selectQuery4.Tables.Add(table9);
+            columnExpression47.ColumnName = "Allergic_ID";
+            table17.MetaSerializable = "0|0|125|140";
+            table17.Name = "Allergic";
+            columnExpression47.Table = table17;
+            column47.Expression = columnExpression47;
+            columnExpression48.ColumnName = "Allergic_Type_ID";
+            columnExpression48.Table = table17;
+            column48.Expression = columnExpression48;
+            columnExpression49.ColumnName = "Allergic_Type_Name";
+            table18.MetaSerializable = "0|0|125|80";
+            table18.Name = "Allergic_Type";
+            columnExpression49.Table = table18;
+            column49.Expression = columnExpression49;
+            columnExpression50.ColumnName = "Precription_ID";
+            columnExpression50.Table = table17;
+            column50.Expression = columnExpression50;
+            columnExpression51.ColumnName = "Allergic_Name";
+            columnExpression51.Table = table17;
+            column51.Expression = columnExpression51;
+            columnExpression52.ColumnName = "Allergic_Note";
+            columnExpression52.Table = table17;
+            column52.Expression = columnExpression52;
+            selectQuery8.Columns.Add(column47);
+            selectQuery8.Columns.Add(column48);
+            selectQuery8.Columns.Add(column49);
+            selectQuery8.Columns.Add(column50);
+            selectQuery8.Columns.Add(column51);
+            selectQuery8.Columns.Add(column52);
+            selectQuery8.Name = "Allergic";
+            relationColumnInfo10.NestedKeyColumn = "Allergic_Type_ID";
+            relationColumnInfo10.ParentKeyColumn = "Allergic_Type_ID";
+            join10.KeyColumns.Add(relationColumnInfo10);
+            join10.Nested = table18;
+            join10.Parent = table17;
+            selectQuery8.Relations.Add(join10);
+            selectQuery8.Tables.Add(table17);
+            selectQuery8.Tables.Add(table18);
             this.sqlDataSource4.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery4});
+            selectQuery8});
             this.sqlDataSource4.ResultSchemaSerializable = resources.GetString("sqlDataSource4.ResultSchemaSerializable");
             // 
             // gvDiUng
@@ -888,26 +915,39 @@
             this.colAllergic_Note.VisibleIndex = 2;
             this.colAllergic_Note.Width = 62;
             // 
-            // simpleButton1
+            // label7
             // 
-            this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(276, 15);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(24, 25);
-            this.simpleButton1.TabIndex = 11;
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(285, 257);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(70, 14);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Tổng tiền:";
             // 
-            // btnToaThuoc
+            // lbTien
             // 
-            this.btnToaThuoc.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnToaThuoc.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.btnToaThuoc.Image = ((System.Drawing.Image)(resources.GetObject("btnToaThuoc.Image")));
-            this.btnToaThuoc.Location = new System.Drawing.Point(634, 9);
-            this.btnToaThuoc.Name = "btnToaThuoc";
-            this.btnToaThuoc.Size = new System.Drawing.Size(97, 28);
-            this.btnToaThuoc.TabIndex = 35;
-            this.btnToaThuoc.Text = "In toa thuốc";
+            this.lbTien.AutoSize = true;
+            this.lbTien.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lbTien.Location = new System.Drawing.Point(468, 257);
+            this.lbTien.Name = "lbTien";
+            this.lbTien.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbTien.Size = new System.Drawing.Size(14, 14);
+            this.lbTien.TabIndex = 5;
+            this.lbTien.Text = "0";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label10.Location = new System.Drawing.Point(488, 257);
+            this.label10.Name = "label10";
+            this.label10.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label10.Size = new System.Drawing.Size(31, 14);
+            this.label10.TabIndex = 6;
+            this.label10.Text = "VND";
             // 
             // Precription
             // 
@@ -1011,5 +1051,8 @@
         private System.Windows.Forms.ToolStripMenuItem csmXoa;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.SimpleButton btnToaThuoc;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lbTien;
+        private System.Windows.Forms.Label label7;
     }
 }

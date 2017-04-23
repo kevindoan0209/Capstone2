@@ -173,6 +173,8 @@
       <Column Name="Precription_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="Precription_Date" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
       <Column Name="Precription_Money" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Precription_Discount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Precription_Amount" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Precription_Diagnose" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
       <Column Name="Precription_Checkup" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
       <Column Name="Precription_Treatment" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />

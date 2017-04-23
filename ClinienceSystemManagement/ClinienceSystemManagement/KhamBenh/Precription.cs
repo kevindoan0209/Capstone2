@@ -96,6 +96,8 @@ namespace ClinienceSystemManagement.KhamBenh
                         int quantity = Convert.ToInt32(txtSoLuong.Value.ToString());
                         String note = Convert.ToString(txtChiDan.Text);
                         int amout = (quantity * price);
+                        int money = BLL_Precription.GetTotalMoney(Id);
+                        lbTien.Text = Convert.ToString(money);
                         BLL_Precription.InsertPrecriptionMedicine(Id, medicineId, quantity, note, amout);
                         sqlDataSource3.Fill();
                         Reset();
@@ -117,6 +119,8 @@ namespace ClinienceSystemManagement.KhamBenh
             String filter = "[Precription_ID] ='" + preId + "'";
             gvDanhMuc.ActiveFilterString = filter;
             gvDiUng.ActiveFilterString = filter;
+            int money = BLL_Precription.GetTotalMoney(Id);
+            lbTien.Text = Convert.ToString(money);
         }
 
         private void cmsXoa_Click(object sender, EventArgs e)
@@ -133,6 +137,8 @@ namespace ClinienceSystemManagement.KhamBenh
                         int medicineId = (int)value;
                         BLL_Precription.DeletePrecriptionMedicine(medicineId,Id);
                         sqlDataSource3.Fill();
+                        int money = BLL_Precription.GetTotalMoney(Id);
+                        lbTien.Text = Convert.ToString(money);
                         XtraMessageBox.Show("Đã xóa thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else

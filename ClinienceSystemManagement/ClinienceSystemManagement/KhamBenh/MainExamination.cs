@@ -11,6 +11,7 @@ using DevExpress.XtraEditors;
 using DataAccessLayer;
 using BussinessLogicLayer;
 using ClinienceSystemManagement.HeThong;
+using DevExpress.XtraReports;
 
 namespace ClinienceSystemManagement.KhamBenh
 {
@@ -313,7 +314,7 @@ namespace ClinienceSystemManagement.KhamBenh
             }
             else
             {
-
+                
             }
         }
 
@@ -370,6 +371,21 @@ namespace ClinienceSystemManagement.KhamBenh
                     }
                 }
             }
+        }
+
+        private void btnThanhToan_Click(object sender, EventArgs e)
+        {
+            Form frm = this.IsExits(typeof(Payment));
+            if (frm != null)
+            {
+                frm.Activate();
+            }
+            else
+            {
+                Payment pm = new Payment();
+                pm.preId = (int)PreId;
+                pm.ShowDialog();
+            }         
         }
     }
 }

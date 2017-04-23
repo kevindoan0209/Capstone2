@@ -124,6 +124,16 @@ namespace DataAccessLayer
             return temp;
         }
 
+        public int UpdatePrecriptionAmountDiscount(int amount,int discount, int preId)
+        {
+            const String sqlCommand = "Update Precription set Precription_Amount = @Amount,Precription_Discount =@Discount  Where Precription_ID = @PreId";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@Amount", amount);
+            command.Parameters.AddWithValue("@Discount", discount);
+            command.Parameters.AddWithValue("@PreId", preId);
+            return command.ExecuteNonQuery();
+        }
+
 
     }
 }

@@ -3724,6 +3724,10 @@ namespace DataAccessLayer
 		
 		private System.Nullable<int> _Precription_Money;
 		
+		private System.Nullable<int> _Precription_Discount;
+		
+		private System.Nullable<int> _Precription_Amount;
+		
 		private string _Precription_Diagnose;
 		
 		private string _Precription_Checkup;
@@ -3758,6 +3762,10 @@ namespace DataAccessLayer
     partial void OnPrecription_DateChanged();
     partial void OnPrecription_MoneyChanging(System.Nullable<int> value);
     partial void OnPrecription_MoneyChanged();
+    partial void OnPrecription_DiscountChanging(System.Nullable<int> value);
+    partial void OnPrecription_DiscountChanged();
+    partial void OnPrecription_AmountChanging(System.Nullable<int> value);
+    partial void OnPrecription_AmountChanged();
     partial void OnPrecription_DiagnoseChanging(string value);
     partial void OnPrecription_DiagnoseChanged();
     partial void OnPrecription_CheckupChanging(string value);
@@ -3839,6 +3847,46 @@ namespace DataAccessLayer
 					this._Precription_Money = value;
 					this.SendPropertyChanged("Precription_Money");
 					this.OnPrecription_MoneyChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Precription_Discount", DbType="Int")]
+		public System.Nullable<int> Precription_Discount
+		{
+			get
+			{
+				return this._Precription_Discount;
+			}
+			set
+			{
+				if ((this._Precription_Discount != value))
+				{
+					this.OnPrecription_DiscountChanging(value);
+					this.SendPropertyChanging();
+					this._Precription_Discount = value;
+					this.SendPropertyChanged("Precription_Discount");
+					this.OnPrecription_DiscountChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Precription_Amount", DbType="Int")]
+		public System.Nullable<int> Precription_Amount
+		{
+			get
+			{
+				return this._Precription_Amount;
+			}
+			set
+			{
+				if ((this._Precription_Amount != value))
+				{
+					this.OnPrecription_AmountChanging(value);
+					this.SendPropertyChanging();
+					this._Precription_Amount = value;
+					this.SendPropertyChanged("Precription_Amount");
+					this.OnPrecription_AmountChanged();
 				}
 			}
 		}

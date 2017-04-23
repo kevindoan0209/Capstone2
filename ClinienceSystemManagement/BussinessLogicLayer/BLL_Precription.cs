@@ -58,6 +58,10 @@ namespace BussinessLogicLayer
         {
             return _precription.UpdatePrecriptionMoney(money, preId);
         }
+        public static int UpdatePrecriptionAmountDiscount(int amount, int discount, int preId)
+        {
+            return _precription.UpdatePrecriptionAmountDiscount(amount, discount, preId);
+        }
 
         public static int GetTotalMoney(int preId)
         {

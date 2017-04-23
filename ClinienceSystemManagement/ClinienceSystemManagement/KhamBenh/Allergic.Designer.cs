@@ -175,7 +175,7 @@
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(75, 25);
             this.btnHuy.TabIndex = 1;
-            this.btnHuy.Text = "Hủy";
+            this.btnHuy.Text = "Đóng";
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // xtraTabContarol1
@@ -268,9 +268,9 @@
             // 
             this.txtTen2.Location = new System.Drawing.Point(21, 9);
             this.txtTen2.Name = "txtTen2";
-            this.txtTen2.Size = new System.Drawing.Size(54, 13);
+            this.txtTen2.Size = new System.Drawing.Size(55, 13);
             this.txtTen2.TabIndex = 25;
-            this.txtTen2.Text = "Tên đơn vị:";
+            this.txtTen2.Text = "Tên dị ứng:";
             // 
             // txtTen
             // 
