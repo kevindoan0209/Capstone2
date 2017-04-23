@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="DAL_Allergic.cs" />
     <Compile Include="DAL_Appointment.cs" />
+    <Compile Include="DAL_Clinience.cs" />
     <Compile Include="DAL_Disease.cs" />
     <Compile Include="DAL_Patient.cs" />
     <Compile Include="DAL_Precription.cs" />

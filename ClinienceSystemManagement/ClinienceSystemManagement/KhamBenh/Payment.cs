@@ -14,7 +14,7 @@ namespace ClinienceSystemManagement.KhamBenh
 {
     public partial class Payment : DevExpress.XtraEditors.XtraForm
     {
-        public int preId = 1023;
+        public int preId ;
         public Payment()
         {
             InitializeComponent();
@@ -156,6 +156,20 @@ namespace ClinienceSystemManagement.KhamBenh
             txtGiamGia.Enabled = false;
             txtTen.Enabled = false;
             txtTien.Enabled = false;
+            lbChiPhiHienTai.Enabled = false;
+            lbChiPhiKhamBenh.Enabled = false;
+            lbChiPhiPhatSinh.Enabled = false;
+            lbChiPhiThuoc.Enabled = false;
+            lbGiamGia.Enabled = false;
+            lbTongChiPhi.Enabled = false;
+            lbThanhToan.Text = "Đã thanh toán";
+            label5.Enabled = false;
+            label6.Enabled = false;
+            label15.Enabled = false;
+            label8.Enabled = false;
+            label7.Enabled = false;
+            label9.Enabled = false;
+            btnKhamBenh.Enabled = false;
             XtraMessageBox.Show("Số tiền phải trả: " + amount + " VND", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
