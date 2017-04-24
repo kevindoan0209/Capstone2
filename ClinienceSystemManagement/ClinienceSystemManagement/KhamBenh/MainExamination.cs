@@ -27,6 +27,7 @@ namespace ClinienceSystemManagement.KhamBenh
         private int nPara = 0;
         private bool _checkExistingDis = false;
         private bool _checkExistingPara = false;
+        public Boolean openForm = true;
         public MainExamination()
         {
             InitializeComponent();
@@ -109,12 +110,25 @@ namespace ClinienceSystemManagement.KhamBenh
                 ex.Show();
             }
         }
-
+        public void Disable(Boolean turn)
+        {
+            panelControl4.Enabled = turn;
+            panelControl1.Enabled = turn;
+        }
         private void MainExamination_Load(object sender, EventArgs e)
         {
-            FillData();
-            txtToaThuoc.ReadOnly = true;
-           
+            if (openForm == true)
+            {
+                FillData();
+                txtToaThuoc.ReadOnly = true;
+                Disable(false);
+            }
+            else
+            {
+                FillData();
+                txtToaThuoc.ReadOnly = true;
+                Disable(true);
+            }
         }
 
         private void btnHuy_Click(object sender, EventArgs e)

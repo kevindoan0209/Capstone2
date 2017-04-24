@@ -299,5 +299,20 @@ namespace PresentationLayer
                 cd.ShowDialog();
             }
         }
+
+        private void btnLichSu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.IsExits(typeof(History));
+            if (frm != null)
+            {
+                frm.Activate();
+            }
+            else
+            {
+                History cd = new History();
+                cd.MdiParent = this;
+                cd.Show();
+            }
+        }
     }
 }

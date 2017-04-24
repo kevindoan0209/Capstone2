@@ -134,6 +134,15 @@ namespace DataAccessLayer
             return command.ExecuteNonQuery();
         }
 
+        public int GetCountHistory(int patientId)
+        {
+            const String sqlCommand = "SELECT COUNT(Precription_ID) FROM Precription Where Account_ID_Patient = @patientId";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@patientId", patientId);
+            int temp = int.Parse(command.ExecuteScalar().ToString());
+            return temp;
+        }
+
 
     }
 }

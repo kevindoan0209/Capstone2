@@ -22,7 +22,7 @@ namespace PresentationLayer
 
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
-            Application.Run(new Payment());
+            Application.Run(new Home());
             //
         }
     }

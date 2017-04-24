@@ -67,5 +67,10 @@ namespace BussinessLogicLayer
         {
             return _precription.GetTotalMoney(preId);
         }
+
+        public static int GetCountHistory(int patientId)
+        {
+            return _precription.GetCountHistory(patientId);
+        }
     }
 }

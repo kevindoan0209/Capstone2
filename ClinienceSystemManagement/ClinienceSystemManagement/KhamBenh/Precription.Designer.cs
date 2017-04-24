@@ -106,6 +106,9 @@
             DevExpress.DataAccess.Sql.Join join10 = new DevExpress.DataAccess.Sql.Join();
             DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo10 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.lbTien = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.grcDanhMuc = new DevExpress.XtraGrid.GridControl();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.cmsXoa = new System.Windows.Forms.ToolStripMenuItem();
@@ -162,9 +165,7 @@
             this.colPrecription_ID1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colAllergic_Name = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colAllergic_Note = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.label7 = new System.Windows.Forms.Label();
-            this.lbTien = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grcDanhMuc)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -200,6 +201,40 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Toa thuốc";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label10.Location = new System.Drawing.Point(488, 257);
+            this.label10.Name = "label10";
+            this.label10.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label10.Size = new System.Drawing.Size(31, 14);
+            this.label10.TabIndex = 6;
+            this.label10.Text = "VND";
+            // 
+            // lbTien
+            // 
+            this.lbTien.AutoSize = true;
+            this.lbTien.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lbTien.Location = new System.Drawing.Point(468, 257);
+            this.lbTien.Name = "lbTien";
+            this.lbTien.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbTien.Size = new System.Drawing.Size(14, 14);
+            this.lbTien.TabIndex = 5;
+            this.lbTien.Text = "0";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(285, 257);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(70, 14);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Tổng tiền:";
             // 
             // grcDanhMuc
             // 
@@ -304,7 +339,7 @@
             // 
             // gvDanhMuc
             // 
-            this.gvDanhMuc.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gvDanhMuc.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gvDanhMuc.Appearance.HeaderPanel.Options.UseFont = true;
             this.gvDanhMuc.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colPrecription_ID,
@@ -548,9 +583,9 @@
             this.groupBox3.Controls.Add(this.lbKhamThucThe);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Location = new System.Drawing.Point(26, 358);
+            this.groupBox3.Location = new System.Drawing.Point(26, 382);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(538, 192);
+            this.groupBox3.Size = new System.Drawing.Size(538, 165);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Chẩn đoán bác sĩ";
@@ -915,45 +950,22 @@
             this.colAllergic_Note.VisibleIndex = 2;
             this.colAllergic_Note.Width = 62;
             // 
-            // label7
+            // labelControl1
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(285, 257);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 14);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Tổng tiền:";
-            // 
-            // lbTien
-            // 
-            this.lbTien.AutoSize = true;
-            this.lbTien.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.lbTien.Location = new System.Drawing.Point(468, 257);
-            this.lbTien.Name = "lbTien";
-            this.lbTien.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lbTien.Size = new System.Drawing.Size(14, 14);
-            this.lbTien.TabIndex = 5;
-            this.lbTien.Text = "0";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label10.Location = new System.Drawing.Point(488, 257);
-            this.label10.Name = "label10";
-            this.label10.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label10.Size = new System.Drawing.Size(31, 14);
-            this.label10.TabIndex = 6;
-            this.label10.Text = "VND";
+            this.labelControl1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl1.Location = new System.Drawing.Point(41, 362);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(231, 14);
+            this.labelControl1.TabIndex = 9;
+            this.labelControl1.Text = "* Nhấn chuột phải trên toa thuốc để xóa \r\n";
             // 
             // Precription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(919, 612);
+            this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.groupBox3);
@@ -990,6 +1002,7 @@
             this.contextMenuStrip2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gvDiUng)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1054,5 +1067,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lbTien;
         private System.Windows.Forms.Label label7;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
     }
 }

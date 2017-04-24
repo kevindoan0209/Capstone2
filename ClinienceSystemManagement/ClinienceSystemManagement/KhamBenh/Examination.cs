@@ -92,6 +92,7 @@ namespace ClinienceSystemManagement.KhamBenh
                             this.Close();
                             ex.PreId = (int)lastPreID;
                             ex.Id = (int)patientId;
+                            ex.openForm = false;
                             ex.doctorId = (int)doctorId;
                             ex.FillData();
                         }

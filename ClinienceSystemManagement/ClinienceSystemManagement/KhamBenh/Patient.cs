@@ -120,34 +120,40 @@ namespace ClinienceSystemManagement.KhamBenh
 
         private void cmsXoa_Click(object sender, EventArgs e)
         {
-
-            if (XtraMessageBox.Show("Bạn có muốn xóa không?", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            try
             {
-                int rowIndex = gvDanhMuc.FocusedRowHandle;
-                string colID = "Account_ID";
-                object value = gvDanhMuc.GetRowCellValue(rowIndex, colID);
-                if (value != null)
+                if (XtraMessageBox.Show("Bạn có muốn xóa không?", "Clinience", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    DataClinienceDataContext dc = new DataClinienceDataContext();
-                    var account = dc.Accounts.Where(s => s.Account_ID == (int)value).SingleOrDefault();
-                    var human = dc.Humans.Where(s => s.Account_ID == (int)value).SingleOrDefault();
-                    var patient = dc.Patients.Where(s => s.Account_ID == (int)value).SingleOrDefault();
-                    if (account != null)
+                    int rowIndex = gvDanhMuc.FocusedRowHandle;
+                    string colID = "Account_ID";
+                    object value = gvDanhMuc.GetRowCellValue(rowIndex, colID);
+                    if (value != null)
                     {
-                        int patientId = (int)value;
-                        BLL_Appointment.DeleteAppointment(patientId);
-                        dc.Accounts.DeleteOnSubmit(account);
-                        dc.Humans.DeleteOnSubmit(human);
-                        dc.Patients.DeleteOnSubmit(patient);
-                        dc.SubmitChanges();
-                        sqlDataSource1.Fill();
-                        XtraMessageBox.Show("Đã xóa thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        DataClinienceDataContext dc = new DataClinienceDataContext();
+                        var account = dc.Accounts.Where(s => s.Account_ID == (int)value).SingleOrDefault();
+                        var human = dc.Humans.Where(s => s.Account_ID == (int)value).SingleOrDefault();
+                        var patient = dc.Patients.Where(s => s.Account_ID == (int)value).SingleOrDefault();
+                        if (account != null)
+                        {
+                            int patientId = (int)value;
+                            BLL_Appointment.DeleteAppointment(patientId);
+                            dc.Accounts.DeleteOnSubmit(account);
+                            dc.Humans.DeleteOnSubmit(human);
+                            dc.Patients.DeleteOnSubmit(patient);
+                            dc.SubmitChanges();
+                            sqlDataSource1.Fill();
+                            XtraMessageBox.Show("Đã xóa thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+                    else
+                    {
+                        XtraMessageBox.Show("Bạn chưa chọn đối tượng cần xóa", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
-                else
-                {
-                    XtraMessageBox.Show("Bạn chưa chọn đối tượng cần xóa", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
+            }
+            catch (Exception)
+            {
+                XtraMessageBox.Show("Không được phép xóa ,bệnh nhân đã nằm trong danh mục khác", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 
@@ -229,6 +235,19 @@ namespace ClinienceSystemManagement.KhamBenh
             }
         }
 
-  
+        private void csmLichSu_Click(object sender, EventArgs e)
+        {
+            int rowIndex = gvDanhMuc.FocusedRowHandle;
+            string colID = "Account_ID";
+            object value = gvDanhMuc.GetRowCellValue(rowIndex, colID);
+            if (value != null)
+            {
+                int Id = (int)value;
+                History hs = new History();
+                hs.patientId = Id;
+                hs.openForm = false;
+                hs.ShowDialog();      
+            }
+        }
     }
 }

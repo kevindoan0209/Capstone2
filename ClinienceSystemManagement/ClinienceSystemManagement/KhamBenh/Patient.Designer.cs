@@ -82,6 +82,7 @@
             this.grcDanhMuc = new DevExpress.XtraGrid.GridControl();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.csmTaoPK = new System.Windows.Forms.ToolStripMenuItem();
+            this.csmLichSu = new System.Windows.Forms.ToolStripMenuItem();
             this.csmXem = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsCapNhat = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsXoa = new System.Windows.Forms.ToolStripMenuItem();
@@ -103,7 +104,6 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.btnXuatFile = new DevExpress.XtraEditors.SimpleButton();
             this.btnLamMoi = new DevExpress.XtraEditors.SimpleButton();
-            this.csmLichSu = new System.Windows.Forms.ToolStripMenuItem();
             groupBox2 = new System.Windows.Forms.GroupBox();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -378,7 +378,7 @@
             this.cmsCapNhat,
             this.cmsXoa});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(161, 114);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(161, 136);
             // 
             // csmTaoPK
             // 
@@ -386,6 +386,13 @@
             this.csmTaoPK.Size = new System.Drawing.Size(160, 22);
             this.csmTaoPK.Text = "Tạo phiên khám";
             this.csmTaoPK.Click += new System.EventHandler(this.csmTaoPK_Click);
+            // 
+            // csmLichSu
+            // 
+            this.csmLichSu.Name = "csmLichSu";
+            this.csmLichSu.Size = new System.Drawing.Size(160, 22);
+            this.csmLichSu.Text = "Lịch sử khám";
+            this.csmLichSu.Click += new System.EventHandler(this.csmLichSu_Click);
             // 
             // csmXem
             // 
@@ -633,12 +640,6 @@
             this.btnLamMoi.TabIndex = 4;
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
-            // 
-            // csmLichSu
-            // 
-            this.csmLichSu.Name = "csmLichSu";
-            this.csmLichSu.Size = new System.Drawing.Size(160, 22);
-            this.csmLichSu.Text = "Lịch sử khám";
             // 
             // Patient
             // 

@@ -316,7 +316,7 @@
             groupBox2.ForeColor = System.Drawing.Color.DimGray;
             groupBox2.Location = new System.Drawing.Point(12, 8);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new System.Drawing.Size(271, 548);
+            groupBox2.Size = new System.Drawing.Size(271, 596);
             groupBox2.TabIndex = 9;
             groupBox2.TabStop = false;
             groupBox2.Text = "Hồ sơ";
@@ -490,7 +490,7 @@
             this.btnChinhSua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnChinhSua.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.btnChinhSua.Image = ((System.Drawing.Image)(resources.GetObject("btnChinhSua.Image")));
-            this.btnChinhSua.Location = new System.Drawing.Point(170, 514);
+            this.btnChinhSua.Location = new System.Drawing.Point(170, 562);
             this.btnChinhSua.Name = "btnChinhSua";
             this.btnChinhSua.Size = new System.Drawing.Size(95, 28);
             this.btnChinhSua.TabIndex = 5;
@@ -526,7 +526,7 @@
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl3.Location = new System.Drawing.Point(299, 0);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(674, 35);
+            this.panelControl3.Size = new System.Drawing.Size(774, 35);
             this.panelControl3.TabIndex = 6;
             // 
             // btnThanhToan
@@ -534,7 +534,7 @@
             this.btnThanhToan.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnThanhToan.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.btnThanhToan.Image = ((System.Drawing.Image)(resources.GetObject("btnThanhToan.Image")));
-            this.btnThanhToan.Location = new System.Drawing.Point(577, 3);
+            this.btnThanhToan.Location = new System.Drawing.Point(677, 3);
             this.btnThanhToan.Name = "btnThanhToan";
             this.btnThanhToan.Size = new System.Drawing.Size(92, 28);
             this.btnThanhToan.TabIndex = 7;
@@ -546,7 +546,7 @@
             this.btnInKetQua.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnInKetQua.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.btnInKetQua.Image = ((System.Drawing.Image)(resources.GetObject("btnInKetQua.Image")));
-            this.btnInKetQua.Location = new System.Drawing.Point(427, 3);
+            this.btnInKetQua.Location = new System.Drawing.Point(527, 3);
             this.btnInKetQua.Name = "btnInKetQua";
             this.btnInKetQua.Size = new System.Drawing.Size(146, 28);
             this.btnInKetQua.TabIndex = 6;
@@ -558,7 +558,7 @@
             this.btnToaThuoc.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnToaThuoc.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.btnToaThuoc.Image = ((System.Drawing.Image)(resources.GetObject("btnToaThuoc.Image")));
-            this.btnToaThuoc.Location = new System.Drawing.Point(324, 3);
+            this.btnToaThuoc.Location = new System.Drawing.Point(424, 3);
             this.btnToaThuoc.Name = "btnToaThuoc";
             this.btnToaThuoc.Size = new System.Drawing.Size(97, 28);
             this.btnToaThuoc.TabIndex = 5;
@@ -572,9 +572,9 @@
             this.panelControl2.Controls.Add(this.btnHuy);
             this.panelControl2.Controls.Add(this.btnLuu);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl2.Location = new System.Drawing.Point(299, 534);
+            this.panelControl2.Location = new System.Drawing.Point(299, 582);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(674, 38);
+            this.panelControl2.Size = new System.Drawing.Size(774, 38);
             this.panelControl2.TabIndex = 5;
             // 
             // lbTrangThai
@@ -604,7 +604,7 @@
             this.btnHuy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnHuy.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.btnHuy.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.Image")));
-            this.btnHuy.Location = new System.Drawing.Point(594, 8);
+            this.btnHuy.Location = new System.Drawing.Point(694, 8);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(75, 25);
             this.btnHuy.TabIndex = 41;
@@ -616,7 +616,7 @@
             this.btnLuu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLuu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
-            this.btnLuu.Location = new System.Drawing.Point(507, 8);
+            this.btnLuu.Location = new System.Drawing.Point(607, 8);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(81, 25);
             this.btnLuu.TabIndex = 40;
@@ -631,7 +631,7 @@
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(299, 572);
+            this.panelControl1.Size = new System.Drawing.Size(299, 620);
             this.panelControl1.TabIndex = 4;
             // 
             // panelControl5
@@ -639,9 +639,9 @@
             this.panelControl5.Controls.Add(this.layoutControl1);
             this.panelControl5.Controls.Add(this.xtraTabControl3);
             this.panelControl5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelControl5.Location = new System.Drawing.Point(353, 2);
+            this.panelControl5.Location = new System.Drawing.Point(453, 2);
             this.panelControl5.Name = "panelControl5";
-            this.panelControl5.Size = new System.Drawing.Size(319, 495);
+            this.panelControl5.Size = new System.Drawing.Size(319, 543);
             this.panelControl5.TabIndex = 0;
             // 
             // layoutControl1
@@ -1083,7 +1083,7 @@
             this.xtraTabControl3.Location = new System.Drawing.Point(9, 206);
             this.xtraTabControl3.Name = "xtraTabControl3";
             this.xtraTabControl3.SelectedTabPage = this.xtraTabPage4;
-            this.xtraTabControl3.Size = new System.Drawing.Size(304, 284);
+            this.xtraTabControl3.Size = new System.Drawing.Size(304, 332);
             this.xtraTabControl3.TabIndex = 3;
             this.xtraTabControl3.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage4,
@@ -1094,7 +1094,7 @@
             this.xtraTabPage4.AutoScroll = true;
             this.xtraTabPage4.Controls.Add(this.grcDanhMuc);
             this.xtraTabPage4.Name = "xtraTabPage4";
-            this.xtraTabPage4.Size = new System.Drawing.Size(298, 256);
+            this.xtraTabPage4.Size = new System.Drawing.Size(298, 304);
             this.xtraTabPage4.Text = "Chỉ định CLS";
             // 
             // grcDanhMuc
@@ -1161,6 +1161,8 @@
             // 
             this.gvDanhMuc.Appearance.ColumnFilterButton.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gvDanhMuc.Appearance.ColumnFilterButton.Options.UseFont = true;
+            this.gvDanhMuc.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gvDanhMuc.Appearance.HeaderPanel.Options.UseFont = true;
             this.gvDanhMuc.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colParaclinical_ID,
             this.colParaclinical_Name,
@@ -1262,7 +1264,7 @@
             this.xtraTabControl1.Location = new System.Drawing.Point(20, 141);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(307, 161);
+            this.xtraTabControl1.Size = new System.Drawing.Size(407, 161);
             this.xtraTabControl1.TabIndex = 2;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
@@ -1277,7 +1279,7 @@
             this.xtraTabPage1.Controls.Add(this.label2);
             this.xtraTabPage1.Controls.Add(this.txtChanDoan);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(301, 133);
+            this.xtraTabPage1.Size = new System.Drawing.Size(401, 133);
             this.xtraTabPage1.Text = "Chẩn đoán";
             // 
             // gvBenh
@@ -1333,7 +1335,7 @@
             // 
             this.lnkThemBenh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lnkThemBenh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lnkThemBenh.Location = new System.Drawing.Point(219, 32);
+            this.lnkThemBenh.Location = new System.Drawing.Point(319, 32);
             this.lnkThemBenh.Name = "lnkThemBenh";
             this.lnkThemBenh.Size = new System.Drawing.Size(72, 13);
             this.lnkThemBenh.TabIndex = 5;
@@ -1365,7 +1367,7 @@
             this.txtChanDoan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtChanDoan.Location = new System.Drawing.Point(13, 73);
             this.txtChanDoan.Name = "txtChanDoan";
-            this.txtChanDoan.Size = new System.Drawing.Size(274, 53);
+            this.txtChanDoan.Size = new System.Drawing.Size(374, 53);
             this.txtChanDoan.TabIndex = 1;
             // 
             // xtraTabPage2
@@ -1456,7 +1458,7 @@
             this.panelControl4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl4.Location = new System.Drawing.Point(299, 35);
             this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(674, 499);
+            this.panelControl4.Size = new System.Drawing.Size(774, 547);
             this.panelControl4.TabIndex = 7;
             // 
             // xtraTabControl2
@@ -1466,7 +1468,7 @@
             this.xtraTabControl2.Location = new System.Drawing.Point(19, 305);
             this.xtraTabControl2.Name = "xtraTabControl2";
             this.xtraTabControl2.SelectedTabPage = this.xtraTabPage3;
-            this.xtraTabControl2.Size = new System.Drawing.Size(307, 161);
+            this.xtraTabControl2.Size = new System.Drawing.Size(407, 161);
             this.xtraTabControl2.TabIndex = 42;
             this.xtraTabControl2.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage3});
@@ -1479,7 +1481,7 @@
             this.xtraTabPage3.Controls.Add(this.hyperlinkLabelControl1);
             this.xtraTabPage3.Controls.Add(this.label4);
             this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(301, 133);
+            this.xtraTabPage3.Size = new System.Drawing.Size(401, 133);
             this.xtraTabPage3.Text = "Điều trị";
             // 
             // label9
@@ -1507,14 +1509,14 @@
             this.txtLuuY.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLuuY.Location = new System.Drawing.Point(14, 70);
             this.txtLuuY.Name = "txtLuuY";
-            this.txtLuuY.Size = new System.Drawing.Size(274, 52);
+            this.txtLuuY.Size = new System.Drawing.Size(374, 52);
             this.txtLuuY.TabIndex = 6;
             // 
             // hyperlinkLabelControl1
             // 
             this.hyperlinkLabelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.hyperlinkLabelControl1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hyperlinkLabelControl1.Location = new System.Drawing.Point(217, 29);
+            this.hyperlinkLabelControl1.Location = new System.Drawing.Point(317, 29);
             this.hyperlinkLabelControl1.Name = "hyperlinkLabelControl1";
             this.hyperlinkLabelControl1.Size = new System.Drawing.Size(75, 13);
             this.hyperlinkLabelControl1.TabIndex = 6;
@@ -1537,7 +1539,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtThanPhien.Location = new System.Drawing.Point(19, 86);
             this.txtThanPhien.Name = "txtThanPhien";
-            this.txtThanPhien.Size = new System.Drawing.Size(301, 45);
+            this.txtThanPhien.Size = new System.Drawing.Size(401, 45);
             this.txtThanPhien.TabIndex = 36;
             // 
             // labelControl11
@@ -1554,7 +1556,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLyDo.Location = new System.Drawing.Point(20, 26);
             this.txtLyDo.Name = "txtLyDo";
-            this.txtLyDo.Size = new System.Drawing.Size(301, 37);
+            this.txtLyDo.Size = new System.Drawing.Size(401, 37);
             this.txtLyDo.TabIndex = 38;
             // 
             // labelControl10
@@ -1615,7 +1617,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(973, 572);
+            this.ClientSize = new System.Drawing.Size(1073, 620);
             this.Controls.Add(this.panelControl4);
             this.Controls.Add(this.panelControl3);
             this.Controls.Add(this.panelControl2);
@@ -1624,6 +1626,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MainExamination";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phiên khám";
             this.Load += new System.EventHandler(this.MainExamination_Load);
             groupBox2.ResumeLayout(false);

@@ -52,7 +52,7 @@
             this.btnPhienKham = new DevExpress.XtraBars.BarButtonItem();
             this.btnSuDung = new DevExpress.XtraBars.BarButtonItem();
             this.btnPhanMem = new DevExpress.XtraBars.BarButtonItem();
-            this.btnKeToa = new DevExpress.XtraBars.BarButtonItem();
+            this.btnLichSu = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
             this.btnDangNhap = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem17 = new DevExpress.XtraBars.BarButtonItem();
@@ -92,6 +92,7 @@
             this.repositoryItemTextEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.barEditItem6 = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemTextEdit3 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonMiniToolbar1 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(this.components);
             this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -110,7 +111,6 @@
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
@@ -143,7 +143,7 @@
             this.btnPhienKham,
             this.btnSuDung,
             this.btnPhanMem,
-            this.btnKeToa,
+            this.btnLichSu,
             this.barButtonItem15,
             this.btnDangNhap,
             this.barButtonItem17,
@@ -324,13 +324,14 @@
             this.btnPhanMem.Name = "btnPhanMem";
             this.btnPhanMem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPhanMem_ItemClick);
             // 
-            // btnKeToa
+            // btnLichSu
             // 
-            this.btnKeToa.Caption = "Kê toa";
-            this.btnKeToa.Id = 3;
-            this.btnKeToa.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnKeToa.LargeGlyph")));
-            this.btnKeToa.LargeWidth = 70;
-            this.btnKeToa.Name = "btnKeToa";
+            this.btnLichSu.Caption = "Lịch sử khám bệnh";
+            this.btnLichSu.Id = 3;
+            this.btnLichSu.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnLichSu.LargeGlyph")));
+            this.btnLichSu.LargeWidth = 70;
+            this.btnLichSu.Name = "btnLichSu";
+            this.btnLichSu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLichSu_ItemClick);
             // 
             // barButtonItem15
             // 
@@ -617,6 +618,15 @@
             this.repositoryItemTextEdit3.AutoHeight = false;
             this.repositoryItemTextEdit3.Name = "repositoryItemTextEdit3";
             // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "Cập nhật";
+            this.barButtonItem4.Id = 28;
+            this.barButtonItem4.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.LargeGlyph")));
+            this.barButtonItem4.LargeWidth = 70;
+            this.barButtonItem4.Name = "barButtonItem4";
+            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
+            // 
             // ribbonMiniToolbar1
             // 
             this.ribbonMiniToolbar1.ItemLinks.Add(this.btnBenh);
@@ -661,7 +671,7 @@
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.btnBenhNhan);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnPhienKham);
-            this.ribbonPageGroup1.ItemLinks.Add(this.btnKeToa);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnLichSu);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "Khám bệnh";
             // 
@@ -758,15 +768,6 @@
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
             // 
-            // barButtonItem4
-            // 
-            this.barButtonItem4.Caption = "Cập nhật";
-            this.barButtonItem4.Id = 28;
-            this.barButtonItem4.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.LargeGlyph")));
-            this.barButtonItem4.LargeWidth = 70;
-            this.barButtonItem4.Name = "barButtonItem4";
-            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
-            // 
             // Home
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
@@ -828,7 +829,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonMiniToolbar ribbonMiniToolbar1;
         private DevExpress.XtraBars.BarButtonItem btnSuDung;
         private DevExpress.XtraBars.BarButtonItem btnPhanMem;
-        private DevExpress.XtraBars.BarButtonItem btnKeToa;
+        private DevExpress.XtraBars.BarButtonItem btnLichSu;
         private DevExpress.XtraBars.Ribbon.ApplicationMenu applicationMenu1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem15;
         private DevExpress.XtraBars.BarButtonItem btnDangNhap;
