@@ -262,6 +262,7 @@
             this.btnDoanhThu.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnDoanhThu.LargeGlyph")));
             this.btnDoanhThu.LargeWidth = 70;
             this.btnDoanhThu.Name = "btnDoanhThu";
+            this.btnDoanhThu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDoanhThu_ItemClick);
             // 
             // btnPhongKham
             // 

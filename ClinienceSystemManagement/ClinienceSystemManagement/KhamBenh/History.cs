@@ -52,6 +52,7 @@ namespace ClinienceSystemManagement.KhamBenh
                 Disable(false);
                 String filter = "[Precription_ID] ='" + 0 + "'";
                 gvBenhNhan.ActiveFilterString = filter;
+                btnHuy.Visible = false;
             }
             else
             {
@@ -60,8 +61,10 @@ namespace ClinienceSystemManagement.KhamBenh
                 Filter();
                 FilterNull();
                // lkeBenhNhan.Enabled = false;
-                lkeBenhNhan.Visible = true;
+                lkeBenhNhan.Visible = false;
                 btnBenhNhan.Enabled = false;
+                btnBenhNhan.Visible = false;
+                btnHuy.Visible = true;
             }
 
         }
@@ -75,7 +78,16 @@ namespace ClinienceSystemManagement.KhamBenh
                 if (account != null)
                 {
                     int count = BLL_Precription.GetCountHistory(patientId);
+                    if (count == 0)
+                    {
+                        lbTrangThai.Text = "*Bệnh nhân này chưa có lịch sử khám";
+                        btnHuy.Focus();
+                    }
                     lbSoLan.Text = Convert.ToString(count);
+                    String datemax = BLL_Precription.GetDate(patientId);
+                    lbNgayKham.Text = Convert.ToString(datemax);
+                    String datemin = BLL_Precription.GetDateMin(patientId);
+                    lbNgayDau.Text = Convert.ToString(datemin);
                     lbBenhNhan.Text = account.Account_Name;
                     lbDiaChi.Text = human.Account_Address;
                     lbNgheNghiep.Text = human.Account_Job;
@@ -143,6 +155,11 @@ namespace ClinienceSystemManagement.KhamBenh
                 gvCLS.ActiveFilterString = filter;
                 gvThuoc.ActiveFilterString = filter;
             }
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

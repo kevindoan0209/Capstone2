@@ -142,6 +142,22 @@ namespace DataAccessLayer
             int temp = int.Parse(command.ExecuteScalar().ToString());
             return temp;
         }
+        public string GetDate(int patientId)
+        {
+            const String sqlCommand = "SELECT Max(Precription_Date) FROM Precription Where Account_ID_Patient = @patientId";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@patientId", patientId);
+            String temp = Convert.ToString(command.ExecuteScalar().ToString());
+            return temp;
+        }
+        public string GetDateMin(int patientId)
+        {
+            const String sqlCommand = "SELECT Min(Precription_Date) FROM Precription Where Account_ID_Patient = @patientId";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@patientId", patientId);
+            String temp = Convert.ToString(command.ExecuteScalar().ToString());
+            return temp;
+        }
 
 
     }

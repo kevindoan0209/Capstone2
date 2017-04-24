@@ -72,5 +72,13 @@ namespace BussinessLogicLayer
         {
             return _precription.GetCountHistory(patientId);
         }
+        public static string GetDate(int patientId)
+        {
+            return _precription.GetDate(patientId);
+        }
+        public static string GetDateMin(int patientId)
+        {
+            return _precription.GetDateMin(patientId);
+        }
     }
 }

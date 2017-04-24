@@ -314,5 +314,20 @@ namespace PresentationLayer
                 cd.Show();
             }
         }
+
+        private void btnDoanhThu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.IsExits(typeof(Statictis));
+            if (frm != null)
+            {
+                frm.Activate();
+            }
+            else
+            {
+                Statictis st = new Statictis();
+                //st.MdiParent = this;
+                st.ShowDialog();
+            }
+        }
     }
 }

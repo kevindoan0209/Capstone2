@@ -161,6 +161,12 @@
     <Compile Include="HeThong\MedicineUnit.Designer.cs">
       <DependentUpon>MedicineUnit.cs</DependentUpon>
     </Compile>
+    <Compile Include="HeThong\Statictis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\Statictis.Designer.cs">
+      <DependentUpon>Statictis.cs</DependentUpon>
+    </Compile>
     <Compile Include="HeThong\SubIngredient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -349,6 +355,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HeThong\MedicineUnit.resx">
       <DependentUpon>MedicineUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\Statictis.resx">
+      <DependentUpon>Statictis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HeThong\SubIngredient.resx">
       <DependentUpon>SubIngredient.cs</DependentUpon>
