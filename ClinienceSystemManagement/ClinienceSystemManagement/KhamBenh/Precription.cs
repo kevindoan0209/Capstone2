@@ -38,7 +38,7 @@ namespace ClinienceSystemManagement.KhamBenh
             {
                 DataClinienceDataContext db = new DataClinienceDataContext();
                 var precription = db.Precriptions.Where(i => i.Precription_ID == Id).SingleOrDefault();
-               // var precription_disease = db.Precription_Diseases.Where(i => i.Precription_ID == Id).ToArray();
+                // var precription_disease = db.Precription_Diseases.Where(i => i.Precription_ID == Id).ToArray();
                 if (precription != null)
                 {
                     txtMa.EditValue = precription.Precription_ID;
@@ -48,7 +48,7 @@ namespace ClinienceSystemManagement.KhamBenh
                     for (int i = 0; i < nDisPre; i++)
                     {
                         String diseaseId = _getCheckedDiseasePre[i];
-                        lbMaBenh.Text = lbMaBenh.Text +", "+ diseaseId;
+                        lbMaBenh.Text = lbMaBenh.Text + ", " + diseaseId;
                     }
 
                 }
@@ -82,7 +82,7 @@ namespace ClinienceSystemManagement.KhamBenh
                 else
                 {
                     if (txtSoLuong.Value.ToString() == "0" || txtSoLuong.Value < 0)
-                    {              
+                    {
                         lbTrangThai.Text = "*Vui lòng vào nhập số lượng";
                         txtSoLuong.Focus();
                     }
@@ -96,9 +96,9 @@ namespace ClinienceSystemManagement.KhamBenh
                         int quantity = Convert.ToInt32(txtSoLuong.Value.ToString());
                         String note = Convert.ToString(txtChiDan.Text);
                         int amout = (quantity * price);
+                        BLL_Precription.InsertPrecriptionMedicine(Id, medicineId, quantity, note, amout);
                         int money = BLL_Precription.GetTotalMoney(Id);
                         lbTien.Text = Convert.ToString(money);
-                        BLL_Precription.InsertPrecriptionMedicine(Id, medicineId, quantity, note, amout);
                         sqlDataSource3.Fill();
                         Reset();
                     }
@@ -119,8 +119,16 @@ namespace ClinienceSystemManagement.KhamBenh
             String filter = "[Precription_ID] ='" + preId + "'";
             gvDanhMuc.ActiveFilterString = filter;
             gvDiUng.ActiveFilterString = filter;
-            int money = BLL_Precription.GetTotalMoney(Id);
-            lbTien.Text = Convert.ToString(money);
+            String text = Convert.ToString(BLL_Precription.GetTotalMoney(Id));
+            if (text == null)
+            {
+                lbTien.Text = "0";
+            }
+            else
+            {
+                lbTien.Text = text;
+            }
+           
         }
 
         private void cmsXoa_Click(object sender, EventArgs e)
@@ -135,7 +143,7 @@ namespace ClinienceSystemManagement.KhamBenh
                     if (value != null)
                     {
                         int medicineId = (int)value;
-                        BLL_Precription.DeletePrecriptionMedicine(medicineId,Id);
+                        BLL_Precription.DeletePrecriptionMedicine(medicineId, Id);
                         sqlDataSource3.Fill();
                         int money = BLL_Precription.GetTotalMoney(Id);
                         lbTien.Text = Convert.ToString(money);
@@ -214,5 +222,7 @@ namespace ClinienceSystemManagement.KhamBenh
         {
             sqlDataSource4.Fill();
         }
+
+
     }
 }

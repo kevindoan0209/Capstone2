@@ -671,11 +671,16 @@
             0,
             0,
             0});
-            this.txtThanNhiet.Location = new System.Drawing.Point(118, 12);
+            this.txtThanNhiet.Location = new System.Drawing.Point(118, -42);
             this.txtThanNhiet.Name = "txtThanNhiet";
             this.txtThanNhiet.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtThanNhiet.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
+            this.txtThanNhiet.Properties.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
             this.txtThanNhiet.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
             this.txtThanNhiet.Size = new System.Drawing.Size(78, 20);
             this.txtThanNhiet.StyleController = this.layoutControl1;
@@ -688,11 +693,16 @@
             0,
             0,
             0});
-            this.txtHuyetThu.Location = new System.Drawing.Point(118, 38);
+            this.txtHuyetThu.Location = new System.Drawing.Point(118, -16);
             this.txtHuyetThu.Name = "txtHuyetThu";
             this.txtHuyetThu.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtHuyetThu.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
+            this.txtHuyetThu.Properties.Increment = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
             this.txtHuyetThu.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
             this.txtHuyetThu.Size = new System.Drawing.Size(78, 20);
             this.txtHuyetThu.StyleController = this.layoutControl1;
@@ -705,11 +715,16 @@
             0,
             0,
             0});
-            this.txtHuyetTr.Location = new System.Drawing.Point(118, 64);
+            this.txtHuyetTr.Location = new System.Drawing.Point(118, 10);
             this.txtHuyetTr.Name = "txtHuyetTr";
             this.txtHuyetTr.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtHuyetTr.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
+            this.txtHuyetTr.Properties.Increment = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
             this.txtHuyetTr.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
             this.txtHuyetTr.Size = new System.Drawing.Size(78, 20);
             this.txtHuyetTr.StyleController = this.layoutControl1;
@@ -722,11 +737,16 @@
             0,
             0,
             0});
-            this.txtMach.Location = new System.Drawing.Point(118, 90);
+            this.txtMach.Location = new System.Drawing.Point(118, 36);
             this.txtMach.Name = "txtMach";
             this.txtMach.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtMach.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
+            this.txtMach.Properties.Increment = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
             this.txtMach.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
             this.txtMach.Size = new System.Drawing.Size(78, 20);
             this.txtMach.StyleController = this.layoutControl1;
@@ -739,11 +759,16 @@
             0,
             0,
             0});
-            this.txtNhipTho.Location = new System.Drawing.Point(118, 116);
+            this.txtNhipTho.Location = new System.Drawing.Point(118, 62);
             this.txtNhipTho.Name = "txtNhipTho";
             this.txtNhipTho.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtNhipTho.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
+            this.txtNhipTho.Properties.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.txtNhipTho.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
             this.txtNhipTho.Size = new System.Drawing.Size(78, 20);
             this.txtNhipTho.StyleController = this.layoutControl1;
@@ -756,11 +781,16 @@
             0,
             0,
             0});
-            this.txtChieuCao.Location = new System.Drawing.Point(118, 142);
+            this.txtChieuCao.Location = new System.Drawing.Point(118, 88);
             this.txtChieuCao.Name = "txtChieuCao";
             this.txtChieuCao.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtChieuCao.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
+            this.txtChieuCao.Properties.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.txtChieuCao.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
             this.txtChieuCao.Size = new System.Drawing.Size(78, 20);
             this.txtChieuCao.StyleController = this.layoutControl1;
@@ -773,11 +803,16 @@
             0,
             0,
             0});
-            this.txtCanNang.Location = new System.Drawing.Point(118, 168);
+            this.txtCanNang.Location = new System.Drawing.Point(118, 114);
             this.txtCanNang.Name = "txtCanNang";
             this.txtCanNang.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtCanNang.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
+            this.txtCanNang.Properties.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.txtCanNang.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
             this.txtCanNang.Size = new System.Drawing.Size(78, 20);
             this.txtCanNang.StyleController = this.layoutControl1;
@@ -790,11 +825,16 @@
             0,
             0,
             0});
-            this.txtVong2.Location = new System.Drawing.Point(118, 194);
+            this.txtVong2.Location = new System.Drawing.Point(118, 140);
             this.txtVong2.Name = "txtVong2";
             this.txtVong2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtVong2.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
+            this.txtVong2.Properties.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
             this.txtVong2.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
             this.txtVong2.Size = new System.Drawing.Size(78, 20);
             this.txtVong2.StyleController = this.layoutControl1;
@@ -807,11 +847,16 @@
             0,
             0,
             0});
-            this.txtVong3.Location = new System.Drawing.Point(118, 220);
+            this.txtVong3.Location = new System.Drawing.Point(118, 166);
             this.txtVong3.Name = "txtVong3";
             this.txtVong3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtVong3.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
+            this.txtVong3.Properties.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
             this.txtVong3.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
             this.txtVong3.Size = new System.Drawing.Size(78, 20);
             this.txtVong3.StyleController = this.layoutControl1;
@@ -848,7 +893,7 @@
             this.simpleLabelItem6,
             this.simpleLabelItem7,
             this.simpleLabelItem9});
-            this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup1.Location = new System.Drawing.Point(0, -54);
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(40, 10, 10, 10);
             this.layoutControlGroup1.Size = new System.Drawing.Size(298, 252);
@@ -1217,7 +1262,7 @@
             // xtraTabPage5
             // 
             this.xtraTabPage5.Name = "xtraTabPage5";
-            this.xtraTabPage5.Size = new System.Drawing.Size(298, 256);
+            this.xtraTabPage5.Size = new System.Drawing.Size(298, 304);
             this.xtraTabPage5.Text = "Kết quả KS";
             // 
             // sqlDataSource3
@@ -1375,7 +1420,7 @@
             this.xtraTabPage2.Controls.Add(this.label1);
             this.xtraTabPage2.Controls.Add(this.txtKhamThucThe);
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(301, 133);
+            this.xtraTabPage2.Size = new System.Drawing.Size(401, 133);
             this.xtraTabPage2.Text = "Khám thực thể";
             // 
             // label1

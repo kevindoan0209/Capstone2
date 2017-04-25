@@ -42,12 +42,18 @@ namespace DataAccessLayer
     partial void InsertAllergic_Type(Allergic_Type instance);
     partial void UpdateAllergic_Type(Allergic_Type instance);
     partial void DeleteAllergic_Type(Allergic_Type instance);
+    partial void InsertAppointment(Appointment instance);
+    partial void UpdateAppointment(Appointment instance);
+    partial void DeleteAppointment(Appointment instance);
     partial void InsertAppointmentss(Appointmentss instance);
     partial void UpdateAppointmentss(Appointmentss instance);
     partial void DeleteAppointmentss(Appointmentss instance);
     partial void InsertClinience(Clinience instance);
     partial void UpdateClinience(Clinience instance);
     partial void DeleteClinience(Clinience instance);
+    partial void InsertCombobox(Combobox instance);
+    partial void UpdateCombobox(Combobox instance);
+    partial void DeleteCombobox(Combobox instance);
     partial void InsertDisease(Disease instance);
     partial void UpdateDisease(Disease instance);
     partial void DeleteDisease(Disease instance);
@@ -87,6 +93,9 @@ namespace DataAccessLayer
     partial void InsertPrecription_Medicine(Precription_Medicine instance);
     partial void UpdatePrecription_Medicine(Precription_Medicine instance);
     partial void DeletePrecription_Medicine(Precription_Medicine instance);
+    partial void InsertResource(Resource instance);
+    partial void UpdateResource(Resource instance);
+    partial void DeleteResource(Resource instance);
     #endregion
 		
 		public DataClinienceDataContext() : 
@@ -151,6 +160,14 @@ namespace DataAccessLayer
 			}
 		}
 		
+		public System.Data.Linq.Table<Appointment> Appointments
+		{
+			get
+			{
+				return this.GetTable<Appointment>();
+			}
+		}
+		
 		public System.Data.Linq.Table<Appointmentss> Appointmentsses
 		{
 			get
@@ -164,6 +181,14 @@ namespace DataAccessLayer
 			get
 			{
 				return this.GetTable<Clinience>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Combobox> Comboboxes
+		{
+			get
+			{
+				return this.GetTable<Combobox>();
 			}
 		}
 		
@@ -268,6 +293,14 @@ namespace DataAccessLayer
 			get
 			{
 				return this.GetTable<Precription_Medicine>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Resource> Resources
+		{
+			get
+			{
+				return this.GetTable<Resource>();
 			}
 		}
 	}
@@ -1075,6 +1108,404 @@ namespace DataAccessLayer
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Appointments")]
+	public partial class Appointment : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _UniqueID;
+		
+		private System.Nullable<int> _Type;
+		
+		private System.Nullable<System.DateTime> _StartDate;
+		
+		private System.Nullable<System.DateTime> _EndDate;
+		
+		private System.Nullable<bool> _AllDay;
+		
+		private string _Subject;
+		
+		private string _Location;
+		
+		private string _Description;
+		
+		private System.Nullable<int> _Status;
+		
+		private System.Nullable<int> _Label;
+		
+		private System.Nullable<int> _ResourceID;
+		
+		private string _ResourceIDs;
+		
+		private string _ReminderInfo;
+		
+		private string _RecurrenceInfo;
+		
+		private string _CustomField1;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnUniqueIDChanging(int value);
+    partial void OnUniqueIDChanged();
+    partial void OnTypeChanging(System.Nullable<int> value);
+    partial void OnTypeChanged();
+    partial void OnStartDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnStartDateChanged();
+    partial void OnEndDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnEndDateChanged();
+    partial void OnAllDayChanging(System.Nullable<bool> value);
+    partial void OnAllDayChanged();
+    partial void OnSubjectChanging(string value);
+    partial void OnSubjectChanged();
+    partial void OnLocationChanging(string value);
+    partial void OnLocationChanged();
+    partial void OnDescriptionChanging(string value);
+    partial void OnDescriptionChanged();
+    partial void OnStatusChanging(System.Nullable<int> value);
+    partial void OnStatusChanged();
+    partial void OnLabelChanging(System.Nullable<int> value);
+    partial void OnLabelChanged();
+    partial void OnResourceIDChanging(System.Nullable<int> value);
+    partial void OnResourceIDChanged();
+    partial void OnResourceIDsChanging(string value);
+    partial void OnResourceIDsChanged();
+    partial void OnReminderInfoChanging(string value);
+    partial void OnReminderInfoChanged();
+    partial void OnRecurrenceInfoChanging(string value);
+    partial void OnRecurrenceInfoChanged();
+    partial void OnCustomField1Changing(string value);
+    partial void OnCustomField1Changed();
+    #endregion
+		
+		public Appointment()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UniqueID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int UniqueID
+		{
+			get
+			{
+				return this._UniqueID;
+			}
+			set
+			{
+				if ((this._UniqueID != value))
+				{
+					this.OnUniqueIDChanging(value);
+					this.SendPropertyChanging();
+					this._UniqueID = value;
+					this.SendPropertyChanged("UniqueID");
+					this.OnUniqueIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Type", DbType="Int")]
+		public System.Nullable<int> Type
+		{
+			get
+			{
+				return this._Type;
+			}
+			set
+			{
+				if ((this._Type != value))
+				{
+					this.OnTypeChanging(value);
+					this.SendPropertyChanging();
+					this._Type = value;
+					this.SendPropertyChanged("Type");
+					this.OnTypeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StartDate", DbType="SmallDateTime")]
+		public System.Nullable<System.DateTime> StartDate
+		{
+			get
+			{
+				return this._StartDate;
+			}
+			set
+			{
+				if ((this._StartDate != value))
+				{
+					this.OnStartDateChanging(value);
+					this.SendPropertyChanging();
+					this._StartDate = value;
+					this.SendPropertyChanged("StartDate");
+					this.OnStartDateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EndDate", DbType="SmallDateTime")]
+		public System.Nullable<System.DateTime> EndDate
+		{
+			get
+			{
+				return this._EndDate;
+			}
+			set
+			{
+				if ((this._EndDate != value))
+				{
+					this.OnEndDateChanging(value);
+					this.SendPropertyChanging();
+					this._EndDate = value;
+					this.SendPropertyChanged("EndDate");
+					this.OnEndDateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AllDay", DbType="Bit")]
+		public System.Nullable<bool> AllDay
+		{
+			get
+			{
+				return this._AllDay;
+			}
+			set
+			{
+				if ((this._AllDay != value))
+				{
+					this.OnAllDayChanging(value);
+					this.SendPropertyChanging();
+					this._AllDay = value;
+					this.SendPropertyChanged("AllDay");
+					this.OnAllDayChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Subject", DbType="NVarChar(50)")]
+		public string Subject
+		{
+			get
+			{
+				return this._Subject;
+			}
+			set
+			{
+				if ((this._Subject != value))
+				{
+					this.OnSubjectChanging(value);
+					this.SendPropertyChanging();
+					this._Subject = value;
+					this.SendPropertyChanged("Subject");
+					this.OnSubjectChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Location", DbType="NVarChar(50)")]
+		public string Location
+		{
+			get
+			{
+				return this._Location;
+			}
+			set
+			{
+				if ((this._Location != value))
+				{
+					this.OnLocationChanging(value);
+					this.SendPropertyChanging();
+					this._Location = value;
+					this.SendPropertyChanged("Location");
+					this.OnLocationChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Description", DbType="NVarChar(MAX)")]
+		public string Description
+		{
+			get
+			{
+				return this._Description;
+			}
+			set
+			{
+				if ((this._Description != value))
+				{
+					this.OnDescriptionChanging(value);
+					this.SendPropertyChanging();
+					this._Description = value;
+					this.SendPropertyChanged("Description");
+					this.OnDescriptionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Status", DbType="Int")]
+		public System.Nullable<int> Status
+		{
+			get
+			{
+				return this._Status;
+			}
+			set
+			{
+				if ((this._Status != value))
+				{
+					this.OnStatusChanging(value);
+					this.SendPropertyChanging();
+					this._Status = value;
+					this.SendPropertyChanged("Status");
+					this.OnStatusChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Label", DbType="Int")]
+		public System.Nullable<int> Label
+		{
+			get
+			{
+				return this._Label;
+			}
+			set
+			{
+				if ((this._Label != value))
+				{
+					this.OnLabelChanging(value);
+					this.SendPropertyChanging();
+					this._Label = value;
+					this.SendPropertyChanged("Label");
+					this.OnLabelChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ResourceID", DbType="Int")]
+		public System.Nullable<int> ResourceID
+		{
+			get
+			{
+				return this._ResourceID;
+			}
+			set
+			{
+				if ((this._ResourceID != value))
+				{
+					this.OnResourceIDChanging(value);
+					this.SendPropertyChanging();
+					this._ResourceID = value;
+					this.SendPropertyChanged("ResourceID");
+					this.OnResourceIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ResourceIDs", DbType="NVarChar(MAX)")]
+		public string ResourceIDs
+		{
+			get
+			{
+				return this._ResourceIDs;
+			}
+			set
+			{
+				if ((this._ResourceIDs != value))
+				{
+					this.OnResourceIDsChanging(value);
+					this.SendPropertyChanging();
+					this._ResourceIDs = value;
+					this.SendPropertyChanged("ResourceIDs");
+					this.OnResourceIDsChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ReminderInfo", DbType="NVarChar(MAX)")]
+		public string ReminderInfo
+		{
+			get
+			{
+				return this._ReminderInfo;
+			}
+			set
+			{
+				if ((this._ReminderInfo != value))
+				{
+					this.OnReminderInfoChanging(value);
+					this.SendPropertyChanging();
+					this._ReminderInfo = value;
+					this.SendPropertyChanged("ReminderInfo");
+					this.OnReminderInfoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RecurrenceInfo", DbType="NVarChar(MAX)")]
+		public string RecurrenceInfo
+		{
+			get
+			{
+				return this._RecurrenceInfo;
+			}
+			set
+			{
+				if ((this._RecurrenceInfo != value))
+				{
+					this.OnRecurrenceInfoChanging(value);
+					this.SendPropertyChanging();
+					this._RecurrenceInfo = value;
+					this.SendPropertyChanged("RecurrenceInfo");
+					this.OnRecurrenceInfoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CustomField1", DbType="NVarChar(MAX)")]
+		public string CustomField1
+		{
+			get
+			{
+				return this._CustomField1;
+			}
+			set
+			{
+				if ((this._CustomField1 != value))
+				{
+					this.OnCustomField1Changing(value);
+					this.SendPropertyChanging();
+					this._CustomField1 = value;
+					this.SendPropertyChanged("CustomField1");
+					this.OnCustomField1Changed();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Appointmentss")]
 	public partial class Appointmentss : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -1592,6 +2023,116 @@ namespace DataAccessLayer
 					this._Clinience_Cost = value;
 					this.SendPropertyChanged("Clinience_Cost");
 					this.OnClinience_CostChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Combobox")]
+	public partial class Combobox : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Id;
+		
+		private string _Name;
+		
+		private string _Type;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OnNameChanging(string value);
+    partial void OnNameChanged();
+    partial void OnTypeChanging(string value);
+    partial void OnTypeChanged();
+    #endregion
+		
+		public Combobox()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this.OnIdChanging(value);
+					this.SendPropertyChanging();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Name", DbType="NVarChar(50)")]
+		public string Name
+		{
+			get
+			{
+				return this._Name;
+			}
+			set
+			{
+				if ((this._Name != value))
+				{
+					this.OnNameChanging(value);
+					this.SendPropertyChanging();
+					this._Name = value;
+					this.SendPropertyChanged("Name");
+					this.OnNameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Type", DbType="NChar(10)")]
+		public string Type
+		{
+			get
+			{
+				return this._Type;
+			}
+			set
+			{
+				if ((this._Type != value))
+				{
+					this.OnTypeChanging(value);
+					this.SendPropertyChanging();
+					this._Type = value;
+					this.SendPropertyChanged("Type");
+					this.OnTypeChanged();
 				}
 			}
 		}
@@ -4808,6 +5349,188 @@ namespace DataAccessLayer
 						this._Precription_ID = default(int);
 					}
 					this.SendPropertyChanged("Precription");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Resources")]
+	public partial class Resource : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _UniqueID;
+		
+		private int _ResourceID;
+		
+		private string _ResourceName;
+		
+		private System.Nullable<int> _Color;
+		
+		private System.Data.Linq.Binary _Image;
+		
+		private string _CustomField1;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnUniqueIDChanging(int value);
+    partial void OnUniqueIDChanged();
+    partial void OnResourceIDChanging(int value);
+    partial void OnResourceIDChanged();
+    partial void OnResourceNameChanging(string value);
+    partial void OnResourceNameChanged();
+    partial void OnColorChanging(System.Nullable<int> value);
+    partial void OnColorChanged();
+    partial void OnImageChanging(System.Data.Linq.Binary value);
+    partial void OnImageChanged();
+    partial void OnCustomField1Changing(string value);
+    partial void OnCustomField1Changed();
+    #endregion
+		
+		public Resource()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UniqueID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int UniqueID
+		{
+			get
+			{
+				return this._UniqueID;
+			}
+			set
+			{
+				if ((this._UniqueID != value))
+				{
+					this.OnUniqueIDChanging(value);
+					this.SendPropertyChanging();
+					this._UniqueID = value;
+					this.SendPropertyChanged("UniqueID");
+					this.OnUniqueIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ResourceID", DbType="Int NOT NULL")]
+		public int ResourceID
+		{
+			get
+			{
+				return this._ResourceID;
+			}
+			set
+			{
+				if ((this._ResourceID != value))
+				{
+					this.OnResourceIDChanging(value);
+					this.SendPropertyChanging();
+					this._ResourceID = value;
+					this.SendPropertyChanged("ResourceID");
+					this.OnResourceIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ResourceName", DbType="NVarChar(50)")]
+		public string ResourceName
+		{
+			get
+			{
+				return this._ResourceName;
+			}
+			set
+			{
+				if ((this._ResourceName != value))
+				{
+					this.OnResourceNameChanging(value);
+					this.SendPropertyChanging();
+					this._ResourceName = value;
+					this.SendPropertyChanged("ResourceName");
+					this.OnResourceNameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Color", DbType="Int")]
+		public System.Nullable<int> Color
+		{
+			get
+			{
+				return this._Color;
+			}
+			set
+			{
+				if ((this._Color != value))
+				{
+					this.OnColorChanging(value);
+					this.SendPropertyChanging();
+					this._Color = value;
+					this.SendPropertyChanged("Color");
+					this.OnColorChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Image", DbType="Image", UpdateCheck=UpdateCheck.Never)]
+		public System.Data.Linq.Binary Image
+		{
+			get
+			{
+				return this._Image;
+			}
+			set
+			{
+				if ((this._Image != value))
+				{
+					this.OnImageChanging(value);
+					this.SendPropertyChanging();
+					this._Image = value;
+					this.SendPropertyChanged("Image");
+					this.OnImageChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CustomField1", DbType="NVarChar(MAX)")]
+		public string CustomField1
+		{
+			get
+			{
+				return this._CustomField1;
+			}
+			set
+			{
+				if ((this._CustomField1 != value))
+				{
+					this.OnCustomField1Changing(value);
+					this.SendPropertyChanging();
+					this._CustomField1 = value;
+					this.SendPropertyChanged("CustomField1");
+					this.OnCustomField1Changed();
 				}
 			}
 		}

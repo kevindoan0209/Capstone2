@@ -22,5 +22,25 @@ namespace BussinessLogicLayer
         {
             return _clinience.GetCost();
         }
+        public static int GetAmountByDay(DateTime date)
+        {
+            return _clinience.GetAmountByDay(date);
+        }
+        public static int GetAmountByMonth(DateTime date)
+        {
+            return _clinience.GetAmountByMonth(date);
+        }
+        public static int GetAmountByYear(DateTime date)
+        {
+            return _clinience.GetAmountByYear(date);
+        }
+        public static int GetAmountByALL()
+        {
+            return _clinience.GetAmountByALL();
+        }
+        public static int GetAmountByOption(DateTime beginDate, DateTime endDate)
+        {
+            return _clinience.GetAmountByOption(beginDate, endDate);
+        }
     }
 }
