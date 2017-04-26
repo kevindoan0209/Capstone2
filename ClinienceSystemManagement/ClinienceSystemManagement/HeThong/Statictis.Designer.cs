@@ -548,7 +548,7 @@
             // 
             // gvDanhMuc
             // 
-            this.gvDanhMuc.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 9.75F);
+            this.gvDanhMuc.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gvDanhMuc.Appearance.HeaderPanel.Options.UseFont = true;
             this.gvDanhMuc.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colAccount_Name,
@@ -561,17 +561,22 @@
             this.colYear,
             this.colExamination});
             this.gvDanhMuc.GridControl = this.grcDanhMuc;
+            this.gvDanhMuc.GroupCount = 1;
             this.gvDanhMuc.Name = "gvDanhMuc";
             this.gvDanhMuc.OptionsView.EnableAppearanceEvenRow = true;
+            this.gvDanhMuc.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never;
+            this.gvDanhMuc.OptionsView.ShowGroupPanel = false;
+            this.gvDanhMuc.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
+            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.colAccount_Name, DevExpress.Data.ColumnSortOrder.Ascending)});
             // 
             // colAccount_Name
             // 
-            this.colAccount_Name.Caption = "Tên bệnh nhân";
+            this.colAccount_Name.Caption = "Bệnh nhân";
             this.colAccount_Name.FieldName = "Account_Name";
             this.colAccount_Name.Name = "colAccount_Name";
             this.colAccount_Name.Visible = true;
             this.colAccount_Name.VisibleIndex = 1;
-            this.colAccount_Name.Width = 138;
+            this.colAccount_Name.Width = 122;
             // 
             // colPrecription_ID
             // 
@@ -580,7 +585,7 @@
             this.colPrecription_ID.Name = "colPrecription_ID";
             this.colPrecription_ID.Visible = true;
             this.colPrecription_ID.VisibleIndex = 0;
-            this.colPrecription_ID.Width = 49;
+            this.colPrecription_ID.Width = 63;
             // 
             // colPrecription_Date
             // 
@@ -588,8 +593,8 @@
             this.colPrecription_Date.FieldName = "Precription_Date";
             this.colPrecription_Date.Name = "colPrecription_Date";
             this.colPrecription_Date.Visible = true;
-            this.colPrecription_Date.VisibleIndex = 2;
-            this.colPrecription_Date.Width = 84;
+            this.colPrecription_Date.VisibleIndex = 1;
+            this.colPrecription_Date.Width = 109;
             // 
             // colPrecription_Money
             // 
@@ -597,8 +602,8 @@
             this.colPrecription_Money.FieldName = "Precription_Money";
             this.colPrecription_Money.Name = "colPrecription_Money";
             this.colPrecription_Money.Visible = true;
-            this.colPrecription_Money.VisibleIndex = 3;
-            this.colPrecription_Money.Width = 92;
+            this.colPrecription_Money.VisibleIndex = 2;
+            this.colPrecription_Money.Width = 94;
             // 
             // colPrecription_Amount
             // 
@@ -607,7 +612,7 @@
             this.colPrecription_Amount.Name = "colPrecription_Amount";
             this.colPrecription_Amount.Visible = true;
             this.colPrecription_Amount.VisibleIndex = 4;
-            this.colPrecription_Amount.Width = 119;
+            this.colPrecription_Amount.Width = 130;
             // 
             // colDay
             // 
@@ -616,8 +621,6 @@
             this.colDay.Name = "colDay";
             this.colDay.UnboundExpression = "GetDay([Precription_Date])";
             this.colDay.UnboundType = DevExpress.Data.UnboundColumnType.String;
-            this.colDay.Visible = true;
-            this.colDay.VisibleIndex = 5;
             // 
             // colMonth
             // 
@@ -626,8 +629,6 @@
             this.colMonth.Name = "colMonth";
             this.colMonth.UnboundExpression = "GetMonth([Precription_Date])";
             this.colMonth.UnboundType = DevExpress.Data.UnboundColumnType.String;
-            this.colMonth.Visible = true;
-            this.colMonth.VisibleIndex = 6;
             // 
             // colYear
             // 
@@ -636,18 +637,17 @@
             this.colYear.Name = "colYear";
             this.colYear.UnboundExpression = "GetYear([Precription_Date])";
             this.colYear.UnboundType = DevExpress.Data.UnboundColumnType.String;
-            this.colYear.Visible = true;
-            this.colYear.VisibleIndex = 7;
             // 
             // colExamination
             // 
-            this.colExamination.Caption = "gridColumn4";
+            this.colExamination.Caption = "Tiền khám";
             this.colExamination.FieldName = "colExamination";
             this.colExamination.Name = "colExamination";
             this.colExamination.UnboundExpression = "[Precription_Amount] - [Precription_Money]";
             this.colExamination.UnboundType = DevExpress.Data.UnboundColumnType.Integer;
             this.colExamination.Visible = true;
-            this.colExamination.VisibleIndex = 8;
+            this.colExamination.VisibleIndex = 3;
+            this.colExamination.Width = 86;
             // 
             // Statictis
             // 

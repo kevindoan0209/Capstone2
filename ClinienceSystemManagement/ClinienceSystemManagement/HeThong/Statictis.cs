@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using BussinessLogicLayer;
+using DevExpress.XtraGrid.Views.Grid;
+using DevExpress.XtraGrid.Columns;
 
 namespace ClinienceSystemManagement.HeThong
 {
@@ -34,7 +36,9 @@ namespace ClinienceSystemManagement.HeThong
         private void btnHuy_Click(object sender, EventArgs e)
         {
             this.Close();
+          
         }
+
         private void HandleVisible(Boolean turn)
         {
             lbBatDau.Visible = turn;
@@ -67,12 +71,12 @@ namespace ClinienceSystemManagement.HeThong
                 var year = date.Year;
                 string group = lkeThoiDiem.GetColumnValue("Id").ToString();
                 int groupId = Convert.ToInt32(group);
-
                 String Amount;
                 //Today
                 if (groupId == 1)
                 {
                     String filter = "[Precription_Date] ='" + day + "'";
+
                     gvDanhMuc.ActiveFilterString = filter;
                     Amount = BLL_Clinience.GetAmountByDay(date);
                     if (Amount == "")
@@ -91,16 +95,7 @@ namespace ClinienceSystemManagement.HeThong
                     //Month
                     if (groupId == 2)
                     {
-                        String time = "1/4/2017";
-                        String time2 = "30/4/2017";
-                        var begin = Convert.ToDateTime(time); 
-                        var begin2 = Convert.ToDateTime(time2);
-                        var daytest = begin2.Date;
-                        String filter1 = "[Precription_Date] >'" + begin + "'";
-                        String filter2 = "[Precription_Date] <'" + begin2 + "'";
-                        String filter = filter1 + "And" + filter2;
-                        // String filter = "[Precription_Date] >'1/4/2017' And [Precription_Date] <'1/5/2017'";
-                        //String filter = "[Precription_Date] <'1/5/2017'";
+                        String filter = "[colMonth] ='" + month + "' And [colYear] ='" + year + "'";
                         gvDanhMuc.ActiveFilterString = filter;
                         Amount = BLL_Clinience.GetAmountByMonth(date);
                         if (Amount == "")
@@ -119,6 +114,8 @@ namespace ClinienceSystemManagement.HeThong
                         //Year
                         if (groupId == 3)
                         {
+                            String filter = "[colYear] ='" + year + "'";
+                            gvDanhMuc.ActiveFilterString = filter;
                             Amount = BLL_Clinience.GetAmountByYear(date);
                             if (Amount == "")
                             {
@@ -171,10 +168,14 @@ namespace ClinienceSystemManagement.HeThong
                                     }
                                     else
                                     {
-                                        var begin = beginDate.Date;
-                                        var end = endDate.Date;
-                                        String filter = "[Precription_Date] >'" + begin + "' And [Precription_Date] <'" + end + "'";
-                                        gvDanhMuc.ActiveFilterString = filter;
+                                        var beginDay = beginDate.Day;
+                                        var beginMonth= beginDate.Month;
+                                        var beginYear = beginDate.Year;
+                                        var endDay = endDate.Day;
+                                        var endMonth = endDate.Month;
+                                        var endYear = endDate.Year;
+                                        String filter = "[colDay] >='" + beginDay + "' And [colDay] <='" + endDay + "' And [colMonth] >='" + beginMonth + "' And [colMonth] <='" + endMonth + "' And [colYear] ='" + beginYear + "'";
+                                        gvDanhMuc.ActiveFilterString = filter;                               
                                         Amount = BLL_Clinience.GetAmountByOption(beginDate, endDate);
                                         if (Amount == "")
                                         {
