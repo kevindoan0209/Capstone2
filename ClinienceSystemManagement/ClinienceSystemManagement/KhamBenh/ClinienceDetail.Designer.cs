@@ -29,34 +29,34 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery33 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column65 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression65 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table41 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column66 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression66 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table1 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column2 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression2 = new DevExpress.DataAccess.Sql.ColumnExpression();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClinienceDetail));
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery34 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column67 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression67 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table42 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column68 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression68 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery35 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column69 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression69 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table43 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column70 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression70 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Join join9 = new DevExpress.DataAccess.Sql.Join();
-            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo9 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
-            DevExpress.DataAccess.Sql.Table table44 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery36 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column71 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression71 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table45 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column72 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression72 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery2 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column3 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression3 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table2 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column4 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression4 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery3 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column5 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression5 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table3 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column6 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression6 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Join join1 = new DevExpress.DataAccess.Sql.Join();
+            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo1 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
+            DevExpress.DataAccess.Sql.Table table4 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery4 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column7 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression7 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table5 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column8 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression8 = new DevExpress.DataAccess.Sql.ColumnExpression();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.lbTrangThai = new DevExpress.XtraEditors.LabelControl();
@@ -107,19 +107,19 @@
             // 
             this.sqlDataSource1.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            columnExpression65.ColumnName = "Paraclinical_Group_ID";
-            table41.Name = "Paraclinical_Group";
-            columnExpression65.Table = table41;
-            column65.Expression = columnExpression65;
-            columnExpression66.ColumnName = "Paraclinical_Group_Name";
-            columnExpression66.Table = table41;
-            column66.Expression = columnExpression66;
-            selectQuery33.Columns.Add(column65);
-            selectQuery33.Columns.Add(column66);
-            selectQuery33.Name = "Paraclinical_Group";
-            selectQuery33.Tables.Add(table41);
+            columnExpression1.ColumnName = "Paraclinical_Group_ID";
+            table1.Name = "Paraclinical_Group";
+            columnExpression1.Table = table1;
+            column1.Expression = columnExpression1;
+            columnExpression2.ColumnName = "Paraclinical_Group_Name";
+            columnExpression2.Table = table1;
+            column2.Expression = columnExpression2;
+            selectQuery1.Columns.Add(column1);
+            selectQuery1.Columns.Add(column2);
+            selectQuery1.Name = "Paraclinical_Group";
+            selectQuery1.Tables.Add(table1);
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery33});
+            selectQuery1});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // lbTrangThai
@@ -264,46 +264,46 @@
             // 
             this.sqlDataSource4.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource4.Name = "sqlDataSource4";
-            columnExpression67.ColumnName = "Ingredient_ID";
-            table42.Name = "Ingredient";
-            columnExpression67.Table = table42;
-            column67.Expression = columnExpression67;
-            columnExpression68.ColumnName = "Ingredient_Name";
-            columnExpression68.Table = table42;
-            column68.Expression = columnExpression68;
-            selectQuery34.Columns.Add(column67);
-            selectQuery34.Columns.Add(column68);
-            selectQuery34.Name = "Ingredient";
-            selectQuery34.Tables.Add(table42);
+            columnExpression3.ColumnName = "Ingredient_ID";
+            table2.Name = "Ingredient";
+            columnExpression3.Table = table2;
+            column3.Expression = columnExpression3;
+            columnExpression4.ColumnName = "Ingredient_Name";
+            columnExpression4.Table = table2;
+            column4.Expression = columnExpression4;
+            selectQuery2.Columns.Add(column3);
+            selectQuery2.Columns.Add(column4);
+            selectQuery2.Name = "Ingredient";
+            selectQuery2.Tables.Add(table2);
             this.sqlDataSource4.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery34});
+            selectQuery2});
             this.sqlDataSource4.ResultSchemaSerializable = resources.GetString("sqlDataSource4.ResultSchemaSerializable");
             // 
             // sqlDataSource2
             // 
             this.sqlDataSource2.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource2.Name = "sqlDataSource2";
-            columnExpression69.ColumnName = "Ingredient_ID";
-            table43.Name = "Ingredient";
-            columnExpression69.Table = table43;
-            column69.Expression = columnExpression69;
-            columnExpression70.ColumnName = "Ingredient_Name";
-            columnExpression70.Table = table43;
-            column70.Expression = columnExpression70;
-            selectQuery35.Columns.Add(column69);
-            selectQuery35.Columns.Add(column70);
-            selectQuery35.Name = "Medincine_Ingredient";
-            relationColumnInfo9.NestedKeyColumn = "Ingredient_ID";
-            relationColumnInfo9.ParentKeyColumn = "Ingredient_ID";
-            join9.KeyColumns.Add(relationColumnInfo9);
-            join9.Nested = table43;
-            table44.Name = "Medincine_Ingredient";
-            join9.Parent = table44;
-            selectQuery35.Relations.Add(join9);
-            selectQuery35.Tables.Add(table44);
-            selectQuery35.Tables.Add(table43);
+            columnExpression5.ColumnName = "Ingredient_ID";
+            table3.Name = "Ingredient";
+            columnExpression5.Table = table3;
+            column5.Expression = columnExpression5;
+            columnExpression6.ColumnName = "Ingredient_Name";
+            columnExpression6.Table = table3;
+            column6.Expression = columnExpression6;
+            selectQuery3.Columns.Add(column5);
+            selectQuery3.Columns.Add(column6);
+            selectQuery3.Name = "Medincine_Ingredient";
+            relationColumnInfo1.NestedKeyColumn = "Ingredient_ID";
+            relationColumnInfo1.ParentKeyColumn = "Ingredient_ID";
+            join1.KeyColumns.Add(relationColumnInfo1);
+            join1.Nested = table3;
+            table4.Name = "Medincine_Ingredient";
+            join1.Parent = table4;
+            selectQuery3.Relations.Add(join1);
+            selectQuery3.Tables.Add(table4);
+            selectQuery3.Tables.Add(table3);
             this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery35});
+            selectQuery3});
             this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
             // 
             // bindingSource2
@@ -315,19 +315,19 @@
             // 
             this.sqlDataSource3.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource3.Name = "sqlDataSource3";
-            columnExpression71.ColumnName = "Ingredient_Name";
-            table45.Name = "Ingredient";
-            columnExpression71.Table = table45;
-            column71.Expression = columnExpression71;
-            columnExpression72.ColumnName = "Ingredient_ID";
-            columnExpression72.Table = table45;
-            column72.Expression = columnExpression72;
-            selectQuery36.Columns.Add(column71);
-            selectQuery36.Columns.Add(column72);
-            selectQuery36.Name = "Ingredient";
-            selectQuery36.Tables.Add(table45);
+            columnExpression7.ColumnName = "Ingredient_Name";
+            table5.Name = "Ingredient";
+            columnExpression7.Table = table5;
+            column7.Expression = columnExpression7;
+            columnExpression8.ColumnName = "Ingredient_ID";
+            columnExpression8.Table = table5;
+            column8.Expression = columnExpression8;
+            selectQuery4.Columns.Add(column7);
+            selectQuery4.Columns.Add(column8);
+            selectQuery4.Name = "Ingredient";
+            selectQuery4.Tables.Add(table5);
             this.sqlDataSource3.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery36});
+            selectQuery4});
             this.sqlDataSource3.ResultSchemaSerializable = resources.GetString("sqlDataSource3.ResultSchemaSerializable");
             // 
             // bindingSource3
@@ -379,6 +379,7 @@
             this.ClientSize = new System.Drawing.Size(416, 301);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panelControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;

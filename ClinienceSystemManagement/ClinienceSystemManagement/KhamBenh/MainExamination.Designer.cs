@@ -671,7 +671,7 @@
             0,
             0,
             0});
-            this.txtThanNhiet.Location = new System.Drawing.Point(118, -42);
+            this.txtThanNhiet.Location = new System.Drawing.Point(118, 12);
             this.txtThanNhiet.Name = "txtThanNhiet";
             this.txtThanNhiet.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -693,7 +693,7 @@
             0,
             0,
             0});
-            this.txtHuyetThu.Location = new System.Drawing.Point(118, -16);
+            this.txtHuyetThu.Location = new System.Drawing.Point(118, 38);
             this.txtHuyetThu.Name = "txtHuyetThu";
             this.txtHuyetThu.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -715,7 +715,7 @@
             0,
             0,
             0});
-            this.txtHuyetTr.Location = new System.Drawing.Point(118, 10);
+            this.txtHuyetTr.Location = new System.Drawing.Point(118, 64);
             this.txtHuyetTr.Name = "txtHuyetTr";
             this.txtHuyetTr.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -737,7 +737,7 @@
             0,
             0,
             0});
-            this.txtMach.Location = new System.Drawing.Point(118, 36);
+            this.txtMach.Location = new System.Drawing.Point(118, 90);
             this.txtMach.Name = "txtMach";
             this.txtMach.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -759,7 +759,7 @@
             0,
             0,
             0});
-            this.txtNhipTho.Location = new System.Drawing.Point(118, 62);
+            this.txtNhipTho.Location = new System.Drawing.Point(118, 116);
             this.txtNhipTho.Name = "txtNhipTho";
             this.txtNhipTho.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -781,7 +781,7 @@
             0,
             0,
             0});
-            this.txtChieuCao.Location = new System.Drawing.Point(118, 88);
+            this.txtChieuCao.Location = new System.Drawing.Point(118, 142);
             this.txtChieuCao.Name = "txtChieuCao";
             this.txtChieuCao.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -803,7 +803,7 @@
             0,
             0,
             0});
-            this.txtCanNang.Location = new System.Drawing.Point(118, 114);
+            this.txtCanNang.Location = new System.Drawing.Point(118, 168);
             this.txtCanNang.Name = "txtCanNang";
             this.txtCanNang.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -825,7 +825,7 @@
             0,
             0,
             0});
-            this.txtVong2.Location = new System.Drawing.Point(118, 140);
+            this.txtVong2.Location = new System.Drawing.Point(118, 194);
             this.txtVong2.Name = "txtVong2";
             this.txtVong2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -847,7 +847,7 @@
             0,
             0,
             0});
-            this.txtVong3.Location = new System.Drawing.Point(118, 166);
+            this.txtVong3.Location = new System.Drawing.Point(118, 220);
             this.txtVong3.Name = "txtVong3";
             this.txtVong3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -893,7 +893,7 @@
             this.simpleLabelItem6,
             this.simpleLabelItem7,
             this.simpleLabelItem9});
-            this.layoutControlGroup1.Location = new System.Drawing.Point(0, -54);
+            this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(40, 10, 10, 10);
             this.layoutControlGroup1.Size = new System.Drawing.Size(298, 252);
@@ -1667,6 +1667,7 @@
             this.Controls.Add(this.panelControl3);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panelControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;

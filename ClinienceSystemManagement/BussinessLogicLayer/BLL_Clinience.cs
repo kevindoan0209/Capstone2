@@ -22,23 +22,23 @@ namespace BussinessLogicLayer
         {
             return _clinience.GetCost();
         }
-        public static int GetAmountByDay(DateTime date)
+        public static String GetAmountByDay(DateTime date)
         {
             return _clinience.GetAmountByDay(date);
         }
-        public static int GetAmountByMonth(DateTime date)
+        public static String GetAmountByMonth(DateTime date)
         {
             return _clinience.GetAmountByMonth(date);
         }
-        public static int GetAmountByYear(DateTime date)
+        public static String GetAmountByYear(DateTime date)
         {
             return _clinience.GetAmountByYear(date);
         }
-        public static int GetAmountByALL()
+        public static String GetAmountByALL()
         {
             return _clinience.GetAmountByALL();
         }
-        public static int GetAmountByOption(DateTime beginDate, DateTime endDate)
+        public static String GetAmountByOption(DateTime beginDate, DateTime endDate)
         {
             return _clinience.GetAmountByOption(beginDate, endDate);
         }

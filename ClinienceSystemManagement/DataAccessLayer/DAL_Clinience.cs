@@ -38,46 +38,46 @@ namespace DataAccessLayer
             return temp;
         }
 
-        public int GetAmountByDay(DateTime date)
+        public String GetAmountByDay(DateTime date)
         {
             const String sqlCommand = "SELECT SUM(Precription_Amount) FROM Precription Where DAY(Precription_Date) = DAY(@date) and MONTH(Precription_Date) = MONTH(@date) and Year(Precription_Date) = Year(@date) ";
             SqlCommand command = new SqlCommand(sqlCommand, connect());
             command.Parameters.AddWithValue("@date", date);
-            int temp = int.Parse(command.ExecuteScalar().ToString());
+            String temp = Convert.ToString(command.ExecuteScalar());
             return temp;
         }
 
-        public int GetAmountByMonth(DateTime date)
+        public String GetAmountByMonth(DateTime date)
         {
             const String sqlCommand = "SELECT SUM(Precription_Amount) FROM Precription Where MONTH (Precription_Date) = MONTH(@date) and Year(Precription_Date) = Year(@date) ";
             SqlCommand command = new SqlCommand(sqlCommand, connect());
             command.Parameters.AddWithValue("@date", date);
-            int temp = int.Parse(command.ExecuteScalar().ToString());
+            String temp = Convert.ToString(command.ExecuteScalar());
             return temp;
         }
 
-        public int GetAmountByYear(DateTime date)
+        public String GetAmountByYear(DateTime date)
         {
             const String sqlCommand = "SELECT SUM(Precription_Amount) FROM Precription Where Year(Precription_Date) = Year(@date) ";
             SqlCommand command = new SqlCommand(sqlCommand, connect());
             command.Parameters.AddWithValue("@date", date);
-            int temp = int.Parse(command.ExecuteScalar().ToString());
+            String temp = Convert.ToString(command.ExecuteScalar());
             return temp;
         }
-        public int GetAmountByALL()
+        public String GetAmountByALL()
         {
             const String sqlCommand = "SELECT SUM(Precription_Amount)FROM Precription";
             SqlCommand command = new SqlCommand(sqlCommand, connect());
-            int temp = int.Parse(command.ExecuteScalar().ToString());
+            String temp = Convert.ToString(command.ExecuteScalar());
             return temp;
         }
-        public int GetAmountByOption(DateTime beginDate, DateTime endDate)
+        public String GetAmountByOption(DateTime beginDate, DateTime endDate)
         {
             const String sqlCommand = "SELECT SUM(Precription_Amount) FROM Precription Where Precription_Date >= @beginDate and Precription_Date < = @endDate";
             SqlCommand command = new SqlCommand(sqlCommand, connect());
             command.Parameters.AddWithValue("@beginDate", beginDate);
             command.Parameters.AddWithValue("@endDate", endDate);
-            int temp = int.Parse(command.ExecuteScalar().ToString());
+            String temp = Convert.ToString(command.ExecuteScalar());
             return temp;
         }
     }
