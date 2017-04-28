@@ -117,10 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="groupPanel1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="groupPanel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
+  <metadata name="lbTen.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lbTen.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt</value>
@@ -147,18 +153,21 @@
   <data name="&gt;&gt;lbTen.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="pictureBox1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAAG8AAABvAfGi3EMAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
-        AAABvElEQVQ4T3VT2yuDYRifP2FE5rQhIhfuZYUr5c6ta3EpRW5EwpUZpeUQWg61OY055dDa9822xmxj
-        u1BSihFCyW6mft733bfPt+311u/r6Xl+z+97n8OrApCCsqBYWRYQB0uDop0gKsFOfTSWzlcaWbqAq4uQ
-        YwT4BzHKodwUAZYcEvY4CVxQblKECUh/5pK1Z8fQWC0odhyk+GkOE6B1EQf32gVb61APjSF/aRnZo0YU
-        7tqU8RjNVUkN+wsEiLrfyeyCCROKDneYTW+iHhn/4xHoQuKAihi026i99qDl5pKh0SdAL5yiOXIu+yjK
-        ZxbQSnx1YW9SxE4F6JhQEXJh8vkenz9xUhr/PH9/wRa9QzXhSgJRWSCJmis3+h9uESJkeuJEMPLxim7v
-        GbTmJZkngQmwEnhYeXvC1ssjSpyHUA8boHWfpHPsmU1UoMd/gabFVeSa5njJiSZyxxgQkGOYQr15Fb0+
-        uWHpSIyRlJm5SJcC8mbn0eZwoENwyqNUQl4k6ZOxyiXiERqsG6gyTrNFUsYyVlkWSdyElaNZs0C/tom+
-        27Aymf+YlKB1JZ9z513kvd3v+Src33bxnzNUvwUQsQevJDBLAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        bwAAAG8B8aLcQwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAG8SURBVDhPdVPb
+        K4NhGJ8/YUTmtCEiF+5lhSvlzq1rcSlFbkTClRml5RBaDrU5jTnl0Nr3zbbGbGO7UFKKEULJbqZ+3vfd
+        t8+37fXW7+vpeX7P73ufw6sCkIKyoFhZFhAHS4OinSAqwU59NJbOVxpZuoCri5BjBPgHMcqh3BQBlhwS
+        9jgJXFBuUoQJSH/mkrVnx9BYLSh2HKT4aQ4ToHURB/faBVvrUA+NIX9pGdmjRhTu2pTxGM1VSQ37CwSI
+        ut/J7IIJE4oOd5hNb6IeGf/jEehC4oCKGLTbqL32oOXmkqHRJ0AvnKI5ci77KMpnFtBKfHVhb1LETgXo
+        mFARcmHy+R6fP3FSGv88f3/BFr1DNeFKAlFZIImaKzf6H24RImR64kQw8vGKbu8ZtOYlmSeBCbASeFh5
+        e8LWyyNKnIdQDxugdZ+kc+yZTVSgx3+BpsVV5JrmeMmJJnLHGBCQY5hCvXkVvT65YelIjJGUmblIlwLy
+        ZufR5nCgQ3DKo1RCXiTpk7HKJeIRGqwbqDJOs0VSxjJWWRZJ3ISVo1mzQL+2ib7bsDKZ/5iUoHUln3Pn
+        XeS93e/5KtzfdvGfM1S/BRCxB68kMEsAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -185,6 +194,9 @@
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <metadata name="lbFax.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="lbFax.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt</value>
   </data>
@@ -209,6 +221,9 @@
   <data name="&gt;&gt;lbFax.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <metadata name="lbEmail.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="lbEmail.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt</value>
   </data>
@@ -233,6 +248,9 @@
   <data name="&gt;&gt;lbEmail.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <metadata name="lbDienThoai.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="lbDienThoai.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt</value>
   </data>
@@ -257,6 +275,9 @@
   <data name="&gt;&gt;lbDienThoai.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <metadata name="lbDiaChi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="lbDiaChi.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt</value>
   </data>
@@ -281,6 +302,9 @@
   <data name="&gt;&gt;lbDiaChi.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <metadata name="pictureBox6.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="pictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAD
@@ -293,6 +317,9 @@
         yjQLRux72IkmmNio5tjylCCNPOSlDCsQ3ClxeDxyJRfQ2gq5M0XkJZKXMpRlcxwQwl3p8/QJiWogL2XY
         lOVNy29BDb9vAdwPQ1kKA/KjNXMAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="pictureBox6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="pictureBox6.Location" type="System.Drawing.Point, System.Drawing">
     <value>158, 162</value>
@@ -315,6 +342,9 @@
   <data name="&gt;&gt;pictureBox6.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <metadata name="pictureBox5.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="pictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
@@ -328,6 +358,9 @@
         K6hUOZQrVbDHy64bwhnITaMbHde+wogNekZn/+5tgf7ZFNTPYw7ZgM5oY3XMQD/jg3o06ipaoQ1tbYFe
         ahJK5KWr4Iq2JUcP9JITguvoGfSSE8Jv0Gg9cVbtZzEAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="pictureBox5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="pictureBox5.Location" type="System.Drawing.Point, System.Drawing">
     <value>158, 133</value>
@@ -350,6 +383,9 @@
   <data name="&gt;&gt;pictureBox5.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <metadata name="pictureBox3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAD
@@ -362,6 +398,9 @@
         kHILWCvlBfbcWVNmwUFXGzf1B3cY4/p2UpxUZhNnCLqa/Luh96JDZMZcFlljJdZ36aEr75BnGIWNCVPf
         z5j6BQyrwDPQdcG6ijOZgSw6QgjtF49TiXDJqoKpAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="pictureBox3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>158, 79</value>
@@ -384,6 +423,9 @@
   <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <metadata name="pictureBox2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
@@ -394,6 +436,9 @@
         MQ24lXfv36Pp/399//rn5/dvUPz9N5AG4u+/oPgnBH9bimnAjaxb/x5N+///4xkgPksIr8Aw4N/VhE3/
         71a/+H+34RFBfK9xC0TffwYABbELUYgAtNIAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="pictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>158, 107</value>
@@ -416,6 +461,9 @@
   <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <metadata name="label2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -553,6 +601,9 @@
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
+  <metadata name="labelX1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="labelX1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12.75pt, style=Bold</value>
   </data>

@@ -32,10 +32,7 @@ namespace ClinienceSystemManagement
         #endregion
 
         [EditorBrowsable(EditorBrowsableState.Never)]
-        public CustomAppointmentForm()
-        {
 
-        }
         public CustomAppointmentForm(SchedulerControl control, Appointment apt)
             : this(control, apt, false)
         {
@@ -265,6 +262,7 @@ namespace ClinienceSystemManagement
         void OnBtnOkClick(object sender, System.EventArgs e)
         {
             OnOkButton();
+
         }
         protected internal virtual void OnEdtStartTimeInvalidValue(object sender, InvalidValueExceptionEventArgs e)
         {

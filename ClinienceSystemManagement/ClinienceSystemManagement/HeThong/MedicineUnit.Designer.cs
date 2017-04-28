@@ -169,7 +169,7 @@
             // 
             // labelControl11
             // 
-            this.labelControl11.Location = new System.Drawing.Point(19, 16);
+            this.labelControl11.Location = new System.Drawing.Point(19, 17);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(18, 13);
             this.labelControl11.TabIndex = 19;

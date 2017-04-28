@@ -39,6 +39,7 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@Unitid", unitid);
             return command.ExecuteNonQuery();
         }
+
         public int InsertIngredient(string name, string note, string unit, double content)
         {
             const String sqlCommand = "Insert into Ingredient (Ingredient_Name,Ingredient_Note,Ingredient_Unit,Ingredient_Content) Values(@Name, @Note,@Unit,@Content)";
@@ -61,6 +62,7 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@Content", content);
             return command.ExecuteNonQuery();
         }
+
         public int UpdateMedicine(int id, string name, string mclass, string usage, string note, int price,int unitid)
         {
             const String sqlCommand = "Update Medicine set Medicine_Name = @Name, Medicine_Class = @MClass, Medicine_Usage = @Usage ,Medicine_Note = @Note, Medicine_Price = @Price ,Unit_ID = @Unitid  where Medicine_ID = @Id";
@@ -74,6 +76,7 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@Unitid", unitid);
             return command.ExecuteNonQuery();
         }
+
         public int InsertMeIn(int meId, int inId)
         {
             const String sqlCommand = "Insert into Medincine_Ingredient (Medicine_ID,Ingredient_ID) Values(@MeId, @InId)";

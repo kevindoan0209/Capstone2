@@ -339,3 +339,4 @@ F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debu
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.KhamBenh.ClinienceCost.resources
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.KhamBenh.History.resources
 F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.HeThong.Statictis.resources
+F:\GitHub\Capstone2\ClinienceSystemManagement\ClinienceSystemManagement\obj\Debug\ClinienceSystemManagement.HeThong.Schedule.resources

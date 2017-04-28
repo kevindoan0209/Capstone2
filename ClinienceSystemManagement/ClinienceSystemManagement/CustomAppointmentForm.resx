@@ -147,7 +147,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;lblLabel.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="lblStartTime.AccessibleName" xml:space="preserve">
     <value>Start time</value>
@@ -174,7 +174,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;lblStartTime.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>11</value>
   </data>
   <data name="lblEndTime.AccessibleName" xml:space="preserve">
     <value>End time</value>
@@ -201,7 +201,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;lblEndTime.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>16</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="edtStartDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
@@ -236,7 +236,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;edtStartDate.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>14</value>
   </data>
   <data name="edtEndDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -269,7 +269,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;edtEndDate.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>15</value>
   </data>
   <data name="chkReminder.Location" type="System.Drawing.Point, System.Drawing">
     <value>261, 25</value>
@@ -293,7 +293,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;chkReminder.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="cbReminder.EditValue" xml:space="preserve">
     <value />
@@ -323,7 +323,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;cbReminder.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="edtLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>210, 23</value>
@@ -350,7 +350,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;edtLabel.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>10</value>
   </data>
   <data name="edtStartTime.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -380,7 +380,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;edtStartTime.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>12</value>
   </data>
   <data name="edtEndTime.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -410,7 +410,37 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;edtEndTime.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>13</value>
+  </data>
+  <data name="lookUpEdit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>77, 51</value>
+  </data>
+  <data name="lookUpEdit1.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v16.1">
+    <value>Combo</value>
+  </data>
+  <metadata name="accountBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>153, 17</value>
+  </metadata>
+  <metadata name="sqlDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="lookUpEdit1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="lookUpEdit1.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;lookUpEdit1.Name" xml:space="preserve">
+    <value>lookUpEdit1</value>
+  </data>
+  <data name="&gt;&gt;lookUpEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lookUpEdit1.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;lookUpEdit1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="labelControl5.AccessibleName" xml:space="preserve">
     <value>Subject</value>
@@ -437,188 +467,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;labelControl5.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lookUpEdit2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>77, 81</value>
-  </data>
-  <data name="lookUpEdit2.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v16.1">
-    <value>Combo</value>
-  </data>
-  <data name="lookUpEdit2.Properties.Columns" xml:space="preserve">
-    <value>Account_ID</value>
-  </data>
-  <data name="lookUpEdit2.Properties.Columns1" xml:space="preserve">
-    <value>Account_ID</value>
-  </data>
-  <data name="lookUpEdit2.Properties.Columns2" type="System.Int32, mscorlib">
-    <value>79</value>
-  </data>
-  <assembly alias="DevExpress.Data.v16.1" name="DevExpress.Data.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="lookUpEdit2.Properties.Columns3" type="DevExpress.Utils.FormatType, DevExpress.Data.v16.1">
-    <value>Numeric</value>
-  </data>
-  <data name="lookUpEdit2.Properties.Columns4" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lookUpEdit2.Properties.Columns5" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="lookUpEdit2.Properties.Columns6" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v16.1">
-    <value>Far</value>
-  </data>
-  <data name="lookUpEdit2.Properties.Columns7" xml:space="preserve">
-    <value>Account_Name</value>
-  </data>
-  <data name="lookUpEdit2.Properties.Columns8" xml:space="preserve">
-    <value>Bác sĩ</value>
-  </data>
-  <data name="lookUpEdit2.Properties.Columns9" type="System.Int32, mscorlib">
-    <value>82</value>
-  </data>
-  <data name="lookUpEdit2.Properties.Columns10" type="DevExpress.Utils.FormatType, DevExpress.Data.v16.1">
-    <value>None</value>
-  </data>
-  <data name="lookUpEdit2.Properties.Columns11" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lookUpEdit2.Properties.Columns12" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lookUpEdit2.Properties.Columns13" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v16.1">
-    <value>Near</value>
-  </data>
-  <data name="lookUpEdit2.Properties.Columns14" xml:space="preserve">
-    <value>Account_Type_ID</value>
-  </data>
-  <data name="lookUpEdit2.Properties.Columns15" xml:space="preserve">
-    <value>Account_Type_ID</value>
-  </data>
-  <data name="lookUpEdit2.Properties.Columns16" type="System.Int32, mscorlib">
-    <value>96</value>
-  </data>
-  <data name="lookUpEdit2.Properties.Columns17" type="DevExpress.Utils.FormatType, DevExpress.Data.v16.1">
-    <value>Numeric</value>
-  </data>
-  <data name="lookUpEdit2.Properties.Columns18" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lookUpEdit2.Properties.Columns19" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="lookUpEdit2.Properties.Columns20" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v16.1">
-    <value>Far</value>
-  </data>
-  <data name="lookUpEdit2.Properties.NullText" xml:space="preserve">
-    <value>Chọn bác sĩ</value>
-  </data>
-  <data name="lookUpEdit2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 20</value>
-  </data>
-  <data name="lookUpEdit2.TabIndex" type="System.Int32, mscorlib">
-    <value>43</value>
-  </data>
-  <data name="&gt;&gt;lookUpEdit2.Name" xml:space="preserve">
-    <value>lookUpEdit2</value>
-  </data>
-  <data name="&gt;&gt;lookUpEdit2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;lookUpEdit2.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;lookUpEdit2.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="lookUpEdit1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>77, 51</value>
-  </data>
-  <data name="lookUpEdit1.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v16.1">
-    <value>Combo</value>
-  </data>
-  <data name="lookUpEdit1.Properties.Columns" xml:space="preserve">
-    <value>Account_ID</value>
-  </data>
-  <data name="lookUpEdit1.Properties.Columns1" xml:space="preserve">
-    <value>Account_ID</value>
-  </data>
-  <data name="lookUpEdit1.Properties.Columns2" type="System.Int32, mscorlib">
-    <value>79</value>
-  </data>
-  <data name="lookUpEdit1.Properties.Columns3" type="DevExpress.Utils.FormatType, DevExpress.Data.v16.1">
-    <value>Numeric</value>
-  </data>
-  <data name="lookUpEdit1.Properties.Columns4" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lookUpEdit1.Properties.Columns5" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="lookUpEdit1.Properties.Columns6" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v16.1">
-    <value>Far</value>
-  </data>
-  <data name="lookUpEdit1.Properties.Columns7" xml:space="preserve">
-    <value>Account_Name</value>
-  </data>
-  <data name="lookUpEdit1.Properties.Columns8" xml:space="preserve">
-    <value>Bệnh nhân</value>
-  </data>
-  <data name="lookUpEdit1.Properties.Columns9" type="System.Int32, mscorlib">
-    <value>82</value>
-  </data>
-  <data name="lookUpEdit1.Properties.Columns10" type="DevExpress.Utils.FormatType, DevExpress.Data.v16.1">
-    <value>None</value>
-  </data>
-  <data name="lookUpEdit1.Properties.Columns11" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lookUpEdit1.Properties.Columns12" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lookUpEdit1.Properties.Columns13" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v16.1">
-    <value>Near</value>
-  </data>
-  <data name="lookUpEdit1.Properties.Columns14" xml:space="preserve">
-    <value>Account_Type_ID</value>
-  </data>
-  <data name="lookUpEdit1.Properties.Columns15" xml:space="preserve">
-    <value>Account_Type_ID</value>
-  </data>
-  <data name="lookUpEdit1.Properties.Columns16" type="System.Int32, mscorlib">
-    <value>96</value>
-  </data>
-  <data name="lookUpEdit1.Properties.Columns17" type="DevExpress.Utils.FormatType, DevExpress.Data.v16.1">
-    <value>Numeric</value>
-  </data>
-  <data name="lookUpEdit1.Properties.Columns18" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lookUpEdit1.Properties.Columns19" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="lookUpEdit1.Properties.Columns20" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v16.1">
-    <value>Far</value>
-  </data>
-  <data name="lookUpEdit1.Properties.NullText" xml:space="preserve">
-    <value>Chọn bệnh nhân</value>
-  </data>
-  <data name="lookUpEdit1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 20</value>
-  </data>
-  <data name="lookUpEdit1.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
-  </data>
-  <data name="&gt;&gt;lookUpEdit1.Name" xml:space="preserve">
-    <value>lookUpEdit1</value>
-  </data>
-  <data name="&gt;&gt;lookUpEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;lookUpEdit1.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;lookUpEdit1.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="labelControl4.AccessibleName" xml:space="preserve">
     <value>Subject</value>
@@ -645,7 +494,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;labelControl4.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="labelControl3.AccessibleName" xml:space="preserve">
     <value>Subject</value>
@@ -672,7 +521,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;labelControl3.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="labelControl2.AccessibleName" xml:space="preserve">
     <value>End time</value>
@@ -699,7 +548,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;labelControl2.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="txtMa.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -729,7 +578,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;txtMa.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="labelControl1.AccessibleName" xml:space="preserve">
     <value>Subject</value>
@@ -756,7 +605,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;labelControl1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="txtGhiChu.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -786,7 +635,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;txtGhiChu.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>17</value>
   </data>
   <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9pt</value>
@@ -814,6 +663,78 @@
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;lbTrangThai.Name" xml:space="preserve">
+    <value>lbTrangThai</value>
+  </data>
+  <data name="&gt;&gt;lbTrangThai.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lbTrangThai.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;lbTrangThai.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnHuy.Name" xml:space="preserve">
+    <value>btnHuy</value>
+  </data>
+  <data name="&gt;&gt;btnHuy.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnHuy.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;btnHuy.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.Name" xml:space="preserve">
+    <value>btnDelete</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Name" xml:space="preserve">
+    <value>btnOk</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;btnOk.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 204</value>
+  </data>
+  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>501, 53</value>
+  </data>
+  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="lbTrangThai.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt</value>
@@ -928,11 +849,11 @@
   </data>
   <data name="btnOk.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAABUYAAAVGAcG0+hoAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
-        AAAAe0lEQVQ4T92T0QnAIAxE3aV0hk5RuqODOICTuERJ8yCClINS/Go/HoR4d2LUZGaSNR/bkvcK1EoD
-        sgluLI4FRWlANsFNbQhoSgOyCR8KiGkzMAwjp9MDqO/rBS87cVVd+JY6HzB9BDUYCFEP+PU7UE1w09xn
-        itt5+M6WLhZNiSeIVqtyAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAF
+        RgAABUYBwbT6GgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAB7SURBVDhP3ZPR
+        CcAgDETdpXSGTlG6o4M4gJO4REnzIIKUg1L8aj8ehHh3YtRkZpI1H9uS9wrUSgOyCW4sjgVFaUA2wU1t
+        CGhKA7IJHwqIaTMwDCOn0wOo7+sFLztxVV34ljofMH0ENRgIUQ/49TtQTXDT3GeK23n4zpYuFk2JJ4hW
+        q3IAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="btnOk.Location" type="System.Drawing.Point, System.Drawing">
@@ -959,29 +880,11 @@
   <data name="&gt;&gt;btnOk.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 204</value>
-  </data>
-  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>501, 53</value>
-  </data>
-  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <metadata name="sqlDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IkFjY291bnQiPjxGaWVsZCBOYW1lPSJBY2NvdW50X0lEIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQWNjb3VudF9OYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkFjY291bnRfVHlwZV9JRCIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -19025,6 +18928,18 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Đặt lịch</value>
+  </data>
+  <data name="&gt;&gt;sqlDataSource1.Name" xml:space="preserve">
+    <value>sqlDataSource1</value>
+  </data>
+  <data name="&gt;&gt;sqlDataSource1.Type" xml:space="preserve">
+    <value>DevExpress.DataAccess.Sql.SqlDataSource, DevExpress.DataAccess.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;accountBindingSource.Name" xml:space="preserve">
+    <value>accountBindingSource</value>
+  </data>
+  <data name="&gt;&gt;accountBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>CustomAppointmentForm</value>

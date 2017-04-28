@@ -325,7 +325,7 @@ namespace PresentationLayer
             else
             {
                 Statictis st = new Statictis();
-                //st.MdiParent = this;
+               // st.MdiParent = this;
                 st.ShowDialog();
             }
         }

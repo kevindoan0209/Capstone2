@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table1 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column2 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression2 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery13 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column25 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression25 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table13 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column26 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression26 = new DevExpress.DataAccess.Sql.ColumnExpression();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HumanDetail));
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery2 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column3 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression3 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table2 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column4 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression4 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery14 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column27 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression27 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table14 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column28 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression28 = new DevExpress.DataAccess.Sql.ColumnExpression();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.xtraTabContarol1 = new DevExpress.XtraTab.XtraTabControl();
@@ -53,7 +53,6 @@
             this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.txtAnh = new DevExpress.XtraEditors.TextEdit();
             this.peAnh = new DevExpress.XtraEditors.PictureEdit();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.txtMa = new DevExpress.XtraEditors.TextEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.txtMatKhau2 = new DevExpress.XtraEditors.TextEdit();
@@ -98,19 +97,19 @@
             // 
             this.sqlDataSource1.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            columnExpression1.ColumnName = "Paraclinical_Group_ID";
-            table1.Name = "Paraclinical_Group";
-            columnExpression1.Table = table1;
-            column1.Expression = columnExpression1;
-            columnExpression2.ColumnName = "Paraclinical_Group_Name";
-            columnExpression2.Table = table1;
-            column2.Expression = columnExpression2;
-            selectQuery1.Columns.Add(column1);
-            selectQuery1.Columns.Add(column2);
-            selectQuery1.Name = "Paraclinical_Group";
-            selectQuery1.Tables.Add(table1);
+            columnExpression25.ColumnName = "Paraclinical_Group_ID";
+            table13.Name = "Paraclinical_Group";
+            columnExpression25.Table = table13;
+            column25.Expression = columnExpression25;
+            columnExpression26.ColumnName = "Paraclinical_Group_Name";
+            columnExpression26.Table = table13;
+            column26.Expression = columnExpression26;
+            selectQuery13.Columns.Add(column25);
+            selectQuery13.Columns.Add(column26);
+            selectQuery13.Name = "Paraclinical_Group";
+            selectQuery13.Tables.Add(table13);
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery1});
+            selectQuery13});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // xtraTabContarol1
@@ -126,10 +125,9 @@
             this.xtraTabPage1.Controls.Add(this.txtKiTe);
             this.xtraTabPage1.Controls.Add(this.cbxHienMatKhau);
             this.xtraTabPage1.Controls.Add(this.lkePhanQuyen);
+            this.xtraTabPage1.Controls.Add(this.txtMa);
             this.xtraTabPage1.Controls.Add(this.txtAnh);
             this.xtraTabPage1.Controls.Add(this.peAnh);
-            this.xtraTabPage1.Controls.Add(this.labelControl8);
-            this.xtraTabPage1.Controls.Add(this.txtMa);
             this.xtraTabPage1.Controls.Add(this.labelControl7);
             this.xtraTabPage1.Controls.Add(this.txtMatKhau2);
             this.xtraTabPage1.Controls.Add(this.labelControl6);
@@ -181,19 +179,19 @@
             // 
             this.sqlDataSource2.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
             this.sqlDataSource2.Name = "sqlDataSource2";
-            columnExpression3.ColumnName = "Account_Type_ID";
-            table2.Name = "Account_Type";
-            columnExpression3.Table = table2;
-            column3.Expression = columnExpression3;
-            columnExpression4.ColumnName = "Account_Type_Authority";
-            columnExpression4.Table = table2;
-            column4.Expression = columnExpression4;
-            selectQuery2.Columns.Add(column3);
-            selectQuery2.Columns.Add(column4);
-            selectQuery2.Name = "Account_Type";
-            selectQuery2.Tables.Add(table2);
+            columnExpression27.ColumnName = "Account_Type_ID";
+            table14.Name = "Account_Type";
+            columnExpression27.Table = table14;
+            column27.Expression = columnExpression27;
+            columnExpression28.ColumnName = "Account_Type_Authority";
+            columnExpression28.Table = table14;
+            column28.Expression = columnExpression28;
+            selectQuery14.Columns.Add(column27);
+            selectQuery14.Columns.Add(column28);
+            selectQuery14.Name = "Account_Type";
+            selectQuery14.Tables.Add(table14);
             this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery2});
+            selectQuery14});
             this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
             // 
             // txtAnh
@@ -208,11 +206,6 @@
             this.peAnh.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.peAnh.Properties.ZoomAccelerationFactor = 1D;
             this.peAnh.Click += new System.EventHandler(this.peAnh_Click);
-            // 
-            // labelControl8
-            // 
-            resources.ApplyResources(this.labelControl8, "labelControl8");
-            this.labelControl8.Name = "labelControl8";
             // 
             // txtMa
             // 
@@ -366,7 +359,6 @@
         private DevExpress.XtraEditors.SimpleButton btnHuy;
         private DevExpress.XtraEditors.SimpleButton btnTao;
         private DevExpress.XtraEditors.PanelControl panelControl1;
-        private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.TextEdit txtMa;
         private DevExpress.XtraEditors.PictureEdit peAnh;
         private DevExpress.XtraEditors.TextEdit txtAnh;

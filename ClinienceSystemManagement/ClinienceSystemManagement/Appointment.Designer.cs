@@ -73,8 +73,6 @@
             this.switchToMonthViewItem1 = new DevExpress.XtraScheduler.UI.SwitchToMonthViewItem();
             this.navigateViewBackwardItem1 = new DevExpress.XtraScheduler.UI.NavigateViewBackwardItem();
             this.navigateViewForwardItem1 = new DevExpress.XtraScheduler.UI.NavigateViewForwardItem();
-            this.viewZoomInItem1 = new DevExpress.XtraScheduler.UI.ViewZoomInItem();
-            this.viewZoomOutItem1 = new DevExpress.XtraScheduler.UI.ViewZoomOutItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
@@ -85,6 +83,8 @@
             this.printItem1 = new DevExpress.XtraScheduler.UI.PrintItem();
             this.printPageSetupItem1 = new DevExpress.XtraScheduler.UI.PrintPageSetupItem();
             this.gotoTodayItem1 = new DevExpress.XtraScheduler.UI.GotoTodayItem();
+            this.viewZoomInItem1 = new DevExpress.XtraScheduler.UI.ViewZoomInItem();
+            this.viewZoomOutItem1 = new DevExpress.XtraScheduler.UI.ViewZoomOutItem();
             this.switchToWorkWeekViewItem1 = new DevExpress.XtraScheduler.UI.SwitchToWorkWeekViewItem();
             this.switchToTimelineViewItem1 = new DevExpress.XtraScheduler.UI.SwitchToTimelineViewItem();
             this.switchToGanttViewItem1 = new DevExpress.XtraScheduler.UI.SwitchToGanttViewItem();
@@ -241,7 +241,7 @@
             this.schedulerControl1.OptionsRangeControl.Scales.Add(timeScaleHour1);
             this.schedulerControl1.OptionsRangeControl.Scales.Add(timeScale15Minutes1);
             this.schedulerControl1.Size = new System.Drawing.Size(496, 456);
-            this.schedulerControl1.Start = new System.DateTime(2017, 4, 2, 0, 0, 0, 0);
+            this.schedulerControl1.Start = new System.DateTime(2017, 4, 23, 0, 0, 0, 0);
             this.schedulerControl1.Storage = schedulerStorage1;
             this.schedulerControl1.TabIndex = 1;
             this.schedulerControl1.Text = "schedulerControl1";
@@ -407,18 +407,6 @@
             superToolTip8.Items.Add(toolTipTitleItem8);
             this.navigateViewForwardItem1.SuperTip = superToolTip8;
             // 
-            // viewZoomInItem1
-            // 
-            this.viewZoomInItem1.Caption = "Phóng to";
-            this.viewZoomInItem1.Id = 10;
-            this.viewZoomInItem1.Name = "viewZoomInItem1";
-            // 
-            // viewZoomOutItem1
-            // 
-            this.viewZoomOutItem1.Caption = "Thu nhỏ";
-            this.viewZoomOutItem1.Id = 11;
-            this.viewZoomOutItem1.Name = "viewZoomOutItem1";
-            // 
             // barDockControlTop
             // 
             this.barDockControlTop.CausesValidation = false;
@@ -476,6 +464,18 @@
             // 
             this.gotoTodayItem1.Id = 9;
             this.gotoTodayItem1.Name = "gotoTodayItem1";
+            // 
+            // viewZoomInItem1
+            // 
+            this.viewZoomInItem1.Caption = "Phóng to";
+            this.viewZoomInItem1.Id = 10;
+            this.viewZoomInItem1.Name = "viewZoomInItem1";
+            // 
+            // viewZoomOutItem1
+            // 
+            this.viewZoomOutItem1.Caption = "Thu nhỏ";
+            this.viewZoomOutItem1.Id = 11;
+            this.viewZoomOutItem1.Name = "viewZoomOutItem1";
             // 
             // switchToWorkWeekViewItem1
             // 

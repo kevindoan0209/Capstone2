@@ -19,6 +19,7 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@DoctorId", doctorId);
             return command.ExecuteNonQuery();
         }
+
         public int DeleteAppointment(int patientId)
         {
             const String sqlCommand = "Delete From Appointmentss where Account_ID_Patient = @patientId";
@@ -26,6 +27,7 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@patientId", patientId);
             return command.ExecuteNonQuery();
         }
+
         public int GetLastIdAppointment()
         {
             const String sqlCommand = "SELECT IDENT_CURRENT('Appointmentss') as LastID";
@@ -33,6 +35,7 @@ namespace DataAccessLayer
             int temp = int.Parse(command.ExecuteScalar().ToString());
             return temp;
         }
+
         public string GetNameDoctor(int doctorId)
         {
             const String sqlCommand = "Select Account_Name from Account Where Account_ID = @DoctorId";
@@ -41,6 +44,7 @@ namespace DataAccessLayer
             String name = command.ExecuteScalar().ToString();
             return name;
         }
+
         public int UpdateAppointment(int id,string reason, string complain)
         {
             const String sqlCommand = "Update Appointmentss set Appointment_Issue = @Reason , Appointment_Complain = @Complain Where Appointment_ID = @Id";
@@ -50,5 +54,36 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@Complain", complain);
             return command.ExecuteNonQuery();
         }
+
+        public int InsertSchedule(DateTime beginDate, DateTime endDate, string label, int appointId)
+        {
+            const String sqlCommand = "Insert into Appointments(StartDate,EndDate,Subject,Appointments_ID) Values(@BeginDate, @EndDate, @Label,@AppointId)";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@BeginDate", beginDate);
+            command.Parameters.AddWithValue("@EndDate", endDate);
+            command.Parameters.AddWithValue("@Label", label);
+            command.Parameters.AddWithValue("@AppointId", appointId);
+            return command.ExecuteNonQuery();
+        }
+
+        public int DeleteSchedule(int appointId)
+        {
+            const String sqlCommand = "Delete Appointments where Appointments_ID = @AppointId";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@AppointId", appointId);
+            return command.ExecuteNonQuery();
+        }
+
+        public int UpdateSchedule(DateTime beginDate, DateTime endDate, string label, int appointId)
+        {
+            const String sqlCommand = "Update Appointments set StartDate = @BeginDate, EndDate = @EndDate, Label = @Label Where Appointments_ID = @AppointId";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@BeginDate", beginDate);
+            command.Parameters.AddWithValue("@EndDate", endDate);
+            command.Parameters.AddWithValue("@Label", label);
+            command.Parameters.AddWithValue("@AppointId", appointId);
+            return command.ExecuteNonQuery();
+        }
+
     }
 }

@@ -131,7 +131,6 @@
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.label8 = new System.Windows.Forms.Label();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
             this.lbTrangThai = new DevExpress.XtraEditors.LabelControl();
             this.btnBenhNhan = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
@@ -181,6 +180,7 @@
             this.colPrecription_Treatment = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPrecription_Note = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colAccount_Name = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grcCLS)).BeginInit();
@@ -440,17 +440,6 @@
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(994, 234);
             this.panelControl2.TabIndex = 1;
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.btnHuy.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.Image")));
-            this.btnHuy.Location = new System.Drawing.Point(568, 200);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(75, 28);
-            this.btnHuy.TabIndex = 22;
-            this.btnHuy.Text = "Đóng";
-            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // lbTrangThai
             // 
@@ -1096,6 +1085,16 @@
             this.colAccount_Name.Visible = true;
             this.colAccount_Name.VisibleIndex = 2;
             // 
+            // btnHuy
+            // 
+            this.btnHuy.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.btnHuy.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.Image")));
+            this.btnHuy.Location = new System.Drawing.Point(568, 200);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(75, 25);
+            this.btnHuy.TabIndex = 37;
+            this.btnHuy.Text = "Đóng";
+            // 
             // History
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1212,8 +1211,8 @@
         private System.Windows.Forms.Label lbNgayKham;
         private System.Windows.Forms.Label lbSoLan;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.SimpleButton btnHuy;
         private System.Windows.Forms.Label lbNgayDau;
         private System.Windows.Forms.Label label12;
+        private DevExpress.XtraEditors.SimpleButton btnHuy;
     }
 }

@@ -30,7 +30,7 @@ namespace DataAccessLayer
             DataTable dt = new DataTable();
             data.Fill(dt);
             return dt;
-        }
+        }  
 
         public DataTable Select_CheckUserNameSoftware(string username)
         {
@@ -55,6 +55,7 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@Type", type);
             return command.ExecuteNonQuery();
         }
+
         public int InsertAccountNoImage(string name, string username, string password, string signature, int type)
         {
             const String sqlCommand = "Insert into Account (Account_Name,Account_UserName,Account_Password,Account_Signatures,Account_Type_ID) Values(@Name, @Username, @Password, @Signature, @Type)";
@@ -93,6 +94,7 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@Type", type);
             return command.ExecuteNonQuery();
         }
+
         public int UpdateAccountPassword(int id, string name,string password)
         {
             const String sqlCommand = "Update Account set Account_Name = @Name, Account_Password = @Password Where Account_ID = @Id";
@@ -201,6 +203,15 @@ namespace DataAccessLayer
             const String sqlCommand = "SELECT IDENT_CURRENT('Account') as LastID";
             SqlCommand command = new SqlCommand(sqlCommand, connect());
             int temp = int.Parse(command.ExecuteScalar().ToString());
+            return temp;
+        }
+
+        public String GetNameAccount(int accountId)
+        {
+            const String sqlCommand = "Select Account_Name from Account where Account_ID = @AccountId";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@AccountId", accountId);
+            String temp = Convert.ToString(command.ExecuteScalar());
             return temp;
         }
     }

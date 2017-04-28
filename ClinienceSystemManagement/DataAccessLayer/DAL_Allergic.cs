@@ -19,6 +19,7 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@PreId", preId);
             return command.ExecuteNonQuery();
         }
+
         public int UpdateAllergic(int typeId, string name, string description, int preId, int id)
         {
             const String sqlCommand = "Update Allergic set Allergic_Type_ID = @TypeId, Allergic_Name = @Name, Allergic_Note = @Description Where Precription_ID = @PreId and Allergic_ID = @Id";

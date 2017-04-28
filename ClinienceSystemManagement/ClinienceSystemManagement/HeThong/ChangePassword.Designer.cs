@@ -43,7 +43,6 @@
             DevExpress.DataAccess.Sql.Column column4 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression4 = new DevExpress.DataAccess.Sql.ColumnExpression();
             this.lbTrangThai = new DevExpress.XtraEditors.LabelControl();
-            this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
             this.btnTao = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.txtMa = new DevExpress.XtraEditors.TextEdit();
@@ -82,22 +81,11 @@
             this.lbTrangThai.Size = new System.Drawing.Size(0, 15);
             this.lbTrangThai.TabIndex = 34;
             // 
-            // btnHuy
-            // 
-            this.btnHuy.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.btnHuy.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.Image")));
-            this.btnHuy.Location = new System.Drawing.Point(225, 9);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(64, 25);
-            this.btnHuy.TabIndex = 1;
-            this.btnHuy.Text = "Đóng";
-            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
-            // 
             // btnTao
             // 
             this.btnTao.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.btnTao.Image = ((System.Drawing.Image)(resources.GetObject("btnTao.Image")));
-            this.btnTao.Location = new System.Drawing.Point(155, 9);
+            this.btnTao.Location = new System.Drawing.Point(226, 9);
             this.btnTao.Name = "btnTao";
             this.btnTao.Size = new System.Drawing.Size(64, 25);
             this.btnTao.TabIndex = 0;
@@ -108,10 +96,9 @@
             // 
             this.panelControl1.Controls.Add(this.txtMa);
             this.panelControl1.Controls.Add(this.lbTrangThai);
-            this.panelControl1.Controls.Add(this.btnHuy);
             this.panelControl1.Controls.Add(this.btnTao);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl1.Location = new System.Drawing.Point(0, 198);
+            this.panelControl1.Location = new System.Drawing.Point(0, 193);
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(314, 43);
             this.panelControl1.TabIndex = 8;
@@ -201,7 +188,7 @@
             // 
             this.txtTen.Location = new System.Drawing.Point(22, 37);
             this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(225, 20);
+            this.txtTen.Size = new System.Drawing.Size(212, 20);
             this.txtTen.TabIndex = 0;
             // 
             // sqlDataSource1
@@ -237,7 +224,7 @@
             this.groupBox1.Controls.Add(this.txtMatKhau);
             this.groupBox1.Controls.Add(this.txtMatKhau2);
             this.groupBox1.Controls.Add(this.labelControl6);
-            this.groupBox1.Location = new System.Drawing.Point(20, 14);
+            this.groupBox1.Location = new System.Drawing.Point(20, 13);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(270, 164);
             this.groupBox1.TabIndex = 10;
@@ -248,7 +235,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(314, 241);
+            this.ClientSize = new System.Drawing.Size(314, 236);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panelControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -278,7 +265,6 @@
         #endregion
 
         private DevExpress.XtraEditors.LabelControl lbTrangThai;
-        private DevExpress.XtraEditors.SimpleButton btnHuy;
         private DevExpress.XtraEditors.SimpleButton btnTao;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.CheckEdit cbxHienMatKhau;

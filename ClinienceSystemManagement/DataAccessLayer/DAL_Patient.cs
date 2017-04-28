@@ -61,6 +61,7 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@Issue", issue);
             return command.ExecuteNonQuery();
         }
+
         public int UpdatePatientStatus(int id, string complain, string issue)
         {
             const String sqlCommand = "Update PatientStatus set PatientStatus_Complain = @Complain, PatientStatus_Issue = @Issue  Where Account_ID = @Id";

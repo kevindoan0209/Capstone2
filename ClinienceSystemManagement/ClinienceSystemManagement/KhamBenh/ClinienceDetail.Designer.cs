@@ -168,12 +168,12 @@
             // 
             // labelControl5
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl5.Location = new System.Drawing.Point(160, 84);
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl5.Location = new System.Drawing.Point(198, 84);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(25, 14);
+            this.labelControl5.Size = new System.Drawing.Size(96, 14);
             this.labelControl5.TabIndex = 35;
-            this.labelControl5.Text = "VND";
+            this.labelControl5.Text = "VND / 1 lần khám";
             // 
             // txtGia
             // 
@@ -182,8 +182,8 @@
             this.txtGia.Name = "txtGia";
             this.txtGia.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGia.Properties.Appearance.Options.UseFont = true;
-            this.txtGia.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtGia.Size = new System.Drawing.Size(137, 20);
+            this.txtGia.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtGia.Size = new System.Drawing.Size(171, 20);
             this.txtGia.TabIndex = 34;
             this.txtGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGia_KeyPress);
             // 

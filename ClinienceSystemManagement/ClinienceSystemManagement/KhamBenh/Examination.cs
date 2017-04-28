@@ -84,6 +84,10 @@ namespace ClinienceSystemManagement.KhamBenh
                             string group2 = lkeBenhNhan.GetColumnValue("Account_ID").ToString();
                             int patientId = Convert.ToInt32(group2);
                             BLL_Appointment.InsertNewAppointment(beginDate, endDate, reason, complain, patientId, doctorId);
+                            int lastAppointId = BLL_Appointment.GetLastIdAppointment();
+                            String name = BLL_Human.GetNameAccount(patientId);
+                            string label = "Khám bệnh: " + name;
+                            BLL_Appointment.InsertSchedule(beginDate, endDate, label, lastAppointId);
                             String note = "";
                             DateTime date = DateTime.Now;
                             int money = 0;

@@ -34,6 +34,7 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@DoctorId", doctorId);
             return command.ExecuteNonQuery();
         }
+
         public int UpdateTreatment(string treatment, int preId)
         {
             const String sqlCommand = "Update Precription set Precription_Treatment = @Treatment Where Precription_ID = @PrecriptionId";
@@ -41,7 +42,7 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@Treatment", treatment);
             command.Parameters.AddWithValue("@PrecriptionId", preId);
             return command.ExecuteNonQuery();
-        }
+        }  
 
         public int InsertPrecriptionMedicine(int precriptionId, int medicineId, int quantity,string note , int amount)
         {
@@ -54,6 +55,7 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@Amount", amount);
             return command.ExecuteNonQuery();
         }
+
         public int UpdatePrecriptionMedicine(int precriptionId, int medicineId, int quantity,string note, int amount)
         {
             const String sqlCommand = "Update Precription_Medicine set Quantity = @Quantity, Note = @Note, Amount = @Amount Where Precription_ID = @PrecriptionId and Medicine_ID = @MedicineId";
@@ -74,6 +76,7 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@PrecriptionId", precriptionId);
             return command.ExecuteNonQuery();
         }
+
         public int UpdatePrecriptionParaclinical(string paraclinicalId, int precriptionId)
         {
             const String sqlCommand = "Update Paraclinical_Medicine set  Where Paraclinical_ID = @ParaclinicalId and Precription_ID = @PrecriptionId";
@@ -91,6 +94,7 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@PrecriptionId", precriptionId);
             return command.ExecuteNonQuery();
         }
+
         public int GetLastIdPrecription()
         {
             const String sqlCommand = "SELECT IDENT_CURRENT('Precription') as LastID";
@@ -98,6 +102,7 @@ namespace DataAccessLayer
             int temp = int.Parse(command.ExecuteScalar().ToString());
             return temp;
         }
+
         public int DeletePrecriptionMedicine(int medicineId, int precriptionId)
         {
             const String sqlCommand = "Delete Precription_Medicine where Medicine_ID = @medicineId and Precription_ID = @preId";
@@ -106,6 +111,7 @@ namespace DataAccessLayer
             command.Parameters.AddWithValue("@preId", precriptionId);
             return command.ExecuteNonQuery();
         }
+
         public int UpdatePrecriptionMoney(int money, int preId)
         {
             const String sqlCommand = "Update Precription set Precription_Money = @Money Where Precription_ID = @PreId";
@@ -142,6 +148,7 @@ namespace DataAccessLayer
             int temp = int.Parse(command.ExecuteScalar().ToString());
             return temp;
         }
+
         public string GetDate(int patientId)
         {
             const String sqlCommand = "SELECT Max(Precription_Date) FROM Precription Where Account_ID_Patient = @patientId";
@@ -150,6 +157,7 @@ namespace DataAccessLayer
             String temp = Convert.ToString(command.ExecuteScalar().ToString());
             return temp;
         }
+
         public string GetDateMin(int patientId)
         {
             const String sqlCommand = "SELECT Min(Precription_Date) FROM Precription Where Account_ID_Patient = @patientId";

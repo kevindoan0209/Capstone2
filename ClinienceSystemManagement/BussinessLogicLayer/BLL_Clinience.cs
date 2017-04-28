@@ -18,26 +18,32 @@ namespace BussinessLogicLayer
         {
             return _clinience.UpdateClinienceCost(Id, cost);
         }
+
         public static int GetCost()
         {
             return _clinience.GetCost();
         }
+
         public static String GetAmountByDay(DateTime date)
         {
             return _clinience.GetAmountByDay(date);
         }
+
         public static String GetAmountByMonth(DateTime date)
         {
             return _clinience.GetAmountByMonth(date);
         }
+
         public static String GetAmountByYear(DateTime date)
         {
             return _clinience.GetAmountByYear(date);
         }
+
         public static String GetAmountByALL()
         {
             return _clinience.GetAmountByALL();
         }
+
         public static String GetAmountByOption(DateTime beginDate, DateTime endDate)
         {
             return _clinience.GetAmountByOption(beginDate, endDate);

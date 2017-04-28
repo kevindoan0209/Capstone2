@@ -33,6 +33,7 @@ namespace BussinessLogicLayer
         {
             return _human.UpdateAccountNoImage(id, name, username, password, signature,type);
         }
+
         public static int UpdateAccountPassword(int id, string name,string password)
         {
             return _human.UpdateAccountPassword(id, name, password);
@@ -84,9 +85,14 @@ namespace BussinessLogicLayer
         {
             return _human.InsertStatusPatient(complain,issue,accountId);
         }
+
         public static int UpdateStatusPatient(int id,string complain, string issue)
         {
             return _human.UpdateStatusPatient(id,complain, issue);
+        }
+        public static String GetNameAccount(int accountId)
+        {
+            return _human.GetNameAccount(accountId);
         }
     }
 }

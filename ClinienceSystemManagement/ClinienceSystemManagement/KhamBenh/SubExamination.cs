@@ -97,6 +97,9 @@ namespace ClinienceSystemManagement.KhamBenh
                             string group = lkeBacSi.GetColumnValue("Account_ID").ToString();
                             int doctorId = Convert.ToInt32(group);
                             BLL_Appointment.InsertNewAppointment(beginDate, endDate, reason, complain, patientId, doctorId);
+                            int lastAppointId = BLL_Appointment.GetLastIdAppointment();
+                            string label = "Khám bệnh: " + txtTen.Text;
+                            BLL_Appointment.InsertSchedule(beginDate, endDate, label, lastAppointId);
                             XtraMessageBox.Show("Tạo phiên khám thành công", "Clinience", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             String note = "";
                             DateTime date = DateTime.Now;

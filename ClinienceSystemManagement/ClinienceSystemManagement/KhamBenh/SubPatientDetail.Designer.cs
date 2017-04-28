@@ -124,7 +124,7 @@
             // 
             // txtMa
             // 
-            this.txtMa.Location = new System.Drawing.Point(240, 21);
+            this.txtMa.Location = new System.Drawing.Point(422, 21);
             this.txtMa.Name = "txtMa";
             this.txtMa.Size = new System.Drawing.Size(10, 20);
             this.txtMa.TabIndex = 27;

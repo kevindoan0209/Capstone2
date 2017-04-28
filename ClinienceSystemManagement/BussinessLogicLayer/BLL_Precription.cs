@@ -13,10 +13,12 @@ namespace BussinessLogicLayer
         {
             return _precription.InsertNewPrecription(note, date, money, patientId, doctorId);
         }
+
         public static int UpdatePrecription(int precriptionId, string note, DateTime date, int money, string diagnose,string checkup, int patientId, int doctorId)
         {
             return _precription.UpdatePrecription(precriptionId,note,date,money, diagnose, checkup,patientId, doctorId);
         }
+
         public static int UpdateTreatment(string treatment, int preId)
         {
             return _precription.UpdateTreatment(treatment,preId);
@@ -26,6 +28,7 @@ namespace BussinessLogicLayer
         {
             return _precription.InsertPrecriptionMedicine(precriptionId, medicineId, quantity, note, amount);
         }
+
         public static int UpdatePrecriptionMedicine(int precriptionId, int medicineId, int quantity, string note, int amount)
         {
             return _precription.UpdatePrecriptionMedicine(precriptionId, medicineId, quantity, note, amount);
@@ -35,6 +38,7 @@ namespace BussinessLogicLayer
         {
             return _precription.InsertPrecriptionParaclinical(paraclinicalId, precriptionId);
         }
+
         public static int UpdatePrecriptionParaclinical(string paraclinicalId, int precriptionId)
         {
             return _precription.UpdatePrecriptionParaclinical(paraclinicalId, precriptionId);
@@ -72,10 +76,12 @@ namespace BussinessLogicLayer
         {
             return _precription.GetCountHistory(patientId);
         }
+
         public static string GetDate(int patientId)
         {
             return _precription.GetDate(patientId);
         }
+
         public static string GetDateMin(int patientId)
         {
             return _precription.GetDateMin(patientId);

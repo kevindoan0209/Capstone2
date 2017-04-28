@@ -203,6 +203,12 @@
     <Compile Include="KhamBenh\History.Designer.cs">
       <DependentUpon>History.cs</DependentUpon>
     </Compile>
+    <Compile Include="KhamBenh\Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhamBenh\Schedule.Designer.cs">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </Compile>
     <Compile Include="KhamBenh\MainExamination.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -376,6 +382,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="KhamBenh\History.resx">
       <DependentUpon>History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhamBenh\Schedule.resx">
+      <DependentUpon>Schedule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KhamBenh\MainExamination.resx">
       <DependentUpon>MainExamination.cs</DependentUpon>

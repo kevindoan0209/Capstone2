@@ -255,6 +255,9 @@ namespace ClinienceSystemManagement.KhamBenh
                                             BLL_Human.InsertHumanPatient(lastID, age, sex, email, phone, job, city, address);
                                             BLL_Patient.InsertPatientNoValue(lastID);
                                             BLL_Appointment.InsertNewAppointment(beginDate, endDate, reason, complain, lastID, doctorId);
+                                            int lastAppointId = BLL_Appointment.GetLastIdAppointment();
+                                            string label = "Khám bệnh: " + name;
+                                            BLL_Appointment.InsertSchedule(beginDate, endDate, label,lastAppointId);
                                             String note = "";
                                             DateTime date = DateTime.Now;
                                             int money = 0;
@@ -275,6 +278,9 @@ namespace ClinienceSystemManagement.KhamBenh
                                             BLL_Human.InsertHumanPatient(lastID, age, sex, email, phone, job, city, address);
                                             BLL_Patient.InsertPatientNoValue(lastID);
                                             BLL_Appointment.InsertNewAppointment(beginDate, endDate, reason, complain, lastID, doctorId);
+                                            int lastAppointId = BLL_Appointment.GetLastIdAppointment();
+                                            string label = "Khám bệnh: " + name;
+                                            BLL_Appointment.InsertSchedule(beginDate, endDate, label, lastAppointId);
                                             String note = "";
                                             DateTime date = DateTime.Now;
                                             int money = 0;

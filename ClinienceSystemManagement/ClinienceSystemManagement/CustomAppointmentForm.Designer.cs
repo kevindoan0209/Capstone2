@@ -22,7 +22,16 @@ namespace ClinienceSystemManagement
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomAppointmentForm));
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery2 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column4 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression4 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table2 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column5 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression5 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column6 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression6 = new DevExpress.DataAccess.Sql.ColumnExpression();
             this.lblLabel = new DevExpress.XtraEditors.LabelControl();
             this.lblStartTime = new DevExpress.XtraEditors.LabelControl();
             this.lblEndTime = new DevExpress.XtraEditors.LabelControl();
@@ -35,8 +44,6 @@ namespace ClinienceSystemManagement
             this.edtEndTime = new DevExpress.XtraScheduler.UI.SchedulerTimeEdit();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.lookUpEdit2 = new DevExpress.XtraEditors.LookUpEdit();
-            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -48,6 +55,9 @@ namespace ClinienceSystemManagement
             this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.btnOk = new DevExpress.XtraEditors.SimpleButton();
+            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.accountBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.edtStartDate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edtStartDate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edtEndDate.Properties.CalendarTimeProperties)).BeginInit();
@@ -58,12 +68,12 @@ namespace ClinienceSystemManagement
             ((System.ComponentModel.ISupportInitialize)(this.edtStartTime.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edtEndTime.Properties)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMa.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGhiChu.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accountBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lblLabel
@@ -148,9 +158,8 @@ namespace ClinienceSystemManagement
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.labelControl5);
-            this.groupBox1.Controls.Add(this.lookUpEdit2);
             this.groupBox1.Controls.Add(this.lookUpEdit1);
+            this.groupBox1.Controls.Add(this.labelControl5);
             this.groupBox1.Controls.Add(this.labelControl4);
             this.groupBox1.Controls.Add(this.labelControl3);
             this.groupBox1.Controls.Add(this.labelControl2);
@@ -175,34 +184,6 @@ namespace ClinienceSystemManagement
             // 
             resources.ApplyResources(this.labelControl5, "labelControl5");
             this.labelControl5.Name = "labelControl5";
-            // 
-            // lookUpEdit2
-            // 
-            resources.ApplyResources(this.lookUpEdit2, "lookUpEdit2");
-            this.lookUpEdit2.Name = "lookUpEdit2";
-            this.lookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lookUpEdit2.Properties.Buttons"))))});
-            this.lookUpEdit2.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEdit2.Properties.Columns"), resources.GetString("lookUpEdit2.Properties.Columns1"), ((int)(resources.GetObject("lookUpEdit2.Properties.Columns2"))), ((DevExpress.Utils.FormatType)(resources.GetObject("lookUpEdit2.Properties.Columns3"))), resources.GetString("lookUpEdit2.Properties.Columns4"), ((bool)(resources.GetObject("lookUpEdit2.Properties.Columns5"))), ((DevExpress.Utils.HorzAlignment)(resources.GetObject("lookUpEdit2.Properties.Columns6")))),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEdit2.Properties.Columns7"), resources.GetString("lookUpEdit2.Properties.Columns8"), ((int)(resources.GetObject("lookUpEdit2.Properties.Columns9"))), ((DevExpress.Utils.FormatType)(resources.GetObject("lookUpEdit2.Properties.Columns10"))), resources.GetString("lookUpEdit2.Properties.Columns11"), ((bool)(resources.GetObject("lookUpEdit2.Properties.Columns12"))), ((DevExpress.Utils.HorzAlignment)(resources.GetObject("lookUpEdit2.Properties.Columns13")))),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEdit2.Properties.Columns14"), resources.GetString("lookUpEdit2.Properties.Columns15"), ((int)(resources.GetObject("lookUpEdit2.Properties.Columns16"))), ((DevExpress.Utils.FormatType)(resources.GetObject("lookUpEdit2.Properties.Columns17"))), resources.GetString("lookUpEdit2.Properties.Columns18"), ((bool)(resources.GetObject("lookUpEdit2.Properties.Columns19"))), ((DevExpress.Utils.HorzAlignment)(resources.GetObject("lookUpEdit2.Properties.Columns20"))))});
-            this.lookUpEdit2.Properties.DisplayMember = "Account_Name";
-            this.lookUpEdit2.Properties.NullText = resources.GetString("lookUpEdit2.Properties.NullText");
-            this.lookUpEdit2.Properties.ValueMember = "Account_ID";
-            // 
-            // lookUpEdit1
-            // 
-            resources.ApplyResources(this.lookUpEdit1, "lookUpEdit1");
-            this.lookUpEdit1.Name = "lookUpEdit1";
-            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lookUpEdit1.Properties.Buttons"))))});
-            this.lookUpEdit1.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEdit1.Properties.Columns"), resources.GetString("lookUpEdit1.Properties.Columns1"), ((int)(resources.GetObject("lookUpEdit1.Properties.Columns2"))), ((DevExpress.Utils.FormatType)(resources.GetObject("lookUpEdit1.Properties.Columns3"))), resources.GetString("lookUpEdit1.Properties.Columns4"), ((bool)(resources.GetObject("lookUpEdit1.Properties.Columns5"))), ((DevExpress.Utils.HorzAlignment)(resources.GetObject("lookUpEdit1.Properties.Columns6")))),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEdit1.Properties.Columns7"), resources.GetString("lookUpEdit1.Properties.Columns8"), ((int)(resources.GetObject("lookUpEdit1.Properties.Columns9"))), ((DevExpress.Utils.FormatType)(resources.GetObject("lookUpEdit1.Properties.Columns10"))), resources.GetString("lookUpEdit1.Properties.Columns11"), ((bool)(resources.GetObject("lookUpEdit1.Properties.Columns12"))), ((DevExpress.Utils.HorzAlignment)(resources.GetObject("lookUpEdit1.Properties.Columns13")))),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEdit1.Properties.Columns14"), resources.GetString("lookUpEdit1.Properties.Columns15"), ((int)(resources.GetObject("lookUpEdit1.Properties.Columns16"))), ((DevExpress.Utils.FormatType)(resources.GetObject("lookUpEdit1.Properties.Columns17"))), resources.GetString("lookUpEdit1.Properties.Columns18"), ((bool)(resources.GetObject("lookUpEdit1.Properties.Columns19"))), ((DevExpress.Utils.HorzAlignment)(resources.GetObject("lookUpEdit1.Properties.Columns20"))))});
-            this.lookUpEdit1.Properties.DisplayMember = "Account_Name";
-            this.lookUpEdit1.Properties.NullText = resources.GetString("lookUpEdit1.Properties.NullText");
-            this.lookUpEdit1.Properties.ValueMember = "Account_ID";
             // 
             // labelControl4
             // 
@@ -279,6 +260,47 @@ namespace ClinienceSystemManagement
             this.btnOk.Name = "btnOk";
             this.btnOk.Click += new System.EventHandler(this.OnBtnOkClick);
             // 
+            // lookUpEdit1
+            // 
+            resources.ApplyResources(this.lookUpEdit1, "lookUpEdit1");
+            this.lookUpEdit1.Name = "lookUpEdit1";
+            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lookUpEdit1.Properties.Buttons"))))});
+            this.lookUpEdit1.Properties.DataSource = this.accountBindingSource;
+            this.lookUpEdit1.Properties.DisplayMember = "Account_Name";
+            this.lookUpEdit1.Properties.ValueMember = "Account_ID";
+            // 
+            // sqlDataSource1
+            // 
+            this.sqlDataSource1.ConnectionName = "DESKTOP-M75UEQH\\SQLEXPRESS_ClinienceSystemManagement_Connection";
+            this.sqlDataSource1.Name = "sqlDataSource1";
+            columnExpression4.ColumnName = "Account_ID";
+            table2.MetaSerializable = "0|0|125|180";
+            table2.Name = "Account";
+            columnExpression4.Table = table2;
+            column4.Expression = columnExpression4;
+            columnExpression5.ColumnName = "Account_Name";
+            columnExpression5.Table = table2;
+            column5.Expression = columnExpression5;
+            columnExpression6.ColumnName = "Account_Type_ID";
+            columnExpression6.Table = table2;
+            column6.Expression = columnExpression6;
+            selectQuery2.Columns.Add(column4);
+            selectQuery2.Columns.Add(column5);
+            selectQuery2.Columns.Add(column6);
+            selectQuery2.FilterString = "[Account.Account_Type_ID] = 5";
+            selectQuery2.GroupFilterString = "";
+            selectQuery2.Name = "Account";
+            selectQuery2.Tables.Add(table2);
+            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            selectQuery2});
+            this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
+            // 
+            // accountBindingSource
+            // 
+            this.accountBindingSource.DataMember = "Account";
+            this.accountBindingSource.DataSource = this.sqlDataSource1;
+            // 
             // CustomAppointmentForm
             // 
             this.AcceptButton = this.btnOk;
@@ -302,13 +324,13 @@ namespace ClinienceSystemManagement
             ((System.ComponentModel.ISupportInitialize)(this.edtEndTime.Properties)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMa.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGhiChu.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accountBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -336,8 +358,9 @@ namespace ClinienceSystemManagement
         protected DevExpress.XtraEditors.LabelControl labelControl2;
         protected DevExpress.XtraEditors.SimpleButton btnOk;
         protected DevExpress.XtraEditors.SimpleButton btnDelete;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit2;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
         protected DevExpress.XtraEditors.LabelControl labelControl5;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
+        private System.Windows.Forms.BindingSource accountBindingSource;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
     }
 }
