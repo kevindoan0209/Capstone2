@@ -140,6 +140,16 @@ namespace DataAccessLayer
             return command.ExecuteNonQuery();
         }
 
+        public int UpdatePrecriptionPriceExpenses(int price, int expenses, int preId)
+        {
+            const String sqlCommand = "Update Precription set Precription_Price = @Price , Precription_Expenses = @Expenses Where Precription_ID = @PreId";
+            SqlCommand command = new SqlCommand(sqlCommand, connect());
+            command.Parameters.AddWithValue("@Price", price);
+            command.Parameters.AddWithValue("@Expenses", expenses);
+            command.Parameters.AddWithValue("@PreId", preId);
+            return command.ExecuteNonQuery();
+        }
+
         public int GetCountHistory(int patientId)
         {
             const String sqlCommand = "SELECT COUNT(Precription_ID) FROM Precription Where Account_ID_Patient = @patientId";

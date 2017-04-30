@@ -12,6 +12,7 @@ using DataAccessLayer;
 using BussinessLogicLayer;
 using ClinienceSystemManagement.HeThong;
 using DevExpress.XtraReports;
+using CrystalDecisions.Windows.Forms;
 
 namespace ClinienceSystemManagement.KhamBenh
 {
@@ -328,7 +329,16 @@ namespace ClinienceSystemManagement.KhamBenh
             }
             else
             {
-                
+                Report.ServiceBills m = new ClinienceSystemManagement.Report.ServiceBills();
+                m.SetDataSource(BLL_Report.PrecriptionBill(PreId));
+                CrystalReportViewer cv = new CrystalReportViewer();
+                cv.Dock = DockStyle.Fill;
+                cv.ReportSource = m;
+                cv.DisplayGroupTree = false;
+                Form f = new Form();
+                f.WindowState = FormWindowState.Maximized;
+                f.Controls.Add(cv);
+                f.ShowDialog();
             }
         }
 
@@ -341,7 +351,16 @@ namespace ClinienceSystemManagement.KhamBenh
             }
             else
             {
-
+                Report.PrecriptionBills m = new ClinienceSystemManagement.Report.PrecriptionBills();
+                m.SetDataSource(BLL_Report.PrecriptionBill(PreId));
+                CrystalReportViewer cv = new CrystalReportViewer();
+                cv.Dock = DockStyle.Fill;
+                cv.ReportSource = m;
+                cv.DisplayGroupTree = false;
+                Form f = new Form();
+                f.WindowState = FormWindowState.Maximized;
+                f.Controls.Add(cv);
+                f.ShowDialog();
             }
         }
 

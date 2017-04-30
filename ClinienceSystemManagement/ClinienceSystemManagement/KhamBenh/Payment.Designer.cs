@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Payment));
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnDong = new DevExpress.XtraEditors.SimpleButton();
             this.lbTrangThai = new DevExpress.XtraEditors.LabelControl();
-            this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
+            this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnLamMoiCP = new DevExpress.XtraEditors.SimpleButton();
             this.btnChiPhi = new DevExpress.XtraEditors.SimpleButton();
@@ -73,6 +74,7 @@
             this.btnKhamBenh = new DevExpress.XtraEditors.SimpleButton();
             this.lbThanhToan = new System.Windows.Forms.Label();
             this.btnBienLai = new DevExpress.XtraEditors.SimpleButton();
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -86,25 +88,25 @@
             // 
             // panelControl1
             // 
-            this.panelControl1.Controls.Add(this.simpleButton1);
+            this.panelControl1.Controls.Add(this.btnDong);
             this.panelControl1.Controls.Add(this.lbTrangThai);
-            this.panelControl1.Controls.Add(this.btnHuy);
+            this.panelControl1.Controls.Add(this.btnLuu);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelControl1.Location = new System.Drawing.Point(0, 394);
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(534, 45);
             this.panelControl1.TabIndex = 9;
             // 
-            // simpleButton1
+            // btnDong
             // 
-            this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(445, 10);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(75, 25);
-            this.simpleButton1.TabIndex = 37;
-            this.simpleButton1.Text = "Đóng";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.btnDong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.btnDong.Image = ((System.Drawing.Image)(resources.GetObject("btnDong.Image")));
+            this.btnDong.Location = new System.Drawing.Point(445, 10);
+            this.btnDong.Name = "btnDong";
+            this.btnDong.Size = new System.Drawing.Size(75, 25);
+            this.btnDong.TabIndex = 37;
+            this.btnDong.Text = "Đóng";
+            this.btnDong.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // lbTrangThai
             // 
@@ -117,16 +119,16 @@
             this.lbTrangThai.Size = new System.Drawing.Size(0, 15);
             this.lbTrangThai.TabIndex = 36;
             // 
-            // btnHuy
+            // btnLuu
             // 
-            this.btnHuy.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.btnHuy.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.Image")));
-            this.btnHuy.Location = new System.Drawing.Point(364, 10);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(75, 25);
-            this.btnHuy.TabIndex = 1;
-            this.btnHuy.Text = "Lưu";
-            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
+            this.btnLuu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
+            this.btnLuu.Location = new System.Drawing.Point(364, 10);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(75, 25);
+            this.btnLuu.TabIndex = 1;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // groupBox1
             // 
@@ -577,6 +579,11 @@
             this.btnBienLai.Size = new System.Drawing.Size(87, 25);
             this.btnBienLai.TabIndex = 35;
             this.btnBienLai.Text = "In biên lai";
+            this.btnBienLai.Click += new System.EventHandler(this.btnBienLai_Click);
+            // 
+            // sqlDataSource1
+            // 
+            this.sqlDataSource1.Name = "sqlDataSource1";
             // 
             // Payment
             // 
@@ -621,7 +628,7 @@
 
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.LabelControl lbTrangThai;
-        private DevExpress.XtraEditors.SimpleButton btnHuy;
+        private DevExpress.XtraEditors.SimpleButton btnLuu;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
@@ -659,9 +666,10 @@
         private DevExpress.XtraEditors.SimpleButton btnThanhToan;
         private System.Windows.Forms.Label lbChiPhiThuoc;
         private System.Windows.Forms.Label label19;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton btnDong;
         private DevExpress.XtraEditors.SimpleButton btnKhamBenh;
         private System.Windows.Forms.Label lbThanhToan;
         private DevExpress.XtraEditors.SimpleButton btnBienLai;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
     }
 }

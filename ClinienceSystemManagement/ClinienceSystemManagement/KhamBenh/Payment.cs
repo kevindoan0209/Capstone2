@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using BussinessLogicLayer;
+using CrystalDecisions.Windows.Forms;
 
 namespace ClinienceSystemManagement.KhamBenh
 {
@@ -67,7 +68,10 @@ namespace ClinienceSystemManagement.KhamBenh
             {
                 int amount = Convert.ToInt32(lbChiPhiHienTai.Text);
                 int discount = Convert.ToInt32(lbGiamGia.Text);
+                int expenses = Convert.ToInt32(lbChiPhiPhatSinh.Text);
+                int price = Convert.ToInt32(lbChiPhiKhamBenh.Text);
                 BLL_Precription.UpdatePrecriptionAmountDiscount(amount, discount, preId);
+                BLL_Precription.UpdatePrecriptionPriceExpenses(price, expenses, preId);
                 this.Close();
             }
             else
@@ -199,6 +203,20 @@ namespace ClinienceSystemManagement.KhamBenh
         private void simpleButton1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnBienLai_Click(object sender, EventArgs e)
+        {
+            Report.ServiceBills m = new ClinienceSystemManagement.Report.ServiceBills();
+            m.SetDataSource(BLL_Report.ServiceBill(preId));
+            CrystalReportViewer cv = new CrystalReportViewer();
+            cv.Dock = DockStyle.Fill;
+            cv.ReportSource = m;
+            cv.DisplayGroupTree = false;
+            Form f = new Form();
+            f.WindowState = FormWindowState.Maximized;
+            f.Controls.Add(cv);
+            f.ShowDialog();
         }
     }
 }

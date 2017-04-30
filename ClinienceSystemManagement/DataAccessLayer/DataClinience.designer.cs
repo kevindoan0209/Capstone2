@@ -1144,6 +1144,8 @@ namespace DataAccessLayer
 		
 		private string _CustomField1;
 		
+		private System.Nullable<int> _Appointments_ID;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -1178,6 +1180,8 @@ namespace DataAccessLayer
     partial void OnRecurrenceInfoChanged();
     partial void OnCustomField1Changing(string value);
     partial void OnCustomField1Changed();
+    partial void OnAppointments_IDChanging(System.Nullable<int> value);
+    partial void OnAppointments_IDChanged();
     #endregion
 		
 		public Appointment()
@@ -1481,6 +1485,26 @@ namespace DataAccessLayer
 					this._CustomField1 = value;
 					this.SendPropertyChanged("CustomField1");
 					this.OnCustomField1Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Appointments_ID", DbType="Int")]
+		public System.Nullable<int> Appointments_ID
+		{
+			get
+			{
+				return this._Appointments_ID;
+			}
+			set
+			{
+				if ((this._Appointments_ID != value))
+				{
+					this.OnAppointments_IDChanging(value);
+					this.SendPropertyChanging();
+					this._Appointments_ID = value;
+					this.SendPropertyChanged("Appointments_ID");
+					this.OnAppointments_IDChanged();
 				}
 			}
 		}
@@ -2077,7 +2101,7 @@ namespace DataAccessLayer
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
 		public int Id
 		{
 			get
@@ -4482,6 +4506,10 @@ namespace DataAccessLayer
 		
 		private System.Nullable<int> _Precription_Money;
 		
+		private System.Nullable<int> _Precription_Expenses;
+		
+		private System.Nullable<int> _Precription_Price;
+		
 		private System.Nullable<int> _Precription_Discount;
 		
 		private System.Nullable<int> _Precription_Amount;
@@ -4520,6 +4548,10 @@ namespace DataAccessLayer
     partial void OnPrecription_DateChanged();
     partial void OnPrecription_MoneyChanging(System.Nullable<int> value);
     partial void OnPrecription_MoneyChanged();
+    partial void OnPrecription_ExpensesChanging(System.Nullable<int> value);
+    partial void OnPrecription_ExpensesChanged();
+    partial void OnPrecription_PriceChanging(System.Nullable<int> value);
+    partial void OnPrecription_PriceChanged();
     partial void OnPrecription_DiscountChanging(System.Nullable<int> value);
     partial void OnPrecription_DiscountChanged();
     partial void OnPrecription_AmountChanging(System.Nullable<int> value);
@@ -4605,6 +4637,46 @@ namespace DataAccessLayer
 					this._Precription_Money = value;
 					this.SendPropertyChanged("Precription_Money");
 					this.OnPrecription_MoneyChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Precription_Expenses", DbType="Int")]
+		public System.Nullable<int> Precription_Expenses
+		{
+			get
+			{
+				return this._Precription_Expenses;
+			}
+			set
+			{
+				if ((this._Precription_Expenses != value))
+				{
+					this.OnPrecription_ExpensesChanging(value);
+					this.SendPropertyChanging();
+					this._Precription_Expenses = value;
+					this.SendPropertyChanged("Precription_Expenses");
+					this.OnPrecription_ExpensesChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Precription_Price", DbType="Int")]
+		public System.Nullable<int> Precription_Price
+		{
+			get
+			{
+				return this._Precription_Price;
+			}
+			set
+			{
+				if ((this._Precription_Price != value))
+				{
+					this.OnPrecription_PriceChanging(value);
+					this.SendPropertyChanging();
+					this._Precription_Price = value;
+					this.SendPropertyChanged("Precription_Price");
+					this.OnPrecription_PriceChanged();
 				}
 			}
 		}

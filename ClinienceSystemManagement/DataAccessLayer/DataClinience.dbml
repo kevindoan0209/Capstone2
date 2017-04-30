@@ -57,6 +57,7 @@
       <Column Name="ReminderInfo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
       <Column Name="RecurrenceInfo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
       <Column Name="CustomField1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Appointments_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.Appointmentss" Member="Appointmentsses">
@@ -87,7 +88,7 @@
   </Table>
   <Table Name="dbo.Combobox" Member="Comboboxes">
     <Type Name="Combobox">
-      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="Type" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
     </Type>
@@ -210,6 +211,8 @@
       <Column Name="Precription_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="Precription_Date" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
       <Column Name="Precription_Money" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Precription_Expenses" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Precription_Price" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Precription_Discount" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Precription_Amount" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Precription_Diagnose" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
